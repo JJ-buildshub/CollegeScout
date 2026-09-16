@@ -10,18 +10,30 @@ import JourneySteps from "@/components/JourneySteps";
 
 export default function HomePage() {
   return (
-    <div className="space-y-12">
+    <div>
       <HomeHero />
-      <TryCollegeScout />
-      <WhyCollegeScout />
-      <FindMyFit />
-      <CareerOutcomesStory />
-      <div className="grid gap-6 sm:grid-cols-2">
+      <div className="mt-8">
+        <TryCollegeScout />
+      </div>
+      <div className="mt-10">
+        <WhyCollegeScout />
+      </div>
+      <div className="mt-10">
+        <FindMyFit />
+      </div>
+      <div className="mt-10">
+        <CareerOutcomesStory />
+      </div>
+      <div className="mt-10 grid gap-6 sm:grid-cols-2">
         <BuildYourList />
         <RunwayPreview />
       </div>
-      <AccessMission />
-      <JourneySteps compact />
+      <div className="mt-10">
+        <AccessMission />
+      </div>
+      <div className="mt-10">
+        <JourneySteps compact />
+      </div>
     </div>
   );
 }

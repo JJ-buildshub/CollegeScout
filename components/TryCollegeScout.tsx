@@ -35,15 +35,11 @@ export default function TryCollegeScout() {
   }));
 
   return (
-    <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-10">
+    <section className="rounded-3xl border border-slate-200 bg-white px-6 pb-6 pt-8 shadow-card sm:px-10 sm:pb-10 sm:pt-10">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-xl font-extrabold tracking-tight text-navy-900 sm:text-2xl">
           What are you interested in?
         </h2>
-        <p className="mt-2 text-sm text-slate-500">
-          CollegeScout helps you discover how different colleges turn the same interest into very
-          different academic and career opportunities.
-        </p>
       </div>
 
       <div className="mx-auto mt-6 flex max-w-3xl flex-wrap items-center justify-center gap-2">
