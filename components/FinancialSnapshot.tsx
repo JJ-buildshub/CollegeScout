@@ -14,14 +14,14 @@ export default function FinancialSnapshot({ financials }: { financials: Financia
     <div className="space-y-4">
       <div className={sameRate ? "grid grid-cols-1" : "grid grid-cols-2 gap-4"}>
         <div>
-          <div className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+          <div className="text-xs font-semibold uppercase tracking-wide text-slate-600">
             {sameRate ? "Total Cost of Attendance" : "In-State COA"}
           </div>
           <div className="mt-0.5 text-lg font-bold text-navy-900">{formatUsd(financials.coaInState)}</div>
         </div>
         {!sameRate && (
           <div>
-            <div className="text-xs font-semibold uppercase tracking-wide text-slate-400">Out-of-State COA</div>
+            <div className="text-xs font-semibold uppercase tracking-wide text-slate-600">Out-of-State COA</div>
             <div className="mt-0.5 text-lg font-bold text-navy-900">{formatUsd(financials.coaOutOfState)}</div>
           </div>
         )}

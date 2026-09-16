@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin, TrendingUp, FileCheck2 } from "lucide-react";
+import { ExternalLink, MapPin, TrendingUp, FileCheck2 } from "lucide-react";
 import type { College } from "@/lib/types";
 import { admitRateTier, formatPercent } from "@/lib/colleges";
 import SystemBadge from "./SystemBadge";
@@ -23,9 +23,22 @@ export default function CollegeCard({ college }: { college: College }) {
       <h3 className="mt-3 text-base font-bold leading-snug text-navy-900 group-hover:text-gold-600">
         {college.name}
       </h3>
-      <div className="mt-1 flex items-center gap-1 text-xs text-slate-500">
-        <MapPin className="h-3.5 w-3.5" />
-        {college.location}
+      <div className="mt-1 flex items-center justify-between gap-1">
+        <div className="flex items-center gap-1 text-xs text-slate-500">
+          <MapPin className="h-3.5 w-3.5" />
+          {college.location}
+        </div>
+        {college.website && (
+          <a
+            href={college.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="inline-flex items-center gap-1 text-xs font-semibold text-slate-400 hover:text-gold-600"
+          >
+            Website <ExternalLink className="h-3 w-3" />
+          </a>
+        )}
       </div>
 
       <div className="mt-4 grid grid-cols-2 gap-3 border-t border-slate-100 pt-4 text-xs">

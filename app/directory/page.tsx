@@ -6,7 +6,7 @@ import { Search, SlidersHorizontal, X } from "lucide-react";
 import clsx from "clsx";
 import { colleges } from "@/lib/colleges";
 import type { CollegeSystem, TestingPolicy } from "@/lib/types";
-import { getInterestById, matchesInterest } from "@/lib/interests";
+import { getInterestById, matchesAllInterests } from "@/lib/interests";
 import CollegeCard from "@/components/CollegeCard";
 
 const SYSTEM_OPTIONS: CollegeSystem[] = ["UC", "CSU", "Private", "Out-of-State Public"];
@@ -48,22 +48,27 @@ function DirectoryContent() {
   const [admitBucket, setAdmitBucket] = useState<AdmitBucket>("any");
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [sortBy, setSortBy] = useState<"rank" | "admitRateOverall" | "name" | "cost">("rank");
-  const [interestId, setInterestId] = useState<string | null>(() => searchParams.get("interest"));
+  const [interestIds, setInterestIds] = useState<string[]>(() => {
+    const raw = searchParams.get("interests");
+    return raw ? raw.split(",").filter(Boolean) : [];
+  });
 
-  // Keep the URL in sync so an interest-filtered view stays bookmarkable/shareable.
+  // Keep the URL in sync so an interest-filtered view stays bookmarkable/shareable
+  // and survives back-navigation from a college profile.
   useEffect(() => {
     const params = new URLSearchParams(searchParams.toString());
-    if (interestId) {
-      params.set("interest", interestId);
+    if (interestIds.length > 0) {
+      params.set("interests", interestIds.join(","));
     } else {
-      params.delete("interest");
+      params.delete("interests");
     }
     const nextQuery = params.toString();
     router.replace(nextQuery ? `${pathname}?${nextQuery}` : pathname, { scroll: false });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [interestId]);
+  }, [interestIds]);
 
-  const interest = interestId ? getInterestById(interestId) : undefined;
+  const selectedInterests = interestIds.map(getInterestById).filter((i): i is NonNullable<typeof i> => !!i);
+  const removeInterest = (id: string) => setInterestIds((prev) => prev.filter((x) => x !== id));
 
   const toggleSystem = (system: CollegeSystem) => {
     setSystems((prev) => {
@@ -98,7 +103,7 @@ function DirectoryContent() {
         if (systems.size > 0 && !systems.has(c.system)) return false;
         if (testingPolicies.size > 0 && !testingPolicies.has(c.testingPolicy)) return false;
         if (!matchesBucket(c.admitRateOverall, admitBucket)) return false;
-        if (interestId && !matchesInterest(c, interestId)) return false;
+        if (interestIds.length > 0 && !matchesAllInterests(c, interestIds)) return false;
         return true;
       })
       .sort((a, b) => {
@@ -111,7 +116,7 @@ function DirectoryContent() {
         }
         return a.rank - b.rank;
       });
-  }, [query, systems, testingPolicies, admitBucket, sortBy, interestId]);
+  }, [query, systems, testingPolicies, admitBucket, sortBy, interestIds]);
 
   return (
     <div className="space-y-6">
@@ -124,19 +129,24 @@ function DirectoryContent() {
         </p>
       </div>
 
-      {interest && (
-        <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-gold-300 bg-gold-50 px-3 py-1.5 text-xs font-semibold text-navy-900">
-            Interest: {interest.label}
-            <button
-              type="button"
-              onClick={() => setInterestId(null)}
-              aria-label="Remove interest filter"
-              className="rounded-full p-0.5 hover:bg-gold-100"
+      {selectedInterests.length > 0 && (
+        <div className="flex flex-wrap items-center gap-2">
+          {selectedInterests.map((interest) => (
+            <span
+              key={interest.id}
+              className="inline-flex items-center gap-1.5 rounded-full border border-gold-300 bg-gold-50 px-3 py-1.5 text-xs font-semibold text-navy-900"
             >
-              <X className="h-3 w-3" />
-            </button>
-          </span>
+              Interest: {interest.label}
+              <button
+                type="button"
+                onClick={() => removeInterest(interest.id)}
+                aria-label={`Remove ${interest.label} filter`}
+                className="rounded-full p-0.5 hover:bg-gold-100"
+              >
+                <X className="h-3 w-3" />
+              </button>
+            </span>
+          ))}
         </div>
       )}
 

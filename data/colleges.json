@@ -101,7 +101,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-27 cycle"
-    }
+    },
+    "website": "https://www.berkeley.edu"
   },
   {
     "id": "ucla",
@@ -207,7 +208,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2025-26 cycle (UCLA Common Data Set 2024-2025, published by UCLA Academic Planning & Budget); Greek life % from UCLA Fraternity & Sorority Life office (not reported in CDS)"
-    }
+    },
+    "website": "https://www.ucla.edu"
   },
   {
     "id": "uc-san-diego",
@@ -313,7 +315,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2025-26 cycle (UC San Diego Common Data Set 2024-2025, published by UCSD Institutional Research)"
-    }
+    },
+    "website": "https://ucsd.edu"
   },
   {
     "id": "uc-davis",
@@ -418,7 +421,8 @@
         "IPEDS"
       ],
       "lastVerified": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
-    }
+    },
+    "website": "https://www.ucdavis.edu"
   },
   {
     "id": "uc-irvine",
@@ -524,7 +528,8 @@
         "Institutional Website"
       ],
       "lastVerified": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
-    }
+    },
+    "website": "https://uci.edu"
   },
   {
     "id": "uc-santa-barbara",
@@ -630,7 +635,8 @@
         "Institutional Website"
       ],
       "lastVerified": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
-    }
+    },
+    "website": "https://www.ucsb.edu"
   },
   {
     "id": "uc-santa-cruz",
@@ -736,7 +742,8 @@
         "Institutional Website"
       ],
       "lastVerified": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
-    }
+    },
+    "website": "https://www.ucsc.edu"
   },
   {
     "id": "uc-riverside",
@@ -842,7 +849,8 @@
         "Institutional Website"
       ],
       "lastVerified": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
-    }
+    },
+    "website": "https://www.ucr.edu"
   },
   {
     "id": "uc-merced",
@@ -948,7 +956,8 @@
         "Institutional Website"
       ],
       "lastVerified": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
-    }
+    },
+    "website": "https://www.ucmerced.edu"
   },
   {
     "id": "cal-poly-san-luis-obispo",
@@ -1051,7 +1060,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-27 cycle"
-    }
+    },
+    "website": "https://www.calpoly.edu"
   },
   {
     "id": "san-jose-state-university",
@@ -1155,7 +1165,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.sjsu.edu"
   },
   {
     "id": "san-diego-state-university",
@@ -1258,7 +1269,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.sdsu.edu"
   },
   {
     "id": "cal-poly-pomona",
@@ -1360,7 +1372,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.cpp.edu"
   },
   {
     "id": "csu-long-beach",
@@ -1462,7 +1475,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.csulb.edu"
   },
   {
     "id": "stanford-university",
@@ -1569,7 +1583,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-27 cycle"
-    }
+    },
+    "website": "https://www.stanford.edu"
   },
   {
     "id": "university-of-southern-california",
@@ -1681,7 +1696,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.usc.edu"
   },
   {
     "id": "santa-clara-university",
@@ -1797,7 +1813,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.scu.edu"
   },
   {
     "id": "massachusetts-institute-of-technology",
@@ -1903,7 +1920,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.mit.edu"
   },
   {
     "id": "carnegie-mellon-university",
@@ -2010,7 +2028,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.cmu.edu"
   },
   {
     "id": "harvard-university",
@@ -2116,7 +2135,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.harvard.edu"
   },
   {
     "id": "princeton-university",
@@ -2222,7 +2242,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.princeton.edu"
   },
   {
     "id": "yale-university",
@@ -2328,7 +2349,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.yale.edu"
   },
   {
     "id": "columbia-university",
@@ -2433,7 +2455,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.columbia.edu"
   },
   {
     "id": "university-of-pennsylvania",
@@ -2539,7 +2562,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.upenn.edu"
   },
   {
     "id": "cornell-university",
@@ -2645,7 +2669,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.cornell.edu"
   },
   {
     "id": "brown-university",
@@ -2751,7 +2776,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.brown.edu"
   },
   {
     "id": "dartmouth-college",
@@ -2857,7 +2883,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.dartmouth.edu"
   },
   {
     "id": "california-institute-of-technology",
@@ -2963,7 +2990,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.caltech.edu"
   },
   {
     "id": "purdue-university",
@@ -3071,7 +3099,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.purdue.edu"
   },
   {
     "id": "university-of-illinois-urbana-champaign",
@@ -3180,7 +3209,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://illinois.edu"
   },
   {
     "id": "university-of-washington",
@@ -3283,7 +3313,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.washington.edu"
   },
   {
     "id": "university-of-michigan",
@@ -3393,7 +3424,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2025-26 cycle"
-    }
+    },
+    "website": "https://umich.edu"
   },
   {
     "id": "georgia-institute-of-technology",
@@ -3505,7 +3537,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.gatech.edu"
   },
   {
     "id": "university-of-texas-at-austin",
@@ -3614,7 +3647,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.utexas.edu"
   },
   {
     "id": "northeastern-university",
@@ -3730,7 +3764,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.northeastern.edu"
   },
   {
     "id": "pomona-college",
@@ -3850,7 +3885,8 @@
         "College Scorecard"
       ],
       "lastVerified": "2024-25 cycle"
-    }
+    },
+    "website": "https://www.pomona.edu"
   },
   {
     "id": "williams-college",
@@ -3954,7 +3990,8 @@
         "College Scorecard"
       ],
       "lastVerified": "2024-25 cycle"
-    }
+    },
+    "website": "https://www.williams.edu"
   },
   {
     "id": "rensselaer-polytechnic-institute",
@@ -4069,7 +4106,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026 cycle (admit rate and SAT figures approximate — RPI's own CDS PDF could not be machine-verified; cross-checked via IPEDS-derived summaries and the school's admissions/financial-aid pages)"
-    }
+    },
+    "website": "https://www.rpi.edu"
   },
   {
     "id": "university-of-alabama",
@@ -4172,7 +4210,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2024-25 cycle"
-    }
+    },
+    "website": "https://www.ua.edu"
   },
   {
     "id": "university-of-pittsburgh",
@@ -4266,7 +4305,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2024-25 cycle"
-    }
+    },
+    "website": "https://www.pitt.edu"
   },
   {
     "id": "tufts-university",
@@ -4378,7 +4418,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2024-25 cycle"
-    }
+    },
+    "website": "https://www.tufts.edu"
   },
   {
     "id": "cal-state-fullerton",
@@ -4470,7 +4511,8 @@
         "College Scorecard"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.fullerton.edu"
   },
   {
     "id": "sacramento-state",
@@ -4562,7 +4604,8 @@
         "College Scorecard"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.csus.edu"
   },
   {
     "id": "cal-state-northridge",
@@ -4654,7 +4697,8 @@
         "College Scorecard"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.csun.edu"
   },
   {
     "id": "cal-state-la",
@@ -4745,7 +4789,8 @@
         "College Scorecard"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.calstatela.edu"
   },
   {
     "id": "san-francisco-state",
@@ -4836,7 +4881,8 @@
         "College Scorecard"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://sfsu.edu"
   },
   {
     "id": "sonoma-state",
@@ -4927,7 +4973,8 @@
         "College Scorecard"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.sonoma.edu"
   },
   {
     "id": "cal-state-east-bay",
@@ -5018,7 +5065,8 @@
         "College Scorecard"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.csueastbay.edu"
   },
   {
     "id": "fresno-state",
@@ -5109,7 +5157,8 @@
         "College Scorecard"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.fresnostate.edu"
   },
   {
     "id": "chico-state",
@@ -5200,7 +5249,8 @@
         "College Scorecard"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.csuchico.edu"
   },
   {
     "id": "cal-poly-humboldt",
@@ -5290,7 +5340,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.humboldt.edu"
   },
   {
     "id": "claremont-mckenna-college",
@@ -5386,7 +5437,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.cmc.edu"
   },
   {
     "id": "harvey-mudd-college",
@@ -5481,7 +5533,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.hmc.edu"
   },
   {
     "id": "scripps-college",
@@ -5577,7 +5630,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.scrippscollege.edu"
   },
   {
     "id": "occidental-college",
@@ -5678,7 +5732,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.oxy.edu"
   },
   {
     "id": "loyola-marymount-university",
@@ -5779,7 +5834,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.lmu.edu"
   },
   {
     "id": "university-of-san-diego",
@@ -5874,7 +5930,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.sandiego.edu"
   },
   {
     "id": "university-of-san-francisco",
@@ -5975,7 +6032,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.usfca.edu"
   },
   {
     "id": "chapman-university",
@@ -6076,7 +6134,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.chapman.edu"
   },
   {
     "id": "pepperdine-university",
@@ -6176,7 +6235,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.pepperdine.edu"
   },
   {
     "id": "university-of-the-pacific",
@@ -6266,7 +6326,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.pacific.edu"
   },
   {
     "id": "university-of-redlands",
@@ -6352,7 +6413,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.redlands.edu"
   },
   {
     "id": "amherst-college",
@@ -6449,7 +6511,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.amherst.edu"
   },
   {
     "id": "swarthmore-college",
@@ -6549,7 +6612,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.swarthmore.edu"
   },
   {
     "id": "wellesley-college",
@@ -6650,7 +6714,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.wellesley.edu"
   },
   {
     "id": "bowdoin-college",
@@ -6750,7 +6815,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.bowdoin.edu"
   },
   {
     "id": "middlebury-college",
@@ -6848,7 +6914,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.middlebury.edu"
   },
   {
     "id": "carleton-college",
@@ -6948,7 +7015,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.carleton.edu"
   },
   {
     "id": "colgate-university",
@@ -7045,7 +7113,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.colgate.edu"
   },
   {
     "id": "vassar-college",
@@ -7143,7 +7212,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.vassar.edu"
   },
   {
     "id": "hamilton-college",
@@ -7240,7 +7310,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.hamilton.edu"
   },
   {
     "id": "colby-college",
@@ -7330,7 +7401,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.colby.edu"
   },
   {
     "id": "bates-college",
@@ -7430,7 +7502,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.bates.edu"
   },
   {
     "id": "duke-university",
@@ -7523,7 +7596,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.duke.edu"
   },
   {
     "id": "university-of-chicago",
@@ -7626,7 +7700,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.uchicago.edu"
   },
   {
     "id": "northwestern-university",
@@ -7721,7 +7796,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.northwestern.edu"
   },
   {
     "id": "vanderbilt-university",
@@ -7821,7 +7897,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.vanderbilt.edu"
   },
   {
     "id": "rice-university",
@@ -7920,7 +7997,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.rice.edu"
   },
   {
     "id": "johns-hopkins-university",
@@ -8019,7 +8097,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.jhu.edu"
   },
   {
     "id": "georgetown-university",
@@ -8116,7 +8195,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.georgetown.edu"
   },
   {
     "id": "worcester-polytechnic-institute",
@@ -8214,7 +8294,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.wpi.edu"
   },
   {
     "id": "case-western-reserve-university",
@@ -8315,7 +8396,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://case.edu"
   },
   {
     "id": "rochester-institute-of-technology",
@@ -8418,7 +8500,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.rit.edu"
   },
   {
     "id": "stevens-institute-of-technology",
@@ -8513,7 +8596,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.stevens.edu"
   },
   {
     "id": "university-of-rochester",
@@ -8611,7 +8695,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.rochester.edu"
   },
   {
     "id": "university-of-north-carolina-chapel-hill",
@@ -8713,7 +8798,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.unc.edu"
   },
   {
     "id": "university-of-virginia",
@@ -8820,7 +8906,8 @@
         "CDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.virginia.edu"
   },
   {
     "id": "university-of-florida",
@@ -8922,7 +9009,8 @@
         "CDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.ufl.edu"
   },
   {
     "id": "ohio-state-university",
@@ -9023,7 +9111,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.osu.edu"
   },
   {
     "id": "penn-state-university",
@@ -9119,7 +9208,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.psu.edu"
   },
   {
     "id": "university-of-wisconsin-madison",
@@ -9216,7 +9306,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.wisc.edu"
   },
   {
     "id": "indiana-university-bloomington",
@@ -9313,7 +9404,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://bloomington.iu.edu"
   },
   {
     "id": "university-of-maryland",
@@ -9414,7 +9506,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.umd.edu"
   },
   {
     "id": "rutgers-university",
@@ -9510,7 +9603,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.rutgers.edu"
   },
   {
     "id": "university-of-arizona",
@@ -9606,7 +9700,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.arizona.edu"
   },
   {
     "id": "arizona-state-university",
@@ -9702,7 +9797,8 @@
         "CDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.asu.edu"
   },
   {
     "id": "university-of-colorado-boulder",
@@ -9798,7 +9894,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.colorado.edu"
   },
   {
     "id": "texas-am-university",
@@ -9894,7 +9991,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.tamu.edu"
   },
   {
     "id": "miami-university-ohio",
@@ -9982,7 +10080,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://miamioh.edu"
   },
   {
     "id": "baylor-university",
@@ -10070,7 +10169,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.baylor.edu"
   },
   {
     "id": "texas-christian-university",
@@ -10173,7 +10273,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.tcu.edu"
   },
   {
     "id": "southern-methodist-university",
@@ -10259,7 +10360,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.smu.edu"
   },
   {
     "id": "university-of-denver",
@@ -10345,7 +10447,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.du.edu"
   },
   {
     "id": "elon-university",
@@ -10433,7 +10536,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.elon.edu"
   },
   {
     "id": "university-of-vermont",
@@ -10520,7 +10624,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.uvm.edu"
   },
   {
     "id": "university-of-delaware",
@@ -10614,7 +10719,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.udel.edu"
   },
   {
     "id": "drexel-university",
@@ -10701,7 +10807,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://drexel.edu"
   },
   {
     "id": "temple-university",
@@ -10794,7 +10901,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.temple.edu"
   },
   {
     "id": "university-of-connecticut",
@@ -10882,7 +10990,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://uconn.edu"
   },
   {
     "id": "clemson-university",
@@ -10969,7 +11078,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://www.clemson.edu"
   },
   {
     "id": "michigan-state-university",
@@ -11058,7 +11168,8 @@
         "Institutional Website"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://msu.edu"
   },
   {
     "id": "university-of-iowa",
@@ -11145,7 +11256,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://uiowa.edu"
   },
   {
     "id": "university-of-kansas",
@@ -11233,7 +11345,8 @@
         "IPEDS"
       ],
       "lastVerified": "2026-09-15"
-    }
+    },
+    "website": "https://ku.edu"
   },
   {
     "id": "new-york-university",
@@ -11342,7 +11455,8 @@
         "Institutional Website"
       ],
       "lastVerified": "September 2026; admit rate, SAT range, GPA, and enrollment cross-checked across NYU's published Common Data Set figures (via CDS-aggregator summaries) and NYU admissions pages; application plan types confirmed via nyu.edu admissions FAQ (deadlines not independently confirmed and left null); on-campus housing % and Greek life % not published/found and left null."
-    }
+    },
+    "website": "https://www.nyu.edu"
   },
   {
     "id": "university-of-notre-dame",
@@ -11446,7 +11560,8 @@
         "Institutional Website"
       ],
       "lastVerified": "September 2026; admit rate, SAT range, and enrollment via CDS-aggregator summary of Notre Dame's Common Data Set; application plan type and deadlines confirmed directly on admissions.nd.edu, which also confirms Notre Dame is reinstating a test-required policy starting with Fall 2028 applicants (current cycle remains Test-Optional); Greek life is structurally absent (no fraternities/sororities recognized) so 0 is a verified fact, not an estimate; GPA distribution and on-campus % not found in an available public source and left null."
-    }
+    },
+    "website": "https://www.nd.edu"
   },
   {
     "id": "emory-university",
@@ -11555,7 +11670,8 @@
         "Institutional Website"
       ],
       "lastVerified": "September 2026; admit rate and SAT range cross-validated across the Emory Common Data Set 2024-2025 (read directly, incl. GPA distribution and 23%/21% fraternity/sorority participation, averaged here to 22%) and independent CDS-aggregator summaries; application plan types and deadlines confirmed directly on apply.emory.edu; percent living on campus (57% of all undergraduates) from the same CDS; net price calculator URL could not be confirmed and is left null."
-    }
+    },
+    "website": "https://www.emory.edu"
   },
   {
     "id": "washington-university-in-st-louis",
@@ -11666,7 +11782,8 @@
         "Institutional Website"
       ],
       "lastVerified": "September 2026; admit rate, GPA, and enrollment from WashU's Common Data Set 2024-2025 via CDS-aggregator summary; SAT range (1500-1570) reconstructed from published section-level 25th/75th EBRW and Math scores; application plan types and deadlines confirmed directly on admissions.washu.edu; net price calculator URL confirmed live on financialaid.washu.edu; Greek life % and on-campus % not found in an available public source and left null."
-    }
+    },
+    "website": "https://washu.edu"
   },
   {
     "id": "boston-university",
@@ -11775,7 +11892,8 @@
         "Institutional Website"
       ],
       "lastVerified": "September 2026; admit rate, SAT range, GPA, and enrollment from BU's Common Data Set via CDS-aggregator summary; application plan types and deadlines confirmed directly on bu.edu/admissions deadline pages; testing policy (test-optional through Fall 2028/Spring 2029 applicants) confirmed on bu.edu; net price calculator URL, Greek life %, and on-campus % not found in an available public source and left null."
-    }
+    },
+    "website": "https://www.bu.edu"
   },
   {
     "id": "tulane-university",
@@ -11886,7 +12004,8 @@
         "Institutional Website"
       ],
       "lastVerified": "September 2026; admit rate (overall 14.5%, ED admit rate 58.2% vs. 11.5% RD), GPA, class rank, and enrollment from Tulane's Common Data Set via CDS-aggregator summary; application plan types and exact deadlines confirmed directly on admission.tulane.edu; net price calculator URL, Greek life %, and undergraduate-wide on-campus % not found in an available public source and left null (a 97% first-year on-campus figure was found but is not the same metric as overall undergraduate housing %, so it was not substituted)."
-    }
+    },
+    "website": "https://tulane.edu"
   },
   {
     "id": "boston-college",
@@ -11995,7 +12114,8 @@
         "Institutional Website"
       ],
       "lastVerified": "September 2026; admit rate, SAT range, and enrollment from BC's Common Data Set via CDS-aggregator summary; application plan types and deadlines confirmed directly on bc.edu admission pages; testing policy confirmed on bc.edu; net price calculator URL, GPA average, Greek life %, and on-campus % not found in an available public source and left null."
-    }
+    },
+    "website": "https://www.bc.edu"
   },
   {
     "id": "university-of-miami",
@@ -12108,7 +12228,8 @@
         "Institutional Website"
       ],
       "lastVerified": "September 2026; admit rate, SAT range, GPA, and enrollment from UM's Common Data Set via CDS-aggregator summary; testing policy (test-required as of Fall 2026 applicants) and application plan types/deadlines confirmed directly on admissions.miami.edu; net price calculator URL, Greek life %, and on-campus % not found in an available public source and left null."
-    }
+    },
+    "website": "https://www.miami.edu"
   },
   {
     "id": "wake-forest-university",
@@ -12214,7 +12335,8 @@
         "Institutional Website"
       ],
       "lastVerified": "September 2026; admit rate, SAT range, class-rank data, and financial aid figures from Wake Forest's own admissions pages, cross-checked against a CDS-aggregator summary; note that the fillable 2024-2025 CDS PDF located on WFU's institutional research site was a blank template and could not be used directly; application plan types and deadlines (including the first-generation-only Early Action option) confirmed directly on admissions.wfu.edu; net price calculator URL, Greek life %, and on-campus % not found in an available public source and left null."
-    }
+    },
+    "website": "https://www.wfu.edu"
   },
   {
     "id": "villanova-university",
@@ -12328,7 +12450,8 @@
         "Institutional Website"
       ],
       "lastVerified": "September 2026; admit rate (overall 28.1%, ED admit rate ~59.8%, RD ~25.9%), GPA, class rank, and financial aid figures from Villanova's Common Data Set via CDS-aggregator summary; testing policy and plan types (ED, ED2, EA, RD) confirmed via institutional aggregator source, but exact application deadlines could not be confirmed on villanova.edu (which returned errors on repeated attempts) and are left null; net price calculator URL, Greek life %, and undergraduate-wide on-campus % not found in an available public source and left null (a 99% first-year on-campus figure was found but is not the same metric as overall undergraduate housing %, so it was not substituted)."
-    }
+    },
+    "website": "https://www.villanova.edu"
   },
   {
     "id": "university-of-georgia",
@@ -12433,7 +12556,8 @@
         "Institutional Website"
       ],
       "lastVerified": "September 2026; admit rate, SAT range, weighted GPA, and enrollment from UGA's Common Data Set via CDS-aggregator summary (in-state/out-of-state admit-rate split not separately reported and not substituted); testing policy (test-required, no test-optional pathway) and application plan types/deadlines confirmed directly on admissions.uga.edu; in-state/out-of-state cost of attendance from the same CDS source; net price calculator URL and Greek life/on-campus % not found in an available public source and left null."
-    }
+    },
+    "website": "https://www.uga.edu"
   },
   {
     "id": "syracuse-university",
@@ -12547,6 +12671,7 @@
         "Institutional Website"
       ],
       "lastVerified": "September 2026; admit rate, SAT range, GPA, and enrollment from Syracuse's Common Data Set via CDS-aggregator summary; testing policy and application plan types/deadlines confirmed directly on syracuse.edu admissions pages; net price calculator URL, Greek life %, and on-campus % not found in an available public source and left null."
-    }
+    },
+    "website": "https://www.syracuse.edu"
   }
 ]

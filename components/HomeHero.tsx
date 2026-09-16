@@ -5,7 +5,7 @@ export default function HomeHero() {
   return (
     <section className="overflow-hidden rounded-3xl bg-navy-900 px-6 py-8 text-white sm:px-12 sm:py-14">
       <div className="mx-auto max-w-2xl text-center xl:max-w-none">
-        <h1 className="text-4xl font-extrabold leading-tight tracking-tight sm:text-[52px]">
+        <h1 className="text-4xl font-extrabold leading-tight tracking-tight sm:text-[56px]">
           Find colleges you didn&apos;t know to look for.
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-sm text-slate-300 sm:text-base">

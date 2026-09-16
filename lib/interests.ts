@@ -15,22 +15,9 @@ export interface Interest {
  */
 export const INTEREST_TAXONOMY: Interest[] = [
   {
-    id: "data-science-business",
-    label: "Data Science + Business",
-    // Deliberately specific (named joint-degree phrases only, not bare "Data
-    // Science" or "Machine Learning") — this interest is a cross-disciplinary
-    // combination, and generic single-field tags would pull in schools whose
-    // CS department happens to mention "Machine Learning" with no business
-    // program involved at all.
-    keywords: [
-      "Business Analytics",
-      "Business Intelligence",
-      "Artificial Intelligence for Business",
-      "Management Information Systems",
-      "Business + Data Science",
-      "Statistics & Machine Learning",
-      "Statistics and Machine Learning",
-    ],
+    id: "data-science",
+    label: "Data Science",
+    keywords: ["Data Science", "Machine Learning", "Data Analytics"],
   },
   {
     id: "cs-ai",
@@ -46,7 +33,7 @@ export const INTEREST_TAXONOMY: Interest[] = [
   { id: "nursing", label: "Nursing", keywords: ["Nursing"] },
   {
     id: "business-finance",
-    label: "Business / Finance",
+    label: "Business",
     keywords: ["Business", "Finance", "Accounting", "Accountancy"],
   },
   { id: "psychology", label: "Psychology", keywords: ["Psychology"] },
@@ -86,13 +73,16 @@ export const INTEREST_TAXONOMY: Interest[] = [
 
 /** Shown by default on the homepage; the rest live behind "Show more". */
 export const DEFAULT_INTEREST_IDS = [
-  "data-science-business",
+  "data-science",
   "cs-ai",
   "engineering",
   "business-finance",
   "psychology",
   "premed-health",
 ];
+
+/** A student can explore up to this many interests at once. */
+export const MAX_SELECTED_INTERESTS = 3;
 
 export function getInterestById(id: string): Interest | undefined {
   return INTEREST_TAXONOMY.find((i) => i.id === id);
@@ -123,8 +113,45 @@ export function matchesInterest(college: College, interestId: string): boolean {
   });
 }
 
+/** True when the college independently satisfies every selected interest (not necessarily via the same program). */
+export function matchesAllInterests(college: College, interestIds: string[]): boolean {
+  return interestIds.length > 0 && interestIds.every((id) => matchesInterest(college, id));
+}
+
 function trimAttribution(entry: string): string {
   return entry.split(" — ")[0].split(" (")[0].trim();
+}
+
+/**
+ * Returns the single program/pathway entry that genuinely combines every
+ * selected interest at once (e.g. one entry mentioning both a Data Science
+ * and a Business keyword) — as opposed to the college merely offering each
+ * interest separately. Checks interdisciplinaryPathways first (usually a
+ * named joint-degree), then flagshipPrograms names. `null` if no single
+ * entry covers all of them — this is the common case for 2+ interests,
+ * since true joint/combined programs are rare, and essentially nonexistent
+ * for 3-way combinations.
+ */
+export function getCombinedProgramLabel(college: College, interestIds: string[]): string | null {
+  if (interestIds.length < 2) return null;
+  const interests = interestIds.map(getInterestById).filter((i): i is Interest => !!i);
+  if (interests.length !== interestIds.length) return null;
+
+  const pools = [
+    college.careerMajorTags.interdisciplinaryPathways.filter(isDegreePathway),
+    college.flagshipPrograms.map((p) => p.name),
+  ];
+  for (const pool of pools) {
+    const matches = pool.filter((entry) => {
+      const lower = entry.toLowerCase();
+      return interests.every((interest) => interest.keywords.some((kw) => lower.includes(kw.toLowerCase())));
+    });
+    if (matches.length > 0) {
+      const best = matches.reduce((a, b) => (b.length > a.length ? b : a));
+      return trimAttribution(best);
+    }
+  }
+  return null;
 }
 
 /**

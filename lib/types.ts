@@ -67,12 +67,29 @@ export interface DataProvenance {
   lastVerified: string | null;
 }
 
+/**
+ * Per-datapoint provenance, distinct from the whole-record `DataProvenance`
+ * above. Optional and currently unpopulated for every school — the dataset
+ * only tracks source/verification at the whole-record level today, not per
+ * field, so these should only ever be filled in from a specific, citable
+ * source for that exact figure. Never infer one from the record-level
+ * `dataProvenance.sourcedFrom` array, since a school reporting from multiple
+ * sources (e.g. CDS + Institutional Website) doesn't tell you which source
+ * backs which individual number.
+ */
+export interface FieldProvenance {
+  source?: string;
+  year?: string;
+}
+
 export interface College {
   id: string;
   name: string;
   system: CollegeSystem;
   rank: number;
   location: string;
+  /** Official homepage URL, checked against redirects/HTTP failures via scripts/check-college-websites.mjs. */
+  website: string | null;
   admitRateOverall: number;
   /** null when the school doesn't publicly report an admit rate split by residency. */
   inStateAdmitRate: number | null;
@@ -91,6 +108,14 @@ export interface College {
   campusFit: CampusFitAttributes;
   careerMajorTags: CareerMajorTags;
   dataProvenance: DataProvenance;
+  /** Source/year for admitRateOverall, inStateAdmitRate, outOfStateAdmitRate. Unpopulated until researched. */
+  admissionsProvenance?: FieldProvenance;
+  /** Source/year for mid50_GPA_Unweighted, mid50_GPA_UCCapped, mid50_SAT. Unpopulated until researched. */
+  gpaSatProvenance?: FieldProvenance;
+  /** Source/year for financials.coaInState / coaOutOfState. Unpopulated until researched. */
+  costProvenance?: FieldProvenance;
+  /** Source/year for careerOutcomes.placementRate / medianStartingSalary. Unpopulated until researched. */
+  outcomesProvenance?: FieldProvenance;
 }
 
 export type FitCategory = "Safety" | "Target" | "Reach" | "Unrated";
