@@ -1,4 +1,4 @@
-import type { College, FitCategory, FitResult } from "./types";
+import type { AdmitRateLean, College, FitResult, ResidencyContext } from "./types";
 
 export const MAX_CAPPED_HONORS_SEMESTERS = 8;
 
@@ -42,14 +42,48 @@ export function calculateUcCappedGpa({
   };
 }
 
+export type PlanningFor = "self" | "student";
+
+/**
+ * Swaps "your GPA" language for "your student's GPA" when a parent/guardian
+ * is planning for someone else. Kept as a lightweight text substitution
+ * (rather than threading an audience parameter through every reason string)
+ * since it only ever needs to adjust this one phrase.
+ */
+export function personalizeForAudience(text: string, planningFor: PlanningFor): string {
+  if (planningFor !== "student") return text;
+  return text.replace(/Your GPA/g, "Your student's GPA").replace(/your GPA/g, "your student's GPA");
+}
+
 export function parseGpaRange(range: string): { low: number; high: number } | null {
-  const match = range.match(/(\d+\.\d+)\s*-\s*(\d+\.\d+)/);
+  // Anchored to the start of the (trimmed) string so free-text fields that merely
+  // *mention* a dash-separated pair of numbers (e.g. an unrelated enrolled-student
+  // distribution note) aren't mistaken for an official mid-50% admitted range.
+  const match = range.trim().match(/^(\d+\.\d+)\s*-\s*(\d+\.\d+)\b/);
   if (!match) return null;
   return { low: parseFloat(match[1]), high: parseFloat(match[2]) };
 }
 
 function usesUcCappedMetric(college: College): boolean {
   return college.system === "UC" || college.system === "CSU";
+}
+
+/**
+ * Picks which admit rate to classify against. Prefers the residency-specific
+ * rate when the caller asked for one and the school actually reports it;
+ * otherwise falls back to the overall rate.
+ */
+function resolveAdmitRate(
+  college: College,
+  residency?: "in-state" | "out-of-state"
+): { rate: number; context: ResidencyContext } {
+  if (residency === "in-state" && college.inStateAdmitRate != null) {
+    return { rate: college.inStateAdmitRate, context: "in-state" };
+  }
+  if (residency === "out-of-state" && college.outOfStateAdmitRate != null) {
+    return { rate: college.outOfStateAdmitRate, context: "out-of-state" };
+  }
+  return { rate: college.admitRateOverall, context: "overall" };
 }
 
 /**
@@ -63,7 +97,7 @@ export function classifyFit(
   rangeLow: number,
   rangeHigh: number,
   admitRateOverall: number
-): { category: FitCategory; reason: string } {
+): { category: AdmitRateLean; reason: string } {
   // Sub-10% admit schools are lottery-like: never a true safety.
   if (admitRateOverall < 0.1) {
     if (studentGpa > rangeHigh) {
@@ -132,55 +166,61 @@ export function classifyFit(
  * merit-focused and holistic-review schools) — classify from admit rate alone
  * rather than silently dropping the school out of the Safety/Target/Reach view.
  */
-function classifyFitByAdmitRateOnly(admitRateOverall: number): { category: FitCategory; reason: string } {
-  if (admitRateOverall < 0.1) {
-    return {
-      category: "Reach",
-      reason:
-        "No GPA band is publicly reported for this school. Its sub-10% admit rate alone makes it a Reach for nearly everyone.",
-    };
+function classifyFitByAdmitRateOnly(admitRate: number): { category: AdmitRateLean; reason: string } {
+  if (admitRate < 0.1) {
+    return { category: "Reach", reason: "its sub-10% admit rate alone makes it a Reach for nearly everyone" };
   }
-  if (admitRateOverall < 0.4) {
-    return {
-      category: "Target",
-      reason: "No GPA band is publicly reported for this school, so it's classified as a Target based on admit rate alone.",
-    };
+  if (admitRate < 0.4) {
+    return { category: "Target", reason: "it would lean Target based on admit rate alone" };
   }
-  return {
-    category: "Safety",
-    reason: "No GPA band is publicly reported for this school, but its broad overall admit rate makes it a reasonable Safety based on admit rate alone.",
-  };
+  return { category: "Safety", reason: "its broad admit rate alone would lean Safety" };
 }
 
+/**
+ * Classifies a school as Safety / Target / Reach / Unrated.
+ *
+ * "Unrated" is returned whenever the school doesn't publish a GPA band for the
+ * relevant metric — a school is never silently placed into a real Safety/
+ * Target/Reach bucket from admit rate alone, since that conflates "no data"
+ * with "we compared your GPA and it's fine." The admit-rate-only lean is
+ * still surfaced (via `admitRateOnlyLean`) as a clearly-labeled rough signal.
+ *
+ * `residency`, when supplied, prefers the school's in-state/out-of-state rate
+ * over its blended overall rate wherever the school actually reports one.
+ */
 export function evaluateCollegeFit(
   college: College,
   ucCappedGpa: number,
-  unweightedGpa: number
+  unweightedGpa: number,
+  residency?: "in-state" | "out-of-state"
 ): FitResult | null {
   const useUcCapped = usesUcCappedMetric(college);
   const rangeStr = useUcCapped ? college.mid50_GPA_UCCapped : college.mid50_GPA_Unweighted;
   const parsed = parseGpaRange(rangeStr);
   const studentGpaUsed = useUcCapped ? ucCappedGpa : unweightedGpa;
+  const { rate: admitRate, context: residencyContext } = resolveAdmitRate(college, residency);
 
   if (!parsed) {
-    const { category, reason } = classifyFitByAdmitRateOnly(college.admitRateOverall);
+    const { category: lean, reason: leanReason } = classifyFitByAdmitRateOnly(admitRate);
+    const residencyNote =
+      residencyContext !== "overall"
+        ? ` Using the ${residencyContext} admit rate (${Math.round(admitRate * 100)}%) instead of the overall rate (${Math.round(college.admitRateOverall * 100)}%).`
+        : "";
     return {
       college,
-      category,
+      category: "Unrated",
       studentGpaUsed,
       gpaMetricLabel: "GPA band not reported",
       rangeLow: null,
       rangeHigh: null,
-      reason,
+      reason:
+        `This school doesn't publish a GPA range, so we can't compare your GPA to it directly. Based on ${leanReason} — but treat that as a rough signal, not a personalized estimate.${residencyNote}`,
+      admitRateOnlyLean: lean,
+      residencyContext,
     };
   }
 
-  const { category, reason } = classifyFit(
-    studentGpaUsed,
-    parsed.low,
-    parsed.high,
-    college.admitRateOverall
-  );
+  const { category, reason } = classifyFit(studentGpaUsed, parsed.low, parsed.high, admitRate);
 
   return {
     college,
@@ -190,5 +230,7 @@ export function evaluateCollegeFit(
     rangeLow: parsed.low,
     rangeHigh: parsed.high,
     reason,
+    admitRateOnlyLean: null,
+    residencyContext,
   };
 }

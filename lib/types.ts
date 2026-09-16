@@ -93,10 +93,16 @@ export interface College {
   dataProvenance: DataProvenance;
 }
 
-export type FitCategory = "Safety" | "Target" | "Reach";
+export type FitCategory = "Safety" | "Target" | "Reach" | "Unrated";
+
+/** A real Safety/Target/Reach lean — never "Unrated" itself. */
+export type AdmitRateLean = "Safety" | "Target" | "Reach";
+
+export type ResidencyContext = "in-state" | "out-of-state" | "overall";
 
 export interface FitResult {
   college: College;
+  /** "Unrated" when the school doesn't publish a GPA band — never a real Safety/Target/Reach placement without one. */
   category: FitCategory;
   studentGpaUsed: number;
   gpaMetricLabel: string;
@@ -104,9 +110,13 @@ export interface FitResult {
   rangeLow: number | null;
   rangeHigh: number | null;
   reason: string;
+  /** Set only when category is "Unrated" — the rough admit-rate-only lean, shown as an estimate, not a placement. */
+  admitRateOnlyLean: AdmitRateLean | null;
+  /** Which admit rate was actually used for classification. */
+  residencyContext: ResidencyContext;
 }
 
-export type Grade = 9 | 10 | 11;
+export type Grade = 9 | 10 | 11 | 12;
 
 export interface ChecklistItem {
   id: string;

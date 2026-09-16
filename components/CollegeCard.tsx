@@ -31,7 +31,7 @@ export default function CollegeCard({ college }: { college: College }) {
       <div className="mt-4 grid grid-cols-2 gap-3 border-t border-slate-100 pt-4 text-xs">
         <div>
           <div className="flex items-center gap-1 text-slate-400">
-            <TrendingUp className="h-3.5 w-3.5" /> Admit Rate
+            <TrendingUp className="h-3.5 w-3.5" /> Overall Admit Rate
           </div>
           <div className="mt-0.5 font-bold text-navy-900">
             {formatPercent(college.admitRateOverall)}{" "}

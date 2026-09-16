@@ -4,20 +4,13 @@ import { getCollegeById } from "@/lib/colleges";
 
 const EXAMPLE_ID = "cal-poly-san-luis-obispo";
 
-const SIGNALS = [
-  "Internship opportunities",
-  "Employment outcomes",
-  "Starting salaries",
-  "Top employers",
-  "Industries",
-  "Graduate-school pathways",
-];
+const SIGNALS = ["Job placement rate", "Median starting salary", "Companies that recruit on campus"];
 
 export default function CareerOutcomesStory() {
   const example = getCollegeById(EXAMPLE_ID);
 
   return (
-    <section className="py-4">
+    <section id="career-outcomes" className="py-4">
       <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
         <div>
           <h2 className="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-3xl">
@@ -25,7 +18,7 @@ export default function CareerOutcomesStory() {
           </h2>
           <p className="mt-4 text-sm text-slate-500 sm:text-base">
             CollegeScout surfaces what actually happens after graduation — wherever a school
-            reports it.
+            publicly reports it.
           </p>
           <ul className="mt-5 grid grid-cols-2 gap-x-4 gap-y-2">
             {SIGNALS.map((s) => (
@@ -46,6 +39,7 @@ export default function CareerOutcomesStory() {
               <Briefcase className="h-3.5 w-3.5" /> Real CollegeScout data
             </div>
             <h3 className="mt-2 text-lg font-bold text-navy-900">{example.name}</h3>
+            <p className="mt-0.5 text-[11px] text-slate-400">University-wide, as reported by the school</p>
             <div className="mt-4 grid grid-cols-2 gap-4">
               <div>
                 <div className="text-xs font-semibold uppercase tracking-wide text-slate-400">

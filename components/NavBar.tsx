@@ -7,7 +7,7 @@ import { Compass, GraduationCap, LayoutList, Menu, ScanSearch, X } from "lucide-
 import clsx from "clsx";
 
 const NAV_LINKS = [
-  { href: "/directory", label: "College Directory", icon: ScanSearch },
+  { href: "/directory", label: "Explore Colleges", icon: ScanSearch },
   { href: "/matcher", label: "Find My Fit", icon: GraduationCap },
   { href: "/checklist", label: "My Plan", icon: LayoutList },
 ];

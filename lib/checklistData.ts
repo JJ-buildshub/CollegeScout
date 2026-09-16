@@ -4,12 +4,14 @@ export const GRADE_LABELS: Record<Grade, string> = {
   9: "9th Grade — Freshman",
   10: "10th Grade — Sophomore",
   11: "11th Grade — Junior",
+  12: "12th Grade — Senior",
 };
 
 export const GRADE_TAGLINES: Record<Grade, string> = {
   9: "Build strong habits and explore widely. Nothing here counts toward UC GPA yet, but the transcript starts now.",
   10: "This is where the UC-capped GPA clock starts. Course rigor and consistency matter more than exploration.",
   11: "The most heavily weighted year for admissions. Testing, rigor, and early research all converge here.",
+  12: "Execution year: submit strong applications, finish strong academically, and choose confidently once decisions arrive.",
 };
 
 export const checklistData: Record<Grade, ChecklistCategory[]> = {
@@ -160,7 +162,6 @@ export const checklistData: Record<Grade, ChecklistCategory[]> = {
         { id: "11-r2", label: "Visit or virtually tour every school on your finalized list" },
         { id: "11-r3", label: "Draft your Common App / UC Personal Insight Question essays over the summer" },
         { id: "11-r4", label: "Request letters of recommendation before the school year ends" },
-        { id: "11-r5", label: "Note every application deadline (EA/ED/RD) for your college list" },
       ],
     },
     {
@@ -171,6 +172,61 @@ export const checklistData: Record<Grade, ChecklistCategory[]> = {
         { id: "11-f1", label: "Run the Net Price Calculator for each school on your list" },
         { id: "11-f2", label: "Research merit scholarships specific to your target schools" },
         { id: "11-f3", label: "Prepare financial documents needed for FAFSA/CSS Profile ahead of senior fall" },
+      ],
+    },
+  ],
+  12: [
+    {
+      id: "academics",
+      title: "Academics & Coursework",
+      icon: "book-open",
+      items: [
+        { id: "12-a1", label: "Maintain your grades — many colleges rescind offers for a significant senior-year drop" },
+        { id: "12-a2", label: "Send first-semester/mid-year transcript updates if a school requests them" },
+        { id: "12-a3", label: "Finish any remaining graduation and A-G course requirements" },
+      ],
+    },
+    {
+      id: "applications",
+      title: "Applications & Essays",
+      icon: "pencil-line",
+      items: [
+        { id: "12-p1", label: "Confirm every application deadline (EA/ED/RD) is met" },
+        { id: "12-p2", label: "Finalize and proofread every supplemental essay before submitting" },
+        { id: "12-p3", label: "Submit any remaining SAT/ACT scores for test-required or test-optional consideration" },
+        { id: "12-p4", label: "Confirm recommendation letters were submitted before each deadline" },
+      ],
+    },
+    {
+      id: "financial",
+      title: "Financial Aid & Scholarships",
+      icon: "piggy-bank",
+      items: [
+        { id: "12-f1", label: "Submit the FAFSA and/or CSS Profile as soon as they open" },
+        { id: "12-f2", label: "Apply to outside and local scholarships on a rolling basis" },
+        { id: "12-f3", label: "Compare financial aid award letters side-by-side once they arrive" },
+        { id: "12-f4", label: "Re-run the Net Price Calculator for any school whose aid offer is unclear" },
+      ],
+    },
+    {
+      id: "decisions",
+      title: "Decisions & Enrollment",
+      icon: "users",
+      items: [
+        { id: "12-d1", label: "Compare admitted schools on cost, fit, and career outcomes — not just prestige" },
+        { id: "12-d2", label: "Submit your enrollment deposit before May 1 for regular-decision schools" },
+        { id: "12-d3", label: "Decline offers you won't use so waitlisted students can move up" },
+        { id: "12-d4", label: "If waitlisted, follow that school's specific waitlist instructions" },
+      ],
+    },
+    {
+      id: "afterDecision",
+      title: "Life After Decision",
+      icon: "compass",
+      items: [
+        { id: "12-l1", label: "Complete housing forms for your enrolling school" },
+        { id: "12-l2", label: "Sign up for orientation and any required placement testing" },
+        { id: "12-l3", label: "Request final transcripts be sent after graduation" },
       ],
     },
   ],

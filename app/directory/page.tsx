@@ -1,10 +1,12 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Search, SlidersHorizontal, X } from "lucide-react";
 import clsx from "clsx";
 import { colleges } from "@/lib/colleges";
 import type { CollegeSystem, TestingPolicy } from "@/lib/types";
+import { getInterestById, matchesInterest } from "@/lib/interests";
 import CollegeCard from "@/components/CollegeCard";
 
 const SYSTEM_OPTIONS: CollegeSystem[] = ["UC", "CSU", "Private", "Out-of-State Public"];
@@ -35,13 +37,33 @@ function matchesBucket(rate: number, bucket: AdmitBucket): boolean {
   }
 }
 
-export default function DirectoryPage() {
+function DirectoryContent() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
   const [query, setQuery] = useState("");
   const [systems, setSystems] = useState<Set<CollegeSystem>>(new Set());
   const [testingPolicies, setTestingPolicies] = useState<Set<TestingPolicy>>(new Set());
   const [admitBucket, setAdmitBucket] = useState<AdmitBucket>("any");
   const [filtersOpen, setFiltersOpen] = useState(false);
-  const [sortBy, setSortBy] = useState<"rank" | "admitRateOverall" | "name">("rank");
+  const [sortBy, setSortBy] = useState<"rank" | "admitRateOverall" | "name" | "cost">("rank");
+  const [interestId, setInterestId] = useState<string | null>(() => searchParams.get("interest"));
+
+  // Keep the URL in sync so an interest-filtered view stays bookmarkable/shareable.
+  useEffect(() => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (interestId) {
+      params.set("interest", interestId);
+    } else {
+      params.delete("interest");
+    }
+    const nextQuery = params.toString();
+    router.replace(nextQuery ? `${pathname}?${nextQuery}` : pathname, { scroll: false });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [interestId]);
+
+  const interest = interestId ? getInterestById(interestId) : undefined;
 
   const toggleSystem = (system: CollegeSystem) => {
     setSystems((prev) => {
@@ -76,14 +98,20 @@ export default function DirectoryPage() {
         if (systems.size > 0 && !systems.has(c.system)) return false;
         if (testingPolicies.size > 0 && !testingPolicies.has(c.testingPolicy)) return false;
         if (!matchesBucket(c.admitRateOverall, admitBucket)) return false;
+        if (interestId && !matchesInterest(c, interestId)) return false;
         return true;
       })
       .sort((a, b) => {
         if (sortBy === "name") return a.name.localeCompare(b.name);
         if (sortBy === "admitRateOverall") return a.admitRateOverall - b.admitRateOverall;
+        if (sortBy === "cost") {
+          const costA = a.financials.coaInState ?? a.financials.coaOutOfState ?? Infinity;
+          const costB = b.financials.coaInState ?? b.financials.coaOutOfState ?? Infinity;
+          return costA - costB;
+        }
         return a.rank - b.rank;
       });
-  }, [query, systems, testingPolicies, admitBucket, sortBy]);
+  }, [query, systems, testingPolicies, admitBucket, sortBy, interestId]);
 
   return (
     <div className="space-y-6">
@@ -95,6 +123,22 @@ export default function DirectoryPage() {
           Search and filter {colleges.length} benchmark schools by system, testing policy, and admit rate.
         </p>
       </div>
+
+      {interest && (
+        <div className="flex items-center gap-2">
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-gold-300 bg-gold-50 px-3 py-1.5 text-xs font-semibold text-navy-900">
+            Interest: {interest.label}
+            <button
+              type="button"
+              onClick={() => setInterestId(null)}
+              aria-label="Remove interest filter"
+              className="rounded-full p-0.5 hover:bg-gold-100"
+            >
+              <X className="h-3 w-3" />
+            </button>
+          </span>
+        </div>
+      )}
 
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
         <div className="relative flex-1">
@@ -130,6 +174,7 @@ export default function DirectoryPage() {
         >
           <option value="rank">Sort: National Rank</option>
           <option value="admitRateOverall">Sort: Admit Rate</option>
+          <option value="cost">Sort: Cost (low to high)</option>
           <option value="name">Sort: Name (A-Z)</option>
         </select>
       </div>
@@ -225,5 +270,13 @@ export default function DirectoryPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function DirectoryPage() {
+  return (
+    <Suspense fallback={null}>
+      <DirectoryContent />
+    </Suspense>
   );
 }

@@ -33,8 +33,12 @@ export default function WhyCollegeScout() {
     <section className="rounded-3xl bg-slate-50 px-6 py-14 sm:px-12 sm:py-16">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-3xl">
-          College decisions are bigger than rankings.
+          A college is more than its ranking.
         </h2>
+        <p className="mt-2 text-sm text-slate-500">
+          CollegeScout looks at the things that actually shape your college experience and what
+          comes after it.
+        </p>
       </div>
 
       <div className="mx-auto mt-10 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-5">

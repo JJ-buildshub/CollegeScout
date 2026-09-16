@@ -8,7 +8,7 @@ import { calculateUcCappedGpa, evaluateCollegeFit, type GpaInputs } from "@/lib/
 import { checklistData } from "@/lib/checklistData";
 import { readSavedIds } from "@/lib/useSavedColleges";
 
-export default function JourneySteps() {
+export default function JourneySteps({ compact = false }: { compact?: boolean }) {
   const [mounted, setMounted] = useState(false);
   const [savedCount, setSavedCount] = useState(0);
   const [hasGpaInputs, setHasGpaInputs] = useState(false);
@@ -46,7 +46,7 @@ export default function JourneySteps() {
     try {
       const rawChecklist = localStorage.getItem("pathfinder-admit:checklist-progress");
       const progress = rawChecklist ? JSON.parse(rawChecklist) : {};
-      const allIds = ([9, 10, 11] as const).flatMap((g) =>
+      const allIds = ([9, 10, 11, 12] as const).flatMap((g) =>
         checklistData[g].flatMap((c) => c.items.map((i) => i.id))
       );
       setChecklistTotal(allIds.length);
@@ -96,6 +96,32 @@ export default function JourneySteps() {
       href: "/checklist",
     },
   ];
+
+  if (compact) {
+    return (
+      <section className="py-2">
+        <h2 className="text-xs font-bold uppercase tracking-wide text-slate-400">How CollegeScout Works</h2>
+        <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {steps.map((step, i) => (
+            <Link
+              key={step.title}
+              href={step.href}
+              className="group flex items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 transition-colors hover:border-slate-300"
+            >
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-navy-900 text-[10px] font-bold text-gold-400">
+                {i + 1}
+              </span>
+              <step.icon className="h-4 w-4 shrink-0 text-navy-900" />
+              <div className="min-w-0">
+                <div className="truncate text-sm font-bold text-navy-900">{step.hook}</div>
+                <div className="truncate text-xs font-semibold text-gold-600">{step.detail}</div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="py-4">

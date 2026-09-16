@@ -8,7 +8,7 @@ import type { Grade } from "@/lib/types";
 import ChecklistIcon from "@/components/ChecklistIcon";
 import ProgressBar from "@/components/ProgressBar";
 
-const GRADES: Grade[] = [9, 10, 11];
+const GRADES: Grade[] = [9, 10, 11, 12];
 const STORAGE_KEY = "pathfinder-admit:checklist-progress";
 
 type ProgressState = Record<string, boolean>;

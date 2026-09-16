@@ -2,11 +2,18 @@ import Link from "next/link";
 import { MapPin } from "lucide-react";
 import type { FitResult } from "@/lib/types";
 import { formatPercent } from "@/lib/colleges";
+import { personalizeForAudience, type PlanningFor } from "@/lib/gpa";
 import SystemBadge from "./SystemBadge";
 import SaveToggleButton from "./SaveToggleButton";
 
-export default function FitCollegeCard({ result }: { result: FitResult }) {
-  const { college, studentGpaUsed, gpaMetricLabel, rangeLow, rangeHigh, reason } = result;
+export default function FitCollegeCard({
+  result,
+  planningFor = "self",
+}: {
+  result: FitResult;
+  planningFor?: PlanningFor;
+}) {
+  const { college, studentGpaUsed, gpaMetricLabel, rangeLow, rangeHigh, reason, admitRateOnlyLean } = result;
   const hasRange = rangeLow !== null && rangeHigh !== null;
 
   const span = hasRange ? Math.max(rangeHigh - rangeLow, 0.01) : 0;
@@ -31,7 +38,7 @@ export default function FitCollegeCard({ result }: { result: FitResult }) {
         <div className="flex flex-col items-end gap-1.5">
           <SaveToggleButton collegeId={college.id} />
           <div className="whitespace-nowrap text-right text-xs font-semibold text-slate-400">
-            {formatPercent(college.admitRateOverall)} admit
+            {formatPercent(college.admitRateOverall)} overall admit
           </div>
         </div>
       </div>
@@ -40,7 +47,8 @@ export default function FitCollegeCard({ result }: { result: FitResult }) {
         <div className="flex justify-between text-[11px] font-medium text-slate-400">
           <span>{gpaMetricLabel}</span>
           <span>
-            You: <span className="font-bold text-navy-900">{studentGpaUsed.toFixed(2)}</span>
+            {planningFor === "student" ? "Your student:" : "You:"}{" "}
+            <span className="font-bold text-navy-900">{studentGpaUsed.toFixed(2)}</span>
           </span>
         </div>
         {hasRange ? (
@@ -62,13 +70,22 @@ export default function FitCollegeCard({ result }: { result: FitResult }) {
             </div>
           </>
         ) : (
-          <div className="mt-1.5 rounded-lg bg-slate-50 px-2.5 py-1.5 text-[10px] font-medium text-slate-400">
-            GPA band not publicly reported &mdash; classified by admit rate instead
+          <div className="mt-1.5 space-y-1.5">
+            <div className="rounded-lg bg-slate-50 px-2.5 py-1.5 text-[10px] font-medium text-slate-400">
+              GPA band not publicly reported &mdash; here&apos;s what admit rate alone suggests
+            </div>
+            {admitRateOnlyLean && (
+              <div className="inline-flex items-center gap-1 rounded-full border border-dashed border-slate-300 bg-white px-2 py-0.5 text-[10px] font-semibold text-slate-500">
+                Rough lean: {admitRateOnlyLean}
+              </div>
+            )}
           </div>
         )}
       </div>
 
-      <p className="mt-3 text-xs leading-snug text-slate-500">{reason}</p>
+      <p className="mt-3 text-xs leading-snug text-slate-500">
+        {personalizeForAudience(reason, planningFor)}
+      </p>
     </Link>
   );
 }
