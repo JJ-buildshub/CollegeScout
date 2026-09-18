@@ -131,6 +131,55 @@ export interface College {
   costProvenance?: FieldProvenance;
   /** Source/year for careerOutcomes.placementRate / medianStartingSalary. Unpopulated until researched. */
   outcomesProvenance?: FieldProvenance;
+  /**
+   * College Scorecard's IPEDS unit ID for this school — the crosswalk key
+   * used by scripts/import-scorecard.mjs to re-fetch `scorecard` data without
+   * re-matching by name/state each time. Only set once a match was confident
+   * enough to record (see QUESTIONS.md for schools that couldn't be matched).
+   */
+  ipedsUnitId?: number | null;
+  /**
+   * Data pulled from the College Scorecard API, kept entirely separate from
+   * the hand-curated fields above so an import can never silently overwrite
+   * curated data (see scripts/import-scorecard.mjs). Each metric carries its
+   * own value/provenance pair rather than sharing one record-level source,
+   * since fields are fetched independently and can come from different
+   * reporting years. `null` value means Scorecard didn't report it for this
+   * school; a missing `scorecard` object entirely means no confident IPEDS
+   * match was found.
+   */
+  scorecard?: ScorecardData;
+}
+
+/** One imported value paired with where/when it came from — `null` provenance means the value itself is also null (never reported). */
+export interface ScorecardMetric {
+  value: number | null;
+  provenance: FieldProvenance | null;
+}
+
+/** Same pairing as ScorecardMetric, but for net price broken out by family income band (Scorecard reports this as a small set of bands, not a continuous figure). */
+export interface ScorecardIncomeBandMetric {
+  /** Keyed by Scorecard's own income-band strings, e.g. "0-30000", "110001-plus". */
+  value: Record<string, number> | null;
+  provenance: FieldProvenance | null;
+}
+
+export interface ScorecardData {
+  netPriceOverall: ScorecardMetric;
+  netPriceByIncomeBand: ScorecardIncomeBandMetric;
+  /** 6-year completion rate (150% of normal time) — the standard "graduation rate" figure Scorecard/IPEDS report for 4-year institutions. */
+  graduationRate: ScorecardMetric;
+  undergradEnrollment: ScorecardMetric;
+  /**
+   * Tuition only, not full cost of attendance — Scorecard doesn't publish
+   * room/board/etc. split by residency, only tuition. Don't compare directly
+   * against `financials.coaInState`/`coaOutOfState`, which include the rest
+   * of COA; see REPORT.md.
+   */
+  tuitionInState: ScorecardMetric;
+  tuitionOutOfState: ScorecardMetric;
+  /** Cross-check reference only — never fed into Matcher fit logic (lib/gpa.ts uses the hand-curated admitRateOverall/inStateAdmitRate/outOfStateAdmitRate above). */
+  admitRateOverall: ScorecardMetric;
 }
 
 export type FitCategory = "Safety" | "Target" | "Reach" | "Unrated";
