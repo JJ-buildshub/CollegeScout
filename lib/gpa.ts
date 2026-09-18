@@ -73,18 +73,28 @@ function usesUcCappedMetric(college: College): boolean {
 }
 
 /**
- * Picks which admit rate to classify against. Prefers the residency-specific
- * rate when the caller asked for one and the school actually reports it;
- * otherwise falls back to the overall rate.
+ * Picks which admit rate to classify against. `residency`, when explicitly
+ * chosen by the student, always wins (a same-session override — someone
+ * relocating, attending school out of state, or otherwise not represented
+ * by their stored home state). Otherwise, if a home state is known, it's
+ * derived per school by comparing to `college.state` — this is why home
+ * state is stored as a plain state code rather than a single in-state/
+ * out-of-state flag: a California student is in-state for a UC campus and
+ * out-of-state for UT Austin at the same time, which a single global choice
+ * could never represent correctly. Falls back to the overall rate when
+ * neither is available, or when the school doesn't report the split.
  */
 function resolveAdmitRate(
   college: College,
-  residency?: "in-state" | "out-of-state"
+  residency?: "in-state" | "out-of-state",
+  homeState?: string | null
 ): { rate: number; context: ResidencyContext } {
-  if (residency === "in-state" && college.inStateAdmitRate != null) {
+  const effectiveResidency =
+    residency ?? (homeState ? (college.state === homeState ? "in-state" : "out-of-state") : undefined);
+  if (effectiveResidency === "in-state" && college.inStateAdmitRate != null) {
     return { rate: college.inStateAdmitRate, context: "in-state" };
   }
-  if (residency === "out-of-state" && college.outOfStateAdmitRate != null) {
+  if (effectiveResidency === "out-of-state" && college.outOfStateAdmitRate != null) {
     return { rate: college.outOfStateAdmitRate, context: "out-of-state" };
   }
   return { rate: college.admitRateOverall, context: "overall" };
@@ -143,7 +153,7 @@ export function classifyFit(
   if (admitRateOverall < 0.25) {
     return {
       category: "Target",
-      reason: "Your GPA is above the typical range, but low overall admit rate keeps this a Target, not a Safety.",
+      reason: "Your GPA is above the typical range, but low overall admit rate keeps this a Target for you, not Likely for you.",
     };
   }
   if (admitRateOverall < 0.5) {
@@ -175,9 +185,9 @@ function classifyFitByAdmitRateOnly(admitRate: number): { category: AdmitRateLea
     return { category: "Reach", reason: "its sub-10% admit rate alone makes it a Reach for nearly everyone" };
   }
   if (admitRate < 0.4) {
-    return { category: "Target", reason: "it would lean Target based on admit rate alone" };
+    return { category: "Target", reason: "it would lean Target for you based on admit rate alone" };
   }
-  return { category: "Safety", reason: "its broad admit rate alone would lean Safety" };
+  return { category: "Safety", reason: "its broad admit rate alone would lean Likely for you" };
 }
 
 /**
@@ -189,20 +199,24 @@ function classifyFitByAdmitRateOnly(admitRate: number): { category: AdmitRateLea
  * with "we compared your GPA and it's fine." The admit-rate-only lean is
  * still surfaced (via `admitRateOnlyLean`) as a clearly-labeled rough signal.
  *
- * `residency`, when supplied, prefers the school's in-state/out-of-state rate
- * over its blended overall rate wherever the school actually reports one.
+ * `residency`, when supplied, is a manual override that always wins. Absent
+ * that, `homeState` (a plain state code, not a residency flag — see
+ * `resolveAdmitRate`) derives the right in-state/out-of-state rate per
+ * school automatically. Either can be omitted; both default to the overall
+ * rate.
  */
 export function evaluateCollegeFit(
   college: College,
   ucCappedGpa: number,
   unweightedGpa: number,
-  residency?: "in-state" | "out-of-state"
+  residency?: "in-state" | "out-of-state",
+  homeState?: string | null
 ): FitResult | null {
   const useUcCapped = usesUcCappedMetric(college);
   const rangeStr = useUcCapped ? college.mid50_GPA_UCCapped : college.mid50_GPA_Unweighted;
   const parsed = parseGpaRange(rangeStr);
   const studentGpaUsed = useUcCapped ? ucCappedGpa : unweightedGpa;
-  const { rate: admitRate, context: residencyContext } = resolveAdmitRate(college, residency);
+  const { rate: admitRate, context: residencyContext } = resolveAdmitRate(college, residency, homeState);
 
   if (!parsed) {
     const { category: lean, reason: leanReason } = classifyFitByAdmitRateOnly(admitRate);

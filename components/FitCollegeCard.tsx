@@ -6,6 +6,15 @@ import { personalizeForAudience, type PlanningFor } from "@/lib/gpa";
 import SystemBadge from "./SystemBadge";
 import SaveToggleButton from "./SaveToggleButton";
 
+// Display-only mapping for the raw AdmitRateLean value — "Safety" reads as a
+// certainty the data can't support, so the shown word differs from the
+// internal category (see BUCKET_META in app/matcher/page.tsx for the same mapping).
+const LEAN_LABEL: Record<"Safety" | "Target" | "Reach", string> = {
+  Safety: "Likely",
+  Target: "Target",
+  Reach: "Reach",
+};
+
 export default function FitCollegeCard({
   result,
   planningFor = "self",
@@ -76,7 +85,7 @@ export default function FitCollegeCard({
             </div>
             {admitRateOnlyLean && (
               <div className="inline-flex items-center gap-1 rounded-full border border-dashed border-slate-300 bg-white px-2 py-0.5 text-[10px] font-semibold text-slate-500">
-                Rough lean: {admitRateOnlyLean}
+                Rough lean: {LEAN_LABEL[admitRateOnlyLean]}
               </div>
             )}
           </div>

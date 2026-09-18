@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { HelpCircle, Rocket, Shield, Target } from "lucide-react";
 import { colleges } from "@/lib/colleges";
 import { calculateUcCappedGpa, evaluateCollegeFit, personalizeForAudience, type GpaInputs, type PlanningFor } from "@/lib/gpa";
+import { US_STATES, stateName } from "@/lib/states";
 import type { FitCategory, FitResult } from "@/lib/types";
 import GpaCalculatorForm from "@/components/GpaCalculatorForm";
 import FitCollegeCard from "@/components/FitCollegeCard";
@@ -12,6 +13,7 @@ import AcademicCalibrator from "@/components/AcademicCalibrator";
 const STORAGE_KEY = "pathfinder-admit:gpa-inputs";
 const RESIDENCY_STORAGE_KEY = "pathfinder-admit:residency";
 const PLANNING_FOR_STORAGE_KEY = "pathfinder-admit:planning-for";
+const HOME_STATE_STORAGE_KEY = "pathfinder-admit:home-state";
 
 type ResidencyChoice = "unknown" | "in-state" | "out-of-state";
 
@@ -39,23 +41,31 @@ const DEFAULT_INPUTS: GpaInputs = {
   honorsSemesters: 6,
 };
 
-const BUCKET_META: Record<FitCategory, { icon: typeof Shield; description: string; accent: string }> = {
+// Display labels only — the underlying FitCategory values ("Safety"/"Target"/
+// "Reach"/"Unrated") stay as-is since lib/gpa.ts's classification logic keys
+// off them; "Safety" reads as a certainty the data can't support (a 45%-admit
+// school isn't a safety for every student), so only what's shown changes.
+const BUCKET_META: Record<FitCategory, { label: string; icon: typeof Shield; description: string; accent: string }> = {
   Safety: {
+    label: "Likely for You",
     icon: Shield,
     description: "Schools where your GPA clearly exceeds the typical admitted range, at a broad enough admit rate that admission would be unlikely to surprise you.",
     accent: "border-emerald-200 bg-emerald-50/50",
   },
   Target: {
+    label: "Target for You",
     icon: Target,
     description: "Schools where your GPA fits the typical admitted range, or where a low admit rate still keeps admission realistically competitive.",
     accent: "border-amber-200 bg-amber-50/50",
   },
   Reach: {
+    label: "Reach for You",
     icon: Rocket,
     description: "Schools where your GPA is below range, or where a low admit rate makes admission uncertain regardless of GPA.",
     accent: "border-rose-200 bg-rose-50/50",
   },
   Unrated: {
+    label: "Unrated",
     icon: HelpCircle,
     description: "Schools that don't publish a GPA range. We can't directly compare your GPA here — each card shows our best admit-rate-only estimate instead.",
     accent: "border-slate-200 bg-slate-50/50",
@@ -66,6 +76,8 @@ export default function MatcherPage() {
   const [inputs, setInputs] = useState<GpaInputs>(DEFAULT_INPUTS);
   const [residency, setResidency] = useState<ResidencyChoice>("unknown");
   const [planningFor, setPlanningFor] = useState<PlanningFor>("self");
+  const [homeState, setHomeState] = useState<string | null>(null);
+  const [showResidencyOverride, setShowResidencyOverride] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -80,6 +92,8 @@ export default function MatcherPage() {
       if (savedPlanningFor === "self" || savedPlanningFor === "student") {
         setPlanningFor(savedPlanningFor);
       }
+      const savedHomeState = localStorage.getItem(HOME_STATE_STORAGE_KEY);
+      if (savedHomeState) setHomeState(savedHomeState);
     } catch {
       // ignore malformed/unavailable storage
     }
@@ -92,22 +106,39 @@ export default function MatcherPage() {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(inputs));
       localStorage.setItem(RESIDENCY_STORAGE_KEY, residency);
       localStorage.setItem(PLANNING_FOR_STORAGE_KEY, planningFor);
+      if (homeState) localStorage.setItem(HOME_STATE_STORAGE_KEY, homeState);
+      else localStorage.removeItem(HOME_STATE_STORAGE_KEY);
     } catch {
       // ignore unavailable storage
     }
-  }, [inputs, residency, planningFor, loaded]);
+  }, [inputs, residency, planningFor, homeState, loaded]);
 
   const gpaResult = useMemo(() => calculateUcCappedGpa(inputs), [inputs]);
 
   const fitResults = useMemo(() => {
+    // The manual override always wins when set; otherwise home state derives
+    // in-state/out-of-state per school automatically (see resolveAdmitRate in
+    // lib/gpa.ts). If neither is set, every school uses its overall rate —
+    // identical to today's behavior with nothing configured.
     const residencyArg = residency === "unknown" ? undefined : residency;
     const results: FitResult[] = [];
     for (const college of colleges) {
-      const fit = evaluateCollegeFit(college, gpaResult.ucCappedGpa, inputs.unweightedGpa, residencyArg);
+      const fit = evaluateCollegeFit(college, gpaResult.ucCappedGpa, inputs.unweightedGpa, residencyArg, homeState);
       if (fit) results.push(fit);
     }
     return results;
-  }, [gpaResult, inputs.unweightedGpa, residency]);
+  }, [gpaResult, inputs.unweightedGpa, residency, homeState]);
+
+  const residencyStatusText =
+    residency === "in-state"
+      ? "Using your manually-set in-state residency for every school."
+      : residency === "out-of-state"
+        ? "Using your manually-set out-of-state residency for every school."
+        : homeState
+          ? `Using your ${stateName(homeState) ?? homeState} residency — in-state rates for ${
+              stateName(homeState) ?? homeState
+            } schools, out-of-state elsewhere.`
+          : "Showing overall admit rates for every school.";
 
   const buckets: Record<FitCategory, FitResult[]> = {
     Safety: fitResults.filter((r) => r.category === "Safety").sort(sortByFitThenName),
@@ -128,57 +159,58 @@ export default function MatcherPage() {
         </p>
       </div>
 
-      <div className="flex flex-wrap items-center gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-card">
-        <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-          Who are you planning for?
-        </span>
-        <div className="flex gap-2">
-          {(["self", "student"] as PlanningFor[]).map((choice) => (
-            <button
-              key={choice}
-              type="button"
-              onClick={() => setPlanningFor(choice)}
-              className={`rounded-full px-3 py-1.5 text-xs font-semibold transition-colors ${
-                planningFor === choice
-                  ? "bg-navy-900 text-white"
-                  : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-              }`}
-            >
-              {choice === "self" ? "Myself" : "My student"}
-            </button>
-          ))}
+      <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-card">
+        <div className="flex flex-wrap items-center gap-3">
+          <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+            Step 1 &middot; Who are you planning for?
+          </span>
+          <div className="flex gap-2">
+            {(["self", "student"] as PlanningFor[]).map((choice) => (
+              <button
+                key={choice}
+                type="button"
+                onClick={() => setPlanningFor(choice)}
+                className={`rounded-full px-3 py-1.5 text-xs font-semibold transition-colors ${
+                  planningFor === choice
+                    ? "bg-navy-900 text-white"
+                    : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                }`}
+              >
+                {choice === "self" ? "Myself" : "My student"}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="mt-3 flex flex-wrap items-center gap-3 border-t border-slate-100 pt-3">
+          <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+            Step 2 &middot; What state do you live in?
+          </span>
+          <select
+            value={homeState ?? ""}
+            onChange={(e) => {
+              // A manual residency override is calibrated to the previous
+              // home state (or no state); it must not silently carry over
+              // and win against a newly-picked state's derived per-school
+              // residency (see resolveAdmitRate in lib/gpa.ts).
+              setHomeState(e.target.value || null);
+              setResidency("unknown");
+              setShowResidencyOverride(false);
+            }}
+            className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 outline-none focus:ring-2 focus:ring-gold-500"
+          >
+            <option value="">Skip &mdash; use overall admit rates</option>
+            {US_STATES.map((s) => (
+              <option key={s.code} value={s.code}>
+                {s.name}
+              </option>
+            ))}
+          </select>
         </div>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-[380px_1fr]">
         <div className="space-y-4 lg:sticky lg:top-20 lg:self-start">
           <GpaCalculatorForm inputs={inputs} onChange={setInputs} />
-
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-card">
-            <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-              Residency (optional)
-            </div>
-            <p className="mt-1 text-xs text-slate-500">
-              Some public schools admit in-state and out-of-state applicants at very different
-              rates. Tell us yours for a more accurate estimate wherever a school reports it.
-            </p>
-            <div className="mt-3 flex gap-2">
-              {(["unknown", "in-state", "out-of-state"] as ResidencyChoice[]).map((choice) => (
-                <button
-                  key={choice}
-                  type="button"
-                  onClick={() => setResidency(choice)}
-                  className={`flex-1 rounded-lg px-2 py-1.5 text-xs font-semibold transition-colors ${
-                    residency === choice
-                      ? "bg-navy-900 text-white"
-                      : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                  }`}
-                >
-                  {choice === "unknown" ? "Not sure" : choice === "in-state" ? "In-state" : "Out-of-state"}
-                </button>
-              ))}
-            </div>
-          </div>
 
           <div className="rounded-2xl bg-navy-900 p-6 text-white shadow-card">
             <div className="text-xs font-semibold uppercase tracking-wide text-slate-300">
@@ -214,14 +246,45 @@ export default function MatcherPage() {
         </div>
 
         <div className="space-y-8">
+          <div>
+            <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400">
+              <span>{residencyStatusText}</span>
+              <button
+                type="button"
+                onClick={() => setShowResidencyOverride((v) => !v)}
+                className="font-semibold text-navy-900 underline underline-offset-2 hover:text-navy-700"
+              >
+                Change
+              </button>
+            </div>
+            {showResidencyOverride && (
+              <div className="mt-2 flex max-w-xs gap-2">
+                {(["unknown", "in-state", "out-of-state"] as ResidencyChoice[]).map((choice) => (
+                  <button
+                    key={choice}
+                    type="button"
+                    onClick={() => setResidency(choice)}
+                    className={`flex-1 rounded-lg px-2 py-1.5 text-xs font-semibold transition-colors ${
+                      residency === choice
+                        ? "bg-navy-900 text-white"
+                        : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                    }`}
+                  >
+                    {choice === "unknown" ? "Use default" : choice === "in-state" ? "In-state" : "Out-of-state"}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
           {(["Reach", "Target", "Safety", "Unrated"] as FitCategory[]).map((category) => {
-            const { icon: Icon, description, accent } = BUCKET_META[category];
+            const { label, icon: Icon, description, accent } = BUCKET_META[category];
             const results = buckets[category];
             return (
               <section key={category} className={`rounded-2xl border p-5 ${accent}`}>
                 <div className="flex items-center gap-2">
                   <Icon className="h-5 w-5 text-navy-900" />
-                  <h2 className="text-lg font-bold text-navy-900">{category}</h2>
+                  <h2 className="text-lg font-bold text-navy-900">{label}</h2>
                   <span className="rounded-full bg-white px-2 py-0.5 text-xs font-bold text-navy-900 shadow-card">
                     {results.length}
                   </span>

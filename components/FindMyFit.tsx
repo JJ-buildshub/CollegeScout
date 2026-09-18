@@ -13,7 +13,7 @@ export default function FindMyFit() {
         </h2>
         <p className="mt-2 text-sm text-slate-500">
           Tell CollegeScout about your academics. We&apos;ll help you narrow the universe into
-          schools worth a closer look &mdash; sorted into Safety, Target, and Reach.
+          schools worth a closer look &mdash; sorted into Reach, Target, and Likely for You.
         </p>
       </div>
 

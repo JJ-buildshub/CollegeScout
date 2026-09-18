@@ -88,6 +88,15 @@ export interface College {
   system: CollegeSystem;
   rank: number;
   location: string;
+  /**
+   * Two-letter USPS state code (or "DC"), derived once from `location` via
+   * lib/states.ts and required for every record — used to compare against a
+   * visitor's stored home state (see lib/states.ts) for residency/cost/label
+   * personalization. Don't parse `location` for this elsewhere; it's free
+   * text with inconsistent formatting (full names, abbreviations, and city
+   * suffixes all appear there).
+   */
+  state: string;
   /** Official homepage URL, checked against redirects/HTTP failures via scripts/check-college-websites.mjs. */
   website: string | null;
   admitRateOverall: number;

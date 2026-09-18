@@ -27,10 +27,21 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
         const inputs = JSON.parse(rawGpa) as GpaInputs;
         setHasGpaInputs(true);
         const gpaResult = calculateUcCappedGpa(inputs);
+
+        // Same precedence as app/matcher/page.tsx: a manually-set residency
+        // override wins, otherwise home state derives in-state/out-of-state
+        // per school, otherwise every school falls back to its overall rate.
+        // Keeping this in sync so the homepage teaser count never disagrees
+        // with the Matcher's own count once a state is set.
+        const savedResidency = localStorage.getItem("pathfinder-admit:residency");
+        const residency =
+          savedResidency === "in-state" || savedResidency === "out-of-state" ? savedResidency : undefined;
+        const homeState = localStorage.getItem("pathfinder-admit:home-state");
+
         let total = 0;
         let saved = 0;
         for (const college of colleges) {
-          const fit = evaluateCollegeFit(college, gpaResult.ucCappedGpa, inputs.unweightedGpa);
+          const fit = evaluateCollegeFit(college, gpaResult.ucCappedGpa, inputs.unweightedGpa, residency, homeState);
           if (fit?.category === "Target") {
             total += 1;
             if (savedIds.includes(college.id)) saved += 1;
