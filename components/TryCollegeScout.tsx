@@ -10,9 +10,11 @@ import {
   INTEREST_TAXONOMY,
   MAX_SELECTED_INTERESTS,
   getCombinedProgramLabel,
+  getMatchTier,
   getPathwayLabel,
   matchesAllInterests,
   matchesInterest,
+  pickDiverseSlate,
 } from "@/lib/interests";
 import type { College } from "@/lib/types";
 import SystemBadge from "./SystemBadge";
@@ -45,40 +47,52 @@ export default function TryCollegeScout() {
     setSelectedIds([]);
   };
 
-  // Single-interest view: one flat, ranked list (today's behavior).
+  // Single-interest view: a deliberately varied slate (spread across admit-rate
+  // tiers and states) rather than one flat sort, so different interests don't
+  // all surface the same handful of schools — see lib/interests.ts's
+  // pickDiverseSlate for why match-specificity alone isn't enough here.
   const singleMatches = useMemo(() => {
     if (notSure || selectedIds.length !== 1) return [];
-    return colleges.filter((c) => matchesInterest(c, selectedIds[0])).sort((a, b) => a.rank - b.rank);
+    return colleges.filter((c) => matchesInterest(c, selectedIds[0]));
   }, [selectedIds, notSure]);
 
-  const singleResults = singleMatches.slice(0, MAX_RESULTS).map((college) => ({
-    college,
-    pathway: getPathwayLabel(college, selectedIds[0]) ?? college.careerMajorTags.primaryDisciplines[0] ?? "",
-  }));
+  const singleResults = useMemo(() => {
+    if (singleMatches.length === 0) return [];
+    const candidates = singleMatches.map((college) => ({ college, tier: getMatchTier(college, selectedIds[0]) }));
+    return pickDiverseSlate(candidates, MAX_RESULTS).map((college) => ({
+      college,
+      pathway: getPathwayLabel(college, selectedIds[0]) ?? college.careerMajorTags.primaryDisciplines[0] ?? "",
+    }));
+  }, [singleMatches, selectedIds]);
 
-  // Multi-interest view: split into "combine" and "strong in each".
+  // Multi-interest view: split into "combine" and "strong in each," each
+  // drawing its top slate the same diverse way.
   const { combineResults, strongResults, strongTotal } = useMemo(() => {
     if (notSure || selectedIds.length < 2) {
       return { combineResults: [], strongResults: [], strongTotal: 0 };
     }
-    const combine: { college: College; label: string }[] = [];
-    const combineIds = new Set<string>();
+    const combineLabels = new Map<string, string>();
     for (const c of colleges) {
       const label = getCombinedProgramLabel(c, selectedIds);
-      if (label) {
-        combine.push({ college: c, label });
-        combineIds.add(c.id);
-      }
+      if (label) combineLabels.set(c.id, label);
     }
-    combine.sort((a, b) => a.college.rank - b.college.rank);
+    const combineCandidates = colleges
+      .filter((c) => combineLabels.has(c.id))
+      .map((college) => ({ college, tier: 1 }));
+    const combineSlate = pickDiverseSlate(combineCandidates, MAX_RESULTS).map((college) => ({
+      college,
+      label: combineLabels.get(college.id)!,
+    }));
 
-    const strong = colleges
-      .filter((c) => !combineIds.has(c.id) && matchesAllInterests(c, selectedIds))
-      .sort((a, b) => a.rank - b.rank);
+    const strong = colleges.filter((c) => !combineLabels.has(c.id) && matchesAllInterests(c, selectedIds));
+    const strongCandidates = strong.map((college) => ({
+      college,
+      tier: Math.min(...selectedIds.map((id) => getMatchTier(college, id))),
+    }));
 
     return {
-      combineResults: combine.slice(0, MAX_RESULTS),
-      strongResults: strong.slice(0, MAX_RESULTS),
+      combineResults: combineSlate,
+      strongResults: pickDiverseSlate(strongCandidates, MAX_RESULTS),
       strongTotal: strong.length,
     };
   }, [selectedIds, notSure]);

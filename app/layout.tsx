@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "CollegeScout | Find Colleges You Didn't Know to Look For",
   description:
-    "College Directory, Admissions Matcher, and Runway Checklist to help students discover schools based on fit — not just rankings.",
+    "College Directory, Find My Fit, and Runway Checklist to help students discover schools based on fit — not just rankings.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

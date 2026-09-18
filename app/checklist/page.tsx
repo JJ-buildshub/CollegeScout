@@ -60,7 +60,7 @@ export default function ChecklistPage() {
           High School Runway Checklist
         </h1>
         <p className="mt-1 text-sm text-slate-500">
-          A grade-specific action plan across academics, testing, extracurriculars, research, and
+          A grade-by-grade checklist covering academics, testing, extracurriculars, research, and
           financial planning.
         </p>
       </div>

@@ -96,6 +96,12 @@ export interface College {
   outOfStateAdmitRate: number | null;
   testingPolicy: TestingPolicy;
   mid50_GPA_Unweighted: string;
+  /**
+   * For UC schools, the official UC-capped weighted GPA range. For CSU
+   * schools, a capped/weighted figure as reported by the institution — not
+   * confirmed to use the same formula as UC's (CSU has its own GPA
+   * calculation). Treat CSU values here as "as reported," not UC-equivalent.
+   */
   mid50_GPA_UCCapped: string;
   mid50_SAT: string;
   impactedMajors: string[];

@@ -68,8 +68,15 @@ export default function CollegeProfileDashboard({ college }: { college: College 
     return () => observer.disconnect();
   }, []);
 
-  const usesUcCapped = college.system === "UC" || college.system === "CSU";
+  // CSU uses its own GPA calculation, not UC's, so it's treated like Private/
+  // Out-of-State Public here (unweighted) rather than grouped with UC — see
+  // the matching note on usesUcCappedMetric in lib/gpa.ts.
+  const usesUcCapped = college.system === "UC";
+  // A-G subject requirements genuinely are shared by UC and CSU, unlike the
+  // GPA formula above, so this grouping is correct.
   const isUcOrCsu = college.system === "UC" || college.system === "CSU";
+  const cappedGpaLabel =
+    college.system === "CSU" ? "Mid-50% GPA (Capped, as reported)" : "Mid-50% UC-Capped GPA";
   const scrollMt = `scroll-mt-[${SCROLL_OFFSET}px]`;
 
   return (
@@ -184,10 +191,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
           <section id="overview" className={scrollMt}>
             <h2 className="text-lg font-bold text-navy-900">Overview</h2>
             <div className="mt-3 w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-              <p className="text-sm leading-relaxed text-slate-600">
-                {college.idealStudentArchetype.profileSummary}
-              </p>
-              <div className="mt-5">
+              <div>
                 <div className="text-xs font-bold uppercase tracking-wide text-slate-600">
                   Helpful high school preparation
                 </div>
@@ -240,7 +244,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                     provenance={college.gpaSatProvenance}
                   />
                   <GpaBox
-                    label="Mid-50% UC-Capped GPA"
+                    label={cappedGpaLabel}
                     value={college.mid50_GPA_UCCapped}
                     showSource
                     provenance={college.gpaSatProvenance}
@@ -294,17 +298,11 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                   <Award className="h-4 w-4 text-gold-600" />
                   <h3 className="text-sm font-bold text-navy-900">Flagship Programs</h3>
                 </div>
-                <div className="mt-4 space-y-4">
+                <div className="mt-4 flex flex-wrap gap-1.5">
                   {college.flagshipPrograms.map((p) => (
-                    <div key={p.name} className="rounded-xl bg-slate-50 p-4">
-                      <div className="flex items-center justify-between gap-2">
-                        <div className="text-sm font-bold text-navy-900">{p.name}</div>
-                        <span className="whitespace-nowrap rounded-full bg-navy-900 px-2 py-0.5 text-xs font-semibold text-white">
-                          {p.ranking}
-                        </span>
-                      </div>
-                      <p className="mt-1.5 text-xs text-slate-500">{p.selectivityNote}</p>
-                    </div>
+                    <span key={p.name} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
+                      {p.name}
+                    </span>
                   ))}
                 </div>
               </div>
@@ -399,16 +397,10 @@ export default function CollegeProfileDashboard({ college }: { college: College 
           {/* Campus */}
           <section id="campus" className={scrollMt}>
             <h2 className="text-lg font-bold text-navy-900">Campus</h2>
-            <div className="mt-3 grid items-start gap-4 lg:grid-cols-2">
-              <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-                <h3 className="text-sm font-bold text-navy-900">Campus Culture &amp; Vibe</h3>
-                <p className="mt-3 text-sm leading-relaxed text-slate-600">{college.campusCultureAndVibe}</p>
-              </div>
-              <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-                <h3 className="text-sm font-bold text-navy-900">Campus Fit</h3>
-                <div className="mt-4">
-                  <CampusFitStats fit={college.campusFit} />
-                </div>
+            <div className="mt-3 w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+              <h3 className="text-sm font-bold text-navy-900">Campus Fit</h3>
+              <div className="mt-4">
+                <CampusFitStats fit={college.campusFit} />
               </div>
             </div>
           </section>

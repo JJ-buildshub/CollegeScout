@@ -47,7 +47,7 @@ function DirectoryContent() {
   const [testingPolicies, setTestingPolicies] = useState<Set<TestingPolicy>>(new Set());
   const [admitBucket, setAdmitBucket] = useState<AdmitBucket>("any");
   const [filtersOpen, setFiltersOpen] = useState(false);
-  const [sortBy, setSortBy] = useState<"rank" | "admitRateOverall" | "name" | "cost">("rank");
+  const [sortBy, setSortBy] = useState<"admitRateOverall" | "name" | "cost">("name");
   const [interestIds, setInterestIds] = useState<string[]>(() => {
     const raw = searchParams.get("interests");
     return raw ? raw.split(",").filter(Boolean) : [];
@@ -114,7 +114,7 @@ function DirectoryContent() {
           const costB = b.financials.coaInState ?? b.financials.coaOutOfState ?? Infinity;
           return costA - costB;
         }
-        return a.rank - b.rank;
+        return 0;
       });
   }, [query, systems, testingPolicies, admitBucket, sortBy, interestIds]);
 
@@ -122,10 +122,10 @@ function DirectoryContent() {
     <div className="space-y-6">
       <div>
         <h1 className="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-3xl">
-          College Intelligence Directory
+          College Directory
         </h1>
         <p className="mt-1 text-sm text-slate-500">
-          Search and filter {colleges.length} benchmark schools by system, testing policy, and admit rate.
+          Search and filter {colleges.length} schools by system, testing policy, and admit rate.
         </p>
       </div>
 
@@ -182,10 +182,9 @@ function DirectoryContent() {
           onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
           className="rounded-full border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium shadow-card outline-none focus:ring-2 focus:ring-gold-500"
         >
-          <option value="rank">Sort: National Rank</option>
+          <option value="name">Sort: Name (A-Z)</option>
           <option value="admitRateOverall">Sort: Admit Rate</option>
           <option value="cost">Sort: Cost (low to high)</option>
-          <option value="name">Sort: Name (A-Z)</option>
         </select>
       </div>
 

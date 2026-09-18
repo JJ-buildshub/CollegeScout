@@ -1,4 +1,5 @@
 import type { College } from "./types";
+import { admitRateTier } from "./colleges";
 
 export interface Interest {
   id: string;
@@ -185,4 +186,97 @@ export function getPathwayLabel(college: College, interestId: string): string | 
 
 export function countMatches(colleges: College[], interestId: string): number {
   return colleges.filter((c) => matchesInterest(c, interestId)).length;
+}
+
+/**
+ * How specifically a college's data ties it to an interest: 1 = a named
+ * interdisciplinary/joint program, 2 = a general department/major tag, 3 =
+ * only the (weaker) impacted-majors list. Lower is preferred within a slate,
+ * but this alone is a poor sole ordering — for most interests the large
+ * majority of matches land in tier 1, so it needs to be combined with a
+ * second axis (see `pickDiverseSlate`) to avoid every result set looking the
+ * same regardless of interest.
+ */
+export function getMatchTier(college: College, interestId: string): number {
+  const interest = getInterestById(interestId);
+  if (!interest) return 4;
+  const hits = (pool: string[]) =>
+    pool.filter(isDegreePathway).some((e) => interest.keywords.some((kw) => e.toLowerCase().includes(kw.toLowerCase())));
+  if (hits(college.careerMajorTags.interdisciplinaryPathways)) return 1;
+  if (hits(college.careerMajorTags.primaryDisciplines)) return 2;
+  if (hits(college.impactedMajors)) return 3;
+  return 4;
+}
+
+function stateOf(college: College): string {
+  return college.location.split(",").pop()?.trim() ?? "";
+}
+
+/**
+ * Picks a deliberately varied slate of up to `limit` colleges from a set of
+ * already-confirmed matches, instead of a single straight sort — round-robins
+ * across the site's existing admit-rate tiers (Ultra-Selective/Highly
+ * Selective/Selective/Accessible, from `admitRateTier`) so a student sees a
+ * genuine spread of selectivity rather than six similar schools, breaking
+ * ties within a tier by match specificity then name, and preferring not to
+ * repeat a state when an alternative in the same admit-rate tier exists.
+ * Deterministic — no randomness, no new data fields.
+ */
+export function pickDiverseSlate(
+  candidates: { college: College; tier: number }[],
+  limit: number
+): College[] {
+  const bandOrder = ["Ultra-Selective", "Highly Selective", "Selective", "Accessible"] as const;
+  const groups: Record<(typeof bandOrder)[number], { college: College; tier: number }[]> = {
+    "Ultra-Selective": [],
+    "Highly Selective": [],
+    Selective: [],
+    Accessible: [],
+  };
+  for (const c of candidates) {
+    groups[admitRateTier(c.college.admitRateOverall) as (typeof bandOrder)[number]].push(c);
+  }
+  for (const band of bandOrder) {
+    groups[band].sort((a, b) => {
+      if (a.tier !== b.tier) return a.tier - b.tier;
+      return a.college.name.localeCompare(b.college.name);
+    });
+  }
+
+  const nextIndex: Record<(typeof bandOrder)[number], number> = {
+    "Ultra-Selective": 0,
+    "Highly Selective": 0,
+    Selective: 0,
+    Accessible: 0,
+  };
+  const picked: College[] = [];
+  const usedStates = new Set<string>();
+  let stalledRounds = 0;
+
+  while (picked.length < limit && stalledRounds < bandOrder.length * 2) {
+    let addedThisRound = false;
+    for (const band of bandOrder) {
+      if (picked.length >= limit) break;
+      const list = groups[band];
+      let candidateIndex = -1;
+      for (let i = nextIndex[band]; i < list.length; i++) {
+        if (!usedStates.has(stateOf(list[i].college))) {
+          candidateIndex = i;
+          break;
+        }
+      }
+      // No same-tier alternative in a fresh state — reuse the next one anyway.
+      if (candidateIndex === -1 && nextIndex[band] < list.length) candidateIndex = nextIndex[band];
+      if (candidateIndex !== -1 && candidateIndex < list.length) {
+        const chosen = list[candidateIndex];
+        picked.push(chosen.college);
+        usedStates.add(stateOf(chosen.college));
+        nextIndex[band] = candidateIndex + 1;
+        addedThisRound = true;
+      }
+    }
+    stalledRounds = addedThisRound ? 0 : stalledRounds + 1;
+  }
+
+  return picked;
 }

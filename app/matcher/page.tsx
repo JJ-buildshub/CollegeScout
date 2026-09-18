@@ -15,6 +15,24 @@ const PLANNING_FOR_STORAGE_KEY = "pathfinder-admit:planning-for";
 
 type ResidencyChoice = "unknown" | "in-state" | "out-of-state";
 
+// Distance from the midpoint of the school's own published GPA range — a
+// personalized, already-trusted signal (uses only the student's GPA input and
+// the school's own reported range), used in place of the old rank-based sort.
+function marginFromMidpoint(r: FitResult): number {
+  if (r.rangeLow === null || r.rangeHigh === null) return Infinity;
+  return Math.abs(r.studentGpaUsed - (r.rangeLow + r.rangeHigh) / 2);
+}
+
+function sortByFitThenName(a: FitResult, b: FitResult): number {
+  const marginDiff = marginFromMidpoint(a) - marginFromMidpoint(b);
+  if (marginDiff !== 0) return marginDiff;
+  return a.college.name.localeCompare(b.college.name);
+}
+
+function sortByName(a: FitResult, b: FitResult): number {
+  return a.college.name.localeCompare(b.college.name);
+}
+
 const DEFAULT_INPUTS: GpaInputs = {
   unweightedGpa: 3.7,
   totalSemesters: 20,
@@ -92,21 +110,21 @@ export default function MatcherPage() {
   }, [gpaResult, inputs.unweightedGpa, residency]);
 
   const buckets: Record<FitCategory, FitResult[]> = {
-    Safety: fitResults.filter((r) => r.category === "Safety").sort((a, b) => a.college.rank - b.college.rank),
-    Target: fitResults.filter((r) => r.category === "Target").sort((a, b) => a.college.rank - b.college.rank),
-    Reach: fitResults.filter((r) => r.category === "Reach").sort((a, b) => a.college.rank - b.college.rank),
-    Unrated: fitResults.filter((r) => r.category === "Unrated").sort((a, b) => a.college.rank - b.college.rank),
+    Safety: fitResults.filter((r) => r.category === "Safety").sort(sortByFitThenName),
+    Target: fitResults.filter((r) => r.category === "Target").sort(sortByFitThenName),
+    Reach: fitResults.filter((r) => r.category === "Reach").sort(sortByFitThenName),
+    Unrated: fitResults.filter((r) => r.category === "Unrated").sort(sortByName),
   };
 
   return (
     <div className="space-y-6">
       <div>
         <h1 className="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-3xl">
-          Admissions Matcher &amp; Academic Profiler
+          Find My Fit
         </h1>
         <p className="mt-1 text-sm text-slate-500">
           Compare admissions selectivity and calculate your weighted profile. Includes specialized
-          tools for California (UC/CSU Capped GPA) alongside national benchmark metrics.
+          tools for California (UC/CSU Capped GPA) alongside national admissions data.
         </p>
       </div>
 
@@ -186,8 +204,9 @@ export default function MatcherPage() {
               </div>
             </div>
             <p className="mt-4 text-xs text-slate-400">
-              Private &amp; out-of-state schools are compared against your unweighted GPA, since they
-              don&apos;t report a UC-capped figure.
+              Only UC schools are compared using your UC-capped GPA. CSU, private, and out-of-state
+              schools are compared using your unweighted GPA, because that&apos;s the number they
+              report.
             </p>
           </div>
 

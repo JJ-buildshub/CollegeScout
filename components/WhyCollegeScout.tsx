@@ -54,7 +54,7 @@ export default function WhyCollegeScout() {
       </div>
 
       <p className="mx-auto mt-8 max-w-xl text-center text-sm text-slate-500">
-        CollegeScout brings these signals together so you can make a more informed decision — not
+        CollegeScout brings all of this together so you can make a more informed decision — not
         just a more prestigious one.
       </p>
     </section>

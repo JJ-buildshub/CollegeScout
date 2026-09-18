@@ -64,8 +64,12 @@ export function parseGpaRange(range: string): { low: number; high: number } | nu
   return { low: parseFloat(match[1]), high: parseFloat(match[2]) };
 }
 
+// CSU uses its own GPA calculation, not UC's — and we don't have a verified
+// CSU-specific formula in this codebase. Rather than build a guessed one,
+// CSU falls back to the same treatment as Private/Out-of-State Public:
+// compare the student's unweighted GPA against the school's unweighted range.
 function usesUcCappedMetric(college: College): boolean {
-  return college.system === "UC" || college.system === "CSU";
+  return college.system === "UC";
 }
 
 /**
