@@ -79,6 +79,20 @@ export default function CollegeProfileDashboard({ college }: { college: College 
     college.system === "CSU" ? "Mid-50% GPA (Capped, as reported)" : "Mid-50% UC-Capped GPA";
   const scrollMt = `scroll-mt-[${SCROLL_OFFSET}px]`;
 
+  // Only UC/CSU schools report a capped-weighted figure at all — Private and
+  // Out-of-State Public never do, so that box doesn't belong on their page.
+  const gpaSatBoxes = [
+    { label: "Mid-50% Unweighted GPA", value: college.mid50_GPA_Unweighted },
+    ...(isUcOrCsu ? [{ label: cappedGpaLabel, value: college.mid50_GPA_UCCapped }] : []),
+    { label: "Mid-50% SAT", value: college.mid50_SAT },
+  ].filter((box) => hasReportedValue(box.value));
+
+  const admitBoxes = [
+    { label: "Overall", value: college.admitRateOverall },
+    { label: "In-State", value: college.inStateAdmitRate },
+    { label: "Out-of-State", value: college.outOfStateAdmitRate },
+  ].filter((box): box is { label: string; value: number } => box.value !== null);
+
   return (
     <div>
       {/* Sticky school header, positioned below the site nav (68px). */}
@@ -129,7 +143,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
 
       <div className="mx-auto max-w-5xl">
         {/* At-a-glance strip */}
-        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
           <GlanceStat
             label="Admit Rate"
             value={formatPercent(college.admitRateOverall)}
@@ -137,14 +151,14 @@ export default function CollegeProfileDashboard({ college }: { college: College 
             showSource
             provenance={college.admissionsProvenance}
           />
-          <GlanceStat
-            label={usesUcCapped ? "GPA Range (UC-Capped)" : "GPA Range (Unweighted)"}
-            value={usesUcCapped ? college.mid50_GPA_UCCapped : college.mid50_GPA_Unweighted}
-            showSource
-            provenance={college.gpaSatProvenance}
-          />
-          <GlanceStat label="Net Price" value="Not reported" />
-          <GlanceStat label="Graduation Rate" value="Not reported" />
+          {hasReportedValue(usesUcCapped ? college.mid50_GPA_UCCapped : college.mid50_GPA_Unweighted) && (
+            <GlanceStat
+              label={usesUcCapped ? "GPA Range (UC-Capped)" : "GPA Range (Unweighted)"}
+              value={usesUcCapped ? college.mid50_GPA_UCCapped : college.mid50_GPA_Unweighted}
+              showSource
+              provenance={college.gpaSatProvenance}
+            />
+          )}
           <GlanceStat
             label="Median Starting Salary"
             value={college.careerOutcomes.medianStartingSalary ?? "Not reported"}
@@ -161,8 +175,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
         <p className="mt-3 text-xs text-slate-400">
           Data sourced from {college.dataProvenance.sourcedFrom.join(", ")}
           {college.dataProvenance.lastVerified ? ` · Last verified ${college.dataProvenance.lastVerified}` : ""}.
-          This provenance applies to the record as a whole — Net Price and Graduation Rate aren&apos;t part of
-          this dataset yet.
+          This provenance applies to the record as a whole.
         </p>
 
         {/* Sticky section bar */}
@@ -216,46 +229,34 @@ export default function CollegeProfileDashboard({ college }: { college: College 
             <h2 className="text-lg font-bold text-navy-900">Admissions</h2>
             <div className="mt-3 grid items-start gap-4 lg:grid-cols-2">
               <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-                <div className="grid grid-cols-3 gap-4">
-                  <Stat
-                    label="Overall"
-                    value={formatPercent(college.admitRateOverall)}
-                    showSource
-                    provenance={college.admissionsProvenance}
-                  />
-                  <Stat
-                    label="In-State"
-                    value={formatPercent(college.inStateAdmitRate)}
-                    showSource
-                    provenance={college.admissionsProvenance}
-                  />
-                  <Stat
-                    label="Out-of-State"
-                    value={formatPercent(college.outOfStateAdmitRate)}
-                    showSource
-                    provenance={college.admissionsProvenance}
-                  />
+                <div className={`grid gap-4 ${GRID_COLS_CLASS[admitBoxes.length]}`}>
+                  {admitBoxes.map((box) => (
+                    <Stat
+                      key={box.label}
+                      label={box.label}
+                      value={formatPercent(box.value)}
+                      showSource
+                      provenance={college.admissionsProvenance}
+                    />
+                  ))}
                 </div>
-                <div className="mt-4 grid grid-cols-3 gap-4 border-t border-slate-100 pt-4">
-                  <GpaBox
-                    label="Mid-50% Unweighted GPA"
-                    value={college.mid50_GPA_Unweighted}
-                    showSource
-                    provenance={college.gpaSatProvenance}
-                  />
-                  <GpaBox
-                    label={cappedGpaLabel}
-                    value={college.mid50_GPA_UCCapped}
-                    showSource
-                    provenance={college.gpaSatProvenance}
-                  />
-                  <GpaBox
-                    label="Mid-50% SAT"
-                    value={college.mid50_SAT}
-                    showSource
-                    provenance={college.gpaSatProvenance}
-                  />
-                </div>
+                {gpaSatBoxes.length > 0 ? (
+                  <div className={`mt-4 grid gap-4 border-t border-slate-100 pt-4 ${GRID_COLS_CLASS[gpaSatBoxes.length]}`}>
+                    {gpaSatBoxes.map((box) => (
+                      <GpaBox
+                        key={box.label}
+                        label={box.label}
+                        value={box.value}
+                        showSource
+                        provenance={college.gpaSatProvenance}
+                      />
+                    ))}
+                  </div>
+                ) : (
+                  <p className="mt-4 border-t border-slate-100 pt-4 text-xs text-slate-400">
+                    GPA and test score ranges aren&apos;t reported for this school.
+                  </p>
+                )}
                 <div className="mt-4 border-t border-slate-100 pt-4">
                   <TestingPolicyBadge policy={college.testingPolicy} />
                 </div>
@@ -428,14 +429,26 @@ function WebsiteButton({ website, compact }: { website: string | null; compact?:
 }
 
 /**
- * Renders "{source} · {year}", falling back to explicit "not recorded" text
- * per field rather than omitting the line — see FieldProvenance in lib/types.ts.
+ * Renders "{source} · {year}" — but only once we actually have a source or a
+ * year for this field. Showing "Source not recorded · Year not recorded" on
+ * every stat (true for all 125 records today, since no field has provenance
+ * populated yet) reads as a broken page rather than an honest one; once
+ * either half is known, still label the missing half explicitly rather than
+ * silently dropping it.
  */
 function SourceLine({ provenance, className }: { provenance?: FieldProvenance; className?: string }) {
+  if (!provenance?.source && !provenance?.year) return null;
   const source = provenance?.source ?? "Source not recorded";
   const year = provenance?.year ?? "Year not recorded";
   return <div className={clsx("text-[11px] text-slate-400", className)}>{source} &middot; {year}</div>;
 }
+
+/** "N/A (...)"-style placeholder strings mean the field isn't reported — never render an empty box for one. */
+function hasReportedValue(value: string): boolean {
+  return !value.trim().toUpperCase().startsWith("N/A");
+}
+
+const GRID_COLS_CLASS: Record<number, string> = { 1: "grid-cols-1", 2: "grid-cols-2", 3: "grid-cols-3" };
 
 function GlanceStat({
   label,
