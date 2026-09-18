@@ -49,8 +49,9 @@ export default function GpaCalculatorForm({ inputs, onChange }: Props) {
       <h2 className="text-base font-bold text-navy-900">UC Capped GPA Calculator</h2>
       <p className="mt-1 flex items-start gap-1.5 text-xs text-slate-500">
         <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
-        Based on the official UC formula: honors/AP/IB bonus points are capped at 8 semesters (4
-        year-long courses) across 10th &amp; 11th grade only.
+        Based on the official UC formula: only 10th and 11th grade count toward this GPA — 9th and
+        12th grade aren&apos;t included — and honors/AP/IB bonus points are capped at 8 semesters
+        (4 year-long courses) within that window.
       </p>
 
       <div className="mt-5 space-y-5">

@@ -8,7 +8,7 @@ export const GRADE_LABELS: Record<Grade, string> = {
 };
 
 export const GRADE_TAGLINES: Record<Grade, string> = {
-  9: "Build strong habits and explore widely. Nothing here counts toward UC GPA yet, but the transcript starts now.",
+  9: "Build strong habits and explore widely. These grades go on your transcript, and most colleges will see them.",
   10: "Sophomore year is often when students take their first Honors or AP courses, if their school offers them.",
   11: "Your last full year of grades before most college applications are submitted. Testing, rigor, and early research all converge here.",
   12: "Submit strong applications, finish strong academically, and choose confidently once decisions arrive.",
