@@ -100,7 +100,12 @@ export interface College {
   /** Official homepage URL, checked against redirects/HTTP failures via scripts/check-college-websites.mjs. */
   website: string | null;
   admitRateOverall: number;
-  /** null when the school doesn't publicly report an admit rate split by residency. */
+  /**
+   * null when the school doesn't publicly report an admit rate split by
+   * residency. `outOfStateAdmitRate` means domestic non-resident
+   * specifically, never blended with international — see
+   * DATA_METHODOLOGY.md for why and how to apply this when sourcing.
+   */
   inStateAdmitRate: number | null;
   outOfStateAdmitRate: number | null;
   testingPolicy: TestingPolicy;
@@ -178,7 +183,14 @@ export interface ScorecardData {
    */
   tuitionInState: ScorecardMetric;
   tuitionOutOfState: ScorecardMetric;
-  /** Cross-check reference only — never fed into Matcher fit logic (lib/gpa.ts uses the hand-curated admitRateOverall/inStateAdmitRate/outOfStateAdmitRate above). */
+  /**
+   * Used as a cross-check against the curated admitRateOverall/
+   * inStateAdmitRate/outOfStateAdmitRate above, and — since the partial
+   * Matcher switch — as the classification input itself for schools with
+   * no real curated residency split (lib/gpa.ts's hasResidencySplit).
+   * Schools with a real split keep the curated, residency-aware figures;
+   * this Scorecard figure has no residency breakdown at all.
+   */
   admitRateOverall: ScorecardMetric;
 }
 
