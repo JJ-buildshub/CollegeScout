@@ -243,6 +243,13 @@ export interface FitResult {
   reason: string;
   /** Which admit rate was actually used for classification. */
   residencyContext: ResidencyContext;
+  /**
+   * Set only when the student's SAT score was actually part of this result
+   * (see evaluateCollegeFit for when a score is used or deliberately ignored).
+   */
+  sat: { score: number; low: number; high: number } | null;
+  /** Plain-language note when a score was deliberately left out (e.g. below range at a test-optional school). */
+  satNote: string | null;
 }
 
 export type Grade = 9 | 10 | 11 | 12;

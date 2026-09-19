@@ -37,10 +37,18 @@ function sortByFitThenName(a: FitResult, b: FitResult): number {
 // range just for being off-center — this treats "comfortably in range" as
 // equally close regardless of where in the range it falls.
 function distanceFromRange(r: FitResult): number {
-  if (r.rangeLow === null || r.rangeHigh === null) return Infinity;
-  if (r.studentGpaUsed < r.rangeLow) return r.rangeLow - r.studentGpaUsed;
-  if (r.studentGpaUsed > r.rangeHigh) return r.studentGpaUsed - r.rangeHigh;
-  return 0;
+  if (r.rangeLow !== null && r.rangeHigh !== null) {
+    if (r.studentGpaUsed < r.rangeLow) return r.rangeLow - r.studentGpaUsed;
+    if (r.studentGpaUsed > r.rangeHigh) return r.studentGpaUsed - r.rangeHigh;
+    return 0;
+  }
+  // SAT-only result: scale points onto the GPA scale (a ~160-point SAT
+  // range is about as wide as a ~0.4 GPA range) so the two sort together.
+  if (r.sat) {
+    const points = r.sat.score < r.sat.low ? r.sat.low - r.sat.score : r.sat.score > r.sat.high ? r.sat.score - r.sat.high : 0;
+    return points * 0.0025;
+  }
+  return Infinity;
 }
 
 function sortByRangeDistanceThenName(a: FitResult, b: FitResult): number {
@@ -76,7 +84,7 @@ const BUCKET_META: Record<FitCategory, { label: string; icon: typeof Shield; des
   Safety: {
     label: "Likely for You",
     icon: Shield,
-    description: "Schools where your GPA clearly exceeds the typical admitted range, at a broad enough admit rate that admission would be unlikely to surprise you.",
+    description: "Schools where your GPA (and SAT score, if you entered one) is at or above the middle of the typical admitted range, at a broad enough admit rate that admission would be unlikely to surprise you.",
     accent: "border-emerald-200 bg-emerald-50/50",
   },
   Target: {
@@ -154,11 +162,18 @@ export default function MatcherPage() {
     const residencyArg = residency === "unknown" ? undefined : residency;
     const results: FitResult[] = [];
     for (const college of colleges) {
-      const fit = evaluateCollegeFit(college, gpaResult.ucCappedGpa, inputs.unweightedGpa, residencyArg, homeState);
+      const fit = evaluateCollegeFit(
+        college,
+        gpaResult.ucCappedGpa,
+        inputs.unweightedGpa,
+        residencyArg,
+        homeState,
+        inputs.satScore
+      );
       if (fit) results.push(fit);
     }
     return results;
-  }, [gpaResult, inputs.unweightedGpa, residency, homeState]);
+  }, [gpaResult, inputs.unweightedGpa, inputs.satScore, residency, homeState]);
 
   const residencyStatusText =
     residency === "in-state"
@@ -179,6 +194,7 @@ export default function MatcherPage() {
     inputs.unweightedGpa === DEFAULT_INPUTS.unweightedGpa &&
     inputs.totalSemesters === DEFAULT_INPUTS.totalSemesters &&
     inputs.honorsSemesters === DEFAULT_INPUTS.honorsSemesters &&
+    inputs.satScore === undefined &&
     residency === "unknown" &&
     !homeState;
 
@@ -333,6 +349,8 @@ export default function MatcherPage() {
                 </div>
                 <p className="mt-1 text-xs text-slate-500">
                   {personalizeForAudience(description, planningFor)}
+                  {category === "Unrated" && inputs.satScore === undefined &&
+                    " Adding an SAT score above lets us compare you to schools that publish an SAT range."}
                 </p>
 
                 {results.length > 0 ? (

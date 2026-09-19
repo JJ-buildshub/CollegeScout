@@ -6,6 +6,8 @@ export interface GpaInputs {
   unweightedGpa: number;
   totalSemesters: number;
   honorsSemesters: number;
+  /** Optional total SAT score (400-1600). Absent or out of range means "no score". */
+  satScore?: number;
 }
 
 export interface UcGpaResult {
@@ -52,7 +54,11 @@ export type PlanningFor = "self" | "student";
  */
 export function personalizeForAudience(text: string, planningFor: PlanningFor): string {
   if (planningFor !== "student") return text;
-  return text.replace(/Your GPA/g, "Your student's GPA").replace(/your GPA/g, "your student's GPA");
+  return text
+    .replace(/Your GPA/g, "Your student's GPA")
+    .replace(/your GPA/g, "your student's GPA")
+    .replace(/Your SAT score/g, "Your student's SAT score")
+    .replace(/your SAT score/g, "your student's SAT score");
 }
 
 export function parseGpaRange(range: string): { low: number; high: number } | null {
@@ -62,6 +68,20 @@ export function parseGpaRange(range: string): { low: number; high: number } | nu
   const match = range.trim().match(/^(\d+\.\d+)\s*-\s*(\d+\.\d+)\b/);
   if (!match) return null;
   return { low: parseFloat(match[1]), high: parseFloat(match[2]) };
+}
+
+export function parseSatRange(range: string): { low: number; high: number } | null {
+  const match = range.trim().match(/^(\d{3,4})\s*-\s*(\d{3,4})\b/);
+  if (!match) return null;
+  const low = parseInt(match[1], 10);
+  const high = parseInt(match[2], 10);
+  if (low < 400 || high > 1600 || low >= high) return null;
+  return { low, high };
+}
+
+/** A usable SAT total is a whole-ish number in the real 400-1600 range; anything else means "no score entered". */
+export function validSatScore(score: number | null | undefined): score is number {
+  return typeof score === "number" && Number.isFinite(score) && score >= 400 && score <= 1600;
 }
 
 // CSU uses its own GPA calculation, not UC's — and we don't have a verified
@@ -159,32 +179,35 @@ function resolveAdmitRate(
  * admissions at highly selective schools.
  */
 export function classifyFit(
-  studentGpa: number,
+  studentValue: number,
   rangeLow: number,
   rangeHigh: number,
-  admitRateOverall: number
-): { category: AdmitRateLean; reason: string } {
+  admitRateOverall: number,
+  { noun = "GPA", marginThreshold = 0.1 }: { noun?: string; marginThreshold?: number } = {}
+): { category: AdmitRateLean; reason: string; band: "below" | "within" | "above" } {
+  const band = studentValue < rangeLow ? "below" : studentValue > rangeHigh ? "above" : "within";
+
   // Sub-10% admit schools are lottery-like: never a true safety.
   if (admitRateOverall < 0.1) {
-    if (studentGpa > rangeHigh) {
+    if (band === "above") {
       return {
         category: "Reach",
-        reason:
-          "Your GPA is above the mid-50% range, but this school's sub-10% admit rate makes it a Reach for everyone.",
+        band,
+        reason: `Your ${noun} is above the mid-50% range, but this school's sub-10% admit rate makes it a Reach for everyone.`,
       };
     }
     return {
       category: "Reach",
-      reason: "This school's extremely low admit rate makes it a Reach regardless of GPA.",
+      band,
+      reason: `This school's extremely low admit rate makes it a Reach regardless of ${noun}.`,
     };
   }
-
-  const band = studentGpa < rangeLow ? "below" : studentGpa > rangeHigh ? "above" : "within";
 
   if (band === "below") {
     return {
       category: "Reach",
-      reason: "Your GPA falls below this school's typical mid-50% admitted range.",
+      band,
+      reason: `Your ${noun} falls below this school's typical mid-50% admitted range.`,
     };
   }
 
@@ -192,21 +215,24 @@ export function classifyFit(
     if (admitRateOverall < 0.25) {
       return {
         category: "Reach",
-        reason: "Your GPA is within range, but the admit rate is under 25%, so admission is still competitive.",
+        band,
+        reason: `Your ${noun} is within range, but the admit rate is under 25%, so admission is still competitive.`,
       };
     }
     // A broad-admit school where the student is at or above the middle of the
     // range is Likely — being "within" range at a 75%-admit school isn't a
     // coin flip. Below the midpoint stays Target.
-    if (admitRateOverall >= 0.6 && studentGpa >= (rangeLow + rangeHigh) / 2) {
+    if (admitRateOverall >= 0.6 && studentValue >= (rangeLow + rangeHigh) / 2) {
       return {
         category: "Safety",
-        reason: "Your GPA is at or above the middle of this school's typical admitted range, at a school that admits most applicants.",
+        band,
+        reason: `Your ${noun} is at or above the middle of this school's typical admitted range, at a school that admits most applicants.`,
       };
     }
     return {
       category: "Target",
-      reason: "Your GPA sits within the typical mid-50% admitted range for this school.",
+      band,
+      reason: `Your ${noun} sits within the typical mid-50% admitted range for this school.`,
     };
   }
 
@@ -214,36 +240,55 @@ export function classifyFit(
   if (admitRateOverall < 0.25) {
     return {
       category: "Target",
-      reason: "Your GPA is above the typical range, but low overall admit rate keeps this a Target for you, not Likely for you.",
+      band,
+      reason: `Your ${noun} is above the typical range, but low overall admit rate keeps this a Target for you, not Likely for you.`,
     };
   }
   if (admitRateOverall < 0.5) {
-    const margin = studentGpa - rangeHigh;
-    if (margin > 0.1) {
+    const margin = studentValue - rangeHigh;
+    if (margin > marginThreshold) {
       return {
         category: "Safety",
-        reason: "Your GPA comfortably exceeds the mid-50% range at a moderately selective school.",
+        band,
+        reason: `Your ${noun} comfortably exceeds the mid-50% range at a moderately selective school.`,
       };
     }
     return {
       category: "Target",
-      reason: "Your GPA is slightly above range at a moderately selective school.",
+      band,
+      reason: `Your ${noun} is slightly above range at a moderately selective school.`,
     };
   }
   return {
     category: "Safety",
-    reason: "Your GPA exceeds the typical admitted range at a school with a higher overall admit rate.",
+    band,
+    reason: `Your ${noun} exceeds the typical admitted range at a school with a higher overall admit rate.`,
   };
 }
+
+const CATEGORY_RANK: Record<AdmitRateLean, number> = { Reach: 0, Target: 1, Safety: 2 };
+
+// 40 SAT points plays the role 0.1 GPA does in classifyFit: "comfortably" above
+// the top of the range, at roughly a quarter of a typical mid-50% width.
+const SAT_COMFORT_MARGIN = 40;
 
 /**
  * Classifies a school as Safety / Target / Reach / Unrated.
  *
- * "Unrated" is returned whenever the school doesn't publish a GPA band for the
- * relevant metric — a school is never silently placed into a real Safety/
- * Target/Reach bucket from admit rate alone, since that conflates "no data"
- * with "we compared your GPA and it's fine." Those schools get no estimate
- * at all rather than a guessed one.
+ * "Unrated" is returned whenever there is nothing real to compare the
+ * student against — no published GPA band, and no usable SAT comparison. A
+ * school is never silently placed into a real Safety/Target/Reach bucket
+ * from admit rate alone, since that conflates "no data" with "we compared
+ * your numbers and it's fine."
+ *
+ * `satScore` is optional. It's only compared when the school publishes an SAT
+ * range and actually uses scores:
+ * - Test-Required: the more cautious of the GPA and SAT results wins.
+ * - Test-Optional: the published range only describes students who chose to
+ *   submit, so a score *below* it isn't held against the student (they can
+ *   simply not send it) — it's left out with a note. A score in or above the
+ *   range can only help, so the better of the two results wins.
+ * - Test-Blind / Test-Free: scores are never used.
  *
  * `residency`, when supplied, is a manual override that always wins. Absent
  * that, `homeState` (a plain state code, not a residency flag — see
@@ -256,7 +301,8 @@ export function evaluateCollegeFit(
   ucCappedGpa: number,
   unweightedGpa: number,
   residency?: "in-state" | "out-of-state",
-  homeState?: string | null
+  homeState?: string | null,
+  satScore?: number | null
 ): FitResult | null {
   const useUcCapped = usesUcCappedMetric(college);
   const rangeStr = useUcCapped ? college.mid50_GPA_UCCapped : college.mid50_GPA_Unweighted;
@@ -264,7 +310,28 @@ export function evaluateCollegeFit(
   const studentGpaUsed = useUcCapped ? ucCappedGpa : unweightedGpa;
   const { rate: admitRate, context: residencyContext } = resolveAdmitRate(college, residency, homeState);
 
-  if (!parsed) {
+  const gpaFit = parsed ? classifyFit(studentGpaUsed, parsed.low, parsed.high, admitRate) : null;
+
+  const satRange = parseSatRange(college.mid50_SAT);
+  const usesScores = college.testingPolicy === "Test-Required" || college.testingPolicy === "Test-Optional";
+  let satFit =
+    validSatScore(satScore) && satRange && usesScores
+      ? classifyFit(satScore, satRange.low, satRange.high, admitRate, {
+          noun: "SAT score",
+          marginThreshold: SAT_COMFORT_MARGIN,
+        })
+      : null;
+  let satNote: string | null = null;
+  if (satFit && college.testingPolicy === "Test-Optional" && satFit.band === "below") {
+    satNote =
+      "Your SAT score is below the range of students who submitted one. This school is test-optional, so you can apply without a score.";
+    satFit = null;
+  }
+
+  const sat =
+    satFit && satRange && validSatScore(satScore) ? { score: satScore, low: satRange.low, high: satRange.high } : null;
+
+  if (!gpaFit && !satFit) {
     return {
       college,
       category: "Unrated",
@@ -274,19 +341,30 @@ export function evaluateCollegeFit(
       rangeHigh: null,
       reason: "This school doesn't publish a GPA range, so we can't compare your GPA to it.",
       residencyContext,
+      sat: null,
+      satNote,
     };
   }
 
-  const { category, reason } = classifyFit(studentGpaUsed, parsed.low, parsed.high, admitRate);
+  // Pick the driving result: alone if only one exists; otherwise cautious
+  // (Test-Required) or best-of (Test-Optional). Ties go to GPA.
+  let driver = (gpaFit ?? satFit)!;
+  if (gpaFit && satFit) {
+    const satIsBetter = CATEGORY_RANK[satFit.category] > CATEGORY_RANK[gpaFit.category];
+    const useSat = college.testingPolicy === "Test-Optional" ? satIsBetter : CATEGORY_RANK[satFit.category] < CATEGORY_RANK[gpaFit.category];
+    driver = useSat ? satFit : gpaFit;
+  }
 
   return {
     college,
-    category,
+    category: driver.category,
     studentGpaUsed,
     gpaMetricLabel: useUcCapped ? "UC Capped GPA" : "Unweighted GPA",
-    rangeLow: parsed.low,
-    rangeHigh: parsed.high,
-    reason,
+    rangeLow: parsed?.low ?? null,
+    rangeHigh: parsed?.high ?? null,
+    reason: driver.reason,
     residencyContext,
+    sat,
+    satNote,
   };
 }

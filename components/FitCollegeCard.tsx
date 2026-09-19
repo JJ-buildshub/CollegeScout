@@ -6,6 +6,53 @@ import { personalizeForAudience, type PlanningFor } from "@/lib/gpa";
 import { SYSTEM_ACCENT } from "./SystemBadge";
 import SaveToggleButton from "./SaveToggleButton";
 
+/**
+ * A mid-50% range bar with the student's marker. The domain always covers
+ * both the range and the student's value, then pads both ends — proportional
+ * to how wide that combined span is, with a floor so a student just outside a
+ * tight band still reads as clearly separate from it rather than looking like
+ * it overlaps (e.g. 3.70 vs. a 3.75-3.98 range needs a real visible gap, not
+ * just a nonzero one).
+ */
+function RangeBar({
+  low,
+  high,
+  value,
+  minPadding,
+  format,
+}: {
+  low: number;
+  high: number;
+  value: number;
+  minPadding: number;
+  format: (v: number) => string;
+}) {
+  const rawLow = Math.min(low, value);
+  const rawHigh = Math.max(high, value);
+  const rawSpan = Math.max(rawHigh - rawLow, 0.01);
+  const padding = Math.max(rawSpan * 0.15, minPadding);
+  const domainLow = rawLow - padding;
+  const domainSpan = Math.max(rawHigh + padding - domainLow, 0.01);
+  const pct = (v: number) => `${Math.min(100, Math.max(0, ((v - domainLow) / domainSpan) * 100))}%`;
+
+  return (
+    <>
+      <div className="relative mt-1.5 h-2 rounded-full bg-slate-100">
+        <div
+          className="absolute h-2 rounded-full bg-slate-300"
+          style={{ left: pct(low), width: `calc(${pct(high)} - ${pct(low)})` }}
+        />
+        <div className="absolute -top-1 h-4 w-1 rounded-full bg-navy-900" style={{ left: pct(value) }} />
+      </div>
+      <div className="mt-1 flex justify-between text-[10px] text-slate-400">
+        <span>{format(low)}</span>
+        <span>mid-50% range</span>
+        <span>{format(high)}</span>
+      </div>
+    </>
+  );
+}
+
 export default function FitCollegeCard({
   result,
   planningFor = "self",
@@ -13,24 +60,10 @@ export default function FitCollegeCard({
   result: FitResult;
   planningFor?: PlanningFor;
 }) {
-  const { college, studentGpaUsed, gpaMetricLabel, rangeLow, rangeHigh, reason } = result;
+  const { college, studentGpaUsed, gpaMetricLabel, rangeLow, rangeHigh, reason, sat, satNote } = result;
   const hasRange = rangeLow !== null && rangeHigh !== null;
   const accent = SYSTEM_ACCENT[college.system];
   const admitPct = Math.round(displayedAdmitRate(college).value * 100);
-
-  // Domain always covers both the range and the student's GPA, then pads
-  // both ends — proportional to how wide that combined span is, with a
-  // floor so a student just outside a tight band still reads as clearly
-  // separate from it rather than looking like it overlaps (e.g. 3.70 vs.
-  // a 3.75-3.98 range needs a real visible gap, not just a nonzero one).
-  const rawLow = hasRange ? Math.min(rangeLow, studentGpaUsed) : 0;
-  const rawHigh = hasRange ? Math.max(rangeHigh, studentGpaUsed) : 1;
-  const rawSpan = Math.max(rawHigh - rawLow, 0.01);
-  const padding = hasRange ? Math.max(rawSpan * 0.15, 0.05) : 0;
-  const domainLow = rawLow - padding;
-  const domainHigh = rawHigh + padding;
-  const domainSpan = Math.max(domainHigh - domainLow, 0.01);
-  const pct = (v: number) => `${Math.min(100, Math.max(0, ((v - domainLow) / domainSpan) * 100))}%`;
 
   return (
     <Link
@@ -59,38 +92,48 @@ export default function FitCollegeCard({
         </div>
       </div>
 
-      <div className="mt-3">
-        <div className="flex justify-between text-[11px] font-medium text-slate-400">
-          <span>{gpaMetricLabel}</span>
-          <span>
-            {planningFor === "student" ? "Your student:" : "You:"}{" "}
-            <span className="font-bold text-navy-900">{studentGpaUsed.toFixed(2)}</span>
-          </span>
+      {(hasRange || !sat) && (
+        <div className="mt-3">
+          <div className="flex justify-between text-[11px] font-medium text-slate-400">
+            <span>{gpaMetricLabel}</span>
+            <span>
+              {planningFor === "student" ? "Your student:" : "You:"}{" "}
+              <span className="font-bold text-navy-900">{studentGpaUsed.toFixed(2)}</span>
+            </span>
+          </div>
+          {hasRange && (
+            <RangeBar
+              low={rangeLow}
+              high={rangeHigh}
+              value={studentGpaUsed}
+              minPadding={0.05}
+              format={(v) => v.toFixed(2)}
+            />
+          )}
         </div>
-        {hasRange ? (
-          <>
-            <div className="relative mt-1.5 h-2 rounded-full bg-slate-100">
-              <div
-                className="absolute h-2 rounded-full bg-slate-300"
-                style={{ left: pct(rangeLow), width: `calc(${pct(rangeHigh)} - ${pct(rangeLow)})` }}
-              />
-              <div
-                className="absolute -top-1 h-4 w-1 rounded-full bg-navy-900"
-                style={{ left: pct(studentGpaUsed) }}
-              />
-            </div>
-            <div className="mt-1 flex justify-between text-[10px] text-slate-400">
-              <span>{rangeLow.toFixed(2)}</span>
-              <span>mid-50% range</span>
-              <span>{rangeHigh.toFixed(2)}</span>
-            </div>
-          </>
-        ) : null}
-      </div>
+      )}
+
+      {sat && (
+        <div className="mt-3">
+          <div className="flex justify-between text-[11px] font-medium text-slate-400">
+            <span>SAT score</span>
+            <span>
+              {planningFor === "student" ? "Your student:" : "You:"}{" "}
+              <span className="font-bold text-navy-900">{sat.score}</span>
+            </span>
+          </div>
+          <RangeBar low={sat.low} high={sat.high} value={sat.score} minPadding={20} format={(v) => String(v)} />
+        </div>
+      )}
 
       <p className="mt-3 text-xs leading-snug text-slate-500">
         {personalizeForAudience(reason, planningFor)}
       </p>
+      {satNote && (
+        <p className="mt-2 rounded-lg bg-slate-50 px-2.5 py-1.5 text-[11px] leading-snug text-slate-500">
+          {personalizeForAudience(satNote, planningFor)}
+        </p>
+      )}
       </div>
     </Link>
   );

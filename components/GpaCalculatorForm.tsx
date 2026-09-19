@@ -1,7 +1,7 @@
 "use client";
 
 import { ChevronDown, Info } from "lucide-react";
-import type { GpaInputs, UcGpaResult } from "@/lib/gpa";
+import { validSatScore, type GpaInputs, type UcGpaResult } from "@/lib/gpa";
 
 interface Props {
   inputs: GpaInputs;
@@ -55,9 +55,9 @@ export default function GpaCalculatorForm({
 }: Props) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-      <h2 className="text-base font-bold text-navy-900">Your GPA</h2>
+      <h2 className="text-base font-bold text-navy-900">Your GPA and test score</h2>
       <p className="mt-1 text-xs text-slate-500">
-        Your unweighted GPA is what most schools compare you against.
+        Your unweighted GPA is what most schools compare you against. An SAT score is optional.
       </p>
 
       <div className="mt-5">
@@ -70,6 +70,39 @@ export default function GpaCalculatorForm({
           step={0.01}
           onChange={(v) => onChange({ ...inputs, unweightedGpa: v })}
         />
+      </div>
+
+      <div className="mt-5">
+        <label className="block">
+          <div className="flex items-center gap-1.5 text-sm font-semibold text-navy-900">
+            SAT score <span className="font-normal text-slate-400">(optional)</span>
+          </div>
+          <p className="mt-0.5 text-xs text-slate-400">
+            Total from 400 to 1600. Leave blank if you haven&apos;t taken it or don&apos;t plan to send it. It&apos;s
+            only used where a school publishes an SAT range and looks at scores.
+          </p>
+          <input
+            type="number"
+            inputMode="numeric"
+            value={inputs.satScore ?? ""}
+            min={400}
+            max={1600}
+            step={10}
+            placeholder="e.g. 1250"
+            onChange={(e) =>
+              onChange({
+                ...inputs,
+                satScore: e.target.value === "" ? undefined : parseInt(e.target.value, 10),
+              })
+            }
+            className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-gold-500"
+          />
+        </label>
+        {inputs.satScore !== undefined && !validSatScore(inputs.satScore) && (
+          <p className="mt-1.5 text-xs font-semibold text-rose-600">
+            Enter a score from 400 to 1600. Until then it isn&apos;t used.
+          </p>
+        )}
       </div>
 
       <div className="mt-5 border-t border-slate-100 pt-4">

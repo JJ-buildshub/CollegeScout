@@ -41,7 +41,14 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
         let total = 0;
         let saved = 0;
         for (const college of colleges) {
-          const fit = evaluateCollegeFit(college, gpaResult.ucCappedGpa, inputs.unweightedGpa, residency, homeState);
+          const fit = evaluateCollegeFit(
+            college,
+            gpaResult.ucCappedGpa,
+            inputs.unweightedGpa,
+            residency,
+            homeState,
+            inputs.satScore
+          );
           if (fit?.category === "Target") {
             total += 1;
             if (savedIds.includes(college.id)) saved += 1;
