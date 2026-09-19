@@ -17,9 +17,9 @@ const HOME_STATE_STORAGE_KEY = "pathfinder-admit:home-state";
 
 type ResidencyChoice = "unknown" | "in-state" | "out-of-state";
 
-// Distance from the midpoint of the school's own published GPA range — a
-// personalized, already-trusted signal (uses only the student's GPA input and
-// the school's own reported range), used in place of the old rank-based sort.
+// Distance from the midpoint of the school's own published GPA range — the
+// original sort, kept only for the untouched-defaults view (see
+// isUntouchedState below).
 function marginFromMidpoint(r: FitResult): number {
   if (r.rangeLow === null || r.rangeHigh === null) return Infinity;
   return Math.abs(r.studentGpaUsed - (r.rangeLow + r.rangeHigh) / 2);
@@ -31,9 +31,33 @@ function sortByFitThenName(a: FitResult, b: FitResult): number {
   return a.college.name.localeCompare(b.college.name);
 }
 
+// How close the student's GPA is to actually landing in the school's mid-50%
+// range: 0 if inside it, otherwise the gap to the nearer edge. Distinct from
+// marginFromMidpoint, which keeps penalizing a GPA that's well inside a wide
+// range just for being off-center — this treats "comfortably in range" as
+// equally close regardless of where in the range it falls.
+function distanceFromRange(r: FitResult): number {
+  if (r.rangeLow === null || r.rangeHigh === null) return Infinity;
+  if (r.studentGpaUsed < r.rangeLow) return r.rangeLow - r.studentGpaUsed;
+  if (r.studentGpaUsed > r.rangeHigh) return r.studentGpaUsed - r.rangeHigh;
+  return 0;
+}
+
+function sortByRangeDistanceThenName(a: FitResult, b: FitResult): number {
+  const diff = distanceFromRange(a) - distanceFromRange(b);
+  if (diff !== 0) return diff;
+  return a.college.name.localeCompare(b.college.name);
+}
+
 function sortByName(a: FitResult, b: FitResult): number {
   return a.college.name.localeCompare(b.college.name);
 }
+
+// Pre-change behavior, group order and all — shown until the student
+// actually changes something, per instruction to leave the default view
+// alone rather than reshuffle it before they've entered anything.
+const DEFAULT_GROUP_ORDER: FitCategory[] = ["Reach", "Target", "Safety", "Unrated"];
+const NEW_GROUP_ORDER: FitCategory[] = ["Safety", "Target", "Reach", "Unrated"];
 
 const DEFAULT_INPUTS: GpaInputs = {
   unweightedGpa: 3.7,
@@ -78,6 +102,7 @@ export default function MatcherPage() {
   const [planningFor, setPlanningFor] = useState<PlanningFor>("self");
   const [homeState, setHomeState] = useState<string | null>(null);
   const [showResidencyOverride, setShowResidencyOverride] = useState(false);
+  const [ucSectionOpen, setUcSectionOpen] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -93,7 +118,10 @@ export default function MatcherPage() {
         setPlanningFor(savedPlanningFor);
       }
       const savedHomeState = localStorage.getItem(HOME_STATE_STORAGE_KEY);
-      if (savedHomeState) setHomeState(savedHomeState);
+      if (savedHomeState) {
+        setHomeState(savedHomeState);
+        setUcSectionOpen(savedHomeState === "CA");
+      }
     } catch {
       // ignore malformed/unavailable storage
     }
@@ -140,10 +168,24 @@ export default function MatcherPage() {
             } schools, out-of-state elsewhere.`
           : "Showing overall admit rates for every school.";
 
+  // True only while every input still sits at its untouched default — the
+  // moment the student changes anything (GPA, coursework, residency, home
+  // state), the new grouping/sort/summary take over and stay on for the
+  // rest of the session.
+  const isUntouchedState =
+    inputs.unweightedGpa === DEFAULT_INPUTS.unweightedGpa &&
+    inputs.totalSemesters === DEFAULT_INPUTS.totalSemesters &&
+    inputs.honorsSemesters === DEFAULT_INPUTS.honorsSemesters &&
+    residency === "unknown" &&
+    !homeState;
+
+  const groupOrder = isUntouchedState ? DEFAULT_GROUP_ORDER : NEW_GROUP_ORDER;
+  const ratedSort = isUntouchedState ? sortByFitThenName : sortByRangeDistanceThenName;
+
   const buckets: Record<FitCategory, FitResult[]> = {
-    Safety: fitResults.filter((r) => r.category === "Safety").sort(sortByFitThenName),
-    Target: fitResults.filter((r) => r.category === "Target").sort(sortByFitThenName),
-    Reach: fitResults.filter((r) => r.category === "Reach").sort(sortByFitThenName),
+    Safety: fitResults.filter((r) => r.category === "Safety").sort(ratedSort),
+    Target: fitResults.filter((r) => r.category === "Target").sort(ratedSort),
+    Reach: fitResults.filter((r) => r.category === "Reach").sort(ratedSort),
     Unrated: fitResults.filter((r) => r.category === "Unrated").sort(sortByName),
   };
 
@@ -192,9 +234,15 @@ export default function MatcherPage() {
               // home state (or no state); it must not silently carry over
               // and win against a newly-picked state's derived per-school
               // residency (see resolveAdmitRate in lib/gpa.ts).
-              setHomeState(e.target.value || null);
+              const next = e.target.value || null;
+              setHomeState(next);
               setResidency("unknown");
               setShowResidencyOverride(false);
+              // Re-derive the UC section's default open/closed state fresh
+              // on every pick, rather than only on first load — still
+              // freely toggleable afterward, this is just what a new state
+              // selection resets to.
+              setUcSectionOpen(next === "CA");
             }}
             className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 outline-none focus:ring-2 focus:ring-gold-500"
           >
@@ -210,37 +258,13 @@ export default function MatcherPage() {
 
       <div className="grid gap-6 lg:grid-cols-[380px_1fr]">
         <div className="space-y-4 lg:sticky lg:top-20 lg:self-start">
-          <GpaCalculatorForm inputs={inputs} onChange={setInputs} />
-
-          <div className="rounded-2xl bg-navy-900 p-6 text-white shadow-card">
-            <div className="text-xs font-semibold uppercase tracking-wide text-slate-300">
-              Your UC Capped Weighted GPA
-            </div>
-            <div className="mt-1 text-4xl font-extrabold text-gold-400">
-              {gpaResult.ucCappedGpa.toFixed(2)}
-            </div>
-            <div className="mt-3 space-y-1 text-xs text-slate-300">
-              <div className="flex justify-between">
-                <span>Unweighted GPA</span>
-                <span className="font-semibold text-white">{inputs.unweightedGpa.toFixed(2)}</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Honors/AP/IB semesters counted</span>
-                <span className="font-semibold text-white">
-                  {gpaResult.cappedHonorsSemesters} / 8 max
-                </span>
-              </div>
-              <div className="flex justify-between">
-                <span>Bonus points added</span>
-                <span className="font-semibold text-white">+{gpaResult.bonusPoints.toFixed(3)}</span>
-              </div>
-            </div>
-            <p className="mt-4 text-xs text-slate-400">
-              Only UC schools are compared using your UC-capped GPA. CSU, private, and out-of-state
-              schools are compared using your unweighted GPA, because that&apos;s the number they
-              report.
-            </p>
-          </div>
+          <GpaCalculatorForm
+            inputs={inputs}
+            onChange={setInputs}
+            gpaResult={gpaResult}
+            ucSectionOpen={ucSectionOpen}
+            onToggleUcSection={() => setUcSectionOpen((v) => !v)}
+          />
 
           <AcademicCalibrator />
         </div>
@@ -249,6 +273,13 @@ export default function MatcherPage() {
           <p className="text-xs text-slate-400">
             Fit estimates use publicly reported GPA ranges and admit rates. Some are approximate.
           </p>
+
+          {!isUntouchedState && (
+            <p className="text-sm font-semibold text-navy-900">
+              {buckets.Safety.length} likely &middot; {buckets.Target.length} target &middot;{" "}
+              {buckets.Reach.length} reach for you
+            </p>
+          )}
 
           <div>
             <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400">
@@ -281,7 +312,7 @@ export default function MatcherPage() {
             )}
           </div>
 
-          {(["Reach", "Target", "Safety", "Unrated"] as FitCategory[]).map((category) => {
+          {groupOrder.map((category) => {
             const { label, icon: Icon, description, accent } = BUCKET_META[category];
             const results = buckets[category];
             return (

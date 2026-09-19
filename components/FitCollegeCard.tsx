@@ -25,9 +25,17 @@ export default function FitCollegeCard({
   const { college, studentGpaUsed, gpaMetricLabel, rangeLow, rangeHigh, reason, admitRateOnlyLean } = result;
   const hasRange = rangeLow !== null && rangeHigh !== null;
 
-  const span = hasRange ? Math.max(rangeHigh - rangeLow, 0.01) : 0;
-  const domainLow = hasRange ? Math.min(rangeLow - span, studentGpaUsed - 0.05) : 0;
-  const domainHigh = hasRange ? Math.max(rangeHigh + span, studentGpaUsed + 0.05) : 1;
+  // Domain always covers both the range and the student's GPA, then pads
+  // both ends — proportional to how wide that combined span is, with a
+  // floor so a student just outside a tight band still reads as clearly
+  // separate from it rather than looking like it overlaps (e.g. 3.70 vs.
+  // a 3.75-3.98 range needs a real visible gap, not just a nonzero one).
+  const rawLow = hasRange ? Math.min(rangeLow, studentGpaUsed) : 0;
+  const rawHigh = hasRange ? Math.max(rangeHigh, studentGpaUsed) : 1;
+  const rawSpan = Math.max(rawHigh - rawLow, 0.01);
+  const padding = hasRange ? Math.max(rawSpan * 0.15, 0.05) : 0;
+  const domainLow = rawLow - padding;
+  const domainHigh = rawHigh + padding;
   const domainSpan = Math.max(domainHigh - domainLow, 0.01);
   const pct = (v: number) => `${Math.min(100, Math.max(0, ((v - domainLow) / domainSpan) * 100))}%`;
 

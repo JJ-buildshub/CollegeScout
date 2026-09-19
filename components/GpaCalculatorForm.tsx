@@ -1,11 +1,14 @@
 "use client";
 
-import { Info } from "lucide-react";
-import type { GpaInputs } from "@/lib/gpa";
+import { ChevronDown, Info } from "lucide-react";
+import type { GpaInputs, UcGpaResult } from "@/lib/gpa";
 
 interface Props {
   inputs: GpaInputs;
   onChange: (inputs: GpaInputs) => void;
+  gpaResult: UcGpaResult;
+  ucSectionOpen: boolean;
+  onToggleUcSection: () => void;
 }
 
 function NumberField({
@@ -43,20 +46,23 @@ function NumberField({
   );
 }
 
-export default function GpaCalculatorForm({ inputs, onChange }: Props) {
+export default function GpaCalculatorForm({
+  inputs,
+  onChange,
+  gpaResult,
+  ucSectionOpen,
+  onToggleUcSection,
+}: Props) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-      <h2 className="text-base font-bold text-navy-900">UC Capped GPA Calculator</h2>
-      <p className="mt-1 flex items-start gap-1.5 text-xs text-slate-500">
-        <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
-        Based on the official UC formula: only 10th and 11th grade count toward this GPA — 9th and
-        12th grade aren&apos;t included — and honors/AP/IB bonus points are capped at 8 semesters
-        (4 year-long courses) within that window.
+      <h2 className="text-base font-bold text-navy-900">Your GPA</h2>
+      <p className="mt-1 text-xs text-slate-500">
+        Your unweighted GPA is what most schools compare you against.
       </p>
 
-      <div className="mt-5 space-y-5">
+      <div className="mt-5">
         <NumberField
-          label="Unweighted GPA (10th & 11th grade, A-G courses)"
+          label="Unweighted GPA"
           hint="On a standard 4.0 scale."
           value={inputs.unweightedGpa}
           min={0}
@@ -64,24 +70,77 @@ export default function GpaCalculatorForm({ inputs, onChange }: Props) {
           step={0.01}
           onChange={(v) => onChange({ ...inputs, unweightedGpa: v })}
         />
-        <NumberField
-          label="Total A-G semesters completed (10th & 11th grade)"
-          hint="e.g. 5 classes/year x 2 years x 2 semesters = 20."
-          value={inputs.totalSemesters}
-          min={1}
-          max={40}
-          step={1}
-          onChange={(v) => onChange({ ...inputs, totalSemesters: v })}
-        />
-        <NumberField
-          label="Honors / AP / IB semesters completed (10th & 11th grade)"
-          hint="Capped at 8 semesters for UC GPA purposes, even if you've taken more."
-          value={inputs.honorsSemesters}
-          min={0}
-          max={40}
-          step={1}
-          onChange={(v) => onChange({ ...inputs, honorsSemesters: v })}
-        />
+      </div>
+
+      <div className="mt-5 border-t border-slate-100 pt-4">
+        <button
+          type="button"
+          onClick={onToggleUcSection}
+          aria-expanded={ucSectionOpen}
+          className="flex w-full items-center justify-between gap-2 text-left"
+        >
+          <span className="text-sm font-semibold text-navy-900">
+            Applying to a UC? Calculate your UC GPA.
+          </span>
+          <ChevronDown
+            className={`h-4 w-4 shrink-0 text-slate-400 transition-transform ${ucSectionOpen ? "rotate-180" : ""}`}
+          />
+        </button>
+
+        {ucSectionOpen && (
+          <div className="mt-4 space-y-5">
+            <p className="flex items-start gap-1.5 text-xs text-slate-500">
+              <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+              Based on the official UC formula: only 10th and 11th grade count toward this GPA —
+              9th and 12th grade aren&apos;t included — and honors/AP/IB bonus points are capped
+              at 8 semesters (4 year-long courses) within that window.
+            </p>
+            <NumberField
+              label="Total A-G semesters completed (10th & 11th grade)"
+              hint="e.g. 5 classes/year x 2 years x 2 semesters = 20."
+              value={inputs.totalSemesters}
+              min={1}
+              max={40}
+              step={1}
+              onChange={(v) => onChange({ ...inputs, totalSemesters: v })}
+            />
+            <NumberField
+              label="Honors / AP / IB semesters completed (10th & 11th grade)"
+              hint="Capped at 8 semesters for UC GPA purposes, even if you've taken more."
+              value={inputs.honorsSemesters}
+              min={0}
+              max={40}
+              step={1}
+              onChange={(v) => onChange({ ...inputs, honorsSemesters: v })}
+            />
+
+            <div className="rounded-xl bg-navy-900 p-4 text-white">
+              <div className="text-xs font-semibold uppercase tracking-wide text-slate-300">
+                Your UC Capped Weighted GPA
+              </div>
+              <div className="mt-1 text-3xl font-extrabold text-gold-400">
+                {gpaResult.ucCappedGpa.toFixed(2)}
+              </div>
+              <div className="mt-3 space-y-1 text-xs text-slate-300">
+                <div className="flex justify-between">
+                  <span>Honors/AP/IB semesters counted</span>
+                  <span className="font-semibold text-white">
+                    {gpaResult.cappedHonorsSemesters} / 8 max
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Bonus points added</span>
+                  <span className="font-semibold text-white">+{gpaResult.bonusPoints.toFixed(3)}</span>
+                </div>
+              </div>
+              <p className="mt-3 text-[11px] leading-snug text-slate-400">
+                Only UC schools are compared using your UC-capped GPA. CSU, private, and
+                out-of-state schools are compared using your unweighted GPA, because that&apos;s
+                the number they report.
+              </p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
