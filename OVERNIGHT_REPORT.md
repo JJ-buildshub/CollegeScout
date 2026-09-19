@@ -46,6 +46,73 @@ All three correct as committed; no follow-up fixes needed. Screenshots
 left in `screenshots/` locally (not committed) for a quick look if
 wanted: `01-matcher-default.png` through `06-summary-and-order.png`.
 
+## Task 2 — Interest cards
+
+Replaced the homepage's interest chip buttons with cards (icon, label,
+one-line subtitle) in `components/TryCollegeScout.tsx`, and rewrote the
+taxonomy in `lib/interests.ts` to match your 18-item list exactly
+(labels, subtitles, and the "Not sure yet" card).
+
+**Every keyword set was checked against the real data before being
+written**, not guessed — dumped all 545 unique `careerMajorTags`/
+`impactedMajors` strings across all 125 colleges and grepped for real
+matches before choosing keywords for interests with no prior taxonomy
+entry (Finance split out of Business, Games & Interactive Media, Law &
+Public Policy broadened from Pre-Law, Science, Sports & Movement
+renamed from Kinesiology). One real risk caught this way: a bare "Art"
+keyword would have false-matched "Martin J. Whitman School of
+Management" and "...Design, and Startups" (both contain the literal
+substring "art") — used specific multi-word phrases instead ("Fine
+Arts", "Art History", "Studio Art", etc.).
+
+Match counts per interest (out of 125 schools), for reference:
+
+| Interest | Matches | Interest | Matches |
+|---|---|---|---|
+| Business | 83 | Environment & Climate | 37 |
+| Medicine & Health | 78 | Media & Communication | 48 |
+| Engineering | 76 | Nursing | 42 |
+| Computer Science & AI | 71 | Psychology | 41 |
+| Science | 59 | Design & Architecture | 25 |
+| Law & Public Policy | 44 | Art, Film & Music | 26 |
+| Data Science | 38 | Education | 13 |
+| Finance | 10 | Sports & Movement | 7 |
+| | | Games & Interactive Media | 4 |
+
+**Judgment call:** bumped `LOW_MATCH_THRESHOLD` from 3 to 8 — the new,
+more specific taxonomy has several interests (Games & Interactive
+Media: 4, Sports & Movement: 7, Finance: 10) with genuinely low single-
+digit-to-low-double-digit real counts, and the existing "only N schools
+have this clearly tagged" caveat should show for those too, not just
+for a near-zero count.
+
+**Empty states:** the existing low-match caveat text already existed
+for single-interest and multi-interest ("strong in each") views, but
+"browse everything" was plain text, not a link, and there was no
+explicit empty state at all for a genuine zero-match case (which
+doesn't happen with the current 17 interests — all have ≥4 real matches
+— but would have silently rendered nothing if it did). Fixed both: real
+`Link`s to `/directory` in the low-match captions, and a proper bordered
+empty-state box (matching the existing "I'm not sure yet" visual
+pattern) with a "Browse the Directory" button for the true-zero case,
+added defensively for both the single-interest and multi-interest
+("combine" + "strong" both empty) paths.
+
+**Selected-state accessibility:** each card shows selection two ways at
+once — a filled checkmark badge in the corner, plus a heavier navy
+border/background — never color alone, per the Task 3 requirement,
+since this component is the one place selection state most matters.
+
+**Mobile verified with Playwright** at 390px width: all 6 default cards
+plus "Not sure yet" render fully visible with no scrolling needed
+within the section (screenshot `10-mobile-390-interest-section.png`) —
+comfortably clears the "first cards visible without scrolling"
+requirement.
+
+`app/directory/page.tsx` (interest-based filtering) needed no changes —
+it reads interest ids generically from the URL/taxonomy, nothing
+hardcoded there.
+
 ## Task 1 — Jargon cleanup: already complete, no changes made
 
 Searched every `.tsx`/`.ts` file for `journey`, `vibe`, `unlock`,

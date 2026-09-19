@@ -2,7 +2,28 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import {
+  ArrowRight,
+  Brain,
+  Briefcase,
+  Check,
+  Cog,
+  Cpu,
+  Dumbbell,
+  FlaskConical,
+  Gamepad2,
+  GraduationCap,
+  HelpCircle,
+  Landmark,
+  LineChart,
+  Leaf,
+  Megaphone,
+  PenTool,
+  Palette,
+  Scale,
+  Stethoscope,
+  Syringe,
+} from "lucide-react";
 import clsx from "clsx";
 import { colleges, displayedAdmitRate, formatPercent } from "@/lib/colleges";
 import {
@@ -20,10 +41,38 @@ import type { College } from "@/lib/types";
 import SystemBadge from "./SystemBadge";
 
 const MAX_RESULTS = 6;
-const LOW_MATCH_THRESHOLD = 3;
+// Bumped from 3: several interests in the new, more specific taxonomy
+// (e.g. Games & Interactive Media, Sports & Movement) genuinely have single-
+// digit real matches in this dataset — the caveat should show for those too,
+// not just for a near-zero count.
+const LOW_MATCH_THRESHOLD = 8;
 
 const DEFAULT_INTERESTS = INTEREST_TAXONOMY.filter((i) => DEFAULT_INTEREST_IDS.includes(i.id));
 const OVERFLOW_INTERESTS = INTEREST_TAXONOMY.filter((i) => !DEFAULT_INTEREST_IDS.includes(i.id));
+
+// One icon per interest id, from the icon library already used across the
+// site (lucide-react) — no images. "Psychology" is imported under an alias
+// since it collides with the id string used elsewhere in this file.
+const INTEREST_ICONS: Record<string, typeof Cog> = {
+  engineering: Cog,
+  "cs-ai": Cpu,
+  "data-science": LineChart,
+  business: Briefcase,
+  finance: Landmark,
+  "medicine-health": Stethoscope,
+  nursing: Syringe,
+  psychology: Brain,
+  "design-architecture": PenTool,
+  "art-film-music": Palette,
+  "games-interactive": Gamepad2,
+  "environment-climate": Leaf,
+  "law-policy": Scale,
+  education: GraduationCap,
+  "sports-movement": Dumbbell,
+  "media-communication": Megaphone,
+  science: FlaskConical,
+};
+const NOT_SURE_ICON = HelpCircle;
 
 export default function TryCollegeScout() {
   const [selectedIds, setSelectedIds] = useState<string[]>([DEFAULT_INTEREST_IDS[0]]);
@@ -110,67 +159,38 @@ export default function TryCollegeScout() {
         </h2>
       </div>
 
-      <div className="mx-auto mt-6 flex max-w-3xl flex-wrap items-center justify-center gap-2">
-        {DEFAULT_INTERESTS.map((interest) => {
-          const selected = selectedIds.includes(interest.id);
-          const disabled = !selected && atLimit;
-          return (
-            <button
-              key={interest.id}
-              type="button"
-              disabled={disabled}
-              onClick={() => toggleInterest(interest.id)}
-              className={clsx(
-                "rounded-full border px-3.5 py-1.5 text-sm font-semibold transition-colors",
-                selected
-                  ? "border-navy-900 bg-navy-900 text-white"
-                  : disabled
-                    ? "cursor-not-allowed border-slate-100 text-slate-300"
-                    : "border-slate-200 text-slate-600 hover:border-slate-300"
-              )}
-            >
-              {interest.label}
-            </button>
-          );
-        })}
+      <div className="mx-auto mt-6 grid max-w-3xl grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
+        {DEFAULT_INTERESTS.map((interest) => (
+          <InterestCard
+            key={interest.id}
+            interest={interest}
+            selected={selectedIds.includes(interest.id)}
+            disabled={!selectedIds.includes(interest.id) && atLimit}
+            onClick={() => toggleInterest(interest.id)}
+          />
+        ))}
 
         {showMore &&
-          OVERFLOW_INTERESTS.map((interest) => {
-            const selected = selectedIds.includes(interest.id);
-            const disabled = !selected && atLimit;
-            return (
-              <button
-                key={interest.id}
-                type="button"
-                disabled={disabled}
-                onClick={() => toggleInterest(interest.id)}
-                className={clsx(
-                  "rounded-full border px-3.5 py-1.5 text-sm font-semibold transition-colors",
-                  selected
-                    ? "border-navy-900 bg-navy-900 text-white"
-                    : disabled
-                      ? "cursor-not-allowed border-slate-100 text-slate-300"
-                      : "border-slate-200 text-slate-600 hover:border-slate-300"
-                )}
-              >
-                {interest.label}
-              </button>
-            );
-          })}
+          OVERFLOW_INTERESTS.map((interest) => (
+            <InterestCard
+              key={interest.id}
+              interest={interest}
+              selected={selectedIds.includes(interest.id)}
+              disabled={!selectedIds.includes(interest.id) && atLimit}
+              onClick={() => toggleInterest(interest.id)}
+            />
+          ))}
 
-        <button
-          type="button"
+        <InterestCard
+          interest={{ id: "not-sure", label: "Not sure yet", subtitle: "Let's figure it out" }}
+          icon={NOT_SURE_ICON}
+          selected={notSure}
+          disabled={false}
           onClick={selectNotSure}
-          className={clsx(
-            "rounded-full border px-3.5 py-1.5 text-sm font-semibold transition-colors",
-            notSure
-              ? "border-navy-900 bg-navy-900 text-white"
-              : "border-slate-200 text-slate-600 hover:border-slate-300"
-          )}
-        >
-          I&apos;m not sure yet
-        </button>
+        />
+      </div>
 
+      <div className="mx-auto mt-3 max-w-xl text-center">
         {!showMore && (
           <button
             type="button"
@@ -180,11 +200,8 @@ export default function TryCollegeScout() {
             Show {OVERFLOW_INTERESTS.length} more
           </button>
         )}
+        <p className="mt-1 text-xs text-slate-400">Pick up to {MAX_SELECTED_INTERESTS} interests to compare.</p>
       </div>
-
-      <p className="mx-auto mt-3 max-w-xl text-center text-xs text-slate-400">
-        Pick up to {MAX_SELECTED_INTERESTS} interests to compare.
-      </p>
 
       {notSure ? (
         <div className="mx-auto mt-8 max-w-xl rounded-2xl bg-slate-50 p-6 text-center">
@@ -222,12 +239,32 @@ export default function TryCollegeScout() {
                 ))}
               </div>
 
+              {singleMatches.length === 0 && (
+                <div className="mx-auto mt-8 max-w-xl rounded-2xl bg-slate-50 p-6 text-center">
+                  <p className="text-sm text-slate-600">
+                    No school in this dataset has a clearly tagged {selectedLabel} pathway &mdash; that doesn&apos;t
+                    mean none exist, just that we can&apos;t confidently point to one yet.
+                  </p>
+                  <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+                    <Link
+                      href="/directory"
+                      className="inline-flex items-center gap-2 rounded-full bg-navy-900 px-4 py-2 text-sm font-semibold text-white hover:bg-navy-800"
+                    >
+                      Browse the Directory <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  </div>
+                </div>
+              )}
+
               {singleMatches.length > 0 && singleMatches.length < LOW_MATCH_THRESHOLD && (
                 <p className="mx-auto mt-4 max-w-xl text-center text-xs text-slate-400">
                   Only {singleMatches.length} school{singleMatches.length === 1 ? "" : "s"} in this dataset{" "}
                   {singleMatches.length === 1 ? "has" : "have"} a clearly tagged {selectedLabel} pathway &mdash;
-                  that doesn&apos;t mean other schools don&apos;t offer it. Try a related interest or browse
-                  everything.
+                  that doesn&apos;t mean other schools don&apos;t offer it. Try a related interest, or{" "}
+                  <Link href="/directory" className="font-semibold text-navy-900 underline underline-offset-2">
+                    browse everything
+                  </Link>
+                  .
                 </p>
               )}
             </>
@@ -282,17 +319,42 @@ export default function TryCollegeScout() {
                 ) : (
                   <p className="mt-3 text-sm text-slate-500">
                     No school in this dataset is clearly tagged for all of {selectedLabel} at once. Try dropping
-                    one interest or browse everything.
+                    one interest, or{" "}
+                    <Link href="/directory" className="font-semibold text-navy-900 underline underline-offset-2">
+                      browse everything
+                    </Link>
+                    .
                   </p>
                 )}
                 {strongTotal > 0 && strongTotal < LOW_MATCH_THRESHOLD && (
                   <p className="mt-3 text-xs text-slate-400">
                     Only {strongTotal} school{strongTotal === 1 ? "" : "s"} in this dataset{" "}
                     {strongTotal === 1 ? "matches" : "match"} all of {selectedLabel} &mdash; that doesn&apos;t
-                    mean other schools don&apos;t offer these. Try dropping an interest or browse everything.
+                    mean other schools don&apos;t offer these. Try dropping an interest, or{" "}
+                    <Link href="/directory" className="font-semibold text-navy-900 underline underline-offset-2">
+                      browse everything
+                    </Link>
+                    .
                   </p>
                 )}
               </div>
+
+              {combineResults.length === 0 && strongTotal === 0 && (
+                <div className="mx-auto mt-8 max-w-xl rounded-2xl bg-slate-50 p-6 text-center">
+                  <p className="text-sm text-slate-600">
+                    No school in this dataset is clearly tagged for all of {selectedLabel} at once &mdash; that
+                    doesn&apos;t mean none exist, just that we can&apos;t confidently point to one yet.
+                  </p>
+                  <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+                    <Link
+                      href="/directory"
+                      className="inline-flex items-center gap-2 rounded-full bg-navy-900 px-4 py-2 text-sm font-semibold text-white hover:bg-navy-800"
+                    >
+                      Browse the Directory <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  </div>
+                </div>
+              )}
             </>
           )}
 
@@ -312,6 +374,53 @@ export default function TryCollegeScout() {
         </>
       )}
     </section>
+  );
+}
+
+/**
+ * Selected state is shown two ways at once — a filled check badge and a
+ * heavier navy border/background — never color alone, so it still reads
+ * correctly without relying on the gold/navy contrast (e.g. for a
+ * colorblind viewer, or on a washed-out screen).
+ */
+function InterestCard({
+  interest,
+  icon,
+  selected,
+  disabled,
+  onClick,
+}: {
+  interest: { id: string; label: string; subtitle: string };
+  icon?: typeof Cog;
+  selected: boolean;
+  disabled: boolean;
+  onClick: () => void;
+}) {
+  const Icon = icon ?? INTEREST_ICONS[interest.id] ?? HelpCircle;
+  return (
+    <button
+      type="button"
+      disabled={disabled}
+      onClick={onClick}
+      aria-pressed={selected}
+      className={clsx(
+        "relative flex flex-col items-start gap-1.5 rounded-xl border p-3 text-left transition-colors",
+        selected
+          ? "border-navy-900 bg-navy-900/5"
+          : disabled
+            ? "cursor-not-allowed border-slate-100 opacity-50"
+            : "border-slate-200 bg-white hover:border-slate-300"
+      )}
+    >
+      {selected && (
+        <span className="absolute right-2 top-2 flex h-4 w-4 items-center justify-center rounded-full bg-navy-900 text-white">
+          <Check className="h-2.5 w-2.5" strokeWidth={3} />
+        </span>
+      )}
+      <Icon className="h-5 w-5 text-navy-900" strokeWidth={1.75} />
+      <div className="text-sm font-bold leading-snug text-navy-900">{interest.label}</div>
+      <div className="text-xs leading-snug text-slate-500">{interest.subtitle}</div>
+    </button>
   );
 }
 

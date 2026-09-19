@@ -4,82 +4,132 @@ import { admitRateTier, displayedAdmitRate } from "./colleges";
 export interface Interest {
   id: string;
   label: string;
+  /** One line, shown under the label on the homepage interest cards. */
+  subtitle: string;
   keywords: string[];
 }
 
 /**
- * Curated interest taxonomy shown as homepage chips and used to filter the
+ * Curated interest taxonomy shown as homepage cards and used to filter the
  * Directory. Keywords are matched as case-insensitive substrings against a
  * college's careerMajorTags/impactedMajors fields — there is no separate
  * "interest" field in the data model, so this taxonomy is the only layer
  * that maps a plain-language interest to what's actually tagged per school.
+ * Every keyword set here was checked against the real data before being
+ * written (see the "Task 2" entry in OVERNIGHT_REPORT.md for match counts
+ * per interest) — none are guesses.
  */
 export const INTEREST_TAXONOMY: Interest[] = [
+  { id: "engineering", label: "Engineering", subtitle: "Build things that work", keywords: ["Engineering"] },
+  {
+    id: "cs-ai",
+    label: "Computer Science & AI",
+    subtitle: "Code, apps, and smart systems",
+    keywords: ["Computer Science", "Artificial Intelligence", "Informatics", "Cybersecurity", "Computing"],
+  },
   {
     id: "data-science",
     label: "Data Science",
+    subtitle: "Find patterns in numbers",
     keywords: ["Data Science", "Machine Learning", "Data Analytics"],
   },
   {
-    id: "cs-ai",
-    label: "Computer Science / AI",
-    keywords: ["Computer Science", "Artificial Intelligence", "Informatics", "Cybersecurity", "Computing"],
-  },
-  { id: "engineering", label: "Engineering", keywords: ["Engineering"] },
-  {
-    id: "premed-health",
-    label: "Pre-Med / Health",
-    keywords: ["Biology", "Biological Sciences", "Health Sciences", "Public Health", "Pre-Med", "Human Biology"],
-  },
-  { id: "nursing", label: "Nursing", keywords: ["Nursing"] },
-  {
-    id: "business-finance",
+    id: "business",
     label: "Business",
-    keywords: ["Business", "Finance", "Accounting", "Accountancy"],
+    subtitle: "Start, run, or grow something",
+    keywords: ["Business", "Accounting", "Accountancy", "Entrepreneurship"],
   },
-  { id: "psychology", label: "Psychology", keywords: ["Psychology"] },
-  { id: "education-teaching", label: "Education / Teaching", keywords: ["Education", "Teaching"] },
+  { id: "finance", label: "Finance", subtitle: "Money, markets, and investing", keywords: ["Finance", "Financial"] },
   {
-    id: "communications-media",
-    label: "Communications / Media",
+    id: "medicine-health",
+    label: "Medicine & Health",
+    subtitle: "Care for people's health",
+    keywords: [
+      "Biology",
+      "Biological Sciences",
+      "Health Sciences",
+      "Public Health",
+      "Pre-Med",
+      "Human Biology",
+      "Medicine",
+      "Medical",
+    ],
+  },
+  { id: "nursing", label: "Nursing", subtitle: "Hands-on patient care", keywords: ["Nursing"] },
+  { id: "psychology", label: "Psychology", subtitle: "How people think and act", keywords: ["Psychology"] },
+  {
+    id: "design-architecture",
+    label: "Design & Architecture",
+    subtitle: "Shape spaces and products",
+    keywords: ["Architecture", "Design"],
+  },
+  {
+    id: "art-film-music",
+    label: "Art, Film & Music",
+    subtitle: "Create and perform",
+    keywords: [
+      "Fine Arts",
+      "Visual and Performing Arts",
+      "Cinematic Arts",
+      "Film",
+      "Music",
+      "Art History",
+      "Art Conservation",
+      "Studio Art",
+      "Performing Arts",
+      "Media Arts",
+      "Art & Design",
+      "Art & Architecture",
+      "Art and Digital Media",
+    ],
+  },
+  {
+    id: "games-interactive",
+    label: "Games & Interactive Media",
+    subtitle: "Design worlds people play",
+    keywords: ["Game Design", "Games and", "Interactive Media", "Playable Media"],
+  },
+  {
+    id: "environment-climate",
+    label: "Environment & Climate",
+    subtitle: "Protect the planet",
+    keywords: ["Environmental Science", "Environmental Studies", "Sustainability", "Climate"],
+  },
+  {
+    id: "law-policy",
+    label: "Law & Public Policy",
+    subtitle: "Rules, rights, and justice",
+    keywords: ["Pre-Law", "Political Science", "Government", "Public Policy", "Public Affairs", "Politics", "Criminal Justice"],
+  },
+  { id: "education", label: "Education", subtitle: "Teach and mentor", keywords: ["Education", "Teaching"] },
+  {
+    id: "sports-movement",
+    label: "Sports & Movement",
+    subtitle: "Kinesiology, sports science, and coaching",
+    keywords: ["Kinesiology", "Exercise Science", "Sport Management", "Sports Management", "Sports Business"],
+  },
+  {
+    id: "media-communication",
+    label: "Media & Communication",
+    subtitle: "Tell stories that reach people",
     keywords: ["Communication", "Journalism", "Media"],
   },
   {
-    id: "arts-music",
-    label: "Arts / Music",
-    keywords: ["Visual and Performing Arts", "Fine Arts", "Music", "Cinematic Arts", "Film"],
-  },
-  { id: "design-architecture", label: "Design / Architecture", keywords: ["Architecture", "Design"] },
-  {
-    id: "environmental-science",
-    label: "Environmental Science",
-    keywords: ["Environmental Science", "Environmental Studies", "Sustainability"],
-  },
-  {
-    id: "social-sciences",
-    label: "Social Sciences",
-    keywords: ["Social Sciences", "Sociology", "Anthropology"],
-  },
-  {
-    id: "pre-law",
-    label: "Pre-Law",
-    keywords: ["Pre-Law", "Political Science", "Government", "Criminal Justice"],
-  },
-  {
-    id: "kinesiology-sports",
-    label: "Kinesiology / Sports Science",
-    keywords: ["Kinesiology", "Sports Science", "Sport Management", "Exercise Science"],
+    id: "science",
+    label: "Science",
+    subtitle: "Biology, chemistry, and physics",
+    keywords: ["Biology", "Biological", "Chemistry", "Physics"],
   },
 ];
 
 /** Shown by default on the homepage; the rest live behind "Show more". */
 export const DEFAULT_INTEREST_IDS = [
-  "data-science",
-  "cs-ai",
   "engineering",
-  "business-finance",
+  "cs-ai",
+  "data-science",
+  "business",
+  "medicine-health",
   "psychology",
-  "premed-health",
 ];
 
 /** A student can explore up to this many interests at once. */
