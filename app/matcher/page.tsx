@@ -155,7 +155,7 @@ export default function MatcherPage() {
         </h1>
         <p className="mt-1 text-sm text-slate-500">
           Compare admissions selectivity and calculate your weighted profile. Includes specialized
-          tools for California (UC/CSU Capped GPA) alongside national admissions data.
+          tools for California (UC Capped GPA) alongside national admissions data.
         </p>
       </div>
 
