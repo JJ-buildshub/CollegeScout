@@ -71,11 +71,13 @@ export default function ChecklistPage() {
             <button
               key={g}
               onClick={() => setGrade(g)}
+              aria-pressed={grade === g}
               className={clsx(
-                "rounded-full px-4 py-2 text-sm font-bold transition-colors",
+                "flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-bold transition-colors",
                 grade === g ? "bg-navy-900 text-white" : "bg-slate-100 text-slate-500 hover:bg-slate-200"
               )}
             >
+              {grade === g && <Check className="h-3.5 w-3.5" strokeWidth={3} />}
               Grade {g}
             </button>
           ))}

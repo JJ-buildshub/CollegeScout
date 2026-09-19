@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { HelpCircle, Rocket, Shield, Target } from "lucide-react";
+import { Check, HelpCircle, Rocket, Shield, Target } from "lucide-react";
 import { colleges } from "@/lib/colleges";
 import { calculateUcCappedGpa, evaluateCollegeFit, personalizeForAudience, type GpaInputs, type PlanningFor } from "@/lib/gpa";
 import { US_STATES, stateName } from "@/lib/states";
@@ -203,7 +203,7 @@ export default function MatcherPage() {
 
       <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-card">
         <div className="flex flex-wrap items-center gap-3">
-          <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+          <span className="text-xs font-semibold tracking-wide text-slate-500">
             Step 1 &middot; Who are you planning for?
           </span>
           <div className="flex gap-2">
@@ -212,19 +212,21 @@ export default function MatcherPage() {
                 key={choice}
                 type="button"
                 onClick={() => setPlanningFor(choice)}
-                className={`rounded-full px-3 py-1.5 text-xs font-semibold transition-colors ${
+                aria-pressed={planningFor === choice}
+                className={`flex items-center gap-1 rounded-full px-3 py-1.5 text-xs font-semibold transition-colors ${
                   planningFor === choice
                     ? "bg-navy-900 text-white"
                     : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                 }`}
               >
+                {planningFor === choice && <Check className="h-3 w-3" strokeWidth={3} />}
                 {choice === "self" ? "Myself" : "My student"}
               </button>
             ))}
           </div>
         </div>
         <div className="mt-3 flex flex-wrap items-center gap-3 border-t border-slate-100 pt-3">
-          <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+          <span className="text-xs font-semibold tracking-wide text-slate-500">
             Step 2 &middot; What state do you live in?
           </span>
           <select
@@ -299,12 +301,14 @@ export default function MatcherPage() {
                     key={choice}
                     type="button"
                     onClick={() => setResidency(choice)}
-                    className={`flex-1 rounded-lg px-2 py-1.5 text-xs font-semibold transition-colors ${
+                    aria-pressed={residency === choice}
+                    className={`flex flex-1 items-center justify-center gap-1 rounded-lg px-2 py-1.5 text-xs font-semibold transition-colors ${
                       residency === choice
                         ? "bg-navy-900 text-white"
                         : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                     }`}
                   >
+                    {residency === choice && <Check className="h-3 w-3 shrink-0" strokeWidth={3} />}
                     {choice === "unknown" ? "Use default" : choice === "in-state" ? "In-state" : "Out-of-state"}
                   </button>
                 ))}

@@ -207,7 +207,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
             />
           )}
           <div className="rounded-xl border border-slate-200 bg-white p-3">
-            <div className="text-[11px] font-semibold uppercase tracking-wide text-slate-600">Test Policy</div>
+            <div className="text-[11px] font-semibold tracking-wide text-slate-600">Test Policy</div>
             <div className="mt-1.5">
               <TestingPolicyBadge policy={college.testingPolicy} />
             </div>
@@ -249,7 +249,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
             <h2 className="text-lg font-bold text-navy-900">Overview</h2>
             <div className="mt-3 w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
               <div>
-                <div className="text-xs font-bold uppercase tracking-wide text-slate-600">
+                <div className="text-xs font-bold tracking-wide text-slate-600">
                   Helpful high school preparation
                 </div>
                 <div className="mt-2 flex flex-wrap gap-1.5">
@@ -314,14 +314,14 @@ export default function CollegeProfileDashboard({ college }: { college: College 
               </div>
 
               <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-                <div className="text-xs font-bold uppercase tracking-wide text-slate-600">
+                <div className="text-xs font-bold tracking-wide text-slate-600">
                   Application Deadlines
                 </div>
                 <div className="mt-2">
                   <ApplicationPlanBadges plans={college.applicationPlans} />
                 </div>
                 <div className="mt-4 border-t border-slate-100 pt-4">
-                  <div className="text-xs font-bold uppercase tracking-wide text-slate-600">Impacted Majors</div>
+                  <div className="text-xs font-bold tracking-wide text-slate-600">Impacted Majors</div>
                   {college.impactedMajors.length > 0 ? (
                     <div className="mt-2 flex flex-wrap gap-1.5">
                       {college.impactedMajors.map((m) => (
@@ -362,7 +362,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
               <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
                 <h3 className="text-sm font-bold text-navy-900">Career &amp; Major Pathways</h3>
                 <div className="mt-4">
-                  <div className="text-xs font-bold uppercase tracking-wide text-slate-600">Primary Disciplines</div>
+                  <div className="text-xs font-bold tracking-wide text-slate-600">Primary Disciplines</div>
                   {college.careerMajorTags.primaryDisciplines.length > 0 ? (
                     <div className="mt-2 flex flex-wrap gap-1.5">
                       {college.careerMajorTags.primaryDisciplines.map((d) => (
@@ -376,7 +376,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                   )}
                 </div>
                 <div className="mt-4 border-t border-slate-100 pt-4">
-                  <div className="text-xs font-bold uppercase tracking-wide text-slate-600">
+                  <div className="text-xs font-bold tracking-wide text-slate-600">
                     Interdisciplinary Pathways
                   </div>
                   {college.careerMajorTags.interdisciplinaryPathways.length > 0 ? (
@@ -441,7 +441,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                 )}
               </div>
               <div className="mt-4 border-t border-slate-100 pt-4">
-                <div className="text-xs font-bold uppercase tracking-wide text-slate-600">Top Recruiters</div>
+                <div className="text-xs font-bold tracking-wide text-slate-600">Top Recruiters</div>
                 {college.careerOutcomes.topRecruiters.length > 0 ? (
                   <div className="mt-2 flex flex-wrap gap-1.5">
                     {college.careerOutcomes.topRecruiters.map((r) => (
@@ -536,7 +536,7 @@ function GlanceStat({
 }) {
   return (
     <div className="rounded-xl border border-slate-200 bg-white p-3">
-      <div className="text-[11px] font-semibold uppercase tracking-wide text-slate-600">{label}</div>
+      <div className="text-[11px] font-semibold tracking-wide text-slate-600">{label}</div>
       <div className="mt-1 text-sm font-bold text-navy-900">{value}</div>
       {sub && <div className="mt-0.5 text-[11px] text-slate-400">{sub}</div>}
       {showSource && <SourceLine provenance={provenance} className="mt-1" />}
@@ -557,7 +557,7 @@ function Stat({
 }) {
   return (
     <div>
-      <div className="text-xs font-semibold uppercase tracking-wide text-slate-600">{label}</div>
+      <div className="text-xs font-semibold tracking-wide text-slate-600">{label}</div>
       <div className="mt-0.5 text-lg font-bold text-navy-900">{value ?? "Not publicly reported"}</div>
       {showSource && <SourceLine provenance={provenance} className="mt-1" />}
     </div>
@@ -595,7 +595,7 @@ function ScorecardCostCard({ scorecard }: { scorecard: ScorecardData }) {
 
   return (
     <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-      <div className="text-xs font-bold uppercase tracking-wide text-slate-600">Via College Scorecard</div>
+      <div className="text-xs font-bold tracking-wide text-slate-600">Via College Scorecard</div>
       <p className="mt-1 text-xs text-slate-400">
         Tuition only (not full cost of attendance) and average net price — a separate source/methodology from
         the curated figures at left.
@@ -603,7 +603,7 @@ function ScorecardCostCard({ scorecard }: { scorecard: ScorecardData }) {
       {(tuitionInState.value != null || tuitionOutOfState.value != null) && (
         <div className={`mt-4 grid gap-4 border-t border-slate-100 pt-4 ${sameTuition ? "grid-cols-1" : "grid-cols-2"}`}>
           <div>
-            <div className="text-xs font-semibold uppercase tracking-wide text-slate-600">
+            <div className="text-xs font-semibold tracking-wide text-slate-600">
               {sameTuition ? "Tuition" : "In-State Tuition"}
             </div>
             <div className="mt-0.5 text-lg font-bold text-navy-900">
@@ -612,7 +612,7 @@ function ScorecardCostCard({ scorecard }: { scorecard: ScorecardData }) {
           </div>
           {!sameTuition && (
             <div>
-              <div className="text-xs font-semibold uppercase tracking-wide text-slate-600">Out-of-State Tuition</div>
+              <div className="text-xs font-semibold tracking-wide text-slate-600">Out-of-State Tuition</div>
               <div className="mt-0.5 text-lg font-bold text-navy-900">
                 {tuitionOutOfState.value != null ? formatUsd(tuitionOutOfState.value) : "Not reported"}
               </div>
@@ -626,14 +626,14 @@ function ScorecardCostCard({ scorecard }: { scorecard: ScorecardData }) {
       />
       {netPriceOverall.value != null && (
         <div className="mt-4 border-t border-slate-100 pt-4">
-          <div className="text-xs font-semibold uppercase tracking-wide text-slate-600">Average Net Price</div>
+          <div className="text-xs font-semibold tracking-wide text-slate-600">Average Net Price</div>
           <div className="mt-0.5 text-lg font-bold text-navy-900">{formatUsd(netPriceOverall.value)}</div>
           <SourceLine provenance={netPriceOverall.provenance ?? undefined} className="mt-1" />
         </div>
       )}
       {bands.length > 0 && (
         <div className="mt-4 border-t border-slate-100 pt-4">
-          <div className="text-xs font-semibold uppercase tracking-wide text-slate-600">Net Price by Family Income</div>
+          <div className="text-xs font-semibold tracking-wide text-slate-600">Net Price by Family Income</div>
           <div className="mt-2 space-y-1">
             {bands.map((band) => (
               <div key={band} className="flex items-baseline justify-between text-sm">
@@ -662,7 +662,7 @@ function GpaBox({
 }) {
   return (
     <div className="rounded-xl bg-slate-50 p-4">
-      <div className="text-xs font-semibold uppercase tracking-wide text-slate-600">{label}</div>
+      <div className="text-xs font-semibold tracking-wide text-slate-600">{label}</div>
       <div className="mt-1 text-base font-bold text-navy-900">{value}</div>
       {showSource && <SourceLine provenance={provenance} className="mt-1" />}
     </div>

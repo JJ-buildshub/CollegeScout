@@ -7,7 +7,7 @@ export default function FindMyFit() {
   return (
     <section className="rounded-3xl bg-slate-50 p-6 sm:p-10">
       <div className="mx-auto max-w-2xl text-center">
-        <span className="text-xs font-bold uppercase tracking-wide text-gold-600">Find My Fit</span>
+        <span className="text-xs font-bold tracking-wide text-gold-600">Find My Fit</span>
         <h2 className="mt-2 text-xl font-extrabold tracking-tight text-navy-900 sm:text-2xl">
           Now make it personal.
         </h2>

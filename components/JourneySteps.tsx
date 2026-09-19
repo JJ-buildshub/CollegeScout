@@ -111,7 +111,7 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
   if (compact) {
     return (
       <section className="py-2">
-        <h2 className="text-xs font-bold uppercase tracking-wide text-slate-400">How CollegeScout Works</h2>
+        <h2 className="text-xs font-bold tracking-wide text-slate-400">How CollegeScout Works</h2>
         <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, i) => (
             <Link
@@ -143,7 +143,7 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
             href={step.href}
             className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-card transition-all hover:-translate-y-0.5 hover:shadow-cardHover"
           >
-            <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-gold-600">
+            <div className="flex items-center gap-2 text-xs font-semibold tracking-wide text-gold-600">
               <span className="flex h-5 w-5 items-center justify-center rounded-full bg-navy-900 text-[10px] font-bold text-gold-400">
                 {i + 1}
               </span>

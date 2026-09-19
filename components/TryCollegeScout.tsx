@@ -273,7 +273,7 @@ export default function TryCollegeScout() {
           {isMulti && (
             <>
               <div className="mx-auto mt-8 max-w-4xl">
-                <h3 className="text-sm font-bold uppercase tracking-wide text-slate-600">
+                <h3 className="text-sm font-bold tracking-wide text-slate-600">
                   Programs that combine these
                 </h3>
                 {combineResults.length > 0 ? (
@@ -296,7 +296,7 @@ export default function TryCollegeScout() {
               </div>
 
               <div className="mx-auto mt-8 max-w-4xl">
-                <h3 className="text-sm font-bold uppercase tracking-wide text-slate-600">
+                <h3 className="text-sm font-bold tracking-wide text-slate-600">
                   Schools strong in each
                 </h3>
                 {strongResults.length > 0 ? (

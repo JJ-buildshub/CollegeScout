@@ -2,7 +2,7 @@
 
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { Search, SlidersHorizontal, X } from "lucide-react";
+import { Check, Search, SlidersHorizontal, X } from "lucide-react";
 import clsx from "clsx";
 import { colleges, displayedAdmitRate } from "@/lib/colleges";
 import type { CollegeSystem, TestingPolicy } from "@/lib/types";
@@ -192,19 +192,21 @@ function DirectoryContent() {
         <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
-              <div className="text-xs font-bold uppercase tracking-wide text-slate-400">System</div>
+              <div className="text-xs font-bold tracking-wide text-slate-400">System</div>
               <div className="mt-2 flex flex-wrap gap-2">
                 {SYSTEM_OPTIONS.map((s) => (
                   <button
                     key={s}
                     onClick={() => toggleSystem(s)}
+                    aria-pressed={systems.has(s)}
                     className={clsx(
-                      "rounded-full border px-3 py-1.5 text-xs font-semibold",
+                      "flex items-center gap-1 rounded-full border px-3 py-1.5 text-xs font-semibold",
                       systems.has(s)
                         ? "border-navy-900 bg-navy-900 text-white"
                         : "border-slate-200 text-slate-600 hover:border-slate-300"
                     )}
                   >
+                    {systems.has(s) && <Check className="h-3 w-3" strokeWidth={3} />}
                     {s}
                   </button>
                 ))}
@@ -212,19 +214,21 @@ function DirectoryContent() {
             </div>
 
             <div>
-              <div className="text-xs font-bold uppercase tracking-wide text-slate-400">Testing Policy</div>
+              <div className="text-xs font-bold tracking-wide text-slate-400">Testing Policy</div>
               <div className="mt-2 flex flex-wrap gap-2">
                 {TESTING_OPTIONS.map((t) => (
                   <button
                     key={t}
                     onClick={() => toggleTesting(t)}
+                    aria-pressed={testingPolicies.has(t)}
                     className={clsx(
-                      "rounded-full border px-3 py-1.5 text-xs font-semibold",
+                      "flex items-center gap-1 rounded-full border px-3 py-1.5 text-xs font-semibold",
                       testingPolicies.has(t)
                         ? "border-navy-900 bg-navy-900 text-white"
                         : "border-slate-200 text-slate-600 hover:border-slate-300"
                     )}
                   >
+                    {testingPolicies.has(t) && <Check className="h-3 w-3" strokeWidth={3} />}
                     {t}
                   </button>
                 ))}
@@ -232,19 +236,21 @@ function DirectoryContent() {
             </div>
 
             <div>
-              <div className="text-xs font-bold uppercase tracking-wide text-slate-400">Admit Rate</div>
+              <div className="text-xs font-bold tracking-wide text-slate-400">Admit Rate</div>
               <div className="mt-2 flex flex-wrap gap-2">
                 {ADMIT_BUCKETS.map((b) => (
                   <button
                     key={b.id}
                     onClick={() => setAdmitBucket(b.id)}
+                    aria-pressed={admitBucket === b.id}
                     className={clsx(
-                      "rounded-full border px-3 py-1.5 text-xs font-semibold",
+                      "flex items-center gap-1 rounded-full border px-3 py-1.5 text-xs font-semibold",
                       admitBucket === b.id
                         ? "border-navy-900 bg-navy-900 text-white"
                         : "border-slate-200 text-slate-600 hover:border-slate-300"
                     )}
                   >
+                    {admitBucket === b.id && <Check className="h-3 w-3" strokeWidth={3} />}
                     {b.label}
                   </button>
                 ))}

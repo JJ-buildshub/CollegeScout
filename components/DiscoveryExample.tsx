@@ -23,7 +23,7 @@ export default function DiscoveryExample() {
   return (
     <section className="rounded-3xl bg-navy-900 px-6 py-14 text-white sm:px-12 sm:py-16">
       <div className="mx-auto max-w-2xl text-center">
-        <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-gold-400">
+        <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-gold-400">
           One interest. Many paths.
         </span>
         <p className="mt-4 text-sm text-slate-300 sm:text-base">

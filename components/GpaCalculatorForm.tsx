@@ -115,7 +115,7 @@ export default function GpaCalculatorForm({
             />
 
             <div className="rounded-xl bg-navy-900 p-4 text-white">
-              <div className="text-xs font-semibold uppercase tracking-wide text-slate-300">
+              <div className="text-xs font-semibold tracking-wide text-slate-300">
                 Your UC Capped Weighted GPA
               </div>
               <div className="mt-1 text-3xl font-extrabold text-gold-400">
