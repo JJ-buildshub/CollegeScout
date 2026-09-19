@@ -288,7 +288,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                   <p className="mt-2 text-[11px] leading-snug text-slate-400">
                     {showResidencySplit
                       ? "Overall is College Scorecard's verified figure and won't necessarily sit between the separately-reported In-State/Out-of-State rates shown here, which are what Find My Fit uses to classify your chances."
-                      : "This school doesn't report a residency split, so this verified Overall rate is also what Find My Fit uses to classify your chances here."}
+                      : "Find My Fit uses this overall rate to classify your chances here."}
                   </p>
                 )}
                 {gpaSatBoxes.length > 0 ? (
