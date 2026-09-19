@@ -136,18 +136,15 @@ export default function CollegeProfileDashboard({ college }: { college: College 
     <div>
       {/* Sticky school header, positioned below the site nav (68px). */}
       <div
-        className="sticky z-40 -mx-4 border-b border-slate-200 bg-white/95 px-4 backdrop-blur transition-[padding] duration-200 sm:-mx-6 sm:px-6"
+        className={`sticky z-40 -mx-4 border-b border-black/10 px-4 transition-[padding] duration-200 sm:-mx-6 sm:px-6 ${SYSTEM_ACCENT[college.system].banner}`}
         style={{ top: NAV_HEIGHT, paddingTop: compact ? 8 : 16, paddingBottom: compact ? 8 : 16 }}
       >
-        {/* Absolutely positioned so it adds no height to the sticky stack
-            (NAV_HEIGHT / HEADER_COMPACT_HEIGHT offsets stay accurate). */}
-        <div className={`absolute inset-x-0 top-0 h-1 ${SYSTEM_ACCENT[college.system].edge}`} />
         <div className="mx-auto max-w-5xl">
           {compact ? (
             <div className="flex items-center justify-between gap-3">
               <div className="flex min-w-0 items-center gap-2">
                 <SystemBadge system={college.system} />
-                <h1 className="truncate text-sm font-bold text-navy-900">{college.name}</h1>
+                <h1 className="truncate text-sm font-bold text-white">{college.name}</h1>
               </div>
               <div className="flex shrink-0 items-center gap-2">
                 <WebsiteButton website={college.website} compact />
@@ -160,17 +157,15 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                 <button
                   type="button"
                   onClick={goBackToDirectory}
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-navy-900"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/90 hover:text-white"
                 >
                   <ArrowLeft className="h-3.5 w-3.5" /> Back to Directory
                 </button>
-                <div className={`mt-1.5 text-xs font-bold tracking-wide ${SYSTEM_ACCENT[college.system].text}`}>
-                  {college.system}
-                </div>
-                <h1 className="mt-0.5 text-xl font-extrabold tracking-tight text-navy-900 sm:text-2xl">
+                <div className="mt-1.5 text-xs font-bold tracking-wide text-white/90">{college.system}</div>
+                <h1 className="mt-0.5 text-xl font-extrabold tracking-tight text-white sm:text-2xl">
                   {college.name}
                 </h1>
-                <div className="mt-0.5 flex items-center gap-1 text-xs text-slate-500">
+                <div className="mt-0.5 flex items-center gap-1 text-xs text-white/90">
                   <MapPin className="h-3.5 w-3.5" /> {college.location}
                 </div>
               </div>
@@ -515,7 +510,7 @@ function WebsiteButton({ website, compact }: { website: string | null; compact?:
       target="_blank"
       rel="noopener noreferrer"
       className={clsx(
-        "inline-flex items-center gap-1.5 rounded-full border border-slate-200 font-semibold text-navy-900 hover:border-slate-300",
+        "inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white font-semibold text-navy-900 hover:border-slate-300",
         compact ? "px-2.5 py-1 text-xs" : "px-3 py-1.5 text-xs"
       )}
     >
