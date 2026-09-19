@@ -113,7 +113,6 @@ export default function CollegeProfileDashboard({ college }: { college: College 
   // at all (see commit 7694933, which dropped hardcoded "Not reported"
   // placeholders for these). Both are per-metric optional, so each renders
   // independently rather than as an all-or-nothing block.
-  const gradRate = college.scorecard?.graduationRate;
 
   // Every sourced field on this page, in reading order, reduced to the
   // distinct labels — one footnote line each at the bottom of the page.
@@ -124,7 +123,6 @@ export default function CollegeProfileDashboard({ college }: { college: College 
         college.gpaSatProvenance,
         college.outcomesProvenance,
         college.costProvenance,
-        gradRate?.provenance,
         college.scorecard?.tuitionInState.provenance,
         college.scorecard?.tuitionOutOfState.provenance,
       ]
@@ -233,15 +231,6 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                   ? `${formatUsd(college.financials.coaOutOfState)} out-of-state`
                   : "per year, before aid"
               }
-            />
-          )}
-          {gradRate?.value != null && (
-            <GlanceStat
-              label="Graduation Rate"
-              value={formatPercent(gradRate.value)}
-              sub="6-year rate"
-              showSource
-              provenance={gradRate.provenance ?? undefined}
             />
           )}
           <div className="rounded-xl border border-slate-200 bg-white p-3">
@@ -472,14 +461,6 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                   showSource
                   provenance={college.outcomesProvenance}
                 />
-                {gradRate?.value != null && (
-                  <Stat
-                    label="Graduation Rate (6-year)"
-                    value={formatPercent(gradRate.value)}
-                    showSource
-                    provenance={gradRate.provenance ?? undefined}
-                  />
-                )}
               </div>
               <div className="mt-4 border-t border-slate-100 pt-4">
                 <div className="text-xs font-bold tracking-wide text-slate-600">Top Recruiters</div>

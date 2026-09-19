@@ -16,7 +16,7 @@ export default function AboutDataPage() {
         <div>
           <h2 className="text-sm font-bold text-navy-900">College Scorecard</h2>
           <p className="mt-1.5 text-sm leading-relaxed text-slate-600">
-            Admit rate, graduation rate, and tuition figures come from the U.S. Department
+            Admit rate and tuition figures come from the U.S. Department
             of Education&apos;s College Scorecard, a federal dataset built from schools&apos; own reporting.
             Every Scorecard-sourced number on this site is labeled with its source and award year
             directly under the figure.
