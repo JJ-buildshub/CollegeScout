@@ -15,6 +15,27 @@ Scorecard/admit-rate display logic (`lib/colleges.ts`'s
 logic, source/year provenance fields and rendering, the footer's data
 note, and the hero headline "Find colleges you didn't know to look for."
 
+## Summary — where things stand
+
+| Task | Status | Commit |
+|---|---|---|
+| 0. Playwright + verify last night's work | Done — all 3 items confirmed correct | `3c6f921` |
+| 1. Jargon cleanup | Already complete (earlier audit) — no changes | — |
+| 2. Interest cards | Done | `c33e456` |
+| 3. Visual consistency pass | Partial — see "Not done" in its section | `253b52b` |
+| 4. Find My Fit subtitle/sticky-header | Already complete (earlier tonight) | `bbec6d2` |
+
+Nothing was reverted — every task that made changes built and
+typechecked cleanly on the first or second attempt. `git log
+look-and-feel ^homepage-redesign` shows exactly the 3 commits from
+tasks that touched code (0, 2, 3); tasks 1 and 4 needed none.
+
+Biggest open item if you want to keep going: Task 3's deferred half
+(spacing/card-style consistency across pages) — see that section for a
+concrete starting point rather than an open-ended "make it consistent."
+
+Dev server left running at http://localhost:3000, as asked.
+
 ---
 
 ## Task 0 — Playwright setup and verification: all three items confirmed correct, no fixes needed
@@ -180,6 +201,23 @@ by information weight (e.g. white card + border for primary figures,
 gray fill reserved for secondary/supporting ones) rather than one
 gray-box style for everything. Left entirely alone tonight rather than
 reshuffling without your eyes on it first.
+
+## Task 4 — Find My Fit subtitle/sticky-header: already complete
+
+Both parts of this were done earlier in tonight's session, before the
+overnight run officially started (commit `bbec6d2`, inherited by this
+branch since `look-and-feel` was cut from `homepage-redesign` after
+that commit). Nothing new to do:
+
+- CSU reference fixed ("UC/CSU Capped GPA" → "UC Capped GPA"), rest of
+  the subtitle left in place.
+- Three plain alternatives for the whole subtitle logged in
+  `COPY_REVIEW.md` (not applied — wording is a judgment call, same as
+  every other heading this session left for you/your son).
+- Sticky-header claim checked and found to be a non-issue: `NavBar` is
+  `position: sticky`, which occupies real space in normal document flow
+  and never overlays unscrolled content — no fix needed, documented as
+  checked rather than silently skipped.
 
 ## Task 1 — Jargon cleanup: already complete, no changes made
 
