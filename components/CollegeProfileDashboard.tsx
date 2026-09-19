@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, Award, Briefcase, ExternalLink, MapPin } from "lucide-react";
 import clsx from "clsx";
@@ -115,7 +115,26 @@ export default function CollegeProfileDashboard({ college }: { college: College 
   // independently rather than as an all-or-nothing block.
   const gradRate = college.scorecard?.graduationRate;
 
+  // Every sourced field on this page, in reading order, reduced to the
+  // distinct labels — one footnote line each at the bottom of the page.
+  const sourceNotes = Array.from(
+    new Set(
+      [
+        admitRate.provenance ?? college.admissionsProvenance,
+        college.gpaSatProvenance,
+        college.outcomesProvenance,
+        college.costProvenance,
+        gradRate?.provenance,
+        college.scorecard?.tuitionInState.provenance,
+        college.scorecard?.tuitionOutOfState.provenance,
+      ]
+        .map(sourceLabel)
+        .filter((label): label is string => label !== null)
+    )
+  );
+
   return (
+    <SourceNotes.Provider value={sourceNotes}>
     <div>
       {/* Sticky school header, positioned below the site nav (68px). */}
       <div
@@ -175,6 +194,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
               <span className="text-4xl font-black tabular-nums leading-none tracking-tight text-navy-900">
                 {Math.round(admitRate.value * 100)}
                 <span className="text-2xl">%</span>
+                <SourceMark provenance={admitRate.provenance ?? college.admissionsProvenance} />
               </span>
               <span className="text-xs font-semibold text-slate-500">{admitRateTier(admitRate.value)}</span>
             </div>
@@ -188,7 +208,6 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                 style={{ width: `${Math.max(Math.round(admitRate.value * 100), 2)}%` }}
               />
             </div>
-            <SourceLine provenance={admitRate.provenance ?? college.admissionsProvenance} className="mt-2" />
           </div>
           {hasReportedValue(usesUcCapped ? college.mid50_GPA_UCCapped : college.mid50_GPA_Unweighted) && (
             <GlanceStat
@@ -220,7 +239,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
             <GlanceStat
               label="Graduation Rate"
               value={formatPercent(gradRate.value)}
-              sub="6-yr., via College Scorecard"
+              sub="6-year rate"
               showSource
               provenance={gradRate.provenance ?? undefined}
             />
@@ -236,8 +255,8 @@ export default function CollegeProfileDashboard({ college }: { college: College 
           Data sourced from {college.dataProvenance.sourcedFrom.join(", ")}
           {college.dataProvenance.lastVerified ? ` · Last verified ${college.dataProvenance.lastVerified}` : ""}.
           This provenance applies to the record as a whole
-          {gradRate?.value != null &&
-            " — Graduation Rate is sourced separately from College Scorecard, as noted on it"}
+          {sourceNotes.length > 0 &&
+            " — figures marked with a star are sourced separately, as noted at the bottom of the page"}
           .
         </p>
 
@@ -422,8 +441,11 @@ export default function CollegeProfileDashboard({ college }: { college: College 
             <h2 className="text-lg font-bold text-navy-900">Cost</h2>
             <div className="mt-3">
               <div className="max-w-2xl rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-                <FinancialSnapshot financials={college.financials} ipedsUnitId={college.ipedsUnitId ?? null} />
-                <SourceLine provenance={college.costProvenance} className="mt-3" />
+                <FinancialSnapshot
+                  financials={college.financials}
+                  ipedsUnitId={college.ipedsUnitId ?? null}
+                  sourceMark={<SourceMark provenance={college.costProvenance} />}
+                />
                 {college.scorecard && <ScorecardTuitionRow scorecard={college.scorecard} />}
               </div>
             </div>
@@ -452,7 +474,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                 />
                 {gradRate?.value != null && (
                   <Stat
-                    label="Graduation Rate (6-yr., via College Scorecard)"
+                    label="Graduation Rate (6-year)"
                     value={formatPercent(gradRate.value)}
                     showSource
                     provenance={gradRate.provenance ?? undefined}
@@ -487,8 +509,20 @@ export default function CollegeProfileDashboard({ college }: { college: College 
             </div>
           </section>
         </div>
+
+        {sourceNotes.length > 0 && (
+          <div className="space-y-1 border-t border-slate-200 pb-8 pt-4 text-xs text-slate-400">
+            {sourceNotes.map((note, i) => (
+              <p key={note}>
+                <span className="mr-1 font-bold">{FOOTNOTE_MARKS[Math.min(i, FOOTNOTE_MARKS.length - 1)]}</span>
+                {note.replace(/^College Scorecard/, "College Scorecard (U.S. Department of Education)")}
+              </p>
+            ))}
+          </div>
+        )}
       </div>
     </div>
+    </SourceNotes.Provider>
   );
 }
 
@@ -509,24 +543,51 @@ function WebsiteButton({ website, compact }: { website: string | null; compact?:
   );
 }
 
-/**
- * Renders "{source} · {year}" — but only once we actually have a source or a
- * year for this field. Showing "Source not recorded · Year not recorded" on
- * every stat (true for all 125 records today, since no field has provenance
- * populated yet) reads as a broken page rather than an honest one; once
- * either half is known, still label the missing half explicitly rather than
- * silently dropping it.
- */
 /** Strips a technical field-name suffix like " (latest.cost.avg_net_price.overall)" — useful for our own audit trail in the data file, but not something a reader needs to see. */
 function readableSource(source: string): string {
   return source.replace(/\s*\([^)]*\)\s*$/, "");
 }
 
-function SourceLine({ provenance, className }: { provenance?: FieldProvenance; className?: string }) {
+/**
+ * The "{source} · {year}" label for a field, or null when we have neither
+ * (true for most curated fields today — showing "Source not recorded" on
+ * every stat reads as a broken page rather than an honest one; the
+ * page-wide note near the top covers those). Once either half is known, the
+ * missing half is still labeled explicitly rather than silently dropped.
+ */
+function sourceLabel(provenance?: FieldProvenance | null): string | null {
   if (!provenance?.source && !provenance?.year) return null;
   const source = provenance?.source ? readableSource(provenance.source) : "Source not recorded";
   const year = provenance?.year ?? "Year not recorded";
-  return <div className={clsx("text-[11px] text-slate-400", className)}>{source} &middot; {year}</div>;
+  return `${source} \u00b7 ${year}`;
+}
+
+// Footnote symbols, in order of first appearance on the page. Most profiles
+// have a single source (College Scorecard, one award year), so the reader
+// usually sees just "*".
+const FOOTNOTE_MARKS = ["*", "\u2020", "\u2021", "\u00a7"];
+
+// The page's distinct sourced-field labels, in order. Each starred value looks
+// itself up here so the marker matches the single footnote at the page bottom.
+const SourceNotes = createContext<string[]>([]);
+
+/**
+ * A small superscript marker next to a sourced value — the full source is on
+ * hover (title) and for screen readers, and spelled out once in the page
+ * footnote instead of under every field.
+ */
+function SourceMark({ provenance }: { provenance?: FieldProvenance | null }) {
+  const notes = useContext(SourceNotes);
+  const label = sourceLabel(provenance);
+  if (!label) return null;
+  const index = notes.indexOf(label);
+  if (index === -1) return null;
+  return (
+    <sup className="ml-0.5 text-xs font-bold text-slate-500" title={label}>
+      {FOOTNOTE_MARKS[Math.min(index, FOOTNOTE_MARKS.length - 1)]}
+      <span className="sr-only"> (source: {label})</span>
+    </sup>
+  );
 }
 
 /** "N/A (...)"-style placeholder strings mean the field isn't reported — never render an empty box for one. */
@@ -556,9 +617,11 @@ function GlanceStat({
   return (
     <div className="rounded-xl border border-slate-200 bg-white p-3">
       <div className="text-[11px] font-semibold tracking-wide text-slate-600">{label}</div>
-      <div className="mt-1 text-base font-extrabold tabular-nums text-navy-900">{value}</div>
+      <div className="mt-1 text-base font-extrabold tabular-nums text-navy-900">
+        {value}
+        {showSource && <SourceMark provenance={provenance} />}
+      </div>
       {sub && <div className="mt-0.5 text-[11px] text-slate-400">{sub}</div>}
-      {showSource && <SourceLine provenance={provenance} className="mt-1" />}
     </div>
   );
 }
@@ -577,8 +640,10 @@ function Stat({
   return (
     <div>
       <div className="text-xs font-semibold tracking-wide text-slate-600">{label}</div>
-      <div className="mt-0.5 text-lg font-bold text-navy-900">{value ?? "Not publicly reported"}</div>
-      {showSource && <SourceLine provenance={provenance} className="mt-1" />}
+      <div className="mt-0.5 text-lg font-bold text-navy-900">
+        {value ?? "Not publicly reported"}
+        {showSource && <SourceMark provenance={provenance} />}
+      </div>
     </div>
   );
 }
@@ -605,6 +670,7 @@ function ScorecardTuitionRow({ scorecard }: { scorecard: ScorecardData }) {
           <span className="font-bold tabular-nums text-navy-900">
             {tuitionInState.value != null ? formatUsd(tuitionInState.value) : "Not reported"}
           </span>
+          <SourceMark provenance={tuitionInState.provenance} />
         </span>
         {!sameTuition && (
           <span className="text-slate-500">
@@ -612,10 +678,10 @@ function ScorecardTuitionRow({ scorecard }: { scorecard: ScorecardData }) {
             <span className="font-bold tabular-nums text-navy-900">
               {tuitionOutOfState.value != null ? formatUsd(tuitionOutOfState.value) : "Not reported"}
             </span>
+            <SourceMark provenance={tuitionOutOfState.provenance} />
           </span>
         )}
       </div>
-      <SourceLine provenance={tuitionInState.provenance ?? tuitionOutOfState.provenance ?? undefined} className="mt-1" />
     </div>
   );
 }
@@ -634,8 +700,10 @@ function GpaBox({
   return (
     <div className="rounded-xl bg-slate-50 p-4">
       <div className="text-xs font-semibold tracking-wide text-slate-600">{label}</div>
-      <div className="mt-1 text-base font-bold text-navy-900">{value}</div>
-      {showSource && <SourceLine provenance={provenance} className="mt-1" />}
+      <div className="mt-1 text-base font-bold text-navy-900">
+        {value}
+        {showSource && <SourceMark provenance={provenance} />}
+      </div>
     </div>
   );
 }

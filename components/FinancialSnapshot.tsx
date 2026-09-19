@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { ExternalLink } from "lucide-react";
 import type { FinancialSnapshot as FinancialSnapshotType } from "@/lib/types";
 
@@ -9,9 +10,12 @@ function formatUsd(n: number | null): string {
 export default function FinancialSnapshot({
   financials,
   ipedsUnitId,
+  sourceMark,
 }: {
   financials: FinancialSnapshotType;
   ipedsUnitId: number | null;
+  /** Footnote marker for the cost figures, when they carry a recorded source. */
+  sourceMark?: ReactNode;
 }) {
   const sameRate =
     financials.coaInState !== null && financials.coaInState === financials.coaOutOfState;
@@ -37,6 +41,7 @@ export default function FinancialSnapshot({
           </div>
           <div className="mt-0.5 text-2xl font-extrabold tabular-nums text-navy-900">
             {formatUsd(financials.coaInState)}
+            {sourceMark}
           </div>
         </div>
         {!sameRate && (
@@ -44,6 +49,7 @@ export default function FinancialSnapshot({
             <div className="text-xs font-semibold tracking-wide text-slate-600">Out-of-state cost of attendance</div>
             <div className="mt-0.5 text-2xl font-extrabold tabular-nums text-navy-900">
               {formatUsd(financials.coaOutOfState)}
+              {sourceMark}
             </div>
           </div>
         )}
