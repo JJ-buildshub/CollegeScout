@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { MapPin } from "lucide-react";
 import type { FitResult } from "@/lib/types";
-import { displayedAdmitRate, formatPercent } from "@/lib/colleges";
+import { displayedAdmitRate } from "@/lib/colleges";
 import { personalizeForAudience, type PlanningFor } from "@/lib/gpa";
-import SystemBadge from "./SystemBadge";
+import { SYSTEM_ACCENT } from "./SystemBadge";
 import SaveToggleButton from "./SaveToggleButton";
 
 export default function FitCollegeCard({
@@ -15,6 +15,8 @@ export default function FitCollegeCard({
 }) {
   const { college, studentGpaUsed, gpaMetricLabel, rangeLow, rangeHigh, reason } = result;
   const hasRange = rangeLow !== null && rangeHigh !== null;
+  const accent = SYSTEM_ACCENT[college.system];
+  const admitPct = Math.round(displayedAdmitRate(college).value * 100);
 
   // Domain always covers both the range and the student's GPA, then pads
   // both ends — proportional to how wide that combined span is, with a
@@ -33,20 +35,26 @@ export default function FitCollegeCard({
   return (
     <Link
       href={`/directory/${college.id}`}
-      className="block rounded-xl border border-slate-200 bg-white p-4 shadow-card transition-all hover:-translate-y-0.5 hover:shadow-cardHover"
+      className="block overflow-hidden rounded-xl border border-slate-200 bg-white shadow-card transition-all hover:-translate-y-0.5 hover:shadow-cardHover"
     >
+      <div className={`h-1 ${accent.edge}`} />
+      <div className="p-4">
       <div className="flex items-start justify-between gap-2">
         <div>
-          <SystemBadge system={college.system} />
-          <h3 className="mt-2 text-sm font-bold leading-snug text-navy-900">{college.name}</h3>
+          <span className={`text-[11px] font-bold tracking-wide ${accent.text}`}>{college.system}</span>
+          <h3 className="mt-0.5 text-sm font-extrabold leading-snug text-navy-900">{college.name}</h3>
           <div className="mt-0.5 flex items-center gap-1 text-xs text-slate-400">
             <MapPin className="h-3 w-3" /> {college.location}
           </div>
         </div>
-        <div className="flex flex-col items-end gap-1.5">
+        <div className="flex flex-col items-end gap-1">
           <SaveToggleButton collegeId={college.id} />
-          <div className="whitespace-nowrap text-right text-xs font-semibold text-slate-400">
-            {formatPercent(displayedAdmitRate(college).value)} overall admit
+          <div className="text-right leading-none">
+            <span className="text-2xl font-black tabular-nums tracking-tight text-navy-900">
+              {admitPct}
+              <span className="text-base">%</span>
+            </span>
+            <div className="mt-0.5 text-[10px] font-semibold text-slate-400">admitted</div>
           </div>
         </div>
       </div>
@@ -83,6 +91,7 @@ export default function FitCollegeCard({
       <p className="mt-3 text-xs leading-snug text-slate-500">
         {personalizeForAudience(reason, planningFor)}
       </p>
+      </div>
     </Link>
   );
 }

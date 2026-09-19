@@ -1,19 +1,11 @@
 import Link from "next/link";
 import { ExternalLink, MapPin } from "lucide-react";
-import type { College, CollegeSystem } from "@/lib/types";
+import type { College } from "@/lib/types";
 import { admitRateTier, displayedAdmitRate } from "@/lib/colleges";
 import { parseGpaRange } from "@/lib/gpa";
 import SaveToggleButton from "./SaveToggleButton";
+import { SYSTEM_ACCENT } from "./SystemBadge";
 import TestingPolicyBadge from "./TestingPolicyBadge";
-
-// Top edge + label color per system — the one place the card carries color,
-// so a scan down the grid shows the mix of school types at a glance.
-const SYSTEM_ACCENT: Record<CollegeSystem, { edge: string; text: string }> = {
-  UC: { edge: "bg-blue-500", text: "text-blue-700" },
-  CSU: { edge: "bg-emerald-500", text: "text-emerald-700" },
-  Private: { edge: "bg-purple-500", text: "text-purple-700" },
-  "Out-of-State Public": { edge: "bg-amber-500", text: "text-amber-700" },
-};
 
 // A school only gets a stat cell when the value is a real number range —
 // "N/A (Not reported)" is dropped rather than shown as an empty box.

@@ -8,6 +8,15 @@ const SYSTEM_STYLES: Record<CollegeSystem, string> = {
   "Out-of-State Public": "bg-amber-50 text-amber-700 ring-1 ring-inset ring-amber-200",
 };
 
+// Top-edge and label colors per system, shared by every card and profile
+// header so a school type reads the same color everywhere on the site.
+export const SYSTEM_ACCENT: Record<CollegeSystem, { edge: string; text: string }> = {
+  UC: { edge: "bg-blue-500", text: "text-blue-700" },
+  CSU: { edge: "bg-emerald-500", text: "text-emerald-700" },
+  Private: { edge: "bg-purple-500", text: "text-purple-700" },
+  "Out-of-State Public": { edge: "bg-amber-500", text: "text-amber-700" },
+};
+
 export default function SystemBadge({ system, className }: { system: CollegeSystem; className?: string }) {
   return (
     <span
