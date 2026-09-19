@@ -113,7 +113,6 @@ export default function CollegeProfileDashboard({ college }: { college: College 
   // at all (see commit 7694933, which dropped hardcoded "Not reported"
   // placeholders for these). Both are per-metric optional, so each renders
   // independently rather than as an all-or-nothing block.
-  const netPrice = college.scorecard?.netPriceOverall;
   const gradRate = college.scorecard?.graduationRate;
 
   return (
@@ -205,13 +204,16 @@ export default function CollegeProfileDashboard({ college }: { college: College 
             showSource
             provenance={college.outcomesProvenance}
           />
-          {netPrice?.value != null && (
+          {college.financials.coaInState !== null && (
             <GlanceStat
-              label="Net Price"
-              value={formatUsd(netPrice.value)}
-              sub="avg., via College Scorecard"
-              showSource
-              provenance={netPrice.provenance ?? undefined}
+              label="Cost of Attendance"
+              value={formatUsd(college.financials.coaInState)}
+              sub={
+                college.financials.coaOutOfState !== null &&
+                college.financials.coaOutOfState !== college.financials.coaInState
+                  ? `${formatUsd(college.financials.coaOutOfState)} out-of-state`
+                  : "per year, before aid"
+              }
             />
           )}
           {gradRate?.value != null && (
@@ -234,8 +236,8 @@ export default function CollegeProfileDashboard({ college }: { college: College 
           Data sourced from {college.dataProvenance.sourcedFrom.join(", ")}
           {college.dataProvenance.lastVerified ? ` · Last verified ${college.dataProvenance.lastVerified}` : ""}.
           This provenance applies to the record as a whole
-          {(netPrice?.value != null || gradRate?.value != null) &&
-            " — Net Price and Graduation Rate are sourced separately from College Scorecard, as noted on each"}
+          {gradRate?.value != null &&
+            " — Graduation Rate is sourced separately from College Scorecard, as noted on it"}
           .
         </p>
 
@@ -418,12 +420,12 @@ export default function CollegeProfileDashboard({ college }: { college: College 
           {/* Cost */}
           <section id="cost" className={scrollMt}>
             <h2 className="text-lg font-bold text-navy-900">Cost</h2>
-            <div className="mt-3 grid items-start gap-4 lg:grid-cols-2">
-              <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-                <FinancialSnapshot financials={college.financials} />
+            <div className="mt-3">
+              <div className="max-w-2xl rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+                <FinancialSnapshot financials={college.financials} ipedsUnitId={college.ipedsUnitId ?? null} />
                 <SourceLine provenance={college.costProvenance} className="mt-3" />
+                {college.scorecard && <ScorecardTuitionRow scorecard={college.scorecard} />}
               </div>
-              {college.scorecard && <ScorecardCostCard scorecard={college.scorecard} />}
             </div>
           </section>
 
@@ -581,87 +583,39 @@ function Stat({
   );
 }
 
-const INCOME_BAND_LABELS: Record<string, string> = {
-  "0-30000": "$0 – 30,000",
-  "30001-48000": "$30,001 – 48,000",
-  "48001-75000": "$48,001 – 75,000",
-  "75001-110000": "$75,001 – 110,000",
-  "110001-plus": "$110,001+",
-};
-const INCOME_BAND_ORDER = Object.keys(INCOME_BAND_LABELS);
 
 /**
- * A second, clearly separate card for College Scorecard's cost figures — kept
- * apart from the curated FinancialSnapshot card rather than merged into it,
- * since Scorecard's tuition figure is tuition only (not full cost of
- * attendance) and its net price is a different methodology/reporting year
- * than any curated cost figure. Never rendered as a stand-in for curated
- * data, only as an additional, separately-sourced reference.
+ * Tuition is the one Scorecard cost figure kept on the profile: a real, dated
+ * component of the cost of attendance above, shown with its own source line.
+ * (Net price and net price by income were removed from the profile.)
  */
-function ScorecardCostCard({ scorecard }: { scorecard: ScorecardData }) {
-  const { tuitionInState, tuitionOutOfState, netPriceOverall, netPriceByIncomeBand } = scorecard;
-  const sameTuition =
-    tuitionInState.value != null && tuitionInState.value === tuitionOutOfState.value;
-  const bands = netPriceByIncomeBand.value
-    ? INCOME_BAND_ORDER.filter((band) => netPriceByIncomeBand.value![band] != null)
-    : [];
-
-  if (tuitionInState.value == null && tuitionOutOfState.value == null && netPriceOverall.value == null) {
-    return null;
-  }
+function ScorecardTuitionRow({ scorecard }: { scorecard: ScorecardData }) {
+  const { tuitionInState, tuitionOutOfState } = scorecard;
+  if (tuitionInState.value == null && tuitionOutOfState.value == null) return null;
+  const sameTuition = tuitionInState.value != null && tuitionInState.value === tuitionOutOfState.value;
 
   return (
-    <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-      <div className="text-xs font-bold tracking-wide text-slate-600">Via College Scorecard</div>
-      <p className="mt-1 text-xs text-slate-400">
-        Tuition only (not full cost of attendance) and average net price — a separate source/methodology from
-        the curated figures at left.
-      </p>
-      {(tuitionInState.value != null || tuitionOutOfState.value != null) && (
-        <div className={`mt-4 grid gap-4 border-t border-slate-100 pt-4 ${sameTuition ? "grid-cols-1" : "grid-cols-2"}`}>
-          <div>
-            <div className="text-xs font-semibold tracking-wide text-slate-600">
-              {sameTuition ? "Tuition" : "In-State Tuition"}
-            </div>
-            <div className="mt-0.5 text-lg font-bold text-navy-900">
-              {tuitionInState.value != null ? formatUsd(tuitionInState.value) : "Not reported"}
-            </div>
-          </div>
-          {!sameTuition && (
-            <div>
-              <div className="text-xs font-semibold tracking-wide text-slate-600">Out-of-State Tuition</div>
-              <div className="mt-0.5 text-lg font-bold text-navy-900">
-                {tuitionOutOfState.value != null ? formatUsd(tuitionOutOfState.value) : "Not reported"}
-              </div>
-            </div>
-          )}
-        </div>
-      )}
-      <SourceLine
-        provenance={tuitionInState.provenance ?? tuitionOutOfState.provenance ?? undefined}
-        className="mt-1"
-      />
-      {netPriceOverall.value != null && (
-        <div className="mt-4 border-t border-slate-100 pt-4">
-          <div className="text-xs font-semibold tracking-wide text-slate-600">Average Net Price</div>
-          <div className="mt-0.5 text-lg font-bold text-navy-900">{formatUsd(netPriceOverall.value)}</div>
-          <SourceLine provenance={netPriceOverall.provenance ?? undefined} className="mt-1" />
-        </div>
-      )}
-      {bands.length > 0 && (
-        <div className="mt-4 border-t border-slate-100 pt-4">
-          <div className="text-xs font-semibold tracking-wide text-slate-600">Net Price by Family Income</div>
-          <div className="mt-2 space-y-1">
-            {bands.map((band) => (
-              <div key={band} className="flex items-baseline justify-between text-sm">
-                <span className="text-slate-500">{INCOME_BAND_LABELS[band]}</span>
-                <span className="font-semibold text-navy-900">{formatUsd(netPriceByIncomeBand.value![band])}</span>
-              </div>
-            ))}
-          </div>
-          <SourceLine provenance={netPriceByIncomeBand.provenance ?? undefined} className="mt-2" />
-        </div>
-      )}
+    <div className="mt-4 border-t border-slate-100 pt-4">
+      <div className="text-xs font-semibold tracking-wide text-slate-600">
+        Tuition only (part of the cost above)
+      </div>
+      <div className="mt-1 flex flex-wrap gap-x-6 gap-y-1 text-sm">
+        <span className="text-slate-500">
+          {sameTuition ? "Tuition" : "In-state"}{" "}
+          <span className="font-bold tabular-nums text-navy-900">
+            {tuitionInState.value != null ? formatUsd(tuitionInState.value) : "Not reported"}
+          </span>
+        </span>
+        {!sameTuition && (
+          <span className="text-slate-500">
+            Out-of-state{" "}
+            <span className="font-bold tabular-nums text-navy-900">
+              {tuitionOutOfState.value != null ? formatUsd(tuitionOutOfState.value) : "Not reported"}
+            </span>
+          </span>
+        )}
+      </div>
+      <SourceLine provenance={tuitionInState.provenance ?? tuitionOutOfState.provenance ?? undefined} className="mt-1" />
     </div>
   );
 }
