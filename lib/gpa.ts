@@ -195,6 +195,15 @@ export function classifyFit(
         reason: "Your GPA is within range, but the admit rate is under 25%, so admission is still competitive.",
       };
     }
+    // A broad-admit school where the student is at or above the middle of the
+    // range is Likely — being "within" range at a 75%-admit school isn't a
+    // coin flip. Below the midpoint stays Target.
+    if (admitRateOverall >= 0.6 && studentGpa >= (rangeLow + rangeHigh) / 2) {
+      return {
+        category: "Safety",
+        reason: "Your GPA is at or above the middle of this school's typical admitted range, at a school that admits most applicants.",
+      };
+    }
     return {
       category: "Target",
       reason: "Your GPA sits within the typical mid-50% admitted range for this school.",
