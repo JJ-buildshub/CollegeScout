@@ -7,7 +7,7 @@ import clsx from "clsx";
 import type { College, FieldProvenance, ScorecardData } from "@/lib/types";
 import { formatPercent, admitRateTier, displayedAdmitRate } from "@/lib/colleges";
 import { hasReliableResidencySplit } from "@/lib/gpa";
-import SystemBadge from "./SystemBadge";
+import SystemBadge, { SYSTEM_ACCENT } from "./SystemBadge";
 import SaveToggleButton from "./SaveToggleButton";
 import TestingPolicyBadge from "./TestingPolicyBadge";
 import ApplicationPlanBadges from "./ApplicationPlanBadges";
@@ -123,6 +123,9 @@ export default function CollegeProfileDashboard({ college }: { college: College 
         className="sticky z-40 -mx-4 border-b border-slate-200 bg-white/95 px-4 backdrop-blur transition-[padding] duration-200 sm:-mx-6 sm:px-6"
         style={{ top: NAV_HEIGHT, paddingTop: compact ? 8 : 16, paddingBottom: compact ? 8 : 16 }}
       >
+        {/* Absolutely positioned so it adds no height to the sticky stack
+            (NAV_HEIGHT / HEADER_COMPACT_HEIGHT offsets stay accurate). */}
+        <div className={`absolute inset-x-0 top-0 h-1 ${SYSTEM_ACCENT[college.system].edge}`} />
         <div className="mx-auto max-w-5xl">
           {compact ? (
             <div className="flex items-center justify-between gap-3">
@@ -145,10 +148,10 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                 >
                   <ArrowLeft className="h-3.5 w-3.5" /> Back to Directory
                 </button>
-                <div className="mt-1.5">
-                  <SystemBadge system={college.system} />
+                <div className={`mt-1.5 text-xs font-bold tracking-wide ${SYSTEM_ACCENT[college.system].text}`}>
+                  {college.system}
                 </div>
-                <h1 className="mt-1.5 text-xl font-extrabold tracking-tight text-navy-900 sm:text-2xl">
+                <h1 className="mt-0.5 text-xl font-extrabold tracking-tight text-navy-900 sm:text-2xl">
                   {college.name}
                 </h1>
                 <div className="mt-0.5 flex items-center gap-1 text-xs text-slate-500">
@@ -167,13 +170,27 @@ export default function CollegeProfileDashboard({ college }: { college: College 
       <div className="mx-auto max-w-5xl">
         {/* At-a-glance strip */}
         <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-          <GlanceStat
-            label="Admit Rate"
-            value={formatPercent(admitRate.value)}
-            sub={admitRateTier(admitRate.value)}
-            showSource
-            provenance={admitRate.provenance ?? college.admissionsProvenance}
-          />
+          <div className="col-span-2 rounded-xl border border-slate-200 bg-white p-4">
+            <div className="text-[11px] font-semibold tracking-wide text-slate-600">Admit Rate</div>
+            <div className="mt-1 flex items-baseline gap-2">
+              <span className="text-4xl font-black tabular-nums leading-none tracking-tight text-navy-900">
+                {Math.round(admitRate.value * 100)}
+                <span className="text-2xl">%</span>
+              </span>
+              <span className="text-xs font-semibold text-slate-500">{admitRateTier(admitRate.value)}</span>
+            </div>
+            <div
+              className="mt-2 h-1.5 overflow-hidden rounded-full bg-slate-100"
+              role="img"
+              aria-label={`${Math.round(admitRate.value * 100)}% admit rate`}
+            >
+              <div
+                className="h-full rounded-full bg-navy-800"
+                style={{ width: `${Math.max(Math.round(admitRate.value * 100), 2)}%` }}
+              />
+            </div>
+            <SourceLine provenance={admitRate.provenance ?? college.admissionsProvenance} className="mt-2" />
+          </div>
           {hasReportedValue(usesUcCapped ? college.mid50_GPA_UCCapped : college.mid50_GPA_Unweighted) && (
             <GlanceStat
               label={usesUcCapped ? "GPA Range (UC-Capped)" : "GPA Range (Unweighted)"}
@@ -537,7 +554,7 @@ function GlanceStat({
   return (
     <div className="rounded-xl border border-slate-200 bg-white p-3">
       <div className="text-[11px] font-semibold tracking-wide text-slate-600">{label}</div>
-      <div className="mt-1 text-sm font-bold text-navy-900">{value}</div>
+      <div className="mt-1 text-base font-extrabold tabular-nums text-navy-900">{value}</div>
       {sub && <div className="mt-0.5 text-[11px] text-slate-400">{sub}</div>}
       {showSource && <SourceLine provenance={provenance} className="mt-1" />}
     </div>
