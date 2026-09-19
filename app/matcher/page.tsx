@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { Check, HelpCircle, Rocket, Shield, Target } from "lucide-react";
-import { colleges } from "@/lib/colleges";
+import { colleges, displayedAdmitRate } from "@/lib/colleges";
 import { calculateUcCappedGpa, evaluateCollegeFit, personalizeForAudience, type GpaInputs, type PlanningFor } from "@/lib/gpa";
 import { US_STATES, stateName } from "@/lib/states";
 import type { FitCategory, FitResult } from "@/lib/types";
@@ -49,7 +49,10 @@ function sortByRangeDistanceThenName(a: FitResult, b: FitResult): number {
   return a.college.name.localeCompare(b.college.name);
 }
 
-function sortByName(a: FitResult, b: FitResult): number {
+// Highest admit rate first, using the same figure the card displays.
+function sortByAdmitRateThenName(a: FitResult, b: FitResult): number {
+  const diff = displayedAdmitRate(b.college).value - displayedAdmitRate(a.college).value;
+  if (diff !== 0) return diff;
   return a.college.name.localeCompare(b.college.name);
 }
 
@@ -89,9 +92,9 @@ const BUCKET_META: Record<FitCategory, { label: string; icon: typeof Shield; des
     accent: "border-rose-200 bg-rose-50/50",
   },
   Unrated: {
-    label: "Unrated",
+    label: "Not enough data to estimate",
     icon: HelpCircle,
-    description: "Schools that don't publish a GPA range. We can't directly compare your GPA here — each card shows our best admit-rate-only estimate instead.",
+    description: "Schools that don't publish a GPA range, so we can't compare your GPA to them. Sorted by admit rate, highest first.",
     accent: "border-slate-200 bg-slate-50/50",
   },
 };
@@ -186,7 +189,7 @@ export default function MatcherPage() {
     Safety: fitResults.filter((r) => r.category === "Safety").sort(ratedSort),
     Target: fitResults.filter((r) => r.category === "Target").sort(ratedSort),
     Reach: fitResults.filter((r) => r.category === "Reach").sort(ratedSort),
-    Unrated: fitResults.filter((r) => r.category === "Unrated").sort(sortByName),
+    Unrated: fitResults.filter((r) => r.category === "Unrated").sort(sortByAdmitRateThenName),
   };
 
   return (
@@ -279,7 +282,7 @@ export default function MatcherPage() {
           {!isUntouchedState && (
             <p className="text-sm font-semibold text-navy-900">
               {buckets.Safety.length} likely &middot; {buckets.Target.length} target &middot;{" "}
-              {buckets.Reach.length} reach for you
+              {buckets.Reach.length} reach for you &middot; {buckets.Unrated.length} not enough data
             </p>
           )}
 

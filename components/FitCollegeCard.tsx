@@ -6,15 +6,6 @@ import { personalizeForAudience, type PlanningFor } from "@/lib/gpa";
 import SystemBadge from "./SystemBadge";
 import SaveToggleButton from "./SaveToggleButton";
 
-// Display-only mapping for the raw AdmitRateLean value — "Safety" reads as a
-// certainty the data can't support, so the shown word differs from the
-// internal category (see BUCKET_META in app/matcher/page.tsx for the same mapping).
-const LEAN_LABEL: Record<"Safety" | "Target" | "Reach", string> = {
-  Safety: "Likely",
-  Target: "Target",
-  Reach: "Reach",
-};
-
 export default function FitCollegeCard({
   result,
   planningFor = "self",
@@ -22,7 +13,7 @@ export default function FitCollegeCard({
   result: FitResult;
   planningFor?: PlanningFor;
 }) {
-  const { college, studentGpaUsed, gpaMetricLabel, rangeLow, rangeHigh, reason, admitRateOnlyLean } = result;
+  const { college, studentGpaUsed, gpaMetricLabel, rangeLow, rangeHigh, reason } = result;
   const hasRange = rangeLow !== null && rangeHigh !== null;
 
   // Domain always covers both the range and the student's GPA, then pads
@@ -86,18 +77,7 @@ export default function FitCollegeCard({
               <span>{rangeHigh.toFixed(2)}</span>
             </div>
           </>
-        ) : (
-          <div className="mt-1.5 space-y-1.5">
-            <div className="rounded-lg bg-slate-50 px-2.5 py-1.5 text-[10px] font-medium text-slate-400">
-              GPA band not publicly reported &mdash; here&apos;s what admit rate alone suggests
-            </div>
-            {admitRateOnlyLean && (
-              <div className="inline-flex items-center gap-1 rounded-full border border-dashed border-slate-300 bg-white px-2 py-0.5 text-[10px] font-semibold text-slate-500">
-                Rough lean: {LEAN_LABEL[admitRateOnlyLean]}
-              </div>
-            )}
-          </div>
-        )}
+        ) : null}
       </div>
 
       <p className="mt-3 text-xs leading-snug text-slate-500">

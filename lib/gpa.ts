@@ -237,28 +237,13 @@ export function classifyFit(
 }
 
 /**
- * Fallback for schools that don't publicly report a GPA band (common for many
- * merit-focused and holistic-review schools) — classify from admit rate alone
- * rather than silently dropping the school out of the Safety/Target/Reach view.
- */
-function classifyFitByAdmitRateOnly(admitRate: number): { category: AdmitRateLean; reason: string } {
-  if (admitRate < 0.1) {
-    return { category: "Reach", reason: "its sub-10% admit rate alone makes it a Reach for nearly everyone" };
-  }
-  if (admitRate < 0.4) {
-    return { category: "Target", reason: "it would lean Target for you based on admit rate alone" };
-  }
-  return { category: "Safety", reason: "its broad admit rate alone would lean Likely for you" };
-}
-
-/**
  * Classifies a school as Safety / Target / Reach / Unrated.
  *
  * "Unrated" is returned whenever the school doesn't publish a GPA band for the
  * relevant metric — a school is never silently placed into a real Safety/
  * Target/Reach bucket from admit rate alone, since that conflates "no data"
- * with "we compared your GPA and it's fine." The admit-rate-only lean is
- * still surfaced (via `admitRateOnlyLean`) as a clearly-labeled rough signal.
+ * with "we compared your GPA and it's fine." Those schools get no estimate
+ * at all rather than a guessed one.
  *
  * `residency`, when supplied, is a manual override that always wins. Absent
  * that, `homeState` (a plain state code, not a residency flag — see
@@ -280,11 +265,6 @@ export function evaluateCollegeFit(
   const { rate: admitRate, context: residencyContext } = resolveAdmitRate(college, residency, homeState);
 
   if (!parsed) {
-    const { category: lean, reason: leanReason } = classifyFitByAdmitRateOnly(admitRate);
-    const residencyNote =
-      residencyContext !== "overall"
-        ? ` Using the ${residencyContext} admit rate (${Math.round(admitRate * 100)}%) instead of the overall rate (${Math.round(college.admitRateOverall * 100)}%).`
-        : "";
     return {
       college,
       category: "Unrated",
@@ -292,9 +272,7 @@ export function evaluateCollegeFit(
       gpaMetricLabel: "GPA band not reported",
       rangeLow: null,
       rangeHigh: null,
-      reason:
-        `This school doesn't publish a GPA range, so we can't compare your GPA to it directly. Based on ${leanReason} — but treat that as a rough signal, not a personalized estimate.${residencyNote}`,
-      admitRateOnlyLean: lean,
+      reason: "This school doesn't publish a GPA range, so we can't compare your GPA to it.",
       residencyContext,
     };
   }
@@ -309,7 +287,6 @@ export function evaluateCollegeFit(
     rangeLow: parsed.low,
     rangeHigh: parsed.high,
     reason,
-    admitRateOnlyLean: null,
     residencyContext,
   };
 }

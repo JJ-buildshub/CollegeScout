@@ -226,7 +226,7 @@ export interface ScorecardData {
 
 export type FitCategory = "Safety" | "Target" | "Reach" | "Unrated";
 
-/** A real Safety/Target/Reach lean — never "Unrated" itself. */
+/** A real Safety/Target/Reach placement — never "Unrated" itself. */
 export type AdmitRateLean = "Safety" | "Target" | "Reach";
 
 export type ResidencyContext = "in-state" | "out-of-state" | "overall";
@@ -241,8 +241,6 @@ export interface FitResult {
   rangeLow: number | null;
   rangeHigh: number | null;
   reason: string;
-  /** Set only when category is "Unrated" — the rough admit-rate-only lean, shown as an estimate, not a placement. */
-  admitRateOnlyLean: AdmitRateLean | null;
   /** Which admit rate was actually used for classification. */
   residencyContext: ResidencyContext;
 }
