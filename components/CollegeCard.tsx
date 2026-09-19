@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { ExternalLink, MapPin, TrendingUp, FileCheck2 } from "lucide-react";
 import type { College } from "@/lib/types";
-import { admitRateTier, formatPercent } from "@/lib/colleges";
+import { admitRateTier, displayedAdmitRate, formatPercent } from "@/lib/colleges";
 import SystemBadge from "./SystemBadge";
 import SaveToggleButton from "./SaveToggleButton";
 import TestingPolicyBadge from "./TestingPolicyBadge";
 
 export default function CollegeCard({ college }: { college: College }) {
+  const admitRate = displayedAdmitRate(college);
   return (
     <Link
       href={`/directory/${college.id}`}
@@ -44,8 +45,8 @@ export default function CollegeCard({ college }: { college: College }) {
             <TrendingUp className="h-3.5 w-3.5" /> Overall Admit Rate
           </div>
           <div className="mt-0.5 font-bold text-navy-900">
-            {formatPercent(college.admitRateOverall)}{" "}
-            <span className="font-normal text-slate-400">· {admitRateTier(college.admitRateOverall)}</span>
+            {formatPercent(admitRate.value)}{" "}
+            <span className="font-normal text-slate-400">· {admitRateTier(admitRate.value)}</span>
           </div>
         </div>
         <div>

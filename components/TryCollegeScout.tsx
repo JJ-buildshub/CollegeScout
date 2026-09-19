@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import clsx from "clsx";
-import { colleges, formatPercent } from "@/lib/colleges";
+import { colleges, displayedAdmitRate, formatPercent } from "@/lib/colleges";
 import {
   DEFAULT_INTEREST_IDS,
   INTEREST_TAXONOMY,
@@ -324,7 +324,7 @@ function ResultCard({ college, children }: { college: College; children: React.R
       <SystemBadge system={college.system} className="self-start" />
       <h3 className="mt-3 text-sm font-bold leading-snug text-navy-900">{college.name}</h3>
       {children}
-      <p className="mt-3 text-xs text-slate-400">{formatPercent(college.admitRateOverall)} overall admit</p>
+      <p className="mt-3 text-xs text-slate-400">{formatPercent(displayedAdmitRate(college).value)} overall admit</p>
       <span className="mt-2 text-xs font-semibold text-navy-900">View School &rarr;</span>
     </Link>
   );

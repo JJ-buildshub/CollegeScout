@@ -99,7 +99,22 @@ export interface College {
   state: string;
   /** Official homepage URL, checked against redirects/HTTP failures via scripts/check-college-websites.mjs. */
   website: string | null;
+  /**
+   * The curated figure, preserved for history — never overwritten or
+   * deleted when a more trustworthy source supersedes it for display. See
+   * `admitRateOverallSuperseded` and `lib/colleges.ts`'s
+   * `displayedAdmitRate`, which is what every UI surface should call
+   * instead of reading this field directly.
+   */
   admitRateOverall: number;
+  /**
+   * True once College Scorecard's admit rate has taken over as the
+   * displayed figure for this school (set for all 125 as of the
+   * Scorecard-as-display-default switch — see SCORECARD_VALIDATION.md for
+   * why). `admitRateOverall` above is left untouched when this is true;
+   * only which number gets shown changes.
+   */
+  admitRateOverallSuperseded?: boolean;
   /**
    * null when the school doesn't publicly report an admit rate split by
    * residency. `outOfStateAdmitRate` means domestic non-resident
@@ -108,6 +123,18 @@ export interface College {
    */
   inStateAdmitRate: number | null;
   outOfStateAdmitRate: number | null;
+  /**
+   * True when a real curated in-state/out-of-state split failed a
+   * consistency check against College Scorecard's overall rate (outside
+   * the curated [min(in,out), max(in,out)] range by more than ~3 points —
+   * see the "consistency check for the 39 split schools" commit) and is no
+   * longer treated as reliable. `inStateAdmitRate`/`outOfStateAdmitRate`
+   * are left untouched for history; this only marks that lib/gpa.ts's
+   * `hasReliableResidencySplit` and profile display should treat the
+   * school as if it had no split — see `admitRateOverallSuperseded` for
+   * the parallel marker on the overall figure.
+   */
+  admitRateSplitSuperseded?: boolean;
   testingPolicy: TestingPolicy;
   mid50_GPA_Unweighted: string;
   /**
@@ -184,12 +211,15 @@ export interface ScorecardData {
   tuitionInState: ScorecardMetric;
   tuitionOutOfState: ScorecardMetric;
   /**
-   * Used as a cross-check against the curated admitRateOverall/
-   * inStateAdmitRate/outOfStateAdmitRate above, and — since the partial
-   * Matcher switch — as the classification input itself for schools with
-   * no real curated residency split (lib/gpa.ts's hasResidencySplit).
-   * Schools with a real split keep the curated, residency-aware figures;
-   * this Scorecard figure has no residency breakdown at all.
+   * The displayed admit rate for this school as of the Scorecard-as-default
+   * switch (see `displayedAdmitRate` in lib/colleges.ts) — validated
+   * against UC's own released figures within ~1 point for 6 campuses
+   * checked (SCORECARD_VALIDATION.md) before making it the default.
+   * Also — since the partial Matcher switch — the classification input
+   * itself for schools with no real curated residency split
+   * (lib/gpa.ts's hasResidencySplit). Schools with a real split keep the
+   * curated, residency-aware figures for classification; this Scorecard
+   * figure has no residency breakdown at all, so it can't replace those.
    */
   admitRateOverall: ScorecardMetric;
 }

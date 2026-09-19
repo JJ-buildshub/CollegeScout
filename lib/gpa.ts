@@ -88,35 +88,56 @@ export function hasResidencySplit(college: College): boolean {
 }
 
 /**
+ * True only for a residency split that's both real (see hasResidencySplit)
+ * and passed a consistency check against College Scorecard: 6 of the 39
+ * real splits had a Scorecard overall rate landing outside the curated
+ * [min(in,out), max(in,out)] range by more than ~3 points (all California
+ * public schools — 4 UC, 2 CSU; worst case UC Santa Cruz, 12.8 points),
+ * meaning the curated split itself is implausible, not just imprecise. Those
+ * 6 are flagged `admitRateSplitSuperseded` (set once, via a one-off check —
+ * see the "consistency check for the 39 split schools" commit) rather than
+ * re-checked live, matching how `admitRateOverallSuperseded` is a stored
+ * marker rather than a per-render computation. The curated values are left
+ * in `inStateAdmitRate`/`outOfStateAdmitRate` for history; this is the one
+ * gate that decides whether they're still trusted for classification and
+ * display.
+ */
+export function hasReliableResidencySplit(college: College): boolean {
+  return hasResidencySplit(college) && !college.admitRateSplitSuperseded;
+}
+
+/**
  * Picks which admit rate to classify against.
  *
- * Schools with a real residency split (39 of 125, confirmed — see
- * ROUND_NUMBER_AUDIT.md) keep the curated, residency-aware figures: a full
- * switch to College Scorecard's single blended rate was considered and
- * rejected, since Scorecard has no residency breakdown at all and the gap
- * between in-state and out-of-state can be enormous (UNC Chapel Hill
- * 38.0% vs. 6.6%) — collapsing that to one number would misrepresent an
- * out-of-state applicant's actual odds far worse than a stale figure does.
- * `residency`, when explicitly chosen by the student, always wins (a
- * same-session override); otherwise a known home state derives in-state/
- * out-of-state per school by comparing to `college.state`, since a
- * California student is in-state for a UC campus and out-of-state for UT
- * Austin at the same time — a single global choice could never represent
- * that correctly.
+ * Schools with a real, Scorecard-consistent residency split (33 of 125 —
+ * 39 real splits confirmed in ROUND_NUMBER_AUDIT.md, minus 6 that failed
+ * the consistency check in hasReliableResidencySplit) keep the curated,
+ * residency-aware figures: a full switch to College Scorecard's single
+ * blended rate was considered and rejected, since Scorecard has no
+ * residency breakdown at all and the gap between in-state and out-of-state
+ * can be enormous (UNC Chapel Hill 38.0% vs. 6.6%) — collapsing that to one
+ * number would misrepresent an out-of-state applicant's actual odds far
+ * worse than a stale figure does. `residency`, when explicitly chosen by
+ * the student, always wins (a same-session override); otherwise a known
+ * home state derives in-state/out-of-state per school by comparing to
+ * `college.state`, since a California student is in-state for a UC campus
+ * and out-of-state for UT Austin at the same time — a single global choice
+ * could never represent that correctly.
  *
- * Schools with no real split (86 of 125) have nothing for residency to
- * preserve, so they use College Scorecard's verified, dated overall rate
- * in place of the curated (often round-number, unverified) one — the more
- * trustworthy figure wins when there's no residency information to lose by
- * switching. Falls back to the curated overall rate only if a school
- * somehow has no Scorecard match at all (none currently do).
+ * Schools with no real split, or one that failed the consistency check
+ * (92 of 125) have nothing reliable for residency to preserve, so they use
+ * College Scorecard's verified, dated overall rate in place of the curated
+ * (often round-number, unverified) one — the more trustworthy figure wins
+ * when there's no trustworthy residency information to lose by switching.
+ * Falls back to the curated overall rate only if a school somehow has no
+ * Scorecard match at all (none currently do).
  */
 function resolveAdmitRate(
   college: College,
   residency?: "in-state" | "out-of-state",
   homeState?: string | null
 ): { rate: number; context: ResidencyContext } {
-  if (hasResidencySplit(college)) {
+  if (hasReliableResidencySplit(college)) {
     const effectiveResidency =
       residency ?? (homeState ? (college.state === homeState ? "in-state" : "out-of-state") : undefined);
     if (effectiveResidency === "in-state" && college.inStateAdmitRate != null) {

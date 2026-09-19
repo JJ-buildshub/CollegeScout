@@ -4,7 +4,7 @@ import { Suspense, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Search, SlidersHorizontal, X } from "lucide-react";
 import clsx from "clsx";
-import { colleges } from "@/lib/colleges";
+import { colleges, displayedAdmitRate } from "@/lib/colleges";
 import type { CollegeSystem, TestingPolicy } from "@/lib/types";
 import { getInterestById, matchesAllInterests } from "@/lib/interests";
 import CollegeCard from "@/components/CollegeCard";
@@ -102,13 +102,13 @@ function DirectoryContent() {
         if (q && !c.name.toLowerCase().includes(q) && !c.location.toLowerCase().includes(q)) return false;
         if (systems.size > 0 && !systems.has(c.system)) return false;
         if (testingPolicies.size > 0 && !testingPolicies.has(c.testingPolicy)) return false;
-        if (!matchesBucket(c.admitRateOverall, admitBucket)) return false;
+        if (!matchesBucket(displayedAdmitRate(c).value, admitBucket)) return false;
         if (interestIds.length > 0 && !matchesAllInterests(c, interestIds)) return false;
         return true;
       })
       .sort((a, b) => {
         if (sortBy === "name") return a.name.localeCompare(b.name);
-        if (sortBy === "admitRateOverall") return a.admitRateOverall - b.admitRateOverall;
+        if (sortBy === "admitRateOverall") return displayedAdmitRate(a).value - displayedAdmitRate(b).value;
         if (sortBy === "cost") {
           const costA = a.financials.coaInState ?? a.financials.coaOutOfState ?? Infinity;
           const costB = b.financials.coaInState ?? b.financials.coaOutOfState ?? Infinity;

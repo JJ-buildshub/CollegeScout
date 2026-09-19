@@ -161,7 +161,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "ucla",
@@ -327,7 +328,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "uc-san-diego",
@@ -493,7 +495,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "uc-davis",
@@ -658,7 +661,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "uc-irvine",
@@ -824,7 +828,9 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true,
+    "admitRateSplitSuperseded": true
   },
   {
     "id": "uc-santa-barbara",
@@ -990,7 +996,9 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true,
+    "admitRateSplitSuperseded": true
   },
   {
     "id": "uc-santa-cruz",
@@ -1156,7 +1164,9 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true,
+    "admitRateSplitSuperseded": true
   },
   {
     "id": "uc-riverside",
@@ -1322,7 +1332,9 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true,
+    "admitRateSplitSuperseded": true
   },
   {
     "id": "uc-merced",
@@ -1488,7 +1500,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "cal-poly-san-luis-obispo",
@@ -1651,7 +1664,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "san-jose-state-university",
@@ -1815,7 +1829,9 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true,
+    "admitRateSplitSuperseded": true
   },
   {
     "id": "san-diego-state-university",
@@ -1978,7 +1994,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "cal-poly-pomona",
@@ -2140,7 +2157,9 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true,
+    "admitRateSplitSuperseded": true
   },
   {
     "id": "csu-long-beach",
@@ -2302,7 +2321,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "stanford-university",
@@ -2469,7 +2489,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-southern-california",
@@ -2641,7 +2662,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "santa-clara-university",
@@ -2817,7 +2839,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "massachusetts-institute-of-technology",
@@ -2983,7 +3006,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "carnegie-mellon-university",
@@ -3150,7 +3174,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "harvard-university",
@@ -3316,7 +3341,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "princeton-university",
@@ -3482,7 +3508,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "yale-university",
@@ -3648,7 +3675,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "columbia-university",
@@ -3813,7 +3841,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-pennsylvania",
@@ -3979,7 +4008,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "cornell-university",
@@ -4145,7 +4175,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "brown-university",
@@ -4311,7 +4342,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "dartmouth-college",
@@ -4477,7 +4509,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "california-institute-of-technology",
@@ -4643,7 +4676,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "purdue-university",
@@ -4811,7 +4845,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-illinois-urbana-champaign",
@@ -4980,7 +5015,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-washington",
@@ -5143,7 +5179,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-michigan",
@@ -5313,7 +5350,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "georgia-institute-of-technology",
@@ -5485,7 +5523,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-texas-at-austin",
@@ -5654,7 +5693,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "northeastern-university",
@@ -5830,7 +5870,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "pomona-college",
@@ -6009,7 +6050,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "williams-college",
@@ -6172,7 +6214,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "rensselaer-polytechnic-institute",
@@ -6347,7 +6390,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-alabama",
@@ -6510,7 +6554,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-pittsburgh",
@@ -6664,7 +6709,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "tufts-university",
@@ -6836,7 +6882,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "cal-state-fullerton",
@@ -6987,7 +7034,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "sacramento-state",
@@ -7138,7 +7186,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "cal-state-northridge",
@@ -7289,7 +7338,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "cal-state-la",
@@ -7439,7 +7489,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "san-francisco-state",
@@ -7589,7 +7640,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "sonoma-state",
@@ -7739,7 +7791,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "cal-state-east-bay",
@@ -7889,7 +7942,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "fresno-state",
@@ -8039,7 +8093,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "chico-state",
@@ -8189,7 +8244,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "cal-poly-humboldt",
@@ -8339,7 +8395,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "claremont-mckenna-college",
@@ -8495,7 +8552,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "harvey-mudd-college",
@@ -8650,7 +8708,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "scripps-college",
@@ -8806,7 +8865,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "occidental-college",
@@ -8967,7 +9027,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "loyola-marymount-university",
@@ -9128,7 +9189,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-san-diego",
@@ -9283,7 +9345,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-san-francisco",
@@ -9444,7 +9507,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "chapman-university",
@@ -9605,7 +9669,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "pepperdine-university",
@@ -9765,7 +9830,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-the-pacific",
@@ -9915,7 +9981,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-redlands",
@@ -10061,7 +10128,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "amherst-college",
@@ -10218,7 +10286,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "swarthmore-college",
@@ -10378,7 +10447,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "wellesley-college",
@@ -10539,7 +10609,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "bowdoin-college",
@@ -10699,7 +10770,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "middlebury-college",
@@ -10857,7 +10929,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "carleton-college",
@@ -11017,7 +11090,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "colgate-university",
@@ -11174,7 +11248,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "vassar-college",
@@ -11332,7 +11407,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "hamilton-college",
@@ -11489,7 +11565,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "colby-college",
@@ -11639,7 +11716,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "bates-college",
@@ -11799,7 +11877,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "duke-university",
@@ -11952,7 +12031,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-chicago",
@@ -12115,7 +12195,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "northwestern-university",
@@ -12270,7 +12351,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "vanderbilt-university",
@@ -12430,7 +12512,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "rice-university",
@@ -12589,7 +12672,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "johns-hopkins-university",
@@ -12748,7 +12832,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "georgetown-university",
@@ -12905,7 +12990,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "worcester-polytechnic-institute",
@@ -13063,7 +13149,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "case-western-reserve-university",
@@ -13224,7 +13311,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "rochester-institute-of-technology",
@@ -13387,7 +13475,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "stevens-institute-of-technology",
@@ -13542,7 +13631,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-rochester",
@@ -13700,7 +13790,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-north-carolina-chapel-hill",
@@ -13862,7 +13953,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-virginia",
@@ -14029,7 +14121,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-florida",
@@ -14191,7 +14284,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "ohio-state-university",
@@ -14352,7 +14446,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "penn-state-university",
@@ -14508,7 +14603,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-wisconsin-madison",
@@ -14665,7 +14761,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "indiana-university-bloomington",
@@ -14822,7 +14919,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-maryland",
@@ -14983,7 +15081,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "rutgers-university",
@@ -15139,7 +15238,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-arizona",
@@ -15295,7 +15395,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "arizona-state-university",
@@ -15451,7 +15552,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-colorado-boulder",
@@ -15607,7 +15709,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "texas-am-university",
@@ -15763,7 +15866,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "miami-university-ohio",
@@ -15911,7 +16015,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "baylor-university",
@@ -16059,7 +16164,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "texas-christian-university",
@@ -16222,7 +16328,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "southern-methodist-university",
@@ -16368,7 +16475,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-denver",
@@ -16514,7 +16622,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "elon-university",
@@ -16662,7 +16771,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-vermont",
@@ -16809,7 +16919,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-delaware",
@@ -16963,7 +17074,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "drexel-university",
@@ -17110,7 +17222,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "temple-university",
@@ -17263,7 +17376,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-connecticut",
@@ -17411,7 +17525,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "clemson-university",
@@ -17558,7 +17673,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "michigan-state-university",
@@ -17707,7 +17823,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-iowa",
@@ -17854,7 +17971,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-kansas",
@@ -18002,7 +18120,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "new-york-university",
@@ -18171,7 +18290,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-notre-dame",
@@ -18335,7 +18455,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "emory-university",
@@ -18504,7 +18625,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "washington-university-in-st-louis",
@@ -18675,7 +18797,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "boston-university",
@@ -18844,7 +18967,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "tulane-university",
@@ -19015,7 +19139,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "boston-college",
@@ -19184,7 +19309,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-miami",
@@ -19357,7 +19483,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "wake-forest-university",
@@ -19523,7 +19650,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "villanova-university",
@@ -19697,7 +19825,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "university-of-georgia",
@@ -19862,7 +19991,8 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   },
   {
     "id": "syracuse-university",
@@ -20036,6 +20166,7 @@
           "year": "2024"
         }
       }
-    }
+    },
+    "admitRateOverallSuperseded": true
   }
 ]

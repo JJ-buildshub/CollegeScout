@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { getCollegeById, formatPercent } from "@/lib/colleges";
+import { getCollegeById, displayedAdmitRate, formatPercent } from "@/lib/colleges";
 import type { College } from "@/lib/types";
 import SystemBadge from "./SystemBadge";
 
@@ -48,7 +48,7 @@ export default function DiscoveryExample() {
             <SystemBadge system={college.system} className="self-start" />
             <h3 className="mt-3 text-sm font-bold leading-snug text-white">{college.name}</h3>
             <p className="mt-2 flex-1 text-xs font-semibold text-gold-400">{pathway}</p>
-            <p className="mt-3 text-xs text-slate-400">{formatPercent(college.admitRateOverall)} admit</p>
+            <p className="mt-3 text-xs text-slate-400">{formatPercent(displayedAdmitRate(college).value)} admit</p>
           </Link>
         ))}
       </div>

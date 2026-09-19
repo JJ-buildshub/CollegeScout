@@ -1,5 +1,5 @@
 import type { College } from "./types";
-import { admitRateTier } from "./colleges";
+import { admitRateTier, displayedAdmitRate } from "./colleges";
 
 export interface Interest {
   id: string;
@@ -234,7 +234,7 @@ export function pickDiverseSlate(
     Accessible: [],
   };
   for (const c of candidates) {
-    groups[admitRateTier(c.college.admitRateOverall) as (typeof bandOrder)[number]].push(c);
+    groups[admitRateTier(displayedAdmitRate(c.college).value) as (typeof bandOrder)[number]].push(c);
   }
   for (const band of bandOrder) {
     groups[band].sort((a, b) => {

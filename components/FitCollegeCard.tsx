@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { MapPin } from "lucide-react";
 import type { FitResult } from "@/lib/types";
-import { formatPercent } from "@/lib/colleges";
+import { displayedAdmitRate, formatPercent } from "@/lib/colleges";
 import { personalizeForAudience, type PlanningFor } from "@/lib/gpa";
 import SystemBadge from "./SystemBadge";
 import SaveToggleButton from "./SaveToggleButton";
@@ -47,7 +47,7 @@ export default function FitCollegeCard({
         <div className="flex flex-col items-end gap-1.5">
           <SaveToggleButton collegeId={college.id} />
           <div className="whitespace-nowrap text-right text-xs font-semibold text-slate-400">
-            {formatPercent(college.admitRateOverall)} overall admit
+            {formatPercent(displayedAdmitRate(college).value)} overall admit
           </div>
         </div>
       </div>
