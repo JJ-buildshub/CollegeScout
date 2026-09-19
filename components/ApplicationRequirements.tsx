@@ -1,6 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import type { College } from "@/lib/types";
 import { getApplicationInfo, type WritingItem } from "@/lib/applications";
+import { COMMON_APP_SOURCE, getCommonAppFacts, type CommonAppFacts } from "@/lib/commonapp";
 
 function WritingCard({ item }: { item: WritingItem }) {
   return (
@@ -52,16 +53,103 @@ function Group({ label, items }: { label: string; items: WritingItem[] }) {
   );
 }
 
+const PLAN_LABELS: Record<string, string> = {
+  ED: "Early Decision",
+  EDII: "Early Decision II",
+  EA: "Early Action",
+  EAII: "Early Action II",
+  REA: "Restrictive Early Action",
+  RD: "Regular Decision",
+};
+
+function formatDate(value: string): string {
+  if (value === "Rolling") return "Rolling";
+  const [y, m, d] = value.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+}
+
+function plural(n: number, word: string): string {
+  return `${n} ${word}${n === 1 ? "" : "s"}`;
+}
+
+function factRows(f: CommonAppFacts): { label: string; value: string }[] {
+  const rows: { label: string; value: string }[] = [];
+  const fee = f.feeUS ?? f.feeIntl;
+  if (fee) rows.push({ label: "Application fee", value: f.feeUS && f.feeIntl && f.feeUS !== f.feeIntl ? `${f.feeUS} U.S., ${f.feeIntl} international` : fee });
+  if (f.feeWaiver) {
+    rows.push({
+      label: "Common App fee waiver",
+      value: f.feeWaiver === "Accepted" ? "Accepted" : f.feeWaiver === "U.S. only" ? "Accepted for U.S. students only" : "Not accepted",
+    });
+  }
+  if (f.personalEssayRequired) rows.push({ label: "Common App personal essay", value: "Required" });
+  if (f.coursesGradesRequired) rows.push({ label: "Self-reported courses and grades", value: "Required" });
+  if (f.portfolio) rows.push({ label: "Portfolios collected through", value: f.portfolio });
+  const recs: string[] = [];
+  if (f.teacherEvaluations) recs.push(plural(f.teacherEvaluations, "teacher recommendation"));
+  if (f.otherEvaluations) recs.push(plural(f.otherEvaluations, "other recommendation"));
+  if (f.counselorRecommendation) recs.push("counselor recommendation");
+  if (f.midYearReport) recs.push("mid-year report");
+  if (recs.length > 0) rows.push({ label: "Recommendations", value: recs.join(", ") });
+  return rows;
+}
+
+function CommonAppCard({ facts }: { facts: CommonAppFacts }) {
+  const rows = factRows(facts);
+  const deadlines = Object.entries(facts.deadlines);
+  return (
+    <div className="rounded-xl border border-slate-200 bg-white p-4">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h4 className="text-sm font-bold text-navy-900">Applying through the Common App</h4>
+      </div>
+      {rows.length > 0 && (
+        <dl className="mt-3 divide-y divide-slate-100 text-sm">
+          {rows.map((row) => (
+            <div key={row.label} className="flex items-baseline justify-between gap-4 py-2">
+              <dt className="text-slate-500">{row.label}</dt>
+              <dd className="text-right font-semibold text-navy-900">{row.value}</dd>
+            </div>
+          ))}
+        </dl>
+      )}
+      {deadlines.length > 0 && (
+        <div className="mt-3 border-t border-slate-100 pt-3">
+          <div className="text-xs font-semibold text-slate-500">Deadlines for {COMMON_APP_SOURCE.name.match(/\((.*)\)/)?.[1] ?? "this cycle"}</div>
+          <ul className="mt-1.5 space-y-1 text-sm">
+            {deadlines.map(([plan, date]) => (
+              <li key={plan} className="flex items-baseline justify-between gap-4">
+                <span className="text-slate-600">{PLAN_LABELS[plan] ?? plan}</span>
+                <span className="font-semibold text-navy-900">{formatDate(date as string)}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+      <p className="mt-3 text-[11px] leading-snug text-slate-400">
+        Source:{" "}
+        <a href={COMMON_APP_SOURCE.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">
+          Common App requirements grid
+        </a>
+        , updated {COMMON_APP_SOURCE.updated}. Anything not listed here wasn&apos;t stated in the grid, which is not the
+        same as not required.
+      </p>
+    </div>
+  );
+}
+
 export default function ApplicationRequirements({ college }: { college: College }) {
   const info = getApplicationInfo(college.id);
+  const facts = getCommonAppFacts(college.id);
 
   if (!info) {
     return (
+      <div className="max-w-3xl space-y-3">
+        {facts && <CommonAppCard facts={facts} />}
       <div className="max-w-2xl rounded-2xl border border-dashed border-slate-300 bg-white p-6">
-        <div className="text-sm font-bold text-navy-900">Essays and application</div>
+        <div className="text-sm font-bold text-navy-900">Essays and prompts</div>
         <p className="mt-2 text-sm text-slate-500">
-          We haven&apos;t researched {college.name}&apos;s essay requirements yet, so we won&apos;t guess. The school
-          posts this year&apos;s application, essay prompts and word limits on its admissions site.
+          We haven&apos;t researched {college.name}&apos;s essay prompts and word limits yet, so we won&apos;t guess. The
+          school posts this year&apos;s application, essay prompts and word limits on its admissions site.
         </p>
         {college.website && (
           <a
@@ -73,6 +161,7 @@ export default function ApplicationRequirements({ college }: { college: College 
             Go to the school&apos;s website <ExternalLink className="h-3.5 w-3.5" />
           </a>
         )}
+      </div>
       </div>
     );
   }
@@ -87,6 +176,12 @@ export default function ApplicationRequirements({ college }: { college: College 
           </div>
         )}
       </div>
+
+      {facts && (
+        <div className="mt-5">
+          <CommonAppCard facts={facts} />
+        </div>
+      )}
 
       <Group label="Main essay" items={[info.mainEssay]} />
       <Group label="Required school-specific writing" items={info.requiredWriting} />
