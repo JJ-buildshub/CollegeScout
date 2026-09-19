@@ -246,6 +246,10 @@ export default function MatcherPage() {
         </div>
 
         <div className="space-y-8">
+          <p className="text-xs text-slate-400">
+            Fit estimates use publicly reported GPA ranges and admit rates. Some are approximate.
+          </p>
+
           <div>
             <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400">
               <span>{residencyStatusText}</span>

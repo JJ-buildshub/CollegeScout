@@ -475,9 +475,14 @@ function WebsiteButton({ website, compact }: { website: string | null; compact?:
  * either half is known, still label the missing half explicitly rather than
  * silently dropping it.
  */
+/** Strips a technical field-name suffix like " (latest.cost.avg_net_price.overall)" — useful for our own audit trail in the data file, but not something a reader needs to see. */
+function readableSource(source: string): string {
+  return source.replace(/\s*\([^)]*\)\s*$/, "");
+}
+
 function SourceLine({ provenance, className }: { provenance?: FieldProvenance; className?: string }) {
   if (!provenance?.source && !provenance?.year) return null;
-  const source = provenance?.source ?? "Source not recorded";
+  const source = provenance?.source ? readableSource(provenance.source) : "Source not recorded";
   const year = provenance?.year ?? "Year not recorded";
   return <div className={clsx("text-[11px] text-slate-400", className)}>{source} &middot; {year}</div>;
 }
