@@ -6,6 +6,7 @@ import { ArrowLeft, Award, Briefcase, ExternalLink, MapPin } from "lucide-react"
 import clsx from "clsx";
 import type { College, FieldProvenance, ScorecardData } from "@/lib/types";
 import { formatPercent, admitRateTier } from "@/lib/colleges";
+import { hasResidencySplit } from "@/lib/gpa";
 import SystemBadge from "./SystemBadge";
 import SaveToggleButton from "./SaveToggleButton";
 import TestingPolicyBadge from "./TestingPolicyBadge";
@@ -87,11 +88,17 @@ export default function CollegeProfileDashboard({ college }: { college: College 
     { label: "Mid-50% SAT", value: college.mid50_SAT },
   ].filter((box) => hasReportedValue(box.value));
 
+  // Labeled "(as reported)" — not because it's doubted more than any other
+  // curated figure, but specifically to sit next to the College Scorecard
+  // admit rate below without the two looking like a contradiction: they're
+  // two different overall figures from two different sources/years, not a
+  // page disagreeing with itself.
   const admitBoxes = [
-    { label: "Overall", value: college.admitRateOverall },
+    { label: "Overall (as reported)", value: college.admitRateOverall },
     { label: "In-State", value: college.inStateAdmitRate },
     { label: "Out-of-State", value: college.outOfStateAdmitRate },
   ].filter((box): box is { label: string; value: number } => box.value !== null);
+  const scorecardAdmitRate = college.scorecard?.admitRateOverall;
 
   // Scorecard fills two glance stats we otherwise have no curated data for
   // at all (see commit 7694933, which dropped hardcoded "Not reported"
@@ -268,6 +275,24 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                     />
                   ))}
                 </div>
+                {scorecardAdmitRate?.value != null && (
+                  <div className="mt-4 rounded-xl bg-slate-50 p-4">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <div className="text-xs font-semibold uppercase tracking-wide text-slate-600">
+                        Overall (College Scorecard, verified)
+                      </div>
+                      <div className="text-base font-bold text-navy-900">
+                        {formatPercent(scorecardAdmitRate.value)}
+                      </div>
+                    </div>
+                    <SourceLine provenance={scorecardAdmitRate.provenance ?? undefined} className="mt-1" />
+                    <p className="mt-1.5 text-[11px] leading-snug text-slate-400">
+                      {hasResidencySplit(college)
+                        ? "This is an overall figure and won't match the in-state/out-of-state rates above, which reflect your specific residency rather than the whole applicant pool."
+                        : "This school doesn't report a residency split, so this verified overall rate is also what Find My Fit uses to classify your chances here — it may differ from the school-reported figure above, which comes from a different source/year."}
+                    </p>
+                  </div>
+                )}
                 {gpaSatBoxes.length > 0 ? (
                   <div className={`mt-4 grid gap-4 border-t border-slate-100 pt-4 ${GRID_COLS_CLASS[gpaSatBoxes.length]}`}>
                     {gpaSatBoxes.map((box) => (

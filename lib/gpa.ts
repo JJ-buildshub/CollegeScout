@@ -73,31 +73,62 @@ function usesUcCappedMetric(college: College): boolean {
 }
 
 /**
- * Picks which admit rate to classify against. `residency`, when explicitly
- * chosen by the student, always wins (a same-session override — someone
- * relocating, attending school out of state, or otherwise not represented
- * by their stored home state). Otherwise, if a home state is known, it's
- * derived per school by comparing to `college.state` — this is why home
- * state is stored as a plain state code rather than a single in-state/
- * out-of-state flag: a California student is in-state for a UC campus and
- * out-of-state for UT Austin at the same time, which a single global choice
- * could never represent correctly. Falls back to the overall rate when
- * neither is available, or when the school doesn't report the split.
+ * True only when the school reports a *meaningfully different* in-state vs.
+ * out-of-state admit rate — not just that both fields happen to be filled
+ * in. A school with identical in-state/out-of-state figures has no real
+ * residency signal to preserve, so it's treated the same as a school
+ * missing the split entirely.
+ */
+export function hasResidencySplit(college: College): boolean {
+  return (
+    college.inStateAdmitRate != null &&
+    college.outOfStateAdmitRate != null &&
+    college.inStateAdmitRate !== college.outOfStateAdmitRate
+  );
+}
+
+/**
+ * Picks which admit rate to classify against.
+ *
+ * Schools with a real residency split (39 of 125, confirmed — see
+ * ROUND_NUMBER_AUDIT.md) keep the curated, residency-aware figures: a full
+ * switch to College Scorecard's single blended rate was considered and
+ * rejected, since Scorecard has no residency breakdown at all and the gap
+ * between in-state and out-of-state can be enormous (UNC Chapel Hill
+ * 38.0% vs. 6.6%) — collapsing that to one number would misrepresent an
+ * out-of-state applicant's actual odds far worse than a stale figure does.
+ * `residency`, when explicitly chosen by the student, always wins (a
+ * same-session override); otherwise a known home state derives in-state/
+ * out-of-state per school by comparing to `college.state`, since a
+ * California student is in-state for a UC campus and out-of-state for UT
+ * Austin at the same time — a single global choice could never represent
+ * that correctly.
+ *
+ * Schools with no real split (86 of 125) have nothing for residency to
+ * preserve, so they use College Scorecard's verified, dated overall rate
+ * in place of the curated (often round-number, unverified) one — the more
+ * trustworthy figure wins when there's no residency information to lose by
+ * switching. Falls back to the curated overall rate only if a school
+ * somehow has no Scorecard match at all (none currently do).
  */
 function resolveAdmitRate(
   college: College,
   residency?: "in-state" | "out-of-state",
   homeState?: string | null
 ): { rate: number; context: ResidencyContext } {
-  const effectiveResidency =
-    residency ?? (homeState ? (college.state === homeState ? "in-state" : "out-of-state") : undefined);
-  if (effectiveResidency === "in-state" && college.inStateAdmitRate != null) {
-    return { rate: college.inStateAdmitRate, context: "in-state" };
+  if (hasResidencySplit(college)) {
+    const effectiveResidency =
+      residency ?? (homeState ? (college.state === homeState ? "in-state" : "out-of-state") : undefined);
+    if (effectiveResidency === "in-state" && college.inStateAdmitRate != null) {
+      return { rate: college.inStateAdmitRate, context: "in-state" };
+    }
+    if (effectiveResidency === "out-of-state" && college.outOfStateAdmitRate != null) {
+      return { rate: college.outOfStateAdmitRate, context: "out-of-state" };
+    }
+    return { rate: college.admitRateOverall, context: "overall" };
   }
-  if (effectiveResidency === "out-of-state" && college.outOfStateAdmitRate != null) {
-    return { rate: college.outOfStateAdmitRate, context: "out-of-state" };
-  }
-  return { rate: college.admitRateOverall, context: "overall" };
+  const scorecardRate = college.scorecard?.admitRateOverall?.value;
+  return { rate: scorecardRate ?? college.admitRateOverall, context: "overall" };
 }
 
 /**
