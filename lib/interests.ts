@@ -1,5 +1,6 @@
 import type { College } from "./types";
 import { admitRateTier, displayedAdmitRate } from "./colleges";
+import { degreesIn, MIN_PROGRAM_DEGREES, offersProgram, PROGRAMS_SOURCE } from "./programs";
 
 export interface Interest {
   id: string;
@@ -7,6 +8,14 @@ export interface Interest {
   /** One line, shown under the label on the homepage interest cards. */
   subtitle: string;
   keywords: string[];
+  /**
+   * Field keys from data/programs.json (real IPEDS degree counts). A school
+   * matches when it awards at least MIN_PROGRAM_DEGREES bachelor's degrees a
+   * year in any of these — in addition to the keyword match on curated tags.
+   */
+  programs?: string[];
+  /** "paths" interests are creative/career paths shown in their own labeled row. */
+  group?: "paths";
 }
 
 /**
@@ -20,26 +29,35 @@ export interface Interest {
  * per interest) — none are guesses.
  */
 export const INTEREST_TAXONOMY: Interest[] = [
-  { id: "engineering", label: "Engineering", subtitle: "Build things that work", keywords: ["Engineering"] },
+  { id: "engineering", label: "Engineering", subtitle: "Build things that work", keywords: ["Engineering"], programs: ["engineering"] },
   {
     id: "cs-ai",
     label: "Computer Science & AI",
     subtitle: "Code, apps, and smart systems",
     keywords: ["Computer Science", "Artificial Intelligence", "Informatics", "Cybersecurity", "Computing"],
+    programs: ["computing"],
   },
   {
     id: "data-science",
     label: "Data Science",
     subtitle: "Find patterns in numbers",
     keywords: ["Data Science", "Machine Learning", "Data Analytics"],
+    programs: ["data-science"],
   },
   {
     id: "business",
     label: "Business",
     subtitle: "Start, run, or grow something",
     keywords: ["Business", "Accounting", "Accountancy", "Entrepreneurship"],
+    programs: ["business"],
   },
-  { id: "finance", label: "Finance", subtitle: "Money, markets, and investing", keywords: ["Finance", "Financial"] },
+  {
+    id: "entrepreneurship",
+    label: "Entrepreneurship",
+    subtitle: "Turn an idea into a company",
+    keywords: ["Entrepreneur"],
+    programs: ["entrepreneurship"],
+  },
   {
     id: "medicine-health",
     label: "Medicine & Health",
@@ -54,71 +72,97 @@ export const INTEREST_TAXONOMY: Interest[] = [
       "Medicine",
       "Medical",
     ],
+    programs: ["health"],
   },
-  { id: "nursing", label: "Nursing", subtitle: "Hands-on patient care", keywords: ["Nursing"] },
-  { id: "psychology", label: "Psychology", subtitle: "How people think and act", keywords: ["Psychology"] },
+  { id: "psychology", label: "Psychology", subtitle: "How people think and act", keywords: ["Psychology"], programs: ["psychology"] },
   {
-    id: "design-architecture",
-    label: "Design & Architecture",
-    subtitle: "Shape spaces and products",
-    keywords: ["Architecture", "Design"],
+    id: "biology",
+    label: "Biology & Life Sciences",
+    subtitle: "Study living things",
+    keywords: ["Biology", "Biological", "Life Sciences", "Biochemistry", "Neuroscience"],
+    programs: ["biology"],
   },
-  {
-    id: "art-film-music",
-    label: "Art, Film & Music",
-    subtitle: "Create and perform",
-    keywords: [
-      "Fine Arts",
-      "Visual and Performing Arts",
-      "Cinematic Arts",
-      "Film",
-      "Music",
-      "Art History",
-      "Art Conservation",
-      "Studio Art",
-      "Performing Arts",
-      "Media Arts",
-      "Art & Design",
-      "Art & Architecture",
-      "Art and Digital Media",
-    ],
-  },
-  {
-    id: "games-interactive",
-    label: "Games & Interactive Media",
-    subtitle: "Design worlds people play",
-    keywords: ["Game Design", "Games and", "Interactive Media", "Playable Media"],
-  },
-  {
-    id: "environment-climate",
-    label: "Environment & Climate",
-    subtitle: "Protect the planet",
-    keywords: ["Environmental Science", "Environmental Studies", "Sustainability", "Climate"],
-  },
-  {
-    id: "law-policy",
-    label: "Law & Public Policy",
-    subtitle: "Rules, rights, and justice",
-    keywords: ["Pre-Law", "Political Science", "Government", "Public Policy", "Public Affairs", "Politics", "Criminal Justice"],
-  },
-  { id: "education", label: "Education", subtitle: "Teach and mentor", keywords: ["Education", "Teaching"] },
+  { id: "finance", label: "Finance", subtitle: "Money, markets, and investing", keywords: ["Finance", "Financial"], programs: ["finance"] },
+  { id: "nursing", label: "Nursing", subtitle: "Hands-on patient care", keywords: ["Nursing"], programs: ["nursing"] },
+  { id: "education", label: "Education", subtitle: "Teach and mentor", keywords: ["Education", "Teaching"], programs: ["education"] },
   {
     id: "sports-movement",
     label: "Sports & Movement",
     subtitle: "Kinesiology, sports science, and coaching",
     keywords: ["Kinesiology", "Exercise Science", "Sport Management", "Sports Management", "Sports Business"],
+    programs: ["kinesiology"],
+  },
+  {
+    id: "social-sciences",
+    label: "Social Sciences",
+    subtitle: "Economics, sociology, and society",
+    keywords: ["Economics", "Sociology", "Anthropology", "Social Science"],
+    programs: ["social-sciences"],
+  },
+  {
+    id: "music-performing",
+    label: "Music & Performing Arts",
+    subtitle: "Perform, compose, and stage",
+    keywords: ["Music", "Performing Arts", "Theatre", "Theater", "Dance"],
+    programs: ["performing-arts"],
+    group: "paths",
+  },
+  {
+    id: "visual-arts",
+    label: "Visual Arts, Design & Film",
+    subtitle: "Make images, films, and objects",
+    keywords: [
+      "Fine Arts",
+      "Visual",
+      "Cinematic Arts",
+      "Film",
+      "Art History",
+      "Art Conservation",
+      "Studio Art",
+      "Media Arts",
+      "Art & Design",
+      "Art and Digital Media",
+      "Art & Architecture",
+    ],
+    programs: ["visual-arts"],
+    group: "paths",
+  },
+  {
+    id: "design-architecture",
+    label: "Design & Architecture",
+    subtitle: "Shape spaces and products",
+    keywords: ["Architecture", "Design"],
+    programs: ["architecture"],
+    group: "paths",
   },
   {
     id: "media-communication",
     label: "Media & Communication",
     subtitle: "Tell stories that reach people",
     keywords: ["Communication", "Journalism", "Media"],
+    programs: ["communication"],
+    group: "paths",
   },
   {
-    id: "science",
-    label: "Science",
-    subtitle: "Biology, chemistry, and physics",
-    keywords: ["Biology", "Biological", "Chemistry", "Physics"],
+    id: "games-interactive",
+    label: "Games & Interactive Media",
+    subtitle: "Design worlds people play",
+    keywords: ["Game Design", "Games and", "Interactive Media", "Playable Media"],
+    group: "paths",
+  },
+  {
+    id: "environment-climate",
+    label: "Environment & Climate",
+    subtitle: "Protect the planet",
+    keywords: ["Environmental Science", "Environmental Studies", "Sustainability", "Climate"],
+    group: "paths",
+  },
+  {
+    id: "law-policy",
+    label: "Law & Public Policy",
+    subtitle: "Rules, rights, and justice",
+    keywords: ["Pre-Law", "Political Science", "Government", "Public Policy", "Public Affairs", "Politics", "Criminal Justice"],
+    group: "paths",
   },
 ];
 
@@ -128,8 +172,8 @@ export const DEFAULT_INTEREST_IDS = [
   "cs-ai",
   "data-science",
   "business",
+  "entrepreneurship",
   "medicine-health",
-  "psychology",
 ];
 
 /** A student can explore up to this many interests at once. */
@@ -154,9 +198,23 @@ function searchableStrings(college: College): string[] {
   ].filter(isDegreePathway);
 }
 
+/** What we can honestly say when only degree counts (no named program) tie a school to an interest, e.g. "1,048 bachelor's degrees awarded (2022-23)". */
+function programSummary(college: College, interest: Interest): string | null {
+  if (!interest.programs) return null;
+  const n = Math.max(...interest.programs.map((f) => degreesIn(college.id, f)));
+  if (n < MIN_PROGRAM_DEGREES) return null;
+  return `${n.toLocaleString()} bachelor's degrees awarded (${PROGRAMS_SOURCE.year})`;
+}
+
+/** True when real IPEDS degree counts show the school has a program for this interest. */
+function offersInterestProgram(college: College, interest: Interest): boolean {
+  return !!interest.programs && offersProgram(college.id, interest.programs);
+}
+
 export function matchesInterest(college: College, interestId: string): boolean {
   const interest = getInterestById(interestId);
   if (!interest) return false;
+  if (offersInterestProgram(college, interest)) return true;
   const haystacks = searchableStrings(college).map((s) => s.toLowerCase());
   return interest.keywords.some((kw) => {
     const needle = kw.toLowerCase();
@@ -231,7 +289,7 @@ export function getPathwayLabel(college: College, interestId: string): string | 
       return trimAttribution(best);
     }
   }
-  return null;
+  return programSummary(college, interest);
 }
 
 export function countMatches(colleges: College[], interestId: string): number {
@@ -255,6 +313,9 @@ export function getMatchTier(college: College, interestId: string): number {
   if (hits(college.careerMajorTags.interdisciplinaryPathways)) return 1;
   if (hits(college.careerMajorTags.primaryDisciplines)) return 2;
   if (hits(college.impactedMajors)) return 3;
+  // Matched only through real degree counts: the school offers the field but
+  // our curated tags don't name it, so it ranks with the weaker matches.
+  if (offersInterestProgram(college, interest)) return 3;
   return 4;
 }
 

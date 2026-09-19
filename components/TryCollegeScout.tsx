@@ -10,7 +10,10 @@ import {
   Cog,
   Cpu,
   Dumbbell,
-  FlaskConical,
+  Dna,
+  Lightbulb,
+  Music,
+  Users,
   Gamepad2,
   GraduationCap,
   HelpCircle,
@@ -49,6 +52,8 @@ const LOW_MATCH_THRESHOLD = 8;
 
 const DEFAULT_INTERESTS = INTEREST_TAXONOMY.filter((i) => DEFAULT_INTEREST_IDS.includes(i.id));
 const OVERFLOW_INTERESTS = INTEREST_TAXONOMY.filter((i) => !DEFAULT_INTEREST_IDS.includes(i.id));
+const MORE_FIELDS = OVERFLOW_INTERESTS.filter((i) => i.group !== "paths");
+const PATH_INTERESTS = OVERFLOW_INTERESTS.filter((i) => i.group === "paths");
 
 // One icon per interest id, from the icon library already used across the
 // site (lucide-react) — no images. "Psychology" is imported under an alias
@@ -63,14 +68,17 @@ const INTEREST_ICONS: Record<string, typeof Cog> = {
   nursing: Syringe,
   psychology: Brain,
   "design-architecture": PenTool,
-  "art-film-music": Palette,
+  entrepreneurship: Lightbulb,
+  biology: Dna,
+  "social-sciences": Users,
+  "music-performing": Music,
+  "visual-arts": Palette,
   "games-interactive": Gamepad2,
   "environment-climate": Leaf,
   "law-policy": Scale,
   education: GraduationCap,
   "sports-movement": Dumbbell,
   "media-communication": Megaphone,
-  science: FlaskConical,
 };
 const NOT_SURE_ICON = HelpCircle;
 
@@ -170,16 +178,32 @@ export default function TryCollegeScout() {
           />
         ))}
 
-        {showMore &&
-          OVERFLOW_INTERESTS.map((interest) => (
-            <InterestCard
-              key={interest.id}
-              interest={interest}
-              selected={selectedIds.includes(interest.id)}
-              disabled={!selectedIds.includes(interest.id) && atLimit}
-              onClick={() => toggleInterest(interest.id)}
-            />
-          ))}
+        {showMore && (
+          <>
+            <h3 className="col-span-full mt-3 text-left text-xs font-bold tracking-wide text-slate-500">More fields</h3>
+            {MORE_FIELDS.map((interest) => (
+              <InterestCard
+                key={interest.id}
+                interest={interest}
+                selected={selectedIds.includes(interest.id)}
+                disabled={!selectedIds.includes(interest.id) && atLimit}
+                onClick={() => toggleInterest(interest.id)}
+              />
+            ))}
+            <h3 className="col-span-full mt-3 text-left text-xs font-bold tracking-wide text-slate-500">
+              Creative and other paths
+            </h3>
+            {PATH_INTERESTS.map((interest) => (
+              <InterestCard
+                key={interest.id}
+                interest={interest}
+                selected={selectedIds.includes(interest.id)}
+                disabled={!selectedIds.includes(interest.id) && atLimit}
+                onClick={() => toggleInterest(interest.id)}
+              />
+            ))}
+          </>
+        )}
 
         <InterestCard
           interest={{ id: "not-sure", label: "Not sure yet", subtitle: "Let's figure it out" }}
@@ -233,7 +257,7 @@ export default function TryCollegeScout() {
                   <ResultCard key={college.id} college={college}>
                     <p className="mt-2 text-xs font-semibold text-gold-600">{pathway}</p>
                     <p className="mt-2 flex-1 text-xs text-slate-500">
-                      A dedicated program built specifically around {selectedLabel.toLowerCase()}.
+                      Offers bachelor&apos;s degrees in {selectedLabel.toLowerCase()}.
                     </p>
                   </ResultCard>
                 ))}
@@ -242,7 +266,7 @@ export default function TryCollegeScout() {
               {singleMatches.length === 0 && (
                 <div className="mx-auto mt-8 max-w-xl rounded-2xl bg-slate-50 p-6 text-center">
                   <p className="text-sm text-slate-600">
-                    No school in this dataset has a clearly tagged {selectedLabel} pathway &mdash; that doesn&apos;t
+                    No school in this dataset has a {selectedLabel} program we can point to &mdash; that doesn&apos;t
                     mean none exist, just that we can&apos;t confidently point to one yet.
                   </p>
                   <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
@@ -259,7 +283,7 @@ export default function TryCollegeScout() {
               {singleMatches.length > 0 && singleMatches.length < LOW_MATCH_THRESHOLD && (
                 <p className="mx-auto mt-4 max-w-xl text-center text-xs text-slate-400">
                   Only {singleMatches.length} school{singleMatches.length === 1 ? "" : "s"} in this dataset{" "}
-                  {singleMatches.length === 1 ? "has" : "have"} a clearly tagged {selectedLabel} pathway &mdash;
+                  {singleMatches.length === 1 ? "has" : "have"} a {selectedLabel} program we can point to &mdash;
                   that doesn&apos;t mean other schools don&apos;t offer it. Try a related interest, or{" "}
                   <Link href="/directory" className="font-semibold text-navy-900 underline underline-offset-2">
                     browse everything
@@ -290,14 +314,14 @@ export default function TryCollegeScout() {
                 ) : (
                   <p className="mt-3 text-sm text-slate-500">
                     No school in this dataset has one program combining all of {selectedLabel} &mdash; here&apos;s
-                    who&apos;s strong in each field separately:
+                    who has a program in each field separately:
                   </p>
                 )}
               </div>
 
               <div className="mx-auto mt-8 max-w-4xl">
                 <h3 className="text-sm font-bold tracking-wide text-slate-600">
-                  Schools strong in each
+                  Schools with a program in each
                 </h3>
                 {strongResults.length > 0 ? (
                   <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -311,14 +335,14 @@ export default function TryCollegeScout() {
                           ))}
                         </div>
                         <p className="mt-2 flex-1 text-xs text-slate-500">
-                          Separate strong programs in each field &mdash; not a joint degree.
+                          Separate programs in each field &mdash; not a joint degree.
                         </p>
                       </ResultCard>
                     ))}
                   </div>
                 ) : (
                   <p className="mt-3 text-sm text-slate-500">
-                    No school in this dataset is clearly tagged for all of {selectedLabel} at once. Try dropping
+                    No school in this dataset has programs in all of {selectedLabel} at once. Try dropping
                     one interest, or{" "}
                     <Link href="/directory" className="font-semibold text-navy-900 underline underline-offset-2">
                       browse everything
@@ -342,7 +366,7 @@ export default function TryCollegeScout() {
               {combineResults.length === 0 && strongTotal === 0 && (
                 <div className="mx-auto mt-8 max-w-xl rounded-2xl bg-slate-50 p-6 text-center">
                   <p className="text-sm text-slate-600">
-                    No school in this dataset is clearly tagged for all of {selectedLabel} at once &mdash; that
+                    No school in this dataset has programs in all of {selectedLabel} at once &mdash; that
                     doesn&apos;t mean none exist, just that we can&apos;t confidently point to one yet.
                   </p>
                   <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
