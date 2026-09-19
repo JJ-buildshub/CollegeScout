@@ -1,70 +1,113 @@
 import Link from "next/link";
-import { ExternalLink, MapPin, TrendingUp, FileCheck2 } from "lucide-react";
-import type { College } from "@/lib/types";
-import { admitRateTier, displayedAdmitRate, formatPercent } from "@/lib/colleges";
-import SystemBadge from "./SystemBadge";
+import { ExternalLink, MapPin } from "lucide-react";
+import type { College, CollegeSystem } from "@/lib/types";
+import { admitRateTier, displayedAdmitRate } from "@/lib/colleges";
+import { parseGpaRange } from "@/lib/gpa";
 import SaveToggleButton from "./SaveToggleButton";
 import TestingPolicyBadge from "./TestingPolicyBadge";
 
+// Top edge + label color per system — the one place the card carries color,
+// so a scan down the grid shows the mix of school types at a glance.
+const SYSTEM_ACCENT: Record<CollegeSystem, { edge: string; text: string }> = {
+  UC: { edge: "bg-blue-500", text: "text-blue-700" },
+  CSU: { edge: "bg-emerald-500", text: "text-emerald-700" },
+  Private: { edge: "bg-purple-500", text: "text-purple-700" },
+  "Out-of-State Public": { edge: "bg-amber-500", text: "text-amber-700" },
+};
+
+// A school only gets a stat cell when the value is a real number range —
+// "N/A (Not reported)" is dropped rather than shown as an empty box.
+function realRange(value: string): string | null {
+  const m = value.trim().match(/^(\d+(?:\.\d+)?)\s*-\s*(\d+(?:\.\d+)?)/);
+  return m ? `${m[1]}–${m[2]}` : null;
+}
+
 export default function CollegeCard({ college }: { college: College }) {
   const admitRate = displayedAdmitRate(college);
-  return (
-    <Link
-      href={`/directory/${college.id}`}
-      className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-card transition-all hover:-translate-y-0.5 hover:shadow-cardHover"
-    >
-      <div className="flex items-start justify-between gap-2">
-        <SystemBadge system={college.system} />
-        <SaveToggleButton collegeId={college.id} />
-      </div>
+  const pct = Math.round(admitRate.value * 100);
+  const accent = SYSTEM_ACCENT[college.system];
+  const gpa = parseGpaRange(college.mid50_GPA_Unweighted) ? realRange(college.mid50_GPA_Unweighted) : null;
+  const sat = realRange(college.mid50_SAT);
 
-      <h3 className="mt-3 text-base font-bold leading-snug text-navy-900 group-hover:text-gold-600">
-        {college.name}
-      </h3>
-      <div className="mt-1 flex items-center justify-between gap-1">
-        <div className="flex items-center gap-1 text-xs text-slate-500">
+  return (
+    <div
+      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-card transition-all hover:-translate-y-0.5 hover:shadow-cardHover"
+    >
+      <div className={`h-1.5 ${accent.edge}`} />
+      <div className="flex flex-1 flex-col p-5">
+        <div className="flex items-start justify-between gap-2">
+          <span className={`text-[11px] font-bold tracking-wide ${accent.text}`}>
+            {college.system}
+          </span>
+          <div className="relative z-10">
+            <SaveToggleButton collegeId={college.id} />
+          </div>
+        </div>
+
+        {/* The title link stretches over the whole card (after:inset-0), so the
+            card is one click target without nesting the Website link inside it. */}
+        <h3 className="mt-1 text-lg font-extrabold leading-snug tracking-tight text-navy-900 group-hover:text-gold-600">
+          <Link href={`/directory/${college.id}`} className="after:absolute after:inset-0 after:content-['']">
+            {college.name}
+          </Link>
+        </h3>
+        <div className="mt-1 flex items-center gap-1 text-xs text-slate-500">
           <MapPin className="h-3.5 w-3.5" />
           {college.location}
         </div>
-        {college.website && (
-          <a
-            href={college.website}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-            className="inline-flex items-center gap-1 text-xs font-semibold text-slate-400 hover:text-gold-600"
+
+        <div className="mt-5">
+          <div className="flex items-baseline gap-2">
+            <span className="text-4xl font-black tabular-nums leading-none tracking-tight text-navy-900">
+              {pct}
+              <span className="text-2xl">%</span>
+            </span>
+            <span className="text-xs font-semibold text-slate-500">admitted &middot; {admitRateTier(admitRate.value)}</span>
+          </div>
+          <div
+            className="mt-2 h-1.5 overflow-hidden rounded-full bg-slate-100"
+            role="img"
+            aria-label={`${pct}% admit rate`}
           >
-            Website <ExternalLink className="h-3 w-3" />
-          </a>
-        )}
-      </div>
-
-      <div className="mt-4 grid grid-cols-2 gap-3 border-t border-slate-100 pt-4 text-xs">
-        <div>
-          <div className="flex items-center gap-1 text-slate-400">
-            <TrendingUp className="h-3.5 w-3.5" /> Overall Admit Rate
-          </div>
-          <div className="mt-0.5 font-bold text-navy-900">
-            {formatPercent(admitRate.value)}{" "}
-            <span className="font-normal text-slate-400">· {admitRateTier(admitRate.value)}</span>
+            <div className="h-full rounded-full bg-navy-800" style={{ width: `${Math.max(pct, 2)}%` }} />
           </div>
         </div>
-        <div>
-          <div className="flex items-center gap-1 text-slate-400">
-            <FileCheck2 className="h-3.5 w-3.5" /> Testing
+
+        <dl className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-xs">
+          {gpa && (
+            <div>
+              <dt className="text-slate-400">Mid-50% GPA</dt>
+              <dd className="mt-0.5 text-sm font-bold tabular-nums text-navy-900">{gpa}</dd>
+            </div>
+          )}
+          {sat && (
+            <div>
+              <dt className="text-slate-400">Mid-50% SAT</dt>
+              <dd className="mt-0.5 text-sm font-bold tabular-nums text-navy-900">{sat}</dd>
+            </div>
+          )}
+          <div>
+            <dt className="text-slate-400">Testing</dt>
+            <dd className="mt-0.5">
+              <TestingPolicyBadge policy={college.testingPolicy} className="px-2 py-0.5" />
+            </dd>
           </div>
-          <div className="mt-0.5">
-            <TestingPolicyBadge policy={college.testingPolicy} className="px-2 py-0.5" />
-          </div>
+        </dl>
+
+        <div className="mt-auto flex items-center justify-between pt-5 text-xs font-semibold">
+          <span className="text-gold-600">View profile &rarr;</span>
+          {college.website && (
+            <a
+              href={college.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative z-10 inline-flex items-center gap-1 text-slate-400 hover:text-gold-600"
+            >
+              Website <ExternalLink className="h-3 w-3" />
+            </a>
+          )}
         </div>
       </div>
-
-      <div className="mt-3 flex-1 rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-500">
-        <span className="font-semibold text-slate-600">Mid-50% GPA (UW):</span>{" "}
-        {college.mid50_GPA_Unweighted}
-      </div>
-
-      <span className="mt-4 text-xs font-semibold text-gold-600">View full profile &rarr;</span>
-    </Link>
+    </div>
   );
 }
