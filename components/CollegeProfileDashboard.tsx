@@ -12,11 +12,13 @@ import SaveToggleButton from "./SaveToggleButton";
 import TestingPolicyBadge from "./TestingPolicyBadge";
 import ApplicationPlanBadges from "./ApplicationPlanBadges";
 import FinancialSnapshot from "./FinancialSnapshot";
+import ApplicationRequirements from "./ApplicationRequirements";
 import CampusFitStats from "./CampusFitStats";
 
 const SECTIONS = [
   { id: "overview", label: "Overview" },
   { id: "admissions", label: "Admissions" },
+  { id: "apply", label: "Applying" },
   { id: "academics", label: "Academics" },
   { id: "cost", label: "Cost" },
   { id: "outcomes", label: "Outcomes" },
@@ -360,6 +362,14 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                   )}
                 </div>
               </div>
+            </div>
+          </section>
+
+          {/* Applying */}
+          <section id="apply" className={scrollMt}>
+            <h2 className="text-lg font-bold text-navy-900">Applying</h2>
+            <div className="mt-3">
+              <ApplicationRequirements college={college} />
             </div>
           </section>
 
