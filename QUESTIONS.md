@@ -12,31 +12,31 @@ being DEMO_KEY-rate-limited. Original note preserved for context: only
 real key requires submitting an email to a third party — a real-world
 action I wouldn't take on your behalf without asking.
 
-## 2. 13 schools left unmatched — genuinely ambiguous, not a bug
+## 2. 13 schools left unmatched — resolved, all confirmed by hand
 
-For these, "school name" alone doesn't identify a single Scorecard record:
-either the curated name is a public system with multiple separately
-IPEDS-reported campuses (no campus specified), or a real naming collision.
-Left unmatched rather than guessing which campus/record was meant.
+These were genuinely ambiguous by name+state alone: either the curated
+name names a public system with multiple separately IPEDS-reported
+campuses (no campus specified), or a real naming collision. Left
+unmatched rather than guessing which campus/record was meant — you then
+reviewed the candidate lists (with city + enrollment) and confirmed the
+exact IPEDS id for each, which were wired in directly (bypassing
+name-matching entirely) and imported:
 
-- **Columbia University** (columbia-university, NY) — 2 candidates: Columbia University in the City of New York (id 190150); Teachers College at Columbia University (id 196468).
-- **Purdue University** (purdue-university, IN) — 10 candidates, including Purdue University-Main Campus (id 243780), Purdue Fort Wayne, Purdue Northwest, and several Purdue Polytechnic satellite sites.
-- **University of Washington** (university-of-washington, WA) — 10 candidates, including University of Washington-Seattle Campus (id 236948), -Bothell, -Tacoma, plus unrelated WA public universities matched by the broad search.
-- **University of Michigan** (university-of-michigan, MI) — 10 candidates, including University of Michigan-Ann Arbor (id 170976), -Dearborn, -Flint, plus unrelated MI public universities.
-- **University of Alabama** (university-of-alabama, AL) — 9 candidates, including The University of Alabama (id 100751) vs. University of Alabama in Huntsville, at Birmingham, etc.
-- **University of Pittsburgh** (university-of-pittsburgh, PA) — 5 candidates: Pittsburgh Campus (id 215293), Bradford, Greensburg, Johnstown, Titusville.
-- **University of Virginia** (university-of-virginia, VA) — 10 candidates, including University of Virginia-Main Campus (id 234076) plus unrelated VA public universities matched by the broad search.
-- **University of Florida** (university-of-florida, FL) — 10 candidates, none of which is actually "University of Florida" itself (Florida State, USF, UCF, etc. — the broad search didn't surface the exact record within the first page).
-- **Ohio State University** (ohio-state-university, OH) — 6 candidates, including Ohio State University-Main Campus (id 204796), Lima, Mansfield, Marion, Newark, ATI.
-- **Penn State University (University Park)** (penn-state-university, PA) — 10 candidates, all named "Pennsylvania State University-Penn State \<branch\>" (DuBois, New Kensington, Shenango, Brandywine, Scranton, Lehigh Valley, Altoona, Beaver, Berks, Harrisburg); the University Park main campus record wasn't in the first page of results and wasn't confidently identifiable without guessing.
-- **Arizona State University** (arizona-state-university, AZ) — 10 candidates, all ASU's own separately-reported campus/immersion records (Campus Immersion, Digital Immersion, Downtown Phoenix, Polytechnic, West Valley, Tucson, etc.) — no single "main" record.
-- **Texas A&M University** (texas-am-university, TX) — 10 candidates, none of which is actually the flagship College Station campus (the broad search surfaced UT System schools and Texas A&M-San Antonio instead).
-- **Miami University** (miami-university-ohio, OH) — 3 candidates: Miami University-Oxford (id 204024, almost certainly the intended school), -Hamilton, -Middletown.
+- **Columbia University** → Columbia University in the City of New York, id 190150 (of 2 candidates — the other was Teachers College, a separate affiliated graduate school).
+- **Purdue University** → Purdue University-Main Campus, id 243780.
+- **University of Washington** → University of Washington-Seattle Campus, id 236948.
+- **University of Michigan** → University of Michigan-Ann Arbor, id 170976.
+- **University of Alabama** → The University of Alabama, id 100751.
+- **University of Pittsburgh** → University of Pittsburgh-Pittsburgh Campus, id 215293.
+- **University of Virginia** → University of Virginia-Main Campus, id 234076.
+- **University of Florida** → University of Florida, id 134130.
+- **Ohio State University** → Ohio State University-Main Campus, id 204796.
+- **Penn State University (University Park)** → Pennsylvania State University-Main Campus, id 214777.
+- **Arizona State University** → Arizona State University Campus Immersion, id 104151 (the physical Tempe campus, as opposed to the separately-reported "Digital Immersion"/ASU Online record).
+- **Texas A&M University** → Texas A&M University-College Station, id 228723. This one never appeared in the name+state search at any page size tried (up to 30 results) — confirmed separately that a literal "&" in the query wrecks Scorecard's own search relevance (querying "Texas A&M University" returns ten unrelated Texas schools; querying "Texas AM University" surfaces the correct record at position 6). Fixed in the script for future imports; this record itself was wired in directly by id since even the fixed query wouldn't auto-resolve it (the true record name, "...-College Station", still isn't an exact match to our bare curated name, same as every other school on this list).
+- **Miami University** → Miami University-Oxford, id 204024.
 
-If you want any of these filled in, the fix is to add the exact Scorecard
-record name or IPEDS id you want used (e.g. as an override next to the
-college's curated data), not a fuzzier name-matching heuristic — several of
-these (Florida, Texas A&M, Penn State University Park) don't even return
-the intended record in the API's own top-10 results for a name+state
-search, so no purely mechanical matching rule would get them all right
-without risking a wrong match elsewhere.
+None of the 13 differ from curated by more than the 10% discrepancy
+threshold (largest: University of Michigan and Virginia, both ~7-8%) —
+see SCORECARD_DISCREPANCIES.md, which was not updated since nothing
+crossed the threshold.

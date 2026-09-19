@@ -137,10 +137,16 @@ async function fetchSchoolByNameState(name, state) {
   // of a comma anyway (e.g. "University of California-Berkeley"). A
   // parenthetical like "(NYU)" or "(University Park)" in our own curated
   // name is also just descriptive, not part of Scorecard's name, so it's
-  // dropped from the query too. Exact-match comparison is done on
-  // normalized names (see normalizeName), so this never widens a match —
-  // it only strips noise that isn't part of either side's actual name.
-  const queryName = name.replace(/\([^)]*\)/g, "").replace(/,/g, "");
+  // dropped from the query too. A literal "&" doesn't error, but confirmed
+  // live it wrecks Scorecard's own search relevance: querying "Texas A&M
+  // University" returns ten unrelated Texas schools and never surfaces
+  // "Texas A&M University-College Station" at all, while querying "Texas AM
+  // University" (the "&" just dropped) surfaces it at position 6. So "&" is
+  // stripped from the query too, same as the other two. Exact-match
+  // comparison is done on normalized names (see normalizeName), so none of
+  // this ever widens a match — it only strips noise/quirks on the query
+  // side that aren't part of either side's actual name.
+  const queryName = name.replace(/\([^)]*\)/g, "").replace(/[,&]/g, "");
   const url = `${BASE_URL}?api_key=${API_KEY}&school.name=${encodeURIComponent(queryName)}&school.state=${encodeURIComponent(state)}&fields=${FIELDS}&per_page=10`;
   return doFetch(url);
 }

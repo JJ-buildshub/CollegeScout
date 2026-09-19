@@ -3755,7 +3755,65 @@
       "lastVerified": "2026-09-15"
     },
     "website": "https://www.columbia.edu",
-    "state": "NY"
+    "state": "NY",
+    "ipedsUnitId": 190150,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 21590,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 4570,
+          "30001-48000": 2275,
+          "48001-75000": 5866,
+          "75001-110000": 11782,
+          "110001-plus": 50621
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.961,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 8973,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 71845,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 71845,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.0399,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    }
   },
   {
     "id": "university-of-pennsylvania",
@@ -4695,7 +4753,65 @@
       "lastVerified": "2026-09-15"
     },
     "website": "https://www.purdue.edu",
-    "state": "IN"
+    "state": "IN",
+    "ipedsUnitId": 243780,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 14600,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 5098,
+          "30001-48000": 6241,
+          "48001-75000": 9438,
+          "75001-110000": 18177,
+          "110001-plus": 22742
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.831,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 44503,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 9992,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 28794,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.4987,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    }
   },
   {
     "id": "university-of-illinois-urbana-champaign",
@@ -4969,7 +5085,65 @@
       "lastVerified": "2026-09-15"
     },
     "website": "https://www.washington.edu",
-    "state": "WA"
+    "state": "WA",
+    "ipedsUnitId": 236948,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 14091,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 6384,
+          "30001-48000": 7039,
+          "48001-75000": 8110,
+          "75001-110000": 14328,
+          "110001-plus": 30019
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.8518,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 31942,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 12973,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 43209,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.3915,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    }
   },
   {
     "id": "university-of-michigan",
@@ -5081,7 +5255,65 @@
       "lastVerified": "2025-26 cycle"
     },
     "website": "https://umich.edu",
-    "state": "MI"
+    "state": "MI",
+    "ipedsUnitId": 170976,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 13138,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 1043,
+          "30001-48000": 1878,
+          "48001-75000": 4895,
+          "75001-110000": 10869,
+          "110001-plus": 26517
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.932,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 34177,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 17736,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 60946,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.1564,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    }
   },
   {
     "id": "georgia-institute-of-technology",
@@ -6220,7 +6452,65 @@
       "lastVerified": "2024-25 cycle"
     },
     "website": "https://www.ua.edu",
-    "state": "AL"
+    "state": "AL",
+    "ipedsUnitId": 100751,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 22420,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 19169,
+          "30001-48000": 19884,
+          "48001-75000": 22258,
+          "75001-110000": 25658,
+          "110001-plus": 26729
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.7337,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 33227,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 12180,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 34172,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.7665,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    }
   },
   {
     "id": "university-of-pittsburgh",
@@ -6316,7 +6606,65 @@
       "lastVerified": "2024-25 cycle"
     },
     "website": "https://www.pitt.edu",
-    "state": "PA"
+    "state": "PA",
+    "ipedsUnitId": 215293,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 30434,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 14709,
+          "30001-48000": 18371,
+          "48001-75000": 23192,
+          "75001-110000": 31567,
+          "110001-plus": 36008
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.855,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 20370,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 21926,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 41430,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.5808,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    }
   },
   {
     "id": "tufts-university",
@@ -13623,7 +13971,65 @@
       "lastVerified": "2026-09-15"
     },
     "website": "https://www.virginia.edu",
-    "state": "VA"
+    "state": "VA",
+    "ipedsUnitId": 234076,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 21565,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 8174,
+          "30001-48000": 9696,
+          "48001-75000": 13283,
+          "75001-110000": 20822,
+          "110001-plus": 35402
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.956,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 17597,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 21803,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 59512,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.1681,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    }
   },
   {
     "id": "university-of-florida",
@@ -13727,7 +14133,65 @@
       "lastVerified": "2026-09-15"
     },
     "website": "https://www.ufl.edu",
-    "state": "FL"
+    "state": "FL",
+    "ipedsUnitId": 134130,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 6541,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 1982,
+          "30001-48000": 2768,
+          "48001-75000": 7151,
+          "75001-110000": 12905,
+          "110001-plus": 16723
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.9112,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 35629,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 6381,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 28659,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.242,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    }
   },
   {
     "id": "ohio-state-university",
@@ -13830,7 +14294,65 @@
       "lastVerified": "2026-09-15"
     },
     "website": "https://www.osu.edu",
-    "state": "OH"
+    "state": "OH",
+    "ipedsUnitId": 204796,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 17339,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 4885,
+          "30001-48000": 5751,
+          "48001-75000": 9807,
+          "75001-110000": 20461,
+          "110001-plus": 27359
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.8772,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 45638,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 13244,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 40022,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.6057,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    }
   },
   {
     "id": "penn-state-university",
@@ -13928,7 +14450,65 @@
       "lastVerified": "2026-09-15"
     },
     "website": "https://www.psu.edu",
-    "state": "PA"
+    "state": "PA",
+    "ipedsUnitId": 214777,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 32875,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 19845,
+          "30001-48000": 20049,
+          "48001-75000": 25667,
+          "75001-110000": 31834,
+          "110001-plus": 37831
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.8609,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 42284,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 20644,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 41790,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.6056,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    }
   },
   {
     "id": "university-of-wisconsin-madison",
@@ -14813,7 +15393,65 @@
       "lastVerified": "2026-09-15"
     },
     "website": "https://www.asu.edu",
-    "state": "AZ"
+    "state": "AZ",
+    "ipedsUnitId": 104151,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 14967,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 9070,
+          "30001-48000": 10711,
+          "48001-75000": 16801,
+          "75001-110000": 20130,
+          "110001-plus": 24296
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6804,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 64674,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 12223,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 33139,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.8989,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    }
   },
   {
     "id": "university-of-colorado-boulder",
@@ -15067,7 +15705,65 @@
       "lastVerified": "2026-09-15"
     },
     "website": "https://www.tamu.edu",
-    "state": "TX"
+    "state": "TX",
+    "ipedsUnitId": 228723,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 21315,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 12784,
+          "30001-48000": 13317,
+          "48001-75000": 17435,
+          "75001-110000": 26520,
+          "110001-plus": 30660
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.8391,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 59615,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 13154,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 40124,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.5743,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    }
   },
   {
     "id": "miami-university-ohio",
@@ -15157,7 +15853,65 @@
       "lastVerified": "2026-09-15"
     },
     "website": "https://miamioh.edu",
-    "state": "OH"
+    "state": "OH",
+    "ipedsUnitId": 204024,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 28384,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 16015,
+          "30001-48000": 18193,
+          "48001-75000": 23806,
+          "75001-110000": 29048,
+          "110001-plus": 31431
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.7979,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 16656,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 18161,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 41221,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.754,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    }
   },
   {
     "id": "baylor-university",

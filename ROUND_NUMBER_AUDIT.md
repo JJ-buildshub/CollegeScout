@@ -8,9 +8,10 @@ Per instruction, every round-number admit rate is treated as **unverified
 until sourced**, regardless of how close it happens to land to Scorecard's
 figure below.
 
-57 of the 64 have a matched Scorecard 2024 admit rate to compare against
-(the other 7 are among the 13 schools that are still unmatched — see
-QUESTIONS.md). Sorted by percent difference, largest first.
+All 64 now have a matched Scorecard 2024 admit rate to compare against —
+the 13 schools that were unmatched when this audit was first written have
+since been hand-confirmed and imported (see QUESTIONS.md). Sorted by
+percent difference, largest first.
 
 | School | Curated (round) | Scorecard 2024 | % difference |
 |---|---|---|---|
@@ -26,8 +27,10 @@ QUESTIONS.md). Sorted by percent difference, largest first.
 | Georgia Institute of Technology | 13.0% | 14.1% | 8.2% |
 | University of Texas at Austin | 29.0% | 26.6% | 8.1% |
 | California Polytechnic State University, San Luis Obispo | 29.0% | 31.3% | 8.0% |
+| University of Michigan | 17.0% | 15.6% | 8.0% |
 | Santa Clara University | 52.0% | 48.0% | 7.7% |
 | Syracuse University | 43.0% | 45.9% | 6.8% |
+| University of Washington | 42.0% | 39.1% | 6.8% |
 | San Diego State University | 34.0% | 36.2% | 6.4% |
 | Carnegie Mellon University | 11.0% | 11.7% | 6.0% |
 | Claremont McKenna College | 10.0% | 9.6% | 4.1% |
@@ -38,13 +41,17 @@ QUESTIONS.md). Sorted by percent difference, largest first.
 | University of Illinois Urbana-Champaign | 42.0% | 42.4% | 0.9% |
 | Rensselaer Polytechnic Institute | 64.0% | 63.5% | 0.8% |
 | Scripps College | 38.0% | 38.3% | 0.8% |
+| Texas A&M University | 57.0% | 57.4% | 0.8% |
 | University of Connecticut | 52.0% | 52.4% | 0.8% |
 | University of San Diego | 52.0% | 52.4% | 0.7% |
+| Penn State University (University Park) | 61.0% | 60.6% | 0.7% |
+| Ohio State University | 61.0% | 60.6% | 0.7% |
 | Chapman University | 65.0% | 65.4% | 0.7% |
 | University of Delaware | 71.0% | 70.6% | 0.6% |
 | Drexel University | 79.0% | 79.4% | 0.6% |
 | Southern Methodist University | 63.0% | 63.3% | 0.6% |
 | Baylor University | 51.0% | 51.3% | 0.5% |
+| Miami University | 75.0% | 75.4% | 0.5% |
 | Elon University | 66.0% | 66.3% | 0.5% |
 | University of Kansas | 93.0% | 93.5% | 0.5% |
 | Temple University | 80.0% | 80.4% | 0.5% |
@@ -59,6 +66,7 @@ QUESTIONS.md). Sorted by percent difference, largest first.
 | University of Redlands | 83.0% | 82.7% | 0.3% |
 | University of California, Los Angeles | 9.0% | 9.0% | 0.3% |
 | Indiana University Bloomington | 78.0% | 78.2% | 0.3% |
+| Purdue University | 50.0% | 49.9% | 0.3% |
 | Rutgers University-New Brunswick | 58.0% | 58.1% | 0.3% |
 | University of Denver | 78.0% | 77.8% | 0.2% |
 | Michigan State University | 85.0% | 84.8% | 0.2% |
@@ -72,17 +80,9 @@ QUESTIONS.md). Sorted by percent difference, largest first.
 | University of Colorado Boulder | 78.0% | 78.1% | 0.1% |
 | Rice University | 8.0% | 8.0% | 0.0% |
 
-## Round-number curated values with no Scorecard figure to compare (still unmatched)
-
-| School | Curated (round) |
-|---|---|
-| Purdue University | 50.0% |
-| University of Washington | 42.0% |
-| University of Michigan | 17.0% |
-| Ohio State University | 61.0% |
-| Penn State University (University Park) | 61.0% |
-| Texas A&M University | 57.0% |
-| Miami University | 75.0% |
+The 13 newly-matched schools' round-number admit rates all landed under
+8.0% difference from Scorecard — none crossed the 10% discrepancy
+threshold, so none are in SCORECARD_DISCREPANCIES.md.
 
 ## Reading this
 
