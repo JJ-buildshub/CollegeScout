@@ -1,6 +1,6 @@
 {
- "note": "Application plans reviewed against each school's own admissions page, with the exact page line each one rests on. Applied to colleges.json by scripts/apply-reviewed-deadlines.py; verified against the live pages by scripts/check-reviewed-deadlines.mjs. Left out on purpose: Alabama and Pitt (their existing entries already match their pages and carry extra scholarship context that a bare date would lose). A school's `note` is review commentary shown in the dry run only; `provenanceNote` is what gets stored on the record.",
- "checked": "2026-09-19",
+ "note": "Application plans reviewed against each school's own admissions page, with the exact page line each one rests on. Applied to colleges.json by scripts/apply-reviewed-deadlines.py; verified against the live pages by scripts/check-reviewed-deadlines.mjs. Alabama is not listed: its page gives only a priority date and never says rolling, so its plans are left unverified. `manual` means the page blocks automated requests and was read in a browser. A school's `note` is review commentary shown in the dry run only; `provenanceNote` is what gets stored on the record.",
+ "checked": "2026-09-20",
  "cycle": "2026-27",
  "schools": {
   "university-of-florida": {
@@ -124,16 +124,20 @@
     {
      "type": "Rolling",
      "binding": false,
-     "deadline": "After November 1, reviewed on a rolling basis"
+     "deadline": null,
+     "note": "After November 1, reviewed on a rolling basis."
     }
-   ]
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026.",
+   "note": "Free-text Rolling wording moved out of the deadline field into a note."
   },
   "university-of-arizona": {
    "label": "University of Arizona admissions",
-   "url": "https://www.arizona.edu/admissions/first-year/deadlines",
+   "url": "https://www.arizona.edu/admissions/deadlines",
    "evidence": [
+    "Fall 2027 Start Term",
     "November 1, 2026: Early Action Application Deadline*",
-    "Applications received after November 1 will move to a Regular Decision timeline."
+    "*Applications received after November 1 will move to a Regular Decision timeline."
    ],
    "plans": [
     {
@@ -144,7 +148,8 @@
     {
      "type": "RD",
      "binding": false,
-     "deadline": "After November 1, on a space-available basis (no set date)"
+     "deadline": null,
+     "note": "Applications received after November 1 move to a Regular Decision timeline; decisions are released on a space-available basis."
     }
    ]
   },
@@ -176,11 +181,12 @@
   },
   "miami-university-ohio": {
    "label": "Miami University admissions",
-   "url": "https://miamioh.edu/admission-aid/apply/first-year-students/application-types.html",
+   "url": "https://miamioh.edu/admission-aid/apply/dates-deadlines/undergraduate-students.html",
    "evidence": [
-    "Early Decision is a binding application option",
-    "You must complete your application and submit it by Nov. 1.",
-    "You must complete your application and submit it by the priority deadline of Dec. 1."
+    "Early Decision (binding) 1 Nov. 1 Dec. 1 Jan. 15",
+    "Early Action I (Non-Binding) 2 Nov. 1 Dec. 15 May 1",
+    "Early Action II (Non-Binding) 2 Dec. 1 Feb. 1 May 1",
+    "Regular Decision (Non-Binding) 2 Feb. 1 Mar. 15 May 1"
    ],
    "plans": [
     {
@@ -194,11 +200,18 @@
      "deadline": "November 1"
     },
     {
+     "type": "EA2",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
      "type": "RD",
      "binding": false,
-     "deadline": "December 1 (priority)"
+     "deadline": "February 1"
     }
-   ]
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026. December 1 is also Miami's priority date for most merit scholarships; that is not an admission deadline.",
+   "note": "Stored RD was 'December 1 (priority)', which is a scholarship priority date; the page gives February 1."
   },
   "temple-university": {
    "label": "Temple admissions",
@@ -225,7 +238,8 @@
    "url": "https://admissions.msu.edu/apply/first-year/dates-and-deadlines",
    "evidence": [
     "Early action (Nov. 1)",
-    "Regular decision – April 1 (Priority: Feb. 1)"
+    "Regular decision – April 1 (Priority: Feb. 1)",
+    "Applications completed with all required materials and submitted by Feb. 1 will be guaranteed an initial admission decision by March 31."
    ],
    "plans": [
     {
@@ -236,9 +250,11 @@
     {
      "type": "RD",
      "binding": false,
-     "deadline": "April 1 (priority February 1)"
+     "deadline": "April 1",
+     "note": "Priority date: February 1. Applications completed by then are guaranteed an initial admission decision by March 31."
     }
-   ]
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
   },
   "university-of-iowa": {
    "label": "University of Iowa admissions",
@@ -296,9 +312,12 @@
     {
      "type": "Rolling",
      "binding": false,
-     "deadline": "Priority admission date November 1; regular admission date February 1"
+     "deadline": null,
+     "note": "ASU's priority admission date is Nov. 1 and the regular admission date is Feb. 1."
     }
-   ]
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026.",
+   "note": "Page does not say 'rolling' or give a final deadline; the existing Rolling type is kept and both dates are stored as the school's own sentence."
   },
   "university-of-kansas": {
    "label": "University of Kansas admissions (Spanish site)",
@@ -730,6 +749,311 @@
    ],
    "provenanceNote": "Priority filing period for Fall 2027; it can vary by enrollment type or campus.",
    "note": "System-wide Fall 2027 priority filing period; corroborated by the CSU Freshman Application Guide 2027-2028 (Priority Deadline Nov 30 2026)."
+  },
+  "university-of-pennsylvania": {
+   "label": "Penn admissions",
+   "url": "https://admissions.upenn.edu/how-to-apply/first-year-applicants",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Our application for entry as a first year student in fall 2027 is now available.",
+    "Early Decision Deadline: November 1, 2026",
+    "Regular Decision Deadline: January 5, 2027",
+    "Our Early Decision program is binding, meaning that if you are admitted, you are required to accept our offer of admission and enroll at Penn."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 5"
+    }
+   ]
+  },
+  "williams-college": {
+   "label": "Williams admission",
+   "url": "https://admission.williams.edu/apply/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Admission Application Deadline November 15 January 4 March 3"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 4"
+    }
+   ],
+   "manual": true,
+   "note": "Stored RD was January 5; the page says January 4.",
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-san-diego": {
+   "label": "USD admissions",
+   "url": "https://www.sandiego.edu/admission-and-aid/undergraduate/apply/admission-timeline.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Decision I - First Year November 1 November 15 Early December Late December January 10",
+    "Early Action - First Year November 1 November 15 Mid December Early February May 1",
+    "Early Decision II - First Year January 5 January 5 Late January Late January February 10",
+    "Regular Decision - First Year January 15 February 1 Mid March Early April May 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 5"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-pittsburgh": {
+   "label": "Pitt admissions",
+   "url": "https://admissions.pitt.edu/first-year-student/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "there’s no set deadline for applying to Pitt"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "note": "Stored text put a December 1 scholarship priority date in the deadline field; it is removed because no official page was found to source it.",
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-michigan": {
+   "label": "Michigan admissions",
+   "url": "https://admissions.umich.edu/apply/first-year-applicants/first-year-application-plans",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "The University of Michigan offers three application plans for first-year applicants: Early Decision, Early Action, and Regular Decision.",
+    "Early Decision Application Deadline: Nov. 1",
+    "Early Action Application Deadline: Nov. 1",
+    "Regular Decision Application Deadline: Feb. 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ],
+   "manual": true,
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-texas-at-austin": {
+   "label": "UT Austin admissions",
+   "url": "https://admissions.utexas.edu/apply/freshman/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action Deadline to Apply October 15",
+    "Regular Deadline To Apply December 1",
+    "Early Action applicants will receive their admission decision or a notification of deferral by January 15, 2027."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "October 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "December 1"
+    }
+   ]
+  },
+  "harvard-university": {
+   "label": "Harvard College admissions",
+   "url": "https://college.harvard.edu/admissions/apply/first-year-applicants",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Restrictive Early Action candidates apply by November 1",
+    "Regular Decision candidates apply by January 1"
+   ],
+   "plans": [
+    {
+     "type": "REA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 1"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "yale-university": {
+   "label": "Yale admissions",
+   "url": "https://admissions.yale.edu/apply",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Single-Choice Early Action (Deadline: November 1)",
+    "Regular Decision (Deadline: January 2)"
+   ],
+   "plans": [
+    {
+     "type": "REA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 2"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "stanford-university": {
+   "label": "Stanford admission",
+   "url": "https://admission.stanford.edu/apply/first-year/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Standard Application Deadline - November 1 Common Application Deadline: November 1",
+    "Standard Application Deadline - January 5 Common Application Deadline: January 5"
+   ],
+   "plans": [
+    {
+     "type": "REA",
+     "binding": false,
+     "deadline": "November 1",
+     "note": "Applicants submitting the optional arts portfolio have an earlier Common Application deadline: October 15."
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 5",
+     "note": "Applicants submitting the optional arts portfolio have an earlier Common Application deadline: December 5."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "princeton-university": {
+   "label": "Princeton admission",
+   "url": "https://admission.princeton.edu/apply/first-year-application-dates-deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Nov. 1 Application with PRINCETON-SPECIFIC QUESTIONS Due",
+    "Jan. 1 Application with PRINCETON-SPECIFIC QUESTIONS Due"
+   ],
+   "plans": [
+    {
+     "type": "REA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 1"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "columbia-university": {
+   "label": "Columbia undergraduate admissions",
+   "url": "https://undergrad.admissions.columbia.edu/apply/first-year",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "First-year applications for Fall 2027 are now available.",
+    "November 1 Early Decision and QuestBridge National College Match application deadline",
+    "January 1 Regular Decision application deadline"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 1"
+    }
+   ]
+  },
+  "cornell-university": {
+   "label": "Cornell admissions",
+   "url": "https://admissions.cornell.edu/how-to-apply/first-year-applicants",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Decision (ED) is a binding application plan",
+    "Regular Decision (RD) is a non-binding decision plan"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 2"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "brown-university": {
+   "label": "Brown admission",
+   "url": "https://admission.brown.edu/first-year",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Deadline: November 1",
+    "Deadline: January 5"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 5"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
   }
  }
 }

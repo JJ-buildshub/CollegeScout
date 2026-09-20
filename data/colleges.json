@@ -2469,12 +2469,14 @@
       {
         "type": "REA",
         "binding": false,
-        "deadline": "November 1"
+        "deadline": "November 1",
+        "note": "Applicants submitting the optional arts portfolio have an earlier Common Application deadline: October 15."
       },
       {
         "type": "RD",
         "binding": false,
-        "deadline": "January 5"
+        "deadline": "January 5",
+        "note": "Applicants submitting the optional arts portfolio have an earlier Common Application deadline: December 5."
       }
     ],
     "financials": {
@@ -2572,8 +2574,16 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Stanford admission (https://admission.stanford.edu/apply/first-year/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "testingPolicyProvenance": {
+      "source": "Stanford admission (https://admission.stanford.edu/apply/first-year/testing.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     }
   },
   {
@@ -3440,8 +3450,17 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Harvard College admissions (https://college.harvard.edu/admissions/apply/first-year-applicants)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "testingPolicyNote": "In exceptional cases when the tests are not accessible, AP, IB or national exam results can meet the requirement.",
+    "testingPolicyProvenance": {
+      "source": "Harvard College admissions (https://college.harvard.edu/admissions/apply/first-year-applicants)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     }
   },
   {
@@ -3611,8 +3630,16 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Princeton admission (https://admission.princeton.edu/apply/first-year-application-dates-deadlines)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "testingPolicyNote": "Princeton returns to requiring SAT or ACT scores for applicants seeking to enroll in fall 2028.",
+    "testingPolicyProvenance": {
+      "source": "Princeton admission (https://admission.princeton.edu/apply/standardized-testing)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
     }
   },
   {
@@ -3782,8 +3809,16 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Yale admissions (https://admissions.yale.edu/apply)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "testingPolicyProvenance": {
+      "source": "Yale admissions (https://admissions.yale.edu/standardized-testing)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     }
   },
   {
@@ -3952,8 +3987,15 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Columbia undergraduate admissions (https://undergrad.admissions.columbia.edu/apply/first-year)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "testingPolicyNote": "Columbia will require SAT or ACT scores starting with the 2027-28 admission cycle.",
+    "testingPolicyProvenance": {
+      "source": "Columbia undergraduate admissions (https://undergrad.admissions.columbia.edu/apply/process/testing)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
     }
   },
   {
@@ -4123,8 +4165,9 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Penn admissions (https://admissions.upenn.edu/how-to-apply/first-year-applicants)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
     },
     "testingPolicyNote": "A hardship waiver is available.",
     "testingPolicyProvenance": {
@@ -4300,8 +4343,16 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Cornell admissions (https://admissions.cornell.edu/how-to-apply/first-year-applicants)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "testingPolicyProvenance": {
+      "source": "Cornell admissions (https://admissions.cornell.edu/policies/standardized-testing-policy)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     }
   },
   {
@@ -4471,8 +4522,16 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Brown admission (https://admission.brown.edu/first-year)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "testingPolicyProvenance": {
+      "source": "Brown admission (https://admission.brown.edu/first-year/standardized-tests)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     }
   },
   {
@@ -5503,8 +5562,16 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Michigan admissions (https://admissions.umich.edu/apply/first-year-applicants/first-year-application-plans)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "testingPolicyProvenance": {
+      "source": "Michigan admissions (https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     }
   },
   {
@@ -5854,8 +5921,15 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "UT Austin admissions (https://admissions.utexas.edu/apply/freshman/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "testingPolicyNote": "Official Classic Learning Test (CLT) scores also satisfy this requirement.",
+    "testingPolicyProvenance": {
+      "source": "UT Austin admissions (https://admissions.utexas.edu/apply/freshman/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
     }
   },
   {
@@ -6285,7 +6359,7 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "January 5"
+        "deadline": "January 4"
       }
     ],
     "financials": {
@@ -6387,8 +6461,10 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Williams admission (https://admission.williams.edu/apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     },
     "testingPolicyProvenance": {
       "source": "Williams admission (https://www.williams.edu/admission-aid/how-to-apply/)",
@@ -6636,13 +6712,7 @@
         "Early demonstrated interest in a specific college (e.g., shadowing hours for nursing, case competitions for business)"
       ]
     },
-    "applicationPlans": [
-      {
-        "type": "Rolling",
-        "binding": false,
-        "deadline": "Applications open August 1; priority deadline for scholarship and housing consideration is December 4"
-      }
-    ],
+    "applicationPlans": [],
     "financials": {
       "coaInState": 35392,
       "coaOutOfState": 60400,
@@ -6738,7 +6808,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "A test score is required if your cumulative high school GPA is below 3.0.",
+    "testingPolicyProvenance": {
+      "source": "University of Alabama admissions (https://admissions.ua.edu/testing-requirements/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "university-of-pittsburgh",
@@ -6799,7 +6875,7 @@
       {
         "type": "Rolling",
         "binding": false,
-        "deadline": "Application window opens through July 30; December 1 priority deadline for automatic academic-scholarship consideration"
+        "deadline": null
       }
     ],
     "financials": {
@@ -6893,7 +6969,19 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Pitt's test-optional program runs through Fall 2028 (Pittsburgh campus).",
+    "testingPolicyProvenance": {
+      "source": "Pitt admissions (https://admissions.pitt.edu/first-year-student/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "Pitt admissions (https://admissions.pitt.edu/first-year-student/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    }
   },
   {
     "id": "tufts-university",
@@ -9523,14 +9611,14 @@
         "deadline": "November 1"
       },
       {
-        "type": "ED2",
-        "binding": true,
-        "deadline": "January 5"
-      },
-      {
         "type": "EA",
         "binding": false,
         "deadline": "November 1"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 5"
       },
       {
         "type": "RD",
@@ -9630,8 +9718,10 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "USD admissions (https://www.sandiego.edu/admission-and-aid/undergraduate/apply/admission-timeline.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     },
     "testingPolicyNote": "USD calls this \"test-free\": scores are not viewed.",
     "testingPolicyProvenance": {
@@ -14980,7 +15070,8 @@
       {
         "type": "Rolling",
         "binding": false,
-        "deadline": "After November 1, reviewed on a rolling basis"
+        "deadline": null,
+        "note": "After November 1, reviewed on a rolling basis."
       }
     ],
     "financials": {
@@ -15078,7 +15169,14 @@
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
       "source": "Penn State admissions (https://www.psu.edu/resources/first-year-students/deadlines)",
-      "year": "2026-27"
+      "year": "2026-27",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "testingPolicyProvenance": {
+      "source": "Penn State admissions (https://admissions.psu.edu/apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     }
   },
   {
@@ -15812,7 +15910,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "After November 1, on a space-available basis (no set date)"
+        "deadline": null,
+        "note": "Applications received after November 1 move to a Regular Decision timeline; decisions are released on a space-available basis."
       }
     ],
     "financials": {
@@ -15909,8 +16008,14 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "University of Arizona admissions (https://www.arizona.edu/admissions/first-year/deadlines)",
+      "source": "University of Arizona admissions (https://www.arizona.edu/admissions/deadlines)",
       "year": "2026-27"
+    },
+    "testingPolicyProvenance": {
+      "source": "University of Arizona admissions (https://www.arizona.edu/admissions/undergraduate/first-year)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     }
   },
   {
@@ -15973,7 +16078,8 @@
       {
         "type": "Rolling",
         "binding": false,
-        "deadline": "Priority admission date November 1; regular admission date February 1"
+        "deadline": null,
+        "note": "ASU's priority admission date is Nov. 1 and the regular admission date is Feb. 1."
       }
     ],
     "financials": {
@@ -16071,7 +16177,8 @@
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
       "source": "ASU admissions (https://admission.asu.edu/apply/first-year)",
-      "year": "2026-27"
+      "year": "2026-27",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     }
   },
   {
@@ -16462,9 +16569,14 @@
         "deadline": "November 1"
       },
       {
+        "type": "EA2",
+        "binding": false,
+        "deadline": "December 1"
+      },
+      {
         "type": "RD",
         "binding": false,
-        "deadline": "December 1 (priority)"
+        "deadline": "February 1"
       }
     ],
     "financials": {
@@ -16560,8 +16672,9 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Miami University admissions (https://miamioh.edu/admission-aid/apply/first-year-students/application-types.html)",
-      "year": "2026-27"
+      "source": "Miami University admissions (https://miamioh.edu/admission-aid/apply/dates-deadlines/undergraduate-students.html)",
+      "year": "2026-27",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026. December 1 is also Miami's priority date for most merit scholarships; that is not an admission deadline."
     }
   },
   {
@@ -18425,7 +18538,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "April 1 (priority February 1)"
+        "deadline": "April 1",
+        "note": "Priority date: February 1. Applications completed by then are guaranteed an initial admission decision by March 31."
       }
     ],
     "financials": {
@@ -18522,7 +18636,8 @@
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
       "source": "Michigan State admissions (https://admissions.msu.edu/apply/first-year/dates-and-deadlines)",
-      "year": "2026-27"
+      "year": "2026-27",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     }
   },
   {

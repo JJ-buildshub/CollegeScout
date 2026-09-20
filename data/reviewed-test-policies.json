@@ -47,6 +47,125 @@
    "evidence": [
     "The University of Kansas is test optional."
    ]
+  },
+  "university-of-michigan": {
+   "policy": "Test-Optional",
+   "label": "Michigan admissions",
+   "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines",
+   "evidence": [
+    "SAT or ACT score, if available and you wish them to be considered"
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026.",
+   "manual": true
+  },
+  "university-of-texas-at-austin": {
+   "policy": "Test-Required",
+   "label": "UT Austin admissions",
+   "url": "https://admissions.utexas.edu/apply/freshman/",
+   "evidence": [
+    "Send at least one official SAT or ACT score directly from the testing agency"
+   ],
+   "note": "Official Classic Learning Test (CLT) scores also satisfy this requirement."
+  },
+  "harvard-university": {
+   "policy": "Test-Required",
+   "label": "Harvard College admissions",
+   "url": "https://college.harvard.edu/admissions/apply/first-year-applicants",
+   "evidence": [
+    "SAT or ACT - In exceptional cases when those tests are not accessible"
+   ],
+   "note": "In exceptional cases when the tests are not accessible, AP, IB or national exam results can meet the requirement.",
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "yale-university": {
+   "policy": "Test-Required",
+   "label": "Yale admissions",
+   "url": "https://admissions.yale.edu/standardized-testing",
+   "evidence": [
+    "First-year and transfer applicants are required to include scores from the ACT or SAT."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "stanford-university": {
+   "policy": "Test-Required",
+   "label": "Stanford admission",
+   "url": "https://admission.stanford.edu/apply/first-year/testing.html",
+   "evidence": [
+    "ACT or SAT scores are required."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "princeton-university": {
+   "policy": "Test-Optional",
+   "label": "Princeton admission",
+   "url": "https://admission.princeton.edu/apply/standardized-testing",
+   "evidence": [
+    "For first-year and transfer applicants seeking to enroll in fall 2027, Princeton remains test optional."
+   ],
+   "note": "Princeton returns to requiring SAT or ACT scores for applicants seeking to enroll in fall 2028."
+  },
+  "columbia-university": {
+   "policy": "Test-Optional",
+   "label": "Columbia undergraduate admissions",
+   "url": "https://undergrad.admissions.columbia.edu/apply/process/testing",
+   "evidence": [
+    "We will remain test optional for the 2026-2027 admissions cycle."
+   ],
+   "note": "Columbia will require SAT or ACT scores starting with the 2027-28 admission cycle."
+  },
+  "cornell-university": {
+   "policy": "Test-Required",
+   "label": "Cornell admissions",
+   "url": "https://admissions.cornell.edu/policies/standardized-testing-policy",
+   "evidence": [
+    "First-year applicants are required to submit the SAT or ACT scores when applying to Cornell."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "brown-university": {
+   "policy": "Test-Required",
+   "label": "Brown admission",
+   "url": "https://admission.brown.edu/first-year/standardized-tests",
+   "evidence": [
+    "Brown University has returned to a policy requiring standardized test scores (either SAT or ACT scores) for first-year applicants beginning with the 2024-25 admission cycle."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-alabama": {
+   "policy": "Test-Optional",
+   "label": "University of Alabama admissions",
+   "url": "https://admissions.ua.edu/testing-requirements/",
+   "evidence": [
+    "a standardized test score (ACT or SAT) will be required for students whose cumulative high school GPA is below 3.0"
+   ],
+   "note": "A test score is required if your cumulative high school GPA is below 3.0."
+  },
+  "university-of-pittsburgh": {
+   "policy": "Test-Optional",
+   "label": "Pitt admissions",
+   "url": "https://admissions.pitt.edu/first-year-student/",
+   "evidence": [
+    "the university has extended the test-optional program through Fall 2028"
+   ],
+   "note": "Pitt's test-optional program runs through Fall 2028 (Pittsburgh campus)."
+  },
+  "university-of-arizona": {
+   "policy": "Test-Optional",
+   "label": "University of Arizona admissions",
+   "url": "https://www.arizona.edu/admissions/undergraduate/first-year",
+   "evidence": [
+    "SAT and ACT scores are not required for general admission to the university"
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "penn-state-university": {
+   "policy": "Test-Optional",
+   "label": "Penn State admissions",
+   "url": "https://admissions.psu.edu/apply/",
+   "evidence": [
+    "For first-year applicants, Penn State is test-optional, so submitting scores is not required for your application."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
   }
  }
 }
