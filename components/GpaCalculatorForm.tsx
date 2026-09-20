@@ -9,6 +9,7 @@ import {
   type GpaInputs,
   type UcGpaResult,
 } from "@/lib/gpa";
+import { getSystemRequirements } from "@/lib/systemRequirements";
 
 interface Props {
   inputs: GpaInputs;
@@ -84,6 +85,57 @@ function NumberField({
   );
 }
 
+/**
+ * Plain-language explainer for "a-g", shown above the UC and CSU calculators.
+ * The seven subject areas and years come from the UC's verified requirements
+ * data (data/system-requirements.json), the same as the profile pages, so the
+ * numbers can't drift from them. UC and CSU list the same pattern.
+ */
+function AgExplainer() {
+  const courses = getSystemRequirements("UC")?.courses ?? [];
+  if (courses.length === 0) return null;
+  return (
+    <details className="group mt-5 rounded-xl border border-slate-200 bg-slate-50">
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-sm font-semibold text-navy-900">
+        <span className="flex items-center gap-1.5">
+          <Info className="h-3.5 w-3.5 shrink-0 text-slate-500" />
+          What&apos;s &quot;a-g&quot;? (You&apos;ll see it below.)
+        </span>
+        <ChevronDown className="h-4 w-4 shrink-0 text-slate-400 transition-transform group-open:rotate-180" />
+      </summary>
+      <div className="border-t border-slate-200 px-4 pb-4 pt-3 text-sm leading-relaxed text-slate-700">
+        <p>
+          &quot;a-g&quot; is a checklist of high school classes that California&apos;s public universities (UC and CSU)
+          want to see. The letters a to g are labels for seven kinds of classes.
+        </p>
+        <ul className="mt-3 divide-y divide-slate-200 rounded-lg border border-slate-200 bg-white">
+          {courses.map((c) => (
+            <li key={c.area} className="flex items-baseline gap-3 px-3 py-2 text-sm">
+              <span className="w-4 shrink-0 font-bold uppercase text-slate-400">{c.area}</span>
+              <span className="flex-1 text-navy-900">{c.subject}</span>
+              <span className="shrink-0 text-xs font-semibold text-slate-500">
+                {c.years} {c.years === 1 ? "year" : "years"}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3">
+          Your high school has a list of which of its classes count. Your <strong>a-g GPA</strong> is your GPA using
+          only those classes, with an extra point for approved honors, AP and IB classes. UC and CSU use it for their
+          minimum GPA requirements. Your report card GPA may count every class, so the two can differ.
+        </p>
+        <p className="mt-2">
+          UC counts your 10th and 11th grade classes. CSU counts 10th, 11th and 12th, so the same grades can give
+          different numbers.
+        </p>
+        <p className="mt-2 text-[11px] leading-snug text-slate-400">
+          From the admission requirements pages of the UC and CSU, linked on each UC and CSU school&apos;s profile.
+        </p>
+      </div>
+    </details>
+  );
+}
+
 export default function GpaCalculatorForm({
   inputs,
   onChange,
@@ -149,6 +201,8 @@ export default function GpaCalculatorForm({
           </p>
         )}
       </div>
+
+      <AgExplainer />
 
       <div className="mt-5 border-t border-slate-100 pt-4">
         <button
