@@ -3014,7 +3014,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "January 4"
+        "deadline": "January 4",
+        "note": "MIT calls this plan Regular Action."
       }
     ],
     "financials": {
@@ -3109,7 +3110,19 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "MIT admissions (https://mitadmissions.org/apply/firstyear/tests-scores/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "applicationPlansProvenance": {
+      "source": "MIT admissions (https://mitadmissions.org/apply/firstyear/deadlines-requirements/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    }
   },
   {
     "id": "carnegie-mellon-university",

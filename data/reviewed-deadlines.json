@@ -1054,6 +1054,29 @@
     }
    ],
    "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "massachusetts-institute-of-technology": {
+   "label": "MIT admissions",
+   "url": "https://mitadmissions.org/apply/firstyear/deadlines-requirements/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action (EA) applications are due November 1 and admission decisions are released in mid-December.",
+    "Regular Action (RA) applications are due January 4 and admission decisions are released in mid-March."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 4",
+     "note": "MIT calls this plan Regular Action."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
   }
  }
 }

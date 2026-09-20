@@ -166,6 +166,16 @@
     "For first-year applicants, Penn State is test-optional, so submitting scores is not required for your application."
    ],
    "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "massachusetts-institute-of-technology": {
+   "policy": "Test-Required",
+   "label": "MIT admissions",
+   "url": "https://mitadmissions.org/apply/firstyear/tests-scores/",
+   "evidence": [
+    "We require the SAT or the ACT",
+    "for both prospective first-year and transfer students."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
   }
  }
 }
