@@ -40,6 +40,21 @@ const TEST_CODE_CONSISTENT: Record<string, string[]> = {
   S: ["Test-Optional", "Test-Required"],
 };
 
+// The school's own statement of its policy, worded for the overview. A test-blind or
+// test-free school doesn't look at scores at all.
+const POLICY_TEXT: Record<string, string> = {
+  "Test-Required": "SAT or ACT scores are required.",
+  "Test-Optional": "Submitting SAT or ACT scores is optional.",
+  "Test-Blind": "SAT and ACT scores aren't considered in admission.",
+  "Test-Free": "SAT and ACT scores aren't considered in admission.",
+};
+
+/** "Label (https://url)" -> { label, url }, the shape provenance sources are stored in. */
+function parseCited(source: string | undefined): { label: string; url: string } | null {
+  const m = /^(.*) \((https?:\/\/[^)]+)\)$/.exec(source ?? "");
+  return m ? { label: m[1], url: m[2] } : null;
+}
+
 function plural(n: number, word: string): string {
   return `${n} ${word}${n === 1 ? "" : "s"}`;
 }
@@ -66,7 +81,15 @@ export function buildAdmissionOverview(college: College): OverviewRow[] {
 
   // Test scores: the system's own statement, else the grid (when it agrees with our data)
   const systemTest = system?.overview.find((r) => r.label === "Test scores");
-  if (system && systemTest) {
+  const officialTest = parseCited(college.testingPolicyProvenance?.source);
+  if (officialTest && POLICY_TEXT[college.testingPolicy]) {
+    // The school's own page decides; the Common App grid is only a fallback.
+    rows.push({
+      label: "Test scores",
+      text: `${POLICY_TEXT[college.testingPolicy]}${college.testingPolicyNote ? " " + college.testingPolicyNote : ""}`,
+      source: officialTest,
+    });
+  } else if (system && systemTest) {
     rows.push({ label: systemTest.label, text: systemTest.text, source: { label: system.title.split(" ")[0] + " admissions site", url: system.sources[systemTest.source] } });
   } else if (facts?.testPolicyCode && TEST_CODE_TEXT[facts.testPolicyCode]) {
     if (TEST_CODE_CONSISTENT[facts.testPolicyCode].includes(college.testingPolicy)) {
@@ -120,11 +143,10 @@ export function buildAdmissionOverview(college: College): OverviewRow[] {
   if (college.applicationPlansProvenance && college.applicationPlans.length > 0) {
     const text = college.applicationPlans
       .filter((p) => p.deadline)
-      .map((p) => `${PLAN_LABELS[p.type]}${p.binding === true ? " (binding)" : ""} ${p.deadline}`)
+      .map((p) => `${PLAN_LABELS[p.type]}${p.binding === true ? " (binding)" : ""} ${p.deadline}${p.note ? ` (${p.note.replace(/\.$/, "")})` : ""}`)
       .join(", ");
     // The plan list names its own source: the Common App grid for most schools, the school's page for those reviewed by hand.
-    const cited = /^(.*) \((https?:\/\/[^)]+)\)$/.exec(college.applicationPlansProvenance.source ?? "");
-    const source = cited ? { label: cited[1], url: cited[2] } : grid;
+    const source = parseCited(college.applicationPlansProvenance.source) ?? grid;
     if (text) rows.push({ label: "Deadlines", text: text + ".", source });
   }
 

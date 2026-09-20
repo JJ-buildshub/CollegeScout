@@ -31,6 +31,8 @@ export interface ApplicationPlan {
   type: ApplicationPlanType;
   binding: boolean | null;
   deadline: string | null;
+  /** Context that must not be mistaken for the plan's own deadline, e.g. "The freshman scholarship deadline is a separate date: December 1." */
+  note?: string;
 }
 
 export interface FinancialSnapshot {
@@ -80,6 +82,10 @@ export interface DataProvenance {
 export interface FieldProvenance {
   source?: string;
   year?: string;
+  /** ISO date the source page was read, when the record was checked against a school page. */
+  accessed?: string;
+  /** Anything a reader should know about how the record was verified. */
+  note?: string;
 }
 
 export interface College {
@@ -163,6 +169,10 @@ export interface College {
   costProvenance?: FieldProvenance;
   /** Source/year for applicationPlans; set only when the whole list is backed by that source (see scripts/sync-plans-from-commonapp.py). */
   applicationPlansProvenance?: FieldProvenance;
+  /** Source for testingPolicy when it was confirmed against the school's own page. */
+  testingPolicyProvenance?: FieldProvenance;
+  /** Scope or exceptions for testingPolicy, e.g. "Columbus campus" or "A hardship waiver is available." */
+  testingPolicyNote?: string;
   /** Source/year for careerOutcomes.placementRate / medianStartingSalary. Unpopulated until researched. */
   outcomesProvenance?: FieldProvenance;
   /**

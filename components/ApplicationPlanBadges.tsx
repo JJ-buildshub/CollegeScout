@@ -36,6 +36,7 @@ export default function ApplicationPlanBadges({ plans }: { plans: ApplicationPla
           <div className="mt-0.5">
             {plan.deadline ?? "Not publicly reported"} &middot; {bindingLabel(plan)}
           </div>
+          {plan.note && <div className="mt-1 max-w-xs text-[11px] leading-snug opacity-80">{plan.note}</div>}
         </div>
       ))}
     </div>

@@ -23,7 +23,10 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="repla
 
 
 def describe(plans):
-    return "; ".join(f"{p['type']}{' (binding)' if p['binding'] else ''} {p['deadline'] or '(no date)'}" for p in plans) or "(none)"
+    return "; ".join(
+        f"{p['type']}{' (binding)' if p['binding'] else ''} {p['deadline'] or '(no date)'}" + (f" [note: {p['note']}]" if p.get("note") else "")
+        for p in plans
+    ) or "(none)"
 
 
 def main():
@@ -47,10 +50,18 @@ def main():
         print(f"{c['name']}\n  before: {before}\n  after:  {after}" + ("  (plans unchanged; source recorded)" if same else ""))
         if entry.get("note"):
             print(f"  note:   {entry['note']}")
+        if entry.get("provenanceNote"):
+            print(f"  stored note: {entry['provenanceNote']}")
         if not same:
             changed += 1
         c["applicationPlans"] = entry["plans"]
-        c["applicationPlansProvenance"] = {"source": f"{entry['label']} ({entry['url']})", "year": reviewed["cycle"]}
+        provenance = {"source": f"{entry['label']} ({entry['url']})", "year": reviewed["cycle"]}
+        if entry.get("accessed"):
+            provenance["accessed"] = entry["accessed"]
+        # Only an explicit provenanceNote is stored on the record; `note` is review commentary for the dry run.
+        if entry.get("provenanceNote"):
+            provenance["note"] = entry["provenanceNote"]
+        c["applicationPlansProvenance"] = provenance
 
     print(f"\n{len(reviewed['schools'])} schools reviewed, {changed} with changed plans.")
     if apply:
