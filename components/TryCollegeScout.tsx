@@ -167,7 +167,7 @@ export default function TryCollegeScout() {
         </h2>
       </div>
 
-      <div className="mx-auto mt-6 grid max-w-3xl grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
+      <div className="mx-auto mt-6 flex max-w-3xl flex-wrap justify-center gap-2">
         {DEFAULT_INTERESTS.map((interest) => (
           <InterestCard
             key={interest.id}
@@ -180,7 +180,7 @@ export default function TryCollegeScout() {
 
         {showMore && (
           <>
-            <h3 className="col-span-full mt-3 text-left text-xs font-bold tracking-wide text-slate-500">More fields</h3>
+            <h3 className="mt-3 w-full text-center text-xs font-bold tracking-wide text-slate-500">More fields</h3>
             {MORE_FIELDS.map((interest) => (
               <InterestCard
                 key={interest.id}
@@ -190,7 +190,7 @@ export default function TryCollegeScout() {
                 onClick={() => toggleInterest(interest.id)}
               />
             ))}
-            <h3 className="col-span-full mt-3 text-left text-xs font-bold tracking-wide text-slate-500">
+            <h3 className="mt-3 w-full text-center text-xs font-bold tracking-wide text-slate-500">
               Creative and other paths
             </h3>
             {PATH_INTERESTS.map((interest) => (
@@ -427,23 +427,18 @@ function InterestCard({
       disabled={disabled}
       onClick={onClick}
       aria-pressed={selected}
+      title={interest.subtitle}
       className={clsx(
-        "relative flex flex-col items-start gap-1.5 rounded-xl border p-3 text-left transition-colors",
+        "inline-flex items-center gap-2 rounded-full border px-3.5 py-2 text-sm font-semibold transition-colors",
         selected
-          ? "border-navy-900 bg-navy-900/5"
+          ? "border-navy-900 bg-navy-900 text-white"
           : disabled
-            ? "cursor-not-allowed border-slate-100 opacity-50"
-            : "border-slate-200 bg-white hover:border-slate-300"
+            ? "cursor-not-allowed border-slate-100 text-slate-400 opacity-50"
+            : "border-slate-200 bg-white text-navy-900 hover:border-slate-300 hover:bg-slate-50"
       )}
     >
-      {selected && (
-        <span className="absolute right-2 top-2 flex h-4 w-4 items-center justify-center rounded-full bg-navy-900 text-white">
-          <Check className="h-2.5 w-2.5" strokeWidth={3} />
-        </span>
-      )}
-      <Icon className="h-5 w-5 text-navy-900" strokeWidth={1.75} />
-      <div className="text-sm font-bold leading-snug text-navy-900">{interest.label}</div>
-      <div className="text-xs leading-snug text-slate-500">{interest.subtitle}</div>
+      {selected ? <Check className="h-4 w-4" strokeWidth={3} /> : <Icon className="h-4 w-4" strokeWidth={1.75} />}
+      {interest.label}
     </button>
   );
 }
