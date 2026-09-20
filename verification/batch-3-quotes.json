@@ -1,0 +1,66 @@
+{
+ "northwestern plans": {
+  "url": "https://admissions.northwestern.edu/apply/application-deadlines.html",
+  "evidence": [
+   "Application Due Date October 1, 2026 November 1, 2026 January 4, 2027"
+  ]
+ },
+ "northwestern test": {
+  "url": "https://admissions.northwestern.edu/faqs/standardized-testing-policy/index.html",
+  "evidence": [
+   "Northwestern is test-optional and does not require ACT or SAT scores from first-year or transfer candidates applying for full-time undergraduate study."
+  ]
+ },
+ "duke plans": {
+  "url": "https://admissions.duke.edu/apply/",
+  "evidence": [
+   "Early Decision applications are due November 2. Regular Decision applications are due January 4.",
+   "The information below represents the 2026-27 admission cycle requirements and deadlines."
+  ]
+ },
+ "duke test": {
+  "url": "https://admissions.duke.edu/apply/",
+  "evidence": [
+   "Duke University is test-optional for both first-year and transfer applicants in the 2026-2027 admissions cycle."
+  ]
+ },
+ "vanderbilt plans": {
+  "url": "https://admissions.vanderbilt.edu/apply/",
+  "evidence": [
+   "Vanderbilt offers three decision plans for first-year applicants: Early Decision I, Early Decision II, and Regular Decision.",
+   "November 1, 2026 — Deadline for completed application",
+   "January 1, 2027 — Deadline for completed application"
+  ]
+ },
+ "vanderbilt test": {
+  "url": "https://admissions.vanderbilt.edu/apply/",
+  "evidence": [
+   "For students applying for fall 2027 and 2028 entry, SAT or ACT scores are optional."
+  ]
+ },
+ "rice plans": {
+  "url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+  "evidence": [
+   "Students who apply Early Decision I must submit their materials by November 1, while students who apply Early Decision II must submit their materials by January 4.",
+   "Students who apply Regular Decision must submit their materials by January 4."
+  ]
+ },
+ "rice test": {
+  "url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+  "evidence": [
+   "Rice recommends that degree-seeking first-year and transfer applicants submit SAT or ACT test scores if available."
+  ]
+ },
+ "georgetown test": {
+  "url": "https://uadmissions.georgetown.edu/apply/first-year-applicants/application-requirements-and-forms/",
+  "evidence": [
+   "Georgetown requires submission of either SAT or ACT scores as part of the application process."
+  ]
+ },
+ "jhu test": {
+  "url": "https://apply.jhu.edu/frequently-asked-questions/",
+  "evidence": [
+   "Yes, we require students to submit either the SAT or ACT with their application."
+  ]
+ }
+}
