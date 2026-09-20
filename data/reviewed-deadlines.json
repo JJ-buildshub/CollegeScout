@@ -1,0 +1,304 @@
+{
+ "note": "Application plans reviewed against each school's own admissions page, with the exact page line each one rests on. Applied to colleges.json by scripts/apply-reviewed-deadlines.py; verified against the live pages by scripts/check-reviewed-deadlines.mjs. Left out on purpose: Kansas (its early-action page could not be read), and Alabama and Pitt (their existing entries already match their pages and carry extra scholarship context that a bare date would lose).",
+ "checked": "2026-09-19",
+ "cycle": "2026-27",
+ "schools": {
+  "university-of-florida": {
+   "label": "University of Florida admissions",
+   "url": "https://admissions.ufl.edu/apply/freshman/deadlines",
+   "evidence": [
+    "Early Decision (Binding) Early Action (Non-Binding) Regular Decision (Non-Binding) Application Deadline October 15 November 1 January 15"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "October 15"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "note": "Your data had Regular Decision as March 1."
+  },
+  "ohio-state-university": {
+   "label": "Ohio State admissions",
+   "url": "https://undergrad.osu.edu/apply/freshmen-columbus/apply-step-by-step",
+   "evidence": [
+    "be considered for early action or spring term (both have a November 1 deadline)",
+    "For autumn term applicants, January 15 by 11:59 p.m. ET is the final deadline by which we must receive your complete application."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "note": "Your data had Regular Decision as February 1."
+  },
+  "university-of-wisconsin-madison": {
+   "label": "UW-Madison admissions",
+   "url": "https://admissions.wisc.edu/deadlines/",
+   "evidence": [
+    "Fall Early Action Application Deadline: November 1 Materials Deadline: November 9 Decision Release: on or before January 31 Fall Regular Decision Application Deadline: January 15"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "note": "Your data had Regular Decision as February 1."
+  },
+  "rutgers-university": {
+   "label": "Rutgers admissions",
+   "url": "https://admissions.rutgers.edu/apply/dates-deadlines/new-brunswick",
+   "evidence": [
+    "First-Year, Early Action^ November 1, 2026",
+    "First-Year, Regular Decision# December 1, 2026"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "December 1"
+    }
+   ]
+  },
+  "indiana-university-bloomington": {
+   "label": "Indiana University admissions",
+   "url": "https://admissions.indiana.edu/apply/deadlines.html",
+   "evidence": [
+    "we have an early action deadline (non-binding) of November 1 and a regular decision deadline of February 1"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "penn-state-university": {
+   "label": "Penn State admissions",
+   "url": "https://www.psu.edu/resources/first-year-students/deadlines",
+   "evidence": [
+    "our Early Action Deadline is November 1",
+    "After November 1, Penn State reviews applications on a rolling basis"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "After November 1, reviewed on a rolling basis"
+    }
+   ]
+  },
+  "university-of-arizona": {
+   "label": "University of Arizona admissions",
+   "url": "https://www.arizona.edu/admissions/first-year/deadlines",
+   "evidence": [
+    "November 1, 2026: Early Action Application Deadline*",
+    "Applications received after November 1 will move to a Regular Decision timeline."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "After November 1, on a space-available basis (no set date)"
+    }
+   ]
+  },
+  "baylor-university": {
+   "label": "Baylor admissions",
+   "url": "https://admissions.web.baylor.edu/admission/incoming-freshman/application-process/admission-plans",
+   "evidence": [
+    "November 1 Binding (Early Decision)",
+    "November 1 Non-Binding (Early Action)",
+    "February 1 Non-Binding (Regular Decision)"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "miami-university-ohio": {
+   "label": "Miami University admissions",
+   "url": "https://miamioh.edu/admission-aid/apply/first-year-students/application-types.html",
+   "evidence": [
+    "Early Decision is a binding application option",
+    "You must complete your application and submit it by Nov. 1.",
+    "You must complete your application and submit it by the priority deadline of Dec. 1."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "December 1 (priority)"
+    }
+   ]
+  },
+  "temple-university": {
+   "label": "Temple admissions",
+   "url": "https://admissions.temple.edu/apply/first-year-students",
+   "evidence": [
+    "Early Action deadline: Nov. 1",
+    "Regular Decision deadline: Feb. 1"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "michigan-state-university": {
+   "label": "Michigan State admissions",
+   "url": "https://admissions.msu.edu/apply/first-year/dates-and-deadlines",
+   "evidence": [
+    "Early action (Nov. 1)",
+    "Regular decision – April 1 (Priority: Feb. 1)"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "April 1 (priority February 1)"
+    }
+   ]
+  },
+  "university-of-iowa": {
+   "label": "University of Iowa admissions",
+   "url": "https://admissions.uiowa.edu/apply/how-apply/first-year-admissions",
+   "evidence": [
+    "November 2 Early Action Deadline for Fall Semester (documents deadline Nov. 9)",
+    "February 1 Regular admission deadline."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 2"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "drexel-university": {
+   "label": "Drexel admissions",
+   "url": "https://drexel.edu/admissions/apply/undergrad-instructions/first-year-instructions/application-deadlines",
+   "evidence": [
+    "Early Decision Deadline Documents Due November 15 Applications due; decisions released in mid-December.",
+    "Early Action Deadline Documents Due November 15 Applications due; decisions released in mid-December.",
+    "January 15 Applications due; decisions released by April 1."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 15"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ]
+  },
+  "arizona-state-university": {
+   "label": "ASU admissions",
+   "url": "https://admission.asu.edu/apply/first-year",
+   "evidence": [
+    "ASU's priority admission date is Nov. 1 and the regular admission date is Feb. 1."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "Priority admission date November 1; regular admission date February 1"
+    }
+   ]
+  }
+ }
+}
