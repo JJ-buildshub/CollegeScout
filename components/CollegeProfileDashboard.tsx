@@ -17,7 +17,7 @@ import AdmissionOverview from "./AdmissionOverview";
 import CampusFitStats from "./CampusFitStats";
 
 const SECTIONS = [
-  { id: "overview", label: "Overview" },
+  { id: "overview", label: "Preparation" },
   { id: "admissions", label: "Admissions" },
   { id: "apply", label: "Applying" },
   { id: "academics", label: "Academics" },
@@ -294,7 +294,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
         <div className="space-y-10 py-6">
           {/* Overview */}
           <section id="overview" className={scrollMt}>
-            <h2 className="text-lg font-bold text-navy-900">Overview</h2>
+            <h2 className="text-lg font-bold text-navy-900">Preparation</h2>
             <div className="mt-3 w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
               <div>
                 <div className="text-xs font-bold tracking-wide text-slate-600">
