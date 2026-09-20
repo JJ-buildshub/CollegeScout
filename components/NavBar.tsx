@@ -7,7 +7,7 @@ import { Compass, GraduationCap, LayoutList, Menu, ScanSearch, X } from "lucide-
 import clsx from "clsx";
 
 const NAV_LINKS = [
-  { href: "/directory", label: "College Directory", icon: ScanSearch },
+  { href: "/directory", label: "Explore Colleges", icon: ScanSearch },
   { href: "/matcher", label: "Find My Fit", icon: GraduationCap },
   { href: "/checklist", label: "My Plan", icon: LayoutList },
 ];
@@ -18,10 +18,14 @@ export default function NavBar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/70">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
-        <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-navy-900 text-gold-400">
-            <Compass className="h-5 w-5" strokeWidth={2.25} />
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
+        <Link
+          href="/"
+          className="flex items-center gap-2 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2"
+          onClick={() => setOpen(false)}
+        >
+          <span className="flex h-9 w-9 items-center justify-center text-navy-900">
+            <Compass className="h-6 w-6" strokeWidth={2.25} />
           </span>
           <span className="text-lg font-bold tracking-tight text-navy-900">
             College<span className="text-gold-600">Scout</span>

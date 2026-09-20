@@ -17,7 +17,7 @@ export default function AcademicCalibrator() {
 
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-      <h2 className="text-base font-bold text-navy-900">Smart Academic Calibrator</h2>
+      <h2 className="text-base font-bold text-navy-900">Academic Calibrator</h2>
       <p className="mt-1 text-xs text-slate-500">
         Illustrative only (assumes a {ASSUMED_TOTAL_SEMESTERS}-semester course load) — slide to see how
         AP/Honors coursework separates your UC-capped weighted GPA from your raw unweighted GPA.
@@ -64,11 +64,9 @@ export default function AcademicCalibrator() {
       <div className="mt-5 flex gap-2 rounded-xl bg-navy-900/5 p-4 text-xs leading-relaxed text-slate-600">
         <Info className="mt-0.5 h-4 w-4 shrink-0 text-navy-900" />
         <p>
-          <span className="font-bold text-navy-900">School Profile Reality Check: </span>
-          Admissions officers read your GPA next to your high school&apos;s official profile — the specific
-          AP/Honors courses actually offered there. The same capped GPA can mean something different
-          depending on how much rigor was available to you, so course access and trend matter as much as
-          the raw number.
+          <span className="font-bold text-navy-900">Reality Check: </span>
+          High schools don&apos;t all offer the same number of AP, Honors, or IB courses, so the same
+          capped GPA can reflect very different amounts of available rigor.
         </p>
       </div>
     </div>

@@ -1,19 +1,39 @@
 import HomeHero from "@/components/HomeHero";
-import JourneySteps from "@/components/JourneySteps";
+import TryCollegeScout from "@/components/TryCollegeScout";
 import WhyCollegeScout from "@/components/WhyCollegeScout";
-import DiscoveryExample from "@/components/DiscoveryExample";
+import FindMyFit from "@/components/FindMyFit";
 import CareerOutcomesStory from "@/components/CareerOutcomesStory";
+import BuildYourList from "@/components/BuildYourList";
+import RunwayPreview from "@/components/RunwayPreview";
 import AccessMission from "@/components/AccessMission";
+import JourneySteps from "@/components/JourneySteps";
 
 export default function HomePage() {
   return (
-    <div className="space-y-12">
+    <div>
       <HomeHero />
-      <JourneySteps />
-      <WhyCollegeScout />
-      <DiscoveryExample />
-      <CareerOutcomesStory />
-      <AccessMission />
+      <div className="mt-8">
+        <TryCollegeScout />
+      </div>
+      <div className="mt-10">
+        <WhyCollegeScout />
+      </div>
+      <div className="mt-10">
+        <FindMyFit />
+      </div>
+      <div className="mt-10">
+        <CareerOutcomesStory />
+      </div>
+      <div className="mt-10 grid gap-6 sm:grid-cols-2">
+        <BuildYourList />
+        <RunwayPreview />
+      </div>
+      <div className="mt-10">
+        <AccessMission />
+      </div>
+      <div className="mt-10">
+        <JourneySteps compact />
+      </div>
     </div>
   );
 }

@@ -1,10 +1,12 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { Search, SlidersHorizontal, X } from "lucide-react";
+import { Suspense, useEffect, useMemo, useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { Check, Search, SlidersHorizontal, X } from "lucide-react";
 import clsx from "clsx";
-import { colleges } from "@/lib/colleges";
+import { colleges, displayedAdmitRate } from "@/lib/colleges";
 import type { CollegeSystem, TestingPolicy } from "@/lib/types";
+import { getInterestById, matchesAllInterests, normalizeInterestIds } from "@/lib/interests";
 import CollegeCard from "@/components/CollegeCard";
 
 const SYSTEM_OPTIONS: CollegeSystem[] = ["UC", "CSU", "Private", "Out-of-State Public"];
@@ -35,13 +37,38 @@ function matchesBucket(rate: number, bucket: AdmitBucket): boolean {
   }
 }
 
-export default function DirectoryPage() {
+function DirectoryContent() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
   const [query, setQuery] = useState("");
   const [systems, setSystems] = useState<Set<CollegeSystem>>(new Set());
   const [testingPolicies, setTestingPolicies] = useState<Set<TestingPolicy>>(new Set());
   const [admitBucket, setAdmitBucket] = useState<AdmitBucket>("any");
   const [filtersOpen, setFiltersOpen] = useState(false);
-  const [sortBy, setSortBy] = useState<"rank" | "admitRateOverall" | "name">("rank");
+  const [sortBy, setSortBy] = useState<"admitRateOverall" | "name" | "cost">("name");
+  const [interestIds, setInterestIds] = useState<string[]>(() => {
+    const raw = searchParams.get("interests");
+    return raw ? normalizeInterestIds(raw.split(",").filter(Boolean)) : [];
+  });
+
+  // Keep the URL in sync so an interest-filtered view stays bookmarkable/shareable
+  // and survives back-navigation from a college profile.
+  useEffect(() => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (interestIds.length > 0) {
+      params.set("interests", interestIds.join(","));
+    } else {
+      params.delete("interests");
+    }
+    const nextQuery = params.toString();
+    router.replace(nextQuery ? `${pathname}?${nextQuery}` : pathname, { scroll: false });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [interestIds]);
+
+  const selectedInterests = interestIds.map(getInterestById).filter((i): i is NonNullable<typeof i> => !!i);
+  const removeInterest = (id: string) => setInterestIds((prev) => prev.filter((x) => x !== id));
 
   const toggleSystem = (system: CollegeSystem) => {
     setSystems((prev) => {
@@ -75,26 +102,53 @@ export default function DirectoryPage() {
         if (q && !c.name.toLowerCase().includes(q) && !c.location.toLowerCase().includes(q)) return false;
         if (systems.size > 0 && !systems.has(c.system)) return false;
         if (testingPolicies.size > 0 && !testingPolicies.has(c.testingPolicy)) return false;
-        if (!matchesBucket(c.admitRateOverall, admitBucket)) return false;
+        if (!matchesBucket(displayedAdmitRate(c).value, admitBucket)) return false;
+        if (interestIds.length > 0 && !matchesAllInterests(c, interestIds)) return false;
         return true;
       })
       .sort((a, b) => {
         if (sortBy === "name") return a.name.localeCompare(b.name);
-        if (sortBy === "admitRateOverall") return a.admitRateOverall - b.admitRateOverall;
-        return a.rank - b.rank;
+        if (sortBy === "admitRateOverall") return displayedAdmitRate(a).value - displayedAdmitRate(b).value;
+        if (sortBy === "cost") {
+          const costA = a.financials.coaInState ?? a.financials.coaOutOfState ?? Infinity;
+          const costB = b.financials.coaInState ?? b.financials.coaOutOfState ?? Infinity;
+          return costA - costB;
+        }
+        return 0;
       });
-  }, [query, systems, testingPolicies, admitBucket, sortBy]);
+  }, [query, systems, testingPolicies, admitBucket, sortBy, interestIds]);
 
   return (
     <div className="space-y-6">
       <div>
         <h1 className="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-3xl">
-          College Intelligence Directory
+          College Directory
         </h1>
         <p className="mt-1 text-sm text-slate-500">
-          Search and filter {colleges.length} benchmark schools by system, testing policy, and admit rate.
+          Search and filter {colleges.length} schools by system, testing policy, and admit rate.
         </p>
       </div>
+
+      {selectedInterests.length > 0 && (
+        <div className="flex flex-wrap items-center gap-2">
+          {selectedInterests.map((interest) => (
+            <span
+              key={interest.id}
+              className="inline-flex items-center gap-1.5 rounded-full border border-gold-300 bg-gold-50 px-3 py-1.5 text-xs font-semibold text-navy-900"
+            >
+              Interest: {interest.label}
+              <button
+                type="button"
+                onClick={() => removeInterest(interest.id)}
+                aria-label={`Remove ${interest.label} filter`}
+                className="rounded-full p-0.5 hover:bg-gold-100"
+              >
+                <X className="h-3 w-3" />
+              </button>
+            </span>
+          ))}
+        </div>
+      )}
 
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
         <div className="relative flex-1">
@@ -128,9 +182,9 @@ export default function DirectoryPage() {
           onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
           className="rounded-full border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium shadow-card outline-none focus:ring-2 focus:ring-gold-500"
         >
-          <option value="rank">Sort: National Rank</option>
-          <option value="admitRateOverall">Sort: Admit Rate</option>
           <option value="name">Sort: Name (A-Z)</option>
+          <option value="admitRateOverall">Sort: Admit Rate</option>
+          <option value="cost">Sort: Cost (low to high)</option>
         </select>
       </div>
 
@@ -138,19 +192,21 @@ export default function DirectoryPage() {
         <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
-              <div className="text-xs font-bold uppercase tracking-wide text-slate-400">System</div>
+              <div className="text-xs font-bold tracking-wide text-slate-400">System</div>
               <div className="mt-2 flex flex-wrap gap-2">
                 {SYSTEM_OPTIONS.map((s) => (
                   <button
                     key={s}
                     onClick={() => toggleSystem(s)}
+                    aria-pressed={systems.has(s)}
                     className={clsx(
-                      "rounded-full border px-3 py-1.5 text-xs font-semibold",
+                      "flex items-center gap-1 rounded-full border px-3 py-1.5 text-xs font-semibold",
                       systems.has(s)
                         ? "border-navy-900 bg-navy-900 text-white"
                         : "border-slate-200 text-slate-600 hover:border-slate-300"
                     )}
                   >
+                    {systems.has(s) && <Check className="h-3 w-3" strokeWidth={3} />}
                     {s}
                   </button>
                 ))}
@@ -158,19 +214,21 @@ export default function DirectoryPage() {
             </div>
 
             <div>
-              <div className="text-xs font-bold uppercase tracking-wide text-slate-400">Testing Policy</div>
+              <div className="text-xs font-bold tracking-wide text-slate-400">Testing Policy</div>
               <div className="mt-2 flex flex-wrap gap-2">
                 {TESTING_OPTIONS.map((t) => (
                   <button
                     key={t}
                     onClick={() => toggleTesting(t)}
+                    aria-pressed={testingPolicies.has(t)}
                     className={clsx(
-                      "rounded-full border px-3 py-1.5 text-xs font-semibold",
+                      "flex items-center gap-1 rounded-full border px-3 py-1.5 text-xs font-semibold",
                       testingPolicies.has(t)
                         ? "border-navy-900 bg-navy-900 text-white"
                         : "border-slate-200 text-slate-600 hover:border-slate-300"
                     )}
                   >
+                    {testingPolicies.has(t) && <Check className="h-3 w-3" strokeWidth={3} />}
                     {t}
                   </button>
                 ))}
@@ -178,19 +236,21 @@ export default function DirectoryPage() {
             </div>
 
             <div>
-              <div className="text-xs font-bold uppercase tracking-wide text-slate-400">Admit Rate</div>
+              <div className="text-xs font-bold tracking-wide text-slate-400">Admit Rate</div>
               <div className="mt-2 flex flex-wrap gap-2">
                 {ADMIT_BUCKETS.map((b) => (
                   <button
                     key={b.id}
                     onClick={() => setAdmitBucket(b.id)}
+                    aria-pressed={admitBucket === b.id}
                     className={clsx(
-                      "rounded-full border px-3 py-1.5 text-xs font-semibold",
+                      "flex items-center gap-1 rounded-full border px-3 py-1.5 text-xs font-semibold",
                       admitBucket === b.id
                         ? "border-navy-900 bg-navy-900 text-white"
                         : "border-slate-200 text-slate-600 hover:border-slate-300"
                     )}
                   >
+                    {admitBucket === b.id && <Check className="h-3 w-3" strokeWidth={3} />}
                     {b.label}
                   </button>
                 ))}
@@ -225,5 +285,13 @@ export default function DirectoryPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function DirectoryPage() {
+  return (
+    <Suspense fallback={null}>
+      <DirectoryContent />
+    </Suspense>
   );
 }

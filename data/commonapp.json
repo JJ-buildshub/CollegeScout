@@ -1,0 +1,1474 @@
+{
+ "source": {
+  "name": "Common App first-year deadlines, fees and requirements (2026-27)",
+  "url": "https://content.commonapp.org/Files/ReqGrid.pdf",
+  "updated": "2026-09-18"
+ },
+ "note": "Only what the grid positively states. A blank grid cell means not stated, not no.",
+ "byCollege": {
+  "stanford-university": {
+   "gridName": "Stanford University",
+   "deadlines": {
+    "REA": "2026-11-01",
+    "RD": "2027-01-05"
+   },
+   "feeUS": "$100",
+   "feeIntl": "$100",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "coursesGradesRequired": true,
+   "portfolio": "The school's own system",
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "A"
+  },
+  "university-of-southern-california": {
+   "gridName": "University of Southern California",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EA": "2026-11-01",
+    "RD": "2027-01-10"
+   },
+   "feeUS": "$85",
+   "feeIntl": "$85",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "santa-clara-university": {
+   "gridName": "Santa Clara University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-07",
+    "EA": "2026-11-01",
+    "RD": "2027-01-07"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "carnegie-mellon-university": {
+   "gridName": "Carnegie Mellon University",
+   "deadlines": {
+    "ED": "2026-11-02",
+    "RD": "2027-01-04"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "coursesGradesRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "S"
+  },
+  "harvard-university": {
+   "gridName": "Harvard University",
+   "deadlines": {
+    "REA": "2026-11-01",
+    "RD": "2027-01-01"
+   },
+   "feeUS": "$95",
+   "feeIntl": "$95",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "A"
+  },
+  "princeton-university": {
+   "gridName": "Princeton University",
+   "deadlines": {
+    "REA": "2026-11-01",
+    "RD": "2027-01-01"
+   },
+   "feeUS": "$85",
+   "feeIntl": "$85",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "The school's own system",
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "yale-university": {
+   "gridName": "Yale University",
+   "deadlines": {
+    "REA": "2026-11-01",
+    "RD": "2027-01-02"
+   },
+   "feeUS": "$85",
+   "feeIntl": "$85",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "A"
+  },
+  "columbia-university": {
+   "gridName": "Columbia University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "RD": "2027-01-01"
+   },
+   "feeUS": "$85",
+   "feeIntl": "$85",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "university-of-pennsylvania": {
+   "gridName": "University of Pennsylvania",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "RD": "2027-01-05"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "A"
+  },
+  "cornell-university": {
+   "gridName": "Cornell University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "RD": "2027-01-02"
+   },
+   "feeUS": "$85",
+   "feeIntl": "$85",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "A"
+  },
+  "brown-university": {
+   "gridName": "Brown University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "RD": "2027-01-05"
+   },
+   "feeUS": "$80",
+   "feeIntl": "$80",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "A"
+  },
+  "dartmouth-college": {
+   "gridName": "Dartmouth College",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "RD": "2027-01-01"
+   },
+   "feeUS": "$85",
+   "feeIntl": "$85",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "A"
+  },
+  "california-institute-of-technology": {
+   "gridName": "California Institute of Technology (Caltech)",
+   "deadlines": {
+    "REA": "2026-11-01",
+    "RD": "2027-01-04"
+   },
+   "feeUS": "$85",
+   "feeIntl": "$85",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 2,
+   "midYearReport": true,
+   "testPolicyCode": "A"
+  },
+  "purdue-university": {
+   "gridName": "Purdue University",
+   "deadlines": {
+    "EA": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$60",
+   "feeIntl": "$60",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "coursesGradesRequired": true,
+   "testPolicyCode": "A"
+  },
+  "university-of-illinois-urbana-champaign": {
+   "gridName": "University of Illinois Urbana-Champaign",
+   "deadlines": {
+    "EA": "2026-11-01",
+    "RD": "2027-01-05"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "U.S. only",
+   "personalEssayRequired": true,
+   "testPolicyCode": "N"
+  },
+  "university-of-washington": {
+   "gridName": "University of Washington",
+   "deadlines": {
+    "RD": "2026-11-15"
+   },
+   "feeUS": "$85",
+   "feeIntl": "$95",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "testPolicyCode": "S"
+  },
+  "university-of-michigan": {
+   "gridName": "University of Michigan",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EA": "2026-11-01",
+    "RD": "2027-02-01"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "teacherEvaluations": 1,
+   "testPolicyCode": "F"
+  },
+  "georgia-institute-of-technology": {
+   "gridName": "Georgia Institute of Technology",
+   "deadlines": {
+    "EA": "2026-10-15",
+    "EAII": "2026-11-02",
+    "RD": "2027-01-06"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$85",
+   "feeWaiver": "U.S. only",
+   "personalEssayRequired": true,
+   "midYearReport": true,
+   "testPolicyCode": "A"
+  },
+  "university-of-texas-at-austin": {
+   "gridName": "The University of Texas at Austin",
+   "deadlines": {
+    "EA": "2026-10-15",
+    "RD": "2026-12-01"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$90",
+   "feeWaiver": "U.S. only",
+   "personalEssayRequired": true,
+   "testPolicyCode": "A"
+  },
+  "northeastern-university": {
+   "gridName": "Northeastern University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-01",
+    "EA": "2026-11-01",
+    "RD": "2027-01-01"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "pomona-college": {
+   "gridName": "Pomona College",
+   "deadlines": {
+    "ED": "2026-11-08",
+    "EDII": "2027-01-08",
+    "RD": "2027-01-08"
+   },
+   "feeUS": "$80",
+   "feeIntl": "$80",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "williams-college": {
+   "gridName": "Williams College",
+   "deadlines": {
+    "ED": "2026-11-15",
+    "RD": "2027-01-05"
+   },
+   "feeUS": "$65",
+   "feeIntl": "$65",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "rensselaer-polytechnic-institute": {
+   "gridName": "Rensselaer Polytechnic Institute",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-06",
+    "EA": "2026-12-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$0",
+   "feeIntl": "$0",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "S"
+  },
+  "university-of-alabama": {
+   "gridName": "The University of Alabama",
+   "deadlines": {
+    "RD": "Rolling"
+   },
+   "feeUS": "$50",
+   "feeIntl": "$50",
+   "feeWaiver": "Accepted",
+   "testPolicyCode": "F"
+  },
+  "university-of-pittsburgh": {
+   "gridName": "University of Pittsburgh",
+   "deadlines": {
+    "RD": "Rolling"
+   },
+   "feeUS": "$55",
+   "feeIntl": "$55",
+   "feeWaiver": "Accepted",
+   "testPolicyCode": "S"
+  },
+  "tufts-university": {
+   "gridName": "Tufts University",
+   "deadlines": {
+    "ED": "2026-11-02",
+    "EDII": "2027-01-04",
+    "RD": "2027-01-04"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "claremont-mckenna-college": {
+   "gridName": "Claremont McKenna College",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-10",
+    "RD": "2027-01-10"
+   },
+   "feeUS": "$70",
+   "feeIntl": "$70",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "harvey-mudd-college": {
+   "gridName": "Harvey Mudd College",
+   "deadlines": {
+    "ED": "2026-11-15",
+    "EDII": "2027-01-05",
+    "RD": "2027-01-05"
+   },
+   "feeUS": "$70",
+   "feeIntl": "$70",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 2,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "scripps-college": {
+   "gridName": "Scripps College",
+   "deadlines": {
+    "ED": "2026-11-15",
+    "EDII": "2027-01-08",
+    "RD": "2027-01-08"
+   },
+   "feeUS": "$60",
+   "feeIntl": "$60",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "occidental-college": {
+   "gridName": "Occidental College",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-10",
+    "EA": "2026-11-01",
+    "RD": "2027-01-10"
+   },
+   "feeUS": "$0",
+   "feeIntl": "$0",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "loyola-marymount-university": {
+   "gridName": "Loyola Marymount University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-08",
+    "EA": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "coursesGradesRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "testPolicyCode": "N"
+  },
+  "university-of-san-diego": {
+   "gridName": "University of San Diego",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-05",
+    "EA": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "I"
+  },
+  "university-of-san-francisco": {
+   "gridName": "University of San Francisco",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-15",
+    "EA": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$70",
+   "feeIntl": "$70",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "chapman-university": {
+   "gridName": "Chapman University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-15",
+    "EA": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$70",
+   "feeIntl": "$70",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "midYearReport": true,
+   "testPolicyCode": "S"
+  },
+  "pepperdine-university": {
+   "gridName": "Pepperdine University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-15",
+    "EA": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$70",
+   "feeIntl": "$70",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "testPolicyCode": "S"
+  },
+  "university-of-the-pacific": {
+   "gridName": "University of the Pacific",
+   "deadlines": {
+    "EA": "2026-11-15",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$55",
+   "feeIntl": "$55",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "testPolicyCode": "N"
+  },
+  "university-of-redlands": {
+   "gridName": "University of Redlands",
+   "deadlines": {
+    "EA": "2026-11-01",
+    "EAII": "2026-12-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$0",
+   "feeIntl": "$0",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "midYearReport": true,
+   "testPolicyCode": "S"
+  },
+  "amherst-college": {
+   "gridName": "Amherst College",
+   "deadlines": {
+    "ED": "2026-11-09",
+    "RD": "2027-01-05"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "coursesGradesRequired": true,
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "swarthmore-college": {
+   "gridName": "Swarthmore College",
+   "deadlines": {
+    "ED": "2026-11-15",
+    "EDII": "2027-01-04",
+    "RD": "2027-01-04"
+   },
+   "feeUS": "$60",
+   "feeIntl": "$60",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "wellesley-college": {
+   "gridName": "Wellesley College",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-05",
+    "RD": "2027-01-08"
+   },
+   "feeUS": "$0",
+   "feeIntl": "$0",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 2,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "bowdoin-college": {
+   "gridName": "Bowdoin College",
+   "deadlines": {
+    "ED": "2026-11-15",
+    "EDII": "2027-01-05",
+    "RD": "2027-01-05"
+   },
+   "feeUS": "$70",
+   "feeIntl": "$70",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "middlebury-college": {
+   "gridName": "Middlebury College",
+   "deadlines": {
+    "ED": "2026-11-02",
+    "EDII": "2027-01-04",
+    "RD": "2027-01-04"
+   },
+   "feeUS": "$0",
+   "feeIntl": "$0",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "carleton-college": {
+   "gridName": "Carleton College",
+   "deadlines": {
+    "ED": "2026-11-15",
+    "EDII": "2027-01-15",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$0",
+   "feeIntl": "$0",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "colgate-university": {
+   "gridName": "Colgate University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-15",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$60",
+   "feeIntl": "$0",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "vassar-college": {
+   "gridName": "Vassar College",
+   "deadlines": {
+    "ED": "2026-11-15",
+    "EDII": "2027-01-01",
+    "RD": "2027-01-01"
+   },
+   "feeUS": "$65",
+   "feeIntl": "$65",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "hamilton-college": {
+   "gridName": "Hamilton College",
+   "deadlines": {
+    "ED": "2026-11-15",
+    "EDII": "2027-01-04",
+    "RD": "2027-01-04"
+   },
+   "feeUS": "$65",
+   "feeIntl": "$65",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "colby-college": {
+   "gridName": "Colby College",
+   "deadlines": {
+    "ED": "2026-11-15",
+    "EDII": "2027-01-04",
+    "RD": "2027-01-04"
+   },
+   "feeUS": "$0",
+   "feeIntl": "$0",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "testPolicyCode": "N"
+  },
+  "bates-college": {
+   "gridName": "Bates College",
+   "deadlines": {
+    "ED": "2026-11-15",
+    "EDII": "2027-01-10",
+    "RD": "2027-01-10"
+   },
+   "feeUS": "$0",
+   "feeIntl": "$0",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "duke-university": {
+   "gridName": "Duke University",
+   "deadlines": {
+    "ED": "2026-11-02",
+    "RD": "2027-01-04"
+   },
+   "feeUS": "$85",
+   "feeIntl": "$85",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "university-of-chicago": {
+   "gridName": "University of Chicago",
+   "deadlines": {
+    "ED": "2026-11-02",
+    "EDII": "2027-01-04",
+    "EA": "2026-11-02",
+    "RD": "2027-01-04"
+   },
+   "feeUS": "$90",
+   "feeIntl": "$90",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 2,
+   "testPolicyCode": "N"
+  },
+  "northwestern-university": {
+   "gridName": "Northwestern University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "RD": "2027-01-04"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "F"
+  },
+  "vanderbilt-university": {
+   "gridName": "Vanderbilt University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-01",
+    "RD": "2027-01-01"
+   },
+   "feeUS": "$50",
+   "feeIntl": "$50",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "rice-university": {
+   "gridName": "Rice University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-04",
+    "RD": "2027-01-04"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "johns-hopkins-university": {
+   "gridName": "Johns Hopkins University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-02",
+    "RD": "2027-01-02"
+   },
+   "feeUS": "$70",
+   "feeIntl": "$70",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "A"
+  },
+  "georgetown-university": {
+   "gridName": "Georgetown University",
+   "deadlines": {
+    "EA": "2026-11-01",
+    "RD": "2027-01-01"
+   },
+   "feeUS": "$80",
+   "feeIntl": "$80",
+   "feeWaiver": "Accepted",
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "A"
+  },
+  "worcester-polytechnic-institute": {
+   "gridName": "Worcester Polytechnic Institute",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-05",
+    "EA": "2026-11-01",
+    "EAII": "2027-01-05",
+    "RD": "2027-02-01"
+   },
+   "feeUS": "$70",
+   "feeIntl": "$70",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "case-western-reserve-university": {
+   "gridName": "Case Western Reserve University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-15",
+    "EA": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$0",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "The school's own system",
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "rochester-institute-of-technology": {
+   "gridName": "Rochester Institute of Technology",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-01",
+    "EA": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$65",
+   "feeIntl": "$65",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "stevens-institute-of-technology": {
+   "gridName": "Stevens Institute of Technology",
+   "deadlines": {
+    "ED": "2026-11-15",
+    "EDII": "2027-01-05",
+    "EA": "2026-12-01",
+    "RD": "2027-01-05"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "S"
+  },
+  "university-of-rochester": {
+   "gridName": "University of Rochester",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-05",
+    "RD": "2027-01-05"
+   },
+   "feeUS": "$50",
+   "feeIntl": "$50",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "university-of-north-carolina-chapel-hill": {
+   "gridName": "University of North Carolina at Chapel Hill",
+   "deadlines": {
+    "EA": "2026-10-15",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$85",
+   "feeIntl": "$85",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "midYearReport": true,
+   "testPolicyCode": "S"
+  },
+  "university-of-virginia": {
+   "gridName": "University of Virginia",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EA": "2026-11-01",
+    "RD": "2027-01-05"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "teacherEvaluations": 1,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "university-of-florida": {
+   "gridName": "University of Florida",
+   "deadlines": {
+    "ED": "2026-10-15",
+    "EA": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$30",
+   "feeIntl": "$30",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "testPolicyCode": "A"
+  },
+  "ohio-state-university": {
+   "gridName": "The Ohio State University",
+   "deadlines": {
+    "EA": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$60",
+   "feeIntl": "$70",
+   "feeWaiver": "U.S. only",
+   "personalEssayRequired": true,
+   "testPolicyCode": "A"
+  },
+  "penn-state-university": {
+   "gridName": "Penn State",
+   "deadlines": {
+    "EA": "2026-11-01",
+    "RD": "Rolling"
+   },
+   "feeUS": "$65",
+   "feeIntl": "$75",
+   "feeWaiver": "U.S. only",
+   "testPolicyCode": "N"
+  },
+  "university-of-wisconsin-madison": {
+   "gridName": "University of Wisconsin- Madison",
+   "deadlines": {
+    "EA": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$80",
+   "feeIntl": "$80",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "coursesGradesRequired": true,
+   "teacherEvaluations": 1,
+   "testPolicyCode": "N"
+  },
+  "indiana-university-bloomington": {
+   "gridName": "Indiana University Bloomington - Flagship Campus",
+   "deadlines": {
+    "EA": "2026-11-01",
+    "RD": "2027-02-01"
+   },
+   "feeUS": "$65",
+   "feeIntl": "$65",
+   "feeWaiver": "U.S. only",
+   "personalEssayRequired": true,
+   "testPolicyCode": "S"
+  },
+  "university-of-maryland": {
+   "gridName": "University of Maryland",
+   "deadlines": {
+    "EA": "2026-11-01",
+    "RD": "2027-01-20"
+   },
+   "feeUS": "$80",
+   "feeIntl": "$80",
+   "feeWaiver": "U.S. only",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "testPolicyCode": "F"
+  },
+  "rutgers-university": {
+   "gridName": "Rutgers University",
+   "deadlines": {
+    "EA": "2026-11-01",
+    "RD": "2027-07-01"
+   },
+   "feeUS": "$70",
+   "feeIntl": "$70",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "testPolicyCode": "N"
+  },
+  "university-of-arizona": {
+   "gridName": "The University of Arizona",
+   "deadlines": {
+    "EA": "2026-11-01",
+    "RD": "2027-04-15"
+   },
+   "feeUS": "$80",
+   "feeIntl": "$80",
+   "feeWaiver": "Not Accepted",
+   "coursesGradesRequired": true,
+   "testPolicyCode": "S"
+  },
+  "arizona-state-university": {
+   "gridName": "Arizona State University",
+   "deadlines": {
+    "RD": "Rolling"
+   },
+   "feeUS": "$85",
+   "feeIntl": "$90",
+   "feeWaiver": "U.S. only",
+   "coursesGradesRequired": true,
+   "testPolicyCode": "F"
+  },
+  "university-of-colorado-boulder": {
+   "gridName": "University of Colorado Boulder",
+   "deadlines": {
+    "EA": "2026-11-15",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$65",
+   "feeIntl": "$70",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "testPolicyCode": "N"
+  },
+  "texas-am-university": {
+   "gridName": "Texas A&M University",
+   "deadlines": {
+    "RD": "2026-12-01"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$90",
+   "feeWaiver": "U.S. only",
+   "testPolicyCode": "N"
+  },
+  "miami-university-ohio": {
+   "gridName": "Miami University (Ohio)",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EA": "2026-11-01",
+    "EAII": "2026-12-01",
+    "RD": "2027-02-01"
+   },
+   "feeUS": "$50",
+   "feeIntl": "$70",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "testPolicyCode": "S"
+  },
+  "baylor-university": {
+   "gridName": "Baylor University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EA": "2026-11-01",
+    "RD": "2027-02-01"
+   },
+   "feeUS": "$0",
+   "feeIntl": "$0",
+   "personalEssayRequired": true,
+   "testPolicyCode": "S"
+  },
+  "texas-christian-university": {
+   "gridName": "Texas Christian University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-02-01",
+    "EA": "2026-11-01",
+    "RD": "2027-02-01"
+   },
+   "feeUS": "$50",
+   "feeIntl": "$50",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "testPolicyCode": "N"
+  },
+  "southern-methodist-university": {
+   "gridName": "Southern Methodist University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-15",
+    "EA": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$0",
+   "feeIntl": "$0",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "counselorRecommendation": true,
+   "testPolicyCode": "N"
+  },
+  "university-of-denver": {
+   "gridName": "University of Denver",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-15",
+    "EA": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$65",
+   "feeIntl": "$65",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "testPolicyCode": "S"
+  },
+  "elon-university": {
+   "gridName": "Elon University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-15",
+    "EA": "2026-11-01",
+    "RD": "2027-01-10"
+   },
+   "feeUS": "$60",
+   "feeIntl": "$60",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "counselorRecommendation": true,
+   "testPolicyCode": "S"
+  },
+  "university-of-vermont": {
+   "gridName": "University of Vermont",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-15",
+    "EA": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$0",
+   "feeIntl": "$0",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "university-of-delaware": {
+   "gridName": "University of Delaware",
+   "deadlines": {
+    "EA": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "testPolicyCode": "F"
+  },
+  "drexel-university": {
+   "gridName": "Drexel University",
+   "deadlines": {
+    "ED": "2026-11-15",
+    "EA": "2026-11-15",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$65",
+   "feeIntl": "$65",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "testPolicyCode": "S"
+  },
+  "temple-university": {
+   "gridName": "Temple University",
+   "deadlines": {
+    "EA": "2026-11-01",
+    "RD": "2027-02-01"
+   },
+   "feeUS": "$55",
+   "feeIntl": "$55",
+   "feeWaiver": "Accepted",
+   "testPolicyCode": "N"
+  },
+  "university-of-connecticut": {
+   "gridName": "University of Connecticut",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$80",
+   "feeIntl": "$80",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "testPolicyCode": "N"
+  },
+  "clemson-university": {
+   "gridName": "Clemson University",
+   "deadlines": {
+    "EA": "2026-10-15",
+    "RD": "2027-01-01"
+   },
+   "feeUS": "$70",
+   "feeIntl": "$70",
+   "feeWaiver": "U.S. only",
+   "testPolicyCode": "N"
+  },
+  "michigan-state-university": {
+   "gridName": "Michigan State University",
+   "deadlines": {
+    "EA": "2026-11-01",
+    "RD": "2027-04-01"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "U.S. only",
+   "personalEssayRequired": true,
+   "testPolicyCode": "F"
+  },
+  "university-of-iowa": {
+   "gridName": "University of Iowa",
+   "deadlines": {
+    "EA": "2026-11-03",
+    "RD": "2027-02-01"
+   },
+   "feeUS": "$55",
+   "feeIntl": "$80",
+   "feeWaiver": "U.S. only",
+   "testPolicyCode": "S"
+  },
+  "university-of-kansas": {
+   "gridName": "University of Kansas",
+   "deadlines": {
+    "RD": "Rolling"
+   },
+   "feeUS": "$40",
+   "feeIntl": "$90",
+   "feeWaiver": "Accepted",
+   "testPolicyCode": "S"
+  },
+  "new-york-university": {
+   "gridName": "New York University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-01",
+    "RD": "2027-01-05"
+   },
+   "feeUS": "$85",
+   "feeIntl": "$85",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "testPolicyCode": "N"
+  },
+  "university-of-notre-dame": {
+   "gridName": "University of Notre Dame",
+   "deadlines": {
+    "REA": "2026-11-01",
+    "RD": "2027-01-04"
+   },
+   "feeUS": "$85",
+   "feeIntl": "$85",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "emory-university": {
+   "gridName": "Emory University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-01",
+    "RD": "2027-01-01"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "washington-university-in-st-louis": {
+   "gridName": "Washington University in St. Louis",
+   "deadlines": {
+    "ED": "2026-11-02",
+    "EDII": "2027-01-04",
+    "EA": "2026-11-02",
+    "RD": "2027-01-04"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "boston-university": {
+   "gridName": "Boston University",
+   "deadlines": {
+    "ED": "2026-11-02",
+    "EDII": "2027-01-05",
+    "RD": "2027-01-05"
+   },
+   "feeUS": "$80",
+   "feeIntl": "$80",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "tulane-university": {
+   "gridName": "Tulane University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-15",
+    "EA": "2026-11-10",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$0",
+   "feeIntl": "$0",
+   "personalEssayRequired": true,
+   "counselorRecommendation": true,
+   "testPolicyCode": "N"
+  },
+  "boston-college": {
+   "gridName": "Boston College",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-04",
+    "RD": "2027-01-04"
+   },
+   "feeUS": "$85",
+   "feeIntl": "$85",
+   "feeWaiver": "U.S. only",
+   "personalEssayRequired": true,
+   "portfolio": "SlideRoom",
+   "teacherEvaluations": 2,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "university-of-miami": {
+   "gridName": "University of Miami",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-05",
+    "EA": "2026-11-01",
+    "RD": "2027-01-05"
+   },
+   "feeUS": "$75",
+   "feeIntl": "$75",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "counselorRecommendation": true,
+   "testPolicyCode": "S"
+  },
+  "wake-forest-university": {
+   "gridName": "Wake Forest University",
+   "deadlines": {
+    "ED": "2026-11-15",
+    "EDII": "2027-01-01",
+    "EA": "2026-11-15",
+    "RD": "2027-01-01"
+   },
+   "feeUS": "$85",
+   "feeIntl": "$85",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "testPolicyCode": "N"
+  },
+  "villanova-university": {
+   "gridName": "Villanova University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-15",
+    "EA": "2026-11-01",
+    "RD": "2027-01-15"
+   },
+   "feeUS": "$80",
+   "feeIntl": "$80",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  },
+  "university-of-georgia": {
+   "gridName": "University of Georgia",
+   "deadlines": {
+    "EA": "2026-10-15",
+    "RD": "2027-01-01"
+   },
+   "feeUS": "$70",
+   "feeIntl": "$85",
+   "feeWaiver": "U.S. only",
+   "personalEssayRequired": true,
+   "testPolicyCode": "A"
+  },
+  "syracuse-university": {
+   "gridName": "Syracuse University",
+   "deadlines": {
+    "ED": "2026-11-01",
+    "EDII": "2027-01-05",
+    "EA": "2026-11-01",
+    "RD": "2027-01-05"
+   },
+   "feeUS": "$85",
+   "feeIntl": "$85",
+   "feeWaiver": "Accepted",
+   "personalEssayRequired": true,
+   "teacherEvaluations": 1,
+   "counselorRecommendation": true,
+   "midYearReport": true,
+   "testPolicyCode": "N"
+  }
+ }
+}

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { getCollegeById, formatPercent } from "@/lib/colleges";
+import { getCollegeById, displayedAdmitRate, formatPercent } from "@/lib/colleges";
 import type { College } from "@/lib/types";
 import SystemBadge from "./SystemBadge";
 
@@ -23,7 +23,7 @@ export default function DiscoveryExample() {
   return (
     <section className="rounded-3xl bg-navy-900 px-6 py-14 text-white sm:px-12 sm:py-16">
       <div className="mx-auto max-w-2xl text-center">
-        <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-gold-400">
+        <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-gold-400">
           One interest. Many paths.
         </span>
         <p className="mt-4 text-sm text-slate-300 sm:text-base">
@@ -48,7 +48,7 @@ export default function DiscoveryExample() {
             <SystemBadge system={college.system} className="self-start" />
             <h3 className="mt-3 text-sm font-bold leading-snug text-white">{college.name}</h3>
             <p className="mt-2 flex-1 text-xs font-semibold text-gold-400">{pathway}</p>
-            <p className="mt-3 text-xs text-slate-400">{formatPercent(college.admitRateOverall)} admit</p>
+            <p className="mt-3 text-xs text-slate-400">{formatPercent(displayedAdmitRate(college).value)} admit</p>
           </Link>
         ))}
       </div>

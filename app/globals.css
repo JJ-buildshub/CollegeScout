@@ -16,6 +16,27 @@ body {
   color: #0a1428;
 }
 
+/*
+ * Sitewide keyboard-focus ring — many interactive elements (buttons in
+ * particular) had no explicit focus style and were falling back to the
+ * browser default, which is inconsistent with the handful of elements
+ * (search input, selects) that already had an explicit gold ring. One rule
+ * here instead of patching every component individually, so it can't drift
+ * out of sync again. :focus-visible only, so a mouse click doesn't show a
+ * ring — matches how a keyboard user already expects this to behave, and
+ * doesn't fight the few elements that separately opted into :focus-based
+ * rings for their own reasons.
+ */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f2c14e;
+}
+
 @layer utilities {
   .scrollbar-thin::-webkit-scrollbar {
     height: 6px;

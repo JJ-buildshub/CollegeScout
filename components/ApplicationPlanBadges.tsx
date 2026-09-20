@@ -5,6 +5,7 @@ const LABELS: Record<ApplicationPlanType, string> = {
   ED: "Early Decision",
   ED2: "Early Decision II",
   EA: "Early Action",
+  EA2: "Early Action II",
   REA: "Restrictive Early Action",
   RD: "Regular Decision",
   Rolling: "Rolling Admission",
@@ -35,6 +36,7 @@ export default function ApplicationPlanBadges({ plans }: { plans: ApplicationPla
           <div className="mt-0.5">
             {plan.deadline ?? "Not publicly reported"} &middot; {bindingLabel(plan)}
           </div>
+          {plan.note && <div className="mt-1 max-w-xs text-[11px] leading-snug opacity-80">{plan.note}</div>}
         </div>
       ))}
     </div>

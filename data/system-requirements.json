@@ -1,0 +1,483 @@
+{
+ "note": "Requirements that apply to every campus in a system, quoted from the system's own pages. Each line is the page's exact wording; scripts/check-system-requirements.mjs verifies them against the live pages.",
+ "systems": {
+  "CSU": {
+   "title": "CSU freshman admission requirements",
+   "appliesTo": "All CSU campuses",
+   "checked": "2026-09-19",
+   "pageNote": "The page's banner offers the Fall 2027 application.",
+   "sources": {
+    "main": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/admission-requirements.aspx",
+    "testing": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+    "calculator": "https://www.calstate.edu/apply/gpa-calculator"
+   },
+   "tiles": [
+    {
+     "value": "15",
+     "label": "year-long a-g courses"
+    },
+    {
+     "value": "2.50+",
+     "label": "a-g GPA, California residents"
+    },
+    {
+     "value": "3.00+",
+     "label": "a-g GPA, non-residents"
+    }
+   ],
+   "courseRule": {
+    "source": "main",
+    "text": "The CSU requires a minimum 15-unit pattern of courses for admission as a first-time freshman. Each unit is equal to a year of study in a subject area. A grade of C or better is required for each course you use to meet any subject requirement."
+   },
+   "courses": [
+    {
+     "area": "a",
+     "subject": "History and Social Science",
+     "years": 2,
+     "text": "1 year of social science AND 1 year of U.S. history or 1 semester of U.S. history and 1 semester of civics or American government"
+    },
+    {
+     "area": "b",
+     "subject": "English",
+     "years": 4,
+     "text": "4 years of college preparatory English composition and literature"
+    },
+    {
+     "area": "c",
+     "subject": "Math",
+     "years": 3,
+     "text": "3 years of college preparatory math including or integrating topics covered in algebra, geometry, and intermediate algebra. 4 years highly recommended."
+    },
+    {
+     "area": "d",
+     "subject": "Laboratory Science",
+     "years": 2,
+     "text": "2 years of college preparatory science required with laboratory [1 biological and 1 physical]. Integrated science and interdisciplinary courses can meet this requirement."
+    },
+    {
+     "area": "e",
+     "subject": "Language Other Than English",
+     "years": 2,
+     "text": "2 years or through the second level of the same language or 2 one-year courses in different languages. American Sign Language and classical languages such as Latin and Greek are acceptable."
+    },
+    {
+     "area": "f",
+     "subject": "Visual and Performing Arts",
+     "years": 1,
+     "text": "1 yearlong course or 2 semester courses in dance, music, theatre, visual arts, or interdisciplinary arts."
+    },
+    {
+     "area": "g",
+     "subject": "College Preparatory Elective",
+     "years": 1,
+     "text": "additional year chosen from the University of California \"a-g\" list"
+    }
+   ],
+   "sections": [
+    {
+     "kind": "lines",
+     "title": "Grades",
+     "open": true,
+     "source": "main",
+     "lines": [
+      "Your high school grade point average is calculated using your grades in all your college prep \"a-g\" classes completed after the 9th grade.",
+      "California residents or graduates of California high schools will be eligible for admission by earning a 2.50 or greater \"a-g\" GPA.",
+      "Any California high school graduate or resident of California earning a GPA between 2.00 and 2.49 may be evaluated for admission based upon supplemental factors.",
+      "Non-California residents may be eligible for admission to the CSU by earning a 3.00 or greater \"a-g\" GPA along with other supplemental factors utilized by the individual campus, including those outlined by impacted campuses and programs.",
+      "Any non-California high school graduate earning a GPA between 2.47 and 2.99 may be evaluated for admission based upon supplemental factors.",
+      "Campuses and programs designated as impacted may utilize higher \"a-g\" GPA thresholds for applicants, as well as identify supplemental criteria and their relative weights, in making admission decisions.",
+      "Please note that California residents receive priority whenever admission space is limited."
+     ]
+    },
+    {
+     "kind": "steps",
+     "title": "How your CSU GPA is calculated",
+     "open": true,
+     "source": "calculator",
+     "intro": "Your CSU \"a-g\" grade point average (GPA) is calculated based on all grades earned after 9th grade. Credit and No Credit grades are not included in the calculation.",
+     "steps": [
+      {
+       "title": "Count your grades",
+       "lines": [
+        "Look at all your \"a-g\" courses taken after 9th grade (10th-12th grade only).",
+        "For each grade you earned (A, B, C, D, or F), count how many times you received that grade.",
+        "Ignore pluses and minuses."
+       ]
+      },
+      {
+       "title": "Count your honors, AP, IB and college courses",
+       "lines": [
+        "Count how many of these courses you completed with a C or better.",
+        "You can only use up to 8 semesters total for extra honors points.",
+        "Of the 8 honors points, only 2 semesters from 10th grade can be counted for honors credit (2 points).",
+        "For college courses, each semester grade counts twice."
+       ]
+      }
+     ],
+     "labeled": {
+      "source": "main",
+      "lines": [
+       "The CSU assigns extra points for up to eight semesters of approved honors level, International Baccalaureate (IB) and Advanced Placement (AP) courses taken in the last three years of high school.",
+       "A = 5, B = 4, C = 3",
+       "Maximum of 2 semesters (2 honors points) may count toward the total.",
+       "Only grades of C- or better earn honors credit."
+      ],
+      "labels": [
+       "Extra points",
+       "Grade points for approved honors, IB or AP courses",
+       "10th grade honors courses",
+       "Grades that earn honors credit"
+      ]
+     }
+    },
+    {
+     "kind": "courses",
+     "title": "The required courses (a-g)"
+    },
+    {
+     "kind": "bullets",
+     "title": "Impacted campuses and majors",
+     "source": "main",
+     "intro": "Supplemental Factors that campuses may use include:",
+     "items": [
+      "Number of courses exceeding minimum \"a-g\" requirements",
+      "GPA in math and or science courses",
+      "Household income",
+      "Extracurricular and leadership involvement",
+      "Educational program participation in high school"
+     ]
+    },
+    {
+     "kind": "lines",
+     "title": "Diploma and test scores",
+     "lines": [
+      {
+       "text": "To be eligible for admission to the CSU, applicants must have graduated from high school and earned a high school diploma or equivalent.",
+       "source": "main"
+      },
+      {
+       "text": "Acceptable alternatives include the General Education Development (GED) test, the High School Equivalency Test (HiSET), or the Test Assessing Secondary Completion (TASC).",
+       "source": "main"
+      },
+      {
+       "text": "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+       "source": "testing"
+      }
+     ]
+    }
+   ],
+   "links": [
+    {
+     "label": "CSU admission requirements (official page)",
+     "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/admission-requirements.aspx"
+    },
+    {
+     "label": "CSU GPA calculator",
+     "url": "https://www.calstate.edu/apply/gpa-calculator"
+    },
+    {
+     "label": "Impacted majors and campuses search",
+     "url": "https://www.calstate.edu/attend/degrees-certificates-credentials/Pages/impacted-degrees.aspx"
+    },
+    {
+     "label": "Supplemental factors by campus",
+     "url": "https://www.calstate.edu/apply/freshman/Pages/first-time-freshman-supplemental-factors-by-campus.aspx"
+    },
+    {
+     "label": "Local admission and service areas (PDF)",
+     "url": "https://www.calstate.edu/apply/counselor-resources/Documents/CSULocalAdmission-ServiceAreas.pdf"
+    }
+   ],
+   "overview": [
+    {
+     "label": "GPA levels",
+     "source": "main",
+     "text": "2.50 for California residents and 3.00 for non-residents. Lower ranges can still be evaluated on other factors.",
+     "evidence": "California residents or graduates of California high schools will be eligible for admission by earning a 2.50 or greater \"a-g\" GPA."
+    },
+    {
+     "label": "Which grades count",
+     "source": "calculator",
+     "text": "Your a-g grades from 10th, 11th and 12th grade, with extra points for up to 8 honors semesters.",
+     "evidence": "Look at all your \"a-g\" courses taken after 9th grade (10th-12th grade only)."
+    },
+    {
+     "label": "Test scores",
+     "source": "testing",
+     "text": "SAT and ACT scores aren't used to decide admission.",
+     "evidence": "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses."
+    },
+    {
+     "label": "California residents",
+     "source": "main",
+     "text": "California residents get priority when there isn't room for everyone.",
+     "evidence": "Please note that California residents receive priority whenever admission space is limited."
+    },
+    {
+     "label": "Local admission",
+     "source": "main",
+     "text": "Many campuses give priority to students from local high schools and community colleges.",
+     "evidence": "Many CSU campuses use local admission policies for students who graduate or transfer from high schools and community colleges that are historically served by a CSU campus in that region."
+    },
+    {
+     "label": "Impacted campuses and majors",
+     "source": "main",
+     "text": "Where more people apply than there is space, a campus or major can require higher GPAs and extra criteria.",
+     "evidence": "Campuses and programs designated as impacted may utilize higher \"a-g\" GPA thresholds for applicants, as well as identify supplemental criteria and their relative weights, in making admission decisions."
+    }
+   ]
+  },
+  "UC": {
+   "title": "UC first-year admission requirements",
+   "appliesTo": "UC systemwide",
+   "checked": "2026-09-19",
+   "pageNote": "The pages we read don't state an admission year.",
+   "sources": {
+    "overview": "https://admission.universityofcalifornia.edu/admission-requirements/first-year-requirements/index.html",
+    "subjects": "https://admission.universityofcalifornia.edu/admission-requirements/first-year-requirements/subject-requirement-a-g.html",
+    "gpa": "https://admission.universityofcalifornia.edu/admission-requirements/first-year-requirements/gpa-requirement.html",
+    "residents": "https://admission.universityofcalifornia.edu/admission-requirements/first-year-requirements/california-residents/index.html",
+    "statewide": "https://admission.universityofcalifornia.edu/admission-requirements/first-year-requirements/california-residents/statewide-guarantee/",
+    "outOfState": "https://admission.universityofcalifornia.edu/admission-requirements/first-year-requirements/out-of-state-students.html",
+    "testing": "https://admission.universityofcalifornia.edu/counselors/preparing-freshman-students/freshman-requirements.html"
+   },
+   "tiles": [
+    {
+     "value": "15",
+     "label": "year-long a-g courses"
+    },
+    {
+     "value": "3.0",
+     "label": "UC minimum GPA to be eligible, California residents"
+    },
+    {
+     "value": "3.4",
+     "label": "UC minimum GPA to be eligible, non-residents"
+    }
+   ],
+   "courseRule": {
+    "source": "overview",
+    "text": "You need to complete a minimum of 15 college-preparatory courses (A-G courses) with a letter grade of C or better. You must complete at least 11 of these courses prior to the beginning of your last year of high school."
+   },
+   "courses": [
+    {
+     "area": "a",
+     "subject": "History",
+     "years": 2,
+     "source": "subjects",
+     "text": "one year of world history, cultures or historical geography (may be a single yearlong course or two one-semester courses), and one year of U.S. history or one-half year of U.S. history and one-half year of civics or American government"
+    },
+    {
+     "area": "b",
+     "subject": "English",
+     "years": 4,
+     "source": "subjects",
+     "text": "Four years of college-preparatory English that include frequent writing, from brainstorming to final paper, as well as reading of classic and modern literature."
+    },
+    {
+     "area": "c",
+     "subject": "Mathematics",
+     "years": 3,
+     "source": "subjects",
+     "text": "Three years of college-preparatory mathematics that include the topics covered in elementary and advanced algebra and two- and three-dimensional geometry; a fourth year of math is strongly recommended."
+    },
+    {
+     "area": "d",
+     "subject": "Science",
+     "years": 2,
+     "source": "subjects",
+     "text": "Two years of college-preparatory science, including or integrating topics that provide fundamental knowledge in two of these three subjects: biology, chemistry, or physics."
+    },
+    {
+     "area": "e",
+     "subject": "Language other than English",
+     "years": 2,
+     "source": "subjects",
+     "text": "Two years, or equivalent to the 2nd level of high school instruction, of the same language other than English are required. A third year of course work is recommended."
+    },
+    {
+     "area": "f",
+     "subject": "Visual and performing arts",
+     "years": 1,
+     "source": "subjects",
+     "text": "One yearlong course of visual and performing arts chosen from the following disciplines: dance, music, theater, visual arts or interdisciplinary arts"
+    },
+    {
+     "area": "g",
+     "subject": "College-preparatory elective",
+     "years": 1,
+     "source": "subjects",
+     "text": "One year (two semesters) chosen from courses specific to the elective (G) subject area or courses beyond those used to satisfy the requirements of the A-F subjects."
+    }
+   ],
+   "sections": [
+    {
+     "kind": "lines",
+     "title": "Grades",
+     "open": true,
+     "lines": [
+      {
+       "text": "California applicants must earn at least a 3.0 GPA and nonresidents must earn a minimum 3.4 GPA in all A-G or college-preparatory courses to meet this requirement.",
+       "source": "gpa"
+      },
+      {
+       "text": "Please note, UC will calculate your official UC GPA when you submit your application for admission.",
+       "source": "gpa"
+      },
+      {
+       "text": "As a public institution, we prioritize admission for California residents. However, all of our campuses offer admission to out-of-state students.",
+       "source": "outOfState"
+      }
+     ]
+    },
+    {
+     "kind": "steps",
+     "title": "How your UC GPA is calculated",
+     "open": true,
+     "source": "gpa",
+     "intro": "UC has a specific way to calculate the grade point average (GPA) it requires for admission.",
+     "steps": [
+      {
+       "title": "Convert your grades to grade points",
+       "lines": [
+        "Convert the letter grades earned in all A-G courses completed between summer after 9th grade through summer after 11th grade to grade points: A=4 points, B=3 points, C=2 points, D=1 points. (Pluses and minuses don't count.)"
+       ]
+      },
+      {
+       "title": "Add an extra point for each honors semester",
+       "lines": [
+        "Give yourself an extra point for each semester of a UC honors-level course, with a maximum of 8 points between 10th and 11th grades.",
+        "For 10th grade, you cannot use more than 4 honors points.",
+        "Grades of D or F in an honors course do not earn an extra point.",
+        "One college course = one grade = one honors point."
+       ]
+      },
+      {
+       "title": "Add up the points and divide",
+       "lines": [
+        "Add up all the points to find out your total grade points.",
+        "Divide your total grade points by the number of letter grades earned in courses taken between the summer after 9th grade through summer after 11th grade.",
+        "This is your UC GPA (for example: 3.57). Do not round up or down."
+       ]
+      }
+     ],
+     "labeled": {
+      "source": "gpa",
+      "labels": [
+       "Out-of-state applicants"
+      ],
+      "lines": [
+       "In calculating an out-of-state student's GPA to determine if the 3.4 minimum has been met, UC will grant honors weight for AP or IB courses only, but not for school-designated honors courses. The weight is given to letter grades of A, B, or C."
+      ]
+     }
+    },
+    {
+     "kind": "courses",
+     "title": "The required courses (a-g)"
+    },
+    {
+     "kind": "lines",
+     "title": "Guaranteed spots for top California students",
+     "lines": [
+      {
+       "text": "If you rank in the top 9 percent of California students according to our updated Statewide Index you will be eligible for the Statewide Guarantee.",
+       "source": "residents"
+      },
+      {
+       "text": "If you rank in the top 9 percent of your graduating class at a participating California high school, you will be eligible for the local guarantee.",
+       "source": "residents"
+      },
+      {
+       "text": "Meeting minimum requirements to qualify for admission is not the same as meeting eligibility for guaranteed admission.",
+       "source": "statewide"
+      }
+     ]
+    },
+    {
+     "kind": "lines",
+     "title": "If you're applying from out of state",
+     "lines": [
+      {
+       "text": "You must earn a minimum grade point average (GPA) of 3.4 or better in the 15 college-preparatory courses (A-G courses), with no grade lower than a C.",
+       "source": "outOfState"
+      },
+      {
+       "text": "Letters of recommendation are not required.",
+       "source": "outOfState"
+      },
+      {
+       "text": "We require you to self-report your grades when filling out your application.",
+       "source": "outOfState"
+      },
+      {
+       "text": "UC does not require official transcripts to be sent with the application; however, you must refer to your transcript to ensure the information you enter is accurate.",
+       "source": "outOfState"
+      }
+     ]
+    },
+    {
+     "kind": "lines",
+     "title": "Test scores",
+     "source": "testing",
+     "lines": [
+      "UC does not consider SAT or ACT test scores when making admissions decisions or awarding scholarships. Test scores submitted as part of the application may be used as an alternate method of fulfilling minimum requirements for eligibility or for course placement after matriculation at UC."
+     ]
+    }
+   ],
+   "links": [
+    {
+     "label": "UC first-year requirements (official page)",
+     "url": "https://admission.universityofcalifornia.edu/admission-requirements/first-year-requirements/index.html"
+    },
+    {
+     "label": "How to calculate your UC GPA",
+     "url": "https://admission.universityofcalifornia.edu/admission-requirements/first-year-requirements/gpa-requirement.html"
+    },
+    {
+     "label": "The A-G subject requirement in detail",
+     "url": "https://admission.universityofcalifornia.edu/admission-requirements/first-year-requirements/subject-requirement-a-g.html"
+    },
+    {
+     "label": "Statewide guarantee",
+     "url": "https://admission.universityofcalifornia.edu/admission-requirements/first-year-requirements/california-residents/statewide-guarantee/"
+    },
+    {
+     "label": "Out-of-state students",
+     "url": "https://admission.universityofcalifornia.edu/admission-requirements/first-year-requirements/out-of-state-students.html"
+    }
+   ],
+   "overview": [
+    {
+     "label": "GPA levels",
+     "source": "gpa",
+     "text": "UC's minimum GPA to be eligible: 3.0 for California residents and 3.4 for non-residents, in your a-g classes. This is the systemwide minimum, not what a campus typically admits: see the campus's GPA range at the top of the page.",
+     "evidence": "California applicants must earn at least a 3.0 GPA and nonresidents must earn a minimum 3.4 GPA in all A-G or college-preparatory courses to meet this requirement."
+    },
+    {
+     "label": "Which grades count",
+     "source": "gpa",
+     "text": "Your a-g grades from 10th and 11th grade, with an extra point for each honors semester (up to 8).",
+     "evidence": "Convert the letter grades earned in all A-G courses completed between summer after 9th grade through summer after 11th grade to grade points: A=4 points, B=3 points, C=2 points, D=1 points."
+    },
+    {
+     "label": "Test scores",
+     "source": "testing",
+     "text": "SAT and ACT scores aren't considered for admission or scholarships.",
+     "evidence": "UC does not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+    },
+    {
+     "label": "Guaranteed spot",
+     "source": "residents",
+     "text": "Top California students (top 9 percent statewide, or of your own high school) are offered a spot at a UC campus with space if they aren't admitted where they applied.",
+     "evidence": "If you rank in the top 9 percent of your graduating class at a participating California high school, you will be eligible for the local guarantee."
+    },
+    {
+     "label": "California residents",
+     "source": "outOfState",
+     "text": "California residents get priority, and every campus also admits out-of-state students.",
+     "evidence": "As a public institution, we prioritize admission for California residents. However, all of our campuses offer admission to out-of-state students."
+    }
+   ]
+  }
+ }
+}
