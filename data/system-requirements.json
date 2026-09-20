@@ -248,11 +248,11 @@
     },
     {
      "value": "3.0",
-     "label": "UC GPA, California residents"
+     "label": "UC minimum GPA to be eligible, California residents"
     },
     {
      "value": "3.4",
-     "label": "UC GPA, non-residents"
+     "label": "UC minimum GPA to be eligible, non-residents"
     }
    ],
    "courseRule": {
@@ -450,7 +450,7 @@
     {
      "label": "GPA levels",
      "source": "gpa",
-     "text": "3.0 for California residents and 3.4 for non-residents, in your a-g classes.",
+     "text": "UC's minimum GPA to be eligible: 3.0 for California residents and 3.4 for non-residents, in your a-g classes. This is the systemwide minimum, not what a campus typically admits: see the campus's GPA range at the top of the page.",
      "evidence": "California applicants must earn at least a 3.0 GPA and nonresidents must earn a minimum 3.4 GPA in all A-G or college-preparatory courses to meet this requirement."
     },
     {
