@@ -28,7 +28,7 @@ official admissions pages**, and to prove it with an exact quote.
    sentences. I will check each quote against the live page with a script, and
    anything that doesn't match is rejected.
 5. **Never guess.** If you can't open the page, or it doesn't say, answer
-   `"status": "could not verify"` with the reason. A wrong answer is far worse than
+   `"status": "could_not_verify"` with the reason. A wrong answer is far worse than
    a missing one.
 6. **Give the direct URL** of the page you used (not the homepage), and today's date
    as the access date.
@@ -67,6 +67,9 @@ For each plan the school offers, give the type and date:
 - If a date is a **priority** date and not a final deadline, say so in `note`.
 - **Scholarship, honors, FAFSA and housing dates are not admission deadlines.** Put
   them in `note`, never in `deadline`.
+- If the page describes rolling admission with no final application deadline, use
+  type `Rolling` and set `deadline` to `null`. Never infer an RD deadline from a
+  scholarship, honors, housing or financial-aid priority date.
 - Only list a plan if the page says the school offers it. If the page doesn't
   mention a plan, don't add one.
 
@@ -89,13 +92,13 @@ mid-year report, portfolio or audition requirements.
 ## What to send back
 
 Return **only JSON**, one object per school, in this shape. Use `null` for anything
-you could not verify, and explain in `note`.
+you could_not_verify, and explain in `note`.
 
 ```json
 {
   "id": "the id from the CSV",
   "testing": {
-    "status": "confirmed | conflict | could not verify",
+    "status": "confirmed | conflict | could_not_verify",
     "policy": "Test-Required | Test-Optional | Test-Blind | Test-Free | Test-Flexible | null",
     "note": "scope or exceptions, or null",
     "url": "direct official page URL",
@@ -103,9 +106,9 @@ you could not verify, and explain in `note`.
     "accessed": "YYYY-MM-DD"
   },
   "plans": {
-    "status": "confirmed | conflict | could not verify",
+    "status": "confirmed | conflict | could_not_verify",
     "items": [
-      { "type": "ED | ED2 | EA | EA2 | REA | RD | Rolling", "binding": true, "deadline": "Month D", "note": "or null" }
+      { "type": "ED | ED2 | EA | EA2 | REA | RD | Rolling", "binding": true, "deadline": "Month D or null", "note": "or null" }
     ],
     "url": "direct official page URL",
     "quotes": ["exact sentence or table row for each plan", "..."],
@@ -116,7 +119,7 @@ you could not verify, and explain in `note`.
 ```
 
 `status` meanings: `confirmed` means the school's page matches what we store,
-`conflict` means it differs (say how in `differs_from_ours`), and `could not verify`
+`conflict` means it differs (say how in `differs_from_ours`), and `could_not_verify`
 means the page was unavailable or silent.
 
 ## Before you answer, check yourself
@@ -125,7 +128,7 @@ means the page was unavailable or silent.
 - Is the URL the page you actually read?
 - Is it fall 2027, first-year, and the right campus?
 - Did any scholarship or FAFSA date sneak into a `deadline`?
-- Did you say `could not verify` instead of guessing where you weren't sure?
+- Did you say `could_not_verify` instead of guessing where you weren't sure?
 
 ## Known sources and pitfalls
 
