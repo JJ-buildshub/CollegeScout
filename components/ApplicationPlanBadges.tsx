@@ -5,6 +5,7 @@ const LABELS: Record<ApplicationPlanType, string> = {
   ED: "Early Decision",
   ED2: "Early Decision II",
   EA: "Early Action",
+  EA2: "Early Action II",
   REA: "Restrictive Early Action",
   RD: "Regular Decision",
   Rolling: "Rolling Admission",

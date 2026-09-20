@@ -125,6 +125,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
         college.gpaSatProvenance,
         college.outcomesProvenance,
         college.costProvenance,
+        college.applicationPlansProvenance,
         college.scorecard?.tuitionInState.provenance,
         college.scorecard?.tuitionOutOfState.provenance,
       ]
@@ -340,6 +341,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
               <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
                 <div className="text-xs font-bold tracking-wide text-slate-600">
                   Application Deadlines
+                  <SourceMark provenance={college.applicationPlansProvenance} />
                 </div>
                 <div className="mt-2">
                   <ApplicationPlanBadges plans={college.applicationPlans} />

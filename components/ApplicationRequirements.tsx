@@ -53,21 +53,6 @@ function Group({ label, items }: { label: string; items: WritingItem[] }) {
   );
 }
 
-const PLAN_LABELS: Record<string, string> = {
-  ED: "Early Decision",
-  EDII: "Early Decision II",
-  EA: "Early Action",
-  EAII: "Early Action II",
-  REA: "Restrictive Early Action",
-  RD: "Regular Decision",
-};
-
-function formatDate(value: string): string {
-  if (value === "Rolling") return "Rolling";
-  const [y, m, d] = value.split("-").map(Number);
-  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
-}
-
 function plural(n: number, word: string): string {
   return `${n} ${word}${n === 1 ? "" : "s"}`;
 }
@@ -96,7 +81,6 @@ function factRows(f: CommonAppFacts): { label: string; value: string }[] {
 
 function CommonAppCard({ facts }: { facts: CommonAppFacts }) {
   const rows = factRows(facts);
-  const deadlines = Object.entries(facts.deadlines);
   return (
     <div className="rounded-xl border border-slate-200 bg-white p-4">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -111,19 +95,6 @@ function CommonAppCard({ facts }: { facts: CommonAppFacts }) {
             </div>
           ))}
         </dl>
-      )}
-      {deadlines.length > 0 && (
-        <div className="mt-3 border-t border-slate-100 pt-3">
-          <div className="text-xs font-semibold text-slate-500">Deadlines for {COMMON_APP_SOURCE.name.match(/\((.*)\)/)?.[1] ?? "this cycle"}</div>
-          <ul className="mt-1.5 space-y-1 text-sm">
-            {deadlines.map(([plan, date]) => (
-              <li key={plan} className="flex items-baseline justify-between gap-4">
-                <span className="text-slate-600">{PLAN_LABELS[plan] ?? plan}</span>
-                <span className="font-semibold text-navy-900">{formatDate(date as string)}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
       )}
       <p className="mt-3 text-[11px] leading-snug text-slate-400">
         Source:{" "}

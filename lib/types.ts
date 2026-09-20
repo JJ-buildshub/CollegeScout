@@ -25,7 +25,7 @@ export interface IdealStudentArchetype {
  * date is known but whether it's binding ED or non-binding EA hasn't been
  * confirmed against a primary source yet — never guess binding status.
  */
-export type ApplicationPlanType = "ED" | "ED2" | "EA" | "REA" | "RD" | "Rolling" | "Unspecified";
+export type ApplicationPlanType = "ED" | "ED2" | "EA" | "EA2" | "REA" | "RD" | "Rolling" | "Unspecified";
 
 export interface ApplicationPlan {
   type: ApplicationPlanType;
@@ -161,6 +161,8 @@ export interface College {
   gpaSatProvenance?: FieldProvenance;
   /** Source/year for financials.coaInState / coaOutOfState. Unpopulated until researched. */
   costProvenance?: FieldProvenance;
+  /** Source/year for applicationPlans; set only when the whole list is backed by that source (see scripts/sync-plans-from-commonapp.py). */
+  applicationPlansProvenance?: FieldProvenance;
   /** Source/year for careerOutcomes.placementRate / medianStartingSalary. Unpopulated until researched. */
   outcomesProvenance?: FieldProvenance;
   /**
