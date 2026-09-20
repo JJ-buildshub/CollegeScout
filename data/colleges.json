@@ -14463,6 +14463,11 @@
     },
     "applicationPlans": [
       {
+        "type": "ED",
+        "binding": true,
+        "deadline": "October 15"
+      },
+      {
         "type": "EA",
         "binding": false,
         "deadline": "November 1"
@@ -14470,7 +14475,7 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "March 1"
+        "deadline": "January 15"
       }
     ],
     "financials": {
@@ -14565,7 +14570,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of Florida admissions (https://admissions.ufl.edu/apply/freshman/deadlines)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "ohio-state-university",
@@ -14632,7 +14641,7 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "February 1"
+        "deadline": "January 15"
       }
     ],
     "financials": {
@@ -14727,7 +14736,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Ohio State admissions (https://undergrad.osu.edu/apply/freshmen-columbus/apply-step-by-step)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "penn-state-university",
@@ -14787,9 +14800,14 @@
     },
     "applicationPlans": [
       {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
         "type": "Rolling",
         "binding": false,
-        "deadline": "November 30"
+        "deadline": "After November 1, reviewed on a rolling basis"
       }
     ],
     "financials": {
@@ -14884,7 +14902,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Penn State admissions (https://www.psu.edu/resources/first-year-students/deadlines)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-wisconsin-madison",
@@ -14944,9 +14966,14 @@
     },
     "applicationPlans": [
       {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
         "type": "RD",
         "binding": false,
-        "deadline": "February 1"
+        "deadline": "January 15"
       }
     ],
     "financials": {
@@ -15042,7 +15069,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "UW-Madison admissions (https://admissions.wisc.edu/deadlines/)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "indiana-university-bloomington",
@@ -15102,9 +15133,14 @@
     },
     "applicationPlans": [
       {
-        "type": "Rolling",
+        "type": "EA",
         "binding": false,
         "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
       }
     ],
     "financials": {
@@ -15200,7 +15236,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Indiana University admissions (https://admissions.indiana.edu/apply/deadlines.html)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-maryland",
@@ -15426,7 +15466,12 @@
     },
     "applicationPlans": [
       {
-        "type": "Rolling",
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
         "binding": false,
         "deadline": "December 1"
       }
@@ -15523,7 +15568,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Rutgers admissions (https://admissions.rutgers.edu/apply/dates-deadlines/new-brunswick)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-arizona",
@@ -15583,9 +15632,14 @@
     },
     "applicationPlans": [
       {
-        "type": "Rolling",
+        "type": "EA",
         "binding": false,
-        "deadline": null
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "After November 1, on a space-available basis (no set date)"
       }
     ],
     "financials": {
@@ -15680,7 +15734,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of Arizona admissions (https://www.arizona.edu/admissions/first-year/deadlines)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "arizona-state-university",
@@ -15742,7 +15800,7 @@
       {
         "type": "Rolling",
         "binding": false,
-        "deadline": "November 1"
+        "deadline": "Priority admission date November 1; regular admission date February 1"
       }
     ],
     "financials": {
@@ -15837,7 +15895,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "ASU admissions (https://admission.asu.edu/apply/first-year)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-colorado-boulder",
@@ -16217,9 +16279,19 @@
     },
     "applicationPlans": [
       {
-        "type": "Rolling",
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "EA",
         "binding": false,
-        "deadline": null
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "December 1 (priority)"
       }
     ],
     "financials": {
@@ -16313,7 +16385,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Miami University admissions (https://miamioh.edu/admission-aid/apply/first-year-students/application-types.html)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "baylor-university",
@@ -16366,9 +16442,19 @@
     },
     "applicationPlans": [
       {
-        "type": "Rolling",
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "EA",
         "binding": false,
-        "deadline": null
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
       }
     ],
     "financials": {
@@ -16462,7 +16548,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Baylor admissions (https://admissions.web.baylor.edu/admission/incoming-freshman/application-process/admission-plans)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "texas-christian-university",
@@ -17514,9 +17604,19 @@
     },
     "applicationPlans": [
       {
-        "type": "Rolling",
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 15"
+      },
+      {
+        "type": "EA",
         "binding": false,
-        "deadline": null
+        "deadline": "November 15"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15"
       }
     ],
     "financials": {
@@ -17609,7 +17709,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Drexel admissions (https://drexel.edu/admissions/apply/undergrad-instructions/first-year-instructions/application-deadlines)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "temple-university",
@@ -17668,9 +17772,14 @@
     },
     "applicationPlans": [
       {
-        "type": "Rolling",
+        "type": "EA",
         "binding": false,
-        "deadline": null
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
       }
     ],
     "financials": {
@@ -17763,7 +17872,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Temple admissions (https://admissions.temple.edu/apply/first-year-students)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-connecticut",
@@ -18132,9 +18245,14 @@
     },
     "applicationPlans": [
       {
-        "type": "Rolling",
+        "type": "EA",
         "binding": false,
-        "deadline": null
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "April 1 (priority February 1)"
       }
     ],
     "financials": {
@@ -18228,7 +18346,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Michigan State admissions (https://admissions.msu.edu/apply/first-year/dates-and-deadlines)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-iowa",
@@ -18281,9 +18403,14 @@
     },
     "applicationPlans": [
       {
-        "type": "Rolling",
+        "type": "EA",
         "binding": false,
-        "deadline": null
+        "deadline": "November 2"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
       }
     ],
     "financials": {
@@ -18376,7 +18503,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of Iowa admissions (https://admissions.uiowa.edu/apply/how-apply/first-year-admissions)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-kansas",
