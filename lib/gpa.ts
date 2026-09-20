@@ -209,7 +209,7 @@ export function validSatScore(score: number | null | undefined): score is number
 
 // CSU uses its own GPA calculation, not UC's — and we don't have a verified
 // CSU-specific formula in this codebase. Rather than build a guessed one,
-// CSU falls back to the same treatment as Private/Out-of-State Public:
+// CSU falls back to the same treatment as Private/Public:
 // compare the student's unweighted GPA against the school's unweighted range.
 function usesUcCappedMetric(college: College): boolean {
   return college.system === "UC";

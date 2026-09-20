@@ -4892,7 +4892,7 @@
   {
     "id": "purdue-university",
     "name": "Purdue University",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 43,
     "location": "West Lafayette, IN",
     "admitRateOverall": 0.5,
@@ -4900,7 +4900,7 @@
     "outOfStateAdmitRate": 0.41,
     "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "3.70 - 3.98",
-    "mid50_GPA_UCCapped": "N/A (Out-of-State Public)",
+    "mid50_GPA_UCCapped": "N/A (Public)",
     "mid50_SAT": "1210 - 1440",
     "impactedMajors": [
       "Computer Science",
@@ -5065,7 +5065,7 @@
   {
     "id": "university-of-illinois-urbana-champaign",
     "name": "University of Illinois Urbana-Champaign",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 35,
     "location": "Urbana-Champaign, IL",
     "admitRateOverall": 0.42,
@@ -5073,7 +5073,7 @@
     "outOfStateAdmitRate": 0.33,
     "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "3.75 - 4.00",
-    "mid50_GPA_UCCapped": "N/A (Out-of-State Public)",
+    "mid50_GPA_UCCapped": "N/A (Public)",
     "mid50_SAT": "1350 - 1510",
     "impactedMajors": [
       "Computer Science (Grainger)",
@@ -5239,7 +5239,7 @@
   {
     "id": "university-of-washington",
     "name": "University of Washington",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 40,
     "location": "Seattle, WA",
     "admitRateOverall": 0.42,
@@ -5247,7 +5247,7 @@
     "outOfStateAdmitRate": 0.35,
     "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "3.75 - 3.98",
-    "mid50_GPA_UCCapped": "N/A (Out-of-State Public)",
+    "mid50_GPA_UCCapped": "N/A (Public)",
     "mid50_SAT": "1300 - 1500",
     "impactedMajors": [
       "Computer Science (Allen School)",
@@ -5407,7 +5407,7 @@
   {
     "id": "university-of-michigan",
     "name": "University of Michigan",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 21,
     "location": "Ann Arbor, MI",
     "admitRateOverall": 0.17,
@@ -5415,7 +5415,7 @@
     "outOfStateAdmitRate": 0.12,
     "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "3.88 - 4.00",
-    "mid50_GPA_UCCapped": "N/A (Out-of-State Public)",
+    "mid50_GPA_UCCapped": "N/A (Public)",
     "mid50_SAT": "1430 - 1540",
     "impactedMajors": [
       "Computer Science (Advance Selection)",
@@ -5590,7 +5590,7 @@
   {
     "id": "georgia-institute-of-technology",
     "name": "Georgia Institute of Technology",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 33,
     "location": "Atlanta, GA",
     "admitRateOverall": 0.13,
@@ -5598,7 +5598,7 @@
     "outOfStateAdmitRate": 0.09,
     "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "3.85 - 4.00",
-    "mid50_GPA_UCCapped": "N/A (Out-of-State Public)",
+    "mid50_GPA_UCCapped": "N/A (Public)",
     "mid50_SAT": "1380 - 1530",
     "impactedMajors": [
       "Industrial and Systems Engineering (ISyE)",
@@ -5767,7 +5767,7 @@
   {
     "id": "university-of-texas-at-austin",
     "name": "University of Texas at Austin",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 32,
     "location": "Austin, TX",
     "admitRateOverall": 0.29,
@@ -5775,7 +5775,7 @@
     "outOfStateAdmitRate": 0.1,
     "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "3.80 - 4.00",
-    "mid50_GPA_UCCapped": "N/A (Out-of-State Public)",
+    "mid50_GPA_UCCapped": "N/A (Public)",
     "mid50_SAT": "1300 - 1500",
     "impactedMajors": [
       "Computer Science (Turing Scholars)",
@@ -6668,7 +6668,7 @@
   {
     "id": "university-of-alabama",
     "name": "University of Alabama",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 169,
     "location": "Tuscaloosa, AL",
     "admitRateOverall": 0.766,
@@ -6832,7 +6832,7 @@
   {
     "id": "university-of-pittsburgh",
     "name": "University of Pittsburgh",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 69,
     "location": "Pittsburgh, PA",
     "admitRateOverall": 0.581,
@@ -14338,7 +14338,7 @@
   {
     "id": "university-of-north-carolina-chapel-hill",
     "name": "University of North Carolina at Chapel Hill",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 22,
     "location": "Chapel Hill, North Carolina",
     "admitRateOverall": 0.153,
@@ -14505,7 +14505,7 @@
   {
     "id": "university-of-virginia",
     "name": "University of Virginia",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 24,
     "location": "Charlottesville, Virginia",
     "admitRateOverall": 0.156,
@@ -14677,7 +14677,7 @@
   {
     "id": "university-of-florida",
     "name": "University of Florida",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 28,
     "location": "Gainesville, Florida",
     "admitRateOverall": 0.242,
@@ -14849,7 +14849,7 @@
   {
     "id": "ohio-state-university",
     "name": "Ohio State University",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 41,
     "location": "Columbus, Ohio",
     "admitRateOverall": 0.61,
@@ -15021,7 +15021,7 @@
   {
     "id": "penn-state-university",
     "name": "Penn State University (University Park)",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 60,
     "location": "University Park, Pennsylvania",
     "admitRateOverall": 0.61,
@@ -15195,7 +15195,7 @@
   {
     "id": "university-of-wisconsin-madison",
     "name": "University of Wisconsin-Madison",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 35,
     "location": "Madison, Wisconsin",
     "admitRateOverall": 0.45,
@@ -15362,7 +15362,7 @@
   {
     "id": "indiana-university-bloomington",
     "name": "Indiana University Bloomington",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 63,
     "location": "Bloomington, Indiana",
     "admitRateOverall": 0.78,
@@ -15529,7 +15529,7 @@
   {
     "id": "university-of-maryland",
     "name": "University of Maryland, College Park",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 44,
     "location": "College Park, Maryland",
     "admitRateOverall": 0.45,
@@ -15695,7 +15695,7 @@
   {
     "id": "rutgers-university",
     "name": "Rutgers University-New Brunswick",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 55,
     "location": "New Brunswick/Piscataway, New Jersey",
     "admitRateOverall": 0.58,
@@ -15861,7 +15861,7 @@
   {
     "id": "university-of-arizona",
     "name": "University of Arizona",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 105,
     "location": "Tucson, Arizona",
     "admitRateOverall": 0.86,
@@ -16034,7 +16034,7 @@
   {
     "id": "arizona-state-university",
     "name": "Arizona State University",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 121,
     "location": "Tempe, Arizona",
     "admitRateOverall": 0.899,
@@ -16197,7 +16197,7 @@
   {
     "id": "university-of-colorado-boulder",
     "name": "University of Colorado Boulder",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 93,
     "location": "Boulder, Colorado",
     "admitRateOverall": 0.78,
@@ -16363,7 +16363,7 @@
   {
     "id": "texas-am-university",
     "name": "Texas A&M University",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 47,
     "location": "College Station, Texas",
     "admitRateOverall": 0.57,
@@ -16524,7 +16524,7 @@
   {
     "id": "miami-university-ohio",
     "name": "Miami University",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 100,
     "location": "Oxford, Ohio",
     "admitRateOverall": 0.75,
@@ -17524,7 +17524,7 @@
   {
     "id": "university-of-vermont",
     "name": "University of Vermont",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 130,
     "location": "Burlington, Vermont",
     "admitRateOverall": 0.65,
@@ -17691,7 +17691,7 @@
   {
     "id": "university-of-delaware",
     "name": "University of Delaware",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 89,
     "location": "Newark, Delaware",
     "admitRateOverall": 0.71,
@@ -18017,7 +18017,7 @@
   {
     "id": "temple-university",
     "name": "Temple University",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 127,
     "location": "Philadelphia, Pennsylvania",
     "admitRateOverall": 0.8,
@@ -18180,7 +18180,7 @@
   {
     "id": "university-of-connecticut",
     "name": "University of Connecticut",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 63,
     "location": "Storrs, Connecticut",
     "admitRateOverall": 0.52,
@@ -18338,7 +18338,7 @@
   {
     "id": "clemson-university",
     "name": "Clemson University",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 68,
     "location": "Clemson, South Carolina",
     "admitRateOverall": 0.38,
@@ -18495,7 +18495,7 @@
   {
     "id": "michigan-state-university",
     "name": "Michigan State University",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 85,
     "location": "East Lansing, Michigan",
     "admitRateOverall": 0.85,
@@ -18656,7 +18656,7 @@
   {
     "id": "university-of-iowa",
     "name": "University of Iowa",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 93,
     "location": "Iowa City, Iowa",
     "admitRateOverall": 0.84,
@@ -18813,7 +18813,7 @@
   {
     "id": "university-of-kansas",
     "name": "University of Kansas",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 130,
     "location": "Lawrence, Kansas",
     "admitRateOverall": 0.93,
@@ -20719,7 +20719,7 @@
   {
     "id": "university-of-georgia",
     "name": "University of Georgia",
-    "system": "Out-of-State Public",
+    "system": "Public",
     "rank": 47,
     "location": "Athens, Georgia",
     "admitRateOverall": 0.343,

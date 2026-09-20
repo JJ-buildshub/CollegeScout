@@ -1,4 +1,4 @@
-export type CollegeSystem = "UC" | "CSU" | "Private" | "Out-of-State Public";
+export type CollegeSystem = "UC" | "CSU" | "Private" | "Public";
 
 export type TestingPolicy = "Test-Free" | "Test-Required" | "Test-Optional" | "Test-Blind";
 

@@ -83,7 +83,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
   }, []);
 
   // CSU uses its own GPA calculation, not UC's, so it's treated like Private/
-  // Out-of-State Public here (unweighted) rather than grouped with UC — see
+  // Public here (unweighted) rather than grouped with UC — see
   // the matching note on usesUcCappedMetric in lib/gpa.ts.
   const usesUcCapped = college.system === "UC";
   // A-G subject requirements genuinely are shared by UC and CSU, unlike the
@@ -94,7 +94,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
   const scrollMt = `scroll-mt-[${SCROLL_OFFSET}px]`;
 
   // Only UC/CSU schools report a capped-weighted figure at all — Private and
-  // Out-of-State Public never do, so that box doesn't belong on their page.
+  // Public never do, so that box doesn't belong on their page.
   const gpaSatBoxes = [
     { label: "Mid-50% Unweighted GPA", value: college.mid50_GPA_Unweighted },
     ...(isUcOrCsu ? [{ label: cappedGpaLabel, value: college.mid50_GPA_UCCapped }] : []),

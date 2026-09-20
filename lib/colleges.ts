@@ -7,7 +7,7 @@ export function getCollegeById(id: string): College | undefined {
   return colleges.find((c) => c.id === id);
 }
 
-export const SYSTEMS = ["UC", "CSU", "Private", "Out-of-State Public"] as const;
+export const SYSTEMS = ["UC", "CSU", "Private", "Public"] as const;
 
 export const TESTING_POLICIES = ["Test-Free", "Test-Required", "Test-Optional", "Test-Blind"] as const;
 
