@@ -3,6 +3,9 @@
 import { ChevronDown, Info } from "lucide-react";
 import {
   calculateCsuGpa,
+  calculateUcNonResidentGpa,
+  ucMinimumStatus,
+  UC_MAX_10TH_GRADE_HONORS,
   csuGpaStatus,
   validSatScore,
   type CsuGpaInputs,
@@ -23,6 +26,36 @@ interface Props {
 }
 
 const EMPTY_CSU: CsuGpaInputs = { a: 0, b: 0, c: 0, d: 0, f: 0, honors10: 0, honors1112: 0 };
+
+function OptionalCountField({
+  label,
+  hint,
+  value,
+  onChange,
+}: {
+  label: string;
+  hint: string;
+  value: number | undefined;
+  onChange: (v: number | undefined) => void;
+}) {
+  return (
+    <label className="block">
+      <div className="flex items-center gap-1.5 text-sm font-semibold text-navy-900">
+        {label} <span className="font-normal text-slate-400">(optional)</span>
+      </div>
+      <p className="mt-0.5 text-xs text-slate-400">{hint}</p>
+      <input
+        type="number"
+        inputMode="numeric"
+        min={0}
+        step={1}
+        value={value ?? ""}
+        onChange={(e) => onChange(e.target.value === "" ? undefined : Math.max(0, parseInt(e.target.value, 10) || 0))}
+        className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-gold-500"
+      />
+    </label>
+  );
+}
 
 function CountField({
   label,
@@ -245,6 +278,20 @@ export default function GpaCalculatorForm({
               step={1}
               onChange={(v) => onChange({ ...inputs, honorsSemesters: v })}
             />
+            <OptionalCountField
+              label="How many of those were in 10th grade?"
+              hint={`UC counts at most ${UC_MAX_10TH_GRADE_HONORS} honors points from 10th grade. Leave blank and we won't apply that limit.`}
+              value={inputs.honors10Semesters}
+              onChange={(v) => onChange({ ...inputs, honors10Semesters: v })}
+            />
+            {homeState !== null && homeState !== "CA" && (
+              <OptionalCountField
+                label="How many were school-designated honors (not AP or IB)?"
+                hint="For the 3.4 minimum for out-of-state applicants, UC gives extra weight to AP and IB courses only."
+                value={inputs.schoolHonorsSemesters}
+                onChange={(v) => onChange({ ...inputs, schoolHonorsSemesters: v })}
+              />
+            )}
 
             <div className="rounded-xl bg-navy-900 p-4 text-white">
               <div className="text-xs font-semibold tracking-wide text-slate-300">
@@ -264,6 +311,20 @@ export default function GpaCalculatorForm({
                   <span>Bonus points added</span>
                   <span className="font-semibold text-white">+{gpaResult.bonusPoints.toFixed(3)}</span>
                 </div>
+              </div>
+              <div className="mt-3 space-y-1.5 border-t border-white/10 pt-3 text-xs leading-snug text-slate-200">
+                {homeState === "CA" || homeState === null ? (
+                  <p>{ucMinimumStatus(gpaResult.ucCappedGpa, true)}</p>
+                ) : (
+                  <p>
+                    {ucMinimumStatus(calculateUcNonResidentGpa(inputs).ucCappedGpa, false)} (Your GPA with AP and IB honors
+                    only: {calculateUcNonResidentGpa(inputs).ucCappedGpa.toFixed(2)}.)
+                  </p>
+                )}
+                <p className="text-slate-400">
+                  An estimate. UC calculates your official GPA when you apply, and meeting the minimum isn&apos;t the same as
+                  being admitted.
+                </p>
               </div>
               <p className="mt-3 text-[11px] leading-snug text-slate-400">
                 Only UC schools are compared using your UC-capped GPA. CSU, private, and

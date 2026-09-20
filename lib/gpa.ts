@@ -6,6 +6,18 @@ export interface GpaInputs {
   unweightedGpa: number;
   totalSemesters: number;
   honorsSemesters: number;
+  /**
+   * Optional: how many of the honors semesters were in 10th grade. UC counts at
+   * most 4 honors points from 10th grade. Absent means "not said", and the
+   * limit isn't applied (the tool can't know the split).
+   */
+  honors10Semesters?: number;
+  /**
+   * Optional, for non-California applicants: how many of the honors semesters
+   * were school-designated honors rather than AP or IB. For the 3.4 minimum UC
+   * counts AP and IB honors only.
+   */
+  schoolHonorsSemesters?: number;
   /** Optional total SAT score (400-1600). Absent or out of range means "no score". */
   satScore?: number;
   /** Optional CSU GPA inputs (separate formula from the UC's). */
@@ -91,22 +103,34 @@ export interface UcGpaResult {
   ucCappedGpa: number;
 }
 
+export const UC_MAX_10TH_GRADE_HONORS = 4;
+
+const nonNegative = (n: number | undefined) => (typeof n === "number" && Number.isFinite(n) && n > 0 ? n : 0);
+
 /**
- * UC's official capped-weighted GPA formula: bonus points from honors/AP/IB
- * coursework are capped at 8 semesters (4 year-long courses) across 10th-11th
- * grade, then averaged across the student's total semester count and added
- * to the unweighted GPA.
+ * UC's GPA, per admission.universityofcalifornia.edu/.../gpa-requirement.html:
+ * grade points (A=4 ... D=1) plus one extra point for each honors semester
+ * (at most 8 across 10th and 11th grade, and at most 4 from 10th grade), divided
+ * by the number of letter grades. Written here as unweighted GPA plus
+ * (honors points / semesters), which is the same arithmetic.
+ *
+ * `honors10Semesters`, when given, applies the 10th-grade limit; when it isn't,
+ * only the overall 8 cap applies, since the split isn't known.
  */
 export function calculateUcCappedGpa({
   unweightedGpa,
   totalSemesters,
   honorsSemesters,
+  honors10Semesters,
 }: GpaInputs): UcGpaResult {
   const safeTotalSemesters = Math.max(totalSemesters, 1);
-  const cappedHonorsSemesters = Math.min(
-    Math.max(honorsSemesters, 0),
-    MAX_CAPPED_HONORS_SEMESTERS
-  );
+  const honors = nonNegative(honorsSemesters);
+  let counted = honors;
+  if (honors10Semesters !== undefined) {
+    const tenth = Math.min(nonNegative(honors10Semesters), honors);
+    counted = Math.min(tenth, UC_MAX_10TH_GRADE_HONORS) + (honors - tenth);
+  }
+  const cappedHonorsSemesters = Math.min(counted, MAX_CAPPED_HONORS_SEMESTERS);
   const bonusPoints = cappedHonorsSemesters / safeTotalSemesters;
   const ucCappedGpa = unweightedGpa + bonusPoints;
 
@@ -116,6 +140,31 @@ export function calculateUcCappedGpa({
     bonusPoints,
     ucCappedGpa,
   };
+}
+
+/**
+ * UC GPA for judging the 3.4 minimum for a non-California applicant. UC gives
+ * honors weight to AP and IB courses only, not school-designated honors, for
+ * that check. Estimated as the same calculation with school-designated honors
+ * semesters removed. It's an estimate: UC calculates the official GPA itself,
+ * and the 10th-grade limit isn't split between AP/IB and school honors here.
+ */
+export function calculateUcNonResidentGpa(inputs: GpaInputs): UcGpaResult {
+  const school = Math.min(nonNegative(inputs.schoolHonorsSemesters), nonNegative(inputs.honorsSemesters));
+  return calculateUcCappedGpa({
+    ...inputs,
+    honorsSemesters: Math.max(nonNegative(inputs.honorsSemesters) - school, 0),
+    honors10Semesters: inputs.honors10Semesters === undefined ? undefined : Math.max(nonNegative(inputs.honors10Semesters) - school, 0),
+  });
+}
+
+/** What UC's requirements page says about a UC GPA: 3.0 for California residents, 3.4 for non-residents. */
+export function ucMinimumStatus(gpa: number, resident: boolean): string {
+  const need = resident ? 3.0 : 3.4;
+  const who = resident ? "California residents" : "non-residents";
+  return gpa >= need
+    ? `At or above UC's ${need.toFixed(1)} GPA minimum for ${who}.`
+    : `Below UC's ${need.toFixed(1)} GPA minimum for ${who}.`;
 }
 
 export type PlanningFor = "self" | "student";
