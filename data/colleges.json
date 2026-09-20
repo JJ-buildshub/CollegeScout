@@ -2490,7 +2490,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-southern-california",
@@ -2663,7 +2667,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "santa-clara-university",
@@ -2840,7 +2848,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "massachusetts-institute-of-technology",
@@ -3175,7 +3187,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "harvard-university",
@@ -3342,7 +3358,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "princeton-university",
@@ -3509,7 +3529,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "yale-university",
@@ -3676,7 +3700,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "columbia-university",
@@ -3842,7 +3870,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-pennsylvania",
@@ -4009,7 +4041,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "cornell-university",
@@ -4176,7 +4212,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "brown-university",
@@ -4343,7 +4383,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "dartmouth-college",
@@ -4510,7 +4554,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "california-institute-of-technology",
@@ -4677,7 +4725,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "purdue-university",
@@ -4846,7 +4898,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-illinois-urbana-champaign",
@@ -5016,7 +5072,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-washington",
@@ -5180,7 +5240,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-michigan",
@@ -5351,7 +5415,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "georgia-institute-of-technology",
@@ -5421,7 +5489,7 @@
         "deadline": "October 15"
       },
       {
-        "type": "EA",
+        "type": "EA2",
         "binding": false,
         "deadline": "November 2"
       },
@@ -5524,7 +5592,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-texas-at-austin",
@@ -5694,7 +5766,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "northeastern-university",
@@ -5871,7 +5947,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "pomona-college",
@@ -6051,7 +6131,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "williams-college",
@@ -6215,7 +6299,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "rensselaer-polytechnic-institute",
@@ -6391,7 +6479,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-alabama",
@@ -6775,17 +6867,17 @@
       {
         "type": "ED",
         "binding": true,
-        "deadline": "November 1"
+        "deadline": "November 2"
       },
       {
         "type": "ED2",
         "binding": true,
-        "deadline": "January 1"
+        "deadline": "January 4"
       },
       {
         "type": "RD",
         "binding": false,
-        "deadline": "January 1"
+        "deadline": "January 4"
       }
     ],
     "financials": {
@@ -6883,7 +6975,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "cal-state-fullerton",
@@ -8553,7 +8649,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "harvey-mudd-college",
@@ -8709,7 +8809,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "scripps-college",
@@ -8866,7 +8970,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "occidental-college",
@@ -9028,7 +9136,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "loyola-marymount-university",
@@ -9190,7 +9302,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-san-diego",
@@ -9244,6 +9360,11 @@
         "type": "ED",
         "binding": true,
         "deadline": "November 1"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 5"
       },
       {
         "type": "EA",
@@ -9346,7 +9467,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-san-francisco",
@@ -9508,7 +9633,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "chapman-university",
@@ -9670,7 +9799,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "pepperdine-university",
@@ -9831,7 +9964,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-the-pacific",
@@ -9982,7 +10119,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-redlands",
@@ -10032,6 +10173,16 @@
       ]
     },
     "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "EA2",
+        "binding": false,
+        "deadline": "December 1"
+      },
       {
         "type": "RD",
         "binding": false,
@@ -10129,7 +10280,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "amherst-college",
@@ -10287,7 +10442,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "swarthmore-college",
@@ -10448,7 +10607,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "wellesley-college",
@@ -10610,7 +10773,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "bowdoin-college",
@@ -10771,7 +10938,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "middlebury-college",
@@ -10930,7 +11101,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "carleton-college",
@@ -11091,7 +11266,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "colgate-university",
@@ -11249,7 +11428,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "vassar-college",
@@ -11408,7 +11591,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "hamilton-college",
@@ -11566,7 +11753,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "colby-college",
@@ -11622,9 +11813,19 @@
     },
     "applicationPlans": [
       {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 15"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 4"
+      },
+      {
         "type": "RD",
         "binding": false,
-        "deadline": "January 3, 2027"
+        "deadline": "January 4"
       }
     ],
     "financials": {
@@ -11717,7 +11918,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "bates-college",
@@ -11780,12 +11985,12 @@
       {
         "type": "ED2",
         "binding": true,
-        "deadline": "January 15, 2027"
+        "deadline": "January 10"
       },
       {
         "type": "RD",
         "binding": false,
-        "deadline": "January 15, 2027"
+        "deadline": "January 10"
       }
     ],
     "financials": {
@@ -11878,7 +12083,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "duke-university",
@@ -12032,7 +12241,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-chicago",
@@ -12083,24 +12296,24 @@
     },
     "applicationPlans": [
       {
-        "type": "EA",
-        "binding": false,
-        "deadline": "November 1"
-      },
-      {
         "type": "ED",
         "binding": true,
-        "deadline": "November 1"
+        "deadline": "November 2"
       },
       {
         "type": "ED2",
         "binding": true,
-        "deadline": "January 6"
+        "deadline": "January 4"
+      },
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 2"
       },
       {
         "type": "RD",
         "binding": false,
-        "deadline": "January 5"
+        "deadline": "January 4"
       }
     ],
     "financials": {
@@ -12196,7 +12409,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "northwestern-university",
@@ -12352,7 +12569,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "vanderbilt-university",
@@ -12513,7 +12734,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "rice-university",
@@ -12567,17 +12792,17 @@
       {
         "type": "ED",
         "binding": true,
-        "deadline": null
+        "deadline": "November 1"
       },
       {
         "type": "ED2",
         "binding": true,
-        "deadline": null
+        "deadline": "January 4"
       },
       {
         "type": "RD",
         "binding": false,
-        "deadline": null
+        "deadline": "January 4"
       }
     ],
     "financials": {
@@ -12673,7 +12898,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "johns-hopkins-university",
@@ -12833,7 +13062,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "georgetown-university",
@@ -12991,7 +13224,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "worcester-polytechnic-institute",
@@ -13042,14 +13279,24 @@
     },
     "applicationPlans": [
       {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 5"
+      },
+      {
         "type": "EA",
         "binding": false,
         "deadline": "November 1"
       },
       {
-        "type": "ED",
-        "binding": true,
-        "deadline": "November 1"
+        "type": "EA2",
+        "binding": false,
+        "deadline": "January 5"
       },
       {
         "type": "RD",
@@ -13150,7 +13397,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "case-western-reserve-university",
@@ -13312,7 +13563,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "rochester-institute-of-technology",
@@ -13476,7 +13731,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "stevens-institute-of-technology",
@@ -13527,6 +13786,11 @@
         "type": "ED",
         "binding": true,
         "deadline": "November 15"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 5"
       },
       {
         "type": "EA",
@@ -13632,7 +13896,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-rochester",
@@ -13791,7 +14059,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-north-carolina-chapel-hill",
@@ -13954,7 +14226,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-virginia",
@@ -14026,7 +14302,7 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "January 1"
+        "deadline": "January 5"
       }
     ],
     "financials": {
@@ -14122,7 +14398,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-florida",
@@ -15082,7 +15362,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "rutgers-university",
@@ -15613,6 +15897,11 @@
     },
     "applicationPlans": [
       {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 15"
+      },
+      {
         "type": "RD",
         "binding": false,
         "deadline": "January 15"
@@ -15710,7 +15999,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "texas-am-university",
@@ -15867,7 +16160,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "miami-university-ohio",
@@ -16329,7 +16626,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "southern-methodist-university",
@@ -16380,9 +16681,24 @@
     },
     "applicationPlans": [
       {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 15"
+      },
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
         "type": "RD",
         "binding": false,
-        "deadline": null
+        "deadline": "January 15"
       }
     ],
     "financials": {
@@ -16476,7 +16792,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-denver",
@@ -16527,9 +16847,24 @@
     },
     "applicationPlans": [
       {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 15"
+      },
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
         "type": "RD",
         "binding": false,
-        "deadline": null
+        "deadline": "January 15"
       }
     ],
     "financials": {
@@ -16623,7 +16958,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "elon-university",
@@ -16676,9 +17015,24 @@
     },
     "applicationPlans": [
       {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 15"
+      },
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
         "type": "RD",
         "binding": false,
-        "deadline": null
+        "deadline": "January 10"
       }
     ],
     "financials": {
@@ -16772,7 +17126,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-vermont",
@@ -16826,9 +17184,24 @@
     },
     "applicationPlans": [
       {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 15"
+      },
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
         "type": "RD",
         "binding": false,
-        "deadline": null
+        "deadline": "January 15"
       }
     ],
     "financials": {
@@ -16920,7 +17293,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-delaware",
@@ -16980,9 +17357,14 @@
     },
     "applicationPlans": [
       {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
         "type": "RD",
         "binding": false,
-        "deadline": null
+        "deadline": "January 15"
       }
     ],
     "financials": {
@@ -17075,7 +17457,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "drexel-university",
@@ -17431,9 +17817,14 @@
     },
     "applicationPlans": [
       {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
         "type": "RD",
         "binding": false,
-        "deadline": null
+        "deadline": "January 15"
       }
     ],
     "financials": {
@@ -17526,7 +17917,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "clemson-university",
@@ -17579,9 +17974,14 @@
     },
     "applicationPlans": [
       {
+        "type": "EA",
+        "binding": false,
+        "deadline": "October 15"
+      },
+      {
         "type": "RD",
         "binding": false,
-        "deadline": null
+        "deadline": "January 1"
       }
     ],
     "financials": {
@@ -17674,7 +18074,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "michigan-state-university",
@@ -18181,17 +18585,17 @@
       {
         "type": "ED",
         "binding": true,
-        "deadline": null
+        "deadline": "November 1"
       },
       {
         "type": "ED2",
         "binding": true,
-        "deadline": null
+        "deadline": "January 1"
       },
       {
         "type": "RD",
         "binding": false,
-        "deadline": null
+        "deadline": "January 5"
       }
     ],
     "financials": {
@@ -18291,7 +18695,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-notre-dame",
@@ -18456,7 +18864,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "emory-university",
@@ -18626,7 +19038,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "washington-university-in-st-louis",
@@ -18798,7 +19214,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "boston-university",
@@ -18968,7 +19388,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "tulane-university",
@@ -19140,7 +19564,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "boston-college",
@@ -19310,7 +19738,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-miami",
@@ -19484,7 +19916,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "wake-forest-university",
@@ -19651,7 +20087,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "villanova-university",
@@ -19711,22 +20151,22 @@
       {
         "type": "ED",
         "binding": true,
-        "deadline": null
+        "deadline": "November 1"
       },
       {
         "type": "ED2",
         "binding": true,
-        "deadline": null
+        "deadline": "January 15"
       },
       {
         "type": "EA",
         "binding": false,
-        "deadline": null
+        "deadline": "November 1"
       },
       {
         "type": "RD",
         "binding": false,
-        "deadline": null
+        "deadline": "January 15"
       }
     ],
     "financials": {
@@ -19826,7 +20266,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "university-of-georgia",
@@ -19992,7 +20436,11 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   },
   {
     "id": "syracuse-university",
@@ -20167,6 +20615,10 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
+      "year": "2026-27"
+    }
   }
 ]
