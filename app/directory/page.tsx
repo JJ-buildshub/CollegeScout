@@ -6,7 +6,7 @@ import { Check, Search, SlidersHorizontal, X } from "lucide-react";
 import clsx from "clsx";
 import { colleges, displayedAdmitRate } from "@/lib/colleges";
 import type { CollegeSystem, TestingPolicy } from "@/lib/types";
-import { getInterestById, matchesAllInterests } from "@/lib/interests";
+import { getInterestById, matchesAllInterests, normalizeInterestIds } from "@/lib/interests";
 import CollegeCard from "@/components/CollegeCard";
 
 const SYSTEM_OPTIONS: CollegeSystem[] = ["UC", "CSU", "Private", "Out-of-State Public"];
@@ -50,7 +50,7 @@ function DirectoryContent() {
   const [sortBy, setSortBy] = useState<"admitRateOverall" | "name" | "cost">("name");
   const [interestIds, setInterestIds] = useState<string[]>(() => {
     const raw = searchParams.get("interests");
-    return raw ? raw.split(",").filter(Boolean) : [];
+    return raw ? normalizeInterestIds(raw.split(",").filter(Boolean)) : [];
   });
 
   // Keep the URL in sync so an interest-filtered view stays bookmarkable/shareable

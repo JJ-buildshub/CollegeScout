@@ -183,6 +183,29 @@ export function getInterestById(id: string): Interest | undefined {
   return INTEREST_TAXONOMY.find((i) => i.id === id);
 }
 
+// Interest ids that older shared or bookmarked links may still carry, mapped to
+// the ids that replaced them.
+const LEGACY_INTEREST_IDS: Record<string, string[]> = {
+  science: ["biology"],
+  "art-film-music": ["music-performing", "visual-arts"],
+};
+
+/**
+ * Turns the ids in a link into current ids: retired ids become the ones that
+ * replaced them, unknown ids are dropped, and duplicates are removed. Without
+ * this an old link would select an interest that no longer exists and show an
+ * empty Directory.
+ */
+export function normalizeInterestIds(ids: string[]): string[] {
+  const out: string[] = [];
+  for (const id of ids) {
+    for (const next of LEGACY_INTEREST_IDS[id] ?? [id]) {
+      if (getInterestById(next) && !out.includes(next)) out.push(next);
+    }
+  }
+  return out;
+}
+
 // A "certificate" is a supplementary credential, not a degree pathway — excluding
 // it keeps "One interest. Many paths." focused on programs a student would
 // actually major/minor in, not add-on credentials layered onto an unrelated major.
