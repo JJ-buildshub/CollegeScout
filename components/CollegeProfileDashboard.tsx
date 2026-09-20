@@ -13,6 +13,7 @@ import TestingPolicyBadge from "./TestingPolicyBadge";
 import ApplicationPlanBadges from "./ApplicationPlanBadges";
 import FinancialSnapshot from "./FinancialSnapshot";
 import ApplicationRequirements from "./ApplicationRequirements";
+import AdmissionOverview from "./AdmissionOverview";
 import CampusFitStats from "./CampusFitStats";
 
 const SECTIONS = [
@@ -296,6 +297,9 @@ export default function CollegeProfileDashboard({ college }: { college: College 
           {/* Admissions */}
           <section id="admissions" className={scrollMt}>
             <h2 className="text-lg font-bold text-navy-900">Admissions</h2>
+            <div className="mt-3 empty:hidden">
+              <AdmissionOverview college={college} />
+            </div>
             <div className="mt-3 grid items-start gap-4 lg:grid-cols-2">
               <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
                 <div className={`grid gap-4 ${GRID_COLS_CLASS[admitBoxes.length]}`}>

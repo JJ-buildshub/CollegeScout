@@ -35,6 +35,8 @@ export interface SystemRequirements {
   courseRule: { source: string; text: string };
   courses: { area: string; subject: string; years: number; text: string; source?: string }[];
   sections: SystemSection[];
+  /** Short plain-language rows for the admission overview; `evidence` is the exact page line each one rests on. */
+  overview: { label: string; text: string; source: string; evidence: string }[];
   links: { label: string; url: string }[];
 }
 

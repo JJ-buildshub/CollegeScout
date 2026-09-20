@@ -84,6 +84,9 @@ for (const [system, info] of Object.entries(data.systems)) {
     }
   }
 
+  // Each plain-language overview row must be backed by an exact line on its source page.
+  for (const row of info.overview ?? []) add(row.source, row.evidence);
+
   for (const [source, text] of lines) {
     checked += 1;
     const url = info.sources[source];

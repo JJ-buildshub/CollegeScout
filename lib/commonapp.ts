@@ -22,6 +22,8 @@ export interface CommonAppFacts {
   otherEvaluations?: number;
   counselorRecommendation?: true;
   midYearReport?: true;
+  /** The grid's test policy code: A always required, F flexible, I ignored, N never required, S sometimes required. */
+  testPolicyCode?: "A" | "F" | "I" | "N" | "S";
 }
 
 interface CommonAppFile {

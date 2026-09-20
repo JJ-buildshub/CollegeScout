@@ -187,6 +187,44 @@
      "label": "Local admission and service areas (PDF)",
      "url": "https://www.calstate.edu/apply/counselor-resources/Documents/CSULocalAdmission-ServiceAreas.pdf"
     }
+   ],
+   "overview": [
+    {
+     "label": "GPA levels",
+     "source": "main",
+     "text": "2.50 for California residents and 3.00 for non-residents. Lower ranges can still be evaluated on other factors.",
+     "evidence": "California residents or graduates of California high schools will be eligible for admission by earning a 2.50 or greater \"a-g\" GPA."
+    },
+    {
+     "label": "Which grades count",
+     "source": "calculator",
+     "text": "Your a-g grades from 10th, 11th and 12th grade, with extra points for up to 8 honors semesters.",
+     "evidence": "Look at all your \"a-g\" courses taken after 9th grade (10th-12th grade only)."
+    },
+    {
+     "label": "Test scores",
+     "source": "testing",
+     "text": "SAT and ACT scores aren't used to decide admission.",
+     "evidence": "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses."
+    },
+    {
+     "label": "California residents",
+     "source": "main",
+     "text": "California residents get priority when there isn't room for everyone.",
+     "evidence": "Please note that California residents receive priority whenever admission space is limited."
+    },
+    {
+     "label": "Local admission",
+     "source": "main",
+     "text": "Many campuses give priority to students from local high schools and community colleges.",
+     "evidence": "Many CSU campuses use local admission policies for students who graduate or transfer from high schools and community colleges that are historically served by a CSU campus in that region."
+    },
+    {
+     "label": "Impacted campuses and majors",
+     "source": "main",
+     "text": "Where more people apply than there is space, a campus or major can require higher GPAs and extra criteria.",
+     "evidence": "Campuses and programs designated as impacted may utilize higher \"a-g\" GPA thresholds for applicants, as well as identify supplemental criteria and their relative weights, in making admission decisions."
+    }
    ]
   },
   "UC": {
@@ -406,6 +444,38 @@
     {
      "label": "Out-of-state students",
      "url": "https://admission.universityofcalifornia.edu/admission-requirements/first-year-requirements/out-of-state-students.html"
+    }
+   ],
+   "overview": [
+    {
+     "label": "GPA levels",
+     "source": "gpa",
+     "text": "3.0 for California residents and 3.4 for non-residents, in your a-g classes.",
+     "evidence": "California applicants must earn at least a 3.0 GPA and nonresidents must earn a minimum 3.4 GPA in all A-G or college-preparatory courses to meet this requirement."
+    },
+    {
+     "label": "Which grades count",
+     "source": "gpa",
+     "text": "Your a-g grades from 10th and 11th grade, with an extra point for each honors semester (up to 8).",
+     "evidence": "Convert the letter grades earned in all A-G courses completed between summer after 9th grade through summer after 11th grade to grade points: A=4 points, B=3 points, C=2 points, D=1 points."
+    },
+    {
+     "label": "Test scores",
+     "source": "testing",
+     "text": "SAT and ACT scores aren't considered for admission or scholarships.",
+     "evidence": "UC does not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+    },
+    {
+     "label": "Guaranteed spot",
+     "source": "residents",
+     "text": "Top California students (top 9 percent statewide, or of your own high school) are offered a spot at a UC campus with space if they aren't admitted where they applied.",
+     "evidence": "If you rank in the top 9 percent of your graduating class at a participating California high school, you will be eligible for the local guarantee."
+    },
+    {
+     "label": "California residents",
+     "source": "outOfState",
+     "text": "California residents get priority, and every campus also admits out-of-state students.",
+     "evidence": "As a public institution, we prioritize admission for California residents. However, all of our campuses offer admission to out-of-state students."
     }
    ]
   }
