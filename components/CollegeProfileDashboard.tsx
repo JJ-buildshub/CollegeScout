@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, Award, Briefcase, ExternalLink, MapPin } from "lucide-react";
 import clsx from "clsx";
@@ -26,8 +26,8 @@ const SECTIONS = [
   { id: "campus", label: "Campus" },
 ];
 
-// Offsets are tuned to this page's own sticky stack (site nav + this header,
-// compacted + the section bar). Kept as constants so scroll-margin (used to
+// Offsets are tuned to this page's own sticky stack (site nav + the compact
+// school bar + the section bar). Kept as constants so scroll-margin (used to
 // keep anchor jumps from landing under the sticky stack) and the section
 // bar's own sticky offset stay in sync if these ever change.
 const NAV_HEIGHT = 68;
@@ -37,7 +37,13 @@ const SCROLL_OFFSET = SECTION_BAR_TOP + 56;
 
 export default function CollegeProfileDashboard({ college }: { college: College }) {
   const router = useRouter();
-  const [compact, setCompact] = useState(false);
+  // Whether the full banner has scrolled out of view, which is when the compact
+  // school bar fades in. Driven by an IntersectionObserver, not a scroll
+  // threshold, and nothing on the page changes size when it flips: an earlier
+  // version shrank the header in the page flow at 48px of scroll, which moved
+  // every element below it by 70px and made the page jump and flicker.
+  const bannerRef = useRef<HTMLDivElement>(null);
+  const [showBar, setShowBar] = useState(false);
   const [activeId, setActiveId] = useState(SECTIONS[0].id);
 
   const goBackToDirectory = () => {
@@ -49,10 +55,14 @@ export default function CollegeProfileDashboard({ college }: { college: College 
   };
 
   useEffect(() => {
-    const onScroll = () => setCompact(window.scrollY > 48);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    const banner = bannerRef.current;
+    if (!banner) return;
+    const observer = new IntersectionObserver(([entry]) => setShowBar(!entry.isIntersecting), {
+      rootMargin: `-${NAV_HEIGHT}px 0px 0px 0px`,
+      threshold: 0,
+    });
+    observer.observe(banner);
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
@@ -127,6 +137,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
         college.outcomesProvenance,
         college.costProvenance,
         college.applicationPlansProvenance,
+        college.testingPolicyProvenance,
         college.scorecard?.tuitionInState.provenance,
         college.scorecard?.tuitionOutOfState.provenance,
       ]
@@ -138,47 +149,54 @@ export default function CollegeProfileDashboard({ college }: { college: College 
   return (
     <SourceNotes.Provider value={sourceNotes}>
     <div>
-      {/* Sticky school header, positioned below the site nav (68px). */}
+      {/* Full banner: normal page content that scrolls away. Its size never changes. */}
       <div
-        className={`sticky z-40 -mx-4 border-b border-black/10 px-4 transition-[padding] duration-200 sm:-mx-6 sm:px-6 ${SYSTEM_ACCENT[college.system].banner}`}
-        style={{ top: NAV_HEIGHT, paddingTop: compact ? 8 : 16, paddingBottom: compact ? 8 : 16 }}
+        ref={bannerRef}
+        className={`-mx-4 border-b border-black/10 px-4 py-4 sm:-mx-6 sm:px-6 ${SYSTEM_ACCENT[college.system].banner}`}
       >
         <div className="mx-auto max-w-5xl">
-          {compact ? (
-            <div className="flex items-center justify-between gap-3">
-              <div className="flex min-w-0 items-center gap-2">
-                <SystemBadge system={college.system} />
-                <h1 className="truncate text-sm font-bold text-white">{college.name}</h1>
-              </div>
-              <div className="flex shrink-0 items-center gap-2">
-                <WebsiteButton website={college.website} compact />
-                <SaveToggleButton collegeId={college.id} />
-              </div>
-            </div>
-          ) : (
-            <div className="flex flex-wrap items-start justify-between gap-3">
-              <div className="min-w-0">
-                <button
-                  type="button"
-                  onClick={goBackToDirectory}
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/90 hover:text-white"
-                >
-                  <ArrowLeft className="h-3.5 w-3.5" /> Back to Directory
-                </button>
-                <div className="mt-1.5 text-xs font-bold tracking-wide text-white/90">{college.system}</div>
-                <h1 className="mt-0.5 text-xl font-extrabold tracking-tight text-white sm:text-2xl">
-                  {college.name}
-                </h1>
-                <div className="mt-0.5 flex items-center gap-1 text-xs text-white/90">
-                  <MapPin className="h-3.5 w-3.5" /> {college.location}
-                </div>
-              </div>
-              <div className="flex shrink-0 items-center gap-2">
-                <WebsiteButton website={college.website} />
-                <SaveToggleButton collegeId={college.id} />
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div className="min-w-0">
+              <button
+                type="button"
+                onClick={goBackToDirectory}
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/90 hover:text-white"
+              >
+                <ArrowLeft className="h-3.5 w-3.5" /> Back to Directory
+              </button>
+              <div className="mt-1.5 text-xs font-bold tracking-wide text-white/90">{college.system}</div>
+              <h1 className="mt-0.5 text-xl font-extrabold tracking-tight text-white sm:text-2xl">{college.name}</h1>
+              <div className="mt-0.5 flex items-center gap-1 text-xs text-white/90">
+                <MapPin className="h-3.5 w-3.5" /> {college.location}
               </div>
             </div>
-          )}
+            <div className="flex shrink-0 items-center gap-2">
+              <WebsiteButton website={college.website} />
+              <SaveToggleButton collegeId={college.id} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Compact bar. Sits right after the banner with a negative bottom margin, so it
+          takes no space in the layout; it sticks under the site nav once scrolled and
+          fades in when the banner has left the screen. Hidden with visibility, so it
+          can't be tabbed to or read while it's not showing. */}
+      <div
+        className={`sticky z-40 -mx-4 -mb-14 h-14 border-b border-black/10 px-4 transition-[opacity,visibility] duration-150 sm:-mx-6 sm:px-6 ${
+          SYSTEM_ACCENT[college.system].banner
+        } ${showBar ? "visible opacity-100" : "invisible opacity-0"}`}
+        style={{ top: NAV_HEIGHT }}
+      >
+        <div className="mx-auto flex h-full max-w-5xl items-center justify-between gap-3">
+          <div className="flex min-w-0 items-center gap-2">
+            <SystemBadge system={college.system} />
+            <div className="truncate text-sm font-bold text-white">{college.name}</div>
+          </div>
+          <div className="flex shrink-0 items-center gap-2">
+            <WebsiteButton website={college.website} compact />
+            <SaveToggleButton collegeId={college.id} />
+          </div>
         </div>
       </div>
 
@@ -236,7 +254,11 @@ export default function CollegeProfileDashboard({ college }: { college: College 
             <div className="text-[11px] font-semibold tracking-wide text-slate-600">Test Policy</div>
             <div className="mt-1.5">
               <TestingPolicyBadge policy={college.testingPolicy} />
+              <SourceMark provenance={college.testingPolicyProvenance} />
             </div>
+            {college.testingPolicyNote && (
+              <p className="mt-1.5 text-[11px] leading-snug text-slate-500">{college.testingPolicyNote}</p>
+            )}
           </div>
         </div>
         <p className="mt-3 text-xs text-slate-400">
@@ -551,7 +573,10 @@ function sourceLabel(provenance?: FieldProvenance | null): string | null {
   if (!provenance?.source && !provenance?.year) return null;
   const source = provenance?.source ? readableSource(provenance.source) : "Source not recorded";
   const year = provenance?.year ?? "Year not recorded";
-  return `${source} \u00b7 ${year}`;
+  const accessed = provenance?.accessed
+    ? ` \u00b7 accessed ${new Date(`${provenance.accessed}T00:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" })}`
+    : "";
+  return `${source} \u00b7 ${year}${accessed}`;
 }
 
 // Footnote symbols, in order of first appearance on the page. Most profiles
