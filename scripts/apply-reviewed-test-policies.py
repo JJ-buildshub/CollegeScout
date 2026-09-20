@@ -49,6 +49,8 @@ def main():
             "year": reviewed["cycle"],
             "accessed": reviewed["accessed"],
         }
+        if entry.get("provenanceNote"):
+            c["testingPolicyProvenance"]["note"] = entry["provenanceNote"]
 
     print(f"\n{len(reviewed['schools'])} schools.")
     if apply:
