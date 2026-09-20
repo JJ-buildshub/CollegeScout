@@ -1,6 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import type { College } from "@/lib/types";
 import { getApplicationInfo, type WritingItem } from "@/lib/applications";
+import SystemRequirementsCard from "./SystemRequirementsCard";
 import { COMMON_APP_SOURCE, getCommonAppFacts, type CommonAppFacts } from "@/lib/commonapp";
 
 function WritingCard({ item }: { item: WritingItem }) {
@@ -111,10 +112,12 @@ function CommonAppCard({ facts }: { facts: CommonAppFacts }) {
 export default function ApplicationRequirements({ college }: { college: College }) {
   const info = getApplicationInfo(college.id);
   const facts = getCommonAppFacts(college.id);
+  const systemCard = college.system === "CSU" ? <SystemRequirementsCard system="CSU" /> : null;
 
   if (!info) {
     return (
       <div className="max-w-3xl space-y-3">
+        {systemCard}
         {facts && <CommonAppCard facts={facts} />}
       <div className="max-w-2xl rounded-2xl border border-dashed border-slate-300 bg-white p-6">
         <div className="text-sm font-bold text-navy-900">Essays and prompts</div>
@@ -148,6 +151,7 @@ export default function ApplicationRequirements({ college }: { college: College 
         )}
       </div>
 
+      {systemCard && <div className="mt-5">{systemCard}</div>}
       {facts && (
         <div className="mt-5">
           <CommonAppCard facts={facts} />

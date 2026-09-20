@@ -1,0 +1,161 @@
+{
+ "note": "Requirements that apply to every campus in a system, quoted from the system's own pages. Each line is the page's exact wording; scripts/check-system-requirements.mjs verifies them against the live pages.",
+ "systems": {
+  "CSU": {
+   "title": "CSU freshman admission requirements",
+   "appliesTo": "All CSU campuses",
+   "checked": "2026-09-19",
+   "pageNote": "The page's banner offers the Fall 2027 application.",
+   "sources": {
+    "main": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/admission-requirements.aspx",
+    "testing": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+    "calculator": "https://www.calstate.edu/apply/gpa-calculator"
+   },
+   "courseRule": {
+    "source": "main",
+    "text": "The CSU requires a minimum 15-unit pattern of courses for admission as a first-time freshman. Each unit is equal to a year of study in a subject area. A grade of C or better is required for each course you use to meet any subject requirement."
+   },
+   "courses": [
+    {
+     "area": "a",
+     "subject": "History and Social Science",
+     "years": 2,
+     "text": "1 year of social science AND 1 year of U.S. history or 1 semester of U.S. history and 1 semester of civics or American government"
+    },
+    {
+     "area": "b",
+     "subject": "English",
+     "years": 4,
+     "text": "4 years of college preparatory English composition and literature"
+    },
+    {
+     "area": "c",
+     "subject": "Math",
+     "years": 3,
+     "text": "3 years of college preparatory math including or integrating topics covered in algebra, geometry, and intermediate algebra. 4 years highly recommended."
+    },
+    {
+     "area": "d",
+     "subject": "Laboratory Science",
+     "years": 2,
+     "text": "2 years of college preparatory science required with laboratory [1 biological and 1 physical]. Integrated science and interdisciplinary courses can meet this requirement."
+    },
+    {
+     "area": "e",
+     "subject": "Language Other Than English",
+     "years": 2,
+     "text": "2 years or through the second level of the same language or 2 one-year courses in different languages. American Sign Language and classical languages such as Latin and Greek are acceptable."
+    },
+    {
+     "area": "f",
+     "subject": "Visual and Performing Arts",
+     "years": 1,
+     "text": "1 yearlong course or 2 semester courses in dance, music, theatre, visual arts, or interdisciplinary arts."
+    },
+    {
+     "area": "g",
+     "subject": "College Preparatory Elective",
+     "years": 1,
+     "text": "additional year chosen from the University of California \"a-g\" list"
+    }
+   ],
+   "gpa": {
+    "source": "main",
+    "lines": [
+     "Your high school grade point average is calculated using your grades in all your college prep \"a-g\" classes completed after the 9th grade.",
+     "California residents or graduates of California high schools will be eligible for admission by earning a 2.50 or greater \"a-g\" GPA.",
+     "Any California high school graduate or resident of California earning a GPA between 2.00 and 2.49 may be evaluated for admission based upon supplemental factors.",
+     "Non-California residents may be eligible for admission to the CSU by earning a 3.00 or greater \"a-g\" GPA along with other supplemental factors utilized by the individual campus, including those outlined by impacted campuses and programs.",
+     "Any non-California high school graduate earning a GPA between 2.47 and 2.99 may be evaluated for admission based upon supplemental factors.",
+     "Campuses and programs designated as impacted may utilize higher \"a-g\" GPA thresholds for applicants, as well as identify supplemental criteria and their relative weights, in making admission decisions."
+    ]
+   },
+   "supplementalFactors": {
+    "source": "main",
+    "intro": "Supplemental Factors that campuses may use include:",
+    "items": [
+     "Number of courses exceeding minimum \"a-g\" requirements",
+     "GPA in math and or science courses",
+     "Household income",
+     "Extracurricular and leadership involvement",
+     "Educational program participation in high school"
+    ]
+   },
+   "honors": {
+    "source": "main",
+    "lines": [
+     "The CSU assigns extra points for up to eight semesters of approved honors level, International Baccalaureate (IB) and Advanced Placement (AP) courses taken in the last three years of high school.",
+     "A = 5, B = 4, C = 3",
+     "Maximum of 2 semesters (2 honors points) may count toward the total.",
+     "Only grades of C- or better earn honors credit."
+    ],
+    "labels": [
+     "Extra points",
+     "Grade points for approved honors, IB or AP courses",
+     "10th grade honors courses",
+     "Grades that earn honors credit"
+    ]
+   },
+   "graduation": {
+    "source": "main",
+    "lines": [
+     "To be eligible for admission to the CSU, applicants must have graduated from high school and earned a high school diploma or equivalent.",
+     "Acceptable alternatives include the General Education Development (GED) test, the High School Equivalency Test (HiSET), or the Test Assessing Secondary Completion (TASC)."
+    ]
+   },
+   "residency": {
+    "source": "main",
+    "text": "Please note that California residents receive priority whenever admission space is limited."
+   },
+   "testing": {
+    "source": "testing",
+    "text": "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses."
+   },
+   "links": [
+    {
+     "label": "CSU admission requirements (official page)",
+     "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/admission-requirements.aspx"
+    },
+    {
+     "label": "CSU GPA calculator",
+     "url": "https://www.calstate.edu/apply/gpa-calculator"
+    },
+    {
+     "label": "Impacted majors and campuses search",
+     "url": "https://www.calstate.edu/attend/degrees-certificates-credentials/Pages/impacted-degrees.aspx"
+    },
+    {
+     "label": "Supplemental factors by campus",
+     "url": "https://www.calstate.edu/apply/freshman/Pages/first-time-freshman-supplemental-factors-by-campus.aspx"
+    },
+    {
+     "label": "Local admission and service areas (PDF)",
+     "url": "https://www.calstate.edu/apply/counselor-resources/Documents/CSULocalAdmission-ServiceAreas.pdf"
+    }
+   ],
+   "gpaMethod": {
+    "source": "calculator",
+    "intro": "Your CSU \"a-g\" grade point average (GPA) is calculated based on all grades earned after 9th grade. Credit and No Credit grades are not included in the calculation.",
+    "steps": [
+     {
+      "title": "Count your grades",
+      "lines": [
+       "Look at all your \"a-g\" courses taken after 9th grade (10th-12th grade only).",
+       "For each grade you earned (A, B, C, D, or F), count how many times you received that grade.",
+       "Ignore pluses and minuses."
+      ]
+     },
+     {
+      "title": "Count your honors, AP, IB and college courses",
+      "lines": [
+       "Count how many of these courses you completed with a C or better.",
+       "You can only use up to 8 semesters total for extra honors points.",
+       "Of the 8 honors points, only 2 semesters from 10th grade can be counted for honors credit (2 points).",
+       "For college courses, each semester grade counts twice."
+      ]
+     }
+    ]
+   }
+  }
+ }
+}
