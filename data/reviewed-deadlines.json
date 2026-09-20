@@ -316,6 +316,420 @@
     }
    ],
    "provenanceNote": "Early Action read on KU's official Spanish admissions site (es.admissions.ku.edu/apply and /early-action). The English /early-action page returns 'Access Denied' to automated requests, and the English apply page's deadline list omits the Early Action row. Early Action is non-binding by definition; the pages don't call KU rolling, so no Rolling plan is stored."
+  },
+  "uc-berkeley": {
+   "label": "University of California admissions (system-wide dates)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1 - 30 Fall 2027 admission application filing period."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30"
+    }
+   ],
+   "note": "System-wide Fall 2027 first-year dates; one application covers all nine campuses. Page lists the filing period as Nov 1-30; the UC Quick Reference Guide (Aug 2026, p. 60) says it begins Oct. 1 and goes through Nov. 30. Both agree on Nov 30."
+  },
+  "ucla": {
+   "label": "University of California admissions (system-wide dates)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1 - 30 Fall 2027 admission application filing period."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30"
+    }
+   ],
+   "note": "System-wide Fall 2027 first-year dates; one application covers all nine campuses. Page lists the filing period as Nov 1-30; the UC Quick Reference Guide (Aug 2026, p. 60) says it begins Oct. 1 and goes through Nov. 30. Both agree on Nov 30."
+  },
+  "uc-san-diego": {
+   "label": "University of California admissions (system-wide dates)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1 - 30 Fall 2027 admission application filing period."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30"
+    }
+   ],
+   "note": "System-wide Fall 2027 first-year dates; one application covers all nine campuses. Page lists the filing period as Nov 1-30; the UC Quick Reference Guide (Aug 2026, p. 60) says it begins Oct. 1 and goes through Nov. 30. Both agree on Nov 30."
+  },
+  "uc-davis": {
+   "label": "University of California admissions (system-wide dates)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1 - 30 Fall 2027 admission application filing period."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30"
+    }
+   ],
+   "note": "System-wide Fall 2027 first-year dates; one application covers all nine campuses. Page lists the filing period as Nov 1-30; the UC Quick Reference Guide (Aug 2026, p. 60) says it begins Oct. 1 and goes through Nov. 30. Both agree on Nov 30."
+  },
+  "uc-irvine": {
+   "label": "University of California admissions (system-wide dates)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1 - 30 Fall 2027 admission application filing period."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30"
+    }
+   ],
+   "note": "System-wide Fall 2027 first-year dates; one application covers all nine campuses. Page lists the filing period as Nov 1-30; the UC Quick Reference Guide (Aug 2026, p. 60) says it begins Oct. 1 and goes through Nov. 30. Both agree on Nov 30."
+  },
+  "uc-santa-barbara": {
+   "label": "University of California admissions (system-wide dates)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1 - 30 Fall 2027 admission application filing period."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30"
+    }
+   ],
+   "note": "System-wide Fall 2027 first-year dates; one application covers all nine campuses. Page lists the filing period as Nov 1-30; the UC Quick Reference Guide (Aug 2026, p. 60) says it begins Oct. 1 and goes through Nov. 30. Both agree on Nov 30."
+  },
+  "uc-santa-cruz": {
+   "label": "University of California admissions (system-wide dates)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1 - 30 Fall 2027 admission application filing period."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30"
+    }
+   ],
+   "note": "System-wide Fall 2027 first-year dates; one application covers all nine campuses. Page lists the filing period as Nov 1-30; the UC Quick Reference Guide (Aug 2026, p. 60) says it begins Oct. 1 and goes through Nov. 30. Both agree on Nov 30."
+  },
+  "uc-riverside": {
+   "label": "University of California admissions (system-wide dates)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1 - 30 Fall 2027 admission application filing period."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30"
+    }
+   ],
+   "note": "System-wide Fall 2027 first-year dates; one application covers all nine campuses. Page lists the filing period as Nov 1-30; the UC Quick Reference Guide (Aug 2026, p. 60) says it begins Oct. 1 and goes through Nov. 30. Both agree on Nov 30."
+  },
+  "uc-merced": {
+   "label": "University of California admissions (system-wide dates)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1 - 30 Fall 2027 admission application filing period."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30"
+    }
+   ],
+   "note": "System-wide Fall 2027 first-year dates; one application covers all nine campuses. Page lists the filing period as Nov 1-30; the UC Quick Reference Guide (Aug 2026, p. 60) says it begins Oct. 1 and goes through Nov. 30. Both agree on Nov 30."
+  },
+  "cal-poly-san-luis-obispo": {
+   "label": "CSU application dates and deadlines (system-wide)",
+   "url": "https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 August 1, 2026 - November 30, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30",
+     "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
+    }
+   ],
+   "provenanceNote": "Priority filing period for Fall 2027; it can vary by enrollment type or campus.",
+   "note": "System-wide Fall 2027 priority filing period; corroborated by the CSU Freshman Application Guide 2027-2028 (Priority Deadline Nov 30 2026)."
+  },
+  "san-jose-state-university": {
+   "label": "CSU application dates and deadlines (system-wide)",
+   "url": "https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 August 1, 2026 - November 30, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30",
+     "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
+    }
+   ],
+   "provenanceNote": "Priority filing period for Fall 2027; it can vary by enrollment type or campus.",
+   "note": "System-wide Fall 2027 priority filing period; corroborated by the CSU Freshman Application Guide 2027-2028 (Priority Deadline Nov 30 2026)."
+  },
+  "san-diego-state-university": {
+   "label": "CSU application dates and deadlines (system-wide)",
+   "url": "https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 August 1, 2026 - November 30, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30",
+     "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
+    }
+   ],
+   "provenanceNote": "Priority filing period for Fall 2027; it can vary by enrollment type or campus.",
+   "note": "System-wide Fall 2027 priority filing period; corroborated by the CSU Freshman Application Guide 2027-2028 (Priority Deadline Nov 30 2026)."
+  },
+  "cal-poly-pomona": {
+   "label": "CSU application dates and deadlines (system-wide)",
+   "url": "https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 August 1, 2026 - November 30, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30",
+     "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
+    }
+   ],
+   "provenanceNote": "Priority filing period for Fall 2027; it can vary by enrollment type or campus.",
+   "note": "System-wide Fall 2027 priority filing period; corroborated by the CSU Freshman Application Guide 2027-2028 (Priority Deadline Nov 30 2026)."
+  },
+  "csu-long-beach": {
+   "label": "CSU application dates and deadlines (system-wide)",
+   "url": "https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 August 1, 2026 - November 30, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30",
+     "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
+    }
+   ],
+   "provenanceNote": "Priority filing period for Fall 2027; it can vary by enrollment type or campus.",
+   "note": "System-wide Fall 2027 priority filing period; corroborated by the CSU Freshman Application Guide 2027-2028 (Priority Deadline Nov 30 2026)."
+  },
+  "cal-state-fullerton": {
+   "label": "CSU application dates and deadlines (system-wide)",
+   "url": "https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 August 1, 2026 - November 30, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30",
+     "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
+    }
+   ],
+   "provenanceNote": "Priority filing period for Fall 2027; it can vary by enrollment type or campus.",
+   "note": "System-wide Fall 2027 priority filing period; corroborated by the CSU Freshman Application Guide 2027-2028 (Priority Deadline Nov 30 2026)."
+  },
+  "sacramento-state": {
+   "label": "CSU application dates and deadlines (system-wide)",
+   "url": "https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 August 1, 2026 - November 30, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30",
+     "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
+    }
+   ],
+   "provenanceNote": "Priority filing period for Fall 2027; it can vary by enrollment type or campus.",
+   "note": "System-wide Fall 2027 priority filing period; corroborated by the CSU Freshman Application Guide 2027-2028 (Priority Deadline Nov 30 2026)."
+  },
+  "cal-state-northridge": {
+   "label": "CSU application dates and deadlines (system-wide)",
+   "url": "https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 August 1, 2026 - November 30, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30",
+     "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
+    }
+   ],
+   "provenanceNote": "Priority filing period for Fall 2027; it can vary by enrollment type or campus.",
+   "note": "System-wide Fall 2027 priority filing period; corroborated by the CSU Freshman Application Guide 2027-2028 (Priority Deadline Nov 30 2026)."
+  },
+  "cal-state-la": {
+   "label": "CSU application dates and deadlines (system-wide)",
+   "url": "https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 August 1, 2026 - November 30, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30",
+     "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
+    }
+   ],
+   "provenanceNote": "Priority filing period for Fall 2027; it can vary by enrollment type or campus.",
+   "note": "System-wide Fall 2027 priority filing period; corroborated by the CSU Freshman Application Guide 2027-2028 (Priority Deadline Nov 30 2026)."
+  },
+  "san-francisco-state": {
+   "label": "CSU application dates and deadlines (system-wide)",
+   "url": "https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 August 1, 2026 - November 30, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30",
+     "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
+    }
+   ],
+   "provenanceNote": "Priority filing period for Fall 2027; it can vary by enrollment type or campus.",
+   "note": "System-wide Fall 2027 priority filing period; corroborated by the CSU Freshman Application Guide 2027-2028 (Priority Deadline Nov 30 2026)."
+  },
+  "sonoma-state": {
+   "label": "CSU application dates and deadlines (system-wide)",
+   "url": "https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 August 1, 2026 - November 30, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30",
+     "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
+    }
+   ],
+   "provenanceNote": "Priority filing period for Fall 2027; it can vary by enrollment type or campus.",
+   "note": "System-wide Fall 2027 priority filing period; corroborated by the CSU Freshman Application Guide 2027-2028 (Priority Deadline Nov 30 2026)."
+  },
+  "cal-state-east-bay": {
+   "label": "CSU application dates and deadlines (system-wide)",
+   "url": "https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 August 1, 2026 - November 30, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30",
+     "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
+    }
+   ],
+   "provenanceNote": "Priority filing period for Fall 2027; it can vary by enrollment type or campus.",
+   "note": "System-wide Fall 2027 priority filing period; corroborated by the CSU Freshman Application Guide 2027-2028 (Priority Deadline Nov 30 2026)."
+  },
+  "fresno-state": {
+   "label": "CSU application dates and deadlines (system-wide)",
+   "url": "https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 August 1, 2026 - November 30, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30",
+     "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
+    }
+   ],
+   "provenanceNote": "Priority filing period for Fall 2027; it can vary by enrollment type or campus.",
+   "note": "System-wide Fall 2027 priority filing period; corroborated by the CSU Freshman Application Guide 2027-2028 (Priority Deadline Nov 30 2026)."
+  },
+  "chico-state": {
+   "label": "CSU application dates and deadlines (system-wide)",
+   "url": "https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 August 1, 2026 - November 30, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30",
+     "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
+    }
+   ],
+   "provenanceNote": "Priority filing period for Fall 2027; it can vary by enrollment type or campus.",
+   "note": "System-wide Fall 2027 priority filing period; corroborated by the CSU Freshman Application Guide 2027-2028 (Priority Deadline Nov 30 2026)."
+  },
+  "cal-poly-humboldt": {
+   "label": "CSU application dates and deadlines (system-wide)",
+   "url": "https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 August 1, 2026 - November 30, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 30",
+     "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
+    }
+   ],
+   "provenanceNote": "Priority filing period for Fall 2027; it can vary by enrollment type or campus.",
+   "note": "System-wide Fall 2027 priority filing period; corroborated by the CSU Freshman Application Guide 2027-2028 (Priority Deadline Nov 30 2026)."
   }
  }
 }

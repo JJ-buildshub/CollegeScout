@@ -162,7 +162,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of California admissions (system-wide dates) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "ucla",
@@ -329,7 +334,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of California admissions (system-wide dates) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "uc-san-diego",
@@ -496,7 +506,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of California admissions (system-wide dates) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "uc-davis",
@@ -662,7 +677,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of California admissions (system-wide dates) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "uc-irvine",
@@ -830,7 +850,12 @@
       }
     },
     "admitRateOverallSuperseded": true,
-    "admitRateSplitSuperseded": true
+    "admitRateSplitSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of California admissions (system-wide dates) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "uc-santa-barbara",
@@ -998,7 +1023,12 @@
       }
     },
     "admitRateOverallSuperseded": true,
-    "admitRateSplitSuperseded": true
+    "admitRateSplitSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of California admissions (system-wide dates) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "uc-santa-cruz",
@@ -1166,7 +1196,12 @@
       }
     },
     "admitRateOverallSuperseded": true,
-    "admitRateSplitSuperseded": true
+    "admitRateSplitSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of California admissions (system-wide dates) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "uc-riverside",
@@ -1334,7 +1369,12 @@
       }
     },
     "admitRateOverallSuperseded": true,
-    "admitRateSplitSuperseded": true
+    "admitRateSplitSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of California admissions (system-wide dates) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "uc-merced",
@@ -1501,7 +1541,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of California admissions (system-wide dates) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "cal-poly-san-luis-obispo",
@@ -1568,7 +1613,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "November 30"
+        "deadline": "November 30",
+        "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
       }
     ],
     "financials": {
@@ -1665,7 +1711,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "CSU application dates and deadlines (system-wide) (https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Priority filing period for Fall 2027; it can vary by enrollment type or campus."
+    }
   },
   {
     "id": "san-jose-state-university",
@@ -1732,7 +1784,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "November 30"
+        "deadline": "November 30",
+        "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
       }
     ],
     "financials": {
@@ -1831,7 +1884,13 @@
       }
     },
     "admitRateOverallSuperseded": true,
-    "admitRateSplitSuperseded": true
+    "admitRateSplitSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "CSU application dates and deadlines (system-wide) (https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Priority filing period for Fall 2027; it can vary by enrollment type or campus."
+    }
   },
   {
     "id": "san-diego-state-university",
@@ -1898,7 +1957,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "November 30"
+        "deadline": "November 30",
+        "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
       }
     ],
     "financials": {
@@ -1995,7 +2055,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "CSU application dates and deadlines (system-wide) (https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Priority filing period for Fall 2027; it can vary by enrollment type or campus."
+    }
   },
   {
     "id": "cal-poly-pomona",
@@ -2062,7 +2128,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "November 30"
+        "deadline": "November 30",
+        "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
       }
     ],
     "financials": {
@@ -2159,7 +2226,13 @@
       }
     },
     "admitRateOverallSuperseded": true,
-    "admitRateSplitSuperseded": true
+    "admitRateSplitSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "CSU application dates and deadlines (system-wide) (https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Priority filing period for Fall 2027; it can vary by enrollment type or campus."
+    }
   },
   {
     "id": "csu-long-beach",
@@ -2226,7 +2299,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "November 30"
+        "deadline": "November 30",
+        "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
       }
     ],
     "financials": {
@@ -2322,7 +2396,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "CSU application dates and deadlines (system-wide) (https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Priority filing period for Fall 2027; it can vary by enrollment type or campus."
+    }
   },
   {
     "id": "stanford-university",
@@ -7048,7 +7128,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "November 30"
+        "deadline": "November 30",
+        "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
       }
     ],
     "financials": {
@@ -7142,7 +7223,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "CSU application dates and deadlines (system-wide) (https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Priority filing period for Fall 2027; it can vary by enrollment type or campus."
+    }
   },
   {
     "id": "sacramento-state",
@@ -7200,7 +7287,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "November 30"
+        "deadline": "November 30",
+        "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
       }
     ],
     "financials": {
@@ -7294,7 +7382,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "CSU application dates and deadlines (system-wide) (https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Priority filing period for Fall 2027; it can vary by enrollment type or campus."
+    }
   },
   {
     "id": "cal-state-northridge",
@@ -7352,7 +7446,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "November 30"
+        "deadline": "November 30",
+        "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
       }
     ],
     "financials": {
@@ -7446,7 +7541,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "CSU application dates and deadlines (system-wide) (https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Priority filing period for Fall 2027; it can vary by enrollment type or campus."
+    }
   },
   {
     "id": "cal-state-la",
@@ -7503,7 +7604,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "November 30"
+        "deadline": "November 30",
+        "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
       }
     ],
     "financials": {
@@ -7597,7 +7699,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "CSU application dates and deadlines (system-wide) (https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Priority filing period for Fall 2027; it can vary by enrollment type or campus."
+    }
   },
   {
     "id": "san-francisco-state",
@@ -7654,7 +7762,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "November 30"
+        "deadline": "November 30",
+        "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
       }
     ],
     "financials": {
@@ -7748,7 +7857,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "CSU application dates and deadlines (system-wide) (https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Priority filing period for Fall 2027; it can vary by enrollment type or campus."
+    }
   },
   {
     "id": "sonoma-state",
@@ -7805,7 +7920,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "November 30"
+        "deadline": "November 30",
+        "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
       }
     ],
     "financials": {
@@ -7899,7 +8015,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "CSU application dates and deadlines (system-wide) (https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Priority filing period for Fall 2027; it can vary by enrollment type or campus."
+    }
   },
   {
     "id": "cal-state-east-bay",
@@ -7956,7 +8078,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "November 30"
+        "deadline": "November 30",
+        "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
       }
     ],
     "financials": {
@@ -8050,7 +8173,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "CSU application dates and deadlines (system-wide) (https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Priority filing period for Fall 2027; it can vary by enrollment type or campus."
+    }
   },
   {
     "id": "fresno-state",
@@ -8107,7 +8236,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "November 30"
+        "deadline": "November 30",
+        "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
       }
     ],
     "financials": {
@@ -8201,7 +8331,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "CSU application dates and deadlines (system-wide) (https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Priority filing period for Fall 2027; it can vary by enrollment type or campus."
+    }
   },
   {
     "id": "chico-state",
@@ -8258,7 +8394,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "November 30"
+        "deadline": "November 30",
+        "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
       }
     ],
     "financials": {
@@ -8352,7 +8489,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "CSU application dates and deadlines (system-wide) (https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Priority filing period for Fall 2027; it can vary by enrollment type or campus."
+    }
   },
   {
     "id": "cal-poly-humboldt",
@@ -8409,7 +8552,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "November 30"
+        "deadline": "November 30",
+        "note": "This is the priority filing period (August 1 to November 30, 2026). It can vary by campus and major, so check each campus."
       }
     ],
     "financials": {
@@ -8503,7 +8647,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "CSU application dates and deadlines (system-wide) (https://www.calstate.edu/apply/pages/application-dates-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Priority filing period for Fall 2027; it can vary by enrollment type or campus."
+    }
   },
   {
     "id": "claremont-mckenna-college",
