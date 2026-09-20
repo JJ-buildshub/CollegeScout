@@ -112,7 +112,8 @@ function CommonAppCard({ facts }: { facts: CommonAppFacts }) {
 export default function ApplicationRequirements({ college }: { college: College }) {
   const info = getApplicationInfo(college.id);
   const facts = getCommonAppFacts(college.id);
-  const systemCard = college.system === "CSU" ? <SystemRequirementsCard system="CSU" /> : null;
+  const systemCard =
+    college.system === "CSU" || college.system === "UC" ? <SystemRequirementsCard system={college.system} /> : null;
 
   if (!info) {
     return (

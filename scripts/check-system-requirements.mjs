@@ -65,31 +65,35 @@ async function pageText(url) {
 let checked = 0;
 let failed = 0;
 for (const [system, info] of Object.entries(data.systems)) {
-  const lines = [];
+  const lines = []; // [source key, exact text]
   const add = (source, text) => text && lines.push([source, text]);
+
   add(info.courseRule.source, info.courseRule.text);
-  for (const c of info.courses) add("main", c.text);
-  for (const l of info.gpa.lines) add(info.gpa.source, l);
-  add(info.supplementalFactors.source, info.supplementalFactors.intro);
-  for (const i of info.supplementalFactors.items) add(info.supplementalFactors.source, i);
-  for (const l of info.honors.lines) add(info.honors.source, l);
-  for (const l of info.graduation.lines) add(info.graduation.source, l);
-  add(info.residency.source, info.residency.text);
-  add(info.testing.source, info.testing.text);
-  if (info.gpaMethod) {
-    add(info.gpaMethod.source, info.gpaMethod.intro);
-    for (const step of info.gpaMethod.steps) for (const l of step.lines) add(info.gpaMethod.source, l);
+  for (const c of info.courses) add(c.source ?? info.courseRule.source, c.text);
+  for (const section of info.sections) {
+    const own = section.source;
+    if (section.kind === "lines") {
+      for (const l of section.lines) typeof l === "string" ? add(own, l) : add(l.source, l.text);
+    } else if (section.kind === "steps") {
+      add(own, section.intro);
+      for (const step of section.steps) for (const l of step.lines) add(own, l);
+      if (section.labeled) for (const l of section.labeled.lines) add(section.labeled.source, l);
+    } else if (section.kind === "bullets") {
+      add(own, section.intro);
+      for (const i of section.items) add(own, i);
+    }
   }
 
   for (const [source, text] of lines) {
     checked += 1;
-    const page = await pageText(info.sources[source]);
+    const url = info.sources[source];
+    const page = url ? await pageText(url) : null;
     if (page === null) {
       failed += 1;
-      console.log(`[${system}] could not load ${info.sources[source]}`);
+      console.log(`[${system}] could not load source "${source}" (${url})`);
     } else if (!page.includes(normalize(text))) {
       failed += 1;
-      console.log(`[${system}] NOT FOUND on ${source} page: "${text.slice(0, 80)}..."`);
+      console.log(`[${system}] NOT FOUND on "${source}" page: "${text.slice(0, 80)}..."`);
     }
   }
 }
