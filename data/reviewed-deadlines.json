@@ -1,5 +1,5 @@
 {
- "note": "Application plans reviewed against each school's own admissions page, with the exact page line each one rests on. Applied to colleges.json by scripts/apply-reviewed-deadlines.py; verified against the live pages by scripts/check-reviewed-deadlines.mjs. Left out on purpose: Kansas (its early-action page could not be read), and Alabama and Pitt (their existing entries already match their pages and carry extra scholarship context that a bare date would lose).",
+ "note": "Application plans reviewed against each school's own admissions page, with the exact page line each one rests on. Applied to colleges.json by scripts/apply-reviewed-deadlines.py; verified against the live pages by scripts/check-reviewed-deadlines.mjs. Left out on purpose: Alabama and Pitt (their existing entries already match their pages and carry extra scholarship context that a bare date would lose). A school's `note` is review commentary shown in the dry run only; `provenanceNote` is what gets stored on the record.",
  "checked": "2026-09-19",
  "cycle": "2026-27",
  "schools": {
@@ -299,6 +299,23 @@
      "deadline": "Priority admission date November 1; regular admission date February 1"
     }
    ]
+  },
+  "university-of-kansas": {
+   "label": "University of Kansas admissions (Spanish site)",
+   "url": "https://es.admissions.ku.edu/apply",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "1 de nov. Fecha límite de Early action para Freshman 1 de dic. Fecha límite para becas para Freshman"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1",
+     "note": "The freshman scholarship deadline is a separate date: December 1."
+    }
+   ],
+   "provenanceNote": "Early Action read on KU's official Spanish admissions site (es.admissions.ku.edu/apply and /early-action). The English /early-action page returns 'Access Denied' to automated requests, and the English apply page's deadline list omits the Early Action row. Early Action is non-binding by definition; the pages don't call KU rolling, so no Rolling plan is stored."
   }
  }
 }

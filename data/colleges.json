@@ -3885,7 +3885,7 @@
     "admitRateOverall": 0.054,
     "inStateAdmitRate": 0.06,
     "outOfStateAdmitRate": 0.05,
-    "testingPolicy": "Test-Optional",
+    "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "3.93 - 4.00",
     "mid50_GPA_UCCapped": "N/A (Private)",
     "mid50_SAT": "1510 - 1570",
@@ -4045,6 +4045,12 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "testingPolicyNote": "A hardship waiver is available.",
+    "testingPolicyProvenance": {
+      "source": "Penn Admissions (https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
     }
   },
   {
@@ -6146,7 +6152,7 @@
     "admitRateOverall": 0.086,
     "inStateAdmitRate": 0.086,
     "outOfStateAdmitRate": 0.086,
-    "testingPolicy": "Test-Required",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1490 - 1550",
@@ -6303,6 +6309,11 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "testingPolicyProvenance": {
+      "source": "Williams admission (https://www.williams.edu/admission-aid/how-to-apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
     }
   },
   {
@@ -9317,7 +9328,7 @@
     "admitRateOverall": 0.52,
     "inStateAdmitRate": 0.52,
     "outOfStateAdmitRate": 0.52,
-    "testingPolicy": "Test-Optional",
+    "testingPolicy": "Test-Blind",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -9471,6 +9482,12 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "testingPolicyNote": "USD calls this \"test-free\": scores are not viewed.",
+    "testingPolicyProvenance": {
+      "source": "University of San Diego admission (https://www.sandiego.edu/admission-and-aid/undergraduate/apply/test-free.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
     }
   },
   {
@@ -14585,7 +14602,7 @@
     "admitRateOverall": 0.61,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Test-Optional",
+    "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1310-1480",
@@ -14740,6 +14757,12 @@
     "applicationPlansProvenance": {
       "source": "Ohio State admissions (https://undergrad.osu.edu/apply/freshmen-columbus/apply-step-by-step)",
       "year": "2026-27"
+    },
+    "testingPolicyNote": "Columbus campus. Applicants two or more years out of high school aren't required to submit scores. Regional campuses have their own application pages.",
+    "testingPolicyProvenance": {
+      "source": "Ohio State admissions (https://undergrad.osu.edu/apply/freshmen-columbus/apply-step-by-step)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
     }
   },
   {
@@ -18561,9 +18584,10 @@
     },
     "applicationPlans": [
       {
-        "type": "Rolling",
+        "type": "EA",
         "binding": false,
-        "deadline": "Rolling admission; December 1 priority for freshman scholarship consideration, February 1 FAFSA priority"
+        "deadline": "November 1",
+        "note": "The freshman scholarship deadline is a separate date: December 1."
       }
     ],
     "financials": {
@@ -18656,7 +18680,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "University of Kansas admissions (https://admissions.ku.edu/apply)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of Kansas admissions (Spanish site) (https://es.admissions.ku.edu/apply)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Early Action read on KU's official Spanish admissions site (es.admissions.ku.edu/apply and /early-action). The English /early-action page returns 'Access Denied' to automated requests, and the English apply page's deadline list omits the Early Action row. Early Action is non-binding by definition; the pages don't call KU rolling, so no Rolling plan is stored."
+    }
   },
   {
     "id": "new-york-university",

@@ -1,0 +1,52 @@
+{
+ "note": "Test policies confirmed against each school's own admissions page, with the exact page line each rests on. The school's page decides; the Common App grid is only a fallback. Applied to colleges.json by scripts/apply-reviewed-test-policies.py and verified by scripts/check-reviewed-test-policies.mjs. `manual` means the page blocks automated requests and was read in a browser on the accessed date.",
+ "accessed": "2026-09-20",
+ "cycle": "2026-27",
+ "schools": {
+  "university-of-pennsylvania": {
+   "policy": "Test-Required",
+   "label": "Penn Admissions",
+   "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing",
+   "evidence": [
+    "Penn applicants are required to submit scores for the SAT or ACT. Applicants who face hardship in meeting this requirement can submit a waiver instead."
+   ],
+   "note": "A hardship waiver is available."
+  },
+  "ohio-state-university": {
+   "policy": "Test-Required",
+   "label": "Ohio State admissions",
+   "url": "https://undergrad.osu.edu/apply/freshmen-columbus/apply-step-by-step",
+   "evidence": [
+    "Yes, standardized test scores from ACT or SAT are required for first-year applicants to the Columbus campus.",
+    "applicants who will have been out of high school for two or more years by their term of enrollment are not required to submit scores"
+   ],
+   "note": "Columbus campus. Applicants two or more years out of high school aren't required to submit scores. Regional campuses have their own application pages."
+  },
+  "williams-college": {
+   "policy": "Test-Optional",
+   "label": "Williams admission",
+   "url": "https://www.williams.edu/admission-aid/how-to-apply/",
+   "evidence": [
+    "Williams is truly test optional, so it's entirely up to you whether you submit exam results for the SAT or ACT."
+   ],
+   "manual": true
+  },
+  "university-of-san-diego": {
+   "policy": "Test-Blind",
+   "label": "University of San Diego admission",
+   "url": "https://www.sandiego.edu/admission-and-aid/undergraduate/apply/test-free.php",
+   "evidence": [
+    "As a “test-free ” campus, we pledge not to view an incoming student’s standardized tests during the admissions process."
+   ],
+   "note": "USD calls this \"test-free\": scores are not viewed."
+  },
+  "university-of-kansas": {
+   "policy": "Test-Optional",
+   "label": "University of Kansas admissions",
+   "url": "https://admissions.ku.edu/apply",
+   "evidence": [
+    "The University of Kansas is test optional."
+   ]
+  }
+ }
+}
