@@ -8,6 +8,80 @@ export interface GpaInputs {
   honorsSemesters: number;
   /** Optional total SAT score (400-1600). Absent or out of range means "no score". */
   satScore?: number;
+  /** Optional CSU GPA inputs (separate formula from the UC's). */
+  csu?: CsuGpaInputs;
+}
+
+export interface CsuGpaInputs {
+  /** How many A, B, C, D and F grades in "a-g" courses taken after 9th grade (pluses and minuses ignored). */
+  a: number;
+  b: number;
+  c: number;
+  d: number;
+  f: number;
+  /** Honors/AP/IB semesters taken in 10th grade, completed with a C or better. */
+  honors10: number;
+  /** Honors/AP/IB semesters taken in 11th and 12th grade, completed with a C or better. */
+  honors1112: number;
+}
+
+export const CSU_MAX_HONORS_SEMESTERS = 8;
+export const CSU_MAX_10TH_GRADE_HONORS = 2;
+
+export interface CsuGpaResult {
+  /** null until at least one grade is entered. */
+  gpa: number | null;
+  gradeCount: number;
+  gradePoints: number;
+  honorsPoints: number;
+}
+
+/**
+ * CSU "a-g" GPA. calstate.edu/apply/gpa-calculator describes the inputs:
+ * grades from all a-g courses after 9th grade (10th-12th), pluses/minuses
+ * ignored, extra points for up to 8 semesters of honors/AP/IB/college courses
+ * of which at most 2 semesters may be from 10th grade. The arithmetic isn't
+ * written out on that page, so it was confirmed against CSU's own calculator
+ * with test numbers on 2026-09-19 (see scripts/check-csu-gpa.mts):
+ *   (4A + 3B + 2C + 1D + 0F + honors points) / number of grades.
+ * College-course semesters count twice; the student adds those to the grade
+ * counts as CSU instructs (a B in a college class is entered as two B's).
+ */
+export function calculateCsuGpa(input: CsuGpaInputs): CsuGpaResult {
+  const clean = (n: number) => (Number.isFinite(n) && n > 0 ? Math.floor(n) : 0);
+  const gradeCount = clean(input.a) + clean(input.b) + clean(input.c) + clean(input.d) + clean(input.f);
+  const gradePoints = 4 * clean(input.a) + 3 * clean(input.b) + 2 * clean(input.c) + clean(input.d);
+  const honorsPoints = Math.min(
+    Math.min(clean(input.honors10), CSU_MAX_10TH_GRADE_HONORS) + clean(input.honors1112),
+    CSU_MAX_HONORS_SEMESTERS
+  );
+  return {
+    gpa: gradeCount === 0 ? null : (gradePoints + honorsPoints) / gradeCount,
+    gradeCount,
+    gradePoints,
+    honorsPoints,
+  };
+}
+
+/**
+ * What CSU's admission-requirements page says about a given a-g GPA. Only the
+ * ranges the page lists are described; outside them the page says nothing, so
+ * neither do we. `residency` null means unknown, so both are returned.
+ */
+export function csuGpaStatus(gpa: number): { residents: string; nonResidents: string } {
+  const residents =
+    gpa >= 2.5
+      ? "At or above CSU's 2.50 GPA level for California residents."
+      : gpa >= 2.0
+        ? "In CSU's 2.00 to 2.49 range for California residents, where campuses may evaluate applicants on supplemental factors."
+        : "Below the GPA range CSU's page lists for California residents.";
+  const nonResidents =
+    gpa >= 3.0
+      ? "At or above CSU's 3.00 GPA level for non-residents."
+      : gpa >= 2.47
+        ? "In CSU's 2.47 to 2.99 range for non-residents, where campuses may evaluate applicants on supplemental factors."
+        : "Below the GPA range CSU's page lists for non-residents.";
+  return { residents, nonResidents };
 }
 
 export interface UcGpaResult {

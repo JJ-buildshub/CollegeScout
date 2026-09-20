@@ -114,6 +114,7 @@ export default function MatcherPage() {
   const [homeState, setHomeState] = useState<string | null>(null);
   const [showResidencyOverride, setShowResidencyOverride] = useState(false);
   const [ucSectionOpen, setUcSectionOpen] = useState(false);
+  const [csuSectionOpen, setCsuSectionOpen] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -132,6 +133,7 @@ export default function MatcherPage() {
       if (savedHomeState) {
         setHomeState(savedHomeState);
         setUcSectionOpen(savedHomeState === "CA");
+        setCsuSectionOpen(savedHomeState === "CA");
       }
     } catch {
       // ignore malformed/unavailable storage
@@ -264,6 +266,7 @@ export default function MatcherPage() {
               // freely toggleable afterward, this is just what a new state
               // selection resets to.
               setUcSectionOpen(next === "CA");
+              setCsuSectionOpen(next === "CA");
             }}
             className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 outline-none focus:ring-2 focus:ring-gold-500"
           >
@@ -285,6 +288,9 @@ export default function MatcherPage() {
             gpaResult={gpaResult}
             ucSectionOpen={ucSectionOpen}
             onToggleUcSection={() => setUcSectionOpen((v) => !v)}
+            csuSectionOpen={csuSectionOpen}
+            onToggleCsuSection={() => setCsuSectionOpen((v) => !v)}
+            homeState={homeState}
           />
 
           <AcademicCalibrator />

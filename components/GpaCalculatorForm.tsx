@@ -1,7 +1,14 @@
 "use client";
 
 import { ChevronDown, Info } from "lucide-react";
-import { validSatScore, type GpaInputs, type UcGpaResult } from "@/lib/gpa";
+import {
+  calculateCsuGpa,
+  csuGpaStatus,
+  validSatScore,
+  type CsuGpaInputs,
+  type GpaInputs,
+  type UcGpaResult,
+} from "@/lib/gpa";
 
 interface Props {
   inputs: GpaInputs;
@@ -9,6 +16,37 @@ interface Props {
   gpaResult: UcGpaResult;
   ucSectionOpen: boolean;
   onToggleUcSection: () => void;
+  csuSectionOpen: boolean;
+  onToggleCsuSection: () => void;
+  homeState: string | null;
+}
+
+const EMPTY_CSU: CsuGpaInputs = { a: 0, b: 0, c: 0, d: 0, f: 0, honors10: 0, honors1112: 0 };
+
+function CountField({
+  label,
+  value,
+  onChange,
+}: {
+  label: string;
+  value: number;
+  onChange: (v: number) => void;
+}) {
+  return (
+    <label className="block text-center">
+      <span className="text-xs font-semibold text-slate-600">{label}</span>
+      <input
+        type="number"
+        inputMode="numeric"
+        min={0}
+        step={1}
+        value={value === 0 ? "" : value}
+        placeholder="0"
+        onChange={(e) => onChange(e.target.value === "" ? 0 : Math.max(0, parseInt(e.target.value, 10) || 0))}
+        className="mt-1 w-full rounded-lg border border-slate-200 px-2 py-2 text-center text-sm outline-none focus:ring-2 focus:ring-gold-500"
+      />
+    </label>
+  );
 }
 
 function NumberField({
@@ -52,7 +90,14 @@ export default function GpaCalculatorForm({
   gpaResult,
   ucSectionOpen,
   onToggleUcSection,
+  csuSectionOpen,
+  onToggleCsuSection,
+  homeState,
 }: Props) {
+  const csu = inputs.csu ?? EMPTY_CSU;
+  const setCsu = (patch: Partial<CsuGpaInputs>) => onChange({ ...inputs, csu: { ...csu, ...patch } });
+  const csuResult = calculateCsuGpa(csu);
+  const csuStatus = csuResult.gpa === null ? null : csuGpaStatus(csuResult.gpa);
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
       <h2 className="text-base font-bold text-navy-900">Your GPA and test score</h2>
@@ -170,6 +215,84 @@ export default function GpaCalculatorForm({
                 Only UC schools are compared using your UC-capped GPA. CSU, private, and
                 out-of-state schools are compared using your unweighted GPA, because that&apos;s
                 the number they report.
+              </p>
+            </div>
+          </div>
+        )}
+      </div>
+
+      <div className="mt-5 border-t border-slate-100 pt-4">
+        <button
+          type="button"
+          onClick={onToggleCsuSection}
+          aria-expanded={csuSectionOpen}
+          className="flex w-full items-center justify-between gap-2 text-left"
+        >
+          <span className="text-sm font-semibold text-navy-900">Applying to a CSU? Calculate your CSU GPA.</span>
+          <ChevronDown
+            className={`h-4 w-4 shrink-0 text-slate-400 transition-transform ${csuSectionOpen ? "rotate-180" : ""}`}
+          />
+        </button>
+
+        {csuSectionOpen && (
+          <div className="mt-4 space-y-5">
+            <p className="flex items-start gap-1.5 text-xs text-slate-500">
+              <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+              The CSU counts every &quot;a-g&quot; grade after 9th grade, so 10th, 11th and 12th grade. Ignore pluses
+              and minuses (a B+ is a B). Count each college-course semester twice, as CSU does (a B in a college class
+              is two B&apos;s).
+            </p>
+            <div>
+              <div className="text-sm font-semibold text-navy-900">How many of each grade?</div>
+              <div className="mt-2 grid grid-cols-5 gap-2">
+                <CountField label="A" value={csu.a} onChange={(v) => setCsu({ a: v })} />
+                <CountField label="B" value={csu.b} onChange={(v) => setCsu({ b: v })} />
+                <CountField label="C" value={csu.c} onChange={(v) => setCsu({ c: v })} />
+                <CountField label="D" value={csu.d} onChange={(v) => setCsu({ d: v })} />
+                <CountField label="F" value={csu.f} onChange={(v) => setCsu({ f: v })} />
+              </div>
+            </div>
+            <div>
+              <div className="text-sm font-semibold text-navy-900">Honors, AP, IB and college semesters</div>
+              <p className="mt-0.5 text-xs text-slate-400">
+                Only semesters you finished with a C or better. Up to 8 count, and no more than 2 from 10th grade.
+              </p>
+              <div className="mt-2 grid grid-cols-2 gap-2">
+                <CountField label="In 10th grade" value={csu.honors10} onChange={(v) => setCsu({ honors10: v })} />
+                <CountField label="In 11th and 12th" value={csu.honors1112} onChange={(v) => setCsu({ honors1112: v })} />
+              </div>
+            </div>
+
+            <div className="rounded-xl bg-navy-900 p-4 text-white">
+              <div className="text-xs font-semibold tracking-wide text-slate-300">Your CSU a-g GPA</div>
+              <div className="mt-1 text-3xl font-extrabold text-gold-400">
+                {csuResult.gpa === null ? "\u2014" : csuResult.gpa.toFixed(2)}
+              </div>
+              {csuResult.gpa !== null && (
+                <div className="mt-3 space-y-1 text-xs text-slate-300">
+                  <div className="flex justify-between">
+                    <span>Grades counted</span>
+                    <span className="font-semibold text-white">{csuResult.gradeCount}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Grade points</span>
+                    <span className="font-semibold text-white">{csuResult.gradePoints}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Honors points counted</span>
+                    <span className="font-semibold text-white">{csuResult.honorsPoints} / 8 max</span>
+                  </div>
+                </div>
+              )}
+              {csuStatus && (
+                <div className="mt-3 space-y-1.5 border-t border-white/10 pt-3 text-xs leading-snug text-slate-200">
+                  {(homeState === "CA" || homeState === null) && <p>{csuStatus.residents}</p>}
+                  {(homeState !== "CA" || homeState === null) && <p>{csuStatus.nonResidents}</p>}
+                </div>
+              )}
+              <p className="mt-3 text-[11px] leading-snug text-slate-400">
+                Meeting a GPA level isn&apos;t the same as being admitted. Impacted campuses and majors set higher
+                GPAs and use supplemental factors. This matches CSU&apos;s own GPA calculator; use it to double-check.
               </p>
             </div>
           </div>
