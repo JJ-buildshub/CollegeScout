@@ -9,6 +9,7 @@ Inputs (unzipped IPEDS Data Center files, 2023 collection):
   ADM2023.csv   admissions (applicants, admitted, SAT/ACT)
   EF2023A.csv   fall enrollment
   C2023_A.csv   completions (bachelor's degrees by field)
+  EF2023A_DIST.csv  distance-education enrollment (schools where half or more of undergraduates are online-only are excluded)
 
     python scripts/build-expansion-candidates.py <folder with the four csv files>
 
@@ -99,6 +100,13 @@ def main():
         # EFALEVEL 2 = all students, undergraduate total
         if s and r["EFALEVEL"].strip() == "2":
             s["ug"] = num(r["EFTOTLT"])
+    # Share of undergraduates enrolled exclusively in distance education (EF2023A_DIST, level 2).
+    # Schools where most undergraduates study only online are left out: this is a campus-based directory.
+    for r in read(folder, "ef2023a_dist.csv", "EF2023A_DIST.csv"):
+        s = schools.get(r["UNITID"])
+        if s and r["EFDELEV"].strip() == "2":
+            exc, som, non = num(r["EFDEEXC"]) or 0, num(r["EFDESOM"]) or 0, num(r["EFDENON"]) or 0
+            s["online_share"] = round(exc / (exc + som + non), 3) if exc + som + non > 0 else None
     deg = defaultdict(lambda: defaultdict(float))
     total_deg = defaultdict(float)
     for r in read(folder, "C2023_a.csv", "C2023_A.csv"):
@@ -119,7 +127,9 @@ def main():
         s["band"] = band(s.get("admit_rate"))
         s["layers"] = []
 
-    pool = [s for s in schools.values() if s["ug"] >= 1500 and s["total_degrees"] >= 200]
+    MOSTLY_ONLINE = 0.5
+    dropped = [s for s in schools.values() if (s.get("online_share") or 0) >= MOSTLY_ONLINE]
+    pool = [s for s in schools.values() if s["ug"] >= 1500 and s["total_degrees"] >= 200 and (s.get("online_share") or 0) < MOSTLY_ONLINE]
     chosen = {}
 
     def pick(layer, candidates, limit, per_state=None, key=None):
@@ -191,7 +201,7 @@ def main():
 
     # D: music, art, design and film specialists (most arts degrees, plus schools where arts dominate)
     arts = lambda s: s["degrees"]["performing-arts"] + s["degrees"]["visual-arts"]
-    c = sorted([s for s in schools.values() if s["ug"] >= 300 and s["total_degrees"] >= 60 and arts(s) >= 40], key=lambda s: -(arts(s) / max(s["total_degrees"], 1)))
+    c = sorted([s for s in schools.values() if s["ug"] >= 300 and s["total_degrees"] >= 60 and arts(s) >= 40 and (s.get("online_share") or 0) < MOSTLY_ONLINE], key=lambda s: -(arts(s) / max(s["total_degrees"], 1)))
     pick("D arts specialist", c, 14)
     for f in ("performing-arts", "visual-arts"):
         c = sorted([s for s in pool if s["degrees"][f] >= 40], key=lambda s: -s["degrees"][f])
