@@ -27216,5 +27216,6124 @@
       }
     },
     "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "illinois-state-university",
+    "name": "Illinois State University",
+    "system": "Public",
+    "location": "Normal, IL",
+    "state": "IL",
+    "website": "https://illinoisstate.edu",
+    "admitRateOverall": 0.8815,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1010-1230 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 34309,
+      "coaOutOfState": 46375,
+      "netPriceCalculatorUrl": "https://financialaid.illinoisstate.edu/paying",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 18450,
+      "setting": "Suburban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 145813,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 19398,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 11568,
+          "30001-48000": 12301,
+          "48001-75000": 16348,
+          "75001-110000": 23865,
+          "110001-plus": 28224
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6454,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 19057,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 16144,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 28210,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.8815,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "school-of-the-art-institute-of-chicago",
+    "name": "School of the Art Institute of Chicago",
+    "system": "Private",
+    "location": "Chicago, IL",
+    "state": "IL",
+    "website": "https://www.saic.edu",
+    "admitRateOverall": 0.7747,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "N/A (Not reported)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 75625,
+      "coaOutOfState": 75625,
+      "netPriceCalculatorUrl": "https://www.shoppingsheet.com/shopping/landing/143048",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 2762,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 143048,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 49790,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 43798,
+          "30001-48000": 39845,
+          "48001-75000": 46708,
+          "75001-110000": 49595,
+          "110001-plus": 55790
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6699,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 2805,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 56420,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 56420,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.7747,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "university-of-illinois-chicago",
+    "name": "University of Illinois Chicago",
+    "system": "Public",
+    "location": "Chicago, IL",
+    "state": "IL",
+    "website": "https://www.uic.edu",
+    "admitRateOverall": 0.7735,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1120-1340 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 27521,
+      "coaOutOfState": 43067,
+      "netPriceCalculatorUrl": "https://financialaid.uic.edu/cost/cost-attendance-coa/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 22107,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 145600,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 10974,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 7529,
+          "30001-48000": 8119,
+          "48001-75000": 10921,
+          "75001-110000": 16185,
+          "110001-plus": 25047
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6162,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 22170,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 14338,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 29884,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.7735,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "ball-state-university",
+    "name": "Ball State University",
+    "system": "Public",
+    "location": "Muncie, IN",
+    "state": "IN",
+    "website": "https://www.bsu.edu",
+    "admitRateOverall": 0.855,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1080-1250 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 26146,
+      "coaOutOfState": 44694,
+      "netPriceCalculatorUrl": "https://bsu.studentaidcalculator.com/survey.aspx",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 14874,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 150136,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 14940,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 7834,
+          "30001-48000": 9848,
+          "48001-75000": 14333,
+          "75001-110000": 19567,
+          "110001-plus": 23479
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6234,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 13988,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 11082,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 29630,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.855,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "indiana-university-indianapolis",
+    "name": "Indiana University-Indianapolis",
+    "system": "Public",
+    "location": "Indianapolis, IN",
+    "state": "IN",
+    "website": "https://indianapolis.iu.edu",
+    "admitRateOverall": 0.7637,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1040-1230 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 23316,
+      "coaOutOfState": 47445,
+      "netPriceCalculatorUrl": "https://indianapolis.iu.edu/cost-aid/cost-of-attendance/net-price-calculator.html",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 17037,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 151111,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 11668,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 5701,
+          "30001-48000": 5995,
+          "48001-75000": 11038,
+          "75001-110000": 18056,
+          "110001-plus": 20680
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.5445,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 13830,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 10762,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 34891,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.7637,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "marian-university",
+    "name": "Marian University",
+    "system": "Private",
+    "location": "Indianapolis, IN",
+    "state": "IN",
+    "website": "https://www.marian.edu",
+    "admitRateOverall": 0.9546,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "N/A (Not reported)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 56258,
+      "coaOutOfState": 56258,
+      "netPriceCalculatorUrl": "https://www.marian.edu/admissions/tuition-and-fees",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 2492,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 151786,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 24018,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 23195,
+          "30001-48000": 19896,
+          "48001-75000": 21690,
+          "75001-110000": 26092,
+          "110001-plus": 26671
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6722,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 2266,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 40664,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 40664,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.9546,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "emporia-state-university",
+    "name": "Emporia State University",
+    "system": "Public",
+    "location": "Emporia, KS",
+    "state": "KS",
+    "website": "https://www.emporia.edu",
+    "admitRateOverall": 0.9771,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "N/A (Not reported)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 21967,
+      "coaOutOfState": 30280,
+      "netPriceCalculatorUrl": "https://www.emporia.edu/financial-aid/financial-information-consumers/net-price-calculator-tool/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 2412,
+      "setting": "Small City",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 155025,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 16261,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 11452,
+          "30001-48000": 11905,
+          "48001-75000": 14229,
+          "75001-110000": 18994,
+          "110001-plus": 19531
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.561,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 2239,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 7106,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 15419,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.9771,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "kansas-state-university",
+    "name": "Kansas State University",
+    "system": "Public",
+    "location": "Manhattan, KS",
+    "state": "KS",
+    "website": "https://www.k-state.edu",
+    "admitRateOverall": 0.8169,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1040-1260 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 27402,
+      "coaOutOfState": 44749,
+      "netPriceCalculatorUrl": "https://www.k-state.edu/sfa/cost/net-price-calculator/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 15113,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 155399,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 19406,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 13178,
+          "30001-48000": 14143,
+          "48001-75000": 15369,
+          "75001-110000": 20110,
+          "110001-plus": 23665
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.7108,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 15142,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 11221,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 28568,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.8169,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "wichita-state-university",
+    "name": "Wichita State University",
+    "system": "Public",
+    "location": "Wichita, KS",
+    "state": "KS",
+    "website": "https://www.wichita.edu",
+    "admitRateOverall": 0.9395,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "970-1250 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 21780,
+      "coaOutOfState": 31965,
+      "netPriceCalculatorUrl": "https://webapps.wichita.edu/netprice/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 12856,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 156125,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 13194,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 9734,
+          "30001-48000": 9696,
+          "48001-75000": 13564,
+          "75001-110000": 16893,
+          "110001-plus": 19184
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.5103,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 10780,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 9684,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 19869,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.9395,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "eastern-kentucky-university",
+    "name": "Eastern Kentucky University",
+    "system": "Public",
+    "location": "Richmond, KY",
+    "state": "KY",
+    "website": "https://www.eku.edu",
+    "admitRateOverall": 0.7761,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "930-1190 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 23735,
+      "coaOutOfState": 34645,
+      "netPriceCalculatorUrl": "https://application.eku.edu/register/sai_npc",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 12726,
+      "setting": "Small City",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 156620,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 11040,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 8591,
+          "30001-48000": 8005,
+          "48001-75000": 10382,
+          "75001-110000": 14384,
+          "110001-plus": 17009
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.5004,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 12318,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 10320,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 21230,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.7761,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "university-of-kentucky",
+    "name": "University of Kentucky",
+    "system": "Public",
+    "location": "Lexington, KY",
+    "state": "KY",
+    "website": "https://www.uky.edu",
+    "admitRateOverall": 0.9294,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1080-1290 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 34391,
+      "coaOutOfState": 55029,
+      "netPriceCalculatorUrl": "https://uky.clearcostcalculator.com/student/default/netpricecalculator/survey",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 23930,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 157085,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 18851,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 12182,
+          "30001-48000": 12119,
+          "48001-75000": 16313,
+          "75001-110000": 21192,
+          "110001-plus": 26781
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.7142,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 24763,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 13502,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 34140,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.9294,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "university-of-louisville",
+    "name": "University of Louisville",
+    "system": "Public",
+    "location": "Louisville, KY",
+    "state": "KY",
+    "website": "https://www.louisville.edu",
+    "admitRateOverall": 0.7941,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1020-1250 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 32941,
+      "coaOutOfState": 49287,
+      "netPriceCalculatorUrl": "https://louisville.edu/financialaid/estimate-my-costs-calculators",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 16194,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 157289,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 17988,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 15138,
+          "30001-48000": 14601,
+          "48001-75000": 16419,
+          "75001-110000": 20995,
+          "110001-plus": 25186
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6123,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 14727,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 13136,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 29482,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.7941,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "western-kentucky-university",
+    "name": "Western Kentucky University",
+    "system": "Public",
+    "location": "Bowling Green, KY",
+    "state": "KY",
+    "website": "https://www.wku.edu",
+    "admitRateOverall": 0.9387,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "820-1010 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 24188,
+      "coaOutOfState": 39536,
+      "netPriceCalculatorUrl": "https://tcc.ruffalonl.com/Western Kentucky University/Freshman-Students",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 14590,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 157951,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 10990,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 7087,
+          "30001-48000": 6871,
+          "48001-75000": 9765,
+          "75001-110000": 14049,
+          "110001-plus": 17653
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.5556,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 12155,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 11652,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 27000,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.9387,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "louisiana-state-university-and-agricultural-and-mechanical-college",
+    "name": "Louisiana State University and Agricultural & Mechanical College",
+    "system": "Public",
+    "location": "Baton Rouge, LA",
+    "state": "LA",
+    "website": "https://www.lsu.edu",
+    "admitRateOverall": 0.7333,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1150-1330 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 34705,
+      "coaOutOfState": 51382,
+      "netPriceCalculatorUrl": "https://www.lsu.edu/financialaid/cost/net_price_calculator.php",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 32574,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 159391,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 19151,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 13056,
+          "30001-48000": 15696,
+          "48001-75000": 20223,
+          "75001-110000": 23878,
+          "110001-plus": 26489
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6881,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 30594,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 11954,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 28631,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.7333,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "southeastern-louisiana-university",
+    "name": "Southeastern Louisiana University",
+    "system": "Public",
+    "location": "Hammond, LA",
+    "state": "LA",
+    "website": "https://www.southeastern.edu",
+    "admitRateOverall": 0.9931,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "N/A (Not reported)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 23604,
+      "coaOutOfState": 36082,
+      "netPriceCalculatorUrl": "https://www.southeastern.edu/admin/fin_aid/cost/net_price_calculator/index.html",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 12684,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 160612,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 13154,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 10507,
+          "30001-48000": 10309,
+          "48001-75000": 12380,
+          "75001-110000": 16672,
+          "110001-plus": 18184
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.4541,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 9514,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 8373,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 20851,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.9931,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "university-of-louisiana-at-lafayette",
+    "name": "University of Louisiana at Lafayette",
+    "system": "Public",
+    "location": "Lafayette, LA",
+    "state": "LA",
+    "website": "https://www.louisiana.edu",
+    "admitRateOverall": 0.8701,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1120-1255 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 24884,
+      "coaOutOfState": 38612,
+      "netPriceCalculatorUrl": "https://louisiana.edu/admissions-aid/costs-financial-aid",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 13179,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 160658,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 13530,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 11157,
+          "30001-48000": 11283,
+          "48001-75000": 13692,
+          "75001-110000": 17079,
+          "110001-plus": 18562
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.5263,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 12428,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 10418,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 24146,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.8701,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "babson-college",
+    "name": "Babson College",
+    "system": "Private",
+    "location": "Wellesley, MA",
+    "state": "MA",
+    "website": "https://www.babson.edu",
+    "admitRateOverall": 0.1709,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1380-1500 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 80192,
+      "coaOutOfState": 80192,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/babson",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 2752,
+      "setting": "Suburban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 164580,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 40514,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 23641,
+          "30001-48000": 17077,
+          "48001-75000": 16861,
+          "75001-110000": 55470,
+          "110001-plus": 80192
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.9312,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 2728,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 57152,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 57152,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.1709,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "berklee-college-of-music",
+    "name": "Berklee College of Music",
+    "system": "Private",
+    "location": "Boston, MA",
+    "state": "MA",
+    "website": "https://www.berklee.edu",
+    "admitRateOverall": 0.4353,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "N/A (Not reported)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 72700,
+      "coaOutOfState": 72700,
+      "netPriceCalculatorUrl": "https://www.berklee.edu/paying-for-your-education/net-price-calculator",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 7608,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 164748,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 49465,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 42734,
+          "30001-48000": 37987,
+          "48001-75000": 47799,
+          "75001-110000": 46801,
+          "110001-plus": 54676
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6731,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 7468,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 52040,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 52040,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.4353,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "brandeis-university",
+    "name": "Brandeis University",
+    "system": "Private",
+    "location": "Waltham, MA",
+    "state": "MA",
+    "website": "https://www.brandeis.edu",
+    "admitRateOverall": 0.405,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1390-1530 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 86448,
+      "coaOutOfState": 86448,
+      "netPriceCalculatorUrl": "https://www.brandeis.edu/student-financial-services/affordability.html",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 3675,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 165015,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 35736,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 13363,
+          "30001-48000": 15135,
+          "48001-75000": 20536,
+          "75001-110000": 26784,
+          "110001-plus": 54885
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.8603,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 3618,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 68080,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 68080,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.405,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "emerson-college",
+    "name": "Emerson College",
+    "system": "Private",
+    "location": "Boston, MA",
+    "state": "MA",
+    "website": "https://www.emerson.edu",
+    "admitRateOverall": 0.5131,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1250-1410 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 80399,
+      "coaOutOfState": 80399,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/emerson",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 4171,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 165662,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 49180,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 32650,
+          "30001-48000": 32621,
+          "48001-75000": 41927,
+          "75001-110000": 46252,
+          "110001-plus": 57288
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.7711,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 3870,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 57056,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 57056,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.5131,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "massachusetts-college-of-art-and-design",
+    "name": "Massachusetts College of Art and Design",
+    "system": "Public",
+    "location": "Boston, MA",
+    "state": "MA",
+    "website": "https://massart.edu",
+    "admitRateOverall": 0.7627,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "N/A (Not reported)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 34239,
+      "coaOutOfState": 62239,
+      "netPriceCalculatorUrl": "https://massart.edu/net-price-calculator",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 1876,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 166674,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 24100,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 16351,
+          "30001-48000": 17636,
+          "48001-75000": 18513,
+          "75001-110000": 26265,
+          "110001-plus": 31882
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6887,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 1831,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 15400,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 43400,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.7627,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "mount-holyoke-college",
+    "name": "Mount Holyoke College",
+    "system": "Private",
+    "location": "South Hadley, MA",
+    "state": "MA",
+    "website": "https://www.mtholyoke.edu",
+    "admitRateOverall": 0.3603,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1350-1500 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 84926,
+      "coaOutOfState": 84926,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/mtholyoke",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 2209,
+      "setting": "Suburban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 166939,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 26441,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 10882,
+          "30001-48000": 9526,
+          "48001-75000": 17394,
+          "75001-110000": 24247,
+          "110001-plus": 38561
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.8439,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 2169,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 67018,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 67018,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.3603,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "smith-college",
+    "name": "Smith College",
+    "system": "Private",
+    "location": "Northampton, MA",
+    "state": "MA",
+    "website": "https://www.smith.edu",
+    "admitRateOverall": 0.21,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1408-1540 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 86030,
+      "coaOutOfState": 86030,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/smith",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 2506,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 167835,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 27579,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 1363,
+          "30001-48000": 3737,
+          "48001-75000": 6559,
+          "75001-110000": 11750,
+          "110001-plus": 40477
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.8905,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 2544,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 65178,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 65178,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.21,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "springfield-college",
+    "name": "Springfield College",
+    "system": "Private",
+    "location": "Springfield, MA",
+    "state": "MA",
+    "website": "https://www.springfield.edu",
+    "admitRateOverall": 0.7189,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1070-1260 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 60729,
+      "coaOutOfState": 60729,
+      "netPriceCalculatorUrl": "https://springfield.edu/admissions/undergraduate-admissions/net-price-calculator",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 1924,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 167899,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 30587,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 22519,
+          "30001-48000": 22295,
+          "48001-75000": 23364,
+          "75001-110000": 27470,
+          "110001-plus": 34461
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.7419,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 1751,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 45174,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 45174,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.7189,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "suffolk-university",
+    "name": "Suffolk University",
+    "system": "Private",
+    "location": "Boston, MA",
+    "state": "MA",
+    "website": "https://www.suffolk.edu",
+    "admitRateOverall": 0.8233,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1090-1280 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 65281,
+      "coaOutOfState": 65281,
+      "netPriceCalculatorUrl": "https://suffolk.studentaidcalculator.com/survey.aspx",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 4484,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 168005,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 29618,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 24745,
+          "30001-48000": 25711,
+          "48001-75000": 25702,
+          "75001-110000": 29654,
+          "110001-plus": 36264
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6088,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 4268,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 47550,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 47550,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.8233,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "the-new-england-conservatory-of-music",
+    "name": "The New England Conservatory of Music",
+    "system": "Private",
+    "location": "Boston, MA",
+    "state": "MA",
+    "website": "https://necmusic.edu",
+    "admitRateOverall": 0.411,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "N/A (Not reported)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 81277,
+      "coaOutOfState": 81277,
+      "netPriceCalculatorUrl": "https://necmusic.edu/admissions/tuition-aid/net-price-calculator/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 393,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 167057,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 46754,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 47882,
+          "30001-48000": 44882,
+          "48001-75000": 45625,
+          "75001-110000": 45608,
+          "110001-plus": 47387
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.7339,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 393,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 60750,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 60750,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.411,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "university-of-massachusetts-amherst",
+    "name": "University of Massachusetts-Amherst",
+    "system": "Public",
+    "location": "Amherst, MA",
+    "state": "MA",
+    "website": "https://www.umass.edu",
+    "admitRateOverall": 0.5973,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1300-1480 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 34549,
+      "coaOutOfState": 57226,
+      "netPriceCalculatorUrl": "https://www.umass.edu/net_price_calculator/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 23936,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 166629,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 22383,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 10164,
+          "30001-48000": 10456,
+          "48001-75000": 12932,
+          "75001-110000": 18964,
+          "110001-plus": 30793
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.8326,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 23671,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 17772,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 40449,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.5973,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "towson-university",
+    "name": "Towson University",
+    "system": "Public",
+    "location": "Towson, MD",
+    "state": "MD",
+    "website": "https://www.towson.edu",
+    "admitRateOverall": 0.8197,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1050-1270 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 28535,
+      "coaOutOfState": 46627,
+      "netPriceCalculatorUrl": "https://www.towson.edu/admissions/tuition/calculator.html",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 16517,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 164076,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 17413,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 6962,
+          "30001-48000": 12590,
+          "48001-75000": 16784,
+          "75001-110000": 22720,
+          "110001-plus": 26396
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6946,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 16136,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 11728,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 29820,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.8197,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "university-of-maryland-baltimore-county",
+    "name": "University of Maryland-Baltimore County",
+    "system": "Public",
+    "location": "Baltimore, MD",
+    "state": "MD",
+    "website": "https://umbc.edu",
+    "admitRateOverall": 0.7243,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1220-1410 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 28576,
+      "coaOutOfState": 46595,
+      "netPriceCalculatorUrl": "https://ofas.umbc.edu/netprice/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 10490,
+      "setting": "Suburban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 163268,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 16467,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 5087,
+          "30001-48000": 10714,
+          "48001-75000": 16543,
+          "75001-110000": 22172,
+          "110001-plus": 25439
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.7001,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 10701,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 13256,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 31275,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.7243,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "university-of-maine",
+    "name": "University of Maine",
+    "system": "Public",
+    "location": "Orono, ME",
+    "state": "ME",
+    "website": "https://www.umaine.edu",
+    "admitRateOverall": 0.9664,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "N/A (Not reported)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 27328,
+      "coaOutOfState": 50758,
+      "netPriceCalculatorUrl": "https://go.umaine.edu/netpricecalculator/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 9267,
+      "setting": "Suburban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 161253,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 17510,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 12642,
+          "30001-48000": 13280,
+          "48001-75000": 14631,
+          "75001-110000": 18508,
+          "110001-plus": 22018
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.5494,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 8496,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 13326,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 36756,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.9664,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "central-michigan-university",
+    "name": "Central Michigan University",
+    "system": "Public",
+    "location": "Mount Pleasant, MI",
+    "state": "MI",
+    "website": "https://www.cmich.edu",
+    "admitRateOverall": 0.8982,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "960-1210 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 30681,
+      "coaOutOfState": 30681,
+      "netPriceCalculatorUrl": "https://cmich.studentaidcalculator.com/survey.aspx",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 10055,
+      "setting": "Small City",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 169248,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 17597,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 12185,
+          "30001-48000": 12139,
+          "48001-75000": 13601,
+          "75001-110000": 16269,
+          "110001-plus": 21403
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.5872,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 10035,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 14760,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 14760,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.8982,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "grand-valley-state-university",
+    "name": "Grand Valley State University",
+    "system": "Public",
+    "location": "Allendale, MI",
+    "state": "MI",
+    "website": "https://www.gvsu.edu",
+    "admitRateOverall": 0.8302,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "940-1190 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 28367,
+      "coaOutOfState": 34775,
+      "netPriceCalculatorUrl": "https://www.gvsu.edu/financialaid/price_calculator.htm",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 19243,
+      "setting": "Small City",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 170082,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 16317,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 12272,
+          "30001-48000": 11902,
+          "48001-75000": 12861,
+          "75001-110000": 16609,
+          "110001-plus": 22534
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6701,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 18854,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 15140,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 21548,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.8302,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "hillsdale-college",
+    "name": "Hillsdale College",
+    "system": "Private",
+    "location": "Hillsdale, MI",
+    "state": "MI",
+    "website": "https://www.hillsdale.edu",
+    "admitRateOverall": 0.2072,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1340-1510 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": null,
+      "coaOutOfState": null,
+      "netPriceCalculatorUrl": "https://www.hillsdale.edu/admissions-aid/financial-aid/tuition-and-costs/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 1688,
+      "setting": "Small City",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "ipedsUnitId": 170286,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": null,
+        "provenance": null
+      },
+      "netPriceByIncomeBand": {
+        "value": null,
+        "provenance": null
+      },
+      "graduationRate": {
+        "value": 0.8971,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 1573,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 33189,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 33189,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.2072,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "lawrence-technological-university",
+    "name": "Lawrence Technological University",
+    "system": "Private",
+    "location": "Southfield, MI",
+    "state": "MI",
+    "website": "https://www.ltu.edu",
+    "admitRateOverall": 0.559,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "N/A (Not reported)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 58166,
+      "coaOutOfState": 58166,
+      "netPriceCalculatorUrl": "https://ltu.studentaidcalculator.com/survey.aspx",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 2367,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 170675,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 32918,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 25980,
+          "30001-48000": 27036,
+          "48001-75000": 28082,
+          "75001-110000": 33632,
+          "110001-plus": 37492
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6058,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 1668,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 44760,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 44760,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.559,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "northwood-university",
+    "name": "Northwood University",
+    "system": "Private",
+    "location": "Midland, MI",
+    "state": "MI",
+    "website": "https://www.northwood.edu",
+    "admitRateOverall": 0.6451,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "N/A (Not reported)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 48780,
+      "coaOutOfState": 48780,
+      "netPriceCalculatorUrl": "https://www.northwood.edu/webapps/finaid/coa/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 1989,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 171492,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 27232,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 25700,
+          "30001-48000": 25913,
+          "48001-75000": 25906,
+          "75001-110000": 26016,
+          "110001-plus": 28224
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6332,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 1974,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 34400,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 34400,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.6451,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "wayne-state-university",
+    "name": "Wayne State University",
+    "system": "Public",
+    "location": "Detroit, MI",
+    "state": "MI",
+    "website": "https://wayne.edu",
+    "admitRateOverall": 0.8116,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1040-1260 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 27350,
+      "coaOutOfState": 44197,
+      "netPriceCalculatorUrl": "https://irda.wayne.edu/net-price-calculator/index.html",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 16117,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 172644,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 12766,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 11090,
+          "30001-48000": 10721,
+          "48001-75000": 12068,
+          "75001-110000": 14828,
+          "110001-plus": 19862
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.5844,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 15587,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 15190,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 32037,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.8116,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "macalester-college",
+    "name": "Macalester College",
+    "system": "Private",
+    "location": "Saint Paul, MN",
+    "state": "MN",
+    "website": "https://www.macalester.edu",
+    "admitRateOverall": 0.2852,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1350-1510 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 82991,
+      "coaOutOfState": 82991,
+      "netPriceCalculatorUrl": "https://www.macalester.edu/financialaid/estimate/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 2142,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 173902,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 32149,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 13772,
+          "30001-48000": 11982,
+          "48001-75000": 11098,
+          "75001-110000": 20527,
+          "110001-plus": 44880
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.871,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 2131,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 68104,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 68104,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.2852,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "minnesota-state-university-mankato",
+    "name": "Minnesota State University-Mankato",
+    "system": "Public",
+    "location": "Mankato, MN",
+    "state": "MN",
+    "website": "https://mnsu.edu",
+    "admitRateOverall": 0.8844,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "N/A (Not reported)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 23995,
+      "coaOutOfState": 33365,
+      "netPriceCalculatorUrl": "https://mnsu.edu/paying-for-college/net-price-calculator/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 12897,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 173920,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 19139,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 12339,
+          "30001-48000": 12750,
+          "48001-75000": 15137,
+          "75001-110000": 18921,
+          "110001-plus": 22798
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.5395,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 11703,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 9572,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 18942,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.8844,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "university-of-minnesota-twin-cities",
+    "name": "University of Minnesota-Twin Cities",
+    "system": "Public",
+    "location": "Minneapolis, MN",
+    "state": "MN",
+    "website": "https://twin-cities.umn.edu",
+    "admitRateOverall": 0.7975,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1310-1480 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 30061,
+      "coaOutOfState": 51209,
+      "netPriceCalculatorUrl": "https://admissions.tc.umn.edu/cost-aid/cost-aid-scholarships/net-price-calculator",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 39556,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 174066,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 16778,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 6642,
+          "30001-48000": 7283,
+          "48001-75000": 9931,
+          "75001-110000": 16415,
+          "110001-plus": 27008
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.8528,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 31855,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 17214,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 38362,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.7975,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "university-of-st-thomas",
+    "name": "University of St Thomas",
+    "system": "Private",
+    "location": "Saint Paul, MN",
+    "state": "MN",
+    "website": "https://www.stthomas.edu",
+    "admitRateOverall": 0.8536,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1223-1416 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 66116,
+      "coaOutOfState": 66116,
+      "netPriceCalculatorUrl": "https://www.stthomas.edu/financialaid/undergraduate/resources/netpricecalculator/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 6044,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 174914,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 29155,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 28131,
+          "30001-48000": 26820,
+          "48001-75000": 24357,
+          "75001-110000": 25363,
+          "110001-plus": 33232
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.7638,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 6245,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 54398,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 54398,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.8536,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "kansas-city-art-institute",
+    "name": "Kansas City Art Institute",
+    "system": "Private",
+    "location": "Kansas City, MO",
+    "state": "MO",
+    "website": "https://www.kcai.edu",
+    "admitRateOverall": 0.5476,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "N/A (Not reported)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 57410,
+      "coaOutOfState": 57410,
+      "netPriceCalculatorUrl": "https://www.kcai.edu/admissions-aid/net-price-calculator/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 789,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 177746,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 27650,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 26293,
+          "30001-48000": 25105,
+          "48001-75000": 27663,
+          "75001-110000": 29943,
+          "110001-plus": 30840
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.5797,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 812,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 44550,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 44550,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.5476,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "missouri-state-university-springfield",
+    "name": "Missouri State University-Springfield",
+    "system": "Public",
+    "location": "Springfield, MO",
+    "state": "MO",
+    "website": "https://www.missouristate.edu",
+    "admitRateOverall": 0.9053,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "990-1220 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 25048,
+      "coaOutOfState": 34316,
+      "netPriceCalculatorUrl": "https://missouristate.studentaidcalculator.com/welcome.aspx",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 19259,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 179566,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 17613,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 13718,
+          "30001-48000": 13529,
+          "48001-75000": 14905,
+          "75001-110000": 18770,
+          "110001-plus": 20576
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.5791,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 13313,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 9502,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 18770,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.9053,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "university-of-missouri-columbia",
+    "name": "University of Missouri-Columbia",
+    "system": "Public",
+    "location": "Columbia, MO",
+    "state": "MO",
+    "website": "https://missouri.edu",
+    "admitRateOverall": 0.7847,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1150-1330 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 31713,
+      "coaOutOfState": 52932,
+      "netPriceCalculatorUrl": "https://financialaid.missouri.edu/cost-of-attendance/net-price-calculator/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 23613,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 178396,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 20268,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 13841,
+          "30001-48000": 13378,
+          "48001-75000": 13722,
+          "75001-110000": 19762,
+          "110001-plus": 26304
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.7494,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 23929,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 14837,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 36056,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.7847,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "mississippi-state-university",
+    "name": "Mississippi State University",
+    "system": "Public",
+    "location": "Mississippi State, MS",
+    "state": "MS",
+    "website": "https://www.msstate.edu",
+    "admitRateOverall": 0.7764,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1110-1410 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 29267,
+      "coaOutOfState": 46702,
+      "netPriceCalculatorUrl": "https://www.sfa.msstate.edu/net-price-calculator",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 18230,
+      "setting": "Small City",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 176080,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 17595,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 14332,
+          "30001-48000": 14372,
+          "48001-75000": 18671,
+          "75001-110000": 20704,
+          "110001-plus": 22987
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6667,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 18397,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 10202,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 27637,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.7764,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "mississippi-university-for-women",
+    "name": "Mississippi University for Women",
+    "system": "Public",
+    "location": "Columbus, MS",
+    "state": "MS",
+    "website": "https://www.muw.edu",
+    "admitRateOverall": 0.9031,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "N/A (Not reported)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 22225,
+      "coaOutOfState": 22225,
+      "netPriceCalculatorUrl": "https://app.meadowfi.com/the_w",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 1995,
+      "setting": "Small City",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 176035,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 12411,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 10676,
+          "30001-48000": 10434,
+          "48001-75000": 13037,
+          "75001-110000": 17060,
+          "110001-plus": 19285
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.4677,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 1605,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 8492,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 8492,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.9031,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "university-of-mississippi",
+    "name": "University of Mississippi",
+    "system": "Public",
+    "location": "University, MS",
+    "state": "MS",
+    "website": "https://www.olemiss.edu",
+    "admitRateOverall": 0.9658,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1020-1210 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 28660,
+      "coaOutOfState": 47488,
+      "netPriceCalculatorUrl": "https://finaid.olemiss.edu/calculator/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 19094,
+      "setting": "Small City",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 176017,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 13314,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 8945,
+          "30001-48000": 9217,
+          "48001-75000": 14794,
+          "75001-110000": 18573,
+          "110001-plus": 21313
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.7174,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 21473,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 9772,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 28600,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.9658,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "university-of-southern-mississippi",
+    "name": "University of Southern Mississippi",
+    "system": "Public",
+    "location": "Hattiesburg, MS",
+    "state": "MS",
+    "website": "https://www.usm.edu",
+    "admitRateOverall": 0.9912,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "N/A (Not reported)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 26566,
+      "coaOutOfState": 28566,
+      "netPriceCalculatorUrl": "https://www.usm.edu/financial-aid/net-price-calculator.php",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 10012,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 176372,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 21708,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 19867,
+          "30001-48000": 20432,
+          "48001-75000": 22756,
+          "75001-110000": 25812,
+          "110001-plus": 26542
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.4906,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 10075,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 9998,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 11998,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.9912,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "montana-state-university",
+    "name": "Montana State University",
+    "system": "Public",
+    "location": "Bozeman, MT",
+    "state": "MT",
+    "website": "https://www.montana.edu",
+    "admitRateOverall": 0.8214,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "1060-1270 (SAT evidence-based reading + math, 25th-75th percentile)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 25905,
+      "coaOutOfState": 50732,
+      "netPriceCalculatorUrl": "https://www.montana.edu/admissions/tuitioncalc/",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 14872,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "gpaSatProvenance": {
+      "source": "IPEDS 2023-24 Admissions (SAT 25th and 75th percentiles)",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 180461,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 22499,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 17797,
+          "30001-48000": 18570,
+          "48001-75000": 21977,
+          "75001-110000": 24732,
+          "110001-plus": 25905
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.5708,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 14451,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 8460,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 33287,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.8214,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "the-university-of-montana",
+    "name": "The University of Montana",
+    "system": "Public",
+    "location": "Missoula, MT",
+    "state": "MT",
+    "website": "https://www.umt.edu",
+    "admitRateOverall": 0.9586,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "N/A (Not reported)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 23570,
+      "coaOutOfState": 48689,
+      "netPriceCalculatorUrl": "https://www.umt.edu/finaid/cost-of-attendance/net-price-calculator/default.php",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 7570,
+      "setting": "Urban",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
+    },
+    "ipedsUnitId": 180489,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 16784,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 13960,
+          "30001-48000": 14892,
+          "48001-75000": 17180,
+          "75001-110000": 19269,
+          "110001-plus": 20930
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.public.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.4796,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 7488,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 8552,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 33671,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.9586,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
+  },
+  {
+    "id": "campbell-university",
+    "name": "Campbell University",
+    "system": "Private",
+    "location": "Buies Creek, NC",
+    "state": "NC",
+    "website": "https://www.campbell.edu",
+    "admitRateOverall": 0.8718,
+    "inStateAdmitRate": null,
+    "outOfStateAdmitRate": null,
+    "testingPolicy": "Not verified",
+    "mid50_GPA_Unweighted": "N/A (Not reported)",
+    "mid50_GPA_UCCapped": "N/A (Not reported)",
+    "mid50_SAT": "N/A (Not reported)",
+    "impactedMajors": [],
+    "flagshipPrograms": [],
+    "careerOutcomes": {
+      "placementRate": null,
+      "medianStartingSalary": null,
+      "topRecruiters": []
+    },
+    "campusCultureAndVibe": "",
+    "idealStudentArchetype": {
+      "profileSummary": "",
+      "highSchoolCoursePrereqs": [],
+      "highImpactSpikes": []
+    },
+    "applicationPlans": [],
+    "financials": {
+      "coaInState": 62187,
+      "coaOutOfState": 62187,
+      "netPriceCalculatorUrl": "https://www.shoppingsheet.com/shopping/landing/campbell",
+      "meritAidNote": null
+    },
+    "campusFit": {
+      "undergradEnrollment": 2813,
+      "setting": "Small City",
+      "greekLifePercent": null,
+      "percentLivingOnCampus": null
+    },
+    "careerMajorTags": {
+      "primaryDisciplines": [],
+      "interdisciplinaryPathways": []
+    },
+    "dataProvenance": {
+      "sourcedFrom": [
+        "IPEDS",
+        "College Scorecard"
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    "admissionsProvenance": {
+      "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
+      "year": "2023"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
+    },
+    "ipedsUnitId": 198136,
+    "scorecard": {
+      "netPriceOverall": {
+        "value": 24516,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.overall)",
+          "year": "2024"
+        }
+      },
+      "netPriceByIncomeBand": {
+        "value": {
+          "0-30000": 20751,
+          "30001-48000": 20981,
+          "48001-75000": 19979,
+          "75001-110000": 26959,
+          "110001-plus": 30864
+        },
+        "provenance": {
+          "source": "College Scorecard (latest.cost.net_price.private.by_income_level.*)",
+          "year": "2024"
+        }
+      },
+      "graduationRate": {
+        "value": 0.6096,
+        "provenance": {
+          "source": "College Scorecard (latest.completion.completion_rate_4yr_150nt)",
+          "year": "2024"
+        }
+      },
+      "undergradEnrollment": {
+        "value": 2680,
+        "provenance": {
+          "source": "College Scorecard (latest.student.size)",
+          "year": "2024"
+        }
+      },
+      "tuitionInState": {
+        "value": 41600,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.in_state)",
+          "year": "2024"
+        }
+      },
+      "tuitionOutOfState": {
+        "value": 41600,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.tuition.out_of_state)",
+          "year": "2024"
+        }
+      },
+      "admitRateOverall": {
+        "value": 0.8718,
+        "provenance": {
+          "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      }
+    },
+    "admitRateOverallSuperseded": true
   }
 ]

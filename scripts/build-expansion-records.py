@@ -21,6 +21,8 @@ import json
 import os
 import re
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -50,9 +52,18 @@ def fetch_scorecard(ids, cache_path):
     for i in range(0, len(need), 12):
         chunk = need[i:i + 12]
         url = f"{API}?api_key=DEMO_KEY&id={','.join(chunk)}&fields={','.join(fields)}&per_page=100"
-        with urllib.request.urlopen(url, timeout=90) as r:
-            for row in json.load(r)["results"]:
-                cache[str(row["id"])] = row
+        for attempt in range(40):
+            try:
+                with urllib.request.urlopen(url, timeout=90) as r:
+                    for row in json.load(r)["results"]:
+                        cache[str(row["id"])] = row
+                break
+            except urllib.error.HTTPError as e:
+                # The shared demo key allows only a few requests an hour: wait and try again.
+                if e.code != 429 or attempt == 39:
+                    raise
+                json.dump(cache, open(cache_path, "w", encoding="utf-8"))
+                time.sleep(300)
         for c in chunk:
             cache.setdefault(c, None)
     json.dump(cache, open(cache_path, "w", encoding="utf-8"))
