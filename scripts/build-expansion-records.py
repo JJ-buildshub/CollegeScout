@@ -10,7 +10,7 @@ bulk source is left empty rather than guessed:
 Left empty until researched from the school's own pages: test policy ("Not verified"),
 application plans, GPA range, essays, written descriptions, career outcomes.
 
-    python scripts/build-expansion-records.py <ipeds folder> --offset 0 --count 50 [--apply]
+    SCORECARD_API_KEY=<free key from api.data.gov/signup> python scripts/build-expansion-records.py <ipeds folder> --offset 0 --count 50 [--apply]
 
 Without --apply it only prints what it would add. Schools with no reported admit rate are
 held back (listed at the end) until the interface handles a missing rate.
@@ -51,7 +51,7 @@ def fetch_scorecard(ids, cache_path):
     fields = ["id"] + [f"latest.{f}" for f in BASE] + [f"{y}.{f}" for y in YEARS for f in BASE]
     for i in range(0, len(need), 12):
         chunk = need[i:i + 12]
-        url = f"{API}?api_key=DEMO_KEY&id={','.join(chunk)}&fields={','.join(fields)}&per_page=100"
+        url = f"{API}?api_key={os.environ.get('SCORECARD_API_KEY', 'DEMO_KEY')}&id={','.join(chunk)}&fields={','.join(fields)}&per_page=100"
         for attempt in range(40):
             try:
                 with urllib.request.urlopen(url, timeout=90) as r:
