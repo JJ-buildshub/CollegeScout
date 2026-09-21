@@ -265,6 +265,69 @@
    ],
    "note": "The SAT, ACT or CLT satisfies this requirement.",
    "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "the-university-of-tennessee-knoxville": {
+   "policy": "Test-Required",
+   "label": "University of Tennessee, Knoxville admissions",
+   "url": "https://admissions.utk.edu/undergraduate-application/test-score-policy/",
+   "evidence": [
+    "All first-year undergraduate students are required to self-report their ACT or SAT scores as part of their application for admission by January 20, 2027.",
+    "Only tests taken through December 2026 will be accepted for admission and institutional merit scholarship consideration."
+   ],
+   "note": "Self-report your ACT or SAT scores by January 20, 2027; only tests taken through December 2026 count."
+  },
+  "binghamton-university": {
+   "policy": "Test-Optional",
+   "label": "Binghamton admissions",
+   "url": "https://www.binghamton.edu/admissions/undergraduate/apply/freshman/",
+   "evidence": [
+    "Binghamton University is test optional which means standardized test scores are not required."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "auburn-university": {
+   "policy": "Test-Required",
+   "label": "Auburn admissions",
+   "url": "https://auburn.edu/admissions/prospective-students/freshmen/index.php",
+   "evidence": [
+    "Auburn University requires that a student must have ACT or SAT scores on file to have a complete application."
+   ]
+  },
+  "stony-brook-university": {
+   "policy": "Test-Optional",
+   "label": "Stony Brook admissions",
+   "url": "https://www.stonybrook.edu/undergraduate-admissions/apply/first-year.php",
+   "evidence": [
+    "Stony Brook is test optional for applicants."
+   ]
+  },
+  "university-of-south-carolina-columbia": {
+   "policy": "Test-Optional",
+   "label": "University of South Carolina admissions",
+   "url": "https://sc.edu/about/offices_and_divisions/undergraduate_admissions/apply/for_freshmen/",
+   "evidence": [
+    "USC is test-optional through the fall, spring and summer 2027 terms."
+   ],
+   "note": "Test-optional through the fall, spring and summer 2027 terms."
+  },
+  "louisiana-state-university-and-agricultural-and-mechanical-college": {
+   "policy": "Test-Optional",
+   "label": "LSU admissions",
+   "url": "https://www.lsu.edu/admissions/apply/freshman.php",
+   "evidence": [
+    "Any first-year applicant whose cumulative weighted high school GPA is lower than 3.5 is required to submit either an ACT or SAT score"
+   ],
+   "note": "Test-optional only if your cumulative weighted high school GPA is 3.5 or higher; below 3.5, an ACT or SAT score is required for admission and merit scholarships."
+  },
+  "north-carolina-state-university-at-raleigh": {
+   "policy": "Test-Optional",
+   "label": "NC State admissions",
+   "url": "https://admissions.ncsu.edu/apply/first-year/",
+   "evidence": [
+    "NC State is test optional for applicants with a weighted GPA of 2.8 or above."
+   ],
+   "note": "Test-optional applies to applicants with a weighted GPA of 2.8 or above.",
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
   }
  }
 }

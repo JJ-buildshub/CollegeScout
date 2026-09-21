@@ -1326,6 +1326,204 @@
     }
    ],
    "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "the-university-of-tennessee-knoxville": {
+   "label": "University of Tennessee, Knoxville admissions",
+   "url": "https://admissions.utk.edu/important-dates-and-deadlines/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1: Early Action Submission Deadline",
+    "November 15: Early Action Materials Deadline",
+    "January 5: Regular Decision Submission Deadline",
+    "January 20: Regular Decision Materials Deadline"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1",
+     "note": "Materials are due November 15."
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 5",
+     "note": "Materials are due January 20."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "binghamton-university": {
+   "label": "Binghamton admissions",
+   "url": "https://www.binghamton.edu/admissions/undergraduate/apply/freshman/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early action deadline: November 1",
+    "Regular admissions deadline: January 15"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "auburn-university": {
+   "label": "Auburn admissions",
+   "url": "https://auburn.edu/admissions/prospective-students/freshmen/index.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action Round 4 December 1, 2026",
+    "Regular Decision February 1, 2027"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 1",
+     "note": "Final Early Action round; earlier rounds also run through the fall."
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "university-of-massachusetts-amherst": {
+   "label": "UMass Amherst admissions",
+   "url": "https://www.umass.edu/admissions/important-dates-deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action* Application Deadline November 5",
+    "Regular Decision* Deadline January 15"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 5"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "virginia-polytechnic-institute-and-state-university": {
+   "label": "Virginia Tech admissions",
+   "url": "https://www.vt.edu/admissions/undergraduate/apply/dates-and-deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Dates & Deadlines for 2026-2027",
+    "Early Action Application Deadline: November 15",
+    "Regular Decision (Space Available) application deadline: January 15"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15",
+     "note": "Space available."
+    }
+   ]
+  },
+  "stony-brook-university": {
+   "label": "Stony Brook admissions",
+   "url": "https://www.stonybrook.edu/undergraduate-admissions/apply/first-year.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Entry Term: Fall 2027 Early Action Deadline: November 1 Regular Decision Deadline: January 15"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ]
+  },
+  "university-of-south-carolina-columbia": {
+   "label": "University of South Carolina admissions",
+   "url": "https://sc.edu/about/offices_and_divisions/undergraduate_admissions/apply/for_freshmen/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action Application Deadline Apply by Oct. 15",
+    "Regular Decision Application Deadline Apply by Dec. 1",
+    "Honors College Application Deadline Apply by Nov. 15"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "October 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "December 1",
+     "note": "Honors College and Top Scholar awards: apply by November 15."
+    }
+   ]
+  },
+  "louisiana-state-university-and-agricultural-and-mechanical-college": {
+   "label": "LSU admissions",
+   "url": "https://www.lsu.edu/admissions/apply/freshman.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Regular Decision Deadline: February 1",
+    "The Common Application for ALL 2027 ENTRY TERMS is NOW OPEN.",
+    "Priority Deadline for Scholarships: December 1"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1",
+     "note": "The scholarship priority deadline is a separate date: December 1."
+    }
+   ]
+  },
+  "north-carolina-state-university-at-raleigh": {
+   "label": "NC State admissions",
+   "url": "https://admissions.ncsu.edu/apply/first-year/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action Deadline: November 1",
+    "Regular Decision Deadline: January 15"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
   }
  }
 }

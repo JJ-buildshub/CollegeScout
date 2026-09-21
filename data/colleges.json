@@ -21241,7 +21241,7 @@
     "admitRateOverall": 0.4592,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1240-1380 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -21258,7 +21258,19 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "December 1",
+        "note": "Final Early Action round; earlier rounds also run through the fall."
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 34919,
       "coaOutOfState": 56951,
@@ -21353,7 +21365,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "Auburn admissions (https://auburn.edu/admissions/prospective-students/freshmen/index.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "Auburn admissions (https://auburn.edu/admissions/prospective-students/freshmen/index.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "troy-university",
@@ -28964,7 +28986,7 @@
     "admitRateOverall": 0.7333,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1150-1330 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -28981,7 +29003,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1",
+        "note": "The scholarship priority deadline is a separate date: December 1."
+      }
+    ],
     "financials": {
       "coaInState": 34705,
       "coaOutOfState": 51382,
@@ -29076,7 +29105,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Test-optional only if your cumulative weighted high school GPA is 3.5 or higher; below 3.5, an ACT or SAT score is required for admission and merit scholarships.",
+    "testingPolicyProvenance": {
+      "source": "LSU admissions (https://www.lsu.edu/admissions/apply/freshman.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "LSU admissions (https://www.lsu.edu/admissions/apply/freshman.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "southeastern-louisiana-university",
@@ -30577,7 +30617,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 5"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15"
+      }
+    ],
     "financials": {
       "coaInState": 34549,
       "coaOutOfState": 57226,
@@ -30672,7 +30723,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "UMass Amherst admissions (https://www.umass.edu/admissions/important-dates-deadlines)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    }
   },
   {
     "id": "towson-university",
@@ -33979,7 +34036,7 @@
     "admitRateOverall": 0.4174,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1300-1460 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -33996,7 +34053,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15"
+      }
+    ],
     "financials": {
       "coaInState": 26425,
       "coaOutOfState": 50473,
@@ -34091,7 +34159,20 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Test-optional applies to applicants with a weighted GPA of 2.8 or above.",
+    "testingPolicyProvenance": {
+      "source": "NC State admissions (https://admissions.ncsu.edu/apply/first-year/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "applicationPlansProvenance": {
+      "source": "NC State admissions (https://admissions.ncsu.edu/apply/first-year/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    }
   },
   {
     "id": "university-of-north-carolina-school-of-the-arts",
@@ -37039,7 +37120,7 @@
     "admitRateOverall": 0.3861,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1320-1490 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -37056,7 +37137,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15"
+      }
+    ],
     "financials": {
       "coaInState": 30345,
       "coaOutOfState": 50225,
@@ -37151,7 +37243,19 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "Binghamton admissions (https://www.binghamton.edu/admissions/undergraduate/apply/freshman/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "applicationPlansProvenance": {
+      "source": "Binghamton admissions (https://www.binghamton.edu/admissions/undergraduate/apply/freshman/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    }
   },
   {
     "id": "cuny-bernard-m-baruch-college",
@@ -38391,7 +38495,7 @@
     "admitRateOverall": 0.4904,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1320-1490 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -38408,7 +38512,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15"
+      }
+    ],
     "financials": {
       "coaInState": 30539,
       "coaOutOfState": 52349,
@@ -38503,7 +38618,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "Stony Brook admissions (https://www.stonybrook.edu/undergraduate-admissions/apply/first-year.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "Stony Brook admissions (https://www.stonybrook.edu/undergraduate-admissions/apply/first-year.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "the-juilliard-school",
@@ -42312,7 +42437,7 @@
     "admitRateOverall": 0.6015,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1180-1380 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -42329,7 +42454,19 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "October 15"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "December 1",
+        "note": "Honors College and Top Scholar awards: apply by November 15."
+      }
+    ],
     "financials": {
       "coaInState": 31638,
       "coaOutOfState": 54922,
@@ -42424,7 +42561,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Test-optional through the fall, spring and summer 2027 terms.",
+    "testingPolicyProvenance": {
+      "source": "University of South Carolina admissions (https://sc.edu/about/offices_and_divisions/undergraduate_admissions/apply/for_freshmen/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of South Carolina admissions (https://sc.edu/about/offices_and_divisions/undergraduate_admissions/apply/for_freshmen/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "black-hills-state-university",
@@ -43296,7 +43444,7 @@
     "admitRateOverall": 0.416,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1190-1340 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -43313,7 +43461,20 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1",
+        "note": "Materials are due November 15."
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 5",
+        "note": "Materials are due January 20."
+      }
+    ],
     "financials": {
       "coaInState": 33678,
       "coaOutOfState": 53122,
@@ -43408,7 +43569,19 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Self-report your ACT or SAT scores by January 20, 2027; only tests taken through December 2026 count.",
+    "testingPolicyProvenance": {
+      "source": "University of Tennessee, Knoxville admissions (https://admissions.utk.edu/undergraduate-application/test-score-policy/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of Tennessee, Knoxville admissions (https://admissions.utk.edu/important-dates-and-deadlines/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    }
   },
   {
     "id": "university-of-memphis",
@@ -45173,7 +45346,19 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 15"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15",
+        "note": "Space available."
+      }
+    ],
     "financials": {
       "coaInState": 36951,
       "coaOutOfState": 58767,
@@ -45268,7 +45453,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Virginia Tech admissions (https://www.vt.edu/admissions/undergraduate/apply/dates-and-deadlines.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "washington-and-lee-university",
