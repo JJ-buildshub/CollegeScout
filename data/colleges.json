@@ -12513,8 +12513,14 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Duke admissions (https://admissions.duke.edu/apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "testingPolicyProvenance": {
+      "source": "Duke admissions (https://admissions.duke.edu/apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
     }
   },
   {
@@ -12841,8 +12847,14 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Northwestern admissions (https://admissions.northwestern.edu/apply/application-deadlines.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "testingPolicyProvenance": {
+      "source": "Northwestern admissions (https://admissions.northwestern.edu/faqs/standardized-testing-policy/index.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
     }
   },
   {
@@ -13006,8 +13018,14 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Vanderbilt admissions (https://admissions.vanderbilt.edu/apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "testingPolicyProvenance": {
+      "source": "Vanderbilt admissions (https://admissions.vanderbilt.edu/apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
     }
   },
   {
@@ -13170,8 +13188,16 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Rice admission (https://admission.rice.edu/apply/first-year-domestic-applicants)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "testingPolicyProvenance": {
+      "source": "Rice admission (https://admission.rice.edu/apply/first-year-domestic-applicants)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     }
   },
   {
@@ -13334,8 +13360,15 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Johns Hopkins admissions (https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "testingPolicyProvenance": {
+      "source": "Johns Hopkins admissions (https://apply.jhu.edu/frequently-asked-questions/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     }
   },
   {
@@ -13496,8 +13529,16 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Georgetown admissions (https://uadmissions.georgetown.edu/apply/first-year-applicants/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "testingPolicyProvenance": {
+      "source": "Georgetown admissions (https://uadmissions.georgetown.edu/apply/first-year-applicants/application-requirements-and-forms/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     }
   },
   {
@@ -19310,8 +19351,16 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "Notre Dame admissions (https://admissions.nd.edu/apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "testingPolicyNote": "Notre Dame will require SAT or ACT scores for applicants seeking to enroll in fall 2028.",
+    "testingPolicyProvenance": {
+      "source": "Notre Dame admissions (https://admissions.nd.edu/apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
     }
   },
   {
@@ -24515,7 +24564,7 @@
     "admitRateOverall": 0.2422,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1240-1390 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -24532,7 +24581,30 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "October 15",
+        "note": "Domestic students only; not for talent-based majors or CARE Summer Bridge."
+      },
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "October 15",
+        "note": "Florida residents only."
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "December 1"
+      },
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "March 1"
+      }
+    ],
     "financials": {
       "coaInState": 25720,
       "coaOutOfState": 38850,
@@ -24627,7 +24699,19 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "Florida State admissions (https://admissions.fsu.edu/deadlines)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "applicationPlansProvenance": {
+      "source": "Florida State admissions (https://admissions.fsu.edu/deadlines)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    }
   },
   {
     "id": "the-university-of-tampa",
@@ -24759,7 +24843,7 @@
     "admitRateOverall": 0.4011,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1190-1350 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -24776,7 +24860,19 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "October 15"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "May 1",
+        "note": "Deadline for fall entry."
+      }
+    ],
     "financials": {
       "coaInState": 23133,
       "coaOutOfState": 39232,
@@ -24871,7 +24967,20 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "The SAT, ACT or CLT satisfies this requirement.",
+    "testingPolicyProvenance": {
+      "source": "UCF admissions (https://www.ucf.edu/admissions/undergraduate/freshman/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "applicationPlansProvenance": {
+      "source": "UCF admissions (https://www.ucf.edu/admissions/undergraduate/question/what-are-the-application-deadlines-for-first-year-students/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    }
   },
   {
     "id": "university-of-south-florida",
@@ -24883,7 +24992,7 @@
     "admitRateOverall": 0.4319,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1140-1330 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -24900,7 +25009,23 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 2"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "December 16"
+      },
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "March 1"
+      }
+    ],
     "financials": {
       "coaInState": 22859,
       "coaOutOfState": 33773,
@@ -24995,7 +25120,19 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "The SAT, ACT or CLT satisfies this requirement.",
+    "testingPolicyProvenance": {
+      "source": "USF admissions (https://www.usf.edu/admissions/freshmen/admission-information/requirements-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "applicationPlansProvenance": {
+      "source": "USF admissions (https://www.usf.edu/admissions/freshmen/admission-information/dates-deadlines.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "georgia-southern-university",

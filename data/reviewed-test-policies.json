@@ -176,6 +176,95 @@
     "for both prospective first-year and transfer students."
    ],
    "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "northwestern-university": {
+   "policy": "Test-Optional",
+   "label": "Northwestern admissions",
+   "url": "https://admissions.northwestern.edu/faqs/standardized-testing-policy/index.html",
+   "evidence": [
+    "Northwestern is test-optional and does not require ACT or SAT scores from first-year or transfer candidates applying for full-time undergraduate study."
+   ]
+  },
+  "duke-university": {
+   "policy": "Test-Optional",
+   "label": "Duke admissions",
+   "url": "https://admissions.duke.edu/apply/",
+   "evidence": [
+    "Duke University is test-optional for both first-year and transfer applicants in the 2026-2027 admissions cycle."
+   ]
+  },
+  "vanderbilt-university": {
+   "policy": "Test-Optional",
+   "label": "Vanderbilt admissions",
+   "url": "https://admissions.vanderbilt.edu/apply/",
+   "evidence": [
+    "For students applying for fall 2027 and 2028 entry, SAT or ACT scores are optional."
+   ]
+  },
+  "rice-university": {
+   "policy": "Test-Optional",
+   "label": "Rice admission",
+   "url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+   "evidence": [
+    "Rice recommends that degree-seeking first-year and transfer applicants submit SAT or ACT test scores if available."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "georgetown-university": {
+   "policy": "Test-Required",
+   "label": "Georgetown admissions",
+   "url": "https://uadmissions.georgetown.edu/apply/first-year-applicants/application-requirements-and-forms/",
+   "evidence": [
+    "Georgetown requires submission of either SAT or ACT scores as part of the application process."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "johns-hopkins-university": {
+   "policy": "Test-Required",
+   "label": "Johns Hopkins admissions",
+   "url": "https://apply.jhu.edu/frequently-asked-questions/",
+   "evidence": [
+    "Yes, we require students to submit either the SAT or ACT with their application."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-notre-dame": {
+   "policy": "Test-Optional",
+   "label": "Notre Dame admissions",
+   "url": "https://admissions.nd.edu/apply/",
+   "evidence": [
+    "Notre Dame is test-optional through the 2026/2027 application cycle."
+   ],
+   "note": "Notre Dame will require SAT or ACT scores for applicants seeking to enroll in fall 2028."
+  },
+  "florida-state-university": {
+   "policy": "Test-Required",
+   "label": "Florida State admissions",
+   "url": "https://admissions.fsu.edu/deadlines",
+   "evidence": [
+    "At least one test score must be submitted before the material deadline"
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-south-florida": {
+   "policy": "Test-Required",
+   "label": "USF admissions",
+   "url": "https://www.usf.edu/admissions/freshmen/admission-information/requirements-deadlines.aspx",
+   "evidence": [
+    "official results for at least one college entrance exam"
+   ],
+   "note": "The SAT, ACT or CLT satisfies this requirement.",
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-central-florida": {
+   "policy": "Test-Required",
+   "label": "UCF admissions",
+   "url": "https://www.ucf.edu/admissions/undergraduate/freshman/",
+   "evidence": [
+    "Official Standardized Test Scores* from either SAT [code: 5233], ACT** [code: 0735], or CLT"
+   ],
+   "note": "The SAT, ACT or CLT satisfies this requirement.",
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
   }
  }
 }

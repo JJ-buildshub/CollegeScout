@@ -1077,6 +1077,255 @@
     }
    ],
    "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "northwestern-university": {
+   "label": "Northwestern admissions",
+   "url": "https://admissions.northwestern.edu/apply/application-deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Application Due Date October 1, 2026 November 1, 2026 January 4, 2027"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 4"
+    }
+   ]
+  },
+  "duke-university": {
+   "label": "Duke admissions",
+   "url": "https://admissions.duke.edu/apply/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Decision applications are due November 2. Regular Decision applications are due January 4.",
+    "The information below represents the 2026-27 admission cycle requirements and deadlines."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 2"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 4"
+    }
+   ]
+  },
+  "vanderbilt-university": {
+   "label": "Vanderbilt admissions",
+   "url": "https://admissions.vanderbilt.edu/apply/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Vanderbilt offers three decision plans for first-year applicants: Early Decision I, Early Decision II, and Regular Decision.",
+    "November 1, 2026 — Deadline for completed application",
+    "January 1, 2027 — Deadline for completed application"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 1"
+    }
+   ]
+  },
+  "rice-university": {
+   "label": "Rice admission",
+   "url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Students who apply Early Decision I must submit their materials by November 1, while students who apply Early Decision II must submit their materials by January 4.",
+    "Students who apply Regular Decision must submit their materials by January 4."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 4"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 4"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "georgetown-university": {
+   "label": "Georgetown admissions",
+   "url": "https://uadmissions.georgetown.edu/apply/first-year-applicants/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Georgetown offers two application deadlines: Early Action: November 1 Regular Decision: January 1",
+    "Georgetown’s Early Action policy is non-binding"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 1"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "johns-hopkins-university": {
+   "label": "Johns Hopkins admissions",
+   "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Application Deadline November 1, 2026 January 2, 2027 January 2, 2027 March 1, 2027"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 2"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 2"
+    }
+   ]
+  },
+  "university-of-notre-dame": {
+   "label": "Notre Dame admissions",
+   "url": "https://admissions.nd.edu/apply/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Restrictive Early Action November 1",
+    "Regular Decision January 4"
+   ],
+   "plans": [
+    {
+     "type": "REA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 4"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "florida-state-university": {
+   "label": "Florida State admissions",
+   "url": "https://admissions.fsu.edu/deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Decision Eligible Applicants: Domestic Students (No Talent-Based Majors or CARE Summer Bridge) Application Deadline: October 15",
+    "Decision Type: Binding",
+    "Early Action Eligible Applicants: FL Residents Only Application Deadline: October 15",
+    "Regular Decision Eligible Applicants: All Students Application Deadline: December 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "October 15",
+     "note": "Domestic students only; not for talent-based majors or CARE Summer Bridge."
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "October 15",
+     "note": "Florida residents only."
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "March 1"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-south-florida": {
+   "label": "USF admissions",
+   "url": "https://www.usf.edu/admissions/freshmen/admission-information/dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action November 2, 2026 November 16, 2026 December 9, 2026 Admit, Deny or Defer",
+    "Regular Decision December 16, 2026 January 15, 2027 February 10, 2027 Admit, Waitlist or Deny",
+    "Rolling March 1, 2027 March 15, 2027"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 2"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "December 16"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "March 1"
+    }
+   ]
+  },
+  "university-of-central-florida": {
+   "label": "UCF admissions",
+   "url": "https://www.ucf.edu/admissions/undergraduate/question/what-are-the-application-deadlines-for-first-year-students/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "APPLICATION DEADLINE Oct. 15 (Summer & Fall) Mar. 1 (Summer) May 1 (Fall)"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "October 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "May 1",
+     "note": "Deadline for fall entry."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
   }
  }
 }
