@@ -1,0 +1,56 @@
+{
+ "utk plans": {
+  "url": "https://admissions.utk.edu/important-dates-and-deadlines/",
+  "evidence": [
+   "November 1: Early Action Submission Deadline",
+   "January 5: Regular Decision Submission Deadline"
+  ]
+ },
+ "utk test": {
+  "url": "https://admissions.utk.edu/undergraduate-application/test-score-policy/",
+  "evidence": [
+   "All first-year undergraduate students are required to self-report their ACT or SAT scores as part of their application for admission by January 20, 2027."
+  ]
+ },
+ "umass plans": {
+  "url": "https://www.umass.edu/admissions/important-dates-deadlines",
+  "evidence": [
+   "Early Action* Application Deadline November 5",
+   "Regular Decision* Deadline January 15"
+  ]
+ },
+ "binghamton plans": {
+  "url": "https://www.binghamton.edu/admissions/undergraduate/apply/freshman/",
+  "evidence": [
+   "Early action deadline: November 1",
+   "Regular admissions deadline: January 15"
+  ]
+ },
+ "binghamton test": {
+  "url": "https://www.binghamton.edu/admissions/undergraduate/apply/freshman/",
+  "evidence": [
+   "Binghamton University is test optional which means standardized test scores are not required."
+  ]
+ },
+ "auburn plans": {
+  "url": "https://auburn.edu/admissions/prospective-students/freshmen/index.php",
+  "evidence": [
+   "Early Action Round 4 December 1, 2026",
+   "Regular Decision February 1, 2027"
+  ]
+ },
+ "auburn test": {
+  "url": "https://auburn.edu/admissions/prospective-students/freshmen/index.php",
+  "evidence": [
+   "Auburn University requires that a student must have ACT or SAT scores on file to have a complete application."
+  ]
+ },
+ "vt plans": {
+  "url": "https://www.vt.edu/admissions/undergraduate/apply/dates-and-deadlines.html",
+  "evidence": [
+   "Dates & Deadlines for 2026-2027",
+   "Early Action Application Deadline: November 15",
+   "Regular Decision (Space Available) application deadline: January 15"
+  ]
+ }
+}
