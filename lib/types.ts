@@ -1,6 +1,7 @@
 export type CollegeSystem = "UC" | "CSU" | "Private" | "Public";
 
-export type TestingPolicy = "Test-Free" | "Test-Required" | "Test-Optional" | "Test-Blind";
+/** "Not verified" means the school's own page has not been read yet; never a guess at the policy. */
+export type TestingPolicy = "Test-Free" | "Test-Required" | "Test-Optional" | "Test-Blind" | "Not verified";
 
 export interface FlagshipProgram {
   name: string;
@@ -92,7 +93,8 @@ export interface College {
   id: string;
   name: string;
   system: CollegeSystem;
-  rank: number;
+  /** Curated ordering for the original schools only; schools added later have none. */
+  rank?: number;
   location: string;
   /**
    * Two-letter USPS state code (or "DC"), derived once from `location` via

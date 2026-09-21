@@ -44,7 +44,10 @@ export default function CollegeProfileDashboard({ college }: { college: College 
   // every element below it by 70px and made the page jump and flicker.
   const bannerRef = useRef<HTMLDivElement>(null);
   const [showBar, setShowBar] = useState(false);
-  const [activeId, setActiveId] = useState(SECTIONS[0].id);
+  // Schools added from bulk public data have no curated preparation list; the section and its tab are left out rather than shown empty.
+  const hasPrep = college.idealStudentArchetype.highSchoolCoursePrereqs.length > 0;
+  const sections = SECTIONS.filter((s) => s.id !== "overview" || hasPrep);
+  const [activeId, setActiveId] = useState(sections[0].id);
 
   const goBackToDirectory = () => {
     if (typeof window !== "undefined" && window.history.length > 1) {
@@ -276,7 +279,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
           style={{ top: SECTION_BAR_TOP }}
         >
           <div className="flex gap-1 py-2">
-            {SECTIONS.map((s) => (
+            {sections.map((s) => (
               <a
                 key={s.id}
                 href={`#${s.id}`}
@@ -292,29 +295,31 @@ export default function CollegeProfileDashboard({ college }: { college: College 
         </nav>
 
         <div className="space-y-10 py-6">
-          {/* Overview */}
-          <section id="overview" className={scrollMt}>
-            <h2 className="text-lg font-bold text-navy-900">Preparation</h2>
-            <div className="mt-3 w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-              <div>
-                <div className="text-xs font-bold tracking-wide text-slate-600">
-                  Helpful high school preparation
+          {/* Preparation: only when there is a curated list to show */}
+          {hasPrep && (
+            <section id="overview" className={scrollMt}>
+              <h2 className="text-lg font-bold text-navy-900">Preparation</h2>
+              <div className="mt-3 w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+                <div>
+                  <div className="text-xs font-bold tracking-wide text-slate-600">
+                    Helpful high school preparation
+                  </div>
+                  <div className="mt-2 flex flex-wrap gap-1.5">
+                    {college.idealStudentArchetype.highSchoolCoursePrereqs.map((c) => (
+                      <span key={c} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
+                        {c}
+                      </span>
+                    ))}
+                  </div>
+                  <p className="mt-2 max-w-prose text-xs text-slate-400">
+                    This is helpful preparation, not a formal admission requirement.
+                    {isUcOrCsu &&
+                      " For UC and CSU schools, admission is based on completing the A-G course requirements, not this list."}
+                  </p>
                 </div>
-                <div className="mt-2 flex flex-wrap gap-1.5">
-                  {college.idealStudentArchetype.highSchoolCoursePrereqs.map((c) => (
-                    <span key={c} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
-                      {c}
-                    </span>
-                  ))}
-                </div>
-                <p className="mt-2 max-w-prose text-xs text-slate-400">
-                  This is helpful preparation, not a formal admission requirement.
-                  {isUcOrCsu &&
-                    " For UC and CSU schools, admission is based on completing the A-G course requirements, not this list."}
-                </p>
               </div>
-            </div>
-          </section>
+            </section>
+          )}
 
           {/* Admissions */}
           <section id="admissions" className={scrollMt}>
@@ -386,7 +391,9 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                       ))}
                     </div>
                   ) : (
-                    <p className="mt-2 text-sm text-slate-400">No internally-impacted majors reported.</p>
+                    <p className="mt-2 text-sm text-slate-400">
+                      {college.rank === undefined ? "Not researched yet." : "No internally-impacted majors reported."}
+                    </p>
                   )}
                 </div>
               </div>
@@ -405,19 +412,21 @@ export default function CollegeProfileDashboard({ college }: { college: College 
           <section id="academics" className={scrollMt}>
             <h2 className="text-lg font-bold text-navy-900">Academics</h2>
             <div className="mt-3 grid items-start gap-4 lg:grid-cols-2">
-              <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-                <div className="flex items-center gap-2">
-                  <Award className="h-4 w-4 text-gold-600" />
-                  <h3 className="text-sm font-bold text-navy-900">Flagship Programs</h3>
+              {college.flagshipPrograms.length > 0 && (
+                <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+                  <div className="flex items-center gap-2">
+                    <Award className="h-4 w-4 text-gold-600" />
+                    <h3 className="text-sm font-bold text-navy-900">Flagship Programs</h3>
+                  </div>
+                  <div className="mt-4 flex flex-wrap gap-1.5">
+                    {college.flagshipPrograms.map((p) => (
+                      <span key={p.name} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
+                        {p.name}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <div className="mt-4 flex flex-wrap gap-1.5">
-                  {college.flagshipPrograms.map((p) => (
-                    <span key={p.name} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
-                      {p.name}
-                    </span>
-                  ))}
-                </div>
-              </div>
+              )}
 
               <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
                 <h3 className="text-sm font-bold text-navy-900">Career &amp; Major Pathways</h3>

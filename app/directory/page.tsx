@@ -10,7 +10,7 @@ import { getInterestById, matchesAllInterests, normalizeInterestIds } from "@/li
 import CollegeCard from "@/components/CollegeCard";
 
 const SYSTEM_OPTIONS: CollegeSystem[] = ["UC", "CSU", "Private", "Public"];
-const TESTING_OPTIONS: TestingPolicy[] = ["Test-Free", "Test-Required", "Test-Optional", "Test-Blind"];
+const TESTING_OPTIONS: TestingPolicy[] = ["Test-Free", "Test-Required", "Test-Optional", "Test-Blind", "Not verified"];
 
 type AdmitBucket = "any" | "under15" | "15to35" | "35to60" | "over60";
 

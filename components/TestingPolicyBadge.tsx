@@ -18,6 +18,10 @@ const META: Record<TestingPolicy, { style: string; note: string }> = {
     style: "bg-slate-100 text-slate-600 ring-1 ring-inset ring-slate-200",
     note: "Scores are never considered, for admission or merit aid, even if you submit them.",
   },
+  "Not verified": {
+    style: "bg-white text-slate-500 ring-1 ring-inset ring-slate-300",
+    note: "We haven't confirmed this school's test policy on its own admissions page yet. Check the school's site.",
+  },
 };
 
 export default function TestingPolicyBadge({
