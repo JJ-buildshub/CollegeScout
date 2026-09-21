@@ -1,0 +1,110 @@
+﻿id,current,proposed,action,why
+uc-berkeley,https://admission.universityofcalifornia.edu/tuition-financial-aid/estimate-your-aid.html,https://financialaid.berkeley.edu/how-aid-works/estimate-your-financial-aid/,replace,Scorecard link loads
+uc-davis,https://admission.universityofcalifornia.edu/tuition-financial-aid/estimate-your-aid.html,https://myawards.ucdavis.edu/AidEstimator,replace,Scorecard link loads
+uc-irvine,https://ofas.uci.edu/cost/net-price-calculator.php,https://www.ofas.uci.edu/content/Calculator.aspx,replace,Scorecard link loads
+uc-santa-barbara,https://www.finaid.ucsb.edu/costs-estimated-aid/net-price-calculator,https://finaid.ucsb.edu/net-price-calculator,replace,Scorecard link loads
+uc-santa-cruz,https://financialaid.ucsc.edu/aid-resources/financial-aid-calculator/,https://app.meadowfi.com/ucsc,replace,Scorecard link loads
+uc-merced,https://admission.universityofcalifornia.edu/tuition-financial-aid/estimate-your-aid.html,https://admission.universityofcalifornia.edu/tuition-financial-aid/estimate-your-aid.html,keep current,Scorecard link failed and could not be confirmed
+san-jose-state-university,https://www.sjsu.edu/faso/applying/net-price.php,https://www.sjsu.edu/faso/applying/net-price.php,keep current,Scorecard link failed and could not be confirmed
+cal-poly-pomona,,https://www.cpp.edu/financial-aid/resources/net-price-calculator.shtml,fill,Scorecard link loads
+csu-long-beach,,,skip,"Scorecard link is a general cost page, not a calculator"
+stanford-university,https://financialaid.stanford.edu/undergrad/how/calculator/index.html,https://financialaid.stanford.edu/undergrad/how/calculator/index.html?tab=net-price-calculator,replace,Scorecard link loads
+university-of-southern-california,https://atweb.usc.edu/npc/,https://financialaid.usc.edu/npc,replace,Scorecard link loads
+santa-clara-university,https://npc.collegeboard.org/student/app/scu,https://www.scu.edu/financialaid/Net-Price-Calculator.cfm,replace,Scorecard link loads
+massachusetts-institute-of-technology,https://sfs.mit.edu/undergraduate-students/the-cost-of-attendance/estimate-your-cost/,https://npc.collegeboard.org/app/mit,replace,Scorecard link loads
+carnegie-mellon-university,https://npc.collegeboard.org/app/cmu,https://www.cmu.edu/admission/costs-aid/net-price-calculator,replace,Scorecard link loads
+yale-university,https://finaid.yale.edu/estimate,https://admissions.yale.edu/estimate-your-cost,replace,Scorecard link loads
+columbia-university,,https://cc-seas.financialaid.columbia.edu/estimate-cost,fill,Scorecard link loads
+university-of-pennsylvania,https://npc.collegeboard.org/app/upenn,https://npc.collegeboard.org/student/app/upenn,replace,Scorecard link loads
+brown-university,https://npc.collegeboard.org/student/app/brown,https://npc.collegeboard.org/app/brown,replace,Scorecard link loads
+dartmouth-college,https://financialaid.dartmouth.edu/cost-attendance/net-price-calculator,https://admissions.dartmouth.edu/afford/estimate-your-cost,replace,Scorecard link loads
+university-of-washington,https://app.meadowfi.com/washington,https://www.washington.edu/financialaid/getting-started/net-price-calculator/,replace,Scorecard link loads
+university-of-michigan,https://finaid.umich.edu/tools-resources/planning-tools-calculators,https://npc.collegeboard.org/app/umich,replace,Scorecard link loads
+georgia-institute-of-technology,https://finaid.gatech.edu/costs/net-price-calculator,https://admission.gatech.edu/npc_2024/,replace,Scorecard link loads
+university-of-texas-at-austin,https://onestop.utexas.edu/managing-costs/cost-tuition-rates/cost-of-attendance/net-price-calculator/,https://www.onestop.utexas.edu/managing-costs/cost-tuition-rates/cost-of-attendance/net-price-calculator/,replace,Scorecard link loads
+northeastern-university,https://npc.collegeboard.org/app/northeastern,https://npc.collegeboard.org/app/northeastern,skip,"Scorecard link is a general cost page, not a calculator"
+pomona-college,https://www.pomona.edu/financial-aid/cost-attendance/myintuition-cost-calculator,https://npc.collegeboard.org/student/app/pomona,replace,Scorecard link loads
+williams-college,https://www.williams.edu/admission-aid/costestimator/,https://npc.collegeboard.org/app/williams,replace,Scorecard link loads
+rensselaer-polytechnic-institute,https://app.meadowfi.com/rpi,https://npc.collegeboard.org/student/app/rpi,replace,Scorecard link loads
+university-of-alabama,https://afford.ua.edu/,https://afford.ua.edu/,keep current,Scorecard link failed and could not be confirmed
+university-of-pittsburgh,https://pitt.clearcostcalculator.com/student/default/netpricecalculator/survey,https://pitt.studentaidcalculator.com/survey.aspx,replace,Scorecard link loads
+cal-state-fullerton,,https://www.fullerton.edu/financialaid/understanding-aid/cost-of-attendance/,fill,Scorecard link loads
+sacramento-state,,,skip,"Scorecard link is a general cost page, not a calculator"
+cal-state-northridge,,,leave empty,Scorecard link failed and could not be confirmed
+cal-state-la,,,skip,"Scorecard link is a general cost page, not a calculator"
+san-francisco-state,,,skip,"Scorecard link is a general cost page, not a calculator"
+sonoma-state,,https://financialaid.sonoma.edu/cost-attendance/net-price-calculator,fill,Scorecard link loads (read in the browser)
+cal-state-east-bay,,,leave empty,Scorecard link failed and could not be confirmed
+fresno-state,,https://studentaffairs.fresnostate.edu/financialaid/netprice/index.html,fill,Scorecard link loads
+chico-state,,,skip,"Scorecard link is a general cost page, not a calculator"
+cal-poly-humboldt,,https://www.humboldt.edu/calculator/,fill,Scorecard link loads
+claremont-mckenna-college,,https://npc.collegeboard.org/student/app/claremontmckenna,fill,Scorecard link loads
+harvey-mudd-college,,https://npc.collegeboard.org/student/app/hmc,fill,Scorecard link loads
+scripps-college,,https://npc.collegeboard.org/student/app/scrippscollege,fill,Scorecard link loads
+occidental-college,,https://npc.collegeboard.org/app/occidental,fill,Scorecard link loads
+loyola-marymount-university,,https://lmu.studentaidcalculator.com/survey.aspx,fill,Scorecard link loads
+university-of-san-diego,,https://www.sandiego.edu/admissions/undergraduate/tuition-financial-aid/net-price-calculator.php,fill,Scorecard link loads
+university-of-san-francisco,,https://www.usfca.edu/admission/financial-aid/net-price-calculator,fill,Scorecard link loads
+chapman-university,https://www.chapman.edu/admission/undergraduate/financing/net-price-calculator.aspx,https://www.chapman.edu/students/tuition-and-aid/financial-aid/net-cost-calculator/index.aspx,replace,Scorecard link loads
+pepperdine-university,,https://seaver.pepperdine.edu/admission/financial-aid/undergraduate/npc,fill,Scorecard link loads
+university-of-the-pacific,,https://pacific.clearcostcalculator.com/student/default/netpricecalculator/survey,fill,Scorecard link loads
+university-of-redlands,,https://www.redlands.edu/npc,fill,Scorecard link loads
+amherst-college,,https://npc.collegeboard.org/student/app/amherst,fill,Scorecard link loads
+swarthmore-college,,https://www.swarthmore.edu/financial-aid/net-price-calculator,fill,Scorecard link loads
+wellesley-college,,https://npc.collegeboard.org/student/app/wellesley,fill,Scorecard link loads
+bowdoin-college,,https://npc.collegeboard.org/app/bowdoin,fill,Scorecard link loads
+middlebury-college,,https://npc.collegeboard.org/app/middlebury,fill,Scorecard link loads
+carleton-college,,https://www.carleton.edu/admissions/apply/afford/aid-estimators/npc/,fill,Scorecard link loads
+colgate-university,https://www.colgate.edu/admission-aid/financial-aid/estimate-your-aid,https://npc.collegeboard.org/app/colgate,replace,Scorecard link loads
+vassar-college,,https://npc.collegeboard.org/student/app/vassar,fill,Scorecard link loads
+hamilton-college,,https://npc.collegeboard.org/app/hamilton,fill,Scorecard link loads
+colby-college,,https://npc.collegeboard.org/app/colby,fill,Scorecard link loads
+bates-college,,https://npc.collegeboard.org/app/bates,fill,Scorecard link loads
+duke-university,,https://npc.collegeboard.org/student/app/duke,fill,Scorecard link loads
+university-of-chicago,,https://financialaid.uchicago.edu/undergraduate/resources-and-tools/net-price-calculator/,fill,Scorecard link loads
+northwestern-university,,https://npc.collegeboard.org/student/app/northwestern,fill,Scorecard link loads
+vanderbilt-university,,,leave empty,Scorecard link failed and could not be confirmed
+rice-university,,https://financialaid.rice.edu/cost-attendance/estimate-your-cost,fill,Scorecard link loads (read in the browser)
+johns-hopkins-university,,https://npc.collegeboard.org/student/app/jhu,fill,Scorecard link loads
+georgetown-university,,,skip,"Scorecard link is a general cost page, not a calculator"
+worcester-polytechnic-institute,,https://www.wpi.edu/admissions/tuition-aid/financial-need/net-price-calculator,fill,Scorecard link loads
+case-western-reserve-university,,https://case.edu/financialaid/resources/net-price-calculator/,fill,Scorecard link loads
+rochester-institute-of-technology,,https://npc.collegeboard.org/app/rit,fill,Scorecard link loads
+stevens-institute-of-technology,,https://npc.collegeboard.org/app/stevens,fill,Scorecard link loads
+university-of-rochester,,https://www.rochester.edu/financial-aid/undergraduate-cost-calculators/#college-board,fill,Scorecard link loads
+university-of-virginia,,https://npc.collegeboard.org/student/app/virginia,fill,Scorecard link loads
+ohio-state-university,,https://sfa.osu.edu/incoming-freshmen/about-aid/net-price-calculator,fill,Scorecard link loads
+penn-state-university,,,skip,"Scorecard link is a general cost page, not a calculator"
+university-of-wisconsin-madison,,https://financialaid.wisc.edu/net-price-calculator/,fill,Scorecard link loads
+indiana-university-bloomington,,,skip,"Scorecard link is a general cost page, not a calculator"
+university-of-maryland,,https://financialaid.umd.edu/resources-policies/net-price-calculator,fill,Scorecard link loads
+rutgers-university,,https://scarlethub.rutgers.edu/financial-services/tools-resources/net-price-calculator/,fill,Scorecard link loads
+university-of-arizona,,https://financialaid.arizona.edu/cost/npc,fill,Scorecard link loads
+university-of-colorado-boulder,,https://ofa.colorado.edu/netpricecalculator/,fill,Scorecard link loads
+texas-am-university,,,skip,"Scorecard link is a general cost page, not a calculator"
+miami-university-ohio,,https://miamioh.edu/onestop/paying-for-college/costs/net-price-calculators/index.html,fill,Scorecard link loads
+baylor-university,,https://www.baylor.edu/sfs/netpricecalculator/npcalc.htm,fill,Scorecard link loads
+texas-christian-university,,https://financialaid.tcu.edu/cost/net-price-calculator.php,fill,Scorecard link loads
+southern-methodist-university,,https://www.smu.edu/enrollment-services/student-financial-services/cost-and-payment/net-price-calculator,fill,Scorecard link loads
+university-of-denver,,https://www.du.edu/financialaid/undergraduate/calculator/,fill,Scorecard link loads
+elon-university,,https://www.elon.edu/u/admissions/undergraduate/financial-aid/tuition-and-aid/,fill,Scorecard link loads
+university-of-vermont,,https://www.uvm.edu/studentfinancialservices/net_price_calculator,fill,Scorecard link loads
+university-of-delaware,,https://www.udel.edu/apply/undergraduate-admissions/financing-your-degree/net-price-calculator/,fill,Scorecard link loads
+drexel-university,,https://drexel.edu/drexelcentral/finaid/prospective-students/net-price-calculator/,fill,Scorecard link loads
+temple-university,,https://sfs.temple.edu/sites/sfs/files/NetPrice.html,replace,Scorecard link 404s; the school lists this capitalised address
+university-of-connecticut,,https://financialaid.uconn.edu/pricecalc/,fill,Scorecard link loads
+clemson-university,,https://netprice.app.clemson.edu/calc/,fill,Scorecard link loads
+michigan-state-university,,https://msu.clearcostcalculator.com/student/default/netpricecalculator/survey,fill,Scorecard link loads
+university-of-iowa,,https://admissions.uiowa.edu/finances/net-price-calculator,fill,Scorecard link loads
+university-of-kansas,,,skip,"Scorecard link is a general cost page, not a calculator"
+new-york-university,,https://www.nyu.edu/admissions/financial-aid-and-scholarships/applying-and-planning-for-undergraduate-aid/estimate-your-cost.html,fill,Scorecard link loads
+emory-university,,https://npc.collegeboard.org/app/emory,fill,Scorecard link loads
+washington-university-in-st-louis,https://financialaid.washu.edu/net-price-calculator/,https://financialaid.washu.edu/costs/cost-calculators/net-price-calculator,replace,Scorecard link loads
+boston-university,,https://www.bu.edu/finaid/aid-basics/cost-of-education/net-price-calculator/,fill,Scorecard link loads
+tulane-university,,https://admission.tulane.edu/tuition-aid/net-price-calculator,fill,Scorecard link loads
+boston-college,,https://npc.collegeboard.org/student/app/bc,fill,Scorecard link loads
+university-of-miami,,https://npc.collegeboard.org/app/miami,fill,Scorecard link loads
+wake-forest-university,,https://npc.collegeboard.org/student/app/wfu,fill,Scorecard link loads
+villanova-university,,https://npc.collegeboard.org/student/app/villanova,fill,Scorecard link loads
+university-of-georgia,,https://osfa.uga.edu/sites/default/files/npcalc.htm,fill,Scorecard link loads
+syracuse-university,,https://www.syracuse.edu/admissions-aid/tuition-fees/undergraduate-costs/net-price-calculator/,fill,Scorecard link loads
