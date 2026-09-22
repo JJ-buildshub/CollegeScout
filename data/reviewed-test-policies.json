@@ -589,6 +589,64 @@
    "evidence": [
     "Official Test Scores Optional for admission, but encouraged for scholarships."
    ]
+  },
+  "kent-state-university-at-kent": {
+   "policy": "Test-Optional",
+   "label": "Kent State University admissions",
+   "url": "https://www.kent.edu/admissions/test-optional-policy",
+   "evidence": [
+    "If you are applying for first-year or transfer admission you are not required to submit standardized test scores (ACT or SAT)."
+   ]
+  },
+  "montana-state-university": {
+   "policy": "Test-Optional",
+   "label": "Montana State University admissions",
+   "url": "https://www.montana.edu/admissions/apply/freshman.html",
+   "evidence": [
+    "The Montana Board of Regents of Higher Education has ended the requirement that students provide ACT or SAT test scores for admission to its campuses."
+   ],
+   "note": "Set by the Montana Board of Regents for all its four-year campuses."
+  },
+  "university-of-new-hampshire": {
+   "policy": "Test-Optional",
+   "label": "University of New Hampshire admissions",
+   "url": "https://admissions.unh.edu/apply/test-optional",
+   "evidence": [
+    "Our test-optional policy reflects our holistic review to the college application process, in which standardized test scores have never been a deciding factor."
+   ]
+  },
+  "illinois-state-university": {
+   "policy": "Test-Optional",
+   "label": "Illinois State University admissions",
+   "url": "https://policy.illinoisstate.edu/students/2-1-31/",
+   "evidence": [
+    "At Illinois State University, no prospective student is required to submit any standardized test scores with their application."
+   ],
+   "note": "Required by Illinois's Higher Education Fair Admissions Act."
+  },
+  "university-of-hawaii-at-manoa": {
+   "policy": "Test-Optional",
+   "label": "University of Hawaii at Manoa admissions",
+   "url": "https://manoa.hawaii.edu/admissions/freshman/",
+   "evidence": [
+    "UH Mānoa is test-optional, which means that students can choose whether or not to submit SAT or ACT scores for admission consideration."
+   ]
+  },
+  "towson-university": {
+   "policy": "Test-Optional",
+   "label": "Towson University admissions",
+   "url": "https://catalog.towson.edu/undergraduate/admissions/undergraduate-admissions/guidelines-freshman-admission/",
+   "evidence": [
+    "TU is test-optional: applicants are not required to submit SAT/ACT scores as part of their application, but scores will be considered if they are submitted."
+   ]
+  },
+  "bowling-green-state-university": {
+   "policy": "Test-Optional",
+   "label": "Bowling Green State University admissions",
+   "url": "https://www.bgsu.edu/admissions/test-optional.html",
+   "evidence": [
+    "Bowling Green State University is offering applicants the opportunity to have their applications reviewed without consideration of test scores."
+   ]
   }
  }
 }

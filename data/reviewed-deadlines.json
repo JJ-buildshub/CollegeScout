@@ -2266,6 +2266,128 @@
     }
    ],
    "manual": true
+  },
+  "kent-state-university-at-kent": {
+   "label": "Kent State University admissions",
+   "url": "https://www.kent.edu/admissions/first-year-student-requirements",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Nov. 1 Priority Application Deadline",
+    "Jan. 15 Merit Scholarship Deadline"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "November 1",
+     "note": "Priority date; a separate merit scholarship deadline is January 15."
+    }
+   ]
+  },
+  "university-of-new-hampshire": {
+   "label": "University of New Hampshire admissions",
+   "url": "https://admissions.unh.edu/apply/first-year",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "EARLY ACTION - NOVEMBER 15",
+    "REGULAR DECISION - FEBRUARY 1"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "illinois-state-university": {
+   "label": "Illinois State University admissions",
+   "url": "https://illinoisstate.edu/apply/deadlines/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall (August) August 1 – November 1 April 1 April 1 July 15"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "April 1",
+     "note": "Priority filing window is August 1 through November 1."
+    }
+   ]
+  },
+  "university-of-hawaii-at-manoa": {
+   "label": "University of Hawaii at Manoa admissions",
+   "url": "https://manoa.hawaii.edu/admissions/freshman/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "FALL SEMESTER January 5th Priority D",
+    "eadline April 1st Final Deadline"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "April 1",
+     "note": "January 5 is a priority date."
+    }
+   ]
+  },
+  "towson-university": {
+   "label": "Towson University admissions",
+   "url": "https://www.towson.edu/admissions/undergrad/freshmen/deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall Freshman November 1 (Early Action and Honors College) February 1 (Regular Decision)"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "bowling-green-state-university": {
+   "label": "Bowling Green State University admissions",
+   "url": "https://www.bgsu.edu/admissions/apply-now/freshmen/application-instructions.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Prospective students who wish to enroll fall semester are encouraged to apply and have all admissions credentials completed by March 1 to assure consideration."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "March 1"
+    }
+   ]
+  },
+  "the-university-of-texas-at-san-antonio": {
+   "label": "UT San Antonio admissions",
+   "url": "https://future.utsa.edu/freshman/admissions/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Term Priority Freshman Deadline International Freshman Deadline Domestic Freshman Deadline Fall January 15 June 1 to submit application June 15 to submit missing documents June 1 to submit application June 15 to submit missing docume"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "June 1",
+     "note": "Priority date is January 15."
+    }
+   ]
   }
  }
 }

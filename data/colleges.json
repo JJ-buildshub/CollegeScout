@@ -26325,7 +26325,7 @@
     "admitRateOverall": 0.866,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1020-1240 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -26342,7 +26342,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "April 1",
+        "note": "January 5 is a priority date."
+      }
+    ],
     "financials": {
       "coaInState": 26433,
       "coaOutOfState": 48465,
@@ -26437,7 +26444,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "University of Hawaii at Manoa admissions (https://manoa.hawaii.edu/admissions/freshman/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of Hawaii at Manoa admissions (https://manoa.hawaii.edu/admissions/freshman/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "drake-university",
@@ -27558,7 +27575,7 @@
     "admitRateOverall": 0.8815,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1010-1230 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -27575,7 +27592,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "April 1",
+        "note": "Priority filing window is August 1 through November 1."
+      }
+    ],
     "financials": {
       "coaInState": 34309,
       "coaOutOfState": 46375,
@@ -27670,7 +27694,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Required by Illinois's Higher Education Fair Admissions Act.",
+    "testingPolicyProvenance": {
+      "source": "Illinois State University admissions (https://policy.illinoisstate.edu/students/2-1-31/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "Illinois State University admissions (https://illinoisstate.edu/apply/deadlines/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "school-of-the-art-institute-of-chicago",
@@ -30960,7 +30995,7 @@
     "admitRateOverall": 0.8197,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1050-1270 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -30977,7 +31012,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 28535,
       "coaOutOfState": 46627,
@@ -31072,7 +31118,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "Towson University admissions (https://catalog.towson.edu/undergraduate/admissions/undergraduate-admissions/guidelines-freshman-admission/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "Towson University admissions (https://www.towson.edu/admissions/undergrad/freshmen/deadlines.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "university-of-maryland-baltimore-county",
@@ -33454,7 +33510,7 @@
     "admitRateOverall": 0.8214,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1060-1270 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -33566,7 +33622,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Set by the Montana Board of Regents for all its four-year campuses.",
+    "testingPolicyProvenance": {
+      "source": "Montana State University admissions (https://www.montana.edu/admissions/apply/freshman.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "the-university-of-montana",
@@ -36107,7 +36169,7 @@
     "admitRateOverall": 0.8816,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1120-1320 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -36124,7 +36186,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 15"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 35537,
       "coaOutOfState": 56187,
@@ -36219,7 +36292,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "University of New Hampshire admissions (https://admissions.unh.edu/apply/test-optional)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of New Hampshire admissions (https://admissions.unh.edu/apply/first-year)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "montclair-state-university",
@@ -39621,7 +39704,7 @@
     "admitRateOverall": 0.8096,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1020-1230 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -39638,7 +39721,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "March 1"
+      }
+    ],
     "financials": {
       "coaInState": 33007,
       "coaOutOfState": 40995,
@@ -39733,7 +39822,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "Bowling Green State University admissions (https://www.bgsu.edu/admissions/test-optional.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "Bowling Green State University admissions (https://www.bgsu.edu/admissions/apply-now/freshmen/application-instructions.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "denison-university",
@@ -39869,7 +39968,7 @@
     "admitRateOverall": 0.8634,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1000-1230 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -39886,7 +39985,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "November 1",
+        "note": "Priority date; a separate merit scholarship deadline is January 15."
+      }
+    ],
     "financials": {
       "coaInState": 30567,
       "coaOutOfState": 40417,
@@ -39981,7 +40087,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "Kent State University admissions (https://www.kent.edu/admissions/test-optional-policy)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "Kent State University admissions (https://www.kent.edu/admissions/first-year-student-requirements)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "kenyon-college",
@@ -44946,7 +45062,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "June 1",
+        "note": "Priority date is January 15."
+      }
+    ],
     "financials": {
       "coaInState": 22352,
       "coaOutOfState": 35392,
@@ -45041,7 +45164,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "UT San Antonio admissions (https://future.utsa.edu/freshman/admissions/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "university-of-houston",
