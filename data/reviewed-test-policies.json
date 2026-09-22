@@ -1,6 +1,6 @@
 {
  "note": "Test policies confirmed against each school's own admissions page, with the exact page line each rests on. The school's page decides; the Common App grid is only a fallback. Applied to colleges.json by scripts/apply-reviewed-test-policies.py and verified by scripts/check-reviewed-test-policies.mjs. `manual` means the page blocks automated requests and was read in a browser on the accessed date.",
- "accessed": "2026-09-20",
+ "accessed": "2026-09-22",
  "cycle": "2026-27",
  "schools": {
   "university-of-pennsylvania": {
@@ -721,6 +721,56 @@
    "url": "https://uwm.edu/undergrad-admission/apply/new-freshman/",
    "evidence": [
     "UW System institutions, including UWM, are not requiring applicants to submit ACT or SAT scores as part of the application process this year."
+   ]
+  },
+  "university-at-buffalo": {
+   "policy": "Test-Optional",
+   "label": "University at Buffalo admissions",
+   "url": "https://www.buffalo.edu/admissions/apply/first-year.standardized-tests.html",
+   "evidence": [
+    "The University at Buffalo has adopted a test-optional policy. This means that standardized test scores are not required for admission or scholarship consideration."
+   ]
+  },
+  "lehigh-university": {
+   "policy": "Test-Optional",
+   "label": "Lehigh University admissions",
+   "url": "https://www2.lehigh.edu/admissions/admissions-requirements",
+   "evidence": [
+    "Lehigh University has adopted a test-optional policy regarding submission of SAT or ACT scores indefinitely."
+   ]
+  },
+  "the-university-of-texas-at-san-antonio": {
+   "policy": "Test-Optional",
+   "label": "UTSA Future Roadrunner admissions",
+   "url": "https://future.utsa.edu/freshman/admissions/",
+   "evidence": [
+    "Test Optional You do not need to submit SAT or ACT scores to be considered for admission."
+   ]
+  },
+  "william-and-mary": {
+   "policy": "Test-Optional",
+   "label": "William & Mary admission",
+   "url": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/first-year-applicants/standardizedtesting/",
+   "evidence": [
+    "Standardized testing is just one optional part of your application.",
+    "If you do not want to share your SAT or ACT, that is perfectly fine because it is a completely optional component of your application."
+   ]
+  },
+  "west-virginia-university": {
+   "policy": "Test-Optional",
+   "label": "WVU admissions",
+   "url": "https://admissions.wvu.edu/how-to-apply/first-time-freshmen/admission-requirements",
+   "evidence": [
+    "Test-Optional Admission Test-optional admission permits applicants to apply without an ACT or SAT score."
+   ],
+   "note": "Some direct-admission majors and the WV PROMISE Scholarship set their own test-score-linked requirements."
+  },
+  "kennesaw-state-university": {
+   "policy": "Test-Required",
+   "label": "Kennesaw State University admissions",
+   "url": "https://www.kennesaw.edu/admissions/undergraduate/admission-requirements/freshman.php",
+   "evidence": [
+    "Is KSU test-optional? No. First-Year students applying to Kennesaw State University are required to submit official SAT or ACT scores along with official high school transcripts."
    ]
   }
  }
