@@ -2548,6 +2548,60 @@
      "deadline": "February 1"
     }
    ]
+  },
+  "university-of-north-carolina-wilmington": {
+   "label": "UNC Wilmington admissions",
+   "url": "https://www.uncw.edu/admissions/undergraduate/first-year/deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall Early Action (Non-Binding)- November 1 Applicants will receive a decision on or around January 20.",
+    "Fall Regular Decision - January 15 Applicants will receive a decision on or around March 15."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ]
+  },
+  "boise-state-university": {
+   "label": "Boise State University admissions",
+   "url": "https://www.boisestate.edu/admissions/apply/resident/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Application and Scholarship Priority Deadline: February 15 Standard Application Deadline: May 1"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "May 1",
+     "note": "February 15 is the priority date for admission and scholarships."
+    }
+   ]
+  },
+  "university-of-wisconsin-milwaukee": {
+   "label": "UW-Milwaukee admissions",
+   "url": "https://uwm.edu/undergrad-admission/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall applicatio",
+    "n open Aug. 1, 2026 Admission and scholarship application priority deadline Nov. 1, 2026 Orientation registration and housing application priority deadline May 1, 2027 Fall application deadline (application closes) Aug. 1, 2027"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "August 1",
+     "note": "November 1, 2026 is the admission and scholarship priority deadline."
+    }
+   ]
   }
  }
 }

@@ -697,6 +697,31 @@
    "evidence": [
     "The University of Dayton is test-optional in admission."
    ]
+  },
+  "university-of-north-carolina-wilmington": {
+   "policy": "Test-Optional",
+   "label": "UNC Wilmington admissions",
+   "url": "https://www.uncw.edu/admissions/undergraduate/first-year/requirements/testing",
+   "evidence": [
+    "For students applying for Fall 2026 and beyond: students with a weighted high school GPA greater than or equal to 2.50 and less than 2.80 are required to s"
+   ],
+   "note": "Test-optional above a weighted GPA of 2.80; between 2.50 and 2.80 a score of at least 17 (ACT) or 930 (SAT) is required; below 2.50, see the school's admission criteria."
+  },
+  "boise-state-university": {
+   "policy": "Test-Optional",
+   "label": "Boise State University admissions",
+   "url": "https://www.boisestate.edu/admissions/apply/resident/",
+   "evidence": [
+    "Test scores are not required and will not be used in the admission review process."
+   ]
+  },
+  "university-of-wisconsin-milwaukee": {
+   "policy": "Test-Optional",
+   "label": "UW-Milwaukee admissions",
+   "url": "https://uwm.edu/undergrad-admission/apply/new-freshman/",
+   "evidence": [
+    "UW System institutions, including UWM, are not requiring applicants to submit ACT or SAT scores as part of the application process this year."
+   ]
   }
  }
 }

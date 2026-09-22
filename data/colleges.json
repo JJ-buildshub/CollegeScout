@@ -27025,7 +27025,7 @@
     "admitRateOverall": 0.8721,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -27042,7 +27042,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "May 1",
+        "note": "February 15 is the priority date for admission and scholarships."
+      }
+    ],
     "financials": {
       "coaInState": 28224,
       "coaOutOfState": 46964,
@@ -27133,7 +27140,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "Boise State University admissions (https://www.boisestate.edu/admissions/apply/resident/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "Boise State University admissions (https://www.boisestate.edu/admissions/apply/resident/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "lewis-clark-state-college",
@@ -34750,7 +34767,7 @@
     "admitRateOverall": 0.6424,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1220-1360 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -34767,7 +34784,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15"
+      }
+    ],
     "financials": {
       "coaInState": 26547,
       "coaOutOfState": 43422,
@@ -34862,7 +34890,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Test-optional above a weighted GPA of 2.80; between 2.50 and 2.80 a score of at least 17 (ACT) or 930 (SAT) is required; below 2.50, see the school's admission criteria.",
+    "testingPolicyProvenance": {
+      "source": "UNC Wilmington admissions (https://www.uncw.edu/admissions/undergraduate/first-year/requirements/testing)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "UNC Wilmington admissions (https://www.uncw.edu/admissions/undergraduate/first-year/deadlines)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "university-of-north-carolina-at-charlotte",
@@ -47514,7 +47553,7 @@
     "admitRateOverall": 0.9068,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -47531,7 +47570,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "August 1",
+        "note": "November 1, 2026 is the admission and scholarship priority deadline."
+      }
+    ],
     "financials": {
       "coaInState": 22756,
       "coaOutOfState": 34756,
@@ -47622,7 +47668,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "UW-Milwaukee admissions (https://uwm.edu/undergrad-admission/apply/new-freshman/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "UW-Milwaukee admissions (https://uwm.edu/undergrad-admission/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "fairmont-state-university",
