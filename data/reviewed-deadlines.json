@@ -1524,6 +1524,158 @@
     }
    ],
    "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-minnesota-twin-cities": {
+   "label": "University of Minnesota Twin Cities admissions",
+   "url": "https://admissions.tc.umn.edu/apply/freshman-application-deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Students who submit their complete applications by the November 1 Early Action I Deadline will receive an admission decision of admit, defer, or deny in Application Tracker by January 31.",
+    "Students who submit their complete applications by the December 1 Early Action II Deadline will receive an admission decision of admit, defer, or deny in Application Tracker by February 28.",
+    "Regular Deadline Students who submit their complete applications by the January 1 Regular Deadline will receive an admission decision of admit, waitlist, or deny in Application Tracker by March 31."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA2",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 1"
+    }
+   ]
+  },
+  "university-of-oregon": {
+   "label": "University of Oregon admissions",
+   "url": "https://www.uoregon.edu/admissions/undergraduate/find-your-path/first-year-students/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action November 1 November 15",
+    "Regular Decision January 15 February 15",
+    "Is a non-binding application plan where you will receive a decision on January 5."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-at-buffalo": {
+   "label": "University at Buffalo admissions",
+   "url": "https://www.buffalo.edu/admissions/apply/deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action November 1",
+    "Regular Decision application completion deadline February 1"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "the-university-of-tampa": {
+   "label": "University of Tampa admissions",
+   "url": "https://www.ut.edu/apply/first-year",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Nov. 1 Early decision deadline",
+    "Nov. 15 Early action deadline",
+    "Jan. 15 Regular decision deadline",
+    "Applications completed after Jan. 15 are evaluated on a rolling basis."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15",
+     "note": "Applications completed after January 15 are evaluated on a rolling basis."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-north-texas": {
+   "label": "University of North Texas admissions",
+   "url": "https://www.unt.edu/admissions/freshman/deadlines-fees.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "ACADEMIC TERM APPLICATION DEADLINE* INTERNATIONAL APPLICATION DEADLINE Fall July 31 July 15",
+    "Apply and be admitted by March 1 to be considered for the UNT Excellence Scholarship Award."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "July 31",
+     "note": "The scholarship priority date is a separate, earlier date: March 1 (for the UNT Excellence Scholarship)."
+    }
+   ]
+  },
+  "northern-arizona-university": {
+   "label": "Northern Arizona University admissions",
+   "url": "https://nau.edu/admissions/important-dates-deadlines/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "NAU offers rolling admission for most undergraduate programs, so you can apply anytime."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ]
+  },
+  "colorado-state-university-fort-collins": {
+   "label": "Colorado State University admissions",
+   "url": "https://catalog.colostate.edu/general-catalog/admissions/how-to-apply/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "ACT/SAT test scores and recommendations are not required.",
+    "Test scores, if submitted, are only considered when applicants email admissions@colostate.edu with this request."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "CSU's official pages describe an application window (opens August 1) rather than a fixed deadline; no fall 2027 deadline date is stated."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
   }
  }
 }
