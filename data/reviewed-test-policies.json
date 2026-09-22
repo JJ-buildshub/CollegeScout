@@ -531,6 +531,31 @@
    "evidence": [
     "Students do have the opportunity to decide if they would like to submit standardized test scores as a component of the application process."
    ]
+  },
+  "iowa-state-university": {
+   "policy": "Test-Optional",
+   "label": "Iowa State University admissions",
+   "url": "https://catalog.iastate.edu/admissions/",
+   "evidence": [
+    "Iowa State is test-optional for first-year applicants. Students may choose whether they wish to report their ACT/SAT scores when they apply for admission."
+   ]
+  },
+  "the-university-of-texas-at-arlington": {
+   "policy": "Test-Optional",
+   "label": "UT Arlington admissions",
+   "url": "https://www.uta.edu/admissions/apply/freshmen",
+   "evidence": [
+    "UTA is currently test optional, therefore SAT and ACT scores are not required for an admissions decision."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-vermont": {
+   "policy": "Test-Optional",
+   "label": "University of Vermont admissions",
+   "url": "https://www.uvm.edu/uvmnews/news/uvm-officially-approves-test-optional-admissions-policy",
+   "evidence": [
+    "The University of Vermont announced that it will make permanent its current test-optional admissions policy for undergraduate applicants"
+   ]
   }
  }
 }

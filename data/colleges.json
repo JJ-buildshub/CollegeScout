@@ -17614,16 +17614,6 @@
     },
     "applicationPlans": [
       {
-        "type": "ED",
-        "binding": true,
-        "deadline": "November 1"
-      },
-      {
-        "type": "ED2",
-        "binding": true,
-        "deadline": "January 15"
-      },
-      {
         "type": "EA",
         "binding": false,
         "deadline": "November 1"
@@ -17725,8 +17715,14 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
-      "year": "2026-27"
+      "source": "University of Vermont admissions (https://www.uvm.edu/admissions/undergraduate/application-deadlines)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "testingPolicyProvenance": {
+      "source": "University of Vermont admissions (https://www.uvm.edu/uvmnews/news/uvm-officially-approves-test-optional-admissions-policy)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
     }
   },
   {
@@ -25590,7 +25586,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "November 2",
+        "note": "Priority deadline for Fall 2027; the regular deadline is July 1, 2027."
+      }
+    ],
     "financials": {
       "coaInState": 24008,
       "coaOutOfState": 35936,
@@ -25685,7 +25688,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Kennesaw State University admissions (https://www.kennesaw.edu/admissions/undergraduate/deadlines.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "savannah-college-of-art-and-design",
@@ -26689,7 +26697,7 @@
     "admitRateOverall": 0.8866,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1110-1350 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -26801,7 +26809,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "Iowa State University admissions (https://catalog.iastate.edu/admissions/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "university-of-northern-iowa",
@@ -37559,7 +37572,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1",
+        "note": "Priority date; rolling admissions continue January through July."
+      }
+    ],
     "financials": {
       "coaInState": 14170,
       "coaOutOfState": 22120,
@@ -37654,7 +37674,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Baruch College (CUNY) admissions (https://enrollmentmanagement.baruch.cuny.edu/undergraduate-admissions/how-to-apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "cuny-brooklyn-college",
@@ -44536,7 +44561,7 @@
     "admitRateOverall": 0.799,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "990-1230 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -44553,7 +44578,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 15",
+        "note": "Applications are accepted after this date but are not guaranteed consideration."
+      }
+    ],
     "financials": {
       "coaInState": 25261,
       "coaOutOfState": 42893,
@@ -44648,7 +44680,19 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "UT Arlington admissions (https://www.uta.edu/admissions/apply/freshmen)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "applicationPlansProvenance": {
+      "source": "UT Arlington admissions (https://www.uta.edu/admissions/apply/freshmen)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    }
   },
   {
     "id": "the-university-of-texas-at-dallas",

@@ -2091,6 +2091,78 @@
      "deadline": "February 1"
     }
    ]
+  },
+  "cuny-bernard-m-baruch-college": {
+   "label": "Baruch College (CUNY) admissions",
+   "url": "https://enrollmentmanagement.baruch.cuny.edu/undergraduate-admissions/how-to-apply/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Freshman/Transfer U.S. Educated February 1 (Application & Supporting Documents) Rolling Admissions January – July"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1",
+     "note": "Priority date; rolling admissions continue January through July."
+    }
+   ]
+  },
+  "kennesaw-state-university": {
+   "label": "Kennesaw State University admissions",
+   "url": "https://www.kennesaw.edu/admissions/undergraduate/deadlines.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 - Priority Deadline August 1, 2026 November 2, 2026 November 16, 2026 August 23, 2027",
+    "Fall 2027 - Regular Deadline August 1, 2026 July 1, 2027 July 1, 2027 August 23, 2027"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "November 2",
+     "note": "Priority deadline for Fall 2027; the regular deadline is July 1, 2027."
+    }
+   ]
+  },
+  "the-university-of-texas-at-arlington": {
+   "label": "UT Arlington admissions",
+   "url": "https://www.uta.edu/admissions/apply/freshmen",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Application Priority Dates Fall: February 15"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 15",
+     "note": "Applications are accepted after this date but are not guaranteed consideration."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-vermont": {
+   "label": "University of Vermont admissions",
+   "url": "https://www.uvm.edu/admissions/undergraduate/application-deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Submit Common App or Coalition App for freeNovember 1, 2026Application Completion DeadlineNovember 13, 2026",
+    "Submit Common App or Coalition AppJanuary 15, 2027Application Completion DeadlineJanuary 29, 2027"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": true
   }
  }
 }
