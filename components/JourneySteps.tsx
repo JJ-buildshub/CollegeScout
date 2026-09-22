@@ -25,13 +25,20 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
   let targetTotal = 0;
   let targetSaved = 0;
   if (hasUsableGpa) {
-    // Same simplification as My Fit: no UC honors bonus calculated (needs course-level
-    // grades this profile doesn't collect — see lib/gpa.ts), and a "compare as another
-    // state" scenario wins over the saved home state when set.
+    // Same as My Fit: a "compare as another state" scenario wins over the saved home
+    // state when set, and UC schools ignore unweightedGpa/satScore entirely — only
+    // ucCappedGpaSelfReported (or null, for a Limited-data estimate) affects a UC result.
     const unweightedGpa = gpaSummary.cumulativeUnweighted as number;
     const effectiveHomeState = profile.residencyScenario ?? profile.homeState;
     for (const college of colleges) {
-      const fit = evaluateCollegeFit(college, unweightedGpa, unweightedGpa, undefined, effectiveHomeState, profile.satScore ?? undefined);
+      const fit = evaluateCollegeFit(
+        college,
+        profile.ucCappedGpaSelfReported,
+        unweightedGpa,
+        undefined,
+        effectiveHomeState,
+        profile.satScore ?? undefined
+      );
       if (fit?.category === "Target") {
         targetTotal += 1;
         if (collegeListState.entries[college.id]) targetSaved += 1;

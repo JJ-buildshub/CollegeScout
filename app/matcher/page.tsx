@@ -7,12 +7,12 @@ import { colleges, displayedAdmitRate, getCollegeById } from "@/lib/colleges";
 import { evaluateCollegeFit, personalizeForAudience, validSatScore } from "@/lib/gpa";
 import { US_STATES, stateName } from "@/lib/states";
 import type { FitCategory, FitResult, Grade } from "@/lib/types";
-import { computeGpaSummary, MAX_INTERESTS, setYearGpa as persistYearGpa, updateProfile, useProfile } from "@/lib/profile";
+import { computeGpaSummary, MAX_INTERESTS, setUcCappedGpaSelfReported, setYearGpa as persistYearGpa, updateProfile, useProfile } from "@/lib/profile";
 import { listEntries, useCollegeList } from "@/lib/collegeList";
 import FitCollegeCard from "@/components/FitCollegeCard";
 import InterestPicker from "@/components/InterestPicker";
 import GpaByYearForm from "@/components/GpaByYearForm";
-import UcGpaCalculator from "@/components/UcGpaCalculator";
+import UcCappedGpaField from "@/components/UcCappedGpaField";
 import AcademicCalibrator from "@/components/AcademicCalibrator";
 import SchoolStatusBadge from "@/components/SchoolStatusBadge";
 
@@ -94,9 +94,7 @@ function MatcherContent() {
   const gpaSummary = useMemo(() => computeGpaSummary(profile), [profile]);
   const hasUsableGpa = gpaSummary.cumulativeUnweighted !== null;
 
-  // UC schools are compared using the same unweighted GPA as everyone else — no honors
-  // bonus is calculated here (see the note on calculateUcCappedGpa in lib/gpa.ts for why:
-  // UC's "no point for a D or F" rule needs course-level grades this profile doesn't collect).
+  // Non-UC schools only: compared against unweighted GPA, same as always.
   const unweightedGpa = gpaSummary.cumulativeUnweighted ?? 0;
 
   const interestFieldIds = profile.undecided ? [] : profile.interests.map((i) => i.fieldId);
@@ -109,11 +107,21 @@ function MatcherContent() {
     if (!hasUsableGpa) return [];
     const results: FitResult[] = [];
     for (const college of colleges) {
-      const fit = evaluateCollegeFit(college, unweightedGpa, unweightedGpa, undefined, effectiveHomeState, profile.satScore ?? undefined);
+      // UC schools ignore unweightedGpa and satScore entirely (see evaluateUcFit in
+      // lib/gpa.ts) — only ucCappedGpaSelfReported (or null, for a Limited-data estimate)
+      // ever affects a UC result.
+      const fit = evaluateCollegeFit(
+        college,
+        profile.ucCappedGpaSelfReported,
+        unweightedGpa,
+        undefined,
+        effectiveHomeState,
+        profile.satScore ?? undefined
+      );
       if (fit) results.push(fit);
     }
     return results;
-  }, [hasUsableGpa, unweightedGpa, effectiveHomeState, profile.satScore]);
+  }, [hasUsableGpa, unweightedGpa, effectiveHomeState, profile.satScore, profile.ucCappedGpaSelfReported]);
 
   const fitById = useMemo(() => new Map(fitResults.map((r) => [r.college.id, r])), [fitResults]);
 
@@ -287,7 +295,10 @@ function MatcherContent() {
             </div>
           </div>
 
-          <UcGpaCalculator cumulativeUnweighted={gpaSummary.cumulativeUnweighted} homeState={effectiveHomeState} />
+          <UcCappedGpaField
+            value={profile.ucCappedGpaSelfReported}
+            onChange={(v) => setUcCappedGpaSelfReported(v)}
+          />
 
           <AcademicCalibrator />
         </div>

@@ -1,5 +1,10 @@
 // Prints Likely/Target/Reach/Not-enough-data counts for a few GPAs (and
 // optionally SAT scores). Run: node --experimental-strip-types scripts/fit-counts.mts [homeState|none] [sat,sat,...]
+//
+// `capped` below simulates a student's self-reported UC-capped GPA (the only
+// GPA UC schools ever compare against — see evaluateUcFit in lib/gpa.ts);
+// it is NOT calculated from `gpa` by the app itself. SAT is passed through
+// for non-UC schools only — UC schools ignore it entirely regardless.
 import { readFileSync } from "node:fs";
 import { evaluateCollegeFit, calculateUcCappedGpa } from "../lib/gpa.ts";
 

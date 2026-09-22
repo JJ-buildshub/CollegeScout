@@ -40,6 +40,15 @@ export interface StudentProfile {
   undecided: boolean;
   yearGpas: Partial<Record<Grade, YearGpa>>;
   satScore: number | null;
+  /**
+   * The student's own UC-capped weighted GPA, calculated by them elsewhere
+   * using UC's real A-G methodology — see UcCappedGpaField and
+   * lib/gpa.ts's evaluateUcFit. Never derived from `yearGpas` or anything
+   * else in this profile; null means "not entered," in which case UC
+   * campuses are classified as a Limited-data estimate from admit rate
+   * alone, never from school-reported GPA.
+   */
+  ucCappedGpaSelfReported: number | null;
 }
 
 export const MAX_INTERESTS = 3;
@@ -53,6 +62,7 @@ export const EMPTY_PROFILE: StudentProfile = {
   undecided: false,
   yearGpas: {},
   satScore: null,
+  ucCappedGpaSelfReported: null,
 };
 
 const PROFILE_STORAGE_KEY = "collegescout:profile";
@@ -60,11 +70,15 @@ const PROFILE_STORAGE_KEY = "collegescout:profile";
  * v2 (2026-09-21 QA pass): dropped `ucGpaCalculator` (see lib/gpa.ts's note on
  * calculateUcCappedGpa for why — the aggregate semester/honors counts it took
  * can't enforce UC's "no honors point for a D or F" rule) and added
- * `residencyScenario`. `migrate` below only ever reads the fields it
- * recognizes, so a v1 record's leftover `ucGpaCalculator` value is simply not
- * carried forward — never an error, never guessed at.
+ * `residencyScenario`.
+ * v3 (2026-09-22 UC accuracy correction): added `ucCappedGpaSelfReported` —
+ * the one number UC fit classification will ever use (see evaluateUcFit in
+ * lib/gpa.ts); school-reported GPA and SAT are never used for UC schools.
+ * `migrate` below only ever reads the fields it recognizes, so an older
+ * record's now-removed fields are simply not carried forward — never an
+ * error, never guessed at.
  */
-const PROFILE_SCHEMA_VERSION = 2;
+const PROFILE_SCHEMA_VERSION = 3;
 const OLD_GPA_KEY = "pathfinder-admit:gpa-inputs";
 const OLD_PLANNING_FOR_KEY = "pathfinder-admit:planning-for";
 const OLD_HOME_STATE_KEY = "pathfinder-admit:home-state";
@@ -118,6 +132,7 @@ function migrate(raw: unknown, _storedVersion: number): StudentProfile {
     undecided: pick("undecided"),
     yearGpas: pick("yearGpas"),
     satScore: pick("satScore"),
+    ucCappedGpaSelfReported: pick("ucCappedGpaSelfReported"),
   };
 }
 
@@ -164,6 +179,10 @@ export function profileWasCorrupted(): boolean {
 
 export function setYearGpa(grade: Grade, entry: YearGpa) {
   store.set((prev) => ({ ...prev, yearGpas: { ...prev.yearGpas, [grade]: entry } }));
+}
+
+export function setUcCappedGpaSelfReported(value: number | null) {
+  store.set((prev) => ({ ...prev, ucCappedGpaSelfReported: value }));
 }
 
 /** Which grades' GPA the student should be entering: completed years plus the current one. */

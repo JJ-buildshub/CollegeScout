@@ -2,7 +2,7 @@ import Link from "next/link";
 import { AlertTriangle, MapPin, Sparkles } from "lucide-react";
 import type { FitResult } from "@/lib/types";
 import { displayedAdmitRate } from "@/lib/colleges";
-import { personalizeForAudience, type PlanningFor } from "@/lib/gpa";
+import { personalizeForAudience, UC_GPA_NOT_ENTERED_LABEL, type PlanningFor } from "@/lib/gpa";
 import { majorCautionFor, meritAidEligible, MERIT_AID_TAG_LABEL } from "@/lib/fitTags";
 import { useCollegeList } from "@/lib/collegeList";
 import { SYSTEM_ACCENT } from "./SystemBadge";
@@ -72,6 +72,9 @@ export default function FitCollegeCard({
 }) {
   const { college, studentGpaUsed, gpaMetricLabel, rangeLow, rangeHigh, reason, sat, satNote, isEstimated } = result;
   const hasRange = rangeLow !== null && rangeHigh !== null;
+  // No self-reported UC GPA was entered — studentGpaUsed is a placeholder 0, never a real
+  // figure to show (see UC_GPA_NOT_ENTERED_LABEL in lib/gpa.ts).
+  const gpaNotEntered = gpaMetricLabel === UC_GPA_NOT_ENTERED_LABEL;
   const accent = SYSTEM_ACCENT[college.system];
   const admitPct = Math.round(displayedAdmitRate(college).value * 100);
   const { state } = useCollegeList();
@@ -107,10 +110,12 @@ export default function FitCollegeCard({
         <div className="mt-3">
           <div className="flex justify-between text-[11px] font-medium text-slate-400">
             <span>{gpaMetricLabel}</span>
-            <span>
-              {planningFor === "student" ? "Your student:" : "You:"}{" "}
-              <span className="font-bold text-navy-900">{studentGpaUsed.toFixed(2)}</span>
-            </span>
+            {!gpaNotEntered && (
+              <span>
+                {planningFor === "student" ? "Your student:" : "You:"}{" "}
+                <span className="font-bold text-navy-900">{studentGpaUsed.toFixed(2)}</span>
+              </span>
+            )}
           </div>
           {hasRange && (
             <RangeBar
@@ -120,11 +125,6 @@ export default function FitCollegeCard({
               minPadding={0.05}
               format={(v) => v.toFixed(2)}
             />
-          )}
-          {college.system === "UC" && (
-            <p className="mt-1 text-[10px] leading-snug text-slate-400">
-              Assumes no Honors/AP/IB bonus — UC's real GPA needs course-level grades we don&apos;t collect.
-            </p>
           )}
         </div>
       )}
