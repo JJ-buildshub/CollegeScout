@@ -1,5 +1,5 @@
 import type { ApplicationPlanType, College } from "./types";
-import { getApplicationInfo } from "./applications";
+import { CURRENT_ESSAY_CYCLE, getApplicationInfo } from "./applications";
 import { COMMON_APP_SOURCE, getCommonAppFacts } from "./commonapp";
 import { getSystemRequirements } from "./systemRequirements";
 
@@ -69,7 +69,10 @@ export function buildAdmissionOverview(college: College): OverviewRow[] {
   const rows: OverviewRow[] = [];
   const grid = { label: "Common App requirements grid", url: COMMON_APP_SOURCE.url };
   const facts = getCommonAppFacts(college.id);
-  const info = getApplicationInfo(college.id);
+  const rawInfo = getApplicationInfo(college.id);
+  // Gate every essay/application-info row on this cycle's verification, not just on a record
+  // existing — a record left over from an older cycle is treated the same as no record.
+  const info = rawInfo?.verifiedForCycle === CURRENT_ESSAY_CYCLE ? rawInfo : null;
   const system = college.system === "UC" || college.system === "CSU" ? getSystemRequirements(college.system) : null;
 
   // Where you apply

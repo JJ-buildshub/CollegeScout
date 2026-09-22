@@ -25,6 +25,15 @@ export interface WritingItem {
 }
 
 export interface ApplicationInfo {
+  /**
+   * The first-year admissions cycle this record was verified for, e.g. "Fall 2027" — required
+   * on every entry. This is the gate the Applying tab checks before showing prompts: an entry
+   * for any other cycle (or missing this field) is treated as unverified for the current cycle
+   * and falls back to the "being verified" state rather than showing a possibly stale prompt.
+   * Only set this to CURRENT_CYCLE when every prompt below was read from an official page that
+   * is, or the current-cycle rule treats as, this exact cycle's application.
+   */
+  verifiedForCycle: string;
   /** Where students apply, e.g. ["Common App"]. Empty when the page we read doesn't say. */
   platforms: string[];
   mainEssay: WritingItem;
@@ -51,6 +60,20 @@ interface ApplicationsFile {
 
 const applications = rawApplications as unknown as ApplicationsFile;
 
+/** The first-year cycle this directory currently verifies essay data against. */
+export const CURRENT_ESSAY_CYCLE = "Fall 2027";
+
 export function getApplicationInfo(collegeId: string): ApplicationInfo | null {
   return applications.byCollege[collegeId] ?? null;
+}
+
+/**
+ * True only when this school has essay data verified for the current cycle (see
+ * CURRENT_ESSAY_CYCLE). Everything essay-related in the UI should gate on this — never on
+ * `getApplicationInfo` returning non-null alone — so a record left over from an older cycle
+ * (or missing the verification field) never displays as if it were current.
+ */
+export function hasVerifiedEssays(collegeId: string): boolean {
+  const info = getApplicationInfo(collegeId);
+  return info?.verifiedForCycle === CURRENT_ESSAY_CYCLE;
 }
