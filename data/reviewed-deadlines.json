@@ -2388,6 +2388,166 @@
      "note": "Priority date is January 15."
     }
    ]
+  },
+  "florida-international-university": {
+   "label": "FIU admissions",
+   "url": "https://admissions.fiu.edu/how-to-apply/freshman-applicant/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Fall 2027 November 2, 2026 December 10, 2026 May 1, 2027 Fall 2027 November 2, 2026 December 10, 2026 May 1, 2027",
+    "Early Fall 2027 December 16, 2026 January 21, 2027 May 1, 2027 Fall 2027 December 16, 2026 January 21, 2027 May 1, 2027",
+    "Early Fall 2027 March 2, 2027 April 2, 2027 May 1, 2027 Fall 2027 March 2, 2027"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 2"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "December 16"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "March 2",
+     "note": "Final deadline."
+    }
+   ]
+  },
+  "lehigh-university": {
+   "label": "Lehigh University admissions",
+   "url": "https://www2.lehigh.edu/admissions/apply",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Decision I Deadline: November 1 Decision Date: Mid December Early",
+    "Decision II Deadline: January 1 Decision Date: Mid February Regular Decision Deadline: January 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 1"
+    }
+   ]
+  },
+  "american-university": {
+   "label": "American University admissions",
+   "url": "https://www.american.edu/admissions/first-year/decision-plans-and-deadlines.cfm",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Application Deadline: November 1 CSS Profile & FAFSA Deadline: November 15",
+    "Application Deadline: January 15 CSS Profile & FAFSA Deadline: February 15 Notification: April 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": true
+  },
+  "william-and-mary": {
+   "label": "William & Mary admissions",
+   "url": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/datesdeadlines/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Nov. 1 Common App due Nov. 15 FAFSA and CSS Profile priority deadline for receiving financial aid estimate",
+    "Regular Decision Application Dates and Deadlines"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 5"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 5"
+    }
+   ]
+  },
+  "coastal-carolina-university": {
+   "label": "Coastal Carolina University admissions",
+   "url": "https://www.coastal.edu/admissions/freshman/freshmanapp/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Apply by October 15; Know by December 1; Enroll by January 15",
+    "Apply by November 15; Know by December 15; Enroll by M",
+    "Apply by February 1; Know by March 1; Enroll by May 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "October 15"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "university-of-dayton": {
+   "label": "University of Dayton admissions",
+   "url": "https://udayton.edu/apply/undergraduate/admission-process.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early action application deadline (non-binding) and nursing application deadline.",
+    "Regular admission application deadline; priority deadline to file the FAFSA."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
   }
  }
 }

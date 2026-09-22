@@ -647,6 +647,56 @@
    "evidence": [
     "Bowling Green State University is offering applicants the opportunity to have their applications reviewed without consideration of test scores."
    ]
+  },
+  "florida-international-university": {
+   "policy": "Test-Required",
+   "label": "FIU admissions",
+   "url": "https://admissions.fiu.edu/admission-standards/",
+   "evidence": [
+    "SAT, ACT and/or CLT scores are required for first time in college applicants."
+   ]
+  },
+  "american-university": {
+   "policy": "Test-Optional",
+   "label": "American University admissions",
+   "url": "https://www.american.edu/admissions/first-year/decision-plans-and-deadlines.cfm",
+   "evidence": [
+    "Whether you choose to apply Early Decision, Early Action, or Regular Decision, rest assured that your application will be carefully reviewed for merit scholarships."
+   ],
+   "manual": true
+  },
+  "rowan-university": {
+   "policy": "Test-Optional",
+   "label": "Rowan University admissions",
+   "url": "https://admissions.rowan.edu/admissions-process/freshman-requirements/standardized-scores.html",
+   "evidence": [
+    "Rowan is test optional for admission to the University only."
+   ]
+  },
+  "central-michigan-university": {
+   "policy": "Test-Optional",
+   "label": "Central Michigan University admissions",
+   "url": "https://www.cmich.edu/undergraduate/apply",
+   "evidence": [
+    "Step 3 (Freshmen only): Submit your test scores (optional)"
+   ]
+  },
+  "coastal-carolina-university": {
+   "policy": "Test-Optional",
+   "label": "Coastal Carolina University admissions",
+   "url": "https://www.coastal.edu/admissions/testopt/",
+   "evidence": [
+    "Freshman applicants who have earned a minimum 3.5 HS GPA (weighted GPA on a 4.0 scale) may choose whether or not to submit standardize"
+   ],
+   "note": "Test-optional only above a 3.5 weighted GPA; a score is required otherwise."
+  },
+  "university-of-dayton": {
+   "policy": "Test-Optional",
+   "label": "University of Dayton admissions",
+   "url": "https://udayton.edu/apply/undergraduate/resources/test-optional.php",
+   "evidence": [
+    "The University of Dayton is test-optional in admission."
+   ]
   }
  }
 }

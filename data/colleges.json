@@ -23888,7 +23888,7 @@
     "admitRateOverall": 0.6196,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1300-1450 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -23905,7 +23905,28 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 15"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15"
+      }
+    ],
     "financials": {
       "coaInState": 76058,
       "coaOutOfState": 76058,
@@ -24000,7 +24021,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "American University admissions (https://www.american.edu/admissions/first-year/decision-plans-and-deadlines.cfm)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "American University admissions (https://www.american.edu/admissions/first-year/decision-plans-and-deadlines.cfm)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "george-washington-university",
@@ -24582,7 +24613,7 @@
     "admitRateOverall": 0.5466,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1060-1250 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -24599,7 +24630,24 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 2"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "December 16"
+      },
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "March 2",
+        "note": "Final deadline."
+      }
+    ],
     "financials": {
       "coaInState": 21462,
       "coaOutOfState": 33861,
@@ -24694,7 +24742,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "FIU admissions (https://admissions.fiu.edu/admission-standards/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "FIU admissions (https://admissions.fiu.edu/how-to-apply/freshman-applicant/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "florida-state-university",
@@ -31384,7 +31442,7 @@
     "admitRateOverall": 0.8982,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "960-1210 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -31496,7 +31554,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "Central Michigan University admissions (https://www.cmich.edu/undergraduate/apply)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "grand-valley-state-university",
@@ -36438,7 +36501,7 @@
     "admitRateOverall": 0.7766,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1100-1310 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -36550,7 +36613,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "Rowan University admissions (https://admissions.rowan.edu/admissions-process/freshman-requirements/standardized-scores.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "the-college-of-new-jersey",
@@ -40649,7 +40717,7 @@
     "admitRateOverall": 0.6545,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1195-1370 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -40666,7 +40734,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 65881,
       "coaOutOfState": 65881,
@@ -40761,7 +40840,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "University of Dayton admissions (https://udayton.edu/apply/undergraduate/resources/test-optional.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of Dayton admissions (https://udayton.edu/apply/undergraduate/admission-process.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "northeastern-state-university",
@@ -41966,7 +42055,23 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 1"
+      }
+    ],
     "financials": {
       "coaInState": 80856,
       "coaOutOfState": 80856,
@@ -42061,7 +42166,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Lehigh University admissions (https://www2.lehigh.edu/admissions/apply)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "marywood-university",
@@ -42843,7 +42953,7 @@
     "admitRateOverall": 0.7527,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1050-1210 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -42860,7 +42970,23 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "October 15"
+      },
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 15"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 26692,
       "coaOutOfState": 44680,
@@ -42955,7 +43081,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Test-optional only above a 3.5 weighted GPA; a score is required otherwise.",
+    "testingPolicyProvenance": {
+      "source": "Coastal Carolina University admissions (https://www.coastal.edu/admissions/testopt/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "Coastal Carolina University admissions (https://www.coastal.edu/admissions/freshman/freshmanapp/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "college-of-charleston",
@@ -46408,7 +46545,23 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 5"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 5"
+      }
+    ],
     "financials": {
       "coaInState": 43035,
       "coaOutOfState": 68159,
@@ -46503,7 +46656,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "William & Mary admissions (https://www.wm.edu/admission/undergraduateadmission/how-to-apply/datesdeadlines/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "champlain-college",
