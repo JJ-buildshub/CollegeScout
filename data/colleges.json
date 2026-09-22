@@ -21883,7 +21883,7 @@
     "admitRateOverall": 0.743,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1050-1220 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -21900,7 +21900,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "November 1",
+        "note": "Priority application deadline; a separate scholarship priority deadline is November 15."
+      }
+    ],
     "financials": {
       "coaInState": 27767,
       "coaOutOfState": 47629,
@@ -21995,7 +22002,19 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Test-optional for applicants with a 3.2 GPA or higher; test scores are required for most scholarships and, if admitted test-optional, for placement and enrollment purposes.",
+    "testingPolicyProvenance": {
+      "source": "University of Arkansas admissions (https://admissions.uark.edu/apply/test-scores-and-applying.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of Arkansas admissions (https://admissions.uark.edu/apply/new-freshman.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    }
   },
   {
     "id": "university-of-central-arkansas",
@@ -27744,7 +27763,7 @@
     "admitRateOverall": 0.7735,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1120-1340 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -27761,7 +27780,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 2"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 27521,
       "coaOutOfState": 43067,
@@ -27856,7 +27886,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "University of Illinois Chicago admissions (https://admissions.uic.edu/undergraduate/requirements-deadlines/first-year-requirements/test-optional-faq)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of Illinois Chicago admissions (https://admissions.uic.edu/undergraduate/requirements-deadlines/deadlines)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "ball-state-university",
@@ -37595,7 +37635,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1",
+        "note": "Priority date; applications after this date are processed on a rolling basis."
+      }
+    ],
     "financials": {
       "coaInState": 14151,
       "coaOutOfState": 22101,
@@ -37690,7 +37737,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Brooklyn College (CUNY) admissions (https://www.brooklyn.cuny.edu/web/admissions/freshmen/apply/deadlines.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "cuny-hunter-college",
@@ -42369,7 +42421,7 @@
     "admitRateOverall": 0.7216,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1030-1270 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -42386,7 +42438,23 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "December 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 34321,
       "coaOutOfState": 54525,
@@ -42481,7 +42549,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "University of Rhode Island admissions (https://web.uri.edu/admission/by-major/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of Rhode Island admissions (https://web.uri.edu/admission/first-year/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "coastal-carolina-university",
@@ -45206,7 +45284,7 @@
     "admitRateOverall": 0.8598,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1180-1398 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -45223,7 +45301,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "December 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "April 1"
+      }
+    ],
     "financials": {
       "coaInState": 25557,
       "coaOutOfState": 46797,
@@ -45318,7 +45407,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Adopted as a permanent policy; a score is required only for applicants from a non-accredited school, home school, or with a GED/HiSET.",
+    "testingPolicyProvenance": {
+      "source": "University of Utah admissions (https://attheu.utah.edu/students/u-adopts-permanent-test-optional-admission-policy/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of Utah admissions (https://admissions.utah.edu/apply/freshman-students/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "george-mason-university",

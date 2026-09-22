@@ -472,6 +472,40 @@
    "evidence": [
     "Ohio University has adopted a test-optional pathway for admission to the Athens campus for freshman applicants."
    ]
+  },
+  "university-of-arkansas": {
+   "policy": "Test-Optional",
+   "label": "University of Arkansas admissions",
+   "url": "https://admissions.uark.edu/apply/test-scores-and-applying.php",
+   "evidence": [
+    "optional application for admission for students with a 3.2 GPA or higher."
+   ],
+   "note": "Test-optional for applicants with a 3.2 GPA or higher; test scores are required for most scholarships and, if admitted test-optional, for placement and enrollment purposes."
+  },
+  "university-of-illinois-chicago": {
+   "policy": "Test-Optional",
+   "label": "University of Illinois Chicago admissions",
+   "url": "https://admissions.uic.edu/undergraduate/requirements-deadlines/first-year-requirements/test-optional-faq",
+   "evidence": [
+    "Effective with the 2027 undergraduate admission cycle, UIC has amended its Test-Optional policy."
+   ]
+  },
+  "university-of-rhode-island": {
+   "policy": "Test-Optional",
+   "label": "University of Rhode Island admissions",
+   "url": "https://web.uri.edu/admission/by-major/",
+   "evidence": [
+    "URI is a test-optional institution."
+   ]
+  },
+  "university-of-utah": {
+   "policy": "Test-Optional",
+   "label": "University of Utah admissions",
+   "url": "https://attheu.utah.edu/students/u-adopts-permanent-test-optional-admission-policy/",
+   "evidence": [
+    "The University of Utah is leading the state in ensuring access to all students through its permanent adoption of a test-optional"
+   ],
+   "note": "Adopted as a permanent policy; a score is required only for applicants from a non-accredited school, home school, or with a GED/HiSET."
   }
  }
 }

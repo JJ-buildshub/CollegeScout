@@ -1918,6 +1918,110 @@
      "deadline": "February 1"
     }
    ]
+  },
+  "university-of-arkansas": {
+   "label": "University of Arkansas admissions",
+   "url": "https://admissions.uark.edu/apply/new-freshman.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1 Priority Application Deadline Apply for admission early to take advantage of early housing and orientation options."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 1",
+     "note": "Priority application deadline; a separate scholarship priority deadline is November 15."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "cuny-brooklyn-college": {
+   "label": "Brooklyn College (CUNY) admissions",
+   "url": "https://www.brooklyn.cuny.edu/web/admissions/freshmen/apply/deadlines.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall Semester Priority Deadline: February 1",
+    "Applications received after this date will be processed on a rolling admission basis."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1",
+     "note": "Priority date; applications after this date are processed on a rolling basis."
+    }
+   ]
+  },
+  "university-of-illinois-chicago": {
+   "label": "University of Illinois Chicago admissions",
+   "url": "https://admissions.uic.edu/undergraduate/requirements-deadlines/deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "First Year - Early Action",
+    "November 2, 2026",
+    "First Year - Regular Decision",
+    "February 1, 2027"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 2"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "university-of-rhode-island": {
+   "label": "University of Rhode Island admissions",
+   "url": "https://web.uri.edu/admission/first-year/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "First-Year Early Decision Nov. 1 Early Dec.",
+    "First-Year Early Action & Priority Scholarship Consideration Dec. 1 By Jan. 31 May 1",
+    "First-Year Regular Decision (Sept. start) Feb. 1 By Mar. 31 May 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "university-of-utah": {
+   "label": "University of Utah admissions",
+   "url": "https://admissions.utah.edu/apply/freshman-students/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "APPLICATION DEADLINES November 15 Spring December 1 Early Action & Merit Scholarship Consideration April 1 Summer April 1 Fall"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "April 1"
+    }
+   ]
   }
  }
 }
