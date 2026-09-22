@@ -33394,7 +33394,7 @@
     "admitRateOverall": 0.9658,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1020-1210 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -33433,7 +33433,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -33506,7 +33506,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Mississippi residents: a score is used only if provided. Nonresidents: optional at 3.2+ unweighted GPA, strongly recommended below that.",
+    "testingPolicyProvenance": {
+      "source": "Ole Miss admissions (https://olemiss.edu/admissions/undergraduate-admissions/application-process/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "university-of-southern-mississippi",
@@ -37209,7 +37215,7 @@
     "admitRateOverall": 0.9617,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "980-1230 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -37226,7 +37232,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "June 1",
+        "note": "November 15 is UNLV's priority deadline for fall financial aid and scholarship consideration, not an admission deadline."
+      }
+    ],
     "financials": {
       "coaInState": 19638,
       "coaOutOfState": 37301,
@@ -37248,7 +37261,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -37321,7 +37334,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "UNLV admissions (https://www.unlv.edu/admissions/undergraduate/first-year)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyProvenance": {
+      "source": "UNLV admissions (https://www.unlv.edu/admissions/undergraduate/first-year)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "university-of-nevada-reno",
@@ -44729,7 +44752,7 @@
     "admitRateOverall": 0.8932,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "980-1190 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -44746,7 +44769,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "July 15",
+        "note": "December 1 is Texas State's priority admission date for the same Fall term; the page labels July 15 as the Final deadline."
+      }
+    ],
     "financials": {
       "coaInState": 28073,
       "coaOutOfState": 39553,
@@ -44768,7 +44798,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -44841,7 +44871,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Texas State University admissions (https://www.admissions.txst.edu/future-students/apply-for-admission.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyNote": "Not required for applicants in the top 75% of their high school class; required for the 4th quartile.",
+    "testingPolicyProvenance": {
+      "source": "Texas State University admissions (https://www.admissions.txst.edu/future-students/apply-for-admission.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "texas-tech-university",
@@ -45702,7 +45743,7 @@
     "admitRateOverall": 0.6778,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1290-1450 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -45719,7 +45760,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "December 15",
+        "note": "November 2, 2026 is BYU's priority deadline for the same Fall 2027 term (factors into holistic review, but not an earlier decision date); December 15, 2026 is the final deadline."
+      }
+    ],
     "financials": {
       "coaInState": 22690,
       "coaOutOfState": 22690,
@@ -45741,7 +45789,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -45814,7 +45862,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "BYU Enrollment Services (https://enrollment.byu.edu/admissions/application-deadlines)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyNote": "Optional for most applicants; some applicants (e.g. certain non-accredited or limited coursework cases) are required to submit a score.",
+    "testingPolicyProvenance": {
+      "source": "BYU test-optional admissions (https://testoptional.byu.edu/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "university-of-utah",
@@ -46241,7 +46300,7 @@
     "admitRateOverall": 0.9262,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1030-1270 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -46258,7 +46317,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15",
+        "note": "Nov. 1, 2026 is VCU's first-year scholarship deadline for the same Fall 2027 term, not the admission deadline."
+      }
+    ],
     "financials": {
       "coaInState": 38954,
       "coaOutOfState": 62118,
@@ -46280,7 +46346,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -46353,7 +46419,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "VCU admissions (https://admissions.vcu.edu/apply-to-vcu/deadlines/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyNote": "Test scores remain required for VCU's Guaranteed Admission Programs (e.g. Honors College guaranteed pathways).",
+    "testingPolicyProvenance": {
+      "source": "VCU admissions (https://admissions.vcu.edu/apply-to-vcu/undergraduate/first-year/first-year-requirements/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "virginia-polytechnic-institute-and-state-university",

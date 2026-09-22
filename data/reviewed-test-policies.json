@@ -772,6 +772,51 @@
    "evidence": [
     "Is KSU test-optional? No. First-Year students applying to Kennesaw State University are required to submit official SAT or ACT scores along with official high school transcripts."
    ]
+  },
+  "texas-state-university": {
+   "policy": "Test-Optional",
+   "label": "Texas State University admissions",
+   "url": "https://www.admissions.txst.edu/future-students/apply-for-admission.html",
+   "evidence": [
+    "Texas State University does not require ACT or SAT test scores for first-time applicants ranked in the top 75% of their high school classes for admission to the university"
+   ],
+   "note": "Not required for applicants in the top 75% of their high school class; required for the 4th quartile."
+  },
+  "brigham-young-university": {
+   "policy": "Test-Optional",
+   "label": "BYU test-optional admissions",
+   "url": "https://testoptional.byu.edu/",
+   "evidence": [
+    "Test scores are optional for most applicants through winter 2028."
+   ],
+   "note": "Optional for most applicants; some applicants (e.g. certain non-accredited or limited coursework cases) are required to submit a score."
+  },
+  "university-of-nevada-las-vegas": {
+   "policy": "Test-Optional",
+   "label": "UNLV admissions",
+   "url": "https://www.unlv.edu/admissions/undergraduate/first-year",
+   "evidence": [
+    "ACT or SAT Scores - Test scores are not required for admission or scholarship consideration but are encouraged for UNLV course placement."
+   ]
+  },
+  "virginia-commonwealth-university": {
+   "policy": "Test-Optional",
+   "label": "VCU admissions",
+   "url": "https://admissions.vcu.edu/apply-to-vcu/undergraduate/first-year/first-year-requirements/",
+   "evidence": [
+    "Test-optional details Applicants (including those seeking scholarships) do not need to submit test scores unless applying to the Honors College guaranteed admissions programs."
+   ],
+   "note": "Test scores remain required for VCU's Guaranteed Admission Programs (e.g. Honors College guaranteed pathways)."
+  },
+  "university-of-mississippi": {
+   "policy": "Test-Optional",
+   "label": "Ole Miss admissions",
+   "url": "https://olemiss.edu/admissions/undergraduate-admissions/application-process/",
+   "evidence": [
+    "an ACT or SAT score if provided",
+    "Either an ACT or SAT score Optional for nonresident students with 3.2 unweighted cumulative GPA or higher Strongly recommended for nonresident students with"
+   ],
+   "note": "Mississippi residents: a score is used only if provided. Nonresidents: optional at 3.2+ unweighted GPA, strongly recommended below that."
   }
  }
 }

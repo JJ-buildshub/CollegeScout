@@ -2661,6 +2661,73 @@
     }
    ],
    "provenanceNote": "Official live admissions page does not name the entering year; the August 1, 2026 fee-waiver window and October 15/December 1 scholarship dates place this as the current 2026-27 application cycle, based on access date September 22, 2026."
+  },
+  "texas-state-university": {
+   "label": "Texas State University admissions",
+   "url": "https://www.admissions.txst.edu/future-students/apply-for-admission.html",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Freshman Application Deadlines Spring November 15 Summer May 1 Fall December 1 (Priority) / July 15 (Final)"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "July 15",
+     "note": "December 1 is Texas State's priority admission date for the same Fall term; the page labels July 15 as the Final deadline."
+    }
+   ],
+   "note": "Page explicitly labels the two Fall dates Priority and Final, so Final (July 15) is recorded as the deadline."
+  },
+  "brigham-young-university": {
+   "label": "BYU Enrollment Services",
+   "url": "https://enrollment.byu.edu/admissions/application-deadlines",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Fall 2027 Aug 26, 2026 Nov 2, 2026 Dec 15, 2026 Feb 15, 2027"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "December 15",
+     "note": "November 2, 2026 is BYU's priority deadline for the same Fall 2027 term (factors into holistic review, but not an earlier decision date); December 15, 2026 is the final deadline."
+    }
+   ],
+   "note": "Freshman Applicants table row for Fall 2027: Application Opens Aug 26 2026, Priority Deadline Nov 2 2026, Deadline Dec 15 2026, Decision Notification Feb 15 2027."
+  },
+  "university-of-nevada-las-vegas": {
+   "label": "UNLV admissions",
+   "url": "https://www.unlv.edu/admissions/undergraduate/first-year",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Priority deadline for fall financial aid and scholarship consideration November 15 Fall application deadline June 1"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "June 1",
+     "note": "November 15 is UNLV's priority deadline for fall financial aid and scholarship consideration, not an admission deadline."
+    }
+   ]
+  },
+  "virginia-commonwealth-university": {
+   "label": "VCU admissions",
+   "url": "https://admissions.vcu.edu/apply-to-vcu/deadlines/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Fall 2027 application deadlines First-year application deadlines Nov. 1, 2026: First-year scholarship deadline",
+    "Jan. 15, 2027: First-year regular decision application deadline"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15",
+     "note": "Nov. 1, 2026 is VCU's first-year scholarship deadline for the same Fall 2027 term, not the admission deadline."
+    }
+   ]
   }
  }
 }
