@@ -391,6 +391,35 @@ export function classifyFit(
 
 const CATEGORY_RANK: Record<AdmitRateLean, number> = { Reach: 0, Target: 1, Safety: 2 };
 
+/**
+ * A rough Reach/Target/Likely estimate from admit rate alone, for a school
+ * that publishes no GPA range (and has no usable SAT comparison either).
+ * Always labeled "Estimated" wherever it's shown — this is a much weaker
+ * signal than comparing the student's own numbers to a published range, and
+ * should never be presented the same way as a real classification.
+ */
+function estimateFromAdmitRateOnly(admitRateOverall: number, satRangePublished: boolean): { category: AdmitRateLean; reason: string } {
+  const satHint = satRangePublished
+    ? " This school does publish an SAT range — add your SAT score above for a closer estimate."
+    : "";
+  if (admitRateOverall < 0.15) {
+    return {
+      category: "Reach",
+      reason: `Estimated from this school's admit rate alone, since it doesn't publish a GPA range: under 15% admitted makes this a Reach for most applicants.${satHint}`,
+    };
+  }
+  if (admitRateOverall < 0.4) {
+    return {
+      category: "Target",
+      reason: `Estimated from this school's admit rate alone, since it doesn't publish a GPA range: this keeps it a realistic Target.${satHint}`,
+    };
+  }
+  return {
+    category: "Safety",
+    reason: `Estimated from this school's admit rate alone, since it doesn't publish a GPA range: an admit rate this broad makes it Likely, though it isn't compared to your own numbers.${satHint}`,
+  };
+}
+
 // 40 SAT points plays the role 0.1 GPA does in classifyFit: "comfortably" above
 // the top of the range, at roughly a quarter of a typical mid-50% width.
 const SAT_COMFORT_MARGIN = 40;
@@ -455,6 +484,26 @@ export function evaluateCollegeFit(
     satFit && satRange && validSatScore(satScore) ? { score: satScore, low: satRange.low, high: satRange.high } : null;
 
   if (!gpaFit && !satFit) {
+    if (!parsed) {
+      // No GPA range published at all: fall back to an admit-rate-only estimate rather than
+      // leaving the school entirely unclassified — always marked isEstimated so the UI can
+      // label it clearly rather than presenting it as a real comparison.
+      const estimate = estimateFromAdmitRateOnly(admitRate, satRange !== null);
+      return {
+        college,
+        category: estimate.category,
+        studentGpaUsed,
+        gpaMetricLabel: "GPA band not reported",
+        rangeLow: null,
+        rangeHigh: null,
+        reason: estimate.reason,
+        residencyContext,
+        sat: null,
+        satNote,
+        band: null,
+        isEstimated: true,
+      };
+    }
     return {
       college,
       category: "Unrated",
@@ -466,6 +515,8 @@ export function evaluateCollegeFit(
       residencyContext,
       sat: null,
       satNote,
+      band: null,
+      isEstimated: false,
     };
   }
 
@@ -489,5 +540,7 @@ export function evaluateCollegeFit(
     residencyContext,
     sat,
     satNote,
+    band: driver.band,
+    isEstimated: false,
   };
 }
