@@ -108,14 +108,31 @@ export const UC_MAX_10TH_GRADE_HONORS = 4;
 const nonNegative = (n: number | undefined) => (typeof n === "number" && Number.isFinite(n) && n > 0 ? n : 0);
 
 /**
- * UC's GPA, per admission.universityofcalifornia.edu/.../gpa-requirement.html:
- * grade points (A=4 ... D=1) plus one extra point for each honors semester
- * (at most 8 across 10th and 11th grade, and at most 4 from 10th grade), divided
- * by the number of letter grades. Written here as unweighted GPA plus
- * (honors points / semesters), which is the same arithmetic.
+ * UC's GPA, per admission.universityofcalifornia.edu/admission-requirements/
+ * first-year-requirements/gpa-requirement.html: grade points (A=4 ... D=1)
+ * for every A-G semester from summer after 9th grade through summer after
+ * 11th grade, plus one extra point for each *eligible* honors semester (at
+ * most 8 across 10th and 11th grade, at most 4 from 10th grade), divided by
+ * the number of letter grades. Written here as unweighted GPA plus (honors
+ * points / semesters), which is the same arithmetic. Verified against hand
+ * -worked cases for the cap logic in scripts/check-uc-gpa.mts.
  *
  * `honors10Semesters`, when given, applies the 10th-grade limit; when it isn't,
  * only the overall 8 cap applies, since the split isn't known.
+ *
+ * IMPORTANT — this function trusts `honorsSemesters` as already eligible.
+ * UC's own rule is "grades of D or F in an honors course do not earn an
+ * extra point," which needs the grade earned in *each* honors course, not
+ * just a count of how many were taken. That's why nothing in the live
+ * student-profile flow (lib/profile.ts, app/matcher/page.tsx) calls this
+ * function today — the profile only collects aggregate semester counts, not
+ * per-course grades, so it can't itself guarantee that precondition holds
+ * (a student could enter "6 honors semesters" that includes one they got a D
+ * in). Rather than present a number that might silently ignore that rule,
+ * the app compares UC schools using unweighted GPA alone (see
+ * computeGpaSummary's cumulativeUnweighted) until real course-level input is
+ * collected. This function stays correct and tested for whenever that
+ * happens.
  */
 export function calculateUcCappedGpa({
   unweightedGpa,

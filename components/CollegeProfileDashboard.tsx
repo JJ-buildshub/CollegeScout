@@ -184,7 +184,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                 <SaveToggleButton collegeId={college.id} />
               </div>
               {listEntry && listEntry.status !== "Saved" && <SchoolStatusBadge status={listEntry.status} round={listEntry.round} />}
-              {listEntry?.status === "Saved" && <AddToApplicationsButton college={college} />}
+              {listEntry && <AddToApplicationsButton college={college} alreadyApplying={listEntry.status !== "Saved"} />}
             </div>
           </div>
         </div>

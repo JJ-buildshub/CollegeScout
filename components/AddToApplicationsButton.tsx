@@ -23,9 +23,12 @@ function verifiedRounds(college: College): ApplicationRound[] {
 export default function AddToApplicationsButton({
   college,
   className,
+  /** Set once a school is already Applying+, so the same picker becomes "Change round" instead of adding it fresh. */
+  alreadyApplying = false,
 }: {
   college: College;
   className?: string;
+  alreadyApplying?: boolean;
 }) {
   const [open, setOpen] = useState(false);
   const rounds = verifiedRounds(college);
@@ -44,13 +47,17 @@ export default function AddToApplicationsButton({
           e.stopPropagation();
           setOpen(true);
         }}
-        className={clsx(
-          "inline-flex items-center gap-1.5 rounded-full bg-navy-900 px-3 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-navy-800",
-          className
-        )}
+        className={
+          alreadyApplying
+            ? clsx("text-xs font-semibold text-navy-900 underline underline-offset-2 hover:text-navy-700", className)
+            : clsx(
+                "inline-flex items-center gap-1.5 rounded-full bg-navy-900 px-3 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-navy-800",
+                className
+              )
+        }
       >
-        <ClipboardCheck className="h-3.5 w-3.5" />
-        Add to my applications
+        {!alreadyApplying && <ClipboardCheck className="h-3.5 w-3.5" />}
+        {alreadyApplying ? "Change round" : "Add to my applications"}
       </button>
     );
   }

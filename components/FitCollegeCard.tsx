@@ -121,6 +121,11 @@ export default function FitCollegeCard({
               format={(v) => v.toFixed(2)}
             />
           )}
+          {college.system === "UC" && (
+            <p className="mt-1 text-[10px] leading-snug text-slate-400">
+              Assumes no Honors/AP/IB bonus — UC's real GPA needs course-level grades we don&apos;t collect.
+            </p>
+          )}
         </div>
       )}
 
@@ -167,7 +172,7 @@ export default function FitCollegeCard({
 
         <div className="mt-3 flex flex-wrap items-center gap-2">
           {entry && entry.status !== "Saved" && <SchoolStatusBadge status={entry.status} round={entry.round} />}
-          {(!entry || entry.status === "Saved") && <AddToApplicationsButton college={college} />}
+          <AddToApplicationsButton college={college} alreadyApplying={!!entry && entry.status !== "Saved"} />
         </div>
       </div>
     </div>

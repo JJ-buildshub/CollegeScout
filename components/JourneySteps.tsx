@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Compass, ListChecks, SlidersHorizontal, Sparkles } from "lucide-react";
 import { colleges, getCollegeById } from "@/lib/colleges";
-import { calculateUcCappedGpa, evaluateCollegeFit } from "@/lib/gpa";
+import { evaluateCollegeFit } from "@/lib/gpa";
 import { computeGpaSummary, useProfile } from "@/lib/profile";
 import { entriesWithStatusAtLeast, listEntries, useCollegeList } from "@/lib/collegeList";
 import { buildApplicationTasks, buildPlanCategories, countOpenTasks, useCustomTasks, useTaskProgress, type ApplicationTaskGroup } from "@/lib/tasks";
@@ -25,18 +25,13 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
   let targetTotal = 0;
   let targetSaved = 0;
   if (hasUsableGpa) {
-    const ucCappedGpa = profile.ucGpaCalculator
-      ? calculateUcCappedGpa({ ...profile.ucGpaCalculator, unweightedGpa: gpaSummary.cumulativeUnweighted as number }).ucCappedGpa
-      : (gpaSummary.cumulativeUnweighted as number);
+    // Same simplification as My Fit: no UC honors bonus calculated (needs course-level
+    // grades this profile doesn't collect — see lib/gpa.ts), and a "compare as another
+    // state" scenario wins over the saved home state when set.
+    const unweightedGpa = gpaSummary.cumulativeUnweighted as number;
+    const effectiveHomeState = profile.residencyScenario ?? profile.homeState;
     for (const college of colleges) {
-      const fit = evaluateCollegeFit(
-        college,
-        ucCappedGpa,
-        gpaSummary.cumulativeUnweighted as number,
-        undefined,
-        profile.homeState,
-        profile.satScore ?? undefined
-      );
+      const fit = evaluateCollegeFit(college, unweightedGpa, unweightedGpa, undefined, effectiveHomeState, profile.satScore ?? undefined);
       if (fit?.category === "Target") {
         targetTotal += 1;
         if (collegeListState.entries[college.id]) targetSaved += 1;

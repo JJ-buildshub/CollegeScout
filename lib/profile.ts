@@ -3,21 +3,6 @@
 import type { Grade } from "./types";
 import { createLocalStore } from "./store";
 
-/**
- * The direct semester/honors counts UC's real GPA formula needs (see
- * calculateUcCappedGpa in lib/gpa.ts) — deliberately not the full GpaInputs
- * shape, since the unweighted GPA half of that formula comes from the
- * yearly-trend cumulative average (a plain arithmetic mean, always freshly
- * computed by computeGpaSummary) rather than being duplicated and stored
- * here.
- */
-export interface UcGpaCalculatorInputs {
-  totalSemesters: number;
-  honorsSemesters: number;
-  honors10Semesters?: number;
-  schoolHonorsSemesters?: number;
-}
-
 export type PlanningFor = "self" | "student";
 
 export interface InterestChoice {
@@ -40,22 +25,20 @@ export interface YearGpa {
 export interface StudentProfile {
   planningFor: PlanningFor;
   homeState: string | null;
+  /**
+   * Optional, temporary "compare as if I lived in ___" scenario — e.g. a family
+   * deciding between states, or checking a school's out-of-state numbers without
+   * losing their real home state. Applies to every school's residency lookup in
+   * place of `homeState` while set; persisted like everything else in this
+   * profile, and cleared explicitly (never silently) — see the "Compare as
+   * another state" control on My Fit.
+   */
+  residencyScenario: string | null;
   grade: Grade | null;
   /** Up to 3 fields, each with its own chosen sub-areas. Ignored (and cleared) when undecided is true. */
   interests: InterestChoice[];
   undecided: boolean;
   yearGpas: Partial<Record<Grade, YearGpa>>;
-  /**
-   * Direct semester/honors counts for UC's real GPA formula — the same inputs
-   * lib/gpa.ts's calculateUcCappedGpa always required. Kept separate from yearGpas
-   * on purpose: UC's GPA needs actual A-G semester and honors-semester counts, which
-   * can't be reconstructed from a yearly unweighted/weighted GPA pair without
-   * course-level data we don't collect. Null until the student fills in this
-   * calculator; fit classification for UC schools falls back to assuming zero
-   * honors semesters (i.e. UC-capped GPA equal to unweighted GPA) until they do,
-   * which undercounts rather than guesses.
-   */
-  ucGpaCalculator: UcGpaCalculatorInputs | null;
   satScore: number | null;
 }
 
@@ -64,27 +47,36 @@ export const MAX_INTERESTS = 3;
 export const EMPTY_PROFILE: StudentProfile = {
   planningFor: "self",
   homeState: null,
+  residencyScenario: null,
   grade: null,
   interests: [],
   undecided: false,
   yearGpas: {},
-  ucGpaCalculator: null,
   satScore: null,
 };
 
 const PROFILE_STORAGE_KEY = "collegescout:profile";
-const PROFILE_SCHEMA_VERSION = 1;
+/**
+ * v2 (2026-09-21 QA pass): dropped `ucGpaCalculator` (see lib/gpa.ts's note on
+ * calculateUcCappedGpa for why — the aggregate semester/honors counts it took
+ * can't enforce UC's "no honors point for a D or F" rule) and added
+ * `residencyScenario`. `migrate` below only ever reads the fields it
+ * recognizes, so a v1 record's leftover `ucGpaCalculator` value is simply not
+ * carried forward — never an error, never guessed at.
+ */
+const PROFILE_SCHEMA_VERSION = 2;
 const OLD_GPA_KEY = "pathfinder-admit:gpa-inputs";
-const OLD_RESIDENCY_KEY = "pathfinder-admit:residency";
 const OLD_PLANNING_FOR_KEY = "pathfinder-admit:planning-for";
 const OLD_HOME_STATE_KEY = "pathfinder-admit:home-state";
 
 /**
  * One-time bridge from the old, page-local Matcher inputs to the shared
  * profile, so a returning visitor doesn't lose their home state, planning
- * choice, or UC GPA calculator inputs just because this feature reorganized
- * where they live. Only reads the old keys; never writes them, so they simply
- * go stale afterward rather than being deleted.
+ * choice, or SAT score just because this feature reorganized where they
+ * live. Only reads the old keys; never writes them, so they simply go stale
+ * afterward rather than being deleted. The old key's semester/honors counts
+ * (`totalSemesters`/`honorsSemesters`/etc.) are deliberately not migrated —
+ * that calculator no longer exists (see PROFILE_SCHEMA_VERSION above).
  */
 function migrateLegacyProfile(): Partial<StudentProfile> {
   if (typeof window === "undefined") return {};
@@ -96,21 +88,7 @@ function migrateLegacyProfile(): Partial<StudentProfile> {
     if (homeState) patch.homeState = homeState;
     const rawGpa = window.localStorage.getItem(OLD_GPA_KEY);
     if (rawGpa) {
-      const old = JSON.parse(rawGpa) as {
-        totalSemesters?: number;
-        honorsSemesters?: number;
-        honors10Semesters?: number;
-        schoolHonorsSemesters?: number;
-        satScore?: number;
-      };
-      if (typeof old.totalSemesters === "number" && typeof old.honorsSemesters === "number") {
-        patch.ucGpaCalculator = {
-          totalSemesters: old.totalSemesters,
-          honorsSemesters: old.honorsSemesters,
-          honors10Semesters: old.honors10Semesters,
-          schoolHonorsSemesters: old.schoolHonorsSemesters,
-        };
-      }
+      const old = JSON.parse(rawGpa) as { satScore?: number };
       if (typeof old.satScore === "number") patch.satScore = old.satScore;
     }
     return patch;
@@ -119,9 +97,28 @@ function migrateLegacyProfile(): Partial<StudentProfile> {
   }
 }
 
-function migrate(raw: unknown): StudentProfile {
-  const parsed = (raw ?? {}) as Partial<StudentProfile>;
-  return { ...EMPTY_PROFILE, ...parsed };
+/**
+ * Only pulls fields this version of StudentProfile actually recognizes, so a
+ * removed field (like v1's `ucGpaCalculator`) is dropped cleanly rather than
+ * carried along as dead data, and an unrecognized/corrupted shape falls back
+ * to EMPTY_PROFILE per field rather than as an all-or-nothing reset.
+ */
+function migrate(raw: unknown, _storedVersion: number): StudentProfile {
+  const parsed = (raw ?? {}) as Partial<Record<keyof StudentProfile, unknown>>;
+  const pick = <K extends keyof StudentProfile>(key: K): StudentProfile[K] => {
+    const value = parsed[key];
+    return value === undefined ? EMPTY_PROFILE[key] : (value as StudentProfile[K]);
+  };
+  return {
+    planningFor: pick("planningFor"),
+    homeState: pick("homeState"),
+    residencyScenario: pick("residencyScenario"),
+    grade: pick("grade"),
+    interests: pick("interests"),
+    undecided: pick("undecided"),
+    yearGpas: pick("yearGpas"),
+    satScore: pick("satScore"),
+  };
 }
 
 const store = createLocalStore<StudentProfile>(PROFILE_STORAGE_KEY, EMPTY_PROFILE, PROFILE_SCHEMA_VERSION, migrate);
@@ -169,10 +166,6 @@ export function setYearGpa(grade: Grade, entry: YearGpa) {
   store.set((prev) => ({ ...prev, yearGpas: { ...prev.yearGpas, [grade]: entry } }));
 }
 
-export function setUcGpaCalculator(inputs: UcGpaCalculatorInputs | null) {
-  store.set((prev) => ({ ...prev, ucGpaCalculator: inputs }));
-}
-
 /** Which grades' GPA the student should be entering: completed years plus the current one. */
 export function gpaYearsFor(grade: Grade | null): Grade[] {
   if (grade === null) return [];
@@ -192,9 +185,9 @@ export interface GpaSummary {
   /**
    * A simple average of each entered year's unweighted GPA, weighted by semester
    * count — a plain arithmetic mean, not a UC or CSU GPA calculation. Those
-   * require course-level A-G grade data this profile doesn't collect (see
-   * ucGpaCalculator above for the one place we do calculate a real UC GPA, from
-   * direct semester/honors input rather than derived from yearly GPA).
+   * require course-level A-G grade data this profile doesn't collect (see the
+   * note on calculateUcCappedGpa in lib/gpa.ts for why a real UC-capped figure
+   * isn't calculated anywhere in this app right now).
    */
   cumulativeUnweighted: number | null;
   yearsEntered: number;

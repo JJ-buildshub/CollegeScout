@@ -1,10 +1,10 @@
 "use client";
 
-import { Suspense, useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { Check, HelpCircle, Rocket, Shield, Target } from "lucide-react";
 import { colleges, displayedAdmitRate, getCollegeById } from "@/lib/colleges";
-import { calculateUcCappedGpa, evaluateCollegeFit, personalizeForAudience, validSatScore } from "@/lib/gpa";
+import { evaluateCollegeFit, personalizeForAudience, validSatScore } from "@/lib/gpa";
 import { US_STATES, stateName } from "@/lib/states";
 import type { FitCategory, FitResult, Grade } from "@/lib/types";
 import { computeGpaSummary, MAX_INTERESTS, setYearGpa as persistYearGpa, updateProfile, useProfile } from "@/lib/profile";
@@ -16,7 +16,6 @@ import UcGpaCalculator from "@/components/UcGpaCalculator";
 import AcademicCalibrator from "@/components/AcademicCalibrator";
 import SchoolStatusBadge from "@/components/SchoolStatusBadge";
 
-type ResidencyChoice = "unknown" | "in-state" | "out-of-state";
 const GRADES: Grade[] = [9, 10, 11, 12];
 
 function sortByAdmitRateThenName(a: FitResult, b: FitResult): number {
@@ -78,10 +77,8 @@ const BUCKET_META: Record<FitCategory, { label: string; icon: typeof Shield; des
 
 function MatcherContent() {
   const searchParams = useSearchParams();
-  const { profile, setProfile } = useProfile();
+  const { profile } = useProfile();
   const { state: collegeListState } = useCollegeList();
-  const [residency, setResidency] = useState<ResidencyChoice>("unknown");
-  const [showResidencyOverride, setShowResidencyOverride] = useState(false);
 
   const scrollTarget = searchParams.get("college");
   useEffect(() => {
@@ -97,31 +94,26 @@ function MatcherContent() {
   const gpaSummary = useMemo(() => computeGpaSummary(profile), [profile]);
   const hasUsableGpa = gpaSummary.cumulativeUnweighted !== null;
 
-  const ucCappedGpa = useMemo(() => {
-    if (gpaSummary.cumulativeUnweighted === null) return 0;
-    if (!profile.ucGpaCalculator) return gpaSummary.cumulativeUnweighted;
-    return calculateUcCappedGpa({ ...profile.ucGpaCalculator, unweightedGpa: gpaSummary.cumulativeUnweighted }).ucCappedGpa;
-  }, [gpaSummary.cumulativeUnweighted, profile.ucGpaCalculator]);
+  // UC schools are compared using the same unweighted GPA as everyone else — no honors
+  // bonus is calculated here (see the note on calculateUcCappedGpa in lib/gpa.ts for why:
+  // UC's "no point for a D or F" rule needs course-level grades this profile doesn't collect).
+  const unweightedGpa = gpaSummary.cumulativeUnweighted ?? 0;
 
   const interestFieldIds = profile.undecided ? [] : profile.interests.map((i) => i.fieldId);
 
+  // A temporary "compare as another state" scenario always wins over the saved home state
+  // when set — see the Step 2 control below and lib/profile.ts's note on residencyScenario.
+  const effectiveHomeState = profile.residencyScenario ?? profile.homeState;
+
   const fitResults = useMemo(() => {
     if (!hasUsableGpa) return [];
-    const residencyArg = residency === "unknown" ? undefined : residency;
     const results: FitResult[] = [];
     for (const college of colleges) {
-      const fit = evaluateCollegeFit(
-        college,
-        ucCappedGpa,
-        gpaSummary.cumulativeUnweighted as number,
-        residencyArg,
-        profile.homeState,
-        profile.satScore ?? undefined
-      );
+      const fit = evaluateCollegeFit(college, unweightedGpa, unweightedGpa, undefined, effectiveHomeState, profile.satScore ?? undefined);
       if (fit) results.push(fit);
     }
     return results;
-  }, [hasUsableGpa, ucCappedGpa, gpaSummary.cumulativeUnweighted, residency, profile.homeState, profile.satScore]);
+  }, [hasUsableGpa, unweightedGpa, effectiveHomeState, profile.satScore]);
 
   const fitById = useMemo(() => new Map(fitResults.map((r) => [r.college.id, r])), [fitResults]);
 
@@ -129,16 +121,15 @@ function MatcherContent() {
     (a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime()
   );
 
-  const residencyStatusText =
-    residency === "in-state"
-      ? "Using your manually-set in-state residency for every school."
-      : residency === "out-of-state"
-        ? "Using your manually-set out-of-state residency for every school."
-        : profile.homeState
-          ? `Using your ${stateName(profile.homeState) ?? profile.homeState} residency — in-state rates for ${
-              stateName(profile.homeState) ?? profile.homeState
-            } schools, out-of-state elsewhere.`
-          : "Showing overall admit rates for every school.";
+  const residencyStatusText = profile.residencyScenario
+    ? `Comparing as if you lived in ${stateName(profile.residencyScenario) ?? profile.residencyScenario} — a temporary scenario. Your saved home state (${
+        profile.homeState ? stateName(profile.homeState) ?? profile.homeState : "not set"
+      }) is unchanged.`
+    : profile.homeState
+      ? `Using your ${stateName(profile.homeState) ?? profile.homeState} residency — in-state rates for ${
+          stateName(profile.homeState) ?? profile.homeState
+        } schools, out-of-state elsewhere.`
+      : "Showing overall admit rates for every school.";
 
   const buckets: Record<FitCategory, FitResult[]> = {
     Safety: fitResults.filter((r) => r.category === "Safety").sort(sortByRangeDistanceThenName),
@@ -182,11 +173,7 @@ function MatcherContent() {
           <span className="text-xs font-semibold tracking-wide text-slate-500">Step 2 &middot; What state do you live in?</span>
           <select
             value={profile.homeState ?? ""}
-            onChange={(e) => {
-              updateProfile({ homeState: e.target.value || null });
-              setResidency("unknown");
-              setShowResidencyOverride(false);
-            }}
+            onChange={(e) => updateProfile({ homeState: e.target.value || null })}
             className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 outline-none focus:ring-2 focus:ring-gold-500"
           >
             <option value="">Skip &mdash; use overall admit rates</option>
@@ -197,6 +184,36 @@ function MatcherContent() {
             ))}
           </select>
         </div>
+        <div className="mt-3 flex flex-wrap items-center gap-3 border-t border-slate-100 pt-3">
+          <span className="text-xs font-semibold tracking-wide text-slate-500">
+            Compare as another state <span className="font-normal text-slate-400">(optional scenario)</span>
+          </span>
+          <select
+            value={profile.residencyScenario ?? ""}
+            onChange={(e) => updateProfile({ residencyScenario: e.target.value || null })}
+            className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 outline-none focus:ring-2 focus:ring-gold-500"
+          >
+            <option value="">Use my saved home state</option>
+            {US_STATES.map((s) => (
+              <option key={s.code} value={s.code}>
+                {s.name}
+              </option>
+            ))}
+          </select>
+          {profile.residencyScenario && (
+            <button
+              type="button"
+              onClick={() => updateProfile({ residencyScenario: null })}
+              className="text-xs font-semibold text-navy-900 underline underline-offset-2 hover:text-navy-700"
+            >
+              Clear scenario
+            </button>
+          )}
+        </div>
+        <p className="mt-2 text-[11px] leading-snug text-slate-400">
+          This doesn&apos;t change your saved home state above — it&apos;s a temporary comparison that stays
+          set (even after you leave this page) until you clear it or pick a different one.
+        </p>
         <div className="mt-3 flex flex-wrap items-center gap-3 border-t border-slate-100 pt-3">
           <span className="text-xs font-semibold tracking-wide text-slate-500">Step 3 &middot; Current grade</span>
           <div className="flex gap-2">
@@ -270,12 +287,7 @@ function MatcherContent() {
             </div>
           </div>
 
-          <UcGpaCalculator
-            cumulativeUnweighted={gpaSummary.cumulativeUnweighted}
-            inputs={profile.ucGpaCalculator}
-            onChange={(inputs) => updateProfile({ ucGpaCalculator: inputs })}
-            homeState={profile.homeState}
-          />
+          <UcGpaCalculator cumulativeUnweighted={gpaSummary.cumulativeUnweighted} homeState={effectiveHomeState} />
 
           <AcademicCalibrator />
         </div>
@@ -328,36 +340,7 @@ function MatcherContent() {
                 {buckets.Unrated.length > 0 && ` · ${buckets.Unrated.length} not enough data`}
               </p>
 
-              <div>
-                <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400">
-                  <span>{residencyStatusText}</span>
-                  <button
-                    type="button"
-                    onClick={() => setShowResidencyOverride((v) => !v)}
-                    className="font-semibold text-navy-900 underline underline-offset-2 hover:text-navy-700"
-                  >
-                    Change
-                  </button>
-                </div>
-                {showResidencyOverride && (
-                  <div className="mt-2 flex max-w-xs gap-2">
-                    {(["unknown", "in-state", "out-of-state"] as ResidencyChoice[]).map((choice) => (
-                      <button
-                        key={choice}
-                        type="button"
-                        onClick={() => setResidency(choice)}
-                        aria-pressed={residency === choice}
-                        className={`flex flex-1 items-center justify-center gap-1 rounded-lg px-2 py-1.5 text-xs font-semibold transition-colors ${
-                          residency === choice ? "bg-navy-900 text-white" : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                        }`}
-                      >
-                        {residency === choice && <Check className="h-3 w-3 shrink-0" strokeWidth={3} />}
-                        {choice === "unknown" ? "Use default" : choice === "in-state" ? "In-state" : "Out-of-state"}
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </div>
+              <p className="text-xs text-slate-400">{residencyStatusText}</p>
 
               {GROUP_ORDER.map((category) => {
                 const { label, icon: Icon, description, accent } = BUCKET_META[category];
