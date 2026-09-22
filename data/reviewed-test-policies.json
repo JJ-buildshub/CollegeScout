@@ -556,6 +556,39 @@
    "evidence": [
     "The University of Vermont announced that it will make permanent its current test-optional admissions policy for undergraduate applicants"
    ]
+  },
+  "university-of-oklahoma-norman-campus": {
+   "policy": "Test-Optional",
+   "label": "University of Oklahoma admissions",
+   "url": "https://www.ou.edu/admissions/apply/freshman",
+   "evidence": [
+    "OU will practice a test-optional admissions process when reviewing applications."
+   ]
+  },
+  "east-carolina-university": {
+   "policy": "Test-Optional",
+   "label": "East Carolina University admissions",
+   "url": "https://admissions.ecu.edu/apply/freshmen/",
+   "evidence": [
+    "Students with a weighted high school GPA less than 2.8 are required to submit an ACT or SAT score."
+   ],
+   "note": "Test-optional above a weighted GPA of 2.8; a score is required at or below 2.8."
+  },
+  "university-of-missouri-columbia": {
+   "policy": "Test-Optional",
+   "label": "University of Missouri admissions",
+   "url": "https://admissions.missouri.edu/apply/freshmen/test-optional/",
+   "evidence": [
+    "Freshman applicants for the Fall 2027 semester have the option of being reviewed with or without test scores"
+   ]
+  },
+  "mississippi-state-university": {
+   "policy": "Test-Optional",
+   "label": "Mississippi State University admissions",
+   "url": "https://www.admissions.msstate.edu/apply/admission-process/freshman-admissions",
+   "evidence": [
+    "Official Test Scores Optional for admission, but encouraged for scholarships."
+   ]
   }
  }
 }

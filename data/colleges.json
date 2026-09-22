@@ -32809,7 +32809,7 @@
     "admitRateOverall": 0.7847,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1150-1330 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -32826,7 +32826,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "July 1",
+        "note": "December 1 is a priority date for scholarship consideration."
+      }
+    ],
     "financials": {
       "coaInState": 31713,
       "coaOutOfState": 52932,
@@ -32921,7 +32928,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "University of Missouri admissions (https://admissions.missouri.edu/apply/freshmen/test-optional/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of Missouri admissions (https://admissions.missouri.edu/apply/dates-deadlines/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "mississippi-state-university",
@@ -32933,7 +32950,7 @@
     "admitRateOverall": 0.7764,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1110-1410 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -32950,7 +32967,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 29267,
       "coaOutOfState": 46702,
@@ -33045,7 +33068,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "Mississippi State University admissions (https://www.admissions.msstate.edu/apply/admission-process/freshman-admissions)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "Mississippi State University admissions (https://www.admissions.msstate.edu/apply/admission-process/freshman-admissions)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "mississippi-university-for-women",
@@ -33909,7 +33942,7 @@
     "admitRateOverall": 0.8921,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1050-1200 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -33926,7 +33959,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "April 1",
+        "note": "November 1, 2026 is a priority date for the Honors College and merit scholarships."
+      }
+    ],
     "financials": {
       "coaInState": 23867,
       "coaOutOfState": 40144,
@@ -34021,7 +34061,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Test-optional above a weighted GPA of 2.8; a score is required at or below 2.8.",
+    "testingPolicyProvenance": {
+      "source": "East Carolina University admissions (https://admissions.ecu.edu/apply/freshmen/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "East Carolina University admissions (https://admissions.ecu.edu/apply/freshmen/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "high-point-university",
@@ -40747,7 +40798,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 28290,
       "coaOutOfState": 43810,
@@ -40842,7 +40899,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Oklahoma State University admissions (https://go.okstate.edu/admissions/freshman/dates-deadlines)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "university-of-central-oklahoma",
@@ -40974,7 +41036,7 @@
     "admitRateOverall": 0.766,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1140-1330 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -40991,7 +41053,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 28872,
       "coaOutOfState": 46452,
@@ -41086,7 +41159,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "University of Oklahoma admissions (https://www.ou.edu/admissions/apply/freshman)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of Oklahoma admissions (https://www.ou.edu/admissions/apply/freshman)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "oregon-state-university",
@@ -47654,7 +47737,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null,
+        "note": "WVU's own page lists August 1 in a deadlines table despite describing rolling admission; treated as an administrative/processing date rather than a hard cutoff given the explicit 'no deadline' framing elsewhere on the page."
+      }
+    ],
     "financials": {
       "coaInState": 26415,
       "coaOutOfState": 44919,
@@ -47749,7 +47839,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "West Virginia University admissions (https://admissions.wvu.edu/how-to-apply/first-time-freshmen)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "university-of-wyoming",

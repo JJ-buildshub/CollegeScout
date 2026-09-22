@@ -2163,6 +2163,109 @@
     }
    ],
    "manual": true
+  },
+  "university-of-oklahoma-norman-campus": {
+   "label": "University of Oklahoma admissions",
+   "url": "https://www.ou.edu/admissions/apply/freshman",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "NOVEMBER 1 Early Action Admission Deadline",
+    "FEBRUARY 1 Final Admission Deadline"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "east-carolina-university": {
+   "label": "East Carolina University admissions",
+   "url": "https://admissions.ecu.edu/apply/freshmen/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1, 2026: Priority freshman application deadline.",
+    "April 1, 2027: Final freshman priority application deadline"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "April 1",
+     "note": "November 1, 2026 is a priority date for the Honors College and merit scholarships."
+    }
+   ]
+  },
+  "university-of-missouri-columbia": {
+   "label": "University of Missouri admissions",
+   "url": "https://admissions.missouri.edu/apply/dates-deadlines/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Deadline to apply for admission for priority scholarship consideration December 1",
+    "Application deadline July 1"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "July 1",
+     "note": "December 1 is a priority date for scholarship consideration."
+    }
+   ]
+  },
+  "mississippi-state-university": {
+   "label": "Mississippi State University admissions",
+   "url": "https://www.admissions.msstate.edu/apply/admission-process/freshman-admissions",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Applications for summer and fall enrollment open August 1, and spring applications open August 5. Mississippi State has rolling admissions, meaning applications are reviewed as they are completed."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ]
+  },
+  "west-virginia-university": {
+   "label": "West Virginia University admissions",
+   "url": "https://admissions.wvu.edu/how-to-apply/first-time-freshmen",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "WVU has a rolling admissi",
+    "Semester Application Deadline Fall August 1 Spring December 1"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "WVU's own page lists August 1 in a deadlines table despite describing rolling admission; treated as an administrative/processing date rather than a hard cutoff given the explicit 'no deadline' framing elsewhere on the page."
+    }
+   ]
+  },
+  "oklahoma-state-university": {
+   "label": "Oklahoma State University admissions",
+   "url": "https://go.okstate.edu/admissions/freshman/dates-deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "At Oklahoma State, we accept applications on a rolling admission basis, so there's no application deadline."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": true
   }
  }
 }
