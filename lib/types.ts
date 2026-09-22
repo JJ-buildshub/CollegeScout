@@ -264,6 +264,10 @@ export interface FitResult {
   sat: { score: number; low: number; high: number } | null;
   /** Plain-language note when a score was deliberately left out (e.g. below range at a test-optional school). */
   satNote: string | null;
+  /** Where the driving value (GPA or SAT) sat relative to the published range — null when there was no range to compare against at all. */
+  band: "below" | "within" | "above" | null;
+  /** True when category came from admit rate alone because the school publishes no GPA range — always shown labeled "Estimated." */
+  isEstimated: boolean;
 }
 
 export type Grade = 9 | 10 | 11 | 12;

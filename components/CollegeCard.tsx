@@ -1,9 +1,13 @@
+"use client";
+
 import Link from "next/link";
-import { ExternalLink, MapPin } from "lucide-react";
+import { ExternalLink, MapPin, Sparkles } from "lucide-react";
 import type { College } from "@/lib/types";
 import { admitRateTier, displayedAdmitRate } from "@/lib/colleges";
 import { parseGpaRange } from "@/lib/gpa";
+import { useCollegeList } from "@/lib/collegeList";
 import SaveToggleButton from "./SaveToggleButton";
+import SchoolStatusBadge from "./SchoolStatusBadge";
 import { SYSTEM_ACCENT } from "./SystemBadge";
 import TestingPolicyBadge from "./TestingPolicyBadge";
 
@@ -20,6 +24,8 @@ export default function CollegeCard({ college }: { college: College }) {
   const accent = SYSTEM_ACCENT[college.system];
   const gpa = parseGpaRange(college.mid50_GPA_Unweighted) ? realRange(college.mid50_GPA_Unweighted) : null;
   const sat = realRange(college.mid50_SAT);
+  const { state } = useCollegeList();
+  const entry = state.entries[college.id];
 
   return (
     <div
@@ -31,7 +37,8 @@ export default function CollegeCard({ college }: { college: College }) {
           <span className={`text-[11px] font-bold tracking-wide ${accent.text}`}>
             {college.system}
           </span>
-          <div className="relative z-10">
+          <div className="relative z-10 flex items-center gap-1.5">
+            {entry && <SchoolStatusBadge status={entry.status} round={entry.round} />}
             <SaveToggleButton collegeId={college.id} />
           </div>
         </div>
@@ -88,16 +95,24 @@ export default function CollegeCard({ college }: { college: College }) {
 
         <div className="mt-auto flex items-center justify-between pt-5 text-xs font-semibold">
           <span className="text-gold-600">View profile &rarr;</span>
-          {college.website && (
-            <a
-              href={college.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative z-10 inline-flex items-center gap-1 text-slate-400 hover:text-gold-600"
+          <div className="relative z-10 flex items-center gap-3">
+            {college.website && (
+              <a
+                href={college.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-slate-400 hover:text-gold-600"
+              >
+                Website <ExternalLink className="h-3 w-3" />
+              </a>
+            )}
+            <Link
+              href={`/matcher?college=${college.id}`}
+              className="inline-flex items-center gap-1 rounded-full border border-slate-200 px-2.5 py-1 text-slate-600 hover:border-navy-900 hover:text-navy-900"
             >
-              Website <ExternalLink className="h-3 w-3" />
-            </a>
-          )}
+              <Sparkles className="h-3 w-3" /> See my fit
+            </Link>
+          </div>
         </div>
       </div>
     </div>

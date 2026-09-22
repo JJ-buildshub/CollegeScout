@@ -6,7 +6,7 @@ import { Check, Search, SlidersHorizontal, X } from "lucide-react";
 import clsx from "clsx";
 import { colleges, displayedAdmitRate } from "@/lib/colleges";
 import type { CollegeSystem, TestingPolicy } from "@/lib/types";
-import { getInterestById, matchesAllInterests, normalizeInterestIds } from "@/lib/interests";
+import { getInterestById, INTEREST_TAXONOMY, matchesAllInterests, normalizeInterestIds } from "@/lib/interests";
 import CollegeCard from "@/components/CollegeCard";
 
 const SYSTEM_OPTIONS: CollegeSystem[] = ["UC", "CSU", "Private", "Public"];
@@ -69,6 +69,8 @@ function DirectoryContent() {
 
   const selectedInterests = interestIds.map(getInterestById).filter((i): i is NonNullable<typeof i> => !!i);
   const removeInterest = (id: string) => setInterestIds((prev) => prev.filter((x) => x !== id));
+  const toggleInterest = (id: string) =>
+    setInterestIds((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]));
 
   const toggleSystem = (system: CollegeSystem) => {
     setSystems((prev) => {
@@ -91,9 +93,10 @@ function DirectoryContent() {
     setTestingPolicies(new Set());
     setAdmitBucket("any");
     setQuery("");
+    setInterestIds([]);
   };
 
-  const activeFilterCount = systems.size + testingPolicies.size + (admitBucket !== "any" ? 1 : 0);
+  const activeFilterCount = systems.size + testingPolicies.size + interestIds.length + (admitBucket !== "any" ? 1 : 0);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -122,7 +125,7 @@ function DirectoryContent() {
     <div className="space-y-6">
       <div>
         <h1 className="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-3xl">
-          College Directory
+          Explore Colleges
         </h1>
         <p className="mt-1 text-sm text-slate-500">
           Search and filter {colleges.length} schools by system, testing policy, and admit rate.
@@ -230,6 +233,28 @@ function DirectoryContent() {
                   >
                     {testingPolicies.has(t) && <Check className="h-3 w-3" strokeWidth={3} />}
                     {t}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <div className="text-xs font-bold tracking-wide text-slate-400">Field of Interest</div>
+              <div className="mt-2 flex max-w-xs flex-wrap gap-2">
+                {INTEREST_TAXONOMY.map((field) => (
+                  <button
+                    key={field.id}
+                    onClick={() => toggleInterest(field.id)}
+                    aria-pressed={interestIds.includes(field.id)}
+                    className={clsx(
+                      "flex items-center gap-1 rounded-full border px-3 py-1.5 text-xs font-semibold",
+                      interestIds.includes(field.id)
+                        ? "border-navy-900 bg-navy-900 text-white"
+                        : "border-slate-200 text-slate-600 hover:border-slate-300"
+                    )}
+                  >
+                    {interestIds.includes(field.id) && <Check className="h-3 w-3" strokeWidth={3} />}
+                    {field.label}
                   </button>
                 ))}
               </div>

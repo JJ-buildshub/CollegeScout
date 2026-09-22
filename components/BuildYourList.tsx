@@ -3,16 +3,14 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, ListPlus } from "lucide-react";
-import { readSavedIds } from "@/lib/useSavedColleges";
+import { listEntries, useCollegeList } from "@/lib/collegeList";
 
 export default function BuildYourList() {
   const [mounted, setMounted] = useState(false);
-  const [savedCount, setSavedCount] = useState(0);
+  const { state } = useCollegeList();
+  const savedCount = listEntries(state).length;
 
-  useEffect(() => {
-    setSavedCount(readSavedIds().length);
-    setMounted(true);
-  }, []);
+  useEffect(() => setMounted(true), []);
 
   return (
     <section className="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-card">

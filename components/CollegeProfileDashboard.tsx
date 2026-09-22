@@ -7,8 +7,11 @@ import clsx from "clsx";
 import type { College, FieldProvenance, ScorecardData } from "@/lib/types";
 import { formatPercent, admitRateTier, displayedAdmitRate } from "@/lib/colleges";
 import { hasReliableResidencySplit } from "@/lib/gpa";
+import { useCollegeList } from "@/lib/collegeList";
 import SystemBadge, { SYSTEM_ACCENT } from "./SystemBadge";
 import SaveToggleButton from "./SaveToggleButton";
+import SchoolStatusBadge from "./SchoolStatusBadge";
+import AddToApplicationsButton from "./AddToApplicationsButton";
 import TestingPolicyBadge from "./TestingPolicyBadge";
 import ApplicationPlanBadges from "./ApplicationPlanBadges";
 import FinancialSnapshot from "./FinancialSnapshot";
@@ -48,6 +51,8 @@ export default function CollegeProfileDashboard({ college }: { college: College 
   const hasPrep = college.idealStudentArchetype.highSchoolCoursePrereqs.length > 0;
   const sections = SECTIONS.filter((s) => s.id !== "overview" || hasPrep);
   const [activeId, setActiveId] = useState(sections[0].id);
+  const { state: collegeListState } = useCollegeList();
+  const listEntry = collegeListState.entries[college.id];
 
   const goBackToDirectory = () => {
     if (typeof window !== "undefined" && window.history.length > 1) {
@@ -173,9 +178,13 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                 <MapPin className="h-3.5 w-3.5" /> {college.location}
               </div>
             </div>
-            <div className="flex shrink-0 items-center gap-2">
-              <WebsiteButton website={college.website} />
-              <SaveToggleButton collegeId={college.id} />
+            <div className="flex shrink-0 flex-col items-end gap-2">
+              <div className="flex items-center gap-2">
+                <WebsiteButton website={college.website} />
+                <SaveToggleButton collegeId={college.id} />
+              </div>
+              {listEntry && listEntry.status !== "Saved" && <SchoolStatusBadge status={listEntry.status} round={listEntry.round} />}
+              {listEntry && <AddToApplicationsButton college={college} alreadyApplying={listEntry.status !== "Saved"} />}
             </div>
           </div>
         </div>
@@ -343,8 +352,8 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                 {admitRate.superseded && (
                   <p className="mt-2 text-[11px] leading-snug text-slate-400">
                     {showResidencySplit
-                      ? "Overall is College Scorecard's verified figure and won't necessarily sit between the separately-reported In-State/Out-of-State rates shown here, which are what Find My Fit uses to classify your chances."
-                      : "Find My Fit uses this overall rate to classify your chances here."}
+                      ? "Overall is College Scorecard's verified figure and won't necessarily sit between the separately-reported In-State/Out-of-State rates shown here, which are what My Fit uses to classify your chances."
+                      : "My Fit uses this overall rate to classify your chances here."}
                   </p>
                 )}
                 {gpaSatBoxes.length > 0 ? (
