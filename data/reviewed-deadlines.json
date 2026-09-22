@@ -1814,6 +1814,110 @@
      "note": "December 1 is a priority date for early review and the AES scholarship award, not the final deadline."
     }
    ]
+  },
+  "oregon-state-university": {
+   "label": "Oregon State University admissions",
+   "url": "https://admissions.oregonstate.edu/undergraduate-admission-deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 2, 2026 - Early Action Deadline for Corvallis campus applicants.",
+    "February 1, 2027 – Priority Application Deadline for Corvallis campus students."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 2"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "university-of-kentucky": {
+   "label": "University of Kentucky admissions",
+   "url": "https://admission.uky.edu/freshman",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Dec. 1 EARLY ACTION DEADLINE FOR FALL 2027",
+    "Feb. 15 REGULAR DECISION DEADLINE FOR FALL 2027"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 15"
+    }
+   ]
+  },
+  "george-washington-university": {
+   "label": "George Washington University admissions",
+   "url": "https://undergraduate.admissions.gwu.edu/apply/first-year-applicants",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Nov. 1 Fall Admission Early Decision I (binding)",
+    "Jan. 5 Fall Admission Early Decision II (binding) & Regular Decision (non-binding)"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 5"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 5"
+    }
+   ]
+  },
+  "washington-state-university": {
+   "label": "Washington State University admissions",
+   "url": "https://admission.wsu.edu/apply/admissions-dates-deadlines/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "March 31 Fall admission application priority date for first-year students."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "March 31"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "ohio-university": {
+   "label": "Ohio University admissions",
+   "url": "https://www.ohio.edu/admissions/freshman/dates-deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall November 15* February 1"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
   }
  }
 }

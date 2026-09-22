@@ -423,6 +423,55 @@
     "SAT I or ACT scores, if available."
    ],
    "note": "Scores are one holistic factor among several; not stated as required."
+  },
+  "oregon-state-university": {
+   "policy": "Test-Optional",
+   "label": "Oregon State University admissions",
+   "url": "https://admissions.oregonstate.edu/test-optional-admissions",
+   "evidence": [
+    "Oregon State University has a test-optional admissions policy for first-year students."
+   ]
+  },
+  "ball-state-university": {
+   "policy": "Test-Optional",
+   "label": "Ball State University admissions",
+   "url": "https://www.bsu.edu/admissions/undergraduate-admissions/apply-now/test-information",
+   "evidence": [
+    "Ball State University is a test-optional institution, which means you decide whether you want to provide your SAT, ACT, and/or CLT scores as part of your application."
+   ]
+  },
+  "university-of-kentucky": {
+   "policy": "Test-Optional",
+   "label": "University of Kentucky admissions",
+   "url": "https://admission.uky.edu/news/test-optional",
+   "evidence": [
+    "The University of Kentucky has implemented a test-optional policy through the 2028-29 academic year."
+   ]
+  },
+  "george-washington-university": {
+   "policy": "Test-Optional",
+   "label": "George Washington University admissions",
+   "url": "https://undergraduate.admissions.gwu.edu/test-optional",
+   "evidence": [
+    "Test scores are not required for consideration in special programs (except for GW's B.A./B.S.-M.D. program) or for merit scholarships."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "washington-state-university": {
+   "policy": "Test-Optional",
+   "label": "Washington State University admissions",
+   "url": "https://admission.wsu.edu/apply/as/freshman/requirements-2/",
+   "evidence": [
+    "WSU does not require students to submit SAT/ACT test scores as part of the application process and will not use them in our admission decisions."
+   ]
+  },
+  "ohio-university": {
+   "policy": "Test-Optional",
+   "label": "Ohio University admissions",
+   "url": "https://www.ohio.edu/admissions/apply/test-optional",
+   "evidence": [
+    "Ohio University has adopted a test-optional pathway for admission to the Athens campus for freshman applicants."
+   ]
   }
  }
 }
