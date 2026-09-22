@@ -373,6 +373,56 @@
    ],
    "note": "Scores are considered only if the applicant emails admissions to request it, and are not considered at all for scholarships.",
    "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "texas-tech-university": {
+   "policy": "Test-Optional",
+   "label": "Texas Tech admissions",
+   "url": "https://www.depts.ttu.edu/admissions/testoptional/",
+   "evidence": [
+    "Texas Tech University Undergraduate Admissions allows you to choose whether to submit SAT or ACT scores as part of our admission and scholarship consideration."
+   ]
+  },
+  "university-of-cincinnati": {
+   "policy": "Test-Optional",
+   "label": "University of Cincinnati admissions",
+   "url": "https://www.admissions.uc.edu/test-optional.html",
+   "evidence": [
+    "Programs at University of Cincinnati will consider students for admission with or without a standardized test score as part of their application."
+   ]
+  },
+  "north-carolina-a-and-t-state-university": {
+   "policy": "Test-Optional",
+   "label": "NC A&T admissions",
+   "url": "https://www.ncat.edu/admissions/undergraduate/freshman/admissions-criteria.php",
+   "evidence": [
+    "Although test scores are optional for admission, we strongly recommend submitting your test scores because they are used for other purposes."
+   ]
+  },
+  "university-of-houston": {
+   "policy": "Test-Optional",
+   "label": "University of Houston admissions",
+   "url": "https://www.uh.edu/undergraduate-admissions/resources/test-optional-admissions/",
+   "evidence": [
+    "Freshman applicants have the option to apply for admission with or without a test score through June 1, 2030."
+   ]
+  },
+  "georgia-state-university": {
+   "policy": "Test-Required",
+   "label": "Georgia State admissions",
+   "url": "https://admissions.gsu.edu/2026/03/11/how-to-submit-your-sat-act-scores-so-your-application-isnt-held-up/",
+   "evidence": [
+    "For Fall 2026 and beyond, SAT or ACT scores are required for college admission."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "the-university-of-texas-at-dallas": {
+   "policy": "Test-Optional",
+   "label": "UT Dallas admissions",
+   "url": "https://enroll.utdallas.edu/freshman/criteria/",
+   "evidence": [
+    "SAT I or ACT scores, if available."
+   ],
+   "note": "Scores are one holistic factor among several; not stated as required."
   }
  }
 }

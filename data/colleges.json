@@ -24138,7 +24138,23 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 54630,
       "coaOutOfState": 54630,
@@ -24233,7 +24249,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Howard University admissions (https://admission.howard.edu/undergraduate/first-year)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "delaware-state-university",
@@ -25350,7 +25371,7 @@
     "admitRateOverall": 0.5544,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1040-1280 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -25462,7 +25483,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "Georgia State admissions (https://admissions.gsu.edu/2026/03/11/how-to-submit-your-sat-act-scores-so-your-application-isnt-held-up/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    }
   },
   {
     "id": "kennesaw-state-university",
@@ -33998,7 +34025,7 @@
     "admitRateOverall": 0.499,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "960-1190 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -34015,7 +34042,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 20427,
       "coaOutOfState": 34287,
@@ -34110,7 +34148,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "NC A&T admissions (https://www.ncat.edu/admissions/undergraduate/freshman/admissions-criteria.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "NC A&T admissions (https://www.ncat.edu/admissions/undergraduate/dates-and-deadlines.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "north-carolina-state-university-at-raleigh",
@@ -37618,7 +37666,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1",
+        "note": "Priority date; Hunter continues rolling admission from January through July."
+      }
+    ],
     "financials": {
       "coaInState": 13905,
       "coaOutOfState": 21855,
@@ -37713,7 +37768,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Hunter College (CUNY) admissions (https://hunter-undergraduate.catalog.cuny.edu/admissions/freshman)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "cuny-lehman-college",
@@ -40076,7 +40136,7 @@
     "admitRateOverall": 0.8529,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1150-1360 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -40093,7 +40153,19 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "March 1",
+        "note": "Rolling admission; applications after this date continue to be reviewed on a space-available basis."
+      }
+    ],
     "financials": {
       "coaInState": 32171,
       "coaOutOfState": 47505,
@@ -40188,7 +40260,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "University of Cincinnati admissions (https://www.admissions.uc.edu/test-optional.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of Cincinnati admissions (https://www.admissions.uc.edu/apply/deadlines.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-20",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    }
   },
   {
     "id": "university-of-dayton",
@@ -44091,7 +44174,7 @@
     "admitRateOverall": 0.7265,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1090-1270 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -44108,7 +44191,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "May 1",
+        "note": "Priority application deadline for Fall 2027; the freshman priority scholarship deadline is an earlier, separate date: December 1, 2026."
+      }
+    ],
     "financials": {
       "coaInState": 27443,
       "coaOutOfState": 40042,
@@ -44203,7 +44293,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "Texas Tech admissions (https://www.depts.ttu.edu/admissions/testoptional/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "Texas Tech admissions (https://www.depts.ttu.edu/admissions/apply/ImportantDates/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "the-university-of-texas-at-arlington",
@@ -44339,7 +44439,7 @@
     "admitRateOverall": 0.6513,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1170-1410 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -44356,7 +44456,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "May 1",
+        "note": "December 1 is a priority date for early review and the AES scholarship award, not the final deadline."
+      }
+    ],
     "financials": {
       "coaInState": 29807,
       "coaOutOfState": 55307,
@@ -44451,7 +44558,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Scores are one holistic factor among several; not stated as required.",
+    "testingPolicyProvenance": {
+      "source": "UT Dallas admissions (https://enroll.utdallas.edu/freshman/criteria/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "UT Dallas admissions (https://enroll.utdallas.edu/freshman/deadlines-and-fees/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "the-university-of-texas-at-san-antonio",
@@ -44587,7 +44705,7 @@
     "admitRateOverall": 0.7392,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1150-1330 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -44604,7 +44722,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "May 31",
+        "note": "The scholarship priority deadline is a separate, earlier date: November 2, 2026."
+      }
+    ],
     "financials": {
       "coaInState": 26185,
       "coaOutOfState": 39015,
@@ -44699,7 +44824,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "University of Houston admissions (https://www.uh.edu/undergraduate-admissions/resources/test-optional-admissions/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of Houston admissions (https://www.uh.edu/undergraduate-admissions/apply/incoming-freshman/freshman-admissions-process/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "university-of-north-texas",

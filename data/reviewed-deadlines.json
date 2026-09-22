@@ -1676,6 +1676,144 @@
     }
    ],
    "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "texas-tech-university": {
+   "label": "Texas Tech admissions",
+   "url": "https://www.depts.ttu.edu/admissions/apply/ImportantDates/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Summer & Fall 2027 Priority Application Deadline Freshman/Transfer – May 1, 2027",
+    "Fall 2027 Priority Scholarship Deadline Freshmen - December 1, 2026"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "May 1",
+     "note": "Priority application deadline for Fall 2027; the freshman priority scholarship deadline is an earlier, separate date: December 1, 2026."
+    }
+   ]
+  },
+  "university-of-cincinnati": {
+   "label": "University of Cincinnati admissions",
+   "url": "https://www.admissions.uc.edu/apply/deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action Deadline November 1",
+    "Application Deadline March 1 (rolling admission)"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "March 1",
+     "note": "Rolling admission; applications after this date continue to be reviewed on a space-available basis."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "cuny-hunter-college": {
+   "label": "Hunter College (CUNY) admissions",
+   "url": "https://hunter-undergraduate.catalog.cuny.edu/admissions/freshman",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Freshman – U.S. Educated February 1 (Application & Supporting Documents) Rolling Admissions from January – July"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1",
+     "note": "Priority date; Hunter continues rolling admission from January through July."
+    }
+   ]
+  },
+  "north-carolina-a-and-t-state-university": {
+   "label": "NC A&T admissions",
+   "url": "https://www.ncat.edu/admissions/undergraduate/dates-and-deadlines.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 Deadline New First-Year Early Action: Application due on November 1st. All documents due November 15th. Decision notification by January 30th.",
+    "Regular Decision: Application due on February 1st. All documents due February 15th. Decision notification by April 1st."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "howard-university": {
+   "label": "Howard University admissions",
+   "url": "https://admission.howard.edu/undergraduate/first-year",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Decision is a binding admission plan",
+    "Early Action is a non-binding admission plan.",
+    "Regular Decision is a non-binding admission plan",
+    "Early Action November 1 November 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "university-of-houston": {
+   "label": "University of Houston admissions",
+   "url": "https://www.uh.edu/undergraduate-admissions/apply/incoming-freshman/freshman-admissions-process/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 U.S. Freshman 8/1/2026 5/31/2027 6/7/2027",
+    "Fall 2027 Scholarship Priority Deadlines Deadline to submit the admissions application: Nov. 2, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "May 31",
+     "note": "The scholarship priority deadline is a separate, earlier date: November 2, 2026."
+    }
+   ]
+  },
+  "the-university-of-texas-at-dallas": {
+   "label": "UT Dallas admissions",
+   "url": "https://enroll.utdallas.edu/freshman/deadlines-and-fees/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall December 1 May 1"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "May 1",
+     "note": "December 1 is a priority date for early review and the AES scholarship award, not the final deadline."
+    }
+   ]
   }
  }
 }
