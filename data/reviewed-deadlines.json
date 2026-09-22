@@ -1,6 +1,6 @@
 {
  "note": "Application plans reviewed against each school's own admissions page, with the exact page line each one rests on. Applied to colleges.json by scripts/apply-reviewed-deadlines.py; verified against the live pages by scripts/check-reviewed-deadlines.mjs. Alabama is not listed: its page gives only a priority date and never says rolling, so its plans are left unverified. `manual` means the page blocks automated requests and was read in a browser. A school's `note` is review commentary shown in the dry run only; `provenanceNote` is what gets stored on the record.",
- "checked": "2026-09-20",
+ "checked": "2026-09-22",
  "cycle": "2026-27",
  "schools": {
   "university-of-florida": {
@@ -2602,6 +2602,65 @@
      "note": "November 1, 2026 is the admission and scholarship priority deadline."
     }
    ]
+  },
+  "georgia-state-university": {
+   "label": "Georgia State Admissions",
+   "url": "https://admissions.gsu.edu/timeline/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Deadline for Early Action admission, priority consideration for Honors College, Centennial Merit Scholarships, Stamps and Presidential scholarships",
+    "Final admission application deadline"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15",
+     "note": "Priority date for the Honors College, Centennial Merit, Stamps and Presidential scholarships, not a separate scholarship-only date."
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "May 1"
+    }
+   ],
+   "note": "Calendar-style 2026-27 First-Year Admission Timeline page (title states the cycle). Nov 15 appears under NOVEMBER 2026 as the Early Action admission deadline; May 1 appears under MAY 2027 as the Final admission application deadline."
+  },
+  "ball-state-university": {
+   "label": "Ball State University admissions",
+   "url": "https://www.bsu.edu/admissions/undergraduate-admissions/apply-now/dates-and-deadlines",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Ball State reviews applications on a rolling basis, which means we make an admission decision as soon as we receive all your application materials.",
+    "December 1 priority application deadline for Fall enrollment with fullest consideration of scholarships"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "December 1 is Ball State's priority date for fullest scholarship consideration for Fall enrollment, not an admission deadline. The page states applications are accepted until at least two weeks before classes begin but gives no other fixed date."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026-27 application cycle based on access date September 22, 2026."
+  },
+  "central-michigan-university": {
+   "label": "Central Michigan University admissions",
+   "url": "https://www.cmich.edu/undergraduate/apply",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "We offer rolling admissions so you will receive a decision soon after completing your application. Applications are accepted until classes begin",
+    "we recommend applying by October 15 to be considered for all competitive scholarship programs. Priority consideration for first-come, first-served merit scholarship funds is given to applications completed by December 1."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "October 15 and December 1 are CMU's scholarship-consideration dates, not admission deadlines. Applications are accepted until classes begin, per the page, with no other fixed date given."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; the August 1, 2026 fee-waiver window and October 15/December 1 scholarship dates place this as the current 2026-27 application cycle, based on access date September 22, 2026."
   }
  }
 }

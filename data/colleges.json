@@ -25514,7 +25514,19 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 15",
+        "note": "Priority date for the Honors College, Centennial Merit, Stamps and Presidential scholarships, not a separate scholarship-only date."
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "May 1"
+      }
+    ],
     "financials": {
       "coaInState": 28241,
       "coaOutOfState": 44417,
@@ -25536,7 +25548,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -25615,6 +25627,11 @@
       "year": "2026-27",
       "accessed": "2026-09-20",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "applicationPlansProvenance": {
+      "source": "Georgia State Admissions (https://admissions.gsu.edu/timeline/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
     }
   },
   {
@@ -28074,7 +28091,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null,
+        "note": "December 1 is Ball State's priority date for fullest scholarship consideration for Fall enrollment, not an admission deadline. The page states applications are accepted until at least two weeks before classes begin but gives no other fixed date."
+      }
+    ],
     "financials": {
       "coaInState": 26146,
       "coaOutOfState": 44694,
@@ -28096,7 +28120,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -28174,6 +28198,12 @@
       "source": "Ball State University admissions (https://www.bsu.edu/admissions/undergraduate-admissions/apply-now/test-information)",
       "year": "2026-27",
       "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "Ball State University admissions (https://www.bsu.edu/admissions/undergraduate-admissions/apply-now/dates-and-deadlines)",
+      "year": "2026-27",
+      "accessed": "2026-09-22",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026-27 application cycle based on access date September 22, 2026."
     }
   },
   {
@@ -31476,7 +31506,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null,
+        "note": "October 15 and December 1 are CMU's scholarship-consideration dates, not admission deadlines. Applications are accepted until classes begin, per the page, with no other fixed date given."
+      }
+    ],
     "financials": {
       "coaInState": 30681,
       "coaOutOfState": 30681,
@@ -31498,7 +31535,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -31576,6 +31613,12 @@
       "source": "Central Michigan University admissions (https://www.cmich.edu/undergraduate/apply)",
       "year": "2026-27",
       "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "Central Michigan University admissions (https://www.cmich.edu/undergraduate/apply)",
+      "year": "2026-27",
+      "accessed": "2026-09-22",
+      "note": "Official live admissions page does not name the entering year; the August 1, 2026 fee-waiver window and October 15/December 1 scholarship dates place this as the current 2026-27 application cycle, based on access date September 22, 2026."
     }
   },
   {
