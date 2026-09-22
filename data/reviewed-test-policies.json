@@ -506,6 +506,31 @@
     "The University of Utah is leading the state in ensuring access to all students through its permanent adoption of a test-optional"
    ],
    "note": "Adopted as a permanent policy; a score is required only for applicants from a non-accredited school, home school, or with a GED/HiSET."
+  },
+  "florida-agricultural-and-mechanical-university": {
+   "policy": "Test-Required",
+   "label": "FAMU admissions",
+   "url": "https://admissions.famu.edu/student-types/freshman.php",
+   "evidence": [
+    "Note: Florida A&M is not Test Optional and standardized SAT/ACT/CLT scores are required."
+   ]
+  },
+  "university-of-north-carolina-at-charlotte": {
+   "policy": "Test-Optional",
+   "label": "UNC Charlotte admissions",
+   "url": "https://admissions.charlotte.edu/apply/first-year-students/application-requirements/",
+   "evidence": [
+    "CLT scores cannot replace the standardized SAT or ACT scores that are required for students applying with a weighted GPA of 2.8 or lower."
+   ],
+   "note": "Test-optional applies above a weighted GPA of 2.8; a SAT or ACT score (not CLT) is required at or below 2.8."
+  },
+  "george-mason-university": {
+   "policy": "Test-Optional",
+   "label": "George Mason University admissions",
+   "url": "https://www.gmu.edu/freshman/requirements/score-optional",
+   "evidence": [
+    "Students do have the opportunity to decide if they would like to submit standardized test scores as a component of the application process."
+   ]
   }
  }
 }

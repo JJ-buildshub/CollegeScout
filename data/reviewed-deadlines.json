@@ -2022,6 +2022,75 @@
      "deadline": "April 1"
     }
    ]
+  },
+  "florida-agricultural-and-mechanical-university": {
+   "label": "FAMU admissions",
+   "url": "https://admissions.famu.edu/student-types/freshman.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action November 1 November 14",
+    "Regular Decision February 1 February 14",
+    "Rolling Admission May 1 May 1"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "May 1"
+    }
+   ]
+  },
+  "university-of-north-carolina-at-charlotte": {
+   "label": "UNC Charlotte admissions",
+   "url": "https://admissions.charlotte.edu/apply/first-year-students/application-requirements/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Nov. 1 (Early Action) Jan. 30",
+    "Feb. 1 (Regular Decision) April 1"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "george-mason-university": {
+   "label": "George Mason University admissions",
+   "url": "https://www.gmu.edu/freshman/dates-deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1, Nonbinding early action",
+    "February 1, Regular decision"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
   }
  }
 }

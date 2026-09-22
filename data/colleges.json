@@ -24436,7 +24436,7 @@
     "admitRateOverall": 0.2056,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1030-1150 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -24453,7 +24453,23 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      },
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "May 1"
+      }
+    ],
     "financials": {
       "coaInState": 23970,
       "coaOutOfState": 35910,
@@ -24548,7 +24564,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "FAMU admissions (https://admissions.famu.edu/student-types/freshman.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "FAMU admissions (https://admissions.famu.edu/student-types/freshman.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "florida-international-university",
@@ -34659,7 +34685,7 @@
     "admitRateOverall": 0.796,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1110-1320 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -34676,7 +34702,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 23010,
       "coaOutOfState": 38263,
@@ -34771,7 +34808,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Test-optional applies above a weighted GPA of 2.8; a SAT or ACT score (not CLT) is required at or below 2.8.",
+    "testingPolicyProvenance": {
+      "source": "UNC Charlotte admissions (https://admissions.charlotte.edu/apply/first-year-students/application-requirements/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "UNC Charlotte admissions (https://admissions.charlotte.edu/apply/first-year-students/application-requirements/)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "north-dakota-state-university",
@@ -45430,7 +45478,7 @@
     "admitRateOverall": 0.8748,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1140-1340 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -45447,7 +45495,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 28604,
       "coaOutOfState": 53072,
@@ -45542,7 +45601,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "George Mason University admissions (https://www.gmu.edu/freshman/requirements/score-optional)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    },
+    "applicationPlansProvenance": {
+      "source": "George Mason University admissions (https://www.gmu.edu/freshman/dates-deadlines)",
+      "year": "2026-27",
+      "accessed": "2026-09-20"
+    }
   },
   {
     "id": "university-of-richmond",
