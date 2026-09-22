@@ -70,7 +70,7 @@
     "financials": {
       "coaInState": 54674,
       "coaOutOfState": 93944,
-      "netPriceCalculatorUrl": "https://admission.universityofcalifornia.edu/tuition-financial-aid/estimate-your-aid.html",
+      "netPriceCalculatorUrl": "https://financialaid.berkeley.edu/how-aid-works/estimate-your-financial-aid/",
       "meritAidNote": "As a UC campus, Berkeley offers essentially no merit scholarships and relies almost entirely on demonstrated financial need, so families should plan around the sticker price unless need-based aid applies."
     },
     "campusFit": {
@@ -584,7 +584,7 @@
     "financials": {
       "coaInState": 44202,
       "coaOutOfState": 78402,
-      "netPriceCalculatorUrl": "https://admission.universityofcalifornia.edu/tuition-financial-aid/estimate-your-aid.html",
+      "netPriceCalculatorUrl": "https://myawards.ucdavis.edu/AidEstimator",
       "meritAidNote": "As with other UC campuses, UC Davis financial aid is need-based rather than merit-based, so admitted students should lean on the FAFSA/Dream Act application and net price tools rather than expecting an automatic scholarship for grades or test scores."
     },
     "campusFit": {
@@ -755,7 +755,7 @@
     "financials": {
       "coaInState": 41878,
       "coaOutOfState": 76078,
-      "netPriceCalculatorUrl": "https://ofas.uci.edu/cost/net-price-calculator.php",
+      "netPriceCalculatorUrl": "https://www.ofas.uci.edu/content/Calculator.aspx",
       "meritAidNote": "UC Irvine, like every UC campus, does not offer merit scholarships from its central aid office, so families should budget from the net price calculator's need-based estimate rather than hoping for a merit award."
     },
     "campusFit": {
@@ -928,7 +928,7 @@
     "financials": {
       "coaInState": 44907,
       "coaOutOfState": 79107,
-      "netPriceCalculatorUrl": "https://www.finaid.ucsb.edu/costs-estimated-aid/net-price-calculator",
+      "netPriceCalculatorUrl": "https://finaid.ucsb.edu/net-price-calculator",
       "meritAidNote": "UCSB's financial aid is need-based, not merit-based, so a strong applicant shouldn't expect a scholarship simply for high grades or test scores -- the net price calculator is the more reliable planning tool."
     },
     "campusFit": {
@@ -1101,7 +1101,7 @@
     "financials": {
       "coaInState": 44047,
       "coaOutOfState": 78247,
-      "netPriceCalculatorUrl": "https://financialaid.ucsc.edu/aid-resources/financial-aid-calculator/",
+      "netPriceCalculatorUrl": "https://app.meadowfi.com/ucsc",
       "meritAidNote": "UC Santa Cruz does not provide institutional merit scholarships, so admitted families should rely on need-based aid estimates rather than assuming a merit discount off the sticker price."
     },
     "campusFit": {
@@ -2135,7 +2135,7 @@
     "financials": {
       "coaInState": 29722,
       "coaOutOfState": 42322,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.cpp.edu/financial-aid/resources/net-price-calculator.shtml",
       "meritAidNote": "Cal Poly Pomona's merit aid is modest and mostly channeled through college-specific and donor scholarships you apply for after admission, so treat the out-of-state cost gap as the real number to budget around."
     },
     "campusFit": {
@@ -2482,7 +2482,7 @@
     "financials": {
       "coaInState": 97545,
       "coaOutOfState": 97545,
-      "netPriceCalculatorUrl": "https://financialaid.stanford.edu/undergrad/how/calculator/index.html",
+      "netPriceCalculatorUrl": "https://financialaid.stanford.edu/undergrad/how/calculator/index.html?tab=net-price-calculator",
       "meritAidNote": "Stanford offers no merit aid at all; its generous need-based program is the only lever, so families above the aid-eligibility threshold should plan for close to full price."
     },
     "campusFit": {
@@ -2667,7 +2667,7 @@
     "financials": {
       "coaInState": 99139,
       "coaOutOfState": 99139,
-      "netPriceCalculatorUrl": "https://atweb.usc.edu/npc/",
+      "netPriceCalculatorUrl": "https://financialaid.usc.edu/npc",
       "meritAidNote": "USC automatically considers EA applicants for merit scholarships with no separate application, but with such a huge applicant pool the strongest awards go to students who apply by the early deadline with a clearly distinctive academic record."
     },
     "campusFit": {
@@ -2849,7 +2849,7 @@
     "financials": {
       "coaInState": 86694,
       "coaOutOfState": 86694,
-      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/scu",
+      "netPriceCalculatorUrl": "https://www.scu.edu/financialaid/Net-Price-Calculator.cfm",
       "meritAidNote": "Santa Clara automatically considers all admitted first-year applicants for merit scholarships, so a strong transcript matters more than a separate scholarship application."
     },
     "campusFit": {
@@ -3021,7 +3021,7 @@
     "financials": {
       "coaInState": 85960,
       "coaOutOfState": 85960,
-      "netPriceCalculatorUrl": "https://sfs.mit.edu/undergraduate-students/the-cost-of-attendance/estimate-your-cost/",
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/mit",
       "meritAidNote": "MIT awards 100% need-based aid with no merit scholarships at all, so families should treat the net price calculator, not sticker price, as the real planning number."
     },
     "campusFit": {
@@ -3200,7 +3200,7 @@
     "financials": {
       "coaInState": 86812,
       "coaOutOfState": 86812,
-      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/cmu",
+      "netPriceCalculatorUrl": "https://www.cmu.edu/admission/costs-aid/net-price-calculator",
       "meritAidNote": "CMU's merit scholarships are limited to a handful of specific programs, so most admitted students should plan around need-based aid rather than count on a merit award."
     },
     "campusFit": {
@@ -3731,7 +3731,7 @@
     "financials": {
       "coaInState": 91950,
       "coaOutOfState": 91950,
-      "netPriceCalculatorUrl": "https://finaid.yale.edu/estimate",
+      "netPriceCalculatorUrl": "https://admissions.yale.edu/estimate-your-cost",
       "meritAidNote": "Yale, like its Ivy peers, awards no merit scholarships, so admitted students should treat the net price calculator as the real number to budget around."
     },
     "campusFit": {
@@ -3910,7 +3910,7 @@
     "financials": {
       "coaInState": 92373,
       "coaOutOfState": 92373,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://cc-seas.financialaid.columbia.edu/estimate-cost",
       "meritAidNote": "Columbia meets full demonstrated need but offers no merit scholarships, so the published sticker price is rarely what a family actually ends up paying."
     },
     "campusFit": {
@@ -4087,7 +4087,7 @@
     "financials": {
       "coaInState": 92288,
       "coaOutOfState": 92288,
-      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/upenn",
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/upenn",
       "meritAidNote": "Penn is need-based only with no merit scholarships, so admitted students should rely on the net price calculator rather than expecting a merit award to close the gap."
     },
     "campusFit": {
@@ -4444,7 +4444,7 @@
     "financials": {
       "coaInState": 91676,
       "coaOutOfState": 91676,
-      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/brown",
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/brown",
       "meritAidNote": "Brown meets 100% of demonstrated need with no loans but offers no merit aid, so the Open Curriculum's flexibility is the draw here, not scholarship leverage."
     },
     "campusFit": {
@@ -4623,7 +4623,7 @@
     "financials": {
       "coaInState": 91312,
       "coaOutOfState": 91312,
-      "netPriceCalculatorUrl": "https://financialaid.dartmouth.edu/cost-attendance/net-price-calculator",
+      "netPriceCalculatorUrl": "https://admissions.dartmouth.edu/afford/estimate-your-cost",
       "meritAidNote": "Dartmouth is need-based only, so students should treat the net price calculator, not a hoped-for merit award, as the realistic cost estimate."
     },
     "campusFit": {
@@ -5307,7 +5307,7 @@
     "financials": {
       "coaInState": 35305,
       "coaOutOfState": 65541,
-      "netPriceCalculatorUrl": "https://app.meadowfi.com/washington",
+      "netPriceCalculatorUrl": "https://www.washington.edu/financialaid/getting-started/net-price-calculator/",
       "meritAidNote": "UW's aid philosophy leans need-based with very limited merit scholarships, so admitted students shouldn't count on a merit award to close the large in-state/out-of-state cost gap."
     },
     "campusFit": {
@@ -5485,7 +5485,7 @@
     "financials": {
       "coaInState": 38548,
       "coaOutOfState": 84164,
-      "netPriceCalculatorUrl": "https://finaid.umich.edu/tools-resources/planning-tools-calculators",
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/umich",
       "meritAidNote": "Michigan offers a modest number of competitive merit scholarships, but most non-resident families should expect to pay close to the high out-of-state sticker price."
     },
     "campusFit": {
@@ -5668,7 +5668,7 @@
     "financials": {
       "coaInState": 29666,
       "coaOutOfState": 52092,
-      "netPriceCalculatorUrl": "https://finaid.gatech.edu/costs/net-price-calculator",
+      "netPriceCalculatorUrl": "https://admission.gatech.edu/npc_2024/",
       "meritAidNote": "Georgia Tech's marquee merit programs like HOPE and Zell Miller are reserved for Georgia residents, so out-of-state families should plan around full sticker price and lean on outside scholarships."
     },
     "campusFit": {
@@ -5840,7 +5840,7 @@
     "financials": {
       "coaInState": 32446,
       "coaOutOfState": 65666,
-      "netPriceCalculatorUrl": "https://onestop.utexas.edu/managing-costs/cost-tuition-rates/cost-of-attendance/net-price-calculator/",
+      "netPriceCalculatorUrl": "https://www.onestop.utexas.edu/managing-costs/cost-tuition-rates/cost-of-attendance/net-price-calculator/",
       "meritAidNote": "UT Austin's merit scholarships are mostly awarded through McCombs, Cockrell, and other college-specific programs rather than one general pool, so it pays to check each college's own scholarship deadlines early."
     },
     "campusFit": {
@@ -6211,7 +6211,7 @@
     "financials": {
       "coaInState": 95670,
       "coaOutOfState": 95670,
-      "netPriceCalculatorUrl": "https://www.pomona.edu/financial-aid/cost-attendance/myintuition-cost-calculator",
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/pomona",
       "meritAidNote": "Pomona meets full demonstrated need with grants and offers no merit scholarships, so aid eligibility hinges entirely on financial need rather than academic profile."
     },
     "campusFit": {
@@ -6378,7 +6378,7 @@
     "financials": {
       "coaInState": 95300,
       "coaOutOfState": 95300,
-      "netPriceCalculatorUrl": "https://www.williams.edu/admission-aid/costestimator/",
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/williams",
       "meritAidNote": "Like most highly selective liberal arts colleges, Williams awards aid purely on demonstrated need with no merit scholarships, so a strong applicant without financial need should expect to pay full price."
     },
     "campusFit": {
@@ -6567,7 +6567,7 @@
     "financials": {
       "coaInState": 90076,
       "coaOutOfState": 90076,
-      "netPriceCalculatorUrl": "https://app.meadowfi.com/rpi",
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/rpi",
       "meritAidNote": "RPI is known for awarding substantial merit scholarships to strong STEM applicants, so meaningful tuition discounting is realistic even without demonstrated financial need."
     },
     "campusFit": {
@@ -6729,7 +6729,7 @@
     "financials": {
       "coaInState": 35392,
       "coaOutOfState": 60400,
-      "netPriceCalculatorUrl": "https://afford.ua.edu/",
+      "netPriceCalculatorUrl": "https://ua.clearcostcalculator.com/student/default/netpricecalculator/survey",
       "meritAidNote": "Alabama is well known for generous automatic and competitive merit scholarships tied to GPA and test scores, making it one of the more realistic merit-aid options for strong out-of-state students despite its high sticker price."
     },
     "campusFit": {
@@ -6894,7 +6894,7 @@
     "financials": {
       "coaInState": 37456,
       "coaOutOfState": 58152,
-      "netPriceCalculatorUrl": "https://pitt.clearcostcalculator.com/student/default/netpricecalculator/survey",
+      "netPriceCalculatorUrl": "https://pitt.studentaidcalculator.com/survey.aspx",
       "meritAidNote": "Pitt offers merit scholarships to competitive applicants, particularly through its Honors College and early-deadline scholarship pool, so strong students should apply by the priority deadline to maximize merit consideration."
     },
     "campusFit": {
@@ -7236,7 +7236,7 @@
     "financials": {
       "coaInState": 31998,
       "coaOutOfState": 44598,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.fullerton.edu/financialaid/understanding-aid/cost-of-attendance/net-price-calculator/",
       "meritAidNote": "Like most CSUs, aid here is overwhelmingly need-based (Cal Grant, Pell, State University Grant); dedicated merit scholarships exist but are modest relative to overall cost, so families should lean on the FAFSA/CADAA and Cal Grant timeline rather than counting on merit money."
     },
     "campusFit": {
@@ -7395,7 +7395,7 @@
     "financials": {
       "coaInState": 33256,
       "coaOutOfState": 45856,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.csus.edu/administration-business-affairs/bursar/net-price-calculator.html",
       "meritAidNote": "Aid is predominantly need-based via Cal Grant, Pell, and the State University Grant; merit scholarships are available but limited in size, so the FAFSA/CADAA and Cal Grant deadlines matter more than chasing merit awards."
     },
     "campusFit": {
@@ -7554,7 +7554,7 @@
     "financials": {
       "coaInState": 25990,
       "coaOutOfState": 38590,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.csun.edu/financialaid/financial-aid-basics/cost-attendance/net-price-calculator",
       "meritAidNote": "Financial aid here skews heavily need-based (Cal Grant, Pell, SUG); institutional merit awards exist but are limited, so timely FAFSA/CADAA filing matters far more than merit competitions."
     },
     "campusFit": {
@@ -7712,7 +7712,7 @@
     "financials": {
       "coaInState": 34518,
       "coaOutOfState": 47118,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.calstatela.edu/financialaid/net-price-calculator",
       "meritAidNote": "Aid is overwhelmingly need-based given the student population profile (high share of Pell-eligible, first-generation students); merit scholarships are a minor piece of the puzzle compared to Cal Grant and Pell."
     },
     "campusFit": {
@@ -7870,7 +7870,7 @@
     "financials": {
       "coaInState": 36050,
       "coaOutOfState": 48650,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://financialaid.sfsu.edu/net-price-calculator",
       "meritAidNote": "Given San Francisco's high cost of living, need-based aid (Cal Grant, Pell, SUG) is the primary lever for affordability; merit aid exists but is modest relative to the total cost of attendance."
     },
     "campusFit": {
@@ -8028,7 +8028,7 @@
     "financials": {
       "coaInState": 28882,
       "coaOutOfState": 41482,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://financialaid.sonoma.edu/cost-attendance/net-price-calculator",
       "meritAidNote": "As one of the smaller, less heavily applied-to CSU campuses, Sonoma State has historically been more willing to extend targeted scholarships to strong applicants, though need-based Cal Grant/Pell aid still forms the bulk of most students' packages."
     },
     "campusFit": {
@@ -8344,7 +8344,7 @@
     "financials": {
       "coaInState": 25028,
       "coaOutOfState": 37628,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://studentaffairs.fresnostate.edu/financialaid/netprice/index.html",
       "meritAidNote": "Fresno State has one of the more affordable in-state costs of attendance in the CSU system; aid remains mostly need-based (Cal Grant, Pell, SUG), with modest merit scholarships available for standout applicants."
     },
     "campusFit": {
@@ -8502,7 +8502,7 @@
     "financials": {
       "coaInState": 29088,
       "coaOutOfState": 41688,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.csuchico.edu/fa/cost/price-calculator.shtml",
       "meritAidNote": "Aid is mostly need-based (Cal Grant, Pell, SUG); Chico does offer some merit scholarships for competitive applicants, but they cover a modest share of overall cost."
     },
     "campusFit": {
@@ -8660,7 +8660,7 @@
     "financials": {
       "coaInState": 27570,
       "coaOutOfState": 40170,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.humboldt.edu/calculator/",
       "meritAidNote": "As the CSU's most remote and smallest campus by enrollment, Humboldt has historically extended more targeted scholarship support (including its polytechnic transition funding) to attract students, though need-based Cal Grant/Pell aid still anchors most financial aid packages."
     },
     "campusFit": {
@@ -8823,7 +8823,7 @@
     "financials": {
       "coaInState": 91510,
       "coaOutOfState": 91510,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/claremontmckenna",
       "meritAidNote": "CMC's aid is primarily need-based, though a limited number of competitive merit scholarships exist; families should expect the net price calculator to be the most reliable early estimate rather than counting on merit aid."
     },
     "campusFit": {
@@ -8984,7 +8984,7 @@
     "financials": {
       "coaInState": 93131,
       "coaOutOfState": 93131,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/hmc",
       "meritAidNote": "HMC's aid is need-based rather than merit-based; the average reported net price (around $44,000 per IPEDS) reflects generous need-based packaging rather than merit discounting."
     },
     "campusFit": {
@@ -9144,7 +9144,7 @@
     "financials": {
       "coaInState": 90886,
       "coaOutOfState": 90886,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/scrippscollege",
       "meritAidNote": "Scripps aid is primarily need-based; families should rely on the net price calculator rather than assume merit discounting."
     },
     "campusFit": {
@@ -9310,7 +9310,7 @@
     "financials": {
       "coaInState": 88656,
       "coaOutOfState": 88656,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/occidental",
       "meritAidNote": "Occidental's Early Decision admits are guaranteed a minimum $20,000 annual Oxy Commitment Scholarship; beyond that, aid is primarily need-based."
     },
     "campusFit": {
@@ -9476,7 +9476,7 @@
     "financials": {
       "coaInState": 89891,
       "coaOutOfState": 89891,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://lmu.studentaidcalculator.com/survey.aspx",
       "meritAidNote": "LMU offers a mix of merit scholarships (often awarded automatically based on the admission application) and need-based aid; families should treat the net price calculator as an early estimate."
     },
     "campusFit": {
@@ -9642,7 +9642,7 @@
     "financials": {
       "coaInState": 84912,
       "coaOutOfState": 84912,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.sandiego.edu/admissions/undergraduate/tuition-financial-aid/net-price-calculator.php",
       "meritAidNote": "USD awards merit scholarships automatically to many admitted students based on the admission application; families should still use the net price calculator for a personalized estimate."
     },
     "campusFit": {
@@ -9815,7 +9815,7 @@
     "financials": {
       "coaInState": 84784,
       "coaOutOfState": 84784,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.usfca.edu/admission/financial-aid/net-price-calculator",
       "meritAidNote": "USF offers merit scholarships awarded automatically upon admission based on academic profile, layered with need-based aid; the net price calculator is the most reliable early estimate."
     },
     "campusFit": {
@@ -9981,7 +9981,7 @@
     "financials": {
       "coaInState": 87730,
       "coaOutOfState": 87730,
-      "netPriceCalculatorUrl": "https://www.chapman.edu/admission/undergraduate/financing/net-price-calculator.aspx",
+      "netPriceCalculatorUrl": "https://www.chapman.edu/students/tuition-and-aid/financial-aid/net-cost-calculator/index.aspx",
       "meritAidNote": "Chapman evaluates nearly all applicants for merit scholarships automatically as part of the admission review, factoring in GPA and test scores if submitted; no separate scholarship application is required."
     },
     "campusFit": {
@@ -10147,7 +10147,7 @@
     "financials": {
       "coaInState": 95168,
       "coaOutOfState": 95168,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://seaver.pepperdine.edu/admission/financial-aid/undergraduate/npc",
       "meritAidNote": "Pepperdine guarantees Early Decision admits a minimum of $25,000 in merit aid annually; Early Action and Regular Decision applicants are also considered for merit scholarships automatically based on their application."
     },
     "campusFit": {
@@ -10302,7 +10302,7 @@
     "financials": {
       "coaInState": 79532,
       "coaOutOfState": 79532,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://pacific.clearcostcalculator.com/student/default/netpricecalculator/survey",
       "meritAidNote": "Pacific awards merit scholarships automatically based on the admission application; families should use the net price calculator for a personalized estimate given the wide reported test-score range on campus."
     },
     "campusFit": {
@@ -10462,7 +10462,7 @@
     "financials": {
       "coaInState": 84808,
       "coaOutOfState": 84808,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.redlands.edu/npc",
       "meritAidNote": "Redlands reports that the large majority of incoming students receive institutional grants or scholarships, resulting in an average net price well below the sticker price; families should use the net price calculator for a personalized estimate."
     },
     "campusFit": {
@@ -10623,7 +10623,7 @@
     "financials": {
       "coaInState": 96926,
       "coaOutOfState": 96926,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/amherst",
       "meritAidNote": "Amherst is need-blind for domestic applicants and meets 100% of demonstrated need using grants and work-study only (no loans required). There is no merit-scholarship program; every aid dollar is need-based."
     },
     "campusFit": {
@@ -10790,7 +10790,7 @@
     "financials": {
       "coaInState": 88696,
       "coaOutOfState": 88696,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.swarthmore.edu/financial-aid/net-price-calculator",
       "meritAidNote": "Swarthmore is need-blind and meets 100% of demonstrated need with no-loan packages; there is no merit aid — average grants cover roughly 90% of tuition for the ~58% of students who receive aid."
     },
     "campusFit": {
@@ -10955,7 +10955,7 @@
     "financials": {
       "coaInState": 93233,
       "coaOutOfState": 93233,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/wellesley",
       "meritAidNote": "Wellesley is need-blind for domestic applicants and meets 100% of demonstrated need; it does not offer merit scholarships."
     },
     "campusFit": {
@@ -11121,7 +11121,7 @@
     "financials": {
       "coaInState": 86320,
       "coaOutOfState": 86320,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/bowdoin",
       "meritAidNote": "Bowdoin is need-blind, meets 100% of demonstrated need without loans, and offers no merit scholarships; roughly half of first-years receive need-based grants averaging over $66,000."
     },
     "campusFit": {
@@ -11286,7 +11286,7 @@
     "financials": {
       "coaInState": 88850,
       "coaOutOfState": 88850,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/middlebury",
       "meritAidNote": "Middlebury meets 100% of demonstrated need with a need-based aid model and awards essentially no merit aid (fewer than a handful of non-need institutional grants campus-wide)."
     },
     "campusFit": {
@@ -11449,7 +11449,7 @@
     "financials": {
       "coaInState": 89204,
       "coaOutOfState": 89204,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.carleton.edu/admissions/apply/afford/aid-estimators/npc/",
       "meritAidNote": "Carleton is need-blind for domestic applicants and meets 100% of demonstrated need; it does not offer academic merit scholarships."
     },
     "campusFit": {
@@ -11614,7 +11614,7 @@
     "financials": {
       "coaInState": 91222,
       "coaOutOfState": 91222,
-      "netPriceCalculatorUrl": "https://www.colgate.edu/admission-aid/financial-aid/estimate-your-aid",
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/colgate",
       "meritAidNote": "Colgate meets 100% of demonstrated need but, unlike most peers in this batch, also awards non-need-based aid, including merit and athletic scholarships (average first-year athletic award exceeded $48,000)."
     },
     "campusFit": {
@@ -11776,7 +11776,7 @@
     "financials": {
       "coaInState": 93320,
       "coaOutOfState": 93320,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/vassar",
       "meritAidNote": "Vassar is need-blind, meets 100% of demonstrated need, and awards no merit-based scholarships; families earning under $75,000 are not required to take loans."
     },
     "campusFit": {
@@ -11939,7 +11939,7 @@
     "financials": {
       "coaInState": 88270,
       "coaOutOfState": 88270,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/hamilton",
       "meritAidNote": "Hamilton meets 100% of demonstrated financial need for admitted students who qualify; the college does not publicize a merit-scholarship program."
     },
     "campusFit": {
@@ -12101,7 +12101,7 @@
     "financials": {
       "coaInState": 89190,
       "coaOutOfState": 89190,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/colby",
       "meritAidNote": "Colby is need-blind and meets 100% of demonstrated need; it does not offer academic merit scholarships."
     },
     "campusFit": {
@@ -12266,7 +12266,7 @@
     "financials": {
       "coaInState": 90380,
       "coaOutOfState": 90380,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/bates",
       "meritAidNote": "Bates meets 100% of demonstrated need and awards no institutional merit scholarships — all aid is need-based."
     },
     "campusFit": {
@@ -12421,7 +12421,7 @@
     "financials": {
       "coaInState": 92042,
       "coaOutOfState": 92042,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/duke",
       "meritAidNote": "Duke is need-blind for domestic applicants and meets 100% of demonstrated need with no loans for most families; it does not offer traditional merit scholarships outside of a small number of highly selective named programs (e.g., the joint Robertson Scholars program with UNC)."
     },
     "campusFit": {
@@ -12595,7 +12595,7 @@
     "financials": {
       "coaInState": 98301,
       "coaOutOfState": 98301,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://financialaid.uchicago.edu/undergraduate/resources-and-tools/net-price-calculator/",
       "meritAidNote": "UChicago is need-blind for domestic applicants and meets full demonstrated need; it does not offer merit-based scholarships -- all institutional aid is need-based."
     },
     "campusFit": {
@@ -12755,7 +12755,7 @@
     "financials": {
       "coaInState": 99375,
       "coaOutOfState": 99375,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/northwestern",
       "meritAidNote": "Northwestern is need-blind for domestic applicants and meets 100% of demonstrated need; it does not offer merit-based scholarships -- all institutional aid is need-based."
     },
     "campusFit": {
@@ -12926,7 +12926,7 @@
     "financials": {
       "coaInState": 94142,
       "coaOutOfState": 94142,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.vanderbilt.edu/financialaid/net-price-calculator/",
       "meritAidNote": "Vanderbilt is need-blind for domestic applicants and meets 100% of demonstrated need with no loans; it offers a limited number of highly competitive merit scholarships (e.g., Ingram, Cornelius Vanderbilt Scholarships) to a small share of admits."
     },
     "campusFit": {
@@ -13096,7 +13096,7 @@
     "financials": {
       "coaInState": 98039,
       "coaOutOfState": 98039,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://financialaid.rice.edu/cost-attendance/estimate-your-cost",
       "meritAidNote": "Rice is need-blind for domestic applicants and meets 100% of demonstrated need; it offers generous need-based grants (including full-tuition/full-ride grants for lower-income families) but limited traditional merit scholarships."
     },
     "campusFit": {
@@ -13268,7 +13268,7 @@
     "financials": {
       "coaInState": 94858,
       "coaOutOfState": 94858,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/jhu",
       "meritAidNote": "Johns Hopkins is need-blind for domestic applicants and meets 100% of demonstrated need with no loans for most families; it does not offer merit-based scholarships -- all institutional aid is need-based."
     },
     "campusFit": {
@@ -13437,7 +13437,7 @@
     "financials": {
       "coaInState": 101688,
       "coaOutOfState": 101688,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/georgetown",
       "meritAidNote": "Georgetown is need-blind for domestic applicants and meets 100% of demonstrated need; it does not offer merit-based scholarships -- all institutional aid is need-based."
     },
     "campusFit": {
@@ -13618,7 +13618,7 @@
     "financials": {
       "coaInState": 87570,
       "coaOutOfState": 87570,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.wpi.edu/admissions/tuition-aid/financial-need/net-price-calculator",
       "meritAidNote": "WPI awards merit scholarships to a substantial share of admitted students based on academic profile, alongside need-based aid; exact award amounts vary by applicant strength and are not published as guaranteed figures."
     },
     "campusFit": {
@@ -13784,7 +13784,7 @@
     "financials": {
       "coaInState": 90714,
       "coaOutOfState": 90714,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://case.edu/financialaid/resources/net-price-calculator/",
       "meritAidNote": "Case Western awards merit scholarships to a significant portion of admitted students automatically based on academic profile, in addition to need-based aid; exact amounts vary by applicant strength."
     },
     "campusFit": {
@@ -13952,7 +13952,7 @@
     "financials": {
       "coaInState": 84868,
       "coaOutOfState": 84868,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/rit",
       "meritAidNote": "RIT states that 100% of incoming first-year and transfer students receive some form of aid; it awards substantial merit scholarships based on academic profile in addition to need-based aid, though exact guaranteed amounts are not published."
     },
     "campusFit": {
@@ -14117,7 +14117,7 @@
     "financials": {
       "coaInState": 91294,
       "coaOutOfState": 91294,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/stevens",
       "meritAidNote": "Stevens awards merit scholarships to a substantial share of admitted students automatically based on academic profile, in addition to need-based aid; exact amounts vary by applicant strength."
     },
     "campusFit": {
@@ -14280,7 +14280,7 @@
     "financials": {
       "coaInState": 95966,
       "coaOutOfState": 95966,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/Rochester",
       "meritAidNote": "Rochester meets full demonstrated need for admitted students and also offers a range of merit scholarships (e.g., Rochester, Renaissance Scholarships) to academically strong admits; exact award amounts vary by applicant strength."
     },
     "campusFit": {
@@ -14619,7 +14619,7 @@
     "financials": {
       "coaInState": 41803,
       "coaOutOfState": 79512,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/virginia",
       "meritAidNote": "UVA's AccessUVA program meets 100% of demonstrated need for admitted students regardless of residency, but out-of-state merit scholarships (e.g., Jefferson Scholars) are exceptionally limited in number, so most non-Virginians should plan on need-based aid or full cost."
     },
     "campusFit": {
@@ -14958,7 +14958,7 @@
     "financials": {
       "coaInState": 32082,
       "coaOutOfState": 58860,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://sfa.osu.edu/incoming-freshmen/about-aid/net-price-calculator",
       "meritAidNote": "Ohio State awards a mix of Eminence Fellows/Morrill and college-specific merit scholarships to top applicants regardless of residency, but competition for non-resident merit dollars is steep given the school's large out-of-state applicant pool."
     },
     "campusFit": {
@@ -15131,7 +15131,7 @@
     "financials": {
       "coaInState": 41338,
       "coaOutOfState": 62484,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://app.meadowfi.com/pennstate",
       "meritAidNote": "Penn State's merit scholarships are largely funneled through the Schreyer Honors College and college-specific awards; because Penn State enrolls a very large out-of-state population, merit aid is competitive but not need-restricted."
     },
     "campusFit": {
@@ -15304,7 +15304,7 @@
     "financials": {
       "coaInState": 30644,
       "coaOutOfState": 63268,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://financialaid.wisc.edu/net-price-calculator/",
       "meritAidNote": "UW-Madison's out-of-state population is large and merit aid (e.g., the Bucky's Tuition Promise is need-based/in-state only) is limited for nonresidents, so most out-of-state families should plan for close to the sticker price unless a specific college-level scholarship applies."
     },
     "campusFit": {
@@ -15471,7 +15471,7 @@
     "financials": {
       "coaInState": 30602,
       "coaOutOfState": 60349,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://academics.iu.edu/cost-estimator/index.html",
       "meritAidNote": "IU's automatic merit scholarships (e.g., academic achievement awards) are available to out-of-state admits based on GPA and test scores, making it one of the more merit-accessible Big Ten flagships for competitive non-resident applicants."
     },
     "campusFit": {
@@ -15638,7 +15638,7 @@
     "financials": {
       "coaInState": 31731,
       "coaOutOfState": 61108,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://financialaid.umd.edu/resources-policies/net-price-calculator",
       "meritAidNote": "Maryland's Banneker/Key merit scholarship is extremely competitive and open to nonresidents, but the bulk of Maryland's aid budget is need-based and skews toward in-state students, so out-of-state admits should expect limited merit support."
     },
     "campusFit": {
@@ -15804,7 +15804,7 @@
     "financials": {
       "coaInState": 39519,
       "coaOutOfState": 59031,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://scarlethub.rutgers.edu/financial-services/tools-resources/net-price-calculator/",
       "meritAidNote": "Rutgers offers merit scholarships to out-of-state admits with strong academic profiles, but the gap between in-state and out-of-state cost of attendance is comparatively narrow for a public flagship, softening the out-of-state cost premium somewhat."
     },
     "campusFit": {
@@ -15971,7 +15971,7 @@
     "financials": {
       "coaInState": 35722,
       "coaOutOfState": 64074,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://financialaid.arizona.edu/cost/npc",
       "meritAidNote": "Arizona is known for aggressive automatic merit scholarships tied to GPA and test scores that substantially discount the out-of-state sticker price for well-qualified applicants, making it one of the more generous merit-aid flagships for non-residents."
     },
     "campusFit": {
@@ -16306,7 +16306,7 @@
     "financials": {
       "coaInState": 38456,
       "coaOutOfState": 67708,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://ofa.colorado.edu/netpricecalculator/",
       "meritAidNote": "CU Boulder offers merit scholarships to strong out-of-state applicants (e.g., Chancellor's/Regents-style awards), but the out-of-state cost of attendance is among the highest of the public flagships in this set, so merit aid rarely closes the full gap."
     },
     "campusFit": {
@@ -16467,7 +16467,7 @@
     "financials": {
       "coaInState": 33876,
       "coaOutOfState": 60846,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://aggie.tamu.edu/paying-for-college/cost-of-attendance/net-price-calculator.html",
       "meritAidNote": "Texas A&M offers merit scholarships to top out-of-state applicants, but as with most Texas public flagships, the bulk of institutional aid favors in-state residents under state law, so non-residents should plan primarily around the sticker cost of attendance."
     },
     "campusFit": {
@@ -16636,7 +16636,7 @@
     "financials": {
       "coaInState": 39576,
       "coaOutOfState": 62636,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://miamioh.edu/onestop/paying-for-college/costs/net-price-calculators/index.html",
       "meritAidNote": "Miami does not publish a rigid automatic GPA/SAT scale. Students are automatically considered for merit scholarships from the Common App with no separate application, but awards are decided through a holistic review of the transcript (Miami recalculates a weighted 4.0 GPA) rather than a fixed formula. Because Miami is test-optional and doesn't require scores for most scholarships, GPA/rigor carries more weight than test scores in merit decisions. Renewal requires a 3.0 college GPA."
     },
     "campusFit": {
@@ -16800,7 +16800,7 @@
     "financials": {
       "coaInState": 78816,
       "coaOutOfState": 78816,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.baylor.edu/sfs/netpricecalculator/npcalc.htm",
       "meritAidNote": "Baylor does NOT use an automatic GPA/SAT scale for freshmen — its site explicitly states scholarships are awarded via 'a full review of comprehensive high school academic performance,' not a formula. Named tiers run from Independence ($12,500/yr) through President's ($32,000/yr), automatically considered with no extra application, final upon admission, renewable at a 3.0 college GPA. (Transfers do get a published GPA-tiered scale, $12,000-$25,000.)"
     },
     "campusFit": {
@@ -16968,7 +16968,7 @@
     "financials": {
       "coaInState": 83662,
       "coaOutOfState": 83662,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://financialaid.tcu.edu/cost/net-price-calculator.php",
       "meritAidNote": "TCU states that applicants are 'automatically considered' for academic scholarships upon application, but does not publish a public GPA/SAT award matrix — decisions come from holistic review rather than a fixed scale. Roughly 3 in 4 students receive some scholarship or aid."
     },
     "campusFit": {
@@ -17134,7 +17134,7 @@
     "financials": {
       "coaInState": 89602,
       "coaOutOfState": 89602,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.smu.edu/enrollment-services/student-financial-services/cost-and-payment/net-price-calculator",
       "meritAidNote": "SMU's public admissions pages do not disclose a specific automatic GPA/SAT award chart; merit scholarships (e.g., Hilltop Scholars, President's Scholarship) appear to be awarded through the general admission review rather than a published formula. Families should confirm the current scale directly with SMU financial aid, as no automatic scale could be verified from public sources in this research pass."
     },
     "campusFit": {
@@ -17300,7 +17300,7 @@
     "financials": {
       "coaInState": 82566,
       "coaOutOfState": 82566,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.du.edu/financialaid/undergraduate/calculator/",
       "meritAidNote": "DU's public pages emphasize over $116 million in annual institutional aid but do not publish a GPA/SAT-based automatic scholarship scale; merit awards (e.g., Chancellor's/Pioneer scholarships) appear to be determined through holistic review of the admission application rather than a fixed formula."
     },
     "campusFit": {
@@ -17468,7 +17468,7 @@
     "financials": {
       "coaInState": 65443,
       "coaOutOfState": 65443,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://elon.studentaidcalculator.com/survey.aspx",
       "meritAidNote": "Elon's public pages do not publish an automatic GPA/SAT scholarship matrix. Its named merit programs (e.g., Elon College Fellows, Presidential Scholarship) are competitive, holistic-review awards — some requiring supplemental essays or interviews — rather than an automatic scale tied purely to stats."
     },
     "campusFit": {
@@ -17637,7 +17637,7 @@
     "financials": {
       "coaInState": 36802,
       "coaOutOfState": 63246,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.uvm.edu/studentfinancialservices/net_price_calculator",
       "meritAidNote": "Not a merit-scale-first school (not in the 'automatic scholarship' category); no automatic GPA/SAT scholarship matrix was identified from public sources."
     },
     "campusFit": {
@@ -17800,7 +17800,7 @@
     "financials": {
       "coaInState": 35446,
       "coaOutOfState": 60036,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.udel.edu/apply/undergraduate-admissions/financing-your-degree/net-price-calculator/",
       "meritAidNote": "Not marketed as an automatic-scale merit school; no published GPA/SAT scholarship chart was identified from public sources."
     },
     "campusFit": {
@@ -17962,7 +17962,7 @@
     "financials": {
       "coaInState": 83708,
       "coaOutOfState": 83708,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://drexel.edu/drexelcentral/finaid/prospective-students/net-price-calculator/",
       "meritAidNote": "Not marketed as an automatic-scale merit school; no published GPA/SAT scholarship chart was identified from public sources. Co-op earnings (averaging roughly $18,700 per 6-month term) function as a major de facto cost offset even though they are wages, not scholarship aid."
     },
     "campusFit": {
@@ -18125,7 +18125,7 @@
     "financials": {
       "coaInState": 46506,
       "coaOutOfState": 62453,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://sfs.temple.edu/sites/sfs/files/NetPrice.html",
       "meritAidNote": "Not marketed as an automatic-scale merit school; no published GPA/SAT scholarship chart was identified from public sources."
     },
     "campusFit": {
@@ -18283,7 +18283,7 @@
     "financials": {
       "coaInState": 40744,
       "coaOutOfState": 63412,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://financialaid.uconn.edu/pricecalc/",
       "meritAidNote": "Not marketed as an automatic-scale merit school; no published GPA/SAT scholarship chart was identified from public sources."
     },
     "campusFit": {
@@ -18440,7 +18440,7 @@
     "financials": {
       "coaInState": 35814,
       "coaOutOfState": 61126,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://netprice.app.clemson.edu/calc/",
       "meritAidNote": "Not marketed as an automatic-scale merit school; no published GPA/SAT scholarship chart was identified from public sources."
     },
     "campusFit": {
@@ -18599,7 +18599,7 @@
     "financials": {
       "coaInState": 34240,
       "coaOutOfState": 61624,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://msu.clearcostcalculator.com/student/default/netpricecalculator/survey",
       "meritAidNote": "Not marketed as an automatic-scale merit school; no published GPA/SAT scholarship chart was identified from public sources."
     },
     "campusFit": {
@@ -18758,7 +18758,7 @@
     "financials": {
       "coaInState": 29219,
       "coaOutOfState": 51307,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://admissions.uiowa.edu/finances/net-price-calculator",
       "meritAidNote": "Not marketed as an automatic-scale merit school; no published GPA/SAT scholarship chart was identified from public sources."
     },
     "campusFit": {
@@ -18912,7 +18912,7 @@
     "financials": {
       "coaInState": 28808,
       "coaOutOfState": 47138,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://tcc.ruffalonl.com/University-of-Kansas-Lawrence/Net-Price-Calculator",
       "meritAidNote": "Not marketed as an automatic-scale merit school in the sources reviewed; December 1 is cited as the priority deadline for freshman scholarship consideration, but no published GPA/SAT award matrix was identified."
     },
     "campusFit": {
@@ -19086,7 +19086,7 @@
     "financials": {
       "coaInState": 89172,
       "coaOutOfState": 89172,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.nyu.edu/admissions/financial-aid-and-scholarships/applying-and-planning-for-undergraduate-aid/estimate-your-cost.html",
       "meritAidNote": "NYU is need-aware for a portion of the applicant pool and has historically met a lower share of demonstrated need than peer privates, with very limited merit aid; families should run the net price calculator early and not count on a merit award to close the gap."
     },
     "campusFit": {
@@ -19255,7 +19255,7 @@
     "financials": {
       "coaInState": 91986,
       "coaOutOfState": 91986,
-      "netPriceCalculatorUrl": "https://financialaid.nd.edu/",
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/nd",
       "meritAidNote": "Notre Dame is need-based and meets 100% of demonstrated need without loans for most families; there is very little separate merit aid outside a handful of highly selective named scholarships (e.g., Stamps Scholars), so admitted families should plan around the need-based aid estimate rather than a merit discount."
     },
     "campusFit": {
@@ -19437,7 +19437,7 @@
     "financials": {
       "coaInState": 97860,
       "coaOutOfState": 97860,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/emory",
       "meritAidNote": "Emory meets 100% of demonstrated need for admitted students and offers a small number of highly selective merit awards (e.g., the Emory Scholars Program), but general applicants should not expect a merit discount -- the net price calculator's need-based estimate is the realistic planning number for most families."
     },
     "campusFit": {
@@ -19613,7 +19613,7 @@
     "financials": {
       "coaInState": 102260,
       "coaOutOfState": 102260,
-      "netPriceCalculatorUrl": "https://financialaid.washu.edu/net-price-calculator/",
+      "netPriceCalculatorUrl": "https://financialaid.washu.edu/costs/cost-calculators/net-price-calculator",
       "meritAidNote": "WashU meets 100% of demonstrated need and offers a set of named merit scholarships (e.g., Danforth, Ervin, Rodriguez Scholars), but these are extremely competitive and limited in number -- most admitted students should plan around need-based aid rather than merit."
     },
     "campusFit": {
@@ -19787,7 +19787,7 @@
     "financials": {
       "coaInState": 92925,
       "coaOutOfState": 92925,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.bu.edu/finaid/aid-basics/cost-of-education/net-price-calculator/",
       "meritAidNote": "BU offers substantial merit scholarships (Trustee and Presidential Scholarships being the most prestigious, awarded automatically to top applicants without a separate application), making it one of the more merit-aid-friendly options among this group of highly selective privates."
     },
     "campusFit": {
@@ -19963,7 +19963,7 @@
     "financials": {
       "coaInState": 94554,
       "coaOutOfState": 94554,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://admission.tulane.edu/tuition-aid/net-price-calculator",
       "meritAidNote": "Tulane is known for a genuinely competitive merit scholarship program (Dean's, President's, and the flagship Paul Tulane Award) awarded automatically based on the application, in addition to need-based aid that met an average of 94% of demonstrated need for aided first-years -- making it one of the more merit-generous options in this group."
     },
     "campusFit": {
@@ -20137,7 +20137,7 @@
     "financials": {
       "coaInState": 94720,
       "coaOutOfState": 94720,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/bc",
       "meritAidNote": "Boston College is need-blind for domestic applicants and meets 100% of demonstrated need, but offers very little separate merit aid (a handful of Presidential Scholars each year) -- most families should plan around the need-based net price calculator rather than a merit award."
     },
     "campusFit": {
@@ -20315,7 +20315,7 @@
     "financials": {
       "coaInState": 96144,
       "coaOutOfState": 96144,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/miami",
       "meritAidNote": "Miami has historically been generous with merit scholarships (including flagship awards like the Stamps and Singer Scholarships) alongside need-based aid, though competition for the largest awards is intense; admitted students should check their financial aid portal closely, as packages vary widely."
     },
     "campusFit": {
@@ -20486,7 +20486,7 @@
     "financials": {
       "coaInState": 101800,
       "coaOutOfState": 101800,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/wfu",
       "meritAidNote": "Wake Forest meets 100% of demonstrated need for admitted students (with an average aid package around $79,000 for aided first-years) and offers a set of competitive named merit scholarships (e.g., Nancy Susan Reynolds, Gordon Scholars), though these go to a small subset of applicants -- most families should budget from the need-based estimate."
     },
     "campusFit": {
@@ -20665,7 +20665,7 @@
     "financials": {
       "coaInState": 97048,
       "coaOutOfState": 97048,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/villanova",
       "meritAidNote": "Villanova's aid is predominantly need-based (meeting an average of 84% of demonstrated need for aided first-years) with only a small, highly selective Presidential Scholarship program for merit -- most families should plan around the need-based net price estimate."
     },
     "campusFit": {
@@ -20835,7 +20835,7 @@
     "financials": {
       "coaInState": 28768,
       "coaOutOfState": 49612,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://osfa.uga.edu/sites/default/files/npcalc.htm",
       "meritAidNote": "In-state Georgia residents benefit enormously from the HOPE and Zell Miller Scholarships, which can cover most or all tuition -- but these do not apply to out-of-state students. Out-of-state families should expect to pay close to the full out-of-state sticker price, aside from a very small number of highly competitive merit awards like the Foundation Fellowship."
     },
     "campusFit": {
@@ -21014,7 +21014,7 @@
     "financials": {
       "coaInState": 86675,
       "coaOutOfState": 86675,
-      "netPriceCalculatorUrl": null,
+      "netPriceCalculatorUrl": "https://www.syracuse.edu/admissions-aid/tuition-fees/undergraduate-costs/net-price-calculator/",
       "meritAidNote": "Syracuse offers a range of merit scholarships (e.g., Chancellor's and Dean's Scholarships) awarded automatically based on the application alongside need-based aid, making it more merit-accessible than many of the highly selective privates in this group -- but families should still confirm actual awards via the net price calculator rather than assuming the largest scholarship."
     },
     "campusFit": {
