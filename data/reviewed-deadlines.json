@@ -2858,6 +2858,21 @@
     }
    ],
    "note": "Fall 2027 row of the table: Application Opens Aug 1 2026, Application Deadline Aug 1 2027, Deadline to Submit Documents Aug 5 2027, Term Begins Sept 27 2027. Recorded the Application Deadline column."
+  },
+  "university-of-louisiana-at-lafayette": {
+   "label": "UL Lafayette admissions",
+   "url": "https://louisiana.edu/admissions-aid/application-process",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Semester Application Deadline Fall July 1 Spring November 30 Summer April 30 We accept applications on a rolling basis, which means you can apply any time throughout the year."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "July 1"
+    }
+   ]
   }
  }
 }

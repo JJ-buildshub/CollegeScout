@@ -882,6 +882,16 @@
    "evidence": [
     "Submission of test scores is optional, and not required to receive an admission decision."
    ]
+  },
+  "metropolitan-state-university-of-denver": {
+   "policy": "Test-Optional",
+   "label": "MSU Denver admissions",
+   "url": "https://www.msudenver.edu/admissions/test-optional-policy/",
+   "evidence": [
+    "Effective immediately, this bill makes it optional for Colorado's public four-year colleges and universities to require or not require national test scores in the admission process.",
+    "All public four-year colleges and universities have confirmed that they will be test-optional!"
+   ],
+   "note": "Colorado House Bill 21-1067 (2021), a permanent state law covering all Colorado public four-year institutions, not a temporary pilot."
   }
  }
 }

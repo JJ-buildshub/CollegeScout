@@ -23280,7 +23280,7 @@
     "admitRateOverall": 0.988,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "880-1110 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -23319,7 +23319,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -23392,7 +23392,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Colorado House Bill 21-1067 (2021), a permanent state law covering all Colorado public four-year institutions, not a temporary pilot.",
+    "testingPolicyProvenance": {
+      "source": "MSU Denver admissions (https://www.msudenver.edu/admissions/test-optional-policy/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "central-connecticut-state-university",
@@ -29646,7 +29652,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "July 1"
+      }
+    ],
     "financials": {
       "coaInState": 24884,
       "coaOutOfState": 38612,
@@ -29668,7 +29680,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -29741,7 +29753,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "UL Lafayette admissions (https://louisiana.edu/admissions-aid/application-process)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "babson-college",
