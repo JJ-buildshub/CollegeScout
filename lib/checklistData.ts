@@ -158,7 +158,7 @@ export const checklistData: Record<Grade, ChecklistCategory[]> = {
       title: "College & Career Exploration",
       icon: "compass",
       items: [
-        { id: "11-r1", label: "Finalize a balanced college list (Reach/Target/Likely) using Find My Fit" },
+        { id: "11-r1", label: "Finalize a balanced college list (Reach/Target/Likely) using My Fit" },
         { id: "11-r2", label: "Visit or virtually tour every school on your finalized list" },
         { id: "11-r3", label: "Draft your Common App / UC Personal Insight Question essays over the summer" },
         { id: "11-r4", label: "Request letters of recommendation before the school year ends" },

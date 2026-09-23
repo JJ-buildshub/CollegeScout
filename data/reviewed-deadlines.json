@@ -1,6 +1,6 @@
 {
  "note": "Application plans reviewed against each school's own admissions page, with the exact page line each one rests on. Applied to colleges.json by scripts/apply-reviewed-deadlines.py; verified against the live pages by scripts/check-reviewed-deadlines.mjs. Alabama is not listed: its page gives only a priority date and never says rolling, so its plans are left unverified. `manual` means the page blocks automated requests and was read in a browser. A school's `note` is review commentary shown in the dry run only; `provenanceNote` is what gets stored on the record.",
- "checked": "2026-09-20",
+ "checked": "2026-09-22",
  "cycle": "2026-27",
  "schools": {
   "university-of-florida": {
@@ -1077,6 +1077,2050 @@
     }
    ],
    "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "northwestern-university": {
+   "label": "Northwestern admissions",
+   "url": "https://admissions.northwestern.edu/apply/application-deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Application Due Date October 1, 2026 November 1, 2026 January 4, 2027"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 4"
+    }
+   ]
+  },
+  "duke-university": {
+   "label": "Duke admissions",
+   "url": "https://admissions.duke.edu/apply/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Decision applications are due November 2. Regular Decision applications are due January 4.",
+    "The information below represents the 2026-27 admission cycle requirements and deadlines."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 2"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 4"
+    }
+   ]
+  },
+  "vanderbilt-university": {
+   "label": "Vanderbilt admissions",
+   "url": "https://admissions.vanderbilt.edu/apply/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Vanderbilt offers three decision plans for first-year applicants: Early Decision I, Early Decision II, and Regular Decision.",
+    "November 1, 2026 — Deadline for completed application",
+    "January 1, 2027 — Deadline for completed application"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 1"
+    }
+   ]
+  },
+  "rice-university": {
+   "label": "Rice admission",
+   "url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Students who apply Early Decision I must submit their materials by November 1, while students who apply Early Decision II must submit their materials by January 4.",
+    "Students who apply Regular Decision must submit their materials by January 4."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 4"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 4"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "georgetown-university": {
+   "label": "Georgetown admissions",
+   "url": "https://uadmissions.georgetown.edu/apply/first-year-applicants/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Georgetown offers two application deadlines: Early Action: November 1 Regular Decision: January 1",
+    "Georgetown’s Early Action policy is non-binding"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 1"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "johns-hopkins-university": {
+   "label": "Johns Hopkins admissions",
+   "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Application Deadline November 1, 2026 January 2, 2027 January 2, 2027 March 1, 2027"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 2"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 2"
+    }
+   ]
+  },
+  "university-of-notre-dame": {
+   "label": "Notre Dame admissions",
+   "url": "https://admissions.nd.edu/apply/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Restrictive Early Action November 1",
+    "Regular Decision January 4"
+   ],
+   "plans": [
+    {
+     "type": "REA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 4"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "florida-state-university": {
+   "label": "Florida State admissions",
+   "url": "https://admissions.fsu.edu/deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Decision Eligible Applicants: Domestic Students (No Talent-Based Majors or CARE Summer Bridge) Application Deadline: October 15",
+    "Decision Type: Binding",
+    "Early Action Eligible Applicants: FL Residents Only Application Deadline: October 15",
+    "Regular Decision Eligible Applicants: All Students Application Deadline: December 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "October 15",
+     "note": "Domestic students only; not for talent-based majors or CARE Summer Bridge."
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "October 15",
+     "note": "Florida residents only."
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "March 1"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-south-florida": {
+   "label": "USF admissions",
+   "url": "https://www.usf.edu/admissions/freshmen/admission-information/dates-deadlines.aspx",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action November 2, 2026 November 16, 2026 December 9, 2026 Admit, Deny or Defer",
+    "Regular Decision December 16, 2026 January 15, 2027 February 10, 2027 Admit, Waitlist or Deny",
+    "Rolling March 1, 2027 March 15, 2027"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 2"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "December 16"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "March 1"
+    }
+   ]
+  },
+  "university-of-central-florida": {
+   "label": "UCF admissions",
+   "url": "https://www.ucf.edu/admissions/undergraduate/question/what-are-the-application-deadlines-for-first-year-students/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "APPLICATION DEADLINE Oct. 15 (Summer & Fall) Mar. 1 (Summer) May 1 (Fall)"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "October 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "May 1",
+     "note": "Deadline for fall entry."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "the-university-of-tennessee-knoxville": {
+   "label": "University of Tennessee, Knoxville admissions",
+   "url": "https://admissions.utk.edu/important-dates-and-deadlines/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1: Early Action Submission Deadline",
+    "November 15: Early Action Materials Deadline",
+    "January 5: Regular Decision Submission Deadline",
+    "January 20: Regular Decision Materials Deadline"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1",
+     "note": "Materials are due November 15."
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 5",
+     "note": "Materials are due January 20."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "binghamton-university": {
+   "label": "Binghamton admissions",
+   "url": "https://www.binghamton.edu/admissions/undergraduate/apply/freshman/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early action deadline: November 1",
+    "Regular admissions deadline: January 15"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "auburn-university": {
+   "label": "Auburn admissions",
+   "url": "https://auburn.edu/admissions/prospective-students/freshmen/index.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action Round 4 December 1, 2026",
+    "Regular Decision February 1, 2027"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 1",
+     "note": "Final Early Action round; earlier rounds also run through the fall."
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "university-of-massachusetts-amherst": {
+   "label": "UMass Amherst admissions",
+   "url": "https://www.umass.edu/admissions/important-dates-deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action* Application Deadline November 5",
+    "Regular Decision* Deadline January 15"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 5"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "virginia-polytechnic-institute-and-state-university": {
+   "label": "Virginia Tech admissions",
+   "url": "https://www.vt.edu/admissions/undergraduate/apply/dates-and-deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Dates & Deadlines for 2026-2027",
+    "Early Action Application Deadline: November 15",
+    "Regular Decision (Space Available) application deadline: January 15"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15",
+     "note": "Space available."
+    }
+   ]
+  },
+  "stony-brook-university": {
+   "label": "Stony Brook admissions",
+   "url": "https://www.stonybrook.edu/undergraduate-admissions/apply/first-year.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Entry Term: Fall 2027 Early Action Deadline: November 1 Regular Decision Deadline: January 15"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ]
+  },
+  "university-of-south-carolina-columbia": {
+   "label": "University of South Carolina admissions",
+   "url": "https://sc.edu/about/offices_and_divisions/undergraduate_admissions/apply/for_freshmen/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action Application Deadline Apply by Oct. 15",
+    "Regular Decision Application Deadline Apply by Dec. 1",
+    "Honors College Application Deadline Apply by Nov. 15"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "October 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "December 1",
+     "note": "Honors College and Top Scholar awards: apply by November 15."
+    }
+   ]
+  },
+  "louisiana-state-university-and-agricultural-and-mechanical-college": {
+   "label": "LSU admissions",
+   "url": "https://www.lsu.edu/admissions/apply/freshman.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Regular Decision Deadline: February 1",
+    "The Common Application for ALL 2027 ENTRY TERMS is NOW OPEN.",
+    "Priority Deadline for Scholarships: December 1"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1",
+     "note": "The scholarship priority deadline is a separate date: December 1."
+    }
+   ]
+  },
+  "north-carolina-state-university-at-raleigh": {
+   "label": "NC State admissions",
+   "url": "https://admissions.ncsu.edu/apply/first-year/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action Deadline: November 1",
+    "Regular Decision Deadline: January 15"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-minnesota-twin-cities": {
+   "label": "University of Minnesota Twin Cities admissions",
+   "url": "https://admissions.tc.umn.edu/apply/freshman-application-deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Students who submit their complete applications by the November 1 Early Action I Deadline will receive an admission decision of admit, defer, or deny in Application Tracker by January 31.",
+    "Students who submit their complete applications by the December 1 Early Action II Deadline will receive an admission decision of admit, defer, or deny in Application Tracker by February 28.",
+    "Regular Deadline Students who submit their complete applications by the January 1 Regular Deadline will receive an admission decision of admit, waitlist, or deny in Application Tracker by March 31."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA2",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 1"
+    }
+   ]
+  },
+  "university-of-oregon": {
+   "label": "University of Oregon admissions",
+   "url": "https://www.uoregon.edu/admissions/undergraduate/find-your-path/first-year-students/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action November 1 November 15",
+    "Regular Decision January 15 February 15",
+    "Is a non-binding application plan where you will receive a decision on January 5."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-at-buffalo": {
+   "label": "University at Buffalo admissions",
+   "url": "https://www.buffalo.edu/admissions/apply/deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action November 1",
+    "Regular Decision application completion deadline February 1"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "the-university-of-tampa": {
+   "label": "University of Tampa admissions",
+   "url": "https://www.ut.edu/apply/first-year",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Nov. 1 Early decision deadline",
+    "Nov. 15 Early action deadline",
+    "Jan. 15 Regular decision deadline",
+    "Applications completed after Jan. 15 are evaluated on a rolling basis."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15",
+     "note": "Applications completed after January 15 are evaluated on a rolling basis."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-north-texas": {
+   "label": "University of North Texas admissions",
+   "url": "https://www.unt.edu/admissions/freshman/deadlines-fees.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "ACADEMIC TERM APPLICATION DEADLINE* INTERNATIONAL APPLICATION DEADLINE Fall July 31 July 15",
+    "Apply and be admitted by March 1 to be considered for the UNT Excellence Scholarship Award."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "July 31",
+     "note": "The scholarship priority date is a separate, earlier date: March 1 (for the UNT Excellence Scholarship)."
+    }
+   ]
+  },
+  "northern-arizona-university": {
+   "label": "Northern Arizona University admissions",
+   "url": "https://nau.edu/admissions/important-dates-deadlines/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "NAU offers rolling admission for most undergraduate programs, so you can apply anytime."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ]
+  },
+  "colorado-state-university-fort-collins": {
+   "label": "Colorado State University admissions",
+   "url": "https://catalog.colostate.edu/general-catalog/admissions/how-to-apply/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "ACT/SAT test scores and recommendations are not required.",
+    "Test scores, if submitted, are only considered when applicants email admissions@colostate.edu with this request."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "CSU's official pages describe an application window (opens August 1) rather than a fixed deadline; no fall 2027 deadline date is stated."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "texas-tech-university": {
+   "label": "Texas Tech admissions",
+   "url": "https://www.depts.ttu.edu/admissions/apply/ImportantDates/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Summer & Fall 2027 Priority Application Deadline Freshman/Transfer – May 1, 2027",
+    "Fall 2027 Priority Scholarship Deadline Freshmen - December 1, 2026"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "May 1",
+     "note": "Priority application deadline for Fall 2027; the freshman priority scholarship deadline is an earlier, separate date: December 1, 2026."
+    }
+   ]
+  },
+  "university-of-cincinnati": {
+   "label": "University of Cincinnati admissions",
+   "url": "https://www.admissions.uc.edu/apply/deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action Deadline November 1",
+    "Application Deadline March 1 (rolling admission)"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "March 1",
+     "note": "Rolling admission; applications after this date continue to be reviewed on a space-available basis."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "cuny-hunter-college": {
+   "label": "Hunter College (CUNY) admissions",
+   "url": "https://hunter-undergraduate.catalog.cuny.edu/admissions/freshman",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Freshman – U.S. Educated February 1 (Application & Supporting Documents) Rolling Admissions from January – July"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1",
+     "note": "Priority date; Hunter continues rolling admission from January through July."
+    }
+   ]
+  },
+  "north-carolina-a-and-t-state-university": {
+   "label": "NC A&T admissions",
+   "url": "https://www.ncat.edu/admissions/undergraduate/dates-and-deadlines.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 Deadline New First-Year Early Action: Application due on November 1st. All documents due November 15th. Decision notification by January 30th.",
+    "Regular Decision: Application due on February 1st. All documents due February 15th. Decision notification by April 1st."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "howard-university": {
+   "label": "Howard University admissions",
+   "url": "https://admission.howard.edu/undergraduate/first-year",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Decision is a binding admission plan",
+    "Early Action is a non-binding admission plan.",
+    "Regular Decision is a non-binding admission plan",
+    "Early Action November 1 November 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "university-of-houston": {
+   "label": "University of Houston admissions",
+   "url": "https://www.uh.edu/undergraduate-admissions/apply/incoming-freshman/freshman-admissions-process/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 U.S. Freshman 8/1/2026 5/31/2027 6/7/2027",
+    "Fall 2027 Scholarship Priority Deadlines Deadline to submit the admissions application: Nov. 2, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "May 31",
+     "note": "The scholarship priority deadline is a separate, earlier date: November 2, 2026."
+    }
+   ]
+  },
+  "the-university-of-texas-at-dallas": {
+   "label": "UT Dallas admissions",
+   "url": "https://enroll.utdallas.edu/freshman/deadlines-and-fees/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall December 1 May 1"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "May 1",
+     "note": "December 1 is a priority date for early review and the AES scholarship award, not the final deadline."
+    }
+   ]
+  },
+  "oregon-state-university": {
+   "label": "Oregon State University admissions",
+   "url": "https://admissions.oregonstate.edu/undergraduate-admission-deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 2, 2026 - Early Action Deadline for Corvallis campus applicants.",
+    "February 1, 2027 – Priority Application Deadline for Corvallis campus students."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 2"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "university-of-kentucky": {
+   "label": "University of Kentucky admissions",
+   "url": "https://admission.uky.edu/freshman",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Dec. 1 EARLY ACTION DEADLINE FOR FALL 2027",
+    "Feb. 15 REGULAR DECISION DEADLINE FOR FALL 2027"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 15"
+    }
+   ]
+  },
+  "george-washington-university": {
+   "label": "George Washington University admissions",
+   "url": "https://undergraduate.admissions.gwu.edu/apply/first-year-applicants",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Nov. 1 Fall Admission Early Decision I (binding)",
+    "Jan. 5 Fall Admission Early Decision II (binding) & Regular Decision (non-binding)"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 5"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 5"
+    }
+   ]
+  },
+  "washington-state-university": {
+   "label": "Washington State University admissions",
+   "url": "https://admission.wsu.edu/apply/admissions-dates-deadlines/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "March 31 Fall admission application priority date for first-year students."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "March 31"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "ohio-university": {
+   "label": "Ohio University admissions",
+   "url": "https://www.ohio.edu/admissions/freshman/dates-deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall November 15* February 1"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "university-of-arkansas": {
+   "label": "University of Arkansas admissions",
+   "url": "https://admissions.uark.edu/apply/new-freshman.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1 Priority Application Deadline Apply for admission early to take advantage of early housing and orientation options."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 1",
+     "note": "Priority application deadline; a separate scholarship priority deadline is November 15."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "cuny-brooklyn-college": {
+   "label": "Brooklyn College (CUNY) admissions",
+   "url": "https://www.brooklyn.cuny.edu/web/admissions/freshmen/apply/deadlines.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall Semester Priority Deadline: February 1",
+    "Applications received after this date will be processed on a rolling admission basis."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1",
+     "note": "Priority date; applications after this date are processed on a rolling basis."
+    }
+   ]
+  },
+  "university-of-illinois-chicago": {
+   "label": "University of Illinois Chicago admissions",
+   "url": "https://admissions.uic.edu/undergraduate/requirements-deadlines/deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "First Year - Early Action",
+    "November 2, 2026",
+    "First Year - Regular Decision",
+    "February 1, 2027"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 2"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "university-of-rhode-island": {
+   "label": "University of Rhode Island admissions",
+   "url": "https://web.uri.edu/admission/first-year/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "First-Year Early Decision Nov. 1 Early Dec.",
+    "First-Year Early Action & Priority Scholarship Consideration Dec. 1 By Jan. 31 May 1",
+    "First-Year Regular Decision (Sept. start) Feb. 1 By Mar. 31 May 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "university-of-utah": {
+   "label": "University of Utah admissions",
+   "url": "https://admissions.utah.edu/apply/freshman-students/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "APPLICATION DEADLINES November 15 Spring December 1 Early Action & Merit Scholarship Consideration April 1 Summer April 1 Fall"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "April 1"
+    }
+   ]
+  },
+  "florida-agricultural-and-mechanical-university": {
+   "label": "FAMU admissions",
+   "url": "https://admissions.famu.edu/student-types/freshman.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Action November 1 November 14",
+    "Regular Decision February 1 February 14",
+    "Rolling Admission May 1 May 1"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "May 1"
+    }
+   ]
+  },
+  "university-of-north-carolina-at-charlotte": {
+   "label": "UNC Charlotte admissions",
+   "url": "https://admissions.charlotte.edu/apply/first-year-students/application-requirements/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Nov. 1 (Early Action) Jan. 30",
+    "Feb. 1 (Regular Decision) April 1"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "george-mason-university": {
+   "label": "George Mason University admissions",
+   "url": "https://www.gmu.edu/freshman/dates-deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1, Nonbinding early action",
+    "February 1, Regular decision"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "cuny-bernard-m-baruch-college": {
+   "label": "Baruch College (CUNY) admissions",
+   "url": "https://enrollmentmanagement.baruch.cuny.edu/undergraduate-admissions/how-to-apply/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Freshman/Transfer U.S. Educated February 1 (Application & Supporting Documents) Rolling Admissions January – July"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1",
+     "note": "Priority date; rolling admissions continue January through July."
+    }
+   ]
+  },
+  "kennesaw-state-university": {
+   "label": "Kennesaw State University admissions",
+   "url": "https://www.kennesaw.edu/admissions/undergraduate/deadlines.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall 2027 - Priority Deadline August 1, 2026 November 2, 2026 November 16, 2026 August 23, 2027",
+    "Fall 2027 - Regular Deadline August 1, 2026 July 1, 2027 July 1, 2027 August 23, 2027"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "November 2",
+     "note": "Priority deadline for Fall 2027; the regular deadline is July 1, 2027."
+    }
+   ]
+  },
+  "the-university-of-texas-at-arlington": {
+   "label": "UT Arlington admissions",
+   "url": "https://www.uta.edu/admissions/apply/freshmen",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Application Priority Dates Fall: February 15"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 15",
+     "note": "Applications are accepted after this date but are not guaranteed consideration."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-vermont": {
+   "label": "University of Vermont admissions",
+   "url": "https://www.uvm.edu/admissions/undergraduate/application-deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Submit Common App or Coalition App for freeNovember 1, 2026Application Completion DeadlineNovember 13, 2026",
+    "Submit Common App or Coalition AppJanuary 15, 2027Application Completion DeadlineJanuary 29, 2027"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": true
+  },
+  "university-of-oklahoma-norman-campus": {
+   "label": "University of Oklahoma admissions",
+   "url": "https://www.ou.edu/admissions/apply/freshman",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "NOVEMBER 1 Early Action Admission Deadline",
+    "FEBRUARY 1 Final Admission Deadline"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "east-carolina-university": {
+   "label": "East Carolina University admissions",
+   "url": "https://admissions.ecu.edu/apply/freshmen/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "November 1, 2026: Priority freshman application deadline.",
+    "April 1, 2027: Final freshman priority application deadline"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "April 1",
+     "note": "November 1, 2026 is a priority date for the Honors College and merit scholarships."
+    }
+   ]
+  },
+  "university-of-missouri-columbia": {
+   "label": "University of Missouri admissions",
+   "url": "https://admissions.missouri.edu/apply/dates-deadlines/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Deadline to apply for admission for priority scholarship consideration December 1",
+    "Application deadline July 1"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "July 1",
+     "note": "December 1 is a priority date for scholarship consideration."
+    }
+   ]
+  },
+  "mississippi-state-university": {
+   "label": "Mississippi State University admissions",
+   "url": "https://www.admissions.msstate.edu/apply/admission-process/freshman-admissions",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Applications for summer and fall enrollment open August 1, and spring applications open August 5. Mississippi State has rolling admissions, meaning applications are reviewed as they are completed."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ]
+  },
+  "west-virginia-university": {
+   "label": "West Virginia University admissions",
+   "url": "https://admissions.wvu.edu/how-to-apply/first-time-freshmen",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "WVU has a rolling admissi",
+    "Semester Application Deadline Fall August 1 Spring December 1"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "WVU's own page lists August 1 in a deadlines table despite describing rolling admission; treated as an administrative/processing date rather than a hard cutoff given the explicit 'no deadline' framing elsewhere on the page."
+    }
+   ]
+  },
+  "oklahoma-state-university": {
+   "label": "Oklahoma State University admissions",
+   "url": "https://go.okstate.edu/admissions/freshman/dates-deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "At Oklahoma State, we accept applications on a rolling admission basis, so there's no application deadline."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": true
+  },
+  "kent-state-university-at-kent": {
+   "label": "Kent State University admissions",
+   "url": "https://www.kent.edu/admissions/first-year-student-requirements",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Nov. 1 Priority Application Deadline",
+    "Jan. 15 Merit Scholarship Deadline"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "November 1",
+     "note": "Priority date; a separate merit scholarship deadline is January 15."
+    }
+   ]
+  },
+  "university-of-new-hampshire": {
+   "label": "University of New Hampshire admissions",
+   "url": "https://admissions.unh.edu/apply/first-year",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "EARLY ACTION - NOVEMBER 15",
+    "REGULAR DECISION - FEBRUARY 1"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "illinois-state-university": {
+   "label": "Illinois State University admissions",
+   "url": "https://illinoisstate.edu/apply/deadlines/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall (August) August 1 – November 1 April 1 April 1 July 15"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "April 1",
+     "note": "Priority filing window is August 1 through November 1."
+    }
+   ]
+  },
+  "university-of-hawaii-at-manoa": {
+   "label": "University of Hawaii at Manoa admissions",
+   "url": "https://manoa.hawaii.edu/admissions/freshman/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "FALL SEMESTER January 5th Priority D",
+    "eadline April 1st Final Deadline"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "April 1",
+     "note": "January 5 is a priority date."
+    }
+   ]
+  },
+  "towson-university": {
+   "label": "Towson University admissions",
+   "url": "https://www.towson.edu/admissions/undergrad/freshmen/deadlines.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall Freshman November 1 (Early Action and Honors College) February 1 (Regular Decision)"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "bowling-green-state-university": {
+   "label": "Bowling Green State University admissions",
+   "url": "https://www.bgsu.edu/admissions/apply-now/freshmen/application-instructions.html",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Prospective students who wish to enroll fall semester are encouraged to apply and have all admissions credentials completed by March 1 to assure consideration."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "March 1"
+    }
+   ]
+  },
+  "the-university-of-texas-at-san-antonio": {
+   "label": "UT San Antonio admissions",
+   "url": "https://future.utsa.edu/freshman/admissions/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Term Priority Freshman Deadline International Freshman Deadline Domestic Freshman Deadline Fall January 15 June 1 to submit application June 15 to submit missing documents June 1 to submit application June 15 to submit missing docume"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "June 1",
+     "note": "Priority date is January 15."
+    }
+   ]
+  },
+  "florida-international-university": {
+   "label": "FIU admissions",
+   "url": "https://admissions.fiu.edu/how-to-apply/freshman-applicant/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Fall 2027 November 2, 2026 December 10, 2026 May 1, 2027 Fall 2027 November 2, 2026 December 10, 2026 May 1, 2027",
+    "Early Fall 2027 December 16, 2026 January 21, 2027 May 1, 2027 Fall 2027 December 16, 2026 January 21, 2027 May 1, 2027",
+    "Early Fall 2027 March 2, 2027 April 2, 2027 May 1, 2027 Fall 2027 March 2, 2027"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 2"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "December 16"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "March 2",
+     "note": "Final deadline."
+    }
+   ]
+  },
+  "lehigh-university": {
+   "label": "Lehigh University admissions",
+   "url": "https://www2.lehigh.edu/admissions/apply",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early Decision I Deadline: November 1 Decision Date: Mid December Early",
+    "Decision II Deadline: January 1 Decision Date: Mid February Regular Decision Deadline: January 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 1"
+    }
+   ]
+  },
+  "american-university": {
+   "label": "American University admissions",
+   "url": "https://www.american.edu/admissions/first-year/decision-plans-and-deadlines.cfm",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Application Deadline: November 1 CSS Profile & FAFSA Deadline: November 15",
+    "Application Deadline: January 15 CSS Profile & FAFSA Deadline: February 15 Notification: April 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": true
+  },
+  "william-and-mary": {
+   "label": "William & Mary admissions",
+   "url": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/datesdeadlines/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Nov. 1 Common App due Nov. 15 FAFSA and CSS Profile priority deadline for receiving financial aid estimate",
+    "Regular Decision Application Dates and Deadlines"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 5"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 5"
+    }
+   ]
+  },
+  "coastal-carolina-university": {
+   "label": "Coastal Carolina University admissions",
+   "url": "https://www.coastal.edu/admissions/freshman/freshmanapp/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Apply by October 15; Know by December 1; Enroll by January 15",
+    "Apply by November 15; Know by December 15; Enroll by M",
+    "Apply by February 1; Know by March 1; Enroll by May 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "October 15"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "university-of-dayton": {
+   "label": "University of Dayton admissions",
+   "url": "https://udayton.edu/apply/undergraduate/admission-process.php",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Early action application deadline (non-binding) and nursing application deadline.",
+    "Regular admission application deadline; priority deadline to file the FAFSA."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ]
+  },
+  "university-of-north-carolina-wilmington": {
+   "label": "UNC Wilmington admissions",
+   "url": "https://www.uncw.edu/admissions/undergraduate/first-year/deadlines",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall Early Action (Non-Binding)- November 1 Applicants will receive a decision on or around January 20.",
+    "Fall Regular Decision - January 15 Applicants will receive a decision on or around March 15."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ]
+  },
+  "boise-state-university": {
+   "label": "Boise State University admissions",
+   "url": "https://www.boisestate.edu/admissions/apply/resident/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Application and Scholarship Priority Deadline: February 15 Standard Application Deadline: May 1"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "May 1",
+     "note": "February 15 is the priority date for admission and scholarships."
+    }
+   ]
+  },
+  "university-of-wisconsin-milwaukee": {
+   "label": "UW-Milwaukee admissions",
+   "url": "https://uwm.edu/undergrad-admission/",
+   "accessed": "2026-09-20",
+   "evidence": [
+    "Fall applicatio",
+    "n open Aug. 1, 2026 Admission and scholarship application priority deadline Nov. 1, 2026 Orientation registration and housing application priority deadline May 1, 2027 Fall application deadline (application closes) Aug. 1, 2027"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "August 1",
+     "note": "November 1, 2026 is the admission and scholarship priority deadline."
+    }
+   ]
+  },
+  "georgia-state-university": {
+   "label": "Georgia State Admissions",
+   "url": "https://admissions.gsu.edu/timeline/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Deadline for Early Action admission, priority consideration for Honors College, Centennial Merit Scholarships, Stamps and Presidential scholarships",
+    "Final admission application deadline"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15",
+     "note": "Priority date for the Honors College, Centennial Merit, Stamps and Presidential scholarships, not a separate scholarship-only date."
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "May 1"
+    }
+   ],
+   "note": "Calendar-style 2026-27 First-Year Admission Timeline page (title states the cycle). Nov 15 appears under NOVEMBER 2026 as the Early Action admission deadline; May 1 appears under MAY 2027 as the Final admission application deadline."
+  },
+  "ball-state-university": {
+   "label": "Ball State University admissions",
+   "url": "https://www.bsu.edu/admissions/undergraduate-admissions/apply-now/dates-and-deadlines",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Ball State reviews applications on a rolling basis, which means we make an admission decision as soon as we receive all your application materials.",
+    "December 1 priority application deadline for Fall enrollment with fullest consideration of scholarships"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "December 1 is Ball State's priority date for fullest scholarship consideration for Fall enrollment, not an admission deadline. The page states applications are accepted until at least two weeks before classes begin but gives no other fixed date."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026-27 application cycle based on access date September 22, 2026."
+  },
+  "central-michigan-university": {
+   "label": "Central Michigan University admissions",
+   "url": "https://www.cmich.edu/undergraduate/apply",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "We offer rolling admissions so you will receive a decision soon after completing your application. Applications are accepted until classes begin",
+    "we recommend applying by October 15 to be considered for all competitive scholarship programs. Priority consideration for first-come, first-served merit scholarship funds is given to applications completed by December 1."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "October 15 and December 1 are CMU's scholarship-consideration dates, not admission deadlines. Applications are accepted until classes begin, per the page, with no other fixed date given."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; the August 1, 2026 fee-waiver window and October 15/December 1 scholarship dates place this as the current 2026-27 application cycle, based on access date September 22, 2026."
+  },
+  "texas-state-university": {
+   "label": "Texas State University admissions",
+   "url": "https://www.admissions.txst.edu/future-students/apply-for-admission.html",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Freshman Application Deadlines Spring November 15 Summer May 1 Fall December 1 (Priority) / July 15 (Final)"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "July 15",
+     "note": "December 1 is Texas State's priority admission date for the same Fall term; the page labels July 15 as the Final deadline."
+    }
+   ],
+   "note": "Page explicitly labels the two Fall dates Priority and Final, so Final (July 15) is recorded as the deadline."
+  },
+  "brigham-young-university": {
+   "label": "BYU Enrollment Services",
+   "url": "https://enrollment.byu.edu/admissions/application-deadlines",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Fall 2027 Aug 26, 2026 Nov 2, 2026 Dec 15, 2026 Feb 15, 2027"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "December 15",
+     "note": "November 2, 2026 is BYU's priority deadline for the same Fall 2027 term (factors into holistic review, but not an earlier decision date); December 15, 2026 is the final deadline."
+    }
+   ],
+   "note": "Freshman Applicants table row for Fall 2027: Application Opens Aug 26 2026, Priority Deadline Nov 2 2026, Deadline Dec 15 2026, Decision Notification Feb 15 2027."
+  },
+  "university-of-nevada-las-vegas": {
+   "label": "UNLV admissions",
+   "url": "https://www.unlv.edu/admissions/undergraduate/first-year",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Priority deadline for fall financial aid and scholarship consideration November 15 Fall application deadline June 1"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "June 1",
+     "note": "November 15 is UNLV's priority deadline for fall financial aid and scholarship consideration, not an admission deadline."
+    }
+   ]
+  },
+  "virginia-commonwealth-university": {
+   "label": "VCU admissions",
+   "url": "https://admissions.vcu.edu/apply-to-vcu/deadlines/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Fall 2027 application deadlines First-year application deadlines Nov. 1, 2026: First-year scholarship deadline",
+    "Jan. 15, 2027: First-year regular decision application deadline"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15",
+     "note": "Nov. 1, 2026 is VCU's first-year scholarship deadline for the same Fall 2027 term, not the admission deadline."
+    }
+   ]
+  },
+  "montclair-state-university": {
+   "label": "Montclair State University admissions",
+   "url": "https://www.montclair.edu/admissions/apply-and-check-status/admissions-deadlines/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "First-year Regular Admission Deadlines Application Type Deadline Apply Fall 2027 Early Action* (non-binding) December 1, 2026 Apply Now Fall 2027 School of Nursing February 1, 2027 Apply Now Fall 2027 Regular Admission March 1, 2027"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "March 1"
+    }
+   ]
+  },
+  "university-of-nebraska-lincoln": {
+   "label": "University of Nebraska-Lincoln admissions",
+   "url": "https://admissions.unl.edu/apply/first-year-dates-deadlines/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "May 1 Deadline Fall 2027 application for admission and enrollment deposit due."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "May 1",
+     "note": "November 1 is UNL's priority date for scholarship/financial-aid notification timing, not the final application deadline."
+    }
+   ],
+   "note": "The May 1 line item covers both the application and the enrollment deposit on the same page; recorded only as the application deadline, not a deposit date."
+  },
+  "middle-tennessee-state-university": {
+   "label": "MTSU admissions",
+   "url": "https://www.mtsu.edu/how-to-apply/deadlines/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Fall Priority for admission deadline: July 1"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "July 1 is MTSU's priority date for admission decisions; the page does not state a separate final cutoff."
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026-27 application cycle based on access date September 22, 2026."
+  },
+  "university-of-nevada-reno": {
+   "label": "University of Nevada, Reno admissions",
+   "url": "https://www.unr.edu/admissions/freshman",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Early Action deadline: Get your decision sooner Apply by this date to get an earlier admission decision and early access to register for classes. Early Action doesn't require you to commit to attend.",
+    "Final application deadline Last day to submit your application for admission. December 15, 2027 April 7, 2027"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "April 7"
+    }
+   ],
+   "note": "Fall 2027 start column of the freshman deadlines table: Early Action Nov 15 2026, Final application deadline Apr 7 2027 (Feb 15 2027 is the scholarship/financial-aid deadline, kept as a note only, not the admission deadline)."
+  },
+  "california-state-university-san-bernardino": {
+   "label": "CSUSB admissions",
+   "url": "https://www.csusb.edu/join-the-pack/future-students/apply/freshmen-admissions-requirements",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Fall 2027 Deadlines Application Deadlines November 30: Pre-Nursing January 31: All other majors"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 31",
+     "note": "November 30 is the deadline for Pre-Nursing applicants specifically; January 31 applies to all other majors."
+    }
+   ]
+  },
+  "western-washington-university": {
+   "label": "Western Washington University admissions",
+   "url": "https://admissions.wwu.edu/first-year/apply",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Apply for Fall 2027 Apply by the November 1 Early Action deadline to receive a response from the Office of Admissions by December 31.",
+    "admission decisions are made on a rolling basis-most Regular Decision applicants will receive an admission decision by early April."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "Regular Decision review is rolling; the page states most such applicants hear back by early April but gives no fixed final deadline."
+    }
+   ]
+  },
+  "portland-state-university": {
+   "label": "Portland State University admissions",
+   "url": "https://www.pdx.edu/admissions/deadlines",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "First Year Application Term Application Opens Application Deadline Deadline to Submit Documents Term Begins Fall 2026 August 1, 2025 August 1, 2026 August 5, 2026 September 28, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "August 1"
+    }
+   ],
+   "note": "Fall 2027 row of the table: Application Opens Aug 1 2026, Application Deadline Aug 1 2027, Deadline to Submit Documents Aug 5 2027, Term Begins Sept 27 2027. Recorded the Application Deadline column."
+  },
+  "university-of-louisiana-at-lafayette": {
+   "label": "UL Lafayette admissions",
+   "url": "https://louisiana.edu/admissions-aid/application-process",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Semester Application Deadline Fall July 1 Spring November 30 Summer April 30 We accept applications on a rolling basis, which means you can apply any time throughout the year."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "July 1"
+    }
+   ]
+  },
+  "eastern-kentucky-university": {
+   "label": "Eastern Kentucky University admissions",
+   "url": "https://www.eku.edu/admissions/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Important Dates August 1 Fall Admission Deadline"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "August 1"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026-27 application cycle based on access date September 22, 2026."
+  },
+  "university-of-alabama-at-birmingham": {
+   "label": "UAB admissions",
+   "url": "https://www.uab.edu/admissions/apply/freshman/how-to-apply",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "- Fall 2027 Students who do not meet the priority deadlines for admission to UAB will continue to be considered as space and funds are available."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "June 1 is UAB's priority deadline for Fall 2027; the page states applicants are still considered afterward as space allows, with no stated final cutoff. Jan 15/May 1 are scholarship-consideration deadlines only."
+    }
+   ]
+  },
+  "university-of-maryland-baltimore-county": {
+   "label": "UMBC admissions",
+   "url": "https://umbc.edu/admissions/undergraduate/dates-deadlines/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "November Nov 1 Early Action Deadline (First-Year) Decision letters for Early Action applicants are sent beginning in December",
+    "February Feb 1 Regular Decision Deadline (First-Year) Decision letters for regular applicants are sent beginning in February"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ],
+   "note": "Fall Enrollment First-Year deadlines specifically (page also separately lists Spring Enrollment and Transfer deadlines, not used here)."
+  },
+  "college-of-charleston": {
+   "label": "College of Charleston admissions",
+   "url": "https://charleston.edu/admission/apply/undergraduate/index.php",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "t 1 Application opens November 2 Early Decision 1 Deadline (binding) Early Action Deadline (non-binding) Early December Early Decision decisions released Mid-December Early Action decisions released January 5",
+    "nrollment deposit due January 15 Early Decision 2 Deadline (binding) January 15 Regular Decision Deadline"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 2"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 2"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "note": "Undergraduate (First-Year) Fall Semester 2027 deadlines table on its own admissions page."
+  },
+  "university-of-nebraska-at-omaha": {
+   "label": "UNO Academic Catalog",
+   "url": "https://catalog.unomaha.edu/aboutuno/undergraduate-admissions/application-deadline-dates/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "A complete admission file, including the application and all required supporting materials, must be received by the Undergraduate Admission Application deadline, which is one week before the start of classes for each term.",
+    "Fall 2027 August 16, 2027"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "August 16"
+    }
+   ]
+  },
+  "east-tennessee-state-university": {
+   "label": "ETSU admissions",
+   "url": "https://www.etsu.edu/admissions/apply/deadlines.php",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Fall 2027 Application deadline: Thursday, August 19 by 11:59 p.m."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "August 19"
+    }
+   ]
+  },
+  "university-of-north-dakota": {
+   "label": "University of North Dakota admissions",
+   "url": "https://und.edu/admissions/freshmen/apply.html",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Application Deadlines Fall Priority Deadline: Feb. 1 Fall Final Deadline: Aug. 15"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "August 15",
+     "note": "Feb. 1 is UND's fall priority deadline; the page separately lists a Freshman Scholarship Deadline, so Feb. 1 is not used here to avoid conflating the two."
+    }
+   ]
+  },
+  "south-dakota-state-university": {
+   "label": "South Dakota State University admissions",
+   "url": "https://www.sdstate.edu/admissions/undergraduate-admissions",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Anytime Admission Applications - SDSU accepts applications on a rolling admissions timeline."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "December 1 (Academic Scholarship) and March 1 (FAFSA) are separate, non-admission deadlines on the same page."
+    }
+   ]
+  },
+  "southeastern-louisiana-university": {
+   "label": "Southeastern Louisiana University admissions",
+   "url": "https://www.southeastern.edu/apply/dates/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Apply between July 16 - August 1: $20 Non-Refundable Application Fee",
+    "ons accepted after August 1"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "August 1"
+    }
+   ],
+   "note": "Fee-tier structure (regular by July 15, late fee July 16-Aug 1); the page states applications are not accepted after August 1, so that is recorded as the deadline."
+  },
+  "university-of-maine": {
+   "label": "University of Maine admissions",
+   "url": "https://go.umaine.edu/applyinfo/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "December 1: Early Action application deadline to receive maximum financial aid and a guaranteed decision before the end of the",
+    "March 1: Regular application deadline with scholarships given as available."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "March 1"
+    }
+   ]
+  },
+  "university-of-wyoming": {
+   "label": "University of Wyoming admissions",
+   "url": "https://www.uwyo.edu/admissions/freshman/index.html",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Our admission process operates on a\"rolling basis,\" meaning you can apply anytime leading up to the next available semester start date"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ]
+  },
+  "university-of-west-georgia": {
+   "label": "University of West Georgia admissions",
+   "url": "https://www.westga.edu/undergraduate-admissions/dates-deadlines.php",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Fall 2027 Priority Admission Deadline January 31, 2027 Fall 2027 Admission Deadline August 8, 2027"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "August 8",
+     "note": "January 31, 2027 is UWG's Fall 2027 priority admission deadline, not the final one."
+    }
+   ]
+  },
+  "university-of-central-arkansas": {
+   "label": "University of Central Arkansas admissions",
+   "url": "https://uca.edu/admissions/apply/freshman/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Admission Decisions Applications are processed on a rolling basis throughout the year."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ]
+  },
+  "university-of-northern-iowa": {
+   "label": "University of Northern Iowa admissions",
+   "url": "https://admissions.uni.edu/how-apply/freshmen",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "UNI operates on a rolling admissions basis. Admission of applicants for fall semester begins in July of the preceding year."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ]
   }
  }
 }

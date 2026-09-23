@@ -7,7 +7,7 @@ export default function FindMyFit() {
   return (
     <section className="rounded-3xl bg-slate-50 p-6 sm:p-10">
       <div className="mx-auto max-w-2xl text-center">
-        <span className="text-xs font-bold tracking-wide text-gold-600">Find My Fit</span>
+        <span className="text-xs font-bold tracking-wide text-gold-600">My Fit</span>
         <h2 className="mt-2 text-xl font-extrabold tracking-tight text-navy-900 sm:text-2xl">
           Now make it personal.
         </h2>
@@ -38,7 +38,7 @@ export default function FindMyFit() {
           href="/matcher"
           className="inline-flex items-center gap-2 rounded-full bg-navy-900 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-navy-800"
         >
-          Find My Fit <ArrowRight className="h-4 w-4" />
+          Go to My Fit <ArrowRight className="h-4 w-4" />
         </Link>
       </div>
     </section>

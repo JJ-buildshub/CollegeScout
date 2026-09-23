@@ -3,78 +3,61 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Compass, ListChecks, SlidersHorizontal, Sparkles } from "lucide-react";
-import { colleges } from "@/lib/colleges";
-import { calculateUcCappedGpa, evaluateCollegeFit, type GpaInputs } from "@/lib/gpa";
-import { checklistData } from "@/lib/checklistData";
-import { readSavedIds } from "@/lib/useSavedColleges";
+import { colleges, getCollegeById } from "@/lib/colleges";
+import { evaluateCollegeFit } from "@/lib/gpa";
+import { computeGpaSummary, useProfile } from "@/lib/profile";
+import { entriesWithStatusAtLeast, listEntries, useCollegeList } from "@/lib/collegeList";
+import { buildApplicationTasks, buildPlanCategories, countOpenTasks, useCustomTasks, useTaskProgress, type ApplicationTaskGroup } from "@/lib/tasks";
 
 export default function JourneySteps({ compact = false }: { compact?: boolean }) {
   const [mounted, setMounted] = useState(false);
-  const [savedCount, setSavedCount] = useState(0);
-  const [hasGpaInputs, setHasGpaInputs] = useState(false);
-  const [targetTotal, setTargetTotal] = useState(0);
-  const [targetSaved, setTargetSaved] = useState(0);
-  const [checklistDone, setChecklistDone] = useState(0);
-  const [checklistTotal, setChecklistTotal] = useState(0);
+  const { profile } = useProfile();
+  const { state: collegeListState } = useCollegeList();
+  const { done } = useTaskProgress();
+  useCustomTasks();
 
-  useEffect(() => {
-    const savedIds = readSavedIds();
-    setSavedCount(savedIds.length);
+  useEffect(() => setMounted(true), []);
 
-    try {
-      const rawGpa = localStorage.getItem("pathfinder-admit:gpa-inputs");
-      if (rawGpa) {
-        const inputs = JSON.parse(rawGpa) as GpaInputs;
-        setHasGpaInputs(true);
-        const gpaResult = calculateUcCappedGpa(inputs);
+  const savedCount = listEntries(collegeListState).length;
+  const gpaSummary = computeGpaSummary(profile);
+  const hasUsableGpa = gpaSummary.cumulativeUnweighted !== null;
 
-        // Same precedence as app/matcher/page.tsx: a manually-set residency
-        // override wins, otherwise home state derives in-state/out-of-state
-        // per school, otherwise every school falls back to its overall rate.
-        // Keeping this in sync so the homepage teaser count never disagrees
-        // with the Matcher's own count once a state is set.
-        const savedResidency = localStorage.getItem("pathfinder-admit:residency");
-        const residency =
-          savedResidency === "in-state" || savedResidency === "out-of-state" ? savedResidency : undefined;
-        const homeState = localStorage.getItem("pathfinder-admit:home-state");
-
-        let total = 0;
-        let saved = 0;
-        for (const college of colleges) {
-          const fit = evaluateCollegeFit(
-            college,
-            gpaResult.ucCappedGpa,
-            inputs.unweightedGpa,
-            residency,
-            homeState,
-            inputs.satScore
-          );
-          if (fit?.category === "Target") {
-            total += 1;
-            if (savedIds.includes(college.id)) saved += 1;
-          }
-        }
-        setTargetTotal(total);
-        setTargetSaved(saved);
-      }
-    } catch {
-      // ignore malformed/unavailable storage
-    }
-
-    try {
-      const rawChecklist = localStorage.getItem("pathfinder-admit:checklist-progress");
-      const progress = rawChecklist ? JSON.parse(rawChecklist) : {};
-      const allIds = ([9, 10, 11, 12] as const).flatMap((g) =>
-        checklistData[g].flatMap((c) => c.items.map((i) => i.id))
+  let targetTotal = 0;
+  let targetSaved = 0;
+  if (hasUsableGpa) {
+    // Same as My Fit: a "compare as another state" scenario wins over the saved home
+    // state when set, and UC schools ignore unweightedGpa/satScore entirely — only
+    // ucCappedGpaSelfReported (or null, for a Limited-data estimate) affects a UC result.
+    const unweightedGpa = gpaSummary.cumulativeUnweighted as number;
+    const effectiveHomeState = profile.residencyScenario ?? profile.homeState;
+    for (const college of colleges) {
+      const fit = evaluateCollegeFit(
+        college,
+        profile.ucCappedGpaSelfReported,
+        unweightedGpa,
+        undefined,
+        effectiveHomeState,
+        profile.satScore ?? undefined
       );
-      setChecklistTotal(allIds.length);
-      setChecklistDone(allIds.filter((id) => progress[id]).length);
-    } catch {
-      // ignore malformed/unavailable storage
+      if (fit?.category === "Target") {
+        targetTotal += 1;
+        if (collegeListState.entries[college.id]) targetSaved += 1;
+      }
     }
+  }
 
-    setMounted(true);
-  }, []);
+  let planCount = 0;
+  if (profile.grade) {
+    const interestIds = profile.undecided ? [] : profile.interests.map((i) => i.fieldId);
+    const planCategories = buildPlanCategories(profile.grade, interestIds);
+    const groups = entriesWithStatusAtLeast(collegeListState, "Applying")
+      .map((entry) => {
+        const college = getCollegeById(entry.collegeId);
+        return college ? buildApplicationTasks(college, entry) : null;
+      })
+      .filter((g): g is ApplicationTaskGroup => g !== null);
+    planCount = countOpenTasks(planCategories, groups, done);
+  }
 
   const steps = [
     {
@@ -99,9 +82,9 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
       hook: "Find your fit.",
       body: "Understand how schools align with your academic profile, interests, and priorities.",
       detail: mounted
-        ? hasGpaInputs
+        ? hasUsableGpa
           ? `${targetSaved} of ${targetTotal} Target schools added`
-          : "Calculate your GPA to see fit"
+          : "Complete your profile to see fit"
         : "Admissions matcher",
       href: "/matcher",
     },
@@ -110,7 +93,7 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
       title: "Plan",
       hook: "Know what comes next.",
       body: "Build your list and stay ahead of applications, deadlines, and milestones.",
-      detail: mounted ? `${checklistDone} of ${checklistTotal} milestones complete` : "Runway milestones",
+      detail: mounted ? `${planCount} task${planCount === 1 ? "" : "s"} remaining` : "Runway milestones",
       href: "/checklist",
     },
   ];

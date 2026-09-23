@@ -7,8 +7,11 @@ import clsx from "clsx";
 import type { College, FieldProvenance, ScorecardData } from "@/lib/types";
 import { formatPercent, admitRateTier, displayedAdmitRate } from "@/lib/colleges";
 import { hasReliableResidencySplit } from "@/lib/gpa";
+import { useCollegeList } from "@/lib/collegeList";
 import SystemBadge, { SYSTEM_ACCENT } from "./SystemBadge";
 import SaveToggleButton from "./SaveToggleButton";
+import SchoolStatusBadge from "./SchoolStatusBadge";
+import AddToApplicationsButton from "./AddToApplicationsButton";
 import TestingPolicyBadge from "./TestingPolicyBadge";
 import ApplicationPlanBadges from "./ApplicationPlanBadges";
 import FinancialSnapshot from "./FinancialSnapshot";
@@ -44,7 +47,12 @@ export default function CollegeProfileDashboard({ college }: { college: College 
   // every element below it by 70px and made the page jump and flicker.
   const bannerRef = useRef<HTMLDivElement>(null);
   const [showBar, setShowBar] = useState(false);
-  const [activeId, setActiveId] = useState(SECTIONS[0].id);
+  // Schools added from bulk public data have no curated preparation list; the section and its tab are left out rather than shown empty.
+  const hasPrep = college.idealStudentArchetype.highSchoolCoursePrereqs.length > 0;
+  const sections = SECTIONS.filter((s) => s.id !== "overview" || hasPrep);
+  const [activeId, setActiveId] = useState(sections[0].id);
+  const { state: collegeListState } = useCollegeList();
+  const listEntry = collegeListState.entries[college.id];
 
   const goBackToDirectory = () => {
     if (typeof window !== "undefined" && window.history.length > 1) {
@@ -83,7 +91,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
   }, []);
 
   // CSU uses its own GPA calculation, not UC's, so it's treated like Private/
-  // Out-of-State Public here (unweighted) rather than grouped with UC — see
+  // Public here (unweighted) rather than grouped with UC — see
   // the matching note on usesUcCappedMetric in lib/gpa.ts.
   const usesUcCapped = college.system === "UC";
   // A-G subject requirements genuinely are shared by UC and CSU, unlike the
@@ -94,7 +102,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
   const scrollMt = `scroll-mt-[${SCROLL_OFFSET}px]`;
 
   // Only UC/CSU schools report a capped-weighted figure at all — Private and
-  // Out-of-State Public never do, so that box doesn't belong on their page.
+  // Public never do, so that box doesn't belong on their page.
   const gpaSatBoxes = [
     { label: "Mid-50% Unweighted GPA", value: college.mid50_GPA_Unweighted },
     ...(isUcOrCsu ? [{ label: cappedGpaLabel, value: college.mid50_GPA_UCCapped }] : []),
@@ -170,9 +178,13 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                 <MapPin className="h-3.5 w-3.5" /> {college.location}
               </div>
             </div>
-            <div className="flex shrink-0 items-center gap-2">
-              <WebsiteButton website={college.website} />
-              <SaveToggleButton collegeId={college.id} />
+            <div className="flex shrink-0 flex-col items-end gap-2">
+              <div className="flex items-center gap-2">
+                <WebsiteButton website={college.website} />
+                <SaveToggleButton collegeId={college.id} />
+              </div>
+              {listEntry && listEntry.status !== "Saved" && <SchoolStatusBadge status={listEntry.status} round={listEntry.round} />}
+              {listEntry && <AddToApplicationsButton college={college} alreadyApplying={listEntry.status !== "Saved"} />}
             </div>
           </div>
         </div>
@@ -276,7 +288,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
           style={{ top: SECTION_BAR_TOP }}
         >
           <div className="flex gap-1 py-2">
-            {SECTIONS.map((s) => (
+            {sections.map((s) => (
               <a
                 key={s.id}
                 href={`#${s.id}`}
@@ -292,29 +304,31 @@ export default function CollegeProfileDashboard({ college }: { college: College 
         </nav>
 
         <div className="space-y-10 py-6">
-          {/* Overview */}
-          <section id="overview" className={scrollMt}>
-            <h2 className="text-lg font-bold text-navy-900">Preparation</h2>
-            <div className="mt-3 w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-              <div>
-                <div className="text-xs font-bold tracking-wide text-slate-600">
-                  Helpful high school preparation
+          {/* Preparation: only when there is a curated list to show */}
+          {hasPrep && (
+            <section id="overview" className={scrollMt}>
+              <h2 className="text-lg font-bold text-navy-900">Preparation</h2>
+              <div className="mt-3 w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+                <div>
+                  <div className="text-xs font-bold tracking-wide text-slate-600">
+                    Helpful high school preparation
+                  </div>
+                  <div className="mt-2 flex flex-wrap gap-1.5">
+                    {college.idealStudentArchetype.highSchoolCoursePrereqs.map((c) => (
+                      <span key={c} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
+                        {c}
+                      </span>
+                    ))}
+                  </div>
+                  <p className="mt-2 max-w-prose text-xs text-slate-400">
+                    This is helpful preparation, not a formal admission requirement.
+                    {isUcOrCsu &&
+                      " For UC and CSU schools, admission is based on completing the A-G course requirements, not this list."}
+                  </p>
                 </div>
-                <div className="mt-2 flex flex-wrap gap-1.5">
-                  {college.idealStudentArchetype.highSchoolCoursePrereqs.map((c) => (
-                    <span key={c} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
-                      {c}
-                    </span>
-                  ))}
-                </div>
-                <p className="mt-2 max-w-prose text-xs text-slate-400">
-                  This is helpful preparation, not a formal admission requirement.
-                  {isUcOrCsu &&
-                    " For UC and CSU schools, admission is based on completing the A-G course requirements, not this list."}
-                </p>
               </div>
-            </div>
-          </section>
+            </section>
+          )}
 
           {/* Admissions */}
           <section id="admissions" className={scrollMt}>
@@ -338,8 +352,8 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                 {admitRate.superseded && (
                   <p className="mt-2 text-[11px] leading-snug text-slate-400">
                     {showResidencySplit
-                      ? "Overall is College Scorecard's verified figure and won't necessarily sit between the separately-reported In-State/Out-of-State rates shown here, which are what Find My Fit uses to classify your chances."
-                      : "Find My Fit uses this overall rate to classify your chances here."}
+                      ? "Overall is College Scorecard's verified figure and won't necessarily sit between the separately-reported In-State/Out-of-State rates shown here, which are what My Fit uses to classify your chances."
+                      : "My Fit uses this overall rate to classify your chances here."}
                   </p>
                 )}
                 {gpaSatBoxes.length > 0 ? (
@@ -386,7 +400,9 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                       ))}
                     </div>
                   ) : (
-                    <p className="mt-2 text-sm text-slate-400">No internally-impacted majors reported.</p>
+                    <p className="mt-2 text-sm text-slate-400">
+                      {college.rank === undefined ? "Not researched yet." : "No internally-impacted majors reported."}
+                    </p>
                   )}
                 </div>
               </div>
@@ -405,19 +421,21 @@ export default function CollegeProfileDashboard({ college }: { college: College 
           <section id="academics" className={scrollMt}>
             <h2 className="text-lg font-bold text-navy-900">Academics</h2>
             <div className="mt-3 grid items-start gap-4 lg:grid-cols-2">
-              <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-                <div className="flex items-center gap-2">
-                  <Award className="h-4 w-4 text-gold-600" />
-                  <h3 className="text-sm font-bold text-navy-900">Flagship Programs</h3>
+              {college.flagshipPrograms.length > 0 && (
+                <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+                  <div className="flex items-center gap-2">
+                    <Award className="h-4 w-4 text-gold-600" />
+                    <h3 className="text-sm font-bold text-navy-900">Flagship Programs</h3>
+                  </div>
+                  <div className="mt-4 flex flex-wrap gap-1.5">
+                    {college.flagshipPrograms.map((p) => (
+                      <span key={p.name} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
+                        {p.name}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <div className="mt-4 flex flex-wrap gap-1.5">
-                  {college.flagshipPrograms.map((p) => (
-                    <span key={p.name} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
-                      {p.name}
-                    </span>
-                  ))}
-                </div>
-              </div>
+              )}
 
               <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
                 <h3 className="text-sm font-bold text-navy-900">Career &amp; Major Pathways</h3>

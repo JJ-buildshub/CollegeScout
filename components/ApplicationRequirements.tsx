@@ -1,6 +1,6 @@
 import { ExternalLink } from "lucide-react";
 import type { College } from "@/lib/types";
-import { getApplicationInfo, type WritingItem } from "@/lib/applications";
+import { CURRENT_ESSAY_CYCLE, getApplicationInfo, type WritingItem } from "@/lib/applications";
 import SystemRequirementsCard from "./SystemRequirementsCard";
 import { COMMON_APP_SOURCE, getCommonAppFacts, type CommonAppFacts } from "@/lib/commonapp";
 
@@ -111,43 +111,51 @@ function CommonAppCard({ facts }: { facts: CommonAppFacts }) {
 
 export default function ApplicationRequirements({ college }: { college: College }) {
   const info = getApplicationInfo(college.id);
+  const verified = info?.verifiedForCycle === CURRENT_ESSAY_CYCLE ? info : null;
   const facts = getCommonAppFacts(college.id);
   const systemCard =
     college.system === "CSU" || college.system === "UC" ? <SystemRequirementsCard system={college.system} /> : null;
 
-  if (!info) {
+  // No verified-for-this-cycle essay record — whether there's no record at all, or one left
+  // over from an older cycle. Never show a guessed prompt or an empty card here; the rest of
+  // the Applying tab (system rules, Common App facts) still renders normally above this box.
+  if (!verified) {
     return (
       <div className="max-w-3xl space-y-3">
         {systemCard}
         {facts && <CommonAppCard facts={facts} />}
-      <div className="max-w-2xl rounded-2xl border border-dashed border-slate-300 bg-white p-6">
-        <div className="text-sm font-bold text-navy-900">Essays and prompts</div>
-        <p className="mt-2 text-sm text-slate-500">
-          We haven&apos;t researched {college.name}&apos;s essay prompts and word limits yet, so we won&apos;t guess. The
-          school posts this year&apos;s application, essay prompts and word limits on its admissions site.
-        </p>
-        {college.website && (
-          <a
-            href={college.website}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-gold-600 hover:text-gold-700"
-          >
-            Go to the school&apos;s website <ExternalLink className="h-3.5 w-3.5" />
-          </a>
-        )}
-      </div>
+        <div className="max-w-2xl rounded-2xl border border-dashed border-slate-300 bg-white p-6">
+          <div className="text-sm font-bold text-navy-900">Essay details are being verified</div>
+          <p className="mt-2 text-sm text-slate-500">
+            College-specific prompts can change each application cycle. Check the school&apos;s official application
+            page for the latest requirements.
+          </p>
+          {college.website && (
+            <a
+              href={college.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-gold-600 hover:text-gold-700"
+            >
+              View official application requirements <ExternalLink className="h-3.5 w-3.5" />
+            </a>
+          )}
+        </div>
       </div>
     );
   }
-
   return (
     <div className="max-w-3xl rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-card sm:p-6">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <div className="text-sm font-bold text-navy-900">Essays and application</div>
-        {info.platforms.length > 0 && (
+        <div className="flex items-center gap-2">
+          <div className="text-sm font-bold text-navy-900">Essays and application</div>
+          <span className="rounded-full bg-navy-900/5 px-2 py-0.5 text-[11px] font-semibold text-navy-900">
+            {verified.verifiedForCycle}
+          </span>
+        </div>
+        {verified.platforms.length > 0 && (
           <div className="text-xs text-slate-500">
-            Applies through <span className="font-semibold text-navy-900">{info.platforms.join(" or ")}</span>
+            Applies through <span className="font-semibold text-navy-900">{verified.platforms.join(" or ")}</span>
           </div>
         )}
       </div>
@@ -159,13 +167,13 @@ export default function ApplicationRequirements({ college }: { college: College 
         </div>
       )}
 
-      <Group label="Main essay" items={[info.mainEssay]} />
-      <Group label="Required school-specific writing" items={info.requiredWriting} />
-      <Group label="Optional school-specific writing" items={info.optionalWriting} />
+      <Group label="Main essay" items={[verified.mainEssay]} />
+      <Group label="Required school-specific writing" items={verified.requiredWriting} />
+      <Group label="Optional school-specific writing" items={verified.optionalWriting} />
 
-      {info.extras.length > 0 && (
+      {verified.extras.length > 0 && (
         <ul className="mt-4 list-disc space-y-1 pl-5 text-sm text-slate-600">
-          {info.extras.map((extra) => (
+          {verified.extras.map((extra) => (
             <li key={extra}>{extra}</li>
           ))}
         </ul>
@@ -173,12 +181,12 @@ export default function ApplicationRequirements({ college }: { college: College 
 
       <div className="mt-5 rounded-lg border border-slate-200 bg-white p-3">
         <p className="text-xs leading-relaxed text-slate-600">
-          Prompts are quoted from the school&apos;s own page, read {info.source.checked}
-          {info.source.cycle ? ` (${info.source.cycle} cycle)` : ""}. Schools change their prompts and word limits
-          every year, so check the school&apos;s site for the current list before you start writing.
+          Prompts are quoted from the school&apos;s own page, read {verified.source.checked}
+          {verified.source.cycle ? ` (${verified.source.cycle} cycle)` : ""}. Schools change their prompts and word
+          limits every year, so check the school&apos;s site for the current list before you start writing.
         </p>
         <a
-          href={info.essayPageUrl}
+          href={verified.essayPageUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="mt-2 inline-flex items-center gap-1.5 text-sm font-semibold text-gold-600 hover:text-gold-700"

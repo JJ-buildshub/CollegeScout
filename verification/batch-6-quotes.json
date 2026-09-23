@@ -1,0 +1,54 @@
+{
+ "stonybrook plans": {
+  "url": "https://www.stonybrook.edu/undergraduate-admissions/apply/first-year.php",
+  "evidence": [
+   "Entry Term: Fall 2027 Early Action Deadline: November 1 Regular Decision Deadline: January 15"
+  ]
+ },
+ "stonybrook test": {
+  "url": "https://www.stonybrook.edu/undergraduate-admissions/apply/first-year.php",
+  "evidence": [
+   "Stony Brook is test optional for applicants."
+  ]
+ },
+ "sc plans": {
+  "url": "https://sc.edu/about/offices_and_divisions/undergraduate_admissions/apply/for_freshmen/",
+  "evidence": [
+   "Early Action Application Deadline Apply by Oct. 15",
+   "Regular Decision Application Deadline Apply by Dec. 1"
+  ]
+ },
+ "sc test": {
+  "url": "https://sc.edu/about/offices_and_divisions/undergraduate_admissions/apply/for_freshmen/",
+  "evidence": [
+   "USC is test-optional through the fall, spring and summer 2027 terms."
+  ]
+ },
+ "lsu plans": {
+  "url": "https://www.lsu.edu/admissions/apply/freshman.php",
+  "evidence": [
+   "Priority Deadline for Scholarships: December 1",
+   "Regular Decision Deadline: February 1",
+   "The Common Application for ALL 2027 ENTRY TERMS is NOW OPEN."
+  ]
+ },
+ "lsu test": {
+  "url": "https://www.lsu.edu/admissions/apply/freshman.php",
+  "evidence": [
+   "Any first-year applicant whose cumulative weighted high school GPA is lower than 3.5 is required to submit either an ACT or SAT score"
+  ]
+ },
+ "ncsu plans": {
+  "url": "https://admissions.ncsu.edu/apply/first-year/",
+  "evidence": [
+   "Early Action Deadline: November 1",
+   "Regular Decision Deadline: January 15"
+  ]
+ },
+ "ncsu test": {
+  "url": "https://admissions.ncsu.edu/apply/first-year/",
+  "evidence": [
+   "NC State is test optional for applicants with a weighted GPA of 2.8 or above."
+  ]
+ }
+}

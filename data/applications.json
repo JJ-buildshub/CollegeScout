@@ -1,348 +1,359 @@
 {
- "note": "Essay and application requirements per school, each with the official page it came from and the date it was checked. A school missing here has not been researched yet; the profile says so instead of guessing.",
- "byCollege": {
-  "uc-berkeley": {
-   "platforms": [
-    "UC Application"
-   ],
-   "mainEssay": {
-    "title": "Personal Insight Questions",
-    "limit": "350 words max each",
-    "note": "Answer 4 of these 8.",
-    "prompts": [
-     "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
-     "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
-     "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
-     "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
-     "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
-     "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
-     "What have you done to make your school or your community a better place?",
-     "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
-    ]
-   },
-   "requiredWriting": [],
-   "optionalWriting": [],
-   "extras": [],
-   "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-   "source": {
-    "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-    "checked": "2026-09-19",
-    "cycle": null
-   }
-  },
-  "ucla": {
-   "platforms": [
-    "UC Application"
-   ],
-   "mainEssay": {
-    "title": "Personal Insight Questions",
-    "limit": "350 words max each",
-    "note": "Answer 4 of these 8.",
-    "prompts": [
-     "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
-     "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
-     "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
-     "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
-     "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
-     "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
-     "What have you done to make your school or your community a better place?",
-     "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
-    ]
-   },
-   "requiredWriting": [],
-   "optionalWriting": [],
-   "extras": [],
-   "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-   "source": {
-    "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-    "checked": "2026-09-19",
-    "cycle": null
-   }
-  },
-  "uc-san-diego": {
-   "platforms": [
-    "UC Application"
-   ],
-   "mainEssay": {
-    "title": "Personal Insight Questions",
-    "limit": "350 words max each",
-    "note": "Answer 4 of these 8.",
-    "prompts": [
-     "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
-     "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
-     "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
-     "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
-     "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
-     "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
-     "What have you done to make your school or your community a better place?",
-     "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
-    ]
-   },
-   "requiredWriting": [],
-   "optionalWriting": [],
-   "extras": [],
-   "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-   "source": {
-    "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-    "checked": "2026-09-19",
-    "cycle": null
-   }
-  },
-  "uc-davis": {
-   "platforms": [
-    "UC Application"
-   ],
-   "mainEssay": {
-    "title": "Personal Insight Questions",
-    "limit": "350 words max each",
-    "note": "Answer 4 of these 8.",
-    "prompts": [
-     "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
-     "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
-     "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
-     "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
-     "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
-     "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
-     "What have you done to make your school or your community a better place?",
-     "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
-    ]
-   },
-   "requiredWriting": [],
-   "optionalWriting": [],
-   "extras": [],
-   "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-   "source": {
-    "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-    "checked": "2026-09-19",
-    "cycle": null
-   }
-  },
-  "uc-irvine": {
-   "platforms": [
-    "UC Application"
-   ],
-   "mainEssay": {
-    "title": "Personal Insight Questions",
-    "limit": "350 words max each",
-    "note": "Answer 4 of these 8.",
-    "prompts": [
-     "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
-     "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
-     "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
-     "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
-     "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
-     "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
-     "What have you done to make your school or your community a better place?",
-     "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
-    ]
-   },
-   "requiredWriting": [],
-   "optionalWriting": [],
-   "extras": [],
-   "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-   "source": {
-    "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-    "checked": "2026-09-19",
-    "cycle": null
-   }
-  },
-  "uc-santa-barbara": {
-   "platforms": [
-    "UC Application"
-   ],
-   "mainEssay": {
-    "title": "Personal Insight Questions",
-    "limit": "350 words max each",
-    "note": "Answer 4 of these 8.",
-    "prompts": [
-     "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
-     "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
-     "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
-     "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
-     "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
-     "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
-     "What have you done to make your school or your community a better place?",
-     "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
-    ]
-   },
-   "requiredWriting": [],
-   "optionalWriting": [],
-   "extras": [],
-   "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-   "source": {
-    "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-    "checked": "2026-09-19",
-    "cycle": null
-   }
-  },
-  "uc-santa-cruz": {
-   "platforms": [
-    "UC Application"
-   ],
-   "mainEssay": {
-    "title": "Personal Insight Questions",
-    "limit": "350 words max each",
-    "note": "Answer 4 of these 8.",
-    "prompts": [
-     "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
-     "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
-     "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
-     "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
-     "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
-     "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
-     "What have you done to make your school or your community a better place?",
-     "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
-    ]
-   },
-   "requiredWriting": [],
-   "optionalWriting": [],
-   "extras": [],
-   "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-   "source": {
-    "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-    "checked": "2026-09-19",
-    "cycle": null
-   }
-  },
-  "uc-riverside": {
-   "platforms": [
-    "UC Application"
-   ],
-   "mainEssay": {
-    "title": "Personal Insight Questions",
-    "limit": "350 words max each",
-    "note": "Answer 4 of these 8.",
-    "prompts": [
-     "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
-     "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
-     "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
-     "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
-     "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
-     "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
-     "What have you done to make your school or your community a better place?",
-     "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
-    ]
-   },
-   "requiredWriting": [],
-   "optionalWriting": [],
-   "extras": [],
-   "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-   "source": {
-    "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-    "checked": "2026-09-19",
-    "cycle": null
-   }
-  },
-  "uc-merced": {
-   "platforms": [
-    "UC Application"
-   ],
-   "mainEssay": {
-    "title": "Personal Insight Questions",
-    "limit": "350 words max each",
-    "note": "Answer 4 of these 8.",
-    "prompts": [
-     "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
-     "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
-     "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
-     "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
-     "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
-     "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
-     "What have you done to make your school or your community a better place?",
-     "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
-    ]
-   },
-   "requiredWriting": [],
-   "optionalWriting": [],
-   "extras": [],
-   "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-   "source": {
-    "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
-    "checked": "2026-09-19",
-    "cycle": null
-   }
-  },
-  "stanford-university": {
-   "platforms": [
-    "Common App"
-   ],
-   "mainEssay": {
-    "title": "Personal essay",
-    "limit": null,
-    "note": "Written for the Common App, which publishes its own prompts.",
-    "prompts": [],
-    "link": {
-     "label": "See the Common App essay prompts",
-     "url": "https://www.commonapp.org/apply/essay-prompts"
-    }
-   },
-   "requiredWriting": [
-    {
-     "title": "Short essays",
-     "limit": "100-250 words each",
-     "note": "3 required.",
-     "prompts": [
-      "The Stanford community is deeply curious and driven to learn in and out of the classroom. Reflect on an idea or experience that makes you genuinely excited about learning.",
-      "Virtually all of Stanford's undergraduates live on campus. Write a note to your future roommate that reveals something about you or that will help your roommate—and us—get to know you better.",
-      "Please describe what aspects of your life experiences, interests, and character would help you make a distinctive contribution as an undergraduate to Stanford University."
-     ]
+  "note": "Essay and application requirements per school, each with the official page it came from and the date it was checked. A school missing here has not been researched yet; the profile says so instead of guessing.",
+  "byCollege": {
+    "uc-berkeley": {
+      "verifiedForCycle": "Fall 2027",
+      "platforms": [
+        "UC Application"
+      ],
+      "mainEssay": {
+        "title": "Personal Insight Questions",
+        "limit": "350 words max each",
+        "note": "Answer 4 of these 8.",
+        "prompts": [
+          "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
+          "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
+          "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
+          "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
+          "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
+          "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
+          "What have you done to make your school or your community a better place?",
+          "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
+        ]
+      },
+      "requiredWriting": [],
+      "optionalWriting": [],
+      "extras": [],
+      "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+      "source": {
+        "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+        "checked": "2026-09-19",
+        "cycle": null
+      }
     },
-    {
-     "title": "Short questions",
-     "limit": "3-50 words each",
-     "note": "5 required.",
-     "prompts": [
-      "What is the most significant challenge that society faces today?",
-      "How did you spend your last two summers?",
-      "What historical moment or event do you wish you could have witnessed?",
-      "Briefly elaborate on one of your extracurricular activities, a job you hold, or responsibilities you have for your family.",
-      "List five things that are important to you."
-     ]
+    "ucla": {
+      "verifiedForCycle": "Fall 2027",
+      "platforms": [
+        "UC Application"
+      ],
+      "mainEssay": {
+        "title": "Personal Insight Questions",
+        "limit": "350 words max each",
+        "note": "Answer 4 of these 8.",
+        "prompts": [
+          "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
+          "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
+          "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
+          "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
+          "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
+          "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
+          "What have you done to make your school or your community a better place?",
+          "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
+        ]
+      },
+      "requiredWriting": [],
+      "optionalWriting": [],
+      "extras": [],
+      "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+      "source": {
+        "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+        "checked": "2026-09-19",
+        "cycle": null
+      }
+    },
+    "uc-san-diego": {
+      "verifiedForCycle": "Fall 2027",
+      "platforms": [
+        "UC Application"
+      ],
+      "mainEssay": {
+        "title": "Personal Insight Questions",
+        "limit": "350 words max each",
+        "note": "Answer 4 of these 8.",
+        "prompts": [
+          "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
+          "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
+          "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
+          "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
+          "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
+          "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
+          "What have you done to make your school or your community a better place?",
+          "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
+        ]
+      },
+      "requiredWriting": [],
+      "optionalWriting": [],
+      "extras": [],
+      "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+      "source": {
+        "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+        "checked": "2026-09-19",
+        "cycle": null
+      }
+    },
+    "uc-davis": {
+      "verifiedForCycle": "Fall 2027",
+      "platforms": [
+        "UC Application"
+      ],
+      "mainEssay": {
+        "title": "Personal Insight Questions",
+        "limit": "350 words max each",
+        "note": "Answer 4 of these 8.",
+        "prompts": [
+          "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
+          "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
+          "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
+          "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
+          "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
+          "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
+          "What have you done to make your school or your community a better place?",
+          "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
+        ]
+      },
+      "requiredWriting": [],
+      "optionalWriting": [],
+      "extras": [],
+      "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+      "source": {
+        "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+        "checked": "2026-09-19",
+        "cycle": null
+      }
+    },
+    "uc-irvine": {
+      "verifiedForCycle": "Fall 2027",
+      "platforms": [
+        "UC Application"
+      ],
+      "mainEssay": {
+        "title": "Personal Insight Questions",
+        "limit": "350 words max each",
+        "note": "Answer 4 of these 8.",
+        "prompts": [
+          "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
+          "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
+          "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
+          "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
+          "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
+          "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
+          "What have you done to make your school or your community a better place?",
+          "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
+        ]
+      },
+      "requiredWriting": [],
+      "optionalWriting": [],
+      "extras": [],
+      "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+      "source": {
+        "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+        "checked": "2026-09-19",
+        "cycle": null
+      }
+    },
+    "uc-santa-barbara": {
+      "verifiedForCycle": "Fall 2027",
+      "platforms": [
+        "UC Application"
+      ],
+      "mainEssay": {
+        "title": "Personal Insight Questions",
+        "limit": "350 words max each",
+        "note": "Answer 4 of these 8.",
+        "prompts": [
+          "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
+          "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
+          "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
+          "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
+          "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
+          "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
+          "What have you done to make your school or your community a better place?",
+          "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
+        ]
+      },
+      "requiredWriting": [],
+      "optionalWriting": [],
+      "extras": [],
+      "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+      "source": {
+        "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+        "checked": "2026-09-19",
+        "cycle": null
+      }
+    },
+    "uc-santa-cruz": {
+      "verifiedForCycle": "Fall 2027",
+      "platforms": [
+        "UC Application"
+      ],
+      "mainEssay": {
+        "title": "Personal Insight Questions",
+        "limit": "350 words max each",
+        "note": "Answer 4 of these 8.",
+        "prompts": [
+          "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
+          "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
+          "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
+          "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
+          "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
+          "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
+          "What have you done to make your school or your community a better place?",
+          "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
+        ]
+      },
+      "requiredWriting": [],
+      "optionalWriting": [],
+      "extras": [],
+      "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+      "source": {
+        "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+        "checked": "2026-09-19",
+        "cycle": null
+      }
+    },
+    "uc-riverside": {
+      "verifiedForCycle": "Fall 2027",
+      "platforms": [
+        "UC Application"
+      ],
+      "mainEssay": {
+        "title": "Personal Insight Questions",
+        "limit": "350 words max each",
+        "note": "Answer 4 of these 8.",
+        "prompts": [
+          "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
+          "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
+          "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
+          "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
+          "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
+          "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
+          "What have you done to make your school or your community a better place?",
+          "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
+        ]
+      },
+      "requiredWriting": [],
+      "optionalWriting": [],
+      "extras": [],
+      "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+      "source": {
+        "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+        "checked": "2026-09-19",
+        "cycle": null
+      }
+    },
+    "uc-merced": {
+      "verifiedForCycle": "Fall 2027",
+      "platforms": [
+        "UC Application"
+      ],
+      "mainEssay": {
+        "title": "Personal Insight Questions",
+        "limit": "350 words max each",
+        "note": "Answer 4 of these 8.",
+        "prompts": [
+          "Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time.",
+          "Every person has a creative side, and it can be expressed in many ways: problem solving, original and innovative thinking, and artistically, to name a few. Describe how you express your creative side.",
+          "What would you say is your greatest talent or skill? How have you developed and demonstrated that talent over time?",
+          "Describe how you have taken advantage of a significant educational opportunity or worked to overcome an educational barrier you have faced.",
+          "Describe the most significant challenge you have faced and the steps you have taken to overcome this challenge. How has this challenge affected your academic achievement?",
+          "Think about an academic subject that inspires you. Describe how you have furthered this interest inside and/or outside of the classroom.",
+          "What have you done to make your school or your community a better place?",
+          "Beyond what has already been shared in your application, what do you believe makes you a strong candidate for admissions to the University of California?"
+        ]
+      },
+      "requiredWriting": [],
+      "optionalWriting": [],
+      "extras": [],
+      "essayPageUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+      "source": {
+        "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+        "checked": "2026-09-19",
+        "cycle": null
+      }
+    },
+    "stanford-university": {
+      "verifiedForCycle": "Fall 2027",
+      "platforms": [
+        "Common App"
+      ],
+      "mainEssay": {
+        "title": "Personal essay",
+        "limit": null,
+        "note": "Written for the Common App, which publishes its own prompts.",
+        "prompts": [],
+        "link": {
+          "label": "See the Common App essay prompts",
+          "url": "https://www.commonapp.org/apply/essay-prompts"
+        }
+      },
+      "requiredWriting": [
+        {
+          "title": "Short essays",
+          "limit": "100-250 words each",
+          "note": "3 required.",
+          "prompts": [
+            "The Stanford community is deeply curious and driven to learn in and out of the classroom. Reflect on an idea or experience that makes you genuinely excited about learning.",
+            "Virtually all of Stanford's undergraduates live on campus. Write a note to your future roommate that reveals something about you or that will help your roommate—and us—get to know you better.",
+            "Please describe what aspects of your life experiences, interests, and character would help you make a distinctive contribution as an undergraduate to Stanford University."
+          ]
+        },
+        {
+          "title": "Short questions",
+          "limit": "3-50 words each",
+          "note": "5 required.",
+          "prompts": [
+            "What is the most significant challenge that society faces today?",
+            "How did you spend your last two summers?",
+            "What historical moment or event do you wish you could have witnessed?",
+            "Briefly elaborate on one of your extracurricular activities, a job you hold, or responsibilities you have for your family.",
+            "List five things that are important to you."
+          ]
+        }
+      ],
+      "optionalWriting": [],
+      "extras": [],
+      "essayPageUrl": "https://admission.stanford.edu/apply/first-year/apply.html",
+      "source": {
+        "url": "https://admission.stanford.edu/apply/first-year/apply.html",
+        "checked": "2026-09-19",
+        "cycle": null
+      }
+    },
+    "massachusetts-institute-of-technology": {
+      "verifiedForCycle": "Fall 2027",
+      "platforms": [],
+      "mainEssay": {
+        "title": "Essay questions",
+        "limit": "about 100-200 words each",
+        "prompts": [
+          "What field of study appeals to you the most right now? (Note: Applicants select from a drop-down list.) Reflect on what has led you to this interest.",
+          "While some reach their goals following well-trodden paths, others blaze their own trails achieving the unexpected. In what ways have you done something different than what was expected in your educational journey?",
+          "How have your personal and academic experiences influenced the types of problems you would want to tackle with an MIT education and the impact you aim to make on your community?",
+          "How did you manage a situation or challenge that you didn't expect? What did you learn from it?"
+        ]
+      },
+      "requiredWriting": [
+        {
+          "title": "Short-response questions",
+          "limit": "40-50 words each",
+          "prompts": [
+            "What do you do just for fun?",
+            "Who is someone you admire, whether you know them personally or look up to them from afar? Tell us why.",
+            "What's a topic, academic or non-academic, that you could talk about for hours?",
+            "MIT values both “generalists” with varied interests and “specialists” who focus deeply on one or a few passions. Which do you think best describes you, and why?"
+          ]
+        }
+      ],
+      "optionalWriting": [],
+      "extras": [
+        "Also has an open-ended box for anything else you want MIT to know"
+      ],
+      "essayPageUrl": "https://mitadmissions.org/apply/firstyear/essays-activities-academics/",
+      "source": {
+        "url": "https://mitadmissions.org/apply/firstyear/essays-activities-academics/",
+        "checked": "2026-09-19",
+        "cycle": "2026-27"
+      }
     }
-   ],
-   "optionalWriting": [],
-   "extras": [],
-   "essayPageUrl": "https://admission.stanford.edu/apply/first-year/apply.html",
-   "source": {
-    "url": "https://admission.stanford.edu/apply/first-year/apply.html",
-    "checked": "2026-09-19",
-    "cycle": null
-   }
-  },
-  "massachusetts-institute-of-technology": {
-   "platforms": [],
-   "mainEssay": {
-    "title": "Essay questions",
-    "limit": "about 100-200 words each",
-    "prompts": [
-     "What field of study appeals to you the most right now? (Note: Applicants select from a drop-down list.) Reflect on what has led you to this interest.",
-     "While some reach their goals following well-trodden paths, others blaze their own trails achieving the unexpected. In what ways have you done something different than what was expected in your educational journey?",
-     "How have your personal and academic experiences influenced the types of problems you would want to tackle with an MIT education and the impact you aim to make on your community?",
-     "How did you manage a situation or challenge that you didn't expect? What did you learn from it?"
-    ]
-   },
-   "requiredWriting": [
-    {
-     "title": "Short-response questions",
-     "limit": "40-50 words each",
-     "prompts": [
-      "What do you do just for fun?",
-      "Who is someone you admire, whether you know them personally or look up to them from afar? Tell us why.",
-      "What's a topic, academic or non-academic, that you could talk about for hours?",
-      "MIT values both “generalists” with varied interests and “specialists” who focus deeply on one or a few passions. Which do you think best describes you, and why?"
-     ]
-    }
-   ],
-   "optionalWriting": [],
-   "extras": [
-    "Also has an open-ended box for anything else you want MIT to know"
-   ],
-   "essayPageUrl": "https://mitadmissions.org/apply/firstyear/essays-activities-academics/",
-   "source": {
-    "url": "https://mitadmissions.org/apply/firstyear/essays-activities-academics/",
-    "checked": "2026-09-19",
-    "cycle": "2026-27"
-   }
   }
- }
 }

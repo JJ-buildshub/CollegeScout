@@ -1,0 +1,221 @@
+﻿unitid,name,city,state,control,band,admit_rate,applicants,sat25,sat75,ug,layers,degrees_business,degrees_entrepreneurship,degrees_health,degrees_nursing,degrees_computing,degrees_data-science,degrees_education,degrees_kinesiology,degrees_performing-arts,degrees_visual-arts,degrees_architecture,degrees_engineering,website
+102553,University of Alaska Anchorage,Anchorage,AK,Public,broadly accessible,0.6652,4277.0,,,10162,E geographic gap,128,0,201,130,23,0,2,15,7,16,0,60,www.uaa.alaska.edu/
+102614,University of Alaska Fairbanks,Fairbanks,AK,Public,unreported,,,,,5638,E geographic gap,72,0,0,0,5,0,23,11,5,9,0,46,www.uaf.edu/
+100858,Auburn University,Auburn,AL,Public,moderately selective,0.5047,48178.0,1240,1380,26874,A public flagship/regional; B architecture; B kinesiology; C nursing; C health; C education; E geographic gap,1455,0,362,222,222,0,236,204,34,126,118,969,www.auburn.edu/
+102368,Troy University,Troy,AL,Public,broadly accessible,0.9261,7947.0,950,1160,10468,E geographic gap,423,0,188,145,111,0,147,48,33,32,0,0,www.troy.edu/
+100663,University of Alabama at Birmingham,Birmingham,AL,Public,broadly accessible,0.8842,10919.0,1130,1400,12382,E geographic gap,577,10,578,363,87,0,188,0,41,56,0,176,https://www.uab.edu/
+106458,Arkansas State University,Jonesboro,AR,Public,broadly accessible,0.6967,8019.0,1030,1180,8760,E geographic gap,295,0,313,197,23,0,156,81,23,24,0,47,www.astate.edu/
+106467,Arkansas Tech University,Russellville,AR,Public,broadly accessible,0.9629,4904.0,940,1150,8808,E geographic gap,207,0,122,80,66,3,155,1,6,40,0,65,https://www.atu.edu/
+106397,University of Arkansas,Fayetteville,AR,Public,broadly accessible,0.7167,28186.0,1050,1220,27472,A public flagship/regional; B architecture; E geographic gap,1511,14,484,291,111,0,171,135,42,71,136,416,https://www.uark.edu/
+106704,University of Central Arkansas,Conway,AR,Public,broadly accessible,0.9047,6589.0,940,1120,7884,E geographic gap,301,21,249,106,98,0,131,111,10,94,0,5,www.uca.edu/
+104586,Embry-Riddle Aeronautical University-Prescott,Prescott,AZ,Private,broadly accessible,0.7519,3886.0,1160,1360,3250,E geographic gap,23,0,0,0,0,0,0,0,0,1,0,245,prescott.erau.edu/
+105330,Northern Arizona University,Flagstaff,AZ,Public,broadly accessible,0.9095,37805.0,,,23128,A public flagship/regional; C education; E geographic gap,779,5,764,419,89,5,477,179,30,115,0,215,https://nau.edu/
+109651,Art Center College of Design,Pasadena,CA,Private,broadly accessible,0.7498,1339.0,,,2079,D visual-arts,0,0,0,0,20,0,0,0,0,304,17,0,www.artcenter.edu/
+109785,Azusa Pacific University,Azusa,CA,Private,broadly accessible,0.7948,3850.0,994,1314,2977,C nursing; C health,138,2,589,558,15,0,2,46,27,34,0,9,www.apu.edu/
+111081,California Institute of the Arts,Valencia,CA,Private,selective,0.2595,2023.0,,,918,D arts specialist,0,0,0,0,7,0,0,0,92,59,0,0,https://www.calarts.edu/
+110510,California State University-San Bernardino,San Bernardino,CA,Public,broadly accessible,0.9825,12772.0,,,16067,A public flagship/regional,776,0,305,161,267,0,5,192,47,121,0,45,www.csusb.edu/
+117168,Laguna College of Art and Design,Laguna Beach,CA,Private,broadly accessible,0.7761,268.0,,,776,D arts specialist,0,0,0,0,0,0,0,0,0,106,0,0,www.lcad.edu/
+126678,Colorado College,Colorado Springs,CO,Private,selective,0.2003,7532.0,1365,1520,2145,F selective or distinctive,0,0,0,0,28,0,7,0,18,37,0,0,www.coloradocollege.edu/
+126818,Colorado State University-Fort Collins,Fort Collins,CO,Public,broadly accessible,0.8959,36612.0,,,25834,A public flagship/regional,726,0,19,0,213,30,31,217,79,100,66,546,colostate.edu/
+127565,Metropolitan State University of Denver,Denver,CO,Public,broadly accessible,0.9914,12403.0,880,1110,16430,A public flagship/regional; B entrepreneurship,556,30,199,86,124,2,127,112,48,71,0,15,www.msudenver.edu/
+128771,Central Connecticut State University,New Britain,CT,Public,broadly accessible,0.7553,8282.0,960,1180,7917,E geographic gap,469,0,83,82,112,0,96,47,10,54,0,64,www.ccsu.edu/
+128902,Connecticut College,New London,CT,Private,selective,0.3828,9397.0,1340,1470,1995,F selective or distinctive,0,0,0,0,32,5,11,0,28,28,7,0,www.conncoll.edu/
+129242,Fairfield University,Fairfield,CT,Private,moderately selective,0.4498,15463.0,1240,1380,4968,B data-science; C nursing,606,0,210,197,28,61,0,7,1,15,0,55,fairfield.edu/
+130697,Wesleyan University,Middletown,CT,Private,selective,0.171,14500.0,1450,1540,3066,F selective or distinctive,0,0,0,0,62,0,20,0,43,90,0,0,https://www.wesleyan.edu/
+131159,American University,Washington,DC,Private,moderately selective,0.4738,17786.0,1300,1450,7817,E geographic gap,342,0,65,0,29,17,18,0,27,72,0,0,www.american.edu/
+131469,George Washington University,Washington,DC,Private,moderately selective,0.4354,27094.0,1350,1500,11387,B data-science; B entrepreneurship; C nursing; C health; E geographic gap,485,12,459,272,126,21,0,25,23,53,0,146,https://www.gwu.edu/
+131520,Howard University,Washington,DC,Private,selective,0.3489,30342.0,1100,1298,10190,B architecture; B kinesiology; E geographic gap,258,0,138,43,56,0,18,77,11,17,29,66,www.howard.edu/
+130934,Delaware State University,Dover,DE,Public,moderately selective,0.6167,7542.0,860,1070,4941,E geographic gap,73,0,87,66,15,0,38,57,3,7,0,14,www.desu.edu/
+133650,Florida Agricultural and Mechanical University,Tallahassee,FL,Public,selective,0.2112,22713.0,1030,1150,7796,B architecture,129,0,366,56,41,0,37,22,28,23,40,48,www.famu.edu/
+133951,Florida International University,Miami,FL,Public,moderately selective,0.5884,25034.0,1060,1250,44363,A public flagship/regional; C education,2776,0,552,216,723,0,437,0,63,99,0,763,www.fiu.edu/
+134097,Florida State University,Tallahassee,FL,Public,selective,0.2538,74038.0,1240,1390,32217,B data-science; B entrepreneurship; B kinesiology; D performing-arts,2530,103,717,141,376,57,186,342,202,182,0,360,https://www.fsu.edu/
+137847,The University of Tampa,Tampa,FL,Private,moderately selective,0.4093,35353.0,,,10111,B entrepreneurship,640,76,237,76,77,0,57,134,34,71,0,0,https://www.ut.edu/
+132903,University of Central Florida,Orlando,FL,Public,selective,0.3952,60627.0,1190,1350,59470,A public flagship/regional; B data-science; B architecture; B kinesiology; C nursing; C health; C education; D performing-arts; D visual-arts,2442,0,2162,734,812,48,533,321,117,327,43,1295,www.ucf.edu/
+137351,University of South Florida,Tampa,FL,Public,moderately selective,0.4096,65187.0,1140,1330,37269,C nursing; C health,1712,14,1930,479,479,35,245,0,54,117,0,575,www.usf.edu/
+138187,Valencia College,Orlando,FL,Public,unreported,,,,,42524,A public flagship/regional,466,0,181,140,73,0,0,0,0,0,0,0,valenciacollege.edu/
+139931,Georgia Southern University,Statesboro,GA,Public,broadly accessible,0.8963,14410.0,980,1160,22295,A public flagship/regional,738,0,580,339,183,0,239,260,16,99,0,317,www.georgiasouthern.edu/
+139940,Georgia State University,Atlanta,GA,Public,moderately selective,0.6228,30230.0,1040,1280,27588,A public flagship/regional; B entrepreneurship; C education; D visual-arts,1032,36,319,146,670,0,217,0,31,431,0,0,www.gsu.edu/
+486840,Kennesaw State University,Kennesaw,GA,Public,broadly accessible,0.6918,23138.0,1020,1220,40509,A public flagship/regional,1019,25,402,261,592,0,279,239,71,98,63,821,www.kennesaw.edu/
+140951,Savannah College of Art and Design,Savannah,GA,Private,broadly accessible,0.8368,14931.0,1050,1280,14657,D visual-arts,35,0,0,0,0,0,0,0,220,1220,75,104,www.scad.edu/
+141334,University of West Georgia,Carrollton,GA,Public,moderately selective,0.4937,8399.0,930,1130,8413,C nursing,402,0,288,176,15,4,115,0,14,47,0,0,www.westga.edu/
+230047,Brigham Young University-Hawaii,Laie,HI,Private,selective,0.3787,1270.0,985,1191,2836,E geographic gap,184,0,0,0,24,0,63,32,8,14,0,0,www.byuh.edu/
+141644,Hawaii Pacific University,Honolulu,HI,Private,broadly accessible,0.8448,14538.0,1068,1280,3814,E geographic gap,98,0,134,122,11,0,11,0,0,4,0,9,https://www.hpu.edu/
+141565,University of Hawaii at Hilo,Hilo,HI,Public,broadly accessible,0.8977,2562.0,898,1110,2424,E geographic gap,75,0,77,37,10,0,0,33,2,4,0,0,https://hilo.hawaii.edu/
+141574,University of Hawaii at Manoa,Honolulu,HI,Public,broadly accessible,0.6969,19211.0,1020,1240,14576,E geographic gap,654,29,187,119,109,0,172,101,29,61,27,257,https://manoa.hawaii.edu/
+153269,Drake University,Des Moines,IA,Private,moderately selective,0.6413,7741.0,1190,1390,2702,B data-science,206,2,66,0,34,48,30,8,24,15,0,0,www.drake.edu/
+153384,Grinnell College,Grinnell,IA,Private,highly selective,0.1268,9988.0,1418,1550,1775,F selective or distinctive,0,0,0,0,63,0,0,0,18,9,0,0,www.grinnell.edu/
+153603,Iowa State University,Ames,IA,Public,broadly accessible,0.8913,22995.0,1110,1350,25332,A public flagship/regional; B entrepreneurship,1254,48,63,10,280,26,352,250,9,216,102,1323,https://www.iastate.edu/
+154095,University of Northern Iowa,Cedar Falls,IA,Public,broadly accessible,0.944,4913.0,860,1210,7734,B data-science; C education,514,0,116,0,30,41,579,64,30,66,0,0,https://www.uni.edu/
+142115,Boise State University,Boise,ID,Public,broadly accessible,0.8396,15949.0,,,23491,A public flagship/regional; E geographic gap,825,0,949,467,137,6,184,141,34,125,0,185,https://www.boisestate.edu/
+142276,Idaho State University,Pocatello,ID,Public,unreported,,,,,10406,E geographic gap,208,0,365,163,28,3,72,0,13,5,0,38,www.isu.edu/
+142328,Lewis-Clark State College,Lewiston,ID,Public,broadly accessible,0.8978,4256.0,,,3702,E geographic gap,82,0,220,188,10,0,39,30,0,0,0,0,www.lcsc.edu/
+142285,University of Idaho,Moscow,ID,Public,broadly accessible,0.7909,12222.0,950,1200,9269,E geographic gap,246,0,25,0,36,10,112,53,35,26,54,146,www.uidaho.edu/
+144281,Columbia College Chicago,Chicago,IL,Private,broadly accessible,0.9117,7873.0,,,6344,D visual-arts,49,0,0,0,7,0,0,0,208,472,0,0,www.colum.edu/
+145725,Illinois Institute of Technology,Chicago,IL,Private,moderately selective,0.5542,8912.0,1180,1410,3316,B architecture,12,0,3,0,152,1,0,0,0,0,89,273,https://www.iit.edu/
+145813,Illinois State University,Normal,IL,Public,broadly accessible,0.8901,20884.0,1010,1230,18450,A public flagship/regional; C education,1009,0,417,215,199,0,787,77,81,128,0,0,illinoisstate.edu/
+143048,School of the Art Institute of Chicago,Chicago,IL,Private,broadly accessible,0.7642,6633.0,,,2762,D arts specialist; D visual-arts,0,0,0,0,0,0,0,0,0,581,0,0,www.saic.edu/
+145600,University of Illinois Chicago,Chicago,IL,Public,broadly accessible,0.785,25420.0,1120,1340,22107,A public flagship/regional,921,9,615,270,468,32,179,145,38,95,86,558,www.uic.edu/
+150136,Ball State University,Muncie,IN,Public,broadly accessible,0.716,28668.0,1080,1250,14874,A public flagship/regional,630,10,277,151,72,3,357,93,104,130,88,0,https://www.bsu.edu/
+151111,Indiana University-Indianapolis,Indianapolis,IN,Public,broadly accessible,0.8139,15715.0,1040,1230,17037,A public flagship/regional; C nursing,645,0,982,626,258,0,178,91,8,129,0,293,https://indianapolis.iu.edu/
+151786,Marian University,Indianapolis,IN,Private,broadly accessible,0.9534,3883.0,,,2492,C nursing,106,0,372,362,0,14,41,30,3,8,0,6,www.marian.edu/
+155025,Emporia State University,Emporia,KS,Public,broadly accessible,0.9774,1592.0,,,2412,C education,121,2,105,59,12,0,225,0,22,16,0,0,www.emporia.edu/
+155399,Kansas State University,Manhattan,KS,Public,broadly accessible,0.7936,13437.0,1040,1260,15113,A public flagship/regional; E geographic gap,734,23,157,0,112,8,302,113,19,49,0,414,www.k-state.edu/
+156125,Wichita State University,Wichita,KS,Public,broadly accessible,0.9494,8637.0,970,1250,12856,E geographic gap,403,13,310,125,101,1,296,99,21,33,0,261,www.wichita.edu/
+156620,Eastern Kentucky University,Richmond,KY,Public,broadly accessible,0.7809,17082.0,930,1190,12726,E geographic gap,309,0,311,118,22,10,116,77,17,27,0,0,www.eku.edu/
+157085,University of Kentucky,Lexington,KY,Public,broadly accessible,0.9238,28233.0,1080,1290,23930,A public flagship/regional; E geographic gap,1344,0,730,387,219,0,378,0,56,50,52,508,www.uky.edu/
+157289,University of Louisville,Louisville,KY,Public,broadly accessible,0.8054,14821.0,1020,1250,16194,A public flagship/regional; E geographic gap,454,0,393,267,103,0,247,214,43,52,0,369,www.louisville.edu/
+157951,Western Kentucky University,Bowling Green,KY,Public,broadly accessible,0.9705,7720.0,820,1010,14590,A public flagship/regional; E geographic gap,501,10,366,169,75,21,186,123,58,56,21,74,https://www.wku.edu/
+159391,Louisiana State University and Agricultural & Mechanical College,Baton Rouge,LA,Public,broadly accessible,0.74,42558.0,1150,1330,32574,A public flagship/regional; E geographic gap,1036,8,82,0,147,4,445,159,57,137,102,509,www.lsu.edu/
+160612,Southeastern Louisiana University,Hammond,LA,Public,broadly accessible,0.9428,5485.0,,,12684,E geographic gap,411,0,295,147,56,0,103,102,11,40,0,0,www.southeastern.edu/
+160658,University of Louisiana at Lafayette,Lafayette,LA,Public,broadly accessible,0.8883,10679.0,1120,1255,13179,E geographic gap,325,0,426,326,113,0,211,0,33,53,51,209,www.louisiana.edu/
+164580,Babson College,Wellesley,MA,Private,selective,0.1974,7995.0,1380,1500,2752,F selective or distinctive,702,0,0,0,0,0,0,0,0,0,0,0,www.babson.edu/
+164748,Berklee College of Music,Boston,MA,Private,moderately selective,0.4991,7167.0,,,7608,D performing-arts,0,0,46,0,440,0,12,0,730,0,0,0,www.berklee.edu/
+165015,Brandeis University,Waltham,MA,Private,selective,0.3531,11282.0,1390,1530,3675,F selective or distinctive,111,0,0,0,92,0,18,0,22,28,0,0,https://www.brandeis.edu/
+165662,Emerson College,Boston,MA,Private,moderately selective,0.4748,11092.0,1250,1410,4171,D performing-arts; D visual-arts,91,0,9,0,0,0,11,0,104,298,0,0,www.emerson.edu/
+166674,Massachusetts College of Art and Design,Boston,MA,Public,broadly accessible,0.7747,3027.0,,,1876,D arts specialist,0,0,0,0,0,0,16,0,0,299,16,0,https://massart.edu/
+166939,Mount Holyoke College,South Hadley,MA,Private,selective,0.3829,5030.0,1350,1500,2209,F selective or distinctive,0,0,0,0,33,18,16,0,25,32,8,0,https://www.mtholyoke.edu/
+167835,Smith College,Northampton,MA,Private,selective,0.1973,9869.0,1408,1540,2506,B data-science; F selective or distinctive,0,0,0,0,41,65,28,0,15,47,9,30,www.smith.edu/
+167899,Springfield College,Springfield,MA,Private,broadly accessible,0.7023,3614.0,1070,1260,1924,B kinesiology,64,0,180,0,10,0,25,97,4,9,0,0,www.springfield.edu/
+168005,Suffolk University,Boston,MA,Private,broadly accessible,0.8474,10101.0,1090,1280,4484,B entrepreneurship,361,39,0,0,58,0,0,0,9,29,0,0,https://www.suffolk.edu/
+167057,The New England Conservatory of Music,Boston,MA,Private,moderately selective,0.4275,959.0,,,393,D arts specialist,0,0,0,0,0,0,0,0,105,0,0,0,https://necmusic.edu/
+166629,University of Massachusetts-Amherst,Amherst,MA,Public,moderately selective,0.5777,50424.0,1300,1480,23936,A public flagship/regional; B architecture; B kinesiology; C health,1082,0,485,148,534,0,53,326,66,52,135,516,www.umass.edu/
+164076,Towson University,Towson,MD,Public,broadly accessible,0.828,18948.0,1050,1270,16517,A public flagship/regional; E geographic gap,605,0,505,233,401,0,391,247,95,128,0,0,www.towson.edu/
+163268,University of Maryland-Baltimore County,Baltimore,MD,Public,broadly accessible,0.7424,13150.0,1220,1410,10490,E geographic gap,6,0,83,0,620,18,1,0,48,83,0,207,umbc.edu/
+161253,University of Maine,Orono,ME,Public,broadly accessible,0.9571,13995.0,,,9267,E geographic gap,421,9,96,70,39,0,172,11,16,22,0,215,www.umaine.edu/
+169248,Central Michigan University,Mount Pleasant,MI,Public,broadly accessible,0.9101,18102.0,960,1210,10055,B entrepreneurship,592,37,170,11,79,18,253,189,41,66,0,55,https://www.cmich.edu/
+170082,Grand Valley State University,Allendale,MI,Public,broadly accessible,0.9469,24297.0,940,1190,19243,A public flagship/regional,1139,15,642,239,145,39,391,235,52,127,0,122,www.gvsu.edu/
+170286,Hillsdale College,Hillsdale,MI,Private,selective,0.2059,2773.0,1340,1510,1688,F selective or distinctive,47,0,0,0,0,0,0,17,6,8,0,0,https://www.hillsdale.edu/
+170675,Lawrence Technological University,Southfield,MI,Private,broadly accessible,0.8025,2121.0,,,2367,B architecture,27,0,16,16,35,0,0,0,0,10,65,173,www.ltu.edu/
+171492,Northwood University,Midland,MI,Private,broadly accessible,0.839,2074.0,,,1989,B entrepreneurship,575,17,9,0,29,0,0,25,0,0,0,0,www.northwood.edu/
+172644,Wayne State University,Detroit,MI,Public,broadly accessible,0.8203,15190.0,1040,1260,16117,A public flagship/regional,976,0,583,174,161,4,165,85,73,80,0,229,https://wayne.edu/
+173902,Macalester College,Saint Paul,MN,Private,selective,0.2821,8099.0,1350,1510,2142,F selective or distinctive,0,0,0,0,72,0,9,0,15,13,0,0,www.macalester.edu/
+173920,Minnesota State University-Mankato,Mankato,MN,Public,broadly accessible,0.9133,8974.0,,,12897,E geographic gap,604,0,525,353,90,9,189,127,23,45,0,174,https://mnsu.edu/
+174066,University of Minnesota-Twin Cities,Minneapolis,MN,Public,broadly accessible,0.7703,39863.0,1310,1480,39556,A public flagship/regional; B data-science; B architecture; E geographic gap,1056,0,351,136,816,75,356,250,65,198,112,786,https://twin-cities.umn.edu/
+174914,University of St Thomas,Saint Paul,MN,Private,broadly accessible,0.8494,8813.0,1223,1416,6044,B entrepreneurship,637,48,8,0,58,12,44,39,12,1,0,125,www.stthomas.edu/
+177746,Kansas City Art Institute,Kansas City,MO,Private,moderately selective,0.6035,1097.0,,,789,D arts specialist,0,0,0,0,0,0,0,0,0,113,0,0,www.kcai.edu/
+179566,Missouri State University-Springfield,Springfield,MO,Public,broadly accessible,0.9105,11901.0,990,1220,19259,A public flagship/regional,735,10,255,115,158,0,398,79,47,109,3,0,www.missouristate.edu/
+178396,University of Missouri-Columbia,Columbia,MO,Public,broadly accessible,0.7702,21669.0,1150,1330,23613,A public flagship/regional; C health,1073,0,998,247,213,33,290,7,59,61,0,365,https://missouri.edu/
+176080,Mississippi State University,Mississippi State,MS,Public,broadly accessible,0.7632,20877.0,1110,1410,18230,A public flagship/regional; B architecture; E geographic gap,848,0,12,0,100,0,378,268,8,0,120,771,https://www.msstate.edu/
+176035,Mississippi University for Women,Columbus,MS,Public,broadly accessible,1.0,553.0,,,1995,C nursing; C health,130,0,418,357,0,0,22,25,5,0,0,0,https://www.muw.edu/
+176017,University of Mississippi,University,MS,Public,broadly accessible,0.9778,27837.0,1020,1210,19094,A public flagship/regional; E geographic gap,1058,21,728,282,52,0,200,108,31,21,0,170,www.olemiss.edu/
+176372,University of Southern Mississippi,Hattiesburg,MS,Public,broadly accessible,0.9938,8818.0,,,10012,E geographic gap,465,0,347,168,72,0,253,127,57,42,9,14,https://www.usm.edu/
+180461,Montana State University,Bozeman,MT,Public,broadly accessible,0.8683,21975.0,1060,1270,14872,A public flagship/regional; E geographic gap,317,0,284,284,102,9,119,0,10,112,43,441,https://www.montana.edu/
+180179,Montana State University Billings,Billings,MT,Public,unreported,,,,,3765,E geographic gap,113,0,51,28,0,0,67,18,2,9,0,0,www.msubillings.edu/
+180489,The University of Montana,Missoula,MT,Public,broadly accessible,0.956,9464.0,,,7570,E geographic gap,158,0,39,0,68,0,61,47,73,56,0,0,www.umt.edu/
+198136,Campbell University,Buies Creek,NC,Private,broadly accessible,0.9429,3680.0,,,2813,B kinesiology,160,0,111,47,46,0,37,99,1,13,0,27,https://www.campbell.edu/
+198385,Davidson College,Davidson,NC,Private,highly selective,0.1448,7347.0,1360,1510,1904,F selective or distinctive,0,0,0,0,54,0,6,0,17,6,0,0,https://davidson.edu/
+198464,East Carolina University,Greenville,NC,Public,broadly accessible,0.9006,22289.0,1050,1200,21328,A public flagship/regional,954,28,862,351,146,0,356,209,64,111,14,83,https://www.ecu.edu/
+198695,High Point University,High Point,NC,Private,broadly accessible,0.7683,15625.0,1110,1300,5006,B entrepreneurship,420,39,0,0,26,7,32,103,12,101,0,2,www.highpoint.edu/
+199102,North Carolina A & T State University,Greensboro,NC,Public,moderately selective,0.4617,30717.0,960,1190,12216,B kinesiology,229,0,77,48,137,0,32,125,16,52,8,320,www.ncat.edu/
+199193,North Carolina State University at Raleigh,Raleigh,NC,Public,selective,0.3985,40049.0,1300,1460,27323,A public flagship/regional; B data-science; B architecture; C education,1151,0,0,0,287,80,173,115,0,101,57,1501,www.ncsu.edu/
+199184,University of North Carolina School of the Arts,Winston Salem,NC,Public,selective,0.331,1423.0,1150,1350,902,D arts specialist,0,0,0,0,0,0,0,0,154,75,0,0,www.uncsa.edu/
+199218,University of North Carolina Wilmington,Wilmington,NC,Public,broadly accessible,0.7401,17370.0,1220,1360,14494,C nursing; C health,729,0,1002,789,152,5,157,165,24,136,0,23,www.uncw.edu/
+199139,University of North Carolina at Charlotte,Charlotte,NC,Public,broadly accessible,0.8021,22699.0,1110,1320,23981,A public flagship/regional,1092,0,477,135,761,0,183,158,71,94,49,478,https://www.charlotte.edu/
+200332,North Dakota State University-Main Campus,Fargo,ND,Public,broadly accessible,0.9581,7331.0,,,9791,E geographic gap,380,0,334,216,80,5,54,55,26,25,62,317,https://www.ndsu.edu/
+200217,University of Mary,Bismarck,ND,Private,broadly accessible,0.7825,1577.0,,,2650,E geographic gap,101,0,123,71,4,0,49,30,8,0,0,22,https://www.umary.edu/
+200280,University of North Dakota,Grand Forks,ND,Public,broadly accessible,0.7709,7437.0,,,10216,E geographic gap,310,13,245,118,25,0,71,30,14,6,0,176,https://und.edu/
+200572,Valley City State University,Valley City,ND,Public,broadly accessible,0.6931,492.0,,,1628,C education,23,0,7,0,4,0,137,7,11,1,0,4,www.vcsu.edu/
+181002,Creighton University,Omaha,NE,Private,broadly accessible,0.7231,7248.0,1210,1400,4262,E geographic gap,383,0,351,280,18,0,7,80,9,17,0,0,https://www.creighton.edu/
+181215,University of Nebraska at Kearney,Kearney,NE,Public,broadly accessible,0.8579,7253.0,970,1150,4224,E geographic gap,157,0,64,0,23,0,165,19,14,26,0,0,www.unk.edu/
+181394,University of Nebraska at Omaha,Omaha,NE,Public,broadly accessible,0.869,9889.0,,,11859,E geographic gap,394,21,53,0,205,0,201,43,47,62,0,0,https://www.unomaha.edu/
+181464,University of Nebraska-Lincoln,Lincoln,NE,Public,broadly accessible,0.7707,18354.0,1090,1330,19338,A public flagship/regional; E geographic gap,1087,0,49,0,123,0,314,0,42,89,110,467,www.unl.edu/
+183062,Keene State College,Keene,NH,Public,broadly accessible,0.8909,4666.0,,,2718,B architecture,56,0,37,19,17,0,69,19,22,61,34,0,www.keene.edu/
+183080,Plymouth State University,Plymouth,NH,Public,broadly accessible,0.9103,7421.0,,,3336,E geographic gap,183,0,77,30,13,0,64,48,14,17,3,0,www.plymouth.edu/
+183044,University of New Hampshire-Main Campus,Durham,NH,Public,broadly accessible,0.8687,20887.0,1120,1320,11376,E geographic gap,641,0,238,74,58,7,10,80,39,10,9,241,www.unh.edu/
+185590,Montclair State University,Montclair,NJ,Public,broadly accessible,0.8741,23599.0,940,1225,18062,A public flagship/regional,773,0,196,45,146,0,93,135,160,231,0,0,www.montclair.edu/
+184782,Rowan University,Glassboro,NJ,Public,broadly accessible,0.7782,17923.0,1100,1310,14869,A public flagship/regional,669,25,245,75,294,0,273,2,120,50,4,376,https://www.rowan.edu/
+187134,The College of New Jersey,Ewing,NJ,Public,moderately selective,0.6214,11668.0,1140,1340,7073,C education,319,0,142,67,47,0,227,0,18,79,0,139,https://www.tcnj.edu/
+187897,New Mexico Highlands University,Las Vegas,NM,Public,unreported,,,,,1710,E geographic gap,55,0,104,41,7,0,124,0,1,5,0,0,www.nmhu.edu/
+188030,New Mexico State University-Main Campus,Las Cruces,NM,Public,broadly accessible,0.7573,15201.0,885,1110,12113,E geographic gap,341,0,286,182,90,0,133,74,12,39,0,312,www.nmsu.edu/
+187985,University of New Mexico-Main Campus,Albuquerque,NM,Public,broadly accessible,0.9545,12907.0,900,1160,16905,A public flagship/regional; E geographic gap,441,0,635,412,51,6,193,0,30,121,69,205,www.unm.edu/
+188304,Western New Mexico University,Silver City,NM,Public,unreported,,,,,2602,E geographic gap,38,0,43,33,0,0,53,18,0,5,0,0,www.wnmu.edu/
+441900,Nevada State University,Henderson,NV,Public,broadly accessible,0.8615,1733.0,,,7224,E geographic gap,51,0,399,362,0,0,90,0,0,18,0,0,https://nsc.edu/
+182281,University of Nevada-Las Vegas,Las Vegas,NV,Public,broadly accessible,0.9626,12232.0,980,1230,25794,A public flagship/regional; E geographic gap,1059,27,330,224,224,0,361,245,102,176,69,240,www.unlv.edu/
+182290,University of Nevada-Reno,Reno,NV,Public,broadly accessible,0.8531,10142.0,,,17965,A public flagship/regional; E geographic gap,639,0,571,180,232,0,153,9,36,53,0,342,www.unr.edu/
+188854,American Musical and Dramatic Academy,New York,NY,Private,selective,0.2471,6580.0,,,1502,D arts specialist,0,0,0,0,0,0,0,0,250,0,0,0,www.amda.edu/
+189097,Barnard College,New York,NY,Private,highly selective,0.0796,11803.0,1453,1550,3353,D visual-arts; F selective or distinctive,0,0,0,0,53,1,12,0,15,50,11,0,www.barnard.edu/
+196079,Binghamton University,Vestal,NY,Public,selective,0.3773,49513.0,1320,1490,14409,C nursing; F selective or distinctive,480,6,190,190,124,0,0,0,26,68,0,319,www.binghamton.edu/
+190512,CUNY Bernard M Baruch College,New York,NY,Public,moderately selective,0.5048,24867.0,1210,1410,16086,B entrepreneurship,2729,63,0,0,290,13,0,0,15,0,0,0,www.baruch.cuny.edu/
+190549,CUNY Brooklyn College,Brooklyn,NY,Public,moderately selective,0.5366,27112.0,1140,1420,11330,C education,684,0,179,0,236,0,303,48,31,159,0,0,www.brooklyn.cuny.edu/
+190594,CUNY Hunter College,New York,NY,Public,moderately selective,0.5405,31614.0,1210,1470,17378,A public flagship/regional,71,0,262,176,292,18,97,0,58,152,0,0,www.hunter.cuny.edu/
+190637,CUNY Lehman College,Bronx,NY,Public,moderately selective,0.5543,20954.0,860,1220,11227,B kinesiology; C health,423,0,588,145,172,0,19,63,25,56,0,0,www.lehman.edu/
+191126,Fashion Institute of Technology,New York,NY,Public,moderately selective,0.5761,4326.0,,,7843,D visual-arts,621,15,0,0,0,0,0,0,0,693,0,0,www.fitnyc.edu/
+192712,Manhattan School of Music,New York,NY,Private,selective,0.3994,1432.0,,,543,D arts specialist,0,0,0,0,0,0,0,0,110,0,0,0,www.msmnyc.edu/
+194578,Pratt Institute-Main,Brooklyn,NY,Private,moderately selective,0.5317,8281.0,1220,1420,3814,B architecture,0,0,0,0,0,0,7,0,0,536,129,0,https://www.pratt.edu/
+196219,SUNY at Purchase College,Purchase,NY,Public,broadly accessible,0.7283,7221.0,1178,1363,3165,D performing-arts,0,0,0,0,0,0,0,0,229,117,0,0,www.purchase.edu/
+196149,State University of New York at Cortland,Cortland,NY,Public,moderately selective,0.5071,15867.0,,,5905,B kinesiology; C education,89,0,87,0,0,0,513,247,12,17,0,0,www2.cortland.edu/
+196176,State University of New York at New Paltz,New Paltz,NY,Public,moderately selective,0.587,16249.0,1170,1340,6504,B data-science,196,0,62,0,52,19,248,0,56,67,0,70,www.newpaltz.edu/
+196097,Stony Brook University,Stony Brook,NY,Public,moderately selective,0.4901,50341.0,1320,1490,17549,A public flagship/regional; C nursing; C health,493,0,662,196,320,0,28,0,17,48,19,300,https://www.stonybrook.edu/
+192110,The Juilliard School,New York,NY,Private,highly selective,0.0896,2020.0,,,619,D arts specialist,0,0,0,0,0,0,0,0,105,0,0,0,www.juilliard.edu/
+193654,The New School,New York,NY,Private,moderately selective,0.6252,9148.0,,,6841,D performing-arts,0,0,0,0,186,0,0,0,181,652,35,0,https://www.newschool.edu/
+197036,United States Military Academy,West  Point,NY,Public,highly selective,0.1398,11430.0,1200,1430,4508,B data-science,52,0,0,0,51,17,0,13,0,0,0,213,www.westpoint.edu/
+196088,University at Buffalo,Buffalo,NY,Public,broadly accessible,0.693,38210.0,1210,1380,20463,A public flagship/regional; B architecture,863,0,437,181,281,13,0,107,60,113,129,760,https://www.buffalo.edu/
+197708,Yeshiva University,New York,NY,Private,moderately selective,0.6375,1713.0,1320,1500,3091,B entrepreneurship,196,32,12,0,36,10,7,0,1,0,0,0,www.yu.edu/
+201441,Bowling Green State University-Main Campus,Bowling Green,OH,Public,broadly accessible,0.8061,18629.0,1020,1230,14014,C education,534,0,287,101,45,2,490,124,31,110,55,95,www.bgsu.edu/
+202523,Denison University,Granville,OH,Private,selective,0.1693,14580.0,1300,1470,2405,B data-science; F selective or distinctive,44,0,17,0,18,34,20,35,12,31,0,0,https://www.denison.edu/
+203517,Kent State University at Kent,Kent,OH,Public,broadly accessible,0.8665,22365.0,1000,1230,20485,A public flagship/regional,998,23,723,471,139,0,416,104,88,312,94,20,www.kent.edu/
+203535,Kenyon College,Gambier,OH,Private,selective,0.3071,8218.0,1360,1500,2184,F selective or distinctive,0,0,0,0,0,0,0,0,20,45,0,0,https://www.kenyon.edu/
+204006,Miami University-Hamilton,Hamilton,OH,Public,unreported,,,,,2345,B entrepreneurship,92,84,86,86,18,0,0,0,0,0,0,0,miamioh.edu/regionals/
+204501,Oberlin College,Oberlin,OH,Private,selective,0.3298,11039.0,1370,1510,2966,D performing-arts; F selective or distinctive,0,0,0,0,34,0,0,0,160,52,0,11,www.oberlin.edu/
+204857,Ohio University-Main Campus,Athens,OH,Public,broadly accessible,0.8476,25648.0,1100,1290,19100,A public flagship/regional; B data-science; C nursing; C health,833,25,1622,1396,78,194,289,161,95,54,0,225,https://www.ohio.edu/
+201885,University of Cincinnati-Main Campus,Cincinnati,OH,Public,broadly accessible,0.8767,33165.0,1150,1360,31184,A public flagship/regional,1457,0,967,363,497,0,213,130,147,242,91,813,www.uc.edu/
+202480,University of Dayton,Dayton,OH,Private,moderately selective,0.6165,22747.0,1195,1370,8176,B entrepreneurship,557,29,192,6,40,0,153,1,13,33,0,405,https://udayton.edu/
+207263,Northeastern State University,Tahlequah,OK,Public,broadly accessible,0.9921,1386.0,920,1145,5006,E geographic gap,264,2,146,74,41,0,136,56,6,17,0,0,https://www.nsuok.edu/
+207388,Oklahoma State University-Main Campus,Stillwater,OK,Public,broadly accessible,0.7093,19612.0,1030,1240,21354,A public flagship/regional; B entrepreneurship; E geographic gap,1182,51,116,20,153,5,187,98,39,111,49,571,www.okstate.edu/
+206941,University of Central Oklahoma,Edmond,OK,Public,broadly accessible,0.8176,4945.0,,,10454,E geographic gap,380,0,260,158,72,2,143,84,79,55,0,69,https://www.uco.edu/
+207500,University of Oklahoma-Norman Campus,Norman,OK,Public,broadly accessible,0.7654,22337.0,1140,1330,22025,A public flagship/regional; E geographic gap,1363,0,72,0,109,0,140,163,93,78,51,482,www.ou.edu/
+209542,Oregon State University,Corvallis,OR,Public,broadly accessible,0.7885,29025.0,,,30021,A public flagship/regional,811,0,262,0,912,0,59,223,37,94,0,959,https://oregonstate.edu/
+209603,Pacific Northwest College of Art,Portland,OR,Private,broadly accessible,0.6854,658.0,,,412,D arts specialist,0,0,0,0,0,0,0,0,0,65,0,0,willamette.edu/pnca/index.html
+209807,Portland State University,Portland,OR,Public,broadly accessible,0.9091,8877.0,,,15960,A public flagship/regional,887,0,319,0,207,12,13,0,28,183,30,212,www.pdx.edu/
+209551,University of Oregon,Eugene,OR,Public,broadly accessible,0.8511,39400.0,1130,1360,19963,A public flagship/regional,635,0,46,0,74,19,103,0,98,258,95,0,https://www.uoregon.edu/
+213385,Lafayette College,Easton,PA,Private,selective,0.3147,9874.0,1340,1490,2764,F selective or distinctive,0,0,0,0,33,0,0,0,11,23,0,134,https://www.lafayette.edu/
+213543,Lehigh University,Bethlehem,PA,Private,selective,0.2926,18415.0,1350,1490,5811,B data-science; F selective or distinctive,410,0,30,0,195,19,0,0,2,31,16,305,www.lehigh.edu/
+213826,Marywood University,Scranton,PA,Private,broadly accessible,0.8371,3136.0,1050,1240,1874,B architecture,29,0,110,28,1,0,37,3,5,18,62,0,https://www.marywood.edu/
+214148,Moore College of Art and Design,Philadelphia,PA,Private,moderately selective,0.6051,1322.0,1233,1411,390,D arts specialist,0,0,0,0,0,0,2,0,0,60,0,0,www.moore.edu/
+214175,Muhlenberg College,Allentown,PA,Private,moderately selective,0.6401,4348.0,1230,1400,1788,D performing-arts,131,0,17,0,11,0,0,0,153,26,0,0,www.muhlenberg.edu/
+217420,Rhode Island College,Providence,RI,Public,broadly accessible,0.8109,4988.0,860,1160,4785,E geographic gap,160,0,270,121,42,0,100,9,27,26,0,0,www.ric.edu/
+217493,Rhode Island School of Design,Providence,RI,Private,highly selective,0.1381,7126.0,1370,1540,2092,B architecture; D visual-arts; F selective or distinctive,0,0,0,0,78,0,0,0,0,278,48,0,www.risd.edu/
+217484,University of Rhode Island,Kingston,RI,Public,broadly accessible,0.7707,25391.0,1030,1270,14670,A public flagship/regional; E geographic gap,458,11,510,292,90,0,122,122,35,82,13,300,https://web.uri.edu/
+218724,Coastal Carolina University,Conway,SC,Public,broadly accessible,0.8019,18223.0,1050,1210,10306,E geographic gap,446,0,94,9,65,4,108,215,58,65,0,29,https://www.coastal.edu/
+217819,College of Charleston,Charleston,SC,Public,broadly accessible,0.72,26683.0,1130,1300,10660,E geographic gap,475,0,129,0,95,14,132,56,41,57,0,1,https://www.cofc.edu/
+218663,University of South Carolina-Columbia,Columbia,SC,Public,moderately selective,0.6149,46682.0,1180,1380,28470,A public flagship/regional; B data-science; B kinesiology; C nursing; C health; D performing-arts; E geographic gap,2318,0,781,241,261,23,157,486,82,148,0,442,www.sc.edu/
+219046,Black Hills State University,Spearfish,SD,Public,broadly accessible,0.9443,1617.0,,,3279,E geographic gap,86,0,0,0,0,0,61,26,4,18,0,0,www.bhsu.edu/
+219259,Northern State University,Aberdeen,SD,Public,broadly accessible,0.9279,1082.0,,,2932,E geographic gap,60,0,4,0,3,0,75,30,8,12,0,0,www.northern.edu/
+219356,South Dakota State University,Brookings,SD,Public,broadly accessible,0.9871,5884.0,1040,1300,10177,E geographic gap,136,5,400,290,12,28,109,53,10,36,24,141,https://www.sdstate.edu/
+219471,University of South Dakota,Vermillion,SD,Public,broadly accessible,0.9895,5349.0,1110,1330,7095,E geographic gap,253,3,377,162,13,0,95,69,14,20,0,1,https://www.usd.edu/
+220075,East Tennessee State University,Johnson City,TN,Public,broadly accessible,0.8706,9903.0,950,1170,10633,C nursing,308,0,876,588,78,0,90,108,38,48,0,4,https://www.etsu.edu/
+220978,Middle Tennessee State University,Murfreesboro,TN,Public,broadly accessible,0.68,14763.0,1000,1230,17668,A public flagship/regional,719,14,147,76,73,19,110,118,185,209,0,51,www.mtsu.edu/
+221740,The University of Tennessee-Chattanooga,Chattanooga,TN,Public,broadly accessible,0.7702,9096.0,1005,1185,9982,B entrepreneurship,485,32,97,97,69,0,149,202,17,59,0,130,utc.edu/
+221759,The University of Tennessee-Knoxville,Knoxville,TN,Public,moderately selective,0.4599,50488.0,1190,1340,28883,A public flagship/regional; B architecture; B kinesiology; C nursing,1602,0,326,239,144,18,28,313,52,72,102,626,www.utk.edu/
+220862,University of Memphis,Memphis,TN,Public,broadly accessible,0.9338,15640.0,905,1205,16771,A public flagship/regional; B kinesiology,551,0,299,293,68,0,147,424,67,79,18,149,https://www.memphis.edu/
+224226,Dallas Baptist University,Dallas,TX,Private,broadly accessible,0.9108,8018.0,960,1217,2850,B entrepreneurship,155,17,11,0,14,0,39,27,2,11,0,0,https://www.dbu.edu/
+228459,Texas State University,San Marcos,TX,Public,broadly accessible,0.8948,37183.0,980,1190,34547,A public flagship/regional; B kinesiology; D performing-arts,1156,0,501,75,312,0,317,423,261,202,11,152,https://www.txst.edu/
+229115,Texas Tech University,Lubbock,TX,Public,broadly accessible,0.7089,34020.0,1090,1270,32635,B architecture; B kinesiology,1498,0,32,0,259,0,300,416,109,87,157,728,www.ttu.edu/
+228769,The University of Texas at Arlington,Arlington,TX,Public,broadly accessible,0.8129,23126.0,990,1230,31112,C nursing; C health,1059,0,2899,2652,363,4,136,169,89,154,96,582,https://www.uta.edu/
+228787,The University of Texas at Dallas,Richardson,TX,Public,broadly accessible,0.6546,29366.0,1170,1410,21330,B data-science,972,0,396,0,1131,56,4,0,0,0,0,660,www.utdallas.edu/
+229027,The University of Texas at San Antonio,San Antonio,TX,Public,broadly accessible,0.8846,22497.0,1000,1200,30310,B architecture,1110,1,369,0,714,32,283,382,44,66,135,434,www.utsa.edu/
+225511,University of Houston,Houston,TX,Public,broadly accessible,0.6953,30327.0,1150,1330,37946,A public flagship/regional,2209,15,464,81,667,0,0,368,93,165,120,564,www.uh.edu/
+227216,University of North Texas,Denton,TX,Public,broadly accessible,0.7246,36807.0,980,1230,33858,A public flagship/regional; B data-science; B entrepreneurship; D performing-arts,1491,78,184,0,425,60,335,287,291,377,19,260,www.unt.edu/
+230038,Brigham Young University,Provo,UT,Private,broadly accessible,0.6919,11006.0,1290,1450,32221,B data-science; B entrepreneurship; B kinesiology,938,35,487,129,476,130,400,358,132,176,9,533,https://byu.edu/
+230764,University of Utah,Salt Lake City,UT,Public,broadly accessible,0.8717,22996.0,1180,1398,26827,A public flagship/regional; B kinesiology,714,21,303,210,495,0,55,285,134,236,51,468,www.utah.edu/
+230737,Utah Valley University,Orem,UT,Public,unreported,,,,,43794,A public flagship/regional,887,12,228,121,241,5,240,113,68,191,11,123,www.uvu.edu/
+230782,Weber State University,Ogden,UT,Public,unreported,,,,,29534,A public flagship/regional,380,0,796,380,168,0,153,34,27,53,0,44,https://www.weber.edu/
+232186,George Mason University,Fairfax,VA,Public,broadly accessible,0.8883,22579.0,1140,1340,27666,A public flagship/regional,1143,0,491,206,786,19,112,91,112,44,0,297,https://www2.gmu.edu/
+233374,University of Richmond,University of Richmond,VA,Private,selective,0.2331,15121.0,1410,1530,3054,F selective or distinctive,389,0,39,0,28,1,1,0,10,16,0,0,https://www.richmond.edu/
+234030,Virginia Commonwealth University,Richmond,VA,Public,broadly accessible,0.9306,19052.0,1030,1270,21205,A public flagship/regional; D visual-arts,566,0,325,210,289,0,377,0,101,471,0,230,https://www.vcu.edu/
+233921,Virginia Polytechnic Institute and State University,Blacksburg,VA,Public,moderately selective,0.5703,47208.0,1240,1420,30504,A public flagship/regional; B data-science; B architecture,1765,0,107,0,526,192,0,0,58,131,150,1788,www.vt.edu/
+234207,Washington and Lee University,Lexington,VA,Private,selective,0.1736,6820.0,1410,1530,1898,F selective or distinctive,136,0,0,0,20,0,0,0,8,10,0,16,www.wlu.edu/
+231624,William & Mary,Williamsburg,VA,Public,selective,0.3272,17548.0,1365,1510,6963,B data-science; B kinesiology; F selective or distinctive,200,0,0,0,95,67,9,125,23,20,0,0,https://www.wm.edu/
+230852,Champlain College,Burlington,VT,Private,broadly accessible,0.6672,5297.0,1165,1340,2886,E geographic gap,129,0,10,0,228,4,12,0,5,77,0,0,www.champlain.edu/
+231165,Vermont State University,Randolph,VT,Public,broadly accessible,0.8323,3130.0,,,4087,E geographic gap,107,1,150,90,21,1,37,59,23,27,0,7,vermontstate.edu/
+235024,Cornish College of the Arts,Seattle,WA,Private,broadly accessible,0.7046,1097.0,,,502,D arts specialist,0,0,0,0,0,0,0,0,43,27,0,0,www.cornish.edu/
+236939,Washington State University,Pullman,WA,Public,broadly accessible,0.8536,26166.0,,,21923,A public flagship/regional; E geographic gap,1064,30,389,351,261,0,232,197,22,34,55,481,https://wsu.edu/
+237011,Western Washington University,Bellingham,WA,Public,broadly accessible,0.9131,14243.0,1110,1350,13704,E geographic gap,415,0,160,21,154,17,206,40,82,124,0,86,wwu.edu/
+238458,Carroll University,Waukesha,WI,Private,moderately selective,0.5841,5972.0,1050,1260,2623,B kinesiology,99,0,184,128,15,0,65,118,10,11,0,6,www.carrollu.edu/
+239309,Milwaukee Institute of Art & Design,Milwaukee,WI,Private,moderately selective,0.628,1059.0,940,1140,885,D arts specialist,0,0,0,0,0,0,0,0,0,181,14,0,www.miad.edu/
+240453,University of Wisconsin-Milwaukee,Milwaukee,WI,Public,broadly accessible,0.8844,16662.0,,,18047,A public flagship/regional,738,0,500,252,210,1,193,72,45,205,99,241,uwm.edu/
+237367,Fairmont State University,Fairmont,WV,Public,broadly accessible,0.9924,1979.0,830,1040,3060,E geographic gap,63,0,56,39,20,0,39,47,2,9,13,6,https://www.fairmontstate.edu/
+237525,Marshall University,Huntington,WV,Public,broadly accessible,0.9646,6499.0,890,1130,8235,E geographic gap,281,0,334,106,36,0,106,55,0,25,0,52,https://www.marshall.edu/
+237899,West Virginia State University,Institute,WV,Public,broadly accessible,0.9637,4465.0,830,1073,3322,E geographic gap,74,0,16,7,3,0,25,21,2,4,0,0,www.wvstateu.edu/
+238032,West Virginia University,Morgantown,WV,Public,broadly accessible,0.8626,19857.0,1010,1240,18615,A public flagship/regional; B kinesiology; E geographic gap,754,22,463,186,84,0,80,362,79,120,0,607,www.wvu.edu/
+240727,University of Wyoming,Laramie,WY,Public,broadly accessible,0.9741,5644.0,,,8250,E geographic gap,417,25,200,142,36,7,182,76,32,28,0,202,https://www.uwyo.edu/

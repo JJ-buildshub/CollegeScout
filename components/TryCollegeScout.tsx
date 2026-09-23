@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -28,11 +28,12 @@ import {
   Syringe,
 } from "lucide-react";
 import clsx from "clsx";
-import { colleges, displayedAdmitRate, formatPercent } from "@/lib/colleges";
+import { admitRateTier, colleges, displayedAdmitRate, formatPercent } from "@/lib/colleges";
 import {
   DEFAULT_INTEREST_IDS,
   INTEREST_TAXONOMY,
   MAX_SELECTED_INTERESTS,
+  countMatches,
   getCombinedProgramLabel,
   getMatchTier,
   getPathwayLabel,
@@ -52,8 +53,36 @@ const LOW_MATCH_THRESHOLD = 8;
 
 const DEFAULT_INTERESTS = INTEREST_TAXONOMY.filter((i) => DEFAULT_INTEREST_IDS.includes(i.id));
 const OVERFLOW_INTERESTS = INTEREST_TAXONOMY.filter((i) => !DEFAULT_INTEREST_IDS.includes(i.id));
-const MORE_FIELDS = OVERFLOW_INTERESTS.filter((i) => i.group !== "paths");
+const HEALTH_LIFE_FIELDS = OVERFLOW_INTERESTS.filter((i) => i.group === "health-life");
+const PEOPLE_BUSINESS_FIELDS = OVERFLOW_INTERESTS.filter((i) => i.group === "people-business");
 const PATH_INTERESTS = OVERFLOW_INTERESTS.filter((i) => i.group === "paths");
+
+// Groups example results by admit-rate tier (the same bands pickDiverseSlate
+// already spreads its picks across, see lib/interests.ts) so a visitor sees
+// this interest spans the full range of selectivity, not just a raw count —
+// a preview of the Reach/Target/Likely idea before they've entered a GPA on
+// My Fit, which uses a personalized version of this same spread.
+const TIER_ORDER = ["Ultra-Selective", "Highly Selective", "Selective", "Accessible"] as const;
+
+function groupByTier<T extends { college: College }>(items: T[]): { tier: string; items: T[] }[] {
+  const groups = new Map<string, T[]>();
+  for (const item of items) {
+    const tier = admitRateTier(displayedAdmitRate(item.college).value);
+    if (!groups.has(tier)) groups.set(tier, []);
+    groups.get(tier)!.push(item);
+  }
+  return TIER_ORDER.filter((tier) => groups.has(tier)).map((tier) => ({ tier, items: groups.get(tier)! }));
+}
+
+/** Counts every match (not just the examples shown) per tier, for the "12 schools" label next to each tier heading. */
+function countsByTier(list: College[]): Map<string, number> {
+  const counts = new Map<string, number>();
+  for (const college of list) {
+    const tier = admitRateTier(displayedAdmitRate(college).value);
+    counts.set(tier, (counts.get(tier) ?? 0) + 1);
+  }
+  return counts;
+}
 
 // One icon per interest id, from the icon library already used across the
 // site (lucide-react) — no images. "Psychology" is imported under an alias
@@ -122,11 +151,61 @@ export default function TryCollegeScout() {
     }));
   }, [singleMatches, selectedIds]);
 
+  // Every match, not just the diverse-slate examples — rendered per tier only
+  // once that tier's "See all" is expanded.
+  const singleFullResults = useMemo(() => {
+    return singleMatches.map((college) => ({
+      college,
+      pathway: getPathwayLabel(college, selectedIds[0]) ?? college.careerMajorTags.primaryDisciplines[0] ?? "",
+    }));
+  }, [singleMatches, selectedIds]);
+
+  const singleTierCounts = useMemo(() => countsByTier(singleMatches), [singleMatches]);
+
+  // Which tiers are currently expanded to show every match, per results
+  // section — reset whenever the selection changes so a new interest doesn't
+  // inherit a stale expansion.
+  const [singleExpandedTiers, setSingleExpandedTiers] = useState<Set<string>>(new Set());
+  const [combineExpandedTiers, setCombineExpandedTiers] = useState<Set<string>>(new Set());
+  const [strongExpandedTiers, setStrongExpandedTiers] = useState<Set<string>>(new Set());
+  useEffect(() => {
+    setSingleExpandedTiers(new Set());
+    setCombineExpandedTiers(new Set());
+    setStrongExpandedTiers(new Set());
+  }, [selectedIds, notSure]);
+
+  function toggleTier(setter: (fn: (prev: Set<string>) => Set<string>) => void, tier: string) {
+    setter((prev) => {
+      const next = new Set(prev);
+      if (next.has(tier)) next.delete(tier);
+      else next.add(tier);
+      return next;
+    });
+  }
+
   // Multi-interest view: split into "combine" and "strong in each," each
   // drawing its top slate the same diverse way.
-  const { combineResults, strongResults, strongTotal } = useMemo(() => {
+  const {
+    combineResults,
+    combineFullResults,
+    combineTotal,
+    combineTierCounts,
+    strongResults,
+    strongFullResults,
+    strongTotal,
+    strongTierCounts,
+  } = useMemo(() => {
     if (notSure || selectedIds.length < 2) {
-      return { combineResults: [], strongResults: [], strongTotal: 0 };
+      return {
+        combineResults: [],
+        combineFullResults: [],
+        combineTotal: 0,
+        combineTierCounts: new Map<string, number>(),
+        strongResults: [],
+        strongFullResults: [],
+        strongTotal: 0,
+        strongTierCounts: new Map<string, number>(),
+      };
     }
     const combineLabels = new Map<string, string>();
     for (const c of colleges) {
@@ -149,8 +228,13 @@ export default function TryCollegeScout() {
 
     return {
       combineResults: combineSlate,
+      combineFullResults: combineCandidates.map((c) => ({ college: c.college, label: combineLabels.get(c.college.id)! })),
+      combineTotal: combineLabels.size,
+      combineTierCounts: countsByTier(combineCandidates.map((c) => c.college)),
       strongResults: pickDiverseSlate(strongCandidates, MAX_RESULTS),
+      strongFullResults: strong.map((college) => ({ college })),
       strongTotal: strong.length,
+      strongTierCounts: countsByTier(strong),
     };
   }, [selectedIds, notSure]);
 
@@ -158,63 +242,82 @@ export default function TryCollegeScout() {
   const isSingle = !notSure && selectedIds.length === 1;
   const selectedLabel = selectedInterests.map((i) => i.label).join(", ");
   const interestsQuery = selectedIds.join(",");
+  const singleTotal = isSingle ? countMatches(colleges, selectedIds[0]) : 0;
+  const singleLabelArticle = /^[aeiou]/i.test(selectedLabel) ? "an" : "a";
 
   return (
-    <section className="rounded-3xl border border-slate-200 bg-white px-6 pb-6 pt-8 shadow-card sm:px-10 sm:pb-10 sm:pt-10">
+    <section
+      id="interests"
+      className="scroll-mt-24 rounded-3xl border border-slate-200 bg-white px-6 pb-6 pt-8 shadow-card sm:px-10 sm:pb-10 sm:pt-10"
+    >
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-xl font-extrabold tracking-tight text-navy-900 sm:text-2xl">
           What are you interested in?
         </h2>
       </div>
 
-      <div className="mx-auto mt-6 grid max-w-3xl grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
-        {DEFAULT_INTERESTS.map((interest) => (
+      <div className="mx-auto mt-6 max-w-4xl">
+        <InterestGroup label="Popular fields">
+          {DEFAULT_INTERESTS.map((interest) => (
+            <InterestCard
+              key={interest.id}
+              interest={interest}
+              selected={selectedIds.includes(interest.id)}
+              disabled={!selectedIds.includes(interest.id) && atLimit}
+              onClick={() => toggleInterest(interest.id)}
+            />
+          ))}
           <InterestCard
-            key={interest.id}
-            interest={interest}
-            selected={selectedIds.includes(interest.id)}
-            disabled={!selectedIds.includes(interest.id) && atLimit}
-            onClick={() => toggleInterest(interest.id)}
+            interest={{ id: "not-sure", label: "Not sure yet", subtitle: "Let's figure it out" }}
+            icon={NOT_SURE_ICON}
+            selected={notSure}
+            disabled={false}
+            onClick={selectNotSure}
           />
-        ))}
+        </InterestGroup>
 
         {showMore && (
           <>
-            <h3 className="col-span-full mt-3 text-left text-xs font-bold tracking-wide text-slate-500">More fields</h3>
-            {MORE_FIELDS.map((interest) => (
-              <InterestCard
-                key={interest.id}
-                interest={interest}
-                selected={selectedIds.includes(interest.id)}
-                disabled={!selectedIds.includes(interest.id) && atLimit}
-                onClick={() => toggleInterest(interest.id)}
-              />
-            ))}
-            <h3 className="col-span-full mt-3 text-left text-xs font-bold tracking-wide text-slate-500">
-              Creative and other paths
-            </h3>
-            {PATH_INTERESTS.map((interest) => (
-              <InterestCard
-                key={interest.id}
-                interest={interest}
-                selected={selectedIds.includes(interest.id)}
-                disabled={!selectedIds.includes(interest.id) && atLimit}
-                onClick={() => toggleInterest(interest.id)}
-              />
-            ))}
+            <InterestGroup label="Health & life sciences" className="mt-5">
+              {HEALTH_LIFE_FIELDS.map((interest) => (
+                <InterestCard
+                  key={interest.id}
+                  interest={interest}
+                  selected={selectedIds.includes(interest.id)}
+                  disabled={!selectedIds.includes(interest.id) && atLimit}
+                  onClick={() => toggleInterest(interest.id)}
+                />
+              ))}
+            </InterestGroup>
+
+            <InterestGroup label="Social sciences & business" className="mt-5">
+              {PEOPLE_BUSINESS_FIELDS.map((interest) => (
+                <InterestCard
+                  key={interest.id}
+                  interest={interest}
+                  selected={selectedIds.includes(interest.id)}
+                  disabled={!selectedIds.includes(interest.id) && atLimit}
+                  onClick={() => toggleInterest(interest.id)}
+                />
+              ))}
+            </InterestGroup>
+
+            <InterestGroup label="Creative and other paths" className="mt-5">
+              {PATH_INTERESTS.map((interest) => (
+                <InterestCard
+                  key={interest.id}
+                  interest={interest}
+                  selected={selectedIds.includes(interest.id)}
+                  disabled={!selectedIds.includes(interest.id) && atLimit}
+                  onClick={() => toggleInterest(interest.id)}
+                />
+              ))}
+            </InterestGroup>
           </>
         )}
-
-        <InterestCard
-          interest={{ id: "not-sure", label: "Not sure yet", subtitle: "Let's figure it out" }}
-          icon={NOT_SURE_ICON}
-          selected={notSure}
-          disabled={false}
-          onClick={selectNotSure}
-        />
       </div>
 
-      <div className="mx-auto mt-3 max-w-xl text-center">
+      <div className="mx-auto mt-4 max-w-xl text-center">
         {!showMore && (
           <button
             type="button"
@@ -250,16 +353,44 @@ export default function TryCollegeScout() {
         </div>
       ) : (
         <>
+          {isSingle && singleTotal > 0 && (
+            <div className="mx-auto mt-6 flex max-w-4xl flex-wrap items-center justify-between gap-3 rounded-2xl bg-navy-900 px-5 py-4 text-white">
+              <p className="text-sm font-semibold">
+                <span className="text-2xl font-black tabular-nums text-gold-400">{singleTotal}</span>{" "}
+                school{singleTotal === 1 ? "" : "s"} {singleTotal === 1 ? "offers" : "offer"} {singleLabelArticle} {selectedLabel} program
+                {singleTotal > MAX_RESULTS ? ` — showing ${MAX_RESULTS} examples below` : ""}
+              </p>
+              <button
+                type="button"
+                onClick={() => setSingleExpandedTiers(new Set(TIER_ORDER))}
+                className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-gold-500 px-4 py-2 text-xs font-bold text-navy-950 hover:bg-gold-400"
+              >
+                See all {singleTotal} <ArrowRight className="h-3.5 w-3.5" />
+              </button>
+            </div>
+          )}
+
           {isSingle && (
             <>
-              <div className="mx-auto mt-8 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {singleResults.map(({ college, pathway }) => (
-                  <ResultCard key={college.id} college={college}>
-                    <p className="mt-2 text-xs font-semibold text-gold-600">{pathway}</p>
-                    <p className="mt-2 flex-1 text-xs text-slate-500">
-                      Offers bachelor&apos;s degrees in {selectedLabel.toLowerCase()}.
-                    </p>
-                  </ResultCard>
+              <div className="mx-auto mt-6 max-w-4xl">
+                {groupByTier(singleResults).map(({ tier, items }) => (
+                  <ResultTierGroup
+                    key={tier}
+                    tier={tier}
+                    total={singleTierCounts.get(tier) ?? items.length}
+                    expanded={singleExpandedTiers.has(tier)}
+                    onToggle={() => toggleTier(setSingleExpandedTiers, tier)}
+                    exampleItems={items}
+                    fullItems={groupByTier(singleFullResults).find((g) => g.tier === tier)?.items ?? items}
+                    renderCard={({ college, pathway }) => (
+                      <ResultCard key={college.id} college={college}>
+                        <p className="mt-2 text-xs font-semibold text-gold-600">{pathway}</p>
+                        <p className="mt-2 flex-1 text-xs text-slate-500">
+                          Offers bachelor&apos;s degrees in {selectedLabel.toLowerCase()}.
+                        </p>
+                      </ResultCard>
+                    )}
+                  />
                 ))}
               </div>
 
@@ -296,19 +427,54 @@ export default function TryCollegeScout() {
 
           {isMulti && (
             <>
+              {(combineTotal > 0 || strongTotal > 0) && (
+                <div className="mx-auto mt-6 flex max-w-4xl flex-wrap items-center justify-between gap-3 rounded-2xl bg-navy-900 px-5 py-4 text-white">
+                  <p className="text-sm font-semibold">
+                    <span className="text-2xl font-black tabular-nums text-gold-400">{combineTotal + strongTotal}</span>{" "}
+                    school{combineTotal + strongTotal === 1 ? "" : "s"} match {selectedLabel}
+                    {combineTotal > 0 && strongTotal > 0
+                      ? ` — ${combineTotal} with one combined program, ${strongTotal} with separate programs in each`
+                      : combineTotal > 0
+                        ? " with one combined program"
+                        : " with separate programs in each"}
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setCombineExpandedTiers(new Set(TIER_ORDER));
+                      setStrongExpandedTiers(new Set(TIER_ORDER));
+                    }}
+                    className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-gold-500 px-4 py-2 text-xs font-bold text-navy-950 hover:bg-gold-400"
+                  >
+                    See all {combineTotal + strongTotal} <ArrowRight className="h-3.5 w-3.5" />
+                  </button>
+                </div>
+              )}
+
               <div className="mx-auto mt-8 max-w-4xl">
                 <h3 className="text-sm font-bold tracking-wide text-slate-600">
                   Programs that combine these
                 </h3>
                 {combineResults.length > 0 ? (
-                  <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    {combineResults.map(({ college, label }) => (
-                      <ResultCard key={college.id} college={college}>
-                        <p className="mt-2 text-xs font-semibold text-gold-600">{label}</p>
-                        <p className="mt-2 flex-1 text-xs text-slate-500">
-                          One program built around {selectedLabel.toLowerCase()} together.
-                        </p>
-                      </ResultCard>
+                  <div className="mt-3">
+                    {groupByTier(combineResults).map(({ tier, items }) => (
+                      <ResultTierGroup
+                        key={tier}
+                        tier={tier}
+                        total={combineTierCounts.get(tier) ?? items.length}
+                        expanded={combineExpandedTiers.has(tier)}
+                        onToggle={() => toggleTier(setCombineExpandedTiers, tier)}
+                        exampleItems={items}
+                        fullItems={groupByTier(combineFullResults).find((g) => g.tier === tier)?.items ?? items}
+                        renderCard={({ college, label }) => (
+                          <ResultCard key={college.id} college={college}>
+                            <p className="mt-2 text-xs font-semibold text-gold-600">{label}</p>
+                            <p className="mt-2 flex-1 text-xs text-slate-500">
+                              One program built around {selectedLabel.toLowerCase()} together.
+                            </p>
+                          </ResultCard>
+                        )}
+                      />
                     ))}
                   </div>
                 ) : (
@@ -324,20 +490,31 @@ export default function TryCollegeScout() {
                   Schools with a program in each
                 </h3>
                 {strongResults.length > 0 ? (
-                  <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    {strongResults.map((college) => (
-                      <ResultCard key={college.id} college={college}>
-                        <div className="mt-2 space-y-0.5">
-                          {selectedInterests.map((interest) => (
-                            <p key={interest.id} className="text-xs font-semibold text-gold-600">
-                              {interest.label}: {getPathwayLabel(college, interest.id) ?? interest.label}
+                  <div className="mt-3">
+                    {groupByTier(strongResults.map((college) => ({ college }))).map(({ tier, items }) => (
+                      <ResultTierGroup
+                        key={tier}
+                        tier={tier}
+                        total={strongTierCounts.get(tier) ?? items.length}
+                        expanded={strongExpandedTiers.has(tier)}
+                        onToggle={() => toggleTier(setStrongExpandedTiers, tier)}
+                        exampleItems={items}
+                        fullItems={groupByTier(strongFullResults).find((g) => g.tier === tier)?.items ?? items}
+                        renderCard={({ college }) => (
+                          <ResultCard key={college.id} college={college}>
+                            <div className="mt-2 space-y-0.5">
+                              {selectedInterests.map((interest) => (
+                                <p key={interest.id} className="text-xs font-semibold text-gold-600">
+                                  {interest.label}: {getPathwayLabel(college, interest.id) ?? interest.label}
+                                </p>
+                              ))}
+                            </div>
+                            <p className="mt-2 flex-1 text-xs text-slate-500">
+                              Separate programs in each field &mdash; not a joint degree.
                             </p>
-                          ))}
-                        </div>
-                        <p className="mt-2 flex-1 text-xs text-slate-500">
-                          Separate programs in each field &mdash; not a joint degree.
-                        </p>
-                      </ResultCard>
+                          </ResultCard>
+                        )}
+                      />
                     ))}
                   </div>
                 ) : (
@@ -407,6 +584,23 @@ export default function TryCollegeScout() {
  * correctly without relying on the gold/navy contrast (e.g. for a
  * colorblind viewer, or on a washed-out screen).
  */
+function InterestGroup({
+  label,
+  children,
+  className,
+}: {
+  label?: string;
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <div className={className}>
+      {label && <h3 className="mb-2 text-xs font-bold uppercase tracking-wide text-slate-500">{label}</h3>}
+      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">{children}</div>
+    </div>
+  );
+}
+
 function InterestCard({
   interest,
   icon,
@@ -428,23 +622,82 @@ function InterestCard({
       onClick={onClick}
       aria-pressed={selected}
       className={clsx(
-        "relative flex flex-col items-start gap-1.5 rounded-xl border p-3 text-left transition-colors",
+        "flex h-full flex-col items-start gap-1.5 rounded-2xl border p-3 text-left transition-colors",
         selected
-          ? "border-navy-900 bg-navy-900/5"
+          ? "border-navy-900 bg-navy-900 text-white"
           : disabled
-            ? "cursor-not-allowed border-slate-100 opacity-50"
-            : "border-slate-200 bg-white hover:border-slate-300"
+            ? "cursor-not-allowed border-slate-100 text-slate-400 opacity-50"
+            : "border-slate-200 bg-white text-navy-900 hover:border-slate-300 hover:bg-slate-50"
       )}
     >
-      {selected && (
-        <span className="absolute right-2 top-2 flex h-4 w-4 items-center justify-center rounded-full bg-navy-900 text-white">
-          <Check className="h-2.5 w-2.5" strokeWidth={3} />
-        </span>
-      )}
-      <Icon className="h-5 w-5 text-navy-900" strokeWidth={1.75} />
-      <div className="text-sm font-bold leading-snug text-navy-900">{interest.label}</div>
-      <div className="text-xs leading-snug text-slate-500">{interest.subtitle}</div>
+      <span className="flex items-center gap-2">
+        {selected ? <Check className="h-4 w-4 shrink-0" strokeWidth={3} /> : <Icon className="h-4 w-4 shrink-0" strokeWidth={1.75} />}
+        <span className="text-sm font-semibold leading-tight">{interest.label}</span>
+      </span>
+      <span className={clsx("text-xs leading-snug", selected ? "text-slate-300" : "text-slate-500")}>
+        {interest.subtitle}
+      </span>
     </button>
+  );
+}
+
+const TIER_GROUP_PAGE_SIZE = 9;
+
+/**
+ * One selectivity-tier section of homepage example results. Shows just the
+ * diverse-slate examples by default; "See all N" expands in place to every
+ * match in this tier (itself paginated past TIER_GROUP_PAGE_SIZE) instead of
+ * navigating away, since these are meant to stay a quick homepage preview.
+ */
+function ResultTierGroup<T extends { college: College }>({
+  tier,
+  total,
+  expanded,
+  onToggle,
+  exampleItems,
+  fullItems,
+  renderCard,
+}: {
+  tier: string;
+  total: number;
+  expanded: boolean;
+  onToggle: () => void;
+  exampleItems: T[];
+  fullItems: T[];
+  renderCard: (item: T) => React.ReactNode;
+}) {
+  const [showAllInTier, setShowAllInTier] = useState(false);
+  const canExpand = total > exampleItems.length;
+  const items = expanded ? fullItems : exampleItems;
+  const visible = expanded && !showAllInTier ? items.slice(0, TIER_GROUP_PAGE_SIZE) : items;
+
+  return (
+    <div className="mt-5 first:mt-0">
+      <div className="mb-2 flex items-center justify-between gap-2">
+        <h4 className="text-xs font-bold uppercase tracking-wide text-slate-500">
+          {tier} <span className="font-semibold normal-case text-slate-400">&middot; {total} school{total === 1 ? "" : "s"}</span>
+        </h4>
+        {canExpand && (
+          <button
+            type="button"
+            onClick={onToggle}
+            className="shrink-0 text-xs font-semibold text-gold-600 underline underline-offset-2 hover:text-gold-700"
+          >
+            {expanded ? "Show fewer" : `See all ${total}`}
+          </button>
+        )}
+      </div>
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{visible.map(renderCard)}</div>
+      {expanded && !showAllInTier && items.length > TIER_GROUP_PAGE_SIZE && (
+        <button
+          type="button"
+          onClick={() => setShowAllInTier(true)}
+          className="mt-3 text-xs font-semibold text-gold-600 underline underline-offset-2 hover:text-gold-700"
+        >
+          Show all {items.length} in this tier
+        </button>
+      )}
+    </div>
   );
 }
 

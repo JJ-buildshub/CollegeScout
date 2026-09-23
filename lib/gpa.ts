@@ -108,14 +108,31 @@ export const UC_MAX_10TH_GRADE_HONORS = 4;
 const nonNegative = (n: number | undefined) => (typeof n === "number" && Number.isFinite(n) && n > 0 ? n : 0);
 
 /**
- * UC's GPA, per admission.universityofcalifornia.edu/.../gpa-requirement.html:
- * grade points (A=4 ... D=1) plus one extra point for each honors semester
- * (at most 8 across 10th and 11th grade, and at most 4 from 10th grade), divided
- * by the number of letter grades. Written here as unweighted GPA plus
- * (honors points / semesters), which is the same arithmetic.
+ * UC's GPA, per admission.universityofcalifornia.edu/admission-requirements/
+ * first-year-requirements/gpa-requirement.html: grade points (A=4 ... D=1)
+ * for every A-G semester from summer after 9th grade through summer after
+ * 11th grade, plus one extra point for each *eligible* honors semester (at
+ * most 8 across 10th and 11th grade, at most 4 from 10th grade), divided by
+ * the number of letter grades. Written here as unweighted GPA plus (honors
+ * points / semesters), which is the same arithmetic. Verified against hand
+ * -worked cases for the cap logic in scripts/check-uc-gpa.mts.
  *
  * `honors10Semesters`, when given, applies the 10th-grade limit; when it isn't,
  * only the overall 8 cap applies, since the split isn't known.
+ *
+ * IMPORTANT — this function trusts `honorsSemesters` as already eligible.
+ * UC's own rule is "grades of D or F in an honors course do not earn an
+ * extra point," which needs the grade earned in *each* honors course, not
+ * just a count of how many were taken. That's why nothing in the live
+ * student-profile flow (lib/profile.ts, app/matcher/page.tsx) calls this
+ * function today — the profile only collects aggregate semester counts, not
+ * per-course grades, so it can't itself guarantee that precondition holds
+ * (a student could enter "6 honors semesters" that includes one they got a D
+ * in). Rather than present a number that might silently ignore that rule,
+ * the app compares UC schools using unweighted GPA alone (see
+ * computeGpaSummary's cumulativeUnweighted) until real course-level input is
+ * collected. This function stays correct and tested for whenever that
+ * happens.
  */
 export function calculateUcCappedGpa({
   unweightedGpa,
@@ -209,11 +226,9 @@ export function validSatScore(score: number | null | undefined): score is number
 
 // CSU uses its own GPA calculation, not UC's — and we don't have a verified
 // CSU-specific formula in this codebase. Rather than build a guessed one,
-// CSU falls back to the same treatment as Private/Out-of-State Public:
+// CSU falls back to the same treatment as Private/Public:
 // compare the student's unweighted GPA against the school's unweighted range.
-function usesUcCappedMetric(college: College): boolean {
-  return college.system === "UC";
-}
+// UC is handled entirely separately — see evaluateUcFit below.
 
 /**
  * True only when the school reports a *meaningfully different* in-state vs.
@@ -391,6 +406,35 @@ export function classifyFit(
 
 const CATEGORY_RANK: Record<AdmitRateLean, number> = { Reach: 0, Target: 1, Safety: 2 };
 
+/**
+ * A rough Reach/Target/Likely estimate from admit rate alone, for a school
+ * that publishes no GPA range (and has no usable SAT comparison either).
+ * Always labeled "Estimated" wherever it's shown — this is a much weaker
+ * signal than comparing the student's own numbers to a published range, and
+ * should never be presented the same way as a real classification.
+ */
+function estimateFromAdmitRateOnly(admitRateOverall: number, satRangePublished: boolean): { category: AdmitRateLean; reason: string } {
+  const satHint = satRangePublished
+    ? " This school does publish an SAT range — add your SAT score above for a closer estimate."
+    : "";
+  if (admitRateOverall < 0.15) {
+    return {
+      category: "Reach",
+      reason: `Estimated from this school's admit rate alone, since it doesn't publish a GPA range: under 15% admitted makes this a Reach for most applicants.${satHint}`,
+    };
+  }
+  if (admitRateOverall < 0.4) {
+    return {
+      category: "Target",
+      reason: `Estimated from this school's admit rate alone, since it doesn't publish a GPA range: this keeps it a realistic Target.${satHint}`,
+    };
+  }
+  return {
+    category: "Safety",
+    reason: `Estimated from this school's admit rate alone, since it doesn't publish a GPA range: an admit rate this broad makes it Likely, though it isn't compared to your own numbers.${satHint}`,
+  };
+}
+
 // 40 SAT points plays the role 0.1 GPA does in classifyFit: "comfortably" above
 // the top of the range, at roughly a quarter of a typical mid-50% width.
 const SAT_COMFORT_MARGIN = 40;
@@ -418,19 +462,25 @@ const SAT_COMFORT_MARGIN = 40;
  * `resolveAdmitRate`) derives the right in-state/out-of-state rate per
  * school automatically. Either can be omitted; both default to the overall
  * rate.
+ *
+ * UC schools are classified entirely separately — see evaluateUcFit — and
+ * never reach the logic below.
  */
 export function evaluateCollegeFit(
   college: College,
-  ucCappedGpa: number,
+  ucCappedGpa: number | null,
   unweightedGpa: number,
   residency?: "in-state" | "out-of-state",
   homeState?: string | null,
   satScore?: number | null
 ): FitResult | null {
-  const useUcCapped = usesUcCappedMetric(college);
-  const rangeStr = useUcCapped ? college.mid50_GPA_UCCapped : college.mid50_GPA_Unweighted;
+  if (college.system === "UC") {
+    return evaluateUcFit(college, ucCappedGpa, residency, homeState);
+  }
+
+  const rangeStr = college.mid50_GPA_Unweighted;
   const parsed = parseGpaRange(rangeStr);
-  const studentGpaUsed = useUcCapped ? ucCappedGpa : unweightedGpa;
+  const studentGpaUsed = unweightedGpa;
   const { rate: admitRate, context: residencyContext } = resolveAdmitRate(college, residency, homeState);
 
   const gpaFit = parsed ? classifyFit(studentGpaUsed, parsed.low, parsed.high, admitRate) : null;
@@ -455,6 +505,26 @@ export function evaluateCollegeFit(
     satFit && satRange && validSatScore(satScore) ? { score: satScore, low: satRange.low, high: satRange.high } : null;
 
   if (!gpaFit && !satFit) {
+    if (!parsed) {
+      // No GPA range published at all: fall back to an admit-rate-only estimate rather than
+      // leaving the school entirely unclassified — always marked isEstimated so the UI can
+      // label it clearly rather than presenting it as a real comparison.
+      const estimate = estimateFromAdmitRateOnly(admitRate, satRange !== null);
+      return {
+        college,
+        category: estimate.category,
+        studentGpaUsed,
+        gpaMetricLabel: "GPA band not reported",
+        rangeLow: null,
+        rangeHigh: null,
+        reason: estimate.reason,
+        residencyContext,
+        sat: null,
+        satNote,
+        band: null,
+        isEstimated: true,
+      };
+    }
     return {
       college,
       category: "Unrated",
@@ -466,6 +536,8 @@ export function evaluateCollegeFit(
       residencyContext,
       sat: null,
       satNote,
+      band: null,
+      isEstimated: false,
     };
   }
 
@@ -482,12 +554,99 @@ export function evaluateCollegeFit(
     college,
     category: driver.category,
     studentGpaUsed,
-    gpaMetricLabel: useUcCapped ? "UC Capped GPA" : "Unweighted GPA",
+    gpaMetricLabel: "Unweighted GPA",
     rangeLow: parsed?.low ?? null,
     rangeHigh: parsed?.high ?? null,
     reason: driver.reason,
     residencyContext,
     sat,
     satNote,
+    band: driver.band,
+    isEstimated: false,
+  };
+}
+
+/** FitResult.gpaMetricLabel for a UC school with no self-reported GPA — checked by name in FitCollegeCard to know not to render a GPA number (there isn't a real one to show). */
+export const UC_GPA_NOT_ENTERED_LABEL = "UC-capped GPA not entered";
+
+/**
+ * UC-only classification, kept entirely separate from evaluateCollegeFit's
+ * general path above. UC does not use a school's own reported GPA or
+ * consider SAT/ACT scores at all (system-wide test-free policy) — so:
+ *
+ * - A student's school-reported unweighted/weighted GPA is never compared
+ *   against UC's 3.0/3.4 eligibility minimums or a campus's published
+ *   UC-capped GPA range. It isn't even accepted as a parameter here.
+ * - SAT/ACT is never used, regardless of a campus's testingPolicy field.
+ * - `ucCappedGpa` is the student's own self-reported figure, calculated
+ *   elsewhere using UC's real A-G methodology (see UcCappedGpaField) — the
+ *   only GPA this function will compare against a UC campus's range.
+ * - Without it, this returns an admit-rate-only estimate (isEstimated:
+ *   true, "Limited-data estimate" in the UI) — the same treatment as any
+ *   other school with nothing usable to compare, never silently falling
+ *   back to the school-reported GPA.
+ */
+function evaluateUcFit(
+  college: College,
+  ucCappedGpa: number | null,
+  residency?: "in-state" | "out-of-state",
+  homeState?: string | null
+): FitResult {
+  const { rate: admitRate, context: residencyContext } = resolveAdmitRate(college, residency, homeState);
+  const majorNote =
+    "Major and campus selectivity can differ from this figure — some majors and campuses admit separately and more selectively than the overall rate (see the school's own 'Impacted Majors,' when reported).";
+
+  if (ucCappedGpa === null) {
+    // Never hint at an SAT score here (the third param to estimateFromAdmitRateOnly) — UC doesn't use one.
+    const estimate = estimateFromAdmitRateOnly(admitRate, false);
+    return {
+      college,
+      category: estimate.category,
+      studentGpaUsed: 0,
+      gpaMetricLabel: UC_GPA_NOT_ENTERED_LABEL,
+      rangeLow: null,
+      rangeHigh: null,
+      reason: `UC doesn't consider your school-reported GPA or SAT/ACT scores in admission decisions. ${estimate.reason} ${majorNote}`,
+      residencyContext,
+      sat: null,
+      satNote: null,
+      band: null,
+      isEstimated: true,
+    };
+  }
+
+  const parsed = parseGpaRange(college.mid50_GPA_UCCapped);
+  if (!parsed) {
+    const estimate = estimateFromAdmitRateOnly(admitRate, false);
+    return {
+      college,
+      category: estimate.category,
+      studentGpaUsed: ucCappedGpa,
+      gpaMetricLabel: "UC-capped GPA range not reported",
+      rangeLow: null,
+      rangeHigh: null,
+      reason: `This campus doesn't publish a UC-capped GPA range. ${estimate.reason} ${majorNote}`,
+      residencyContext,
+      sat: null,
+      satNote: null,
+      band: null,
+      isEstimated: true,
+    };
+  }
+
+  const fit = classifyFit(ucCappedGpa, parsed.low, parsed.high, admitRate, { noun: "self-reported UC-capped GPA" });
+  return {
+    college,
+    category: fit.category,
+    studentGpaUsed: ucCappedGpa,
+    gpaMetricLabel: "UC-Capped GPA (self-reported)",
+    rangeLow: parsed.low,
+    rangeHigh: parsed.high,
+    reason: `${fit.reason} ${majorNote}`,
+    residencyContext,
+    sat: null,
+    satNote: null,
+    band: fit.band,
+    isEstimated: false,
   };
 }

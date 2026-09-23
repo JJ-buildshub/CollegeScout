@@ -1,10 +1,14 @@
 import Link from "next/link";
-import { MapPin } from "lucide-react";
+import { AlertTriangle, MapPin, Sparkles } from "lucide-react";
 import type { FitResult } from "@/lib/types";
 import { displayedAdmitRate } from "@/lib/colleges";
-import { personalizeForAudience, type PlanningFor } from "@/lib/gpa";
+import { personalizeForAudience, UC_GPA_NOT_ENTERED_LABEL, type PlanningFor } from "@/lib/gpa";
+import { majorCautionFor, meritAidEligible, MERIT_AID_TAG_LABEL } from "@/lib/fitTags";
+import { useCollegeList } from "@/lib/collegeList";
 import { SYSTEM_ACCENT } from "./SystemBadge";
 import SaveToggleButton from "./SaveToggleButton";
+import SchoolStatusBadge from "./SchoolStatusBadge";
+import AddToApplicationsButton from "./AddToApplicationsButton";
 
 /**
  * A mid-50% range bar with the student's marker. The domain always covers
@@ -56,22 +60,32 @@ function RangeBar({
 export default function FitCollegeCard({
   result,
   planningFor = "self",
+  interestFieldIds = [],
+  id,
 }: {
   result: FitResult;
   planningFor?: PlanningFor;
+  /** The student's chosen interest field ids — drives the major-caution tag. */
+  interestFieldIds?: string[];
+  /** DOM id, so "See my fit" from Explore can scroll straight to this card. */
+  id?: string;
 }) {
-  const { college, studentGpaUsed, gpaMetricLabel, rangeLow, rangeHigh, reason, sat, satNote } = result;
+  const { college, studentGpaUsed, gpaMetricLabel, rangeLow, rangeHigh, reason, sat, satNote, isEstimated } = result;
   const hasRange = rangeLow !== null && rangeHigh !== null;
+  // No self-reported UC GPA was entered — studentGpaUsed is a placeholder 0, never a real
+  // figure to show (see UC_GPA_NOT_ENTERED_LABEL in lib/gpa.ts).
+  const gpaNotEntered = gpaMetricLabel === UC_GPA_NOT_ENTERED_LABEL;
   const accent = SYSTEM_ACCENT[college.system];
   const admitPct = Math.round(displayedAdmitRate(college).value * 100);
+  const { state } = useCollegeList();
+  const entry = state.entries[college.id];
+  const caution = majorCautionFor(college, interestFieldIds);
+  const meritAid = meritAidEligible(result);
 
   return (
-    <Link
-      href={`/directory/${college.id}`}
-      className="block overflow-hidden rounded-xl border border-slate-200 bg-white shadow-card transition-all hover:-translate-y-0.5 hover:shadow-cardHover"
-    >
+    <div id={id} className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-card transition-all hover:shadow-cardHover">
       <div className={`h-1 ${accent.edge}`} />
-      <div className="p-4">
+      <Link href={`/directory/${college.id}`} className="block p-4 pb-0">
       <div className="flex items-start justify-between gap-2">
         <div>
           <span className={`text-[11px] font-bold tracking-wide ${accent.text}`}>{college.system}</span>
@@ -96,10 +110,12 @@ export default function FitCollegeCard({
         <div className="mt-3">
           <div className="flex justify-between text-[11px] font-medium text-slate-400">
             <span>{gpaMetricLabel}</span>
-            <span>
-              {planningFor === "student" ? "Your student:" : "You:"}{" "}
-              <span className="font-bold text-navy-900">{studentGpaUsed.toFixed(2)}</span>
-            </span>
+            {!gpaNotEntered && (
+              <span>
+                {planningFor === "student" ? "Your student:" : "You:"}{" "}
+                <span className="font-bold text-navy-900">{studentGpaUsed.toFixed(2)}</span>
+              </span>
+            )}
           </div>
           {hasRange && (
             <RangeBar
@@ -126,6 +142,12 @@ export default function FitCollegeCard({
         </div>
       )}
 
+      {isEstimated && (
+        <span className="mt-3 inline-flex items-center gap-1 rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-bold text-slate-500">
+          Limited-data estimate
+        </span>
+      )}
+
       <p className="mt-3 text-xs leading-snug text-slate-500">
         {personalizeForAudience(reason, planningFor)}
       </p>
@@ -134,7 +156,25 @@ export default function FitCollegeCard({
           {personalizeForAudience(satNote, planningFor)}
         </p>
       )}
+      </Link>
+
+      <div className="px-4 pb-4">
+        {caution && (
+          <p className="mt-2 flex items-start gap-1.5 rounded-lg bg-amber-50 px-2.5 py-1.5 text-[11px] leading-snug text-amber-800">
+            <AlertTriangle className="mt-0.5 h-3 w-3 shrink-0" /> {caution}
+          </p>
+        )}
+        {meritAid && (
+          <p className="mt-2 flex items-center gap-1.5 rounded-lg bg-emerald-50 px-2.5 py-1.5 text-[11px] font-semibold text-emerald-700">
+            <Sparkles className="h-3 w-3 shrink-0" /> {MERIT_AID_TAG_LABEL}
+          </p>
+        )}
+
+        <div className="mt-3 flex flex-wrap items-center gap-2">
+          {entry && entry.status !== "Saved" && <SchoolStatusBadge status={entry.status} round={entry.round} />}
+          <AddToApplicationsButton college={college} alreadyApplying={!!entry && entry.status !== "Saved"} />
+        </div>
       </div>
-    </Link>
+    </div>
   );
 }

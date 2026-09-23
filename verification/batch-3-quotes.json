@@ -62,5 +62,31 @@
   "evidence": [
    "Yes, we require students to submit either the SAT or ACT with their application."
   ]
+ },
+ "georgetown plans": {
+  "url": "https://uadmissions.georgetown.edu/apply/first-year-applicants/",
+  "evidence": [
+   "Georgetown offers two application deadlines: Early Action: November 1 Regular Decision: January 1",
+   "Georgetown’s Early Action policy is non-binding"
+  ]
+ },
+ "jhu plans": {
+  "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/",
+  "evidence": [
+   "Application Deadline November 1, 2026 January 2, 2027 January 2, 2027 March 1, 2027"
+  ]
+ },
+ "notre dame plans": {
+  "url": "https://admissions.nd.edu/apply/",
+  "evidence": [
+   "Restrictive Early Action November 1",
+   "Regular Decision January 4"
+  ]
+ },
+ "notre dame test": {
+  "url": "https://admissions.nd.edu/apply/",
+  "evidence": [
+   "Notre Dame is test-optional through the 2026/2027 application cycle."
+  ]
  }
 }

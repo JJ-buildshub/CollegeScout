@@ -1,0 +1,43 @@
+{
+ "fsu plans": {
+  "url": "https://admissions.fsu.edu/deadlines",
+  "evidence": [
+   "Early Decision Eligible Applicants: Domestic Students (No Talent-Based Majors or CARE Summer Bridge) Application Deadline: October 15",
+   "Decision Type: Binding",
+   "Early Action Eligible Applicants: FL Residents Only Application Deadline: October 15",
+   "Regular Decision Eligible Applicants: All Students Application Deadline: December 1"
+  ]
+ },
+ "fsu test": {
+  "url": "https://admissions.fsu.edu/deadlines",
+  "evidence": [
+   "At least one test score must be submitted before the material deadline"
+  ]
+ },
+ "usf plans": {
+  "url": "https://www.usf.edu/admissions/freshmen/admission-information/dates-deadlines.aspx",
+  "evidence": [
+   "Early Action November 2, 2026 November 16, 2026 December 9, 2026 Admit, Deny or Defer",
+   "Regular Decision December 16, 2026 January 15, 2027 February 10, 2027 Admit, Waitlist or Deny",
+   "Rolling March 1, 2027 March 15, 2027"
+  ]
+ },
+ "usf test": {
+  "url": "https://www.usf.edu/admissions/freshmen/admission-information/requirements-deadlines.aspx",
+  "evidence": [
+   "official results for at least one college entrance exam"
+  ]
+ },
+ "ucf plans": {
+  "url": "https://www.ucf.edu/admissions/undergraduate/question/what-are-the-application-deadlines-for-first-year-students/",
+  "evidence": [
+   "APPLICATION DEADLINE Oct. 15 (Summer & Fall) Mar. 1 (Summer) May 1 (Fall)"
+  ]
+ },
+ "ucf test": {
+  "url": "https://www.ucf.edu/admissions/undergraduate/freshman/",
+  "evidence": [
+   "Official Standardized Test Scores* from either SAT [code: 5233], ACT** [code: 0735], or CLT"
+  ]
+ }
+}

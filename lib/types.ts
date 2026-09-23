@@ -1,6 +1,7 @@
-export type CollegeSystem = "UC" | "CSU" | "Private" | "Out-of-State Public";
+export type CollegeSystem = "UC" | "CSU" | "Private" | "Public";
 
-export type TestingPolicy = "Test-Free" | "Test-Required" | "Test-Optional" | "Test-Blind";
+/** "Not verified" means the school's own page has not been read yet; never a guess at the policy. */
+export type TestingPolicy = "Test-Free" | "Test-Required" | "Test-Optional" | "Test-Blind" | "Not verified";
 
 export interface FlagshipProgram {
   name: string;
@@ -92,7 +93,8 @@ export interface College {
   id: string;
   name: string;
   system: CollegeSystem;
-  rank: number;
+  /** Curated ordering for the original schools only; schools added later have none. */
+  rank?: number;
   location: string;
   /**
    * Two-letter USPS state code (or "DC"), derived once from `location` via
@@ -262,6 +264,10 @@ export interface FitResult {
   sat: { score: number; low: number; high: number } | null;
   /** Plain-language note when a score was deliberately left out (e.g. below range at a test-optional school). */
   satNote: string | null;
+  /** Where the driving value (GPA or SAT) sat relative to the published range — null when there was no range to compare against at all. */
+  band: "below" | "within" | "above" | null;
+  /** True when category came from admit rate alone because the school publishes no GPA range — always shown labeled "Estimated." */
+  isEstimated: boolean;
 }
 
 export type Grade = 9 | 10 | 11 | 12;

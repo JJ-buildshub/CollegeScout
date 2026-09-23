@@ -45,12 +45,16 @@ export async function checkEntries(entries, accessed) {
   let failed = 0;
   let skipped = 0;
   for (const [id, entry] of Object.entries(entries)) {
-    const body = await download(entry.url);
-    if (body === null && entry.manual) {
+    // `manual: true` means a person read this page directly in a browser rather than trusting
+    // this script — either because the page refuses automated requests (download returns null)
+    // or because the quoted text is filled in by client-side JavaScript and never appears in the
+    // HTML this script fetches. Either way, there's nothing here for the script to check.
+    if (entry.manual) {
       skipped += entry.evidence.length;
-      console.log(`[${id}] skipped: this page blocks automated requests; read in a browser on ${accessed}`);
+      console.log(`[${id}] skipped: read in a browser on ${accessed} (not checkable automatically)`);
       continue;
     }
+    const body = await download(entry.url);
     const page = body === null ? null : normalize(body);
     for (const line of entry.evidence) {
       checked += 1;
