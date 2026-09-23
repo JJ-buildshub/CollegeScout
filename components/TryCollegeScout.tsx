@@ -33,6 +33,7 @@ import {
   DEFAULT_INTEREST_IDS,
   INTEREST_TAXONOMY,
   MAX_SELECTED_INTERESTS,
+  countMatches,
   getCombinedProgramLabel,
   getMatchTier,
   getPathwayLabel,
@@ -124,9 +125,9 @@ export default function TryCollegeScout() {
 
   // Multi-interest view: split into "combine" and "strong in each," each
   // drawing its top slate the same diverse way.
-  const { combineResults, strongResults, strongTotal } = useMemo(() => {
+  const { combineResults, combineTotal, strongResults, strongTotal } = useMemo(() => {
     if (notSure || selectedIds.length < 2) {
-      return { combineResults: [], strongResults: [], strongTotal: 0 };
+      return { combineResults: [], combineTotal: 0, strongResults: [], strongTotal: 0 };
     }
     const combineLabels = new Map<string, string>();
     for (const c of colleges) {
@@ -149,6 +150,7 @@ export default function TryCollegeScout() {
 
     return {
       combineResults: combineSlate,
+      combineTotal: combineLabels.size,
       strongResults: pickDiverseSlate(strongCandidates, MAX_RESULTS),
       strongTotal: strong.length,
     };
@@ -158,6 +160,8 @@ export default function TryCollegeScout() {
   const isSingle = !notSure && selectedIds.length === 1;
   const selectedLabel = selectedInterests.map((i) => i.label).join(", ");
   const interestsQuery = selectedIds.join(",");
+  const singleTotal = isSingle ? countMatches(colleges, selectedIds[0]) : 0;
+  const singleLabelArticle = /^[aeiou]/i.test(selectedLabel) ? "an" : "a";
 
   return (
     <section className="rounded-3xl border border-slate-200 bg-white px-6 pb-6 pt-8 shadow-card sm:px-10 sm:pb-10 sm:pt-10">
@@ -250,9 +254,25 @@ export default function TryCollegeScout() {
         </div>
       ) : (
         <>
+          {isSingle && singleTotal > 0 && (
+            <div className="mx-auto mt-6 flex max-w-4xl flex-wrap items-center justify-between gap-3 rounded-2xl bg-navy-900 px-5 py-4 text-white">
+              <p className="text-sm font-semibold">
+                <span className="text-2xl font-black tabular-nums text-gold-400">{singleTotal}</span>{" "}
+                school{singleTotal === 1 ? "" : "s"} {singleTotal === 1 ? "offers" : "offer"} {singleLabelArticle} {selectedLabel} program
+                {singleTotal > MAX_RESULTS ? ` — showing ${MAX_RESULTS} examples below` : ""}
+              </p>
+              <Link
+                href={`/directory?interests=${interestsQuery}`}
+                className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-gold-500 px-4 py-2 text-xs font-bold text-navy-950 hover:bg-gold-400"
+              >
+                See all {singleTotal} <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+          )}
+
           {isSingle && (
             <>
-              <div className="mx-auto mt-8 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="mx-auto mt-6 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {singleResults.map(({ college, pathway }) => (
                   <ResultCard key={college.id} college={college}>
                     <p className="mt-2 text-xs font-semibold text-gold-600">{pathway}</p>
@@ -296,6 +316,26 @@ export default function TryCollegeScout() {
 
           {isMulti && (
             <>
+              {(combineTotal > 0 || strongTotal > 0) && (
+                <div className="mx-auto mt-6 flex max-w-4xl flex-wrap items-center justify-between gap-3 rounded-2xl bg-navy-900 px-5 py-4 text-white">
+                  <p className="text-sm font-semibold">
+                    <span className="text-2xl font-black tabular-nums text-gold-400">{combineTotal + strongTotal}</span>{" "}
+                    school{combineTotal + strongTotal === 1 ? "" : "s"} match {selectedLabel}
+                    {combineTotal > 0 && strongTotal > 0
+                      ? ` — ${combineTotal} with one combined program, ${strongTotal} with separate programs in each`
+                      : combineTotal > 0
+                        ? " with one combined program"
+                        : " with separate programs in each"}
+                  </p>
+                  <Link
+                    href={`/directory?interests=${interestsQuery}`}
+                    className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-gold-500 px-4 py-2 text-xs font-bold text-navy-950 hover:bg-gold-400"
+                  >
+                    See all {combineTotal + strongTotal} <ArrowRight className="h-3.5 w-3.5" />
+                  </Link>
+                </div>
+              )}
+
               <div className="mx-auto mt-8 max-w-4xl">
                 <h3 className="text-sm font-bold tracking-wide text-slate-600">
                   Programs that combine these
