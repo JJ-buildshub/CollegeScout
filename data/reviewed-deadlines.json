@@ -3121,6 +3121,263 @@
      "deadline": null
     }
    ]
+  },
+  "high-point-university": {
+   "label": "High Point University admissions",
+   "url": "https://www.highpoint.edu/admissions/apply/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Deadline November 1, 2026"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "February 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ],
+   "manual": true
+  },
+  "fairfield-university": {
+   "label": "Fairfield University admissions",
+   "url": "https://www.fairfield.edu/admission-and-aid/apply/first-year-applicants/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Fairfield does not require students to submit standardized tests"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 15"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": false,
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026-27 application cycle based on access date 2026-09-22."
+  },
+  "grand-valley-state-university": {
+   "label": "Grand Valley State University admissions",
+   "url": "https://www.gvsu.edu/admissions/undergraduate-application-12",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "GVSU follows a rolling admission policy, reviewing applications as they become complete."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": false
+  },
+  "state-university-of-new-york-at-new-paltz": {
+   "label": "SUNY New Paltz admissions",
+   "url": "https://www.newpaltz.edu/admissions/freshmen.html",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Students who wish to be considered for Early Action admission must have the application and required application materials received and completed by November 15.",
+    "Fall General Freshman Admission May 1"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "May 1"
+    }
+   ],
+   "manual": true
+  },
+  "rowan-university": {
+   "label": "Rowan University admissions",
+   "url": "https://admissions.rowan.edu/admissions-process/app-calendar-fees.html",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "March 1"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "March 1"
+    }
+   ],
+   "manual": false,
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026-27 application cycle based on access date 2026-09-22."
+  },
+  "state-university-of-new-york-at-cortland": {
+   "label": "SUNY Cortland admissions",
+   "url": "https://www2.cortland.edu/admissions/undergraduate/freshmen-applicants/requirements.dot",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "there is no deadline for filing the application other than the Nov. 15 early action deadline"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": true
+  },
+  "indiana-university-indianapolis": {
+   "label": "IU Indianapolis admissions",
+   "url": "https://indianapolis.iu.edu/admissions/apply/dates/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Application closes for fall admission"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "July 1",
+     "note": "Rolling admission; July 1 is the application close date."
+    }
+   ],
+   "manual": true
+  },
+  "university-of-memphis": {
+   "label": "University of Memphis admissions",
+   "url": "https://www.memphis.edu/admissions/basics/deadlines.php",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Application Deadline",
+    "File Completion Deadline"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "July 1",
+     "note": "File completion deadline is August 1."
+    }
+   ],
+   "manual": true
+  },
+  "iowa-state-university": {
+   "label": "Iowa State University admissions",
+   "url": "https://www.iastate.edu/admission-and-aid/admissions",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Iowa State University has a rolling admissions policy, which means applications are evaluated when received and not after a deadline date."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": true
+  },
+  "montana-state-university": {
+   "label": "Montana State University admissions",
+   "url": "https://www.montana.edu/admissions/apply/freshman.html",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "New students may apply for admission at any time without all the necessary required materials."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": true
+  },
+  "university-of-new-mexico": {
+   "label": "University of New Mexico admissions",
+   "url": "https://admissions.unm.edu/future-students/freshmen/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Please submit either an online application or a hardcopy application form by the priority consideration date for the term to which you want to attend."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "June 1",
+     "note": "Non-binding priority application date for Fall term entry under rolling admission; UNM offers no ED/EA/RD-named plans."
+    }
+   ],
+   "manual": false
+  },
+  "minnesota-state-university-mankato": {
+   "label": "Minnesota State University-Mankato admissions",
+   "url": "https://www.mnsu.edu/become-a-student/undergraduate-students/undergraduate-application-process-calendar/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Your college application is due five days before the start of classes, but we recommend submitting it much sooner."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "Application due five working days before the start of classes; no fixed calendar deadline."
+    }
+   ],
+   "manual": false
+  },
+  "central-connecticut-state-university": {
+   "label": "Central Connecticut State University admissions",
+   "url": "https://www.ccsu.edu/first-year-admissions/admissions-requirements",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Central accepts applications on a rolling admissions basis. The preferred application deadlines for first-year students are May 1 for the fall semester and December 1 for the spring semester."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "May 1",
+     "note": "Preferred (non-binding) application date under rolling admission for fall entry; CCSU offers no ED/EA plans."
+    }
+   ],
+   "manual": false
   }
  }
 }

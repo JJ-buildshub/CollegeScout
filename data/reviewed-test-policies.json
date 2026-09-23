@@ -983,6 +983,210 @@
     "Test Optional Admission Requirements** Minimum 3.0 cumulative high school grade point average (GPA) on a 4.0 grading scale"
    ],
    "note": "Test-optional path requires a 3.0+ cumulative unweighted GPA."
+  },
+  "high-point-university": {
+   "policy": "Test-Optional",
+   "label": "High Point University admissions",
+   "url": "https://www.highpoint.edu/admissions/apply/",
+   "evidence": [
+    "High Point University is test optional."
+   ],
+   "manual": true
+  },
+  "fairfield-university": {
+   "policy": "Test-Optional",
+   "label": "Fairfield University admissions",
+   "url": "https://www.fairfield.edu/admission-and-aid/apply/first-year-applicants/",
+   "evidence": [
+    "submitting SAT/ACT test results is optional."
+   ],
+   "manual": false
+  },
+  "new-mexico-state-university": {
+   "policy": "Test-Optional",
+   "label": "New Mexico State University admissions",
+   "url": "https://admissions.nmsu.edu/how-to-apply/first-time-freshmen/",
+   "evidence": [
+    "Official SAT or ACT scores are not required for admission."
+   ],
+   "manual": false
+  },
+  "grand-valley-state-university": {
+   "policy": "Test-Optional",
+   "label": "Grand Valley State University admissions",
+   "url": "https://www.gvsu.edu/admissions/undergraduate-application-12",
+   "evidence": [
+    "SAT or ACT test scores are optional for admission but required for some scholarships.",
+    "The decision to submit test scores will be left up to the applicant."
+   ],
+   "manual": false
+  },
+  "cuny-lehman-college": {
+   "policy": "Test-Optional",
+   "label": "CUNY Lehman College admissions",
+   "url": "https://www.lehman.edu/admissions/undergraduate-admissions/undergraduate-applications/",
+   "evidence": [
+    "SAT or ACT scores are optional"
+   ],
+   "manual": false
+  },
+  "state-university-of-new-york-at-new-paltz": {
+   "policy": "Test-Optional",
+   "label": "SUNY New Paltz admissions",
+   "url": "https://www.newpaltz.edu/admissions/freshmen.html",
+   "evidence": [
+    "SUNY New Paltz is currently test optional. Application review will focus on the strength of the high school coursework taken, the grades achieved in academic course work, letters of recommendation, the extracurricular activities, as well as the structure and quality of the student essay."
+   ],
+   "manual": false
+  },
+  "eastern-kentucky-university": {
+   "policy": "Test-Optional",
+   "label": "Eastern Kentucky University admissions",
+   "url": "https://catalogs.eku.edu/undergraduate/admission-residency/admission/",
+   "evidence": [
+    "While ACT or SAT scores are not required, students are encouraged to submit scores for proper course placement in English, mathematics, and reading courses.",
+    "Although test scores are not used for admission purposes, they are required for course placement and academic readiness purposes"
+   ],
+   "manual": false
+  },
+  "university-of-massachusetts-amherst": {
+   "policy": "Test-Optional",
+   "label": "UMass Amherst admissions",
+   "url": "https://www.umass.edu/admissions/undergraduate-admissions/connect/information-policies/test-optional-policy",
+   "evidence": [
+    "At UMass Amherst, standardized tests are optional for first-year entering applicants.",
+    "The test-optional approach at UMass Amherst applies to all majors."
+   ],
+   "manual": false
+  },
+  "virginia-polytechnic-institute-and-state-university": {
+   "policy": "Test-Optional",
+   "label": "Virginia Tech admissions",
+   "url": "https://www.vt.edu/admissions/undergraduate/apply/freshman-requirements.html",
+   "evidence": [
+    "Virginia Tech is test-optional for students entering through Fall 2028.",
+    "If you do not want to include test scores in the review of your application, it will not impact your admission decision."
+   ],
+   "manual": false
+  },
+  "northern-arizona-university": {
+   "policy": "Test-Optional",
+   "label": "Northern Arizona University admissions",
+   "url": "https://www.commonapp.org/explore/northern-arizona-university",
+   "evidence": [
+    "Test Optional/Flexible - First Year"
+   ],
+   "manual": true,
+   "note": "NAU's own admissions pages do not state a categorical testing policy; classification sourced from Common App per the documented fallback rule."
+  },
+  "cuny-hunter-college": {
+   "policy": "Test-Optional",
+   "label": "Hunter College (CUNY) admissions",
+   "url": "https://hunter-undergraduate.catalog.cuny.edu/admissions/freshman",
+   "evidence": [
+    "Hunter College will be test optional until Spring 2027."
+   ],
+   "manual": true,
+   "note": "Hunter's own catalog states the policy runs 'until Spring 2027'; the exact cutoff for Fall 2027 admission is not separately stated. Treated as continuing for the 2026-27 application cycle absent evidence of a reversal. hunter.cuny.edu itself returns 403 to automated and manual browser access alike."
+  },
+  "state-university-of-new-york-at-cortland": {
+   "policy": "Test-Optional",
+   "label": "SUNY Cortland admissions",
+   "url": "https://www2.cortland.edu/admissions/undergraduate/freshmen-applicants/requirements.dot",
+   "evidence": [
+    "SUNY Cortland is test-optional"
+   ],
+   "manual": true
+  },
+  "indiana-university-indianapolis": {
+   "policy": "Test-Optional",
+   "label": "IU Indianapolis admissions",
+   "url": "https://indianapolis.iu.edu/admissions/apply/test-scores.html",
+   "evidence": [
+    "IU Indianapolis is test optional for admissions and scholarships."
+   ],
+   "manual": false
+  },
+  "university-of-memphis": {
+   "policy": "Test-Required",
+   "label": "University of Memphis admissions",
+   "url": "https://www.memphis.edu/admissions/basics/requirements.php",
+   "evidence": [
+    "All students must provide a standardized exam result (typically the ACT and/or SAT) in support of their application for admission."
+   ],
+   "manual": false
+  },
+  "oklahoma-state-university": {
+   "policy": "Test-Optional",
+   "label": "Oklahoma State University admissions",
+   "url": "https://go.okstate.edu/admissions/freshman/admission-requirements",
+   "evidence": [
+    "Test scores are optional for admission, but required for most scholarships.",
+    "You can apply and be admitted without submitting a test score."
+   ],
+   "manual": true
+  },
+  "university-of-nebraska-lincoln": {
+   "policy": "Test-Optional",
+   "label": "University of Nebraska-Lincoln admissions",
+   "url": "https://admissions.unl.edu/apply/admission-requirements/first-year/",
+   "evidence": [
+    "You are not required to submit an ACT/SAT score to be considered for admission."
+   ],
+   "manual": true
+  },
+  "university-of-maryland-baltimore-county": {
+   "policy": "Test-Optional",
+   "label": "UMBC admissions",
+   "url": "https://umbc.edu/undergraduate/first-year-students/how-to-apply/",
+   "evidence": [
+    "If you graduated high school in the U.S. within the past three years, you may have the appropriate testing agency send us your results from the SAT I or the ACT."
+   ],
+   "manual": false,
+   "note": "Page labels the 'Standardized Test Scores' section as 'Optional' rather than using the phrase 'test-optional' as running text."
+  },
+  "california-state-university-san-bernardino": {
+   "policy": "Test-Free",
+   "label": "CSU San Bernardino admissions",
+   "url": "https://www.csusb.edu/join-the-pack/future-students/apply/freshmen-admissions-requirements",
+   "evidence": [
+    "SAT and ACT scores are no longer required and are not used in the MFAS."
+   ],
+   "manual": false,
+   "note": "CSU system-wide policy is Test-Free, matching existing CSU campus precedents in the dataset; campus page confirms scores are not used in admission scoring."
+  },
+  "howard-university": {
+   "policy": "Test-Optional",
+   "label": "Howard University admissions",
+   "url": "https://admission.howard.edu/undergraduate/admission-policy",
+   "evidence": [
+    "For the 2027-28 admission cycle, SAT/ACT test scores are not required to render a first year admission application complete.",
+    "This policy does not extend to joint degree (e.g. BS/MD, BS/DDS, BA/JD) programs."
+   ],
+   "manual": true,
+   "note": "Page explicitly labels this the 2027-28 admission cycle."
+  },
+  "cuny-brooklyn-college": {
+   "policy": "Test-Optional",
+   "label": "CUNY Brooklyn College admissions",
+   "url": "https://www.brooklyn.edu/admissions-aid/first-year/how-to-apply/requirements-and-deadlines/",
+   "evidence": [
+    "CUNY has revised its testing policy to test optional effective fall 2023 through spring 2027.",
+    "First-year applicants can choose whether to submit SAT or ACT exam scores as part of their application."
+   ],
+   "manual": true,
+   "note": "CUNY's stated test-optional policy explicitly covers 'fall 2023 through spring 2027' admission cycles; it does not separately name Fall 2027. Treated as continuing for the 2026-27 application cycle absent evidence of a reversal or updated policy."
+  },
+  "cuny-bernard-m-baruch-college": {
+   "policy": "Test-Optional",
+   "label": "Baruch College (CUNY) admissions",
+   "url": "https://baruch-undergraduate.catalog.cuny.edu/the-college/admissions/freshman-applicants/overview",
+   "evidence": [
+    "SAT and ACT test scores are not required nor considered in application review process for the Fall 2023 through Spring 2027 admission cycles.",
+    "The absence of SAT or ACT exam scores cannot be used to deny a student admission."
+   ],
+   "manual": false,
+   "note": "CUNY's stated test-optional policy explicitly covers 'fall 2023 through spring 2027' admission cycles; it does not separately name Fall 2027. Treated as continuing for the 2026-27 application cycle absent evidence of a reversal or updated policy."
   }
  }
 }
