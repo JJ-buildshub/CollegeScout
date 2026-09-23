@@ -3075,6 +3075,52 @@
      "deadline": null
     }
    ]
+  },
+  "university-of-west-georgia": {
+   "label": "University of West Georgia admissions",
+   "url": "https://www.westga.edu/undergraduate-admissions/dates-deadlines.php",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Fall 2027 Priority Admission Deadline January 31, 2027 Fall 2027 Admission Deadline August 8, 2027"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "August 8",
+     "note": "January 31, 2027 is UWG's Fall 2027 priority admission deadline, not the final one."
+    }
+   ]
+  },
+  "university-of-central-arkansas": {
+   "label": "University of Central Arkansas admissions",
+   "url": "https://uca.edu/admissions/apply/freshman/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Admission Decisions Applications are processed on a rolling basis throughout the year."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ]
+  },
+  "university-of-northern-iowa": {
+   "label": "University of Northern Iowa admissions",
+   "url": "https://admissions.uni.edu/how-apply/freshmen",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "UNI operates on a rolling admissions basis. Admission of applicants for fall semester begins in July of the preceding year."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ]
   }
  }
 }

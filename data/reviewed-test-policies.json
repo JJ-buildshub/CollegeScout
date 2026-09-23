@@ -974,6 +974,15 @@
    "evidence": [
     "Personal essay (Optional) SAT I or ACT scores sent by high school/College Board or ACT (Optional)"
    ]
+  },
+  "university-of-central-arkansas": {
+   "policy": "Test-Optional",
+   "label": "University of Central Arkansas admissions",
+   "url": "https://uca.edu/admissions/apply/freshman/",
+   "evidence": [
+    "Test Optional Admission Requirements** Minimum 3.0 cumulative high school grade point average (GPA) on a 4.0 grading scale"
+   ],
+   "note": "Test-optional path requires a 3.0+ cumulative unweighted GPA."
   }
  }
 }

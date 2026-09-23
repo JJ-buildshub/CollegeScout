@@ -22045,7 +22045,7 @@
     "admitRateOverall": 0.8949,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "940-1120 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -22062,7 +22062,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 25029,
       "coaOutOfState": 32529,
@@ -22084,7 +22090,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -22157,7 +22163,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of Central Arkansas admissions (https://uca.edu/admissions/apply/freshman/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyNote": "Test-optional path requires a 3.0+ cumulative unweighted GPA.",
+    "testingPolicyProvenance": {
+      "source": "University of Central Arkansas admissions (https://uca.edu/admissions/apply/freshman/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "embry-riddle-aeronautical-university-prescott",
@@ -25972,7 +25989,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "August 8",
+        "note": "January 31, 2027 is UWG's Fall 2027 priority admission deadline, not the final one."
+      }
+    ],
     "financials": {
       "coaInState": 21981,
       "coaOutOfState": 33693,
@@ -25994,7 +26018,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -26067,7 +26091,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of West Georgia admissions (https://www.westga.edu/undergraduate-admissions/dates-deadlines.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "brigham-young-university-hawaii",
@@ -26986,7 +27015,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 22278,
       "coaOutOfState": 34054,
@@ -27008,7 +27043,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -27081,7 +27116,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of Northern Iowa admissions (https://admissions.uni.edu/how-apply/freshmen)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "boise-state-university",
