@@ -10,6 +10,7 @@ import type { FitCategory, FitResult, Grade } from "@/lib/types";
 import { computeGpaSummary, MAX_INTERESTS, setUcCappedGpaSelfReported, setYearGpa as persistYearGpa, updateProfile, useProfile } from "@/lib/profile";
 import { listEntries, useCollegeList } from "@/lib/collegeList";
 import FitCollegeCard from "@/components/FitCollegeCard";
+import FitResultsList from "@/components/FitResultsList";
 import InterestPicker from "@/components/InterestPicker";
 import GpaByYearForm from "@/components/GpaByYearForm";
 import UcCappedGpaField from "@/components/UcCappedGpaField";
@@ -81,9 +82,12 @@ function MatcherContent() {
   const { state: collegeListState } = useCollegeList();
 
   const scrollTarget = searchParams.get("college");
+  // Only handles the "Your Schools" full-card case (id "fit-saved-<id>"); a target that instead
+  // lives in one of the Reach/Target/Likely buckets is scrolled to and expanded by
+  // FitResultsList itself, which owns the plain "fit-<id>" ids there.
   useEffect(() => {
     if (!scrollTarget) return;
-    const el = document.getElementById(`fit-${scrollTarget}`);
+    const el = document.getElementById(`fit-saved-${scrollTarget}`);
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "center" });
       el.classList.add("ring-2", "ring-gold-500");
@@ -316,7 +320,7 @@ function MatcherContent() {
                     return (
                       <FitCollegeCard
                         key={entry.collegeId}
-                        id={`fit-${entry.collegeId}`}
+                        id={`fit-saved-${entry.collegeId}`}
                         result={fit}
                         planningFor={profile.planningFor}
                         interestFieldIds={interestFieldIds}
@@ -325,7 +329,7 @@ function MatcherContent() {
                   }
                   if (!college) return null;
                   return (
-                    <div key={entry.collegeId} id={`fit-${entry.collegeId}`} className="rounded-xl border border-slate-200 bg-white p-4 shadow-card">
+                    <div key={entry.collegeId} id={`fit-saved-${entry.collegeId}`} className="rounded-xl border border-slate-200 bg-white p-4 shadow-card">
                       <h3 className="text-sm font-extrabold text-navy-900">{college.name}</h3>
                       <p className="text-xs text-slate-400">{college.location}</p>
                       <div className="mt-3">
@@ -368,17 +372,12 @@ function MatcherContent() {
                     <p className="mt-1 text-xs text-slate-500">{personalizeForAudience(description, profile.planningFor)}</p>
 
                     {results.length > 0 ? (
-                      <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-                        {results.map((r) => (
-                          <FitCollegeCard
-                            key={r.college.id}
-                            id={`fit-${r.college.id}`}
-                            result={r}
-                            planningFor={profile.planningFor}
-                            interestFieldIds={interestFieldIds}
-                          />
-                        ))}
-                      </div>
+                      <FitResultsList
+                        results={results}
+                        planningFor={profile.planningFor}
+                        interestFieldIds={interestFieldIds}
+                        scrollTarget={scrollTarget}
+                      />
                     ) : (
                       <div className="mt-4 rounded-xl border border-dashed border-slate-300 bg-white/60 py-8 text-center text-xs text-slate-400">
                         No schools land here with your current GPA.
