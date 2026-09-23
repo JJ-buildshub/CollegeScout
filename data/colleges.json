@@ -21507,7 +21507,7 @@
     "admitRateOverall": 0.8818,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1130-1400 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -21524,7 +21524,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null,
+        "note": "June 1 is UAB's priority deadline for Fall 2027; the page states applicants are still considered afterward as space allows, with no stated final cutoff. Jan 15/May 1 are scholarship-consideration deadlines only."
+      }
+    ],
     "financials": {
       "coaInState": 28145,
       "coaOutOfState": 41609,
@@ -21546,7 +21553,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -21619,7 +21626,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "UAB admissions (https://www.uab.edu/admissions/apply/freshman/how-to-apply)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyNote": "Test-optional for applicants with a 3.5+ unweighted high school GPA; a test score is required below that threshold.",
+    "testingPolicyProvenance": {
+      "source": "UAB admissions (https://www.uab.edu/admissions/apply/freshman/how-to-apply)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "arkansas-state-university",
@@ -28868,7 +28886,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "August 1"
+      }
+    ],
     "financials": {
       "coaInState": 23735,
       "coaOutOfState": 34645,
@@ -28890,7 +28914,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -28963,7 +28987,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Eastern Kentucky University admissions (https://www.eku.edu/admissions/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026-27 application cycle based on access date September 22, 2026."
+    }
   },
   {
     "id": "university-of-kentucky",
@@ -31301,7 +31331,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 28576,
       "coaOutOfState": 46595,
@@ -31323,7 +31364,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -31396,7 +31437,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "UMBC admissions (https://umbc.edu/admissions/undergraduate/dates-deadlines/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "university-of-maine",
@@ -43338,7 +43384,7 @@
     "admitRateOverall": 0.6003,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1130-1300 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -43355,7 +43401,28 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 2"
+      },
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 2"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 15"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15"
+      }
+    ],
     "financials": {
       "coaInState": 32362,
       "coaOutOfState": 57680,
@@ -43377,7 +43444,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -43450,7 +43517,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "College of Charleston admissions (https://charleston.edu/admission/apply/undergraduate/index.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyNote": "State scholarships are still awarded based on official test scores only.",
+    "testingPolicyProvenance": {
+      "source": "College of Charleston admissions (https://charleston.edu/admission/apply/undergraduate/index.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "university-of-south-carolina-columbia",

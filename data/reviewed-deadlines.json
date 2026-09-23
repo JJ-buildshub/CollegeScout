@@ -2873,6 +2873,92 @@
      "deadline": "July 1"
     }
    ]
+  },
+  "eastern-kentucky-university": {
+   "label": "Eastern Kentucky University admissions",
+   "url": "https://www.eku.edu/admissions/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Important Dates August 1 Fall Admission Deadline"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "August 1"
+    }
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026-27 application cycle based on access date September 22, 2026."
+  },
+  "university-of-alabama-at-birmingham": {
+   "label": "UAB admissions",
+   "url": "https://www.uab.edu/admissions/apply/freshman/how-to-apply",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "- Fall 2027 Students who do not meet the priority deadlines for admission to UAB will continue to be considered as space and funds are available."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "June 1 is UAB's priority deadline for Fall 2027; the page states applicants are still considered afterward as space allows, with no stated final cutoff. Jan 15/May 1 are scholarship-consideration deadlines only."
+    }
+   ]
+  },
+  "university-of-maryland-baltimore-county": {
+   "label": "UMBC admissions",
+   "url": "https://umbc.edu/admissions/undergraduate/dates-deadlines/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "November Nov 1 Early Action Deadline (First-Year) Decision letters for Early Action applicants are sent beginning in December",
+    "February Feb 1 Regular Decision Deadline (First-Year) Decision letters for regular applicants are sent beginning in February"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ],
+   "note": "Fall Enrollment First-Year deadlines specifically (page also separately lists Spring Enrollment and Transfer deadlines, not used here)."
+  },
+  "college-of-charleston": {
+   "label": "College of Charleston admissions",
+   "url": "https://charleston.edu/admission/apply/undergraduate/index.php",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "t 1 Application opens November 2 Early Decision 1 Deadline (binding) Early Action Deadline (non-binding) Early December Early Decision decisions released Mid-December Early Action decisions released January 5",
+    "nrollment deposit due January 15 Early Decision 2 Deadline (binding) January 15 Regular Decision Deadline"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 2"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 2"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "note": "Undergraduate (First-Year) Fall Semester 2027 deadlines table on its own admissions page."
   }
  }
 }

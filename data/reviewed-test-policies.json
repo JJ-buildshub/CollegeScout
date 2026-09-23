@@ -892,6 +892,24 @@
     "All public four-year colleges and universities have confirmed that they will be test-optional!"
    ],
    "note": "Colorado House Bill 21-1067 (2021), a permanent state law covering all Colorado public four-year institutions, not a temporary pilot."
+  },
+  "university-of-alabama-at-birmingham": {
+   "policy": "Test-Optional",
+   "label": "UAB admissions",
+   "url": "https://www.uab.edu/admissions/apply/freshman/how-to-apply",
+   "evidence": [
+    "Apply as test-optional. Students with a 3.5+ high school GPA are not required to submit test scores for admission or scholarship consideration."
+   ],
+   "note": "Test-optional for applicants with a 3.5+ unweighted high school GPA; a test score is required below that threshold."
+  },
+  "college-of-charleston": {
+   "policy": "Test-Optional",
+   "label": "College of Charleston admissions",
+   "url": "https://charleston.edu/admission/apply/undergraduate/index.php",
+   "evidence": [
+    "Standardized Test Scores: The College of Charleston is test optional."
+   ],
+   "note": "State scholarships are still awarded based on official test scores only."
   }
  }
 }
