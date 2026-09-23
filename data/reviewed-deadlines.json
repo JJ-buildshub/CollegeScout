@@ -2959,6 +2959,22 @@
     }
    ],
    "note": "Undergraduate (First-Year) Fall Semester 2027 deadlines table on its own admissions page."
+  },
+  "university-of-nebraska-at-omaha": {
+   "label": "UNO Academic Catalog",
+   "url": "https://catalog.unomaha.edu/aboutuno/undergraduate-admissions/application-deadline-dates/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "A complete admission file, including the application and all required supporting materials, must be received by the Undergraduate Admission Application deadline, which is one week before the start of classes for each term.",
+    "Fall 2027 August 16, 2027"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "August 16"
+    }
+   ]
   }
  }
 }

@@ -910,6 +910,14 @@
     "Standardized Test Scores: The College of Charleston is test optional."
    ],
    "note": "State scholarships are still awarded based on official test scores only."
+  },
+  "minnesota-state-university-mankato": {
+   "policy": "Test-Optional",
+   "label": "Minnesota State University, Mankato admissions",
+   "url": "https://mankato.mnsu.edu/future-students/undergraduate/undergraduate-admissions/",
+   "evidence": [
+    "Minnesota State Mankato is test-optional for admissions. We will make admission decisions based on high school transcripts and GPA for students who do not provide ACT or SAT scores."
+   ]
   }
  }
 }
