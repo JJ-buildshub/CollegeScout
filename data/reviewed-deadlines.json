@@ -2782,6 +2782,82 @@
     }
    ],
    "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026-27 application cycle based on access date September 22, 2026."
+  },
+  "university-of-nevada-reno": {
+   "label": "University of Nevada, Reno admissions",
+   "url": "https://www.unr.edu/admissions/freshman",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Early Action deadline: Get your decision sooner Apply by this date to get an earlier admission decision and early access to register for classes. Early Action doesn't require you to commit to attend.",
+    "Final application deadline Last day to submit your application for admission. December 15, 2027 April 7, 2027"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "April 7"
+    }
+   ],
+   "note": "Fall 2027 start column of the freshman deadlines table: Early Action Nov 15 2026, Final application deadline Apr 7 2027 (Feb 15 2027 is the scholarship/financial-aid deadline, kept as a note only, not the admission deadline)."
+  },
+  "california-state-university-san-bernardino": {
+   "label": "CSUSB admissions",
+   "url": "https://www.csusb.edu/join-the-pack/future-students/apply/freshmen-admissions-requirements",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Fall 2027 Deadlines Application Deadlines November 30: Pre-Nursing January 31: All other majors"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 31",
+     "note": "November 30 is the deadline for Pre-Nursing applicants specifically; January 31 applies to all other majors."
+    }
+   ]
+  },
+  "western-washington-university": {
+   "label": "Western Washington University admissions",
+   "url": "https://admissions.wwu.edu/first-year/apply",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Apply for Fall 2027 Apply by the November 1 Early Action deadline to receive a response from the Office of Admissions by December 31.",
+    "admission decisions are made on a rolling basis-most Regular Decision applicants will receive an admission decision by early April."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "Regular Decision review is rolling; the page states most such applicants hear back by early April but gives no fixed final deadline."
+    }
+   ]
+  },
+  "portland-state-university": {
+   "label": "Portland State University admissions",
+   "url": "https://www.pdx.edu/admissions/deadlines",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "First Year Application Term Application Opens Application Deadline Deadline to Submit Documents Term Begins Fall 2026 August 1, 2025 August 1, 2026 August 5, 2026 September 28, 2026"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "August 1"
+    }
+   ],
+   "note": "Fall 2027 row of the table: Application Opens Aug 1 2026, Application Deadline Aug 1 2027, Deadline to Submit Documents Aug 5 2027, Term Begins Sept 27 2027. Recorded the Application Deadline column."
   }
  }
 }

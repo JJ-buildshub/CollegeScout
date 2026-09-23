@@ -850,6 +850,38 @@
    "evidence": [
     "Submit your SAT or ACT score (optional) or complete the test-optional requirements"
    ]
+  },
+  "university-of-nevada-reno": {
+   "policy": "Test-Optional",
+   "label": "University of Nevada, Reno admissions",
+   "url": "https://www.unr.edu/admissions/freshman",
+   "evidence": [
+    "Test scores are not required for admission, but they are required for most first-year"
+   ]
+  },
+  "university-of-louisville": {
+   "policy": "Test-Optional",
+   "label": "University of Louisville admissions",
+   "url": "https://louisville.edu/admissions/apply/i-am-a-first-time-freshman/test-optional-faqs",
+   "evidence": [
+    "The University of Louisville remains test-score optional for admission for all majors. There are pathways for admission to all of our academic programs without the SAT or ACT."
+   ]
+  },
+  "western-washington-university": {
+   "policy": "Test-Optional",
+   "label": "Western Washington University admissions",
+   "url": "https://admissions.wwu.edu/first-year/apply",
+   "evidence": [
+    "Western's application process is test-optional. You are not required to submit test scores to apply for admission."
+   ]
+  },
+  "portland-state-university": {
+   "policy": "Test-Optional",
+   "label": "Portland State University admissions",
+   "url": "https://www.pdx.edu/admissions/first-year",
+   "evidence": [
+    "Submission of test scores is optional, and not required to receive an admission decision."
+   ]
   }
  }
 }
