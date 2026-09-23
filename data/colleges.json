@@ -32107,7 +32107,7 @@
     "admitRateOverall": 0.8116,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1040-1260 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -32146,7 +32146,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -32219,7 +32219,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "Wayne State University admissions (https://wayne.edu/admissions/freshman/deadlines)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "macalester-college",
@@ -35978,7 +35983,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "May 1",
+        "note": "November 1 is UNL's priority date for scholarship/financial-aid notification timing, not the final application deadline."
+      }
+    ],
     "financials": {
       "coaInState": 26697,
       "coaOutOfState": 44847,
@@ -36000,7 +36012,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -36073,7 +36085,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of Nebraska-Lincoln admissions (https://admissions.unl.edu/apply/first-year-dates-deadlines/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "keene-state-college",
@@ -36470,7 +36487,7 @@
     "admitRateOverall": 0.8789,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "940-1225 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -36487,7 +36504,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "December 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "March 1"
+      }
+    ],
     "financials": {
       "coaInState": 28305,
       "coaOutOfState": 38415,
@@ -36509,7 +36537,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -36582,7 +36610,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Montclair State University admissions (https://www.montclair.edu/admissions/apply-and-check-status/admissions-deadlines/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyProvenance": {
+      "source": "Montclair State University admissions (https://www.montclair.edu/admissions/apply-and-check-status/admissions-requirements/satact-test-optional-policy/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "rowan-university",
@@ -36971,7 +37009,7 @@
     "admitRateOverall": 0.9518,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "900-1160 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -37010,7 +37048,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -37083,7 +37121,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "UNM admissions (https://admissions.unm.edu/future-students/freshmen/admission-requirements.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "nevada-state-university",
@@ -44107,7 +44150,7 @@
     "admitRateOverall": 0.6909,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1000-1230 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -44124,7 +44167,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null,
+        "note": "July 1 is MTSU's priority date for admission decisions; the page does not state a separate final cutoff."
+      }
+    ],
     "financials": {
       "coaInState": 24289,
       "coaOutOfState": 45597,
@@ -44146,7 +44196,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -44219,7 +44269,19 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "MTSU admissions (https://www.mtsu.edu/how-to-apply/deadlines/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22",
+      "note": "Official live admissions page does not name the entering year; treated as the current 2026-27 application cycle based on access date September 22, 2026."
+    },
+    "testingPolicyNote": "Applicants 21 or older may substitute the Academic Assessment Placement Test.",
+    "testingPolicyProvenance": {
+      "source": "MTSU admissions (https://www.mtsu.edu/how-to-apply/undergraduate/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "the-university-of-tennessee-chattanooga",

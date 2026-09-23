@@ -817,6 +817,39 @@
     "Either an ACT or SAT score Optional for nonresident students with 3.2 unweighted cumulative GPA or higher Strongly recommended for nonresident students with"
    ],
    "note": "Mississippi residents: a score is used only if provided. Nonresidents: optional at 3.2+ unweighted GPA, strongly recommended below that."
+  },
+  "montclair-state-university": {
+   "policy": "Test-Optional",
+   "label": "Montclair State University admissions",
+   "url": "https://www.montclair.edu/admissions/apply-and-check-status/admissions-requirements/satact-test-optional-policy/",
+   "evidence": [
+    "Submitting SAT or ACT scores is optional."
+   ]
+  },
+  "university-of-new-mexico": {
+   "policy": "Test-Optional",
+   "label": "UNM admissions",
+   "url": "https://admissions.unm.edu/future-students/freshmen/admission-requirements.html",
+   "evidence": [
+    "Standardized scores (ACT, SAT or CLT) are not required to be considered for admission but may be helpful in some cases."
+   ]
+  },
+  "middle-tennessee-state-university": {
+   "policy": "Test-Required",
+   "label": "MTSU admissions",
+   "url": "https://www.mtsu.edu/how-to-apply/undergraduate/",
+   "evidence": [
+    "Students under the age of 21 are required to submit a valid ACT or SAT test score."
+   ],
+   "note": "Applicants 21 or older may substitute the Academic Assessment Placement Test."
+  },
+  "wayne-state-university": {
+   "policy": "Test-Optional",
+   "label": "Wayne State University admissions",
+   "url": "https://wayne.edu/admissions/freshman/deadlines",
+   "evidence": [
+    "Submit your SAT or ACT score (optional) or complete the test-optional requirements"
+   ]
   }
  }
 }
