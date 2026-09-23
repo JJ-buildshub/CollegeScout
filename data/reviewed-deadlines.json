@@ -3109,18 +3109,20 @@
   },
   "university-of-northern-iowa": {
    "label": "University of Northern Iowa admissions",
-   "url": "https://admissions.uni.edu/how-apply/freshmen",
+   "url": "https://admissions.uni.edu/admitted-students/admissions-timeline",
    "accessed": "2026-09-22",
    "evidence": [
-    "UNI operates on a rolling admissions basis. Admission of applicants for fall semester begins in July of the preceding year."
+    "Application for admission opens for spring, summer and fall enrollment."
    ],
    "plans": [
     {
      "type": "Rolling",
      "binding": false,
-     "deadline": null
+     "deadline": null,
+     "note": "Page explicitly labeled 'For Fall '27 Freshmen'; no fixed admission deadline exists, only a January 15 scholarship/FAFSA priority date."
     }
-   ]
+   ],
+   "manual": false
   },
   "high-point-university": {
    "label": "High Point University admissions",
@@ -3378,6 +3380,365 @@
     }
    ],
    "manual": false
+  },
+  "university-of-mississippi": {
+   "label": "University of Mississippi admissions",
+   "url": "https://olemiss.edu/admissions/undergraduate-admissions/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "admission is granted on a competitive, rolling basis until the university reaches capacity"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "No named ED/EA/RD plans; admission is rolling/competitive with no fixed deadline. A February 1 date is priority consideration only and a January 10 date is a scholarship-application deadline, both excluded per the no-fabrication rule."
+    }
+   ],
+   "manual": true
+  },
+  "university-of-richmond": {
+   "label": "University of Richmond admissions",
+   "url": "https://admission.richmond.edu/process/early-decision.html",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Admission application due"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 1"
+    }
+   ],
+   "manual": false,
+   "note": "Used the 'Admission application due' date for each plan, not the separate later 'Final credentials deadline.'"
+  },
+  "savannah-college-of-art-and-design": {
+   "label": "Savannah College of Art and Design (SCAD) admissions",
+   "url": "https://www.scad.edu/admission/admission-information/frequently-asked-questions",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "SCAD offers rolling admission and accepts applications year-round."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": true
+  },
+  "denison-university": {
+   "label": "Denison University admissions",
+   "url": "https://www.denison.edu/campus/admission/apply-for-admission",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Early Decision 1: November 15",
+    "Early Decision 2: January 15",
+    "Regular Decision: January 15"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 15"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": false
+  },
+  "hawaii-pacific-university": {
+   "label": "Hawaii Pacific University admissions",
+   "url": "https://www.hpu.edu/undergraduate-admissions/first-year/early-decision-action.html",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Early Decision is binding.",
+    "Early Action is not binding.",
+    "Application Deadline: November 15"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 15"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    }
+   ],
+   "manual": false,
+   "note": "HPU is otherwise rolling admission with no fixed Regular Decision deadline beyond a January 15 priority date, excluded per the no-priority-date rule."
+  },
+  "wesleyan-university": {
+   "label": "Wesleyan University admissions",
+   "url": "https://www.wesleyan.edu/admission/undergraduate-admission/first-year.html",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Early Decision I",
+    "Early Decision II"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 15"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 1"
+    }
+   ],
+   "manual": false
+  },
+  "georgia-southern-university": {
+   "label": "Georgia Southern University admissions",
+   "url": "https://www.georgiasouthern.edu/admissions-aid/apply/deadlines-requirements",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Fall Full Term and Minimester I (August Classes)"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "August 1"
+    }
+   ],
+   "manual": false,
+   "note": "No ED/EA plans; single stated Fall application deadline, not labeled a priority date."
+  },
+  "kansas-state-university": {
+   "label": "Kansas State University admissions",
+   "url": "https://www.k-state.edu/admissions/undergrad/manhattan/apply/deadlines.html",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Applications are still accepted after the priority date, but scholarship/award offers are then only made pending the availability of unawarded funds."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "No ED/EA/RD plans; December 1 is a scholarship/award priority date only, not an admission deadline."
+    }
+   ],
+   "manual": false
+  },
+  "university-of-idaho": {
+   "label": "University of Idaho admissions",
+   "url": "https://www.uidaho.edu/admissions-apply/dates-deadlines",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "The university will admit students and award scholarships and other financial aid to qualified students on a rolling basis as applications are received."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": false,
+   "provenanceNote": "Page explicitly names the Fall 2027 cycle ('Fall 2027 Application is now open!')."
+  },
+  "missouri-state-university-springfield": {
+   "label": "Missouri State University-Springfield admissions",
+   "url": "https://www.missouristate.edu/Admissions/how-to-apply.htm",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "You may apply for admission starting the summer before your senior year, and we review applications on a rolling basis."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "December 1 is a FAFSA/scholarship/housing priority date only, not an admission deadline."
+    }
+   ],
+   "manual": false,
+   "provenanceNote": "Page explicitly names the Fall 2027 semester cycle."
+  },
+  "the-college-of-new-jersey": {
+   "label": "The College of New Jersey admissions",
+   "url": "https://admissions.tcnj.edu/applications/first-year-applicants/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Application Deadline: November 1",
+    "Students accepted through the Early Decision programs MUST attend The College of New Jersey.",
+    "Early Action is a non-binding application option",
+    "Application Deadline: February 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ],
+   "manual": false
+  },
+  "united-states-military-academy": {
+   "label": "United States Military Academy (West Point) admissions",
+   "url": "https://www.westpoint.edu/admissions/steps-admission/admissions-requirements",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Official scores due by Jan. 31 of senior year"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 31",
+     "note": "West Point has no ED/EA/RD rounds in the conventional sense. This is the Candidate Checklist deadline (transcripts, evaluations, essays, test scores) in the senior year of a single annual cycle. Admission also requires a separate congressional/service-connected nomination, each with its own deadline set by the nominating source rather than by West Point."
+    }
+   ],
+   "manual": false
+  },
+  "brandeis-university": {
+   "label": "Brandeis University admissions",
+   "url": "https://www.brandeis.edu/admissions/apply/application-process/index.html",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Early Decision I | Nov. 2",
+    "Early Decision II | Jan. 15"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 2"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 2"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": true
+  },
+  "emerson-college": {
+   "label": "Emerson College admissions",
+   "url": "https://emerson.edu/admission-aid/undergraduate-admission/undergraduate-application-process/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Early Decision (ED) is binding, meaning that if you are admitted, you must commit to enrolling at Emerson.",
+    "Early Action (EA) is a non-binding early deadline.",
+    "Regular Decision (RD) is a non-binding deadline and is selected by the majority of our applicants."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": true
+  },
+  "oberlin-college": {
+   "label": "Oberlin College admissions",
+   "url": "https://www.oberlin.edu/admissions-and-aid/arts-and-sciences",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Early Decision I: November 1",
+    "Early Decision II: January 5",
+    "Early Action: November 1",
+    "Regular Decision: January 15",
+    "Submitting an Early Decision application means that if admitted, you will definitely enroll at Oberlin."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 5"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": true
   }
  }
 }
