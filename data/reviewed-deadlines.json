@@ -3022,6 +3022,59 @@
      "note": "December 1 (Academic Scholarship) and March 1 (FAFSA) are separate, non-admission deadlines on the same page."
     }
    ]
+  },
+  "southeastern-louisiana-university": {
+   "label": "Southeastern Louisiana University admissions",
+   "url": "https://www.southeastern.edu/apply/dates/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Apply between July 16 - August 1: $20 Non-Refundable Application Fee",
+    "ons accepted after August 1"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "August 1"
+    }
+   ],
+   "note": "Fee-tier structure (regular by July 15, late fee July 16-Aug 1); the page states applications are not accepted after August 1, so that is recorded as the deadline."
+  },
+  "university-of-maine": {
+   "label": "University of Maine admissions",
+   "url": "https://go.umaine.edu/applyinfo/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "December 1: Early Action application deadline to receive maximum financial aid and a guaranteed decision before the end of the",
+    "March 1: Regular application deadline with scholarships given as available."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "March 1"
+    }
+   ]
+  },
+  "university-of-wyoming": {
+   "label": "University of Wyoming admissions",
+   "url": "https://www.uwyo.edu/admissions/freshman/index.html",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Our admission process operates on a\"rolling basis,\" meaning you can apply anytime leading up to the next available semester start date"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ]
   }
  }
 }

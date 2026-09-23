@@ -950,6 +950,30 @@
    "evidence": [
     "Test Optional Admission: Students beginning classes in 2027 can be admitted without submitting ACT or RSAT scores."
    ]
+  },
+  "university-of-maine": {
+   "policy": "Test-Optional",
+   "label": "University of Maine admissions",
+   "url": "https://go.umaine.edu/applyinfo/",
+   "evidence": [
+    "UMaine has adopted a test optional status for all of its programs."
+   ]
+  },
+  "university-of-wyoming": {
+   "policy": "Test-Optional",
+   "label": "University of Wyoming admissions",
+   "url": "https://www.uwyo.edu/admissions/freshman/index.html",
+   "evidence": [
+    "Test scores are not required for admission, but they can help secure higher financial awards."
+   ]
+  },
+  "central-connecticut-state-university": {
+   "policy": "Test-Optional",
+   "label": "Central Connecticut State University admissions",
+   "url": "https://www.ccsu.edu/first-year-admissions/admissions-requirements",
+   "evidence": [
+    "Personal essay (Optional) SAT I or ACT scores sent by high school/College Board or ACT (Optional)"
+   ]
   }
  }
 }
