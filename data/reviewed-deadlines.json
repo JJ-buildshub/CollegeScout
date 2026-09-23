@@ -2975,6 +2975,53 @@
      "deadline": "August 16"
     }
    ]
+  },
+  "east-tennessee-state-university": {
+   "label": "ETSU admissions",
+   "url": "https://www.etsu.edu/admissions/apply/deadlines.php",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Fall 2027 Application deadline: Thursday, August 19 by 11:59 p.m."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "August 19"
+    }
+   ]
+  },
+  "university-of-north-dakota": {
+   "label": "University of North Dakota admissions",
+   "url": "https://und.edu/admissions/freshmen/apply.html",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Application Deadlines Fall Priority Deadline: Feb. 1 Fall Final Deadline: Aug. 15"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "August 15",
+     "note": "Feb. 1 is UND's fall priority deadline; the page separately lists a Freshman Scholarship Deadline, so Feb. 1 is not used here to avoid conflating the two."
+    }
+   ]
+  },
+  "south-dakota-state-university": {
+   "label": "South Dakota State University admissions",
+   "url": "https://www.sdstate.edu/admissions/undergraduate-admissions",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Anytime Admission Applications - SDSU accepts applications on a rolling admissions timeline."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "December 1 (Academic Scholarship) and March 1 (FAFSA) are separate, non-admission deadlines on the same page."
+    }
+   ]
   }
  }
 }

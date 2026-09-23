@@ -21383,7 +21383,7 @@
     "admitRateOverall": 0.9604,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "950-1160 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -21422,7 +21422,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -21495,7 +21495,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "Troy University admissions (https://www.troy.edu/applications-admissions/admissions-process-requirements/undergraduate/index.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "university-of-alabama-at-birmingham",
@@ -35203,7 +35208,7 @@
     "admitRateOverall": 0.9496,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -35242,7 +35247,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -35311,7 +35316,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "NDSU admissions (https://www.ndsu.edu/admission/first-year)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "university-of-mary",
@@ -35443,7 +35453,7 @@
     "admitRateOverall": 0.769,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -35460,7 +35470,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "August 15",
+        "note": "Feb. 1 is UND's fall priority deadline; the page separately lists a Freshman Scholarship Deadline, so Feb. 1 is not used here to avoid conflating the two."
+      }
+    ],
     "financials": {
       "coaInState": 25605,
       "coaOutOfState": 30224,
@@ -35482,7 +35499,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -35551,7 +35568,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of North Dakota admissions (https://und.edu/admissions/freshmen/apply.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyProvenance": {
+      "source": "University of North Dakota admissions (https://und.edu/admissions/freshmen/apply.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "valley-city-state-university",
@@ -43960,7 +43987,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null,
+        "note": "December 1 (Academic Scholarship) and March 1 (FAFSA) are separate, non-admission deadlines on the same page."
+      }
+    ],
     "financials": {
       "coaInState": 24636,
       "coaOutOfState": 28146,
@@ -43982,7 +44016,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -44055,7 +44089,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "South Dakota State University admissions (https://www.sdstate.edu/admissions/undergraduate-admissions)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "university-of-south-dakota",
@@ -44191,7 +44230,7 @@
     "admitRateOverall": 0.8619,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "950-1170 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -44208,7 +44247,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "August 19"
+      }
+    ],
     "financials": {
       "coaInState": 27042,
       "coaOutOfState": 31092,
@@ -44230,7 +44275,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -44303,7 +44348,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "ETSU admissions (https://www.etsu.edu/admissions/apply/deadlines.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyProvenance": {
+      "source": "ETSU admissions (https://www.etsu.edu/admissions/apply/freshman.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "middle-tennessee-state-university",

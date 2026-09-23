@@ -918,6 +918,38 @@
    "evidence": [
     "Minnesota State Mankato is test-optional for admissions. We will make admission decisions based on high school transcripts and GPA for students who do not provide ACT or SAT scores."
    ]
+  },
+  "east-tennessee-state-university": {
+   "policy": "Test-Optional",
+   "label": "ETSU admissions",
+   "url": "https://www.etsu.edu/admissions/apply/freshman.php",
+   "evidence": [
+    "ACT/ SAT scores are not required for admission to ETSU."
+   ]
+  },
+  "university-of-north-dakota": {
+   "policy": "Test-Optional",
+   "label": "University of North Dakota admissions",
+   "url": "https://und.edu/admissions/freshmen/apply.html",
+   "evidence": [
+    "ACT/SAT Test Scores are Not Required"
+   ]
+  },
+  "north-dakota-state-university": {
+   "policy": "Test-Optional",
+   "label": "NDSU admissions",
+   "url": "https://www.ndsu.edu/admission/first-year",
+   "evidence": [
+    "NDSU is test-optional and does not require ACT/SAT test scores for admission."
+   ]
+  },
+  "troy-university": {
+   "policy": "Test-Optional",
+   "label": "Troy University admissions",
+   "url": "https://www.troy.edu/applications-admissions/admissions-process-requirements/undergraduate/index.html",
+   "evidence": [
+    "Test Optional Admission: Students beginning classes in 2027 can be admitted without submitting ACT or RSAT scores."
+   ]
   }
  }
 }
