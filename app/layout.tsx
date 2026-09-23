@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/next";
 import NavBar from "@/components/NavBar";
 import DataHealthBanner from "@/components/DataHealthBanner";
 import ResetDataButton from "@/components/ResetDataButton";
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <ResetDataButton />
           </p>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
