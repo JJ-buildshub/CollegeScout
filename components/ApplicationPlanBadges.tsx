@@ -26,7 +26,7 @@ function bindingLabel(plan: ApplicationPlan): string {
 
 export default function ApplicationPlanBadges({ plans }: { plans: ApplicationPlan[] }) {
   if (plans.length === 0) {
-    return <p className="text-sm text-slate-400">Not publicly reported.</p>;
+    return <p className="text-sm text-slate-500">Not publicly reported.</p>;
   }
   return (
     <div className="flex flex-wrap gap-2">

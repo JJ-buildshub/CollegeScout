@@ -101,7 +101,7 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
   if (compact) {
     return (
       <section className="py-2">
-        <h2 className="text-xs font-bold tracking-wide text-slate-400">How CollegeScout Works</h2>
+        <h2 className="text-xs font-bold tracking-wide text-slate-500">How CollegeScout Works</h2>
         <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, i) => (
             <Link

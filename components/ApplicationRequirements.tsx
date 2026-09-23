@@ -20,7 +20,7 @@ function WritingCard({ item }: { item: WritingItem }) {
         <ol className="mt-3 space-y-2.5 text-sm leading-relaxed text-slate-700">
           {item.prompts.map((prompt, i) => (
             <li key={prompt} className="flex gap-3">
-              <span className="w-4 shrink-0 text-right text-xs font-bold tabular-nums text-slate-400">{i + 1}</span>
+              <span className="w-4 shrink-0 text-right text-xs font-bold tabular-nums text-slate-500">{i + 1}</span>
               <span>&ldquo;{prompt}&rdquo;</span>
             </li>
           ))}
@@ -97,7 +97,7 @@ function CommonAppCard({ facts }: { facts: CommonAppFacts }) {
           ))}
         </dl>
       )}
-      <p className="mt-3 text-[11px] leading-snug text-slate-400">
+      <p className="mt-3 text-[11px] leading-snug text-slate-500">
         Source:{" "}
         <a href={COMMON_APP_SOURCE.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">
           Common App requirements grid

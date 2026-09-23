@@ -39,10 +39,10 @@ export default function CareerOutcomesStory() {
               <Briefcase className="h-3.5 w-3.5" /> Real CollegeScout data
             </div>
             <h3 className="mt-2 text-lg font-bold text-navy-900">{example.name}</h3>
-            <p className="mt-0.5 text-[11px] text-slate-400">University-wide, as reported by the school</p>
+            <p className="mt-0.5 text-[11px] text-slate-500">University-wide, as reported by the school</p>
             <div className="mt-4 grid grid-cols-2 gap-4">
               <div>
-                <div className="text-xs font-semibold tracking-wide text-slate-400">
+                <div className="text-xs font-semibold tracking-wide text-slate-500">
                   Placement Rate
                 </div>
                 <div className="mt-0.5 text-base font-bold text-navy-900">
@@ -50,7 +50,7 @@ export default function CareerOutcomesStory() {
                 </div>
               </div>
               <div>
-                <div className="text-xs font-semibold tracking-wide text-slate-400">
+                <div className="text-xs font-semibold tracking-wide text-slate-500">
                   Median Starting Salary
                 </div>
                 <div className="mt-0.5 text-base font-bold text-navy-900">
@@ -60,7 +60,7 @@ export default function CareerOutcomesStory() {
             </div>
             {example.careerOutcomes.topRecruiters.length > 0 && (
               <div className="mt-4">
-                <div className="text-xs font-semibold tracking-wide text-slate-400">
+                <div className="text-xs font-semibold tracking-wide text-slate-500">
                   Top Recruiters
                 </div>
                 <div className="mt-2 flex flex-wrap gap-1.5">

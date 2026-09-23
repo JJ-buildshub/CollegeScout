@@ -7,7 +7,11 @@ export default function FindMyFit() {
   return (
     <section className="rounded-3xl bg-slate-50 p-6 sm:p-10">
       <div className="mx-auto max-w-2xl text-center">
-        <span className="text-xs font-bold tracking-wide text-gold-600">My Fit</span>
+        <p className="text-sm font-semibold text-navy-900">
+          A college is more than its ranking &mdash; CollegeScout weighs admissions, academics,
+          career outcomes, campus fit, and cost together.
+        </p>
+        <span className="mt-4 inline-block text-xs font-bold tracking-wide text-gold-600">My Fit</span>
         <h2 className="mt-2 text-xl font-extrabold tracking-tight text-navy-900 sm:text-2xl">
           Now make it personal.
         </h2>
@@ -28,7 +32,7 @@ export default function FindMyFit() {
         ))}
       </div>
 
-      <p className="mx-auto mt-4 max-w-md text-center text-xs text-slate-400">
+      <p className="mx-auto mt-4 max-w-md text-center text-xs text-slate-500">
         Your inputs stay on this device &mdash; nothing is uploaded, and no account is required.
         CollegeScout never promises admissions probabilities.
       </p>

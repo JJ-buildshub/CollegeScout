@@ -27,7 +27,7 @@ export default function UcCappedGpaField({
     <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
       <label className="block">
         <div className="text-sm font-bold text-navy-900">
-          UC capped weighted GPA <span className="font-normal text-slate-400">(optional)</span>
+          UC capped weighted GPA <span className="font-normal text-slate-500">(optional)</span>
         </div>
         <p className="mt-1 text-xs leading-relaxed text-slate-500">
           Enter this only if you have calculated it using UC&apos;s A-G methodology. CollegeScout does not

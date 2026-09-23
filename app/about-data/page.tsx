@@ -35,7 +35,7 @@ export default function AboutDataPage() {
         </div>
       </div>
 
-      <p className="text-xs text-slate-400">
+      <p className="text-xs text-slate-500">
         More detail on our verification process is coming to this page.{" "}
         <Link href="/directory" className="font-semibold text-navy-900 underline underline-offset-2 hover:text-navy-700">
           Back to the Directory

@@ -75,18 +75,18 @@ export default function CollegeCard({ college }: { college: College }) {
         <dl className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-xs">
           {gpa && (
             <div>
-              <dt className="text-slate-400">Mid-50% GPA</dt>
+              <dt className="text-slate-500">Mid-50% GPA</dt>
               <dd className="mt-0.5 text-sm font-bold tabular-nums text-navy-900">{gpa}</dd>
             </div>
           )}
           {sat && (
             <div>
-              <dt className="text-slate-400">Mid-50% SAT</dt>
+              <dt className="text-slate-500">Mid-50% SAT</dt>
               <dd className="mt-0.5 text-sm font-bold tabular-nums text-navy-900">{sat}</dd>
             </div>
           )}
           <div>
-            <dt className="text-slate-400">Testing</dt>
+            <dt className="text-slate-500">Testing</dt>
             <dd className="mt-0.5">
               <TestingPolicyBadge policy={college.testingPolicy} className="px-2 py-0.5" />
             </dd>
@@ -101,7 +101,7 @@ export default function CollegeCard({ college }: { college: College }) {
                 href={college.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-slate-400 hover:text-gold-600"
+                className="inline-flex items-center gap-1 text-slate-500 hover:text-gold-600"
               >
                 Website <ExternalLink className="h-3 w-3" />
               </a>

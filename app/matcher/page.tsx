@@ -198,7 +198,7 @@ function MatcherContent() {
         </div>
         <div className="mt-3 flex flex-wrap items-center gap-3 border-t border-slate-100 pt-3">
           <span className="text-xs font-semibold tracking-wide text-slate-500">
-            Compare as another state <span className="font-normal text-slate-400">(optional scenario)</span>
+            Compare as another state <span className="font-normal text-slate-500">(optional scenario)</span>
           </span>
           <select
             value={profile.residencyScenario ?? ""}
@@ -222,7 +222,7 @@ function MatcherContent() {
             </button>
           )}
         </div>
-        <p className="mt-2 text-[11px] leading-snug text-slate-400">
+        <p className="mt-2 text-[11px] leading-snug text-slate-500">
           This doesn&apos;t change your saved home state above — it&apos;s a temporary comparison that stays
           set (even after you leave this page) until you clear it or pick a different one.
         </p>
@@ -278,9 +278,9 @@ function MatcherContent() {
             <div className="mt-5 border-t border-slate-100 pt-4">
               <label className="block">
                 <div className="text-sm font-semibold text-navy-900">
-                  SAT score <span className="font-normal text-slate-400">(optional)</span>
+                  SAT score <span className="font-normal text-slate-500">(optional)</span>
                 </div>
-                <p className="mt-0.5 text-xs text-slate-400">Total from 400 to 1600. Leave blank if not applicable.</p>
+                <p className="mt-0.5 text-xs text-slate-500">Total from 400 to 1600. Leave blank if not applicable.</p>
                 <input
                   type="number"
                   inputMode="numeric"
@@ -331,11 +331,11 @@ function MatcherContent() {
                   return (
                     <div key={entry.collegeId} id={`fit-saved-${entry.collegeId}`} className="rounded-xl border border-slate-200 bg-white p-4 shadow-card">
                       <h3 className="text-sm font-extrabold text-navy-900">{college.name}</h3>
-                      <p className="text-xs text-slate-400">{college.location}</p>
+                      <p className="text-xs text-slate-500">{college.location}</p>
                       <div className="mt-3">
                         <SchoolStatusBadge status={entry.status} round={entry.round} />
                       </div>
-                      <p className="mt-2 text-[11px] text-slate-400">Complete your profile below to see your fit here.</p>
+                      <p className="mt-2 text-[11px] text-slate-500">Complete your profile below to see your fit here.</p>
                     </div>
                   );
                 })}
@@ -344,7 +344,7 @@ function MatcherContent() {
           )}
 
           {!hasUsableGpa ? (
-            <div className="rounded-2xl border border-dashed border-slate-300 bg-white py-12 text-center text-sm text-slate-400">
+            <div className="rounded-2xl border border-dashed border-slate-300 bg-white py-12 text-center text-sm text-slate-500">
               Pick your current grade and enter at least one year of unweighted GPA to see Reach/Target/Likely
               estimates for every school.
             </div>
@@ -355,7 +355,7 @@ function MatcherContent() {
                 {buckets.Unrated.length > 0 && ` · ${buckets.Unrated.length} not enough data`}
               </p>
 
-              <p className="text-xs text-slate-400">{residencyStatusText}</p>
+              <p className="text-xs text-slate-500">{residencyStatusText}</p>
 
               {GROUP_ORDER.map((category) => {
                 const { label, icon: Icon, description, accent } = BUCKET_META[category];
@@ -379,7 +379,7 @@ function MatcherContent() {
                         scrollTarget={scrollTarget}
                       />
                     ) : (
-                      <div className="mt-4 rounded-xl border border-dashed border-slate-300 bg-white/60 py-8 text-center text-xs text-slate-400">
+                      <div className="mt-4 rounded-xl border border-dashed border-slate-300 bg-white/60 py-8 text-center text-xs text-slate-500">
                         No schools land here with your current GPA.
                       </div>
                     )}

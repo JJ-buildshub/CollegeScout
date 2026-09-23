@@ -327,7 +327,7 @@ export default function TryCollegeScout() {
             Show {OVERFLOW_INTERESTS.length} more
           </button>
         )}
-        <p className="mt-1 text-xs text-slate-400">Pick up to {MAX_SELECTED_INTERESTS} interests to compare.</p>
+        <p className="mt-1 text-xs text-slate-500">Pick up to {MAX_SELECTED_INTERESTS} interests to compare.</p>
       </div>
 
       {notSure ? (
@@ -412,7 +412,7 @@ export default function TryCollegeScout() {
               )}
 
               {singleMatches.length > 0 && singleMatches.length < LOW_MATCH_THRESHOLD && (
-                <p className="mx-auto mt-4 max-w-xl text-center text-xs text-slate-400">
+                <p className="mx-auto mt-4 max-w-xl text-center text-xs text-slate-500">
                   Only {singleMatches.length} school{singleMatches.length === 1 ? "" : "s"} in this dataset{" "}
                   {singleMatches.length === 1 ? "has" : "have"} a {selectedLabel} program we can point to &mdash;
                   that doesn&apos;t mean other schools don&apos;t offer it. Try a related interest, or{" "}
@@ -528,7 +528,7 @@ export default function TryCollegeScout() {
                   </p>
                 )}
                 {strongTotal > 0 && strongTotal < LOW_MATCH_THRESHOLD && (
-                  <p className="mt-3 text-xs text-slate-400">
+                  <p className="mt-3 text-xs text-slate-500">
                     Only {strongTotal} school{strongTotal === 1 ? "" : "s"} in this dataset{" "}
                     {strongTotal === 1 ? "matches" : "match"} all of {selectedLabel} &mdash; that doesn&apos;t
                     mean other schools don&apos;t offer these. Try dropping an interest, or{" "}
@@ -559,7 +559,7 @@ export default function TryCollegeScout() {
             </>
           )}
 
-          <p className="mx-auto mt-6 max-w-xl text-center text-xs text-slate-400">
+          <p className="mx-auto mt-6 max-w-xl text-center text-xs text-slate-500">
             These are examples of how each program is structured &mdash; not a ranking or a recommendation.
             Every interest above can be explored the same way.
           </p>
@@ -675,7 +675,7 @@ function ResultTierGroup<T extends { college: College }>({
     <div className="mt-5 first:mt-0">
       <div className="mb-2 flex items-center justify-between gap-2">
         <h4 className="text-xs font-bold uppercase tracking-wide text-slate-500">
-          {tier} <span className="font-semibold normal-case text-slate-400">&middot; {total} school{total === 1 ? "" : "s"}</span>
+          {tier} <span className="font-semibold normal-case text-slate-500">&middot; {total} school{total === 1 ? "" : "s"}</span>
         </h4>
         {canExpand && (
           <button
@@ -710,7 +710,7 @@ function ResultCard({ college, children }: { college: College; children: React.R
       <SystemBadge system={college.system} className="self-start" />
       <h3 className="mt-3 text-sm font-bold leading-snug text-navy-900">{college.name}</h3>
       {children}
-      <p className="mt-3 text-xs text-slate-400">{formatPercent(displayedAdmitRate(college).value)} overall admit</p>
+      <p className="mt-3 text-xs text-slate-500">{formatPercent(displayedAdmitRate(college).value)} overall admit</p>
       <span className="mt-2 text-xs font-semibold text-navy-900">View School &rarr;</span>
     </Link>
   );

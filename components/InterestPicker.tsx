@@ -64,7 +64,7 @@ export default function InterestPicker({
 
       {!undecided && (
         <>
-          <p className="text-xs text-slate-400">Pick up to {MAX_INTERESTS}.</p>
+          <p className="text-xs text-slate-500">Pick up to {MAX_INTERESTS}.</p>
           <div className="mt-2 flex flex-wrap gap-2">
             {INTEREST_TAXONOMY.map((field) => {
               const selected = interests.some((i) => i.fieldId === field.id);
