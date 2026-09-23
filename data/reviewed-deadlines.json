@@ -4318,6 +4318,219 @@
     }
    ],
    "manual": true
+  },
+  "champlain-college": {
+   "label": "Champlain College admissions",
+   "url": "https://www.champlain.edu/admissions/undergraduate-admissions/how-to-apply",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "Early Decision November 15, 2026",
+    "Early Action December 15, 2026",
+    "Regular Decision January 9, 2027"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 15"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 9"
+    }
+   ],
+   "manual": false,
+   "note": "ED binding status is by definition/standard usage; Champlain's own pages describe ED benefits and an ED agreement but the literal word 'binding' was not found verbatim on the checked pages."
+  },
+  "mount-holyoke-college": {
+   "label": "Mount Holyoke College admissions",
+   "url": "https://www.mtholyoke.edu/admission/apply-undergraduate-first-year/application-deadlines-undergraduates",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "Early Decision I November 15",
+    "Early Decision II January 5",
+    "Regular Decision January 15"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 15"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 5"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": false,
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026-27 application cycle based on access date 2026-09-22."
+  },
+  "rhode-island-college": {
+   "label": "Rhode Island College admissions",
+   "url": "https://www.ric.edu/admissions-financial-aid/undergraduate-admission/first-year-student-admission",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "Early Action & Priority Consideration for Merit Scholarships: December 15",
+    "Regular Decision: March 15, with rolling consideration thereafter"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 15",
+     "note": "RIC's own page labels this date jointly as 'Early Action & Priority Consideration for Merit Scholarships' rather than a pure scholarship-only date."
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "March 15",
+     "note": "Rolling consideration continues after this date."
+    }
+   ],
+   "manual": false
+  },
+  "creighton-university": {
+   "label": "Creighton University admissions",
+   "url": "https://www.creighton.edu/admissions/dates-deadlines",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "All decisions are non-binding."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    }
+   ],
+   "manual": true,
+   "note": "Early Action is the only clearly named application plan; Creighton does not publish a separate named Regular Decision deadline."
+  },
+  "suny-at-purchase-college": {
+   "label": "SUNY Purchase College admissions",
+   "url": "https://www.purchase.edu/admissions/apply-to-purchase/deadlines/",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "November 15, 2026",
+    "Rolling Admissions"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 8",
+     "note": "General Admission is listed as 'Rolling Admissions' with January 8, 2027 as the date. Conservatory/audition-based BFA/MusB programs have separate, earlier program-specific deadlines not captured here."
+    }
+   ],
+   "manual": true
+  },
+  "washington-and-lee-university": {
+   "label": "Washington and Lee University admissions",
+   "url": "https://www.wlu.edu/admissions/apply",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "EDI and EDII are both \"binding\" options; if admitted, students are required to enroll at W&L and withdraw applications from other schools.",
+    "EARLY DECISION I\tNOV 1, 2026",
+    "EARLY DECISION II\tJAN 5, 2027",
+    "REGULAR DECISION\tJAN 5, 2027"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 5"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 5"
+    }
+   ],
+   "manual": false
+  },
+  "marshall-university": {
+   "label": "Marshall University admissions",
+   "url": "https://www.marshall.edu/admissions/general-information/",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "All applications for admission or re-admission must be submitted to the Office of Admissions, along with all required credentials, at least two weeks prior to the start of a term."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "No ED/EA/RD plans; continuous rolling admission tied to term start dates."
+    }
+   ],
+   "manual": false
+  },
+  "carroll-university": {
+   "label": "Carroll University (WI) admissions",
+   "url": "https://www.carrollu.edu/admission/first-year-students/how-to-apply/",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "Evaluation for acceptance generally takes two to three weeks and is completed on a rolling basis."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": true
+  },
+  "muhlenberg-college": {
+   "label": "Muhlenberg College admissions",
+   "url": "https://www.muhlenberg.edu/apply/",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "you're expected to withdraw other applications and enroll at Muhlenberg",
+    "Early Decision November 16 By December 1",
+    "Early Action December 1 By January",
+    "Regular Decision February 1 Rolling, beginning in mid-January"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 16"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ],
+   "manual": false
   }
  }
 }

@@ -1574,6 +1574,155 @@
     "Since 2020, Davidson has been a test-optional institution"
    ],
    "manual": true
+  },
+  "champlain-college": {
+   "policy": "Test-Optional",
+   "label": "Champlain College admissions",
+   "url": "https://www.champlain.edu/admissions/undergraduate-admissions/how-to-apply",
+   "evidence": [
+    "Champlain is Test-Optional"
+   ],
+   "manual": false
+  },
+  "mount-holyoke-college": {
+   "policy": "Test-Optional",
+   "label": "Mount Holyoke College admissions",
+   "url": "https://www.mtholyoke.edu/admission/apply-undergraduate-first-year",
+   "evidence": [
+    "we're a test-optional institution"
+   ],
+   "manual": false
+  },
+  "rhode-island-college": {
+   "policy": "Test-Optional",
+   "label": "Rhode Island College admissions",
+   "url": "https://www.ric.edu/admissions-financial-aid/undergraduate-admission/first-year-student-admission",
+   "evidence": [
+    "Rhode Island College is Test Optional. We do not require test results for initial admission to the College."
+   ],
+   "manual": false,
+   "note": "The teacher-education program has its own separate testing requirement, not part of general admission."
+  },
+  "university-of-central-oklahoma": {
+   "policy": "Test-Optional",
+   "label": "University of Central Oklahoma admissions",
+   "url": "https://www.uco.edu/admissions-aid/get-more-information/freshman-admissions-standards",
+   "evidence": [
+    "UCO offers test-optional admission, but students may still submit ACT or SAT scores to be considered for academic scholarships."
+   ],
+   "manual": false
+  },
+  "plymouth-state-university": {
+   "policy": "Test-Blind",
+   "label": "Plymouth State University admissions",
+   "url": "https://www.plymouth.edu/apply",
+   "evidence": [
+    "Plymouth State is also test-blind, meaning we will not ask for or use any standardized test scores when considering a student for admission or merit-based scholarships."
+   ],
+   "manual": false
+  },
+  "university-of-nebraska-at-kearney": {
+   "policy": "Test-Optional",
+   "label": "University of Nebraska at Kearney admissions",
+   "url": "https://catalog.unk.edu/undergraduate/admissions/admission-procedures-entering-freshmen/",
+   "evidence": [
+    "UNK allows for students to self-report ACT and/or SAT scores on the admissions application."
+   ],
+   "manual": true,
+   "note": "UNK's own pages never use the literal term 'test-optional'; classification is inferred from explicit 'not required for admission' language plus GPA/class-rank alternative qualifying pathways."
+  },
+  "creighton-university": {
+   "policy": "Test-Optional",
+   "label": "Creighton University admissions",
+   "url": "https://www.creighton.edu/admission-aid/undergraduate/how-to-apply/test-optional",
+   "evidence": [
+    "ACT/SAT exam scores are not required at the time of application for admission."
+   ],
+   "manual": false
+  },
+  "suny-at-purchase-college": {
+   "policy": "Test-Optional",
+   "label": "SUNY Purchase College admissions",
+   "url": "https://www.purchase.edu/live/blurbs/1809-are-satact-scores-required-for-admission",
+   "evidence": [
+    "No. Purchase has recently adopted a test-optional policy."
+   ],
+   "manual": false
+  },
+  "washington-and-lee-university": {
+   "policy": "Test-Optional",
+   "label": "Washington and Lee University admissions",
+   "url": "https://www.wlu.edu/admissions/apply",
+   "evidence": [
+    "Application to W&L is test-optional."
+   ],
+   "manual": false
+  },
+  "marshall-university": {
+   "policy": "Test-Optional",
+   "label": "Marshall University admissions",
+   "url": "https://www.marshall.edu/uc/",
+   "evidence": [
+    "Marshall University's University College is the official home of many different student populations including those who are undecided, conditionally admitted, test-optional and pre-nursing"
+   ],
+   "manual": true,
+   "note": "The literal 'test-optional' label comes from the University College page rather than the primary freshman admissions page, which describes conditional admission without test scores in detail but doesn't use that exact term."
+  },
+  "carroll-university": {
+   "policy": "Test-Optional",
+   "label": "Carroll University (WI) admissions",
+   "url": "https://www.carrollu.edu/admission/first-year-students/how-to-apply/",
+   "evidence": [
+    "CARROLL'S TEST OPTIONAL POLICY"
+   ],
+   "manual": false
+  },
+  "university-of-south-dakota": {
+   "policy": "Test-Optional",
+   "label": "University of South Dakota admissions",
+   "url": "https://www.usd.edu/Admissions-and-Aid/Undergraduate-Admissions/How-to-Apply",
+   "evidence": [
+    "Note that a test score is not required for your application to be reviewed for admission"
+   ],
+   "manual": false
+  },
+  "arkansas-tech-university": {
+   "policy": "Test-Optional",
+   "label": "Arkansas Tech University admissions",
+   "url": "https://www.atu.edu/admissions/requirements.php",
+   "evidence": [
+    "Please note, first-time students admitted without test scores must submit either ACT, SAT, CLT, or ACCUPLACER scores for placement purposes prior to registration."
+   ],
+   "manual": true,
+   "note": "ATU's own pages never use the literal phrase 'test optional'; classification is inferred from a sliding-scale structure where a 3.0+ GPA admits without any test score."
+  },
+  "keene-state-college": {
+   "policy": "Test-Optional",
+   "label": "Keene State College admissions",
+   "url": "https://www.keene.edu/admissions/apply",
+   "evidence": [
+    "SAT and ACT scores are no longer needed to be considered for acceptance."
+   ],
+   "manual": false
+  },
+  "west-virginia-state-university": {
+   "policy": "Test-Required",
+   "label": "West Virginia State University admissions",
+   "url": "https://wvstateu.edu/students/future-students/applying-to-wvsu/",
+   "evidence": [
+    "Official high school transcript or GED (sent by high school or Department of Education) (2.0 GPA or higher) -and- ACT or SAT Scores (18 ACT or 870 Composite SAT [combination of critical reading and math scores])"
+   ],
+   "manual": true,
+   "note": "WVSU doesn't use the categorical label 'test-required' explicitly, but lists ACT/SAT scores as a mandatory item (joined with '-and-') for first-time freshmen with no optional/waiver language."
+  },
+  "muhlenberg-college": {
+   "policy": "Test-Optional",
+   "label": "Muhlenberg College admissions",
+   "url": "https://www.muhlenberg.edu/admissions-aid/application-instructions-for-first-year-students/",
+   "evidence": [
+    "Muhlenberg has been test-optional for admissions since 1996."
+   ],
+   "manual": false
   }
  }
 }
