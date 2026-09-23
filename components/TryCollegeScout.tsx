@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -151,17 +151,58 @@ export default function TryCollegeScout() {
     }));
   }, [singleMatches, selectedIds]);
 
+  // Every match, not just the diverse-slate examples — rendered per tier only
+  // once that tier's "See all" is expanded.
+  const singleFullResults = useMemo(() => {
+    return singleMatches.map((college) => ({
+      college,
+      pathway: getPathwayLabel(college, selectedIds[0]) ?? college.careerMajorTags.primaryDisciplines[0] ?? "",
+    }));
+  }, [singleMatches, selectedIds]);
+
   const singleTierCounts = useMemo(() => countsByTier(singleMatches), [singleMatches]);
+
+  // Which tiers are currently expanded to show every match, per results
+  // section — reset whenever the selection changes so a new interest doesn't
+  // inherit a stale expansion.
+  const [singleExpandedTiers, setSingleExpandedTiers] = useState<Set<string>>(new Set());
+  const [combineExpandedTiers, setCombineExpandedTiers] = useState<Set<string>>(new Set());
+  const [strongExpandedTiers, setStrongExpandedTiers] = useState<Set<string>>(new Set());
+  useEffect(() => {
+    setSingleExpandedTiers(new Set());
+    setCombineExpandedTiers(new Set());
+    setStrongExpandedTiers(new Set());
+  }, [selectedIds, notSure]);
+
+  function toggleTier(setter: (fn: (prev: Set<string>) => Set<string>) => void, tier: string) {
+    setter((prev) => {
+      const next = new Set(prev);
+      if (next.has(tier)) next.delete(tier);
+      else next.add(tier);
+      return next;
+    });
+  }
 
   // Multi-interest view: split into "combine" and "strong in each," each
   // drawing its top slate the same diverse way.
-  const { combineResults, combineTotal, combineTierCounts, strongResults, strongTotal, strongTierCounts } = useMemo(() => {
+  const {
+    combineResults,
+    combineFullResults,
+    combineTotal,
+    combineTierCounts,
+    strongResults,
+    strongFullResults,
+    strongTotal,
+    strongTierCounts,
+  } = useMemo(() => {
     if (notSure || selectedIds.length < 2) {
       return {
         combineResults: [],
+        combineFullResults: [],
         combineTotal: 0,
         combineTierCounts: new Map<string, number>(),
         strongResults: [],
+        strongFullResults: [],
         strongTotal: 0,
         strongTierCounts: new Map<string, number>(),
       };
@@ -187,9 +228,11 @@ export default function TryCollegeScout() {
 
     return {
       combineResults: combineSlate,
+      combineFullResults: combineCandidates.map((c) => ({ college: c.college, label: combineLabels.get(c.college.id)! })),
       combineTotal: combineLabels.size,
       combineTierCounts: countsByTier(combineCandidates.map((c) => c.college)),
       strongResults: pickDiverseSlate(strongCandidates, MAX_RESULTS),
+      strongFullResults: strong.map((college) => ({ college })),
       strongTotal: strong.length,
       strongTierCounts: countsByTier(strong),
     };
@@ -317,12 +360,13 @@ export default function TryCollegeScout() {
                 school{singleTotal === 1 ? "" : "s"} {singleTotal === 1 ? "offers" : "offer"} {singleLabelArticle} {selectedLabel} program
                 {singleTotal > MAX_RESULTS ? ` — showing ${MAX_RESULTS} examples below` : ""}
               </p>
-              <Link
-                href={`/directory?interests=${interestsQuery}`}
+              <button
+                type="button"
+                onClick={() => setSingleExpandedTiers(new Set(TIER_ORDER))}
                 className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-gold-500 px-4 py-2 text-xs font-bold text-navy-950 hover:bg-gold-400"
               >
                 See all {singleTotal} <ArrowRight className="h-3.5 w-3.5" />
-              </Link>
+              </button>
             </div>
           )}
 
@@ -330,16 +374,23 @@ export default function TryCollegeScout() {
             <>
               <div className="mx-auto mt-6 max-w-4xl">
                 {groupByTier(singleResults).map(({ tier, items }) => (
-                  <ResultTierGroup key={tier} tier={tier} total={singleTierCounts.get(tier) ?? items.length}>
-                    {items.map(({ college, pathway }) => (
+                  <ResultTierGroup
+                    key={tier}
+                    tier={tier}
+                    total={singleTierCounts.get(tier) ?? items.length}
+                    expanded={singleExpandedTiers.has(tier)}
+                    onToggle={() => toggleTier(setSingleExpandedTiers, tier)}
+                    exampleItems={items}
+                    fullItems={groupByTier(singleFullResults).find((g) => g.tier === tier)?.items ?? items}
+                    renderCard={({ college, pathway }) => (
                       <ResultCard key={college.id} college={college}>
                         <p className="mt-2 text-xs font-semibold text-gold-600">{pathway}</p>
                         <p className="mt-2 flex-1 text-xs text-slate-500">
                           Offers bachelor&apos;s degrees in {selectedLabel.toLowerCase()}.
                         </p>
                       </ResultCard>
-                    ))}
-                  </ResultTierGroup>
+                    )}
+                  />
                 ))}
               </div>
 
@@ -387,12 +438,16 @@ export default function TryCollegeScout() {
                         ? " with one combined program"
                         : " with separate programs in each"}
                   </p>
-                  <Link
-                    href={`/directory?interests=${interestsQuery}`}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setCombineExpandedTiers(new Set(TIER_ORDER));
+                      setStrongExpandedTiers(new Set(TIER_ORDER));
+                    }}
                     className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-gold-500 px-4 py-2 text-xs font-bold text-navy-950 hover:bg-gold-400"
                   >
                     See all {combineTotal + strongTotal} <ArrowRight className="h-3.5 w-3.5" />
-                  </Link>
+                  </button>
                 </div>
               )}
 
@@ -403,16 +458,23 @@ export default function TryCollegeScout() {
                 {combineResults.length > 0 ? (
                   <div className="mt-3">
                     {groupByTier(combineResults).map(({ tier, items }) => (
-                      <ResultTierGroup key={tier} tier={tier} total={combineTierCounts.get(tier) ?? items.length}>
-                        {items.map(({ college, label }) => (
+                      <ResultTierGroup
+                        key={tier}
+                        tier={tier}
+                        total={combineTierCounts.get(tier) ?? items.length}
+                        expanded={combineExpandedTiers.has(tier)}
+                        onToggle={() => toggleTier(setCombineExpandedTiers, tier)}
+                        exampleItems={items}
+                        fullItems={groupByTier(combineFullResults).find((g) => g.tier === tier)?.items ?? items}
+                        renderCard={({ college, label }) => (
                           <ResultCard key={college.id} college={college}>
                             <p className="mt-2 text-xs font-semibold text-gold-600">{label}</p>
                             <p className="mt-2 flex-1 text-xs text-slate-500">
                               One program built around {selectedLabel.toLowerCase()} together.
                             </p>
                           </ResultCard>
-                        ))}
-                      </ResultTierGroup>
+                        )}
+                      />
                     ))}
                   </div>
                 ) : (
@@ -430,8 +492,15 @@ export default function TryCollegeScout() {
                 {strongResults.length > 0 ? (
                   <div className="mt-3">
                     {groupByTier(strongResults.map((college) => ({ college }))).map(({ tier, items }) => (
-                      <ResultTierGroup key={tier} tier={tier} total={strongTierCounts.get(tier) ?? items.length}>
-                        {items.map(({ college }) => (
+                      <ResultTierGroup
+                        key={tier}
+                        tier={tier}
+                        total={strongTierCounts.get(tier) ?? items.length}
+                        expanded={strongExpandedTiers.has(tier)}
+                        onToggle={() => toggleTier(setStrongExpandedTiers, tier)}
+                        exampleItems={items}
+                        fullItems={groupByTier(strongFullResults).find((g) => g.tier === tier)?.items ?? items}
+                        renderCard={({ college }) => (
                           <ResultCard key={college.id} college={college}>
                             <div className="mt-2 space-y-0.5">
                               {selectedInterests.map((interest) => (
@@ -444,8 +513,8 @@ export default function TryCollegeScout() {
                               Separate programs in each field &mdash; not a joint degree.
                             </p>
                           </ResultCard>
-                        ))}
-                      </ResultTierGroup>
+                        )}
+                      />
                     ))}
                   </div>
                 ) : (
@@ -572,13 +641,62 @@ function InterestCard({
   );
 }
 
-function ResultTierGroup({ tier, total, children }: { tier: string; total: number; children: React.ReactNode }) {
+const TIER_GROUP_PAGE_SIZE = 9;
+
+/**
+ * One selectivity-tier section of homepage example results. Shows just the
+ * diverse-slate examples by default; "See all N" expands in place to every
+ * match in this tier (itself paginated past TIER_GROUP_PAGE_SIZE) instead of
+ * navigating away, since these are meant to stay a quick homepage preview.
+ */
+function ResultTierGroup<T extends { college: College }>({
+  tier,
+  total,
+  expanded,
+  onToggle,
+  exampleItems,
+  fullItems,
+  renderCard,
+}: {
+  tier: string;
+  total: number;
+  expanded: boolean;
+  onToggle: () => void;
+  exampleItems: T[];
+  fullItems: T[];
+  renderCard: (item: T) => React.ReactNode;
+}) {
+  const [showAllInTier, setShowAllInTier] = useState(false);
+  const canExpand = total > exampleItems.length;
+  const items = expanded ? fullItems : exampleItems;
+  const visible = expanded && !showAllInTier ? items.slice(0, TIER_GROUP_PAGE_SIZE) : items;
+
   return (
     <div className="mt-5 first:mt-0">
-      <h4 className="mb-2 text-xs font-bold uppercase tracking-wide text-slate-500">
-        {tier} <span className="font-semibold normal-case text-slate-400">&middot; {total} school{total === 1 ? "" : "s"}</span>
-      </h4>
-      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{children}</div>
+      <div className="mb-2 flex items-center justify-between gap-2">
+        <h4 className="text-xs font-bold uppercase tracking-wide text-slate-500">
+          {tier} <span className="font-semibold normal-case text-slate-400">&middot; {total} school{total === 1 ? "" : "s"}</span>
+        </h4>
+        {canExpand && (
+          <button
+            type="button"
+            onClick={onToggle}
+            className="shrink-0 text-xs font-semibold text-gold-600 underline underline-offset-2 hover:text-gold-700"
+          >
+            {expanded ? "Show fewer" : `See all ${total}`}
+          </button>
+        )}
+      </div>
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{visible.map(renderCard)}</div>
+      {expanded && !showAllInTier && items.length > TIER_GROUP_PAGE_SIZE && (
+        <button
+          type="button"
+          onClick={() => setShowAllInTier(true)}
+          className="mt-3 text-xs font-semibold text-gold-600 underline underline-offset-2 hover:text-gold-700"
+        >
+          Show all {items.length} in this tier
+        </button>
+      )}
     </div>
   );
 }
