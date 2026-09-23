@@ -1472,6 +1472,108 @@
     "Connecticut College is test-optional."
    ],
    "manual": false
+  },
+  "pratt-institute-main": {
+   "policy": "Test-Optional",
+   "label": "Pratt Institute admissions",
+   "url": "https://www.pratt.edu/resources/undergraduate-application-requirements-high-school-applicants/",
+   "evidence": [
+    "Pratt is test optional"
+   ],
+   "manual": false
+  },
+  "kenyon-college": {
+   "policy": "Test-Optional",
+   "label": "Kenyon College admissions",
+   "url": "https://www.kenyon.edu/admissions-aid/apply-to-kenyon/standardized-testing-policy/",
+   "evidence": [
+    "Kenyon has adopted a test-optional policy for all students applying for admission"
+   ],
+   "manual": false
+  },
+  "macalester-college": {
+   "policy": "Test-Optional",
+   "label": "Macalester College admissions",
+   "url": "https://www.macalester.edu/admissions/us-admissions/faq/testing-policy/",
+   "evidence": [
+    "Submission of ACT or SAT scores is not required as part of the application process."
+   ],
+   "manual": false
+  },
+  "dallas-baptist-university": {
+   "policy": "Test-Optional",
+   "label": "Dallas Baptist University admissions",
+   "url": "https://www.dbu.edu/undergraduate/admissions/",
+   "evidence": [
+    "DBU is \"test-preferred,\" meaning that the submission of standardized test scores is currently not required for admission."
+   ],
+   "manual": false,
+   "note": "DBU's own term is 'test-preferred' rather than one of the four standard categories; mapped to Test-Optional since scores are explicitly not required, only encouraged."
+  },
+  "babson-college": {
+   "policy": "Test-Optional",
+   "label": "Babson College admissions",
+   "url": "https://undergraduatecatalog.babson.edu/standardized-testing-requirements-and-test-optional-policy",
+   "evidence": [
+    "Babson College is Test-Optional."
+   ],
+   "manual": false
+  },
+  "columbia-college-chicago": {
+   "policy": "Test-Free",
+   "label": "Columbia College Chicago admissions",
+   "url": "https://www.colum.edu/admissions/requirements/test-free-admissions",
+   "evidence": [
+    "Columbia College Chicago's undergraduate admissions process is entirely test-free."
+   ],
+   "manual": false,
+   "note": "A test requirement still applies to international students who cannot demonstrate English proficiency through coursework."
+  },
+  "drake-university": {
+   "policy": "Test-Optional",
+   "label": "Drake University admissions",
+   "url": "https://www.drake.edu/admission-aid/first-year-students",
+   "evidence": [
+    "Drake does not require either the SAT or ACT for admission."
+   ],
+   "manual": false
+  },
+  "western-kentucky-university": {
+   "policy": "Test-Optional",
+   "label": "Western Kentucky University admissions",
+   "url": "https://catalog.wku.edu/undergraduate/enrolling/admission/",
+   "evidence": [
+    "WKU is a test optional admission institution."
+   ],
+   "manual": false,
+   "note": "Policy is GPA-conditional: below a 2.50 unweighted high school GPA, ACT/SAT scores are required."
+  },
+  "delaware-state-university": {
+   "policy": "Test-Optional",
+   "label": "Delaware State University admissions",
+   "url": "https://www.desu.edu/admissions/undergraduate-students",
+   "evidence": [
+    "Delaware State University implemented a Test-Optional Policy until further notice."
+   ],
+   "manual": false
+  },
+  "colorado-college": {
+   "policy": "Test-Optional",
+   "label": "Colorado College admissions",
+   "url": "https://www.coloradocollege.edu/admission/apply/admission-test-optional.html",
+   "evidence": [
+    "Colorado College is test-optional, which means you can choose whether to include SAT or ACT scores as part of your application."
+   ],
+   "manual": false
+  },
+  "davidson-college": {
+   "policy": "Test-Optional",
+   "label": "Davidson College admissions",
+   "url": "https://www.davidson.edu/admission-and-financial-aid/admission-process-help/testing-policy",
+   "evidence": [
+    "Since 2020, Davidson has been a test-optional institution"
+   ],
+   "manual": true
   }
  }
 }

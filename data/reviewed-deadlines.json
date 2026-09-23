@@ -4051,6 +4051,273 @@
     }
    ],
    "manual": false
+  },
+  "pratt-institute-main": {
+   "label": "Pratt Institute admissions",
+   "url": "https://www.pratt.edu/admissions/undergraduate-admissions/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "applications continue to be reviewed on a rolling basis"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15",
+     "note": "Called 'Priority Decision' on the page; applications continue to be reviewed on a rolling basis afterward. No ED offered."
+    }
+   ],
+   "manual": false
+  },
+  "kenyon-college": {
+   "label": "Kenyon College admissions",
+   "url": "https://www.kenyon.edu/admissions-aid/apply-to-kenyon/deadlines-requirements/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "November 15",
+    "January 15"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 15"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": false
+  },
+  "macalester-college": {
+   "label": "Macalester College admissions",
+   "url": "https://www.macalester.edu/admissions/early-action-decision/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "November 1",
+    "January 1",
+    "January 15"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": false
+  },
+  "dallas-baptist-university": {
+   "label": "Dallas Baptist University admissions",
+   "url": "https://www.dbu.edu/admissions/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "DBU Admissions deadlines are rolling for most programs, and applicants are welcome to apply at any time."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": false
+  },
+  "babson-college": {
+   "label": "Babson College admissions",
+   "url": "https://undergraduatecatalog.babson.edu/application-dates-and-deadlines",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Early Decision I",
+    "November 1",
+    "Early Decision II",
+    "January 2"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 2"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 2"
+    }
+   ],
+   "manual": false
+  },
+  "columbia-college-chicago": {
+   "label": "Columbia College Chicago admissions",
+   "url": "https://www.colum.edu/admissions/additional-information/timeline/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Priority application deadline for all programs and all terms"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "November 1",
+     "note": "Called the 'Priority application deadline'; whether review continues after this date on a rolling basis is not explicitly confirmed on the page."
+    }
+   ],
+   "manual": false,
+   "provenanceNote": "Page confirms this is the Fall 2027 entry cycle."
+  },
+  "drake-university": {
+   "label": "Drake University admissions",
+   "url": "https://www.drake.edu/admission-aid/first-year-students",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Get all your materials submitted by December 1 to meet the Early Action Deadline for all programs.",
+    "We accept applications after March 1 on a space-available basis."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "March 1",
+     "note": "A January 15 priority date for admission and most scholarships/auditions falls between EA and this final regular deadline; Drake accepts applications after March 1 on a space-available basis. No binding ED plan exists for undergraduate first-year admission."
+    }
+   ],
+   "manual": false
+  },
+  "troy-university": {
+   "label": "Troy University admissions",
+   "url": "https://catalog.troy.edu/content.php?catoid=9&navoid=346",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Students are encouraged to apply well in advance of proposed start dates."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": true
+  },
+  "delaware-state-university": {
+   "label": "Delaware State University admissions",
+   "url": "https://www.desu.edu/admissions/undergraduate-students",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "February 1 Apply for Fall admission"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ],
+   "manual": false,
+   "note": "No ED/EA distinction; a simple semester application deadline."
+  },
+  "colorado-college": {
+   "label": "Colorado College admissions",
+   "url": "https://www.coloradocollege.edu/admission/for-students/admission-requirements/first-year-students/first-year-students.html",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Early Decision I",
+    "Early Action",
+    "Early Decision II",
+    "Regular Action"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": false
+  },
+  "davidson-college": {
+   "label": "Davidson College admissions",
+   "url": "https://www.davidson.edu/admission-and-financial-aid/apply/early-decision",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Early Decision applications are binding and represent a serious commitment to Davidson.",
+    "January 11"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 15"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 4"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 11"
+    }
+   ],
+   "manual": true
   }
  }
 }
