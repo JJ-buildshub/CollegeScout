@@ -195,7 +195,7 @@ function DirectoryContent() {
         <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
-              <div className="text-xs font-bold tracking-wide text-slate-400">System</div>
+              <div className="text-xs font-bold tracking-wide text-slate-500">System</div>
               <div className="mt-2 flex flex-wrap gap-2">
                 {SYSTEM_OPTIONS.map((s) => (
                   <button
@@ -217,7 +217,7 @@ function DirectoryContent() {
             </div>
 
             <div>
-              <div className="text-xs font-bold tracking-wide text-slate-400">Testing Policy</div>
+              <div className="text-xs font-bold tracking-wide text-slate-500">Testing Policy</div>
               <div className="mt-2 flex flex-wrap gap-2">
                 {TESTING_OPTIONS.map((t) => (
                   <button
@@ -239,7 +239,7 @@ function DirectoryContent() {
             </div>
 
             <div>
-              <div className="text-xs font-bold tracking-wide text-slate-400">Field of Interest</div>
+              <div className="text-xs font-bold tracking-wide text-slate-500">Field of Interest</div>
               <div className="mt-2 flex max-w-xs flex-wrap gap-2">
                 {INTEREST_TAXONOMY.map((field) => (
                   <button
@@ -261,7 +261,7 @@ function DirectoryContent() {
             </div>
 
             <div>
-              <div className="text-xs font-bold tracking-wide text-slate-400">Admit Rate</div>
+              <div className="text-xs font-bold tracking-wide text-slate-500">Admit Rate</div>
               <div className="mt-2 flex flex-wrap gap-2">
                 {ADMIT_BUCKETS.map((b) => (
                   <button
@@ -294,7 +294,7 @@ function DirectoryContent() {
         </div>
       )}
 
-      <div className="text-xs font-medium text-slate-400">
+      <div className="text-xs font-medium text-slate-500">
         Showing {filtered.length} of {colleges.length} schools
       </div>
 
@@ -305,7 +305,7 @@ function DirectoryContent() {
           ))}
         </div>
       ) : (
-        <div className="rounded-2xl border border-dashed border-slate-300 bg-white py-16 text-center text-sm text-slate-400">
+        <div className="rounded-2xl border border-dashed border-slate-300 bg-white py-16 text-center text-sm text-slate-500">
           No schools match your filters. Try clearing a few.
         </div>
       )}

@@ -73,7 +73,7 @@ export default function GpaByYearForm({
   const years = gpaYearsFor(profile.grade);
 
   if (years.length === 0) {
-    return <p className="text-xs text-slate-400">Pick your current grade above to enter GPA by year.</p>;
+    return <p className="text-xs text-slate-500">Pick your current grade above to enter GPA by year.</p>;
   }
 
   return (

@@ -107,7 +107,7 @@ export default function AddToApplicationsButton({
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
-            className="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-400 hover:text-navy-900"
+            className="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-500 hover:text-navy-900"
           >
             Confirm on the official page <ExternalLink className="h-3 w-3" />
           </a>
@@ -120,7 +120,7 @@ export default function AddToApplicationsButton({
           e.stopPropagation();
           setOpen(false);
         }}
-        className="mt-2 text-[11px] font-semibold text-slate-400 hover:text-slate-600"
+        className="mt-2 text-[11px] font-semibold text-slate-500 hover:text-slate-600"
       >
         Cancel
       </button>

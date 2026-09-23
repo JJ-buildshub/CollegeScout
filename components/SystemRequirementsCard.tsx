@@ -23,7 +23,7 @@ function Courses({ info }: { info: SystemRequirements }) {
       <div className="mt-3 divide-y divide-slate-100 rounded-xl border border-slate-200">
         {info.courses.map((c) => (
           <div key={c.area} className="flex gap-3 p-3 text-sm">
-            <div className="w-5 shrink-0 font-bold uppercase text-slate-400">{c.area}</div>
+            <div className="w-5 shrink-0 font-bold uppercase text-slate-500">{c.area}</div>
             <div className="min-w-0 flex-1">
               <div className="flex items-baseline justify-between gap-3">
                 <span className="font-semibold text-navy-900">{c.subject}</span>
@@ -141,7 +141,7 @@ export default function SystemRequirementsCard({ system }: { system: CollegeSyst
         ))}
       </ul>
 
-      <p className="mt-5 text-[11px] leading-snug text-slate-400">
+      <p className="mt-5 text-[11px] leading-snug text-slate-500">
         Quoted from the system&apos;s own pages, read {info.checked}. {info.pageNote} These rules can change, so check
         the official pages before you plan your courses. Each campus, and each major, may add its own requirements.
       </p>

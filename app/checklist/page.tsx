@@ -39,7 +39,7 @@ function TaskRow({ task, done, onToggle, onRemove }: { task: PlanTask; done: boo
       </button>
       <div className="min-w-0 flex-1">
         <button onClick={onToggle} className="block w-full text-left">
-          <span className={clsx("text-sm leading-snug", done ? "text-slate-400 line-through" : "text-slate-600")}>{task.label}</span>
+          <span className={clsx("text-sm leading-snug", done ? "text-slate-500 line-through" : "text-slate-600")}>{task.label}</span>
         </button>
         {task.link && (
           <a
@@ -137,14 +137,14 @@ export default function ChecklistPage() {
         <div className="flex flex-wrap items-center justify-between gap-3">
           <h2 className="text-lg font-bold text-navy-900">Your High-School Plan</h2>
           {profile.grade && (
-            <span className="text-xs font-semibold text-slate-400">
+            <span className="text-xs font-semibold text-slate-500">
               {planDone}/{planTotal} complete
             </span>
           )}
         </div>
 
         {!profile.grade ? (
-          <div className="mt-3 rounded-2xl border border-dashed border-slate-300 bg-white py-10 text-center text-sm text-slate-400">
+          <div className="mt-3 rounded-2xl border border-dashed border-slate-300 bg-white py-10 text-center text-sm text-slate-500">
             Set your current grade on{" "}
             <Link href="/matcher" className="font-semibold text-navy-900 underline underline-offset-2">
               My Fit
@@ -171,7 +171,7 @@ export default function ChecklistPage() {
                         </span>
                         <h3 className="text-sm font-bold text-navy-900">{category.title}</h3>
                       </div>
-                      <span className="text-xs font-semibold text-slate-400">
+                      <span className="text-xs font-semibold text-slate-500">
                         {catDone}/{category.tasks.length}
                       </span>
                     </div>
@@ -187,7 +187,7 @@ export default function ChecklistPage() {
                         />
                       ))}
                       {category.tasks.length === 0 && (
-                        <li className="text-xs text-slate-400">Nothing here yet — add your own below.</li>
+                        <li className="text-xs text-slate-500">Nothing here yet — add your own below.</li>
                       )}
                     </ul>
                     {category.id === "custom" && <AddTaskInput onAdd={addCustomPlanTask} />}
@@ -204,14 +204,14 @@ export default function ChecklistPage() {
         <div className="flex flex-wrap items-center justify-between gap-3">
           <h2 className="text-lg font-bold text-navy-900">Your Applications</h2>
           {applicationGroups.length > 0 && (
-            <span className="text-xs font-semibold text-slate-400">
+            <span className="text-xs font-semibold text-slate-500">
               {appDone}/{appTotal} complete
             </span>
           )}
         </div>
 
         {applicationGroups.length === 0 ? (
-          <div className="mt-3 rounded-2xl border border-dashed border-slate-300 bg-white py-10 text-center text-sm text-slate-400">
+          <div className="mt-3 rounded-2xl border border-dashed border-slate-300 bg-white py-10 text-center text-sm text-slate-500">
             No schools in progress yet. Use &quot;Add to my applications&quot; on{" "}
             <Link href="/matcher" className="font-semibold text-navy-900 underline underline-offset-2">
               My Fit

@@ -24,7 +24,7 @@ function CompactRow({ result, expanded, onToggle }: { result: FitResult; expande
       <span className={`h-2 w-2 shrink-0 rounded-full ${accent.edge}`} />
       <div className="min-w-0 flex-1">
         <div className="truncate text-sm font-bold text-navy-900">{college.name}</div>
-        <div className="flex items-center gap-1 truncate text-[11px] text-slate-400">
+        <div className="flex items-center gap-1 truncate text-[11px] text-slate-500">
           <MapPin className="h-3 w-3 shrink-0" /> {college.location}
         </div>
       </div>
@@ -186,7 +186,7 @@ export default function FitResultsList({
           ))}
         </select>
         {sortBy === "rank" && (
-          <span className="text-[11px] text-slate-400">Only some schools have a curated ranking; the rest follow, by name.</span>
+          <span className="text-[11px] text-slate-500">Only some schools have a curated ranking; the rest follow, by name.</span>
         )}
       </div>
       <div className="mt-3 grid gap-5 sm:grid-cols-2">

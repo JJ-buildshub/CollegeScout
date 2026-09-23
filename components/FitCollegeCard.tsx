@@ -48,7 +48,7 @@ function RangeBar({
         />
         <div className="absolute -top-1 h-4 w-1 rounded-full bg-navy-900" style={{ left: pct(value) }} />
       </div>
-      <div className="mt-1 flex justify-between text-[10px] text-slate-400">
+      <div className="mt-1 flex justify-between text-[10px] text-slate-500">
         <span>{format(low)}</span>
         <span>mid-50% range</span>
         <span>{format(high)}</span>
@@ -90,7 +90,7 @@ export default function FitCollegeCard({
         <div>
           <span className={`text-[11px] font-bold tracking-wide ${accent.text}`}>{college.system}</span>
           <h3 className="mt-0.5 text-sm font-extrabold leading-snug text-navy-900">{college.name}</h3>
-          <div className="mt-0.5 flex items-center gap-1 text-xs text-slate-400">
+          <div className="mt-0.5 flex items-center gap-1 text-xs text-slate-500">
             <MapPin className="h-3 w-3" /> {college.location}
           </div>
         </div>
@@ -101,14 +101,14 @@ export default function FitCollegeCard({
               {admitPct}
               <span className="text-base">%</span>
             </span>
-            <div className="mt-0.5 text-[10px] font-semibold text-slate-400">admitted</div>
+            <div className="mt-0.5 text-[10px] font-semibold text-slate-500">admitted</div>
           </div>
         </div>
       </div>
 
       {(hasRange || !sat) && (
         <div className="mt-3">
-          <div className="flex justify-between text-[11px] font-medium text-slate-400">
+          <div className="flex justify-between text-[11px] font-medium text-slate-500">
             <span>{gpaMetricLabel}</span>
             {!gpaNotEntered && (
               <span>
@@ -131,7 +131,7 @@ export default function FitCollegeCard({
 
       {sat && (
         <div className="mt-3">
-          <div className="flex justify-between text-[11px] font-medium text-slate-400">
+          <div className="flex justify-between text-[11px] font-medium text-slate-500">
             <span>SAT score</span>
             <span>
               {planningFor === "student" ? "Your student:" : "You:"}{" "}

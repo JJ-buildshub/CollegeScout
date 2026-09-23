@@ -79,7 +79,7 @@ export default function NavBar() {
                 <Icon className="h-4 w-4" />
                 {label}
                 {counter && (
-                  <span className={clsx("text-xs font-semibold", active ? "text-gold-400" : "text-slate-400")}>
+                  <span className={clsx("text-xs font-semibold", active ? "text-gold-400" : "text-slate-500")}>
                     &middot; {counter}
                   </span>
                 )}
@@ -116,7 +116,7 @@ export default function NavBar() {
                   <Icon className="h-4 w-4" />
                   {label}
                   {counter && (
-                    <span className={clsx("text-xs font-semibold", active ? "text-gold-400" : "text-slate-400")}>
+                    <span className={clsx("text-xs font-semibold", active ? "text-gold-400" : "text-slate-500")}>
                       &middot; {counter}
                     </span>
                   )}

@@ -24,7 +24,7 @@ export default function AdmissionOverview({ college }: { college: College }) {
                 href={row.source.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="whitespace-nowrap text-[11px] text-slate-400 underline underline-offset-2 hover:text-slate-600"
+                className="whitespace-nowrap text-[11px] text-slate-500 underline underline-offset-2 hover:text-slate-600"
               >
                 {row.source.label}
               </a>
@@ -32,7 +32,7 @@ export default function AdmissionOverview({ college }: { college: College }) {
           </div>
         ))}
       </dl>
-      <p className="mt-2 text-[11px] leading-snug text-slate-400">
+      <p className="mt-2 text-[11px] leading-snug text-slate-500">
         A row only appears when we have a source for it. What isn&apos;t listed wasn&apos;t confirmed, which is not the
         same as not required.
       </p>

@@ -273,7 +273,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
             )}
           </div>
         </div>
-        <p className="mt-3 text-xs text-slate-400">
+        <p className="mt-3 text-xs text-slate-500">
           Data sourced from {college.dataProvenance.sourcedFrom.join(", ")}
           {college.dataProvenance.lastVerified ? ` · Last verified ${college.dataProvenance.lastVerified}` : ""}.
           This provenance applies to the record as a whole
@@ -320,7 +320,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                       </span>
                     ))}
                   </div>
-                  <p className="mt-2 max-w-prose text-xs text-slate-400">
+                  <p className="mt-2 max-w-prose text-xs text-slate-500">
                     This is helpful preparation, not a formal admission requirement.
                     {isUcOrCsu &&
                       " For UC and CSU schools, admission is based on completing the A-G course requirements, not this list."}
@@ -350,7 +350,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                   ))}
                 </div>
                 {admitRate.superseded && (
-                  <p className="mt-2 text-[11px] leading-snug text-slate-400">
+                  <p className="mt-2 text-[11px] leading-snug text-slate-500">
                     {showResidencySplit
                       ? "Overall is College Scorecard's verified figure and won't necessarily sit between the separately-reported In-State/Out-of-State rates shown here, which are what My Fit uses to classify your chances."
                       : "My Fit uses this overall rate to classify your chances here."}
@@ -369,7 +369,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                     ))}
                   </div>
                 ) : (
-                  <p className="mt-4 border-t border-slate-100 pt-4 text-xs text-slate-400">
+                  <p className="mt-4 border-t border-slate-100 pt-4 text-xs text-slate-500">
                     GPA and test score ranges aren&apos;t reported for this school.
                   </p>
                 )}
@@ -400,7 +400,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                       ))}
                     </div>
                   ) : (
-                    <p className="mt-2 text-sm text-slate-400">
+                    <p className="mt-2 text-sm text-slate-500">
                       {college.rank === undefined ? "Not researched yet." : "No internally-impacted majors reported."}
                     </p>
                   )}
@@ -450,7 +450,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                       ))}
                     </div>
                   ) : (
-                    <p className="mt-2 text-sm text-slate-400">Not publicly reported.</p>
+                    <p className="mt-2 text-sm text-slate-500">Not publicly reported.</p>
                   )}
                 </div>
                 <div className="mt-4 border-t border-slate-100 pt-4">
@@ -469,7 +469,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                       ))}
                     </div>
                   ) : (
-                    <p className="mt-2 text-sm text-slate-400">None documented yet.</p>
+                    <p className="mt-2 text-sm text-slate-500">None documented yet.</p>
                   )}
                 </div>
               </div>
@@ -524,7 +524,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                     ))}
                   </div>
                 ) : (
-                  <p className="mt-2 text-sm text-slate-400">Not publicly reported.</p>
+                  <p className="mt-2 text-sm text-slate-500">Not publicly reported.</p>
                 )}
               </div>
             </div>
@@ -543,7 +543,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
         </div>
 
         {sourceNotes.length > 0 && (
-          <div className="space-y-1 border-t border-slate-200 pb-8 pt-4 text-xs text-slate-400">
+          <div className="space-y-1 border-t border-slate-200 pb-8 pt-4 text-xs text-slate-500">
             {sourceNotes.map((note, i) => (
               <p key={note}>
                 <span className="mr-1 font-bold">{FOOTNOTE_MARKS[Math.min(i, FOOTNOTE_MARKS.length - 1)]}</span>
@@ -656,7 +656,7 @@ function GlanceStat({
         {value}
         {showSource && <SourceMark provenance={provenance} />}
       </div>
-      {sub && <div className="mt-0.5 text-[11px] text-slate-400">{sub}</div>}
+      {sub && <div className="mt-0.5 text-[11px] text-slate-500">{sub}</div>}
     </div>
   );
 }

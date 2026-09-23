@@ -1,6 +1,5 @@
 import HomeHero from "@/components/HomeHero";
 import TryCollegeScout from "@/components/TryCollegeScout";
-import WhyCollegeScout from "@/components/WhyCollegeScout";
 import FindMyFit from "@/components/FindMyFit";
 import CareerOutcomesStory from "@/components/CareerOutcomesStory";
 import BuildYourList from "@/components/BuildYourList";
@@ -14,9 +13,6 @@ export default function HomePage() {
       <HomeHero />
       <div className="mt-8">
         <TryCollegeScout />
-      </div>
-      <div className="mt-10">
-        <WhyCollegeScout />
       </div>
       <div className="mt-10">
         <FindMyFit />
