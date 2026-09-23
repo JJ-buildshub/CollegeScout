@@ -14,8 +14,13 @@ export interface Interest {
    * year in any of these — in addition to the keyword match on curated tags.
    */
   programs?: string[];
-  /** "paths" interests are creative/career paths shown in their own labeled row. */
-  group?: "paths";
+  /**
+   * Which labeled row an overflow (non-default) interest is shown under:
+   * "health-life" = health & life sciences, "people-business" = social
+   * sciences & business, "paths" = creative/career paths. Default interests
+   * ignore this field since they're shown in their own "Popular fields" row.
+   */
+  group?: "health-life" | "people-business" | "paths";
 }
 
 /**
@@ -74,23 +79,53 @@ export const INTEREST_TAXONOMY: Interest[] = [
     ],
     programs: ["health"],
   },
-  { id: "psychology", label: "Psychology", subtitle: "How people think and act", keywords: ["Psychology"], programs: ["psychology"] },
+  {
+    id: "psychology",
+    label: "Psychology",
+    subtitle: "How people think and act",
+    keywords: ["Psychology"],
+    programs: ["psychology"],
+    group: "people-business",
+  },
   {
     id: "biology",
     label: "Biology & Life Sciences",
     subtitle: "Study living things",
     keywords: ["Biology", "Biological", "Life Sciences", "Biochemistry", "Neuroscience"],
     programs: ["biology"],
+    group: "health-life",
   },
-  { id: "finance", label: "Finance", subtitle: "Money, markets, and investing", keywords: ["Finance", "Financial"], programs: ["finance"] },
-  { id: "nursing", label: "Nursing", subtitle: "Hands-on patient care", keywords: ["Nursing"], programs: ["nursing"] },
-  { id: "education", label: "Education", subtitle: "Teach and mentor", keywords: ["Education", "Teaching"], programs: ["education"] },
+  {
+    id: "finance",
+    label: "Finance",
+    subtitle: "Money, markets, and investing",
+    keywords: ["Finance", "Financial"],
+    programs: ["finance"],
+    group: "people-business",
+  },
+  {
+    id: "nursing",
+    label: "Nursing",
+    subtitle: "Hands-on patient care",
+    keywords: ["Nursing"],
+    programs: ["nursing"],
+    group: "health-life",
+  },
+  {
+    id: "education",
+    label: "Education",
+    subtitle: "Teach and mentor",
+    keywords: ["Education", "Teaching"],
+    programs: ["education"],
+    group: "people-business",
+  },
   {
     id: "sports-movement",
     label: "Sports & Movement",
     subtitle: "Kinesiology, sports science, and coaching",
     keywords: ["Kinesiology", "Exercise Science", "Sport Management", "Sports Management", "Sports Business"],
     programs: ["kinesiology"],
+    group: "health-life",
   },
   {
     id: "social-sciences",
@@ -98,6 +133,7 @@ export const INTEREST_TAXONOMY: Interest[] = [
     subtitle: "Economics, sociology, and society",
     keywords: ["Economics", "Sociology", "Anthropology", "Social Science"],
     programs: ["social-sciences"],
+    group: "people-business",
   },
   {
     id: "music-performing",

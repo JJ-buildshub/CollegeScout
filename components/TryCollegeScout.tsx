@@ -28,7 +28,7 @@ import {
   Syringe,
 } from "lucide-react";
 import clsx from "clsx";
-import { colleges, displayedAdmitRate, formatPercent } from "@/lib/colleges";
+import { admitRateTier, colleges, displayedAdmitRate, formatPercent } from "@/lib/colleges";
 import {
   DEFAULT_INTEREST_IDS,
   INTEREST_TAXONOMY,
@@ -53,8 +53,36 @@ const LOW_MATCH_THRESHOLD = 8;
 
 const DEFAULT_INTERESTS = INTEREST_TAXONOMY.filter((i) => DEFAULT_INTEREST_IDS.includes(i.id));
 const OVERFLOW_INTERESTS = INTEREST_TAXONOMY.filter((i) => !DEFAULT_INTEREST_IDS.includes(i.id));
-const MORE_FIELDS = OVERFLOW_INTERESTS.filter((i) => i.group !== "paths");
+const HEALTH_LIFE_FIELDS = OVERFLOW_INTERESTS.filter((i) => i.group === "health-life");
+const PEOPLE_BUSINESS_FIELDS = OVERFLOW_INTERESTS.filter((i) => i.group === "people-business");
 const PATH_INTERESTS = OVERFLOW_INTERESTS.filter((i) => i.group === "paths");
+
+// Groups example results by admit-rate tier (the same bands pickDiverseSlate
+// already spreads its picks across, see lib/interests.ts) so a visitor sees
+// this interest spans the full range of selectivity, not just a raw count —
+// a preview of the Reach/Target/Likely idea before they've entered a GPA on
+// My Fit, which uses a personalized version of this same spread.
+const TIER_ORDER = ["Ultra-Selective", "Highly Selective", "Selective", "Accessible"] as const;
+
+function groupByTier<T extends { college: College }>(items: T[]): { tier: string; items: T[] }[] {
+  const groups = new Map<string, T[]>();
+  for (const item of items) {
+    const tier = admitRateTier(displayedAdmitRate(item.college).value);
+    if (!groups.has(tier)) groups.set(tier, []);
+    groups.get(tier)!.push(item);
+  }
+  return TIER_ORDER.filter((tier) => groups.has(tier)).map((tier) => ({ tier, items: groups.get(tier)! }));
+}
+
+/** Counts every match (not just the examples shown) per tier, for the "12 schools" label next to each tier heading. */
+function countsByTier(list: College[]): Map<string, number> {
+  const counts = new Map<string, number>();
+  for (const college of list) {
+    const tier = admitRateTier(displayedAdmitRate(college).value);
+    counts.set(tier, (counts.get(tier) ?? 0) + 1);
+  }
+  return counts;
+}
 
 // One icon per interest id, from the icon library already used across the
 // site (lucide-react) — no images. "Psychology" is imported under an alias
@@ -123,11 +151,20 @@ export default function TryCollegeScout() {
     }));
   }, [singleMatches, selectedIds]);
 
+  const singleTierCounts = useMemo(() => countsByTier(singleMatches), [singleMatches]);
+
   // Multi-interest view: split into "combine" and "strong in each," each
   // drawing its top slate the same diverse way.
-  const { combineResults, combineTotal, strongResults, strongTotal } = useMemo(() => {
+  const { combineResults, combineTotal, combineTierCounts, strongResults, strongTotal, strongTierCounts } = useMemo(() => {
     if (notSure || selectedIds.length < 2) {
-      return { combineResults: [], combineTotal: 0, strongResults: [], strongTotal: 0 };
+      return {
+        combineResults: [],
+        combineTotal: 0,
+        combineTierCounts: new Map<string, number>(),
+        strongResults: [],
+        strongTotal: 0,
+        strongTierCounts: new Map<string, number>(),
+      };
     }
     const combineLabels = new Map<string, string>();
     for (const c of colleges) {
@@ -151,8 +188,10 @@ export default function TryCollegeScout() {
     return {
       combineResults: combineSlate,
       combineTotal: combineLabels.size,
+      combineTierCounts: countsByTier(combineCandidates.map((c) => c.college)),
       strongResults: pickDiverseSlate(strongCandidates, MAX_RESULTS),
       strongTotal: strong.length,
+      strongTierCounts: countsByTier(strong),
     };
   }, [selectedIds, notSure]);
 
@@ -164,61 +203,78 @@ export default function TryCollegeScout() {
   const singleLabelArticle = /^[aeiou]/i.test(selectedLabel) ? "an" : "a";
 
   return (
-    <section className="rounded-3xl border border-slate-200 bg-white px-6 pb-6 pt-8 shadow-card sm:px-10 sm:pb-10 sm:pt-10">
+    <section
+      id="interests"
+      className="scroll-mt-24 rounded-3xl border border-slate-200 bg-white px-6 pb-6 pt-8 shadow-card sm:px-10 sm:pb-10 sm:pt-10"
+    >
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-xl font-extrabold tracking-tight text-navy-900 sm:text-2xl">
           What are you interested in?
         </h2>
       </div>
 
-      <div className="mx-auto mt-6 flex max-w-3xl flex-wrap justify-center gap-2">
-        {DEFAULT_INTERESTS.map((interest) => (
+      <div className="mx-auto mt-6 max-w-4xl">
+        <InterestGroup label="Popular fields">
+          {DEFAULT_INTERESTS.map((interest) => (
+            <InterestCard
+              key={interest.id}
+              interest={interest}
+              selected={selectedIds.includes(interest.id)}
+              disabled={!selectedIds.includes(interest.id) && atLimit}
+              onClick={() => toggleInterest(interest.id)}
+            />
+          ))}
           <InterestCard
-            key={interest.id}
-            interest={interest}
-            selected={selectedIds.includes(interest.id)}
-            disabled={!selectedIds.includes(interest.id) && atLimit}
-            onClick={() => toggleInterest(interest.id)}
+            interest={{ id: "not-sure", label: "Not sure yet", subtitle: "Let's figure it out" }}
+            icon={NOT_SURE_ICON}
+            selected={notSure}
+            disabled={false}
+            onClick={selectNotSure}
           />
-        ))}
+        </InterestGroup>
 
         {showMore && (
           <>
-            <h3 className="mt-3 w-full text-center text-xs font-bold tracking-wide text-slate-500">More fields</h3>
-            {MORE_FIELDS.map((interest) => (
-              <InterestCard
-                key={interest.id}
-                interest={interest}
-                selected={selectedIds.includes(interest.id)}
-                disabled={!selectedIds.includes(interest.id) && atLimit}
-                onClick={() => toggleInterest(interest.id)}
-              />
-            ))}
-            <h3 className="mt-3 w-full text-center text-xs font-bold tracking-wide text-slate-500">
-              Creative and other paths
-            </h3>
-            {PATH_INTERESTS.map((interest) => (
-              <InterestCard
-                key={interest.id}
-                interest={interest}
-                selected={selectedIds.includes(interest.id)}
-                disabled={!selectedIds.includes(interest.id) && atLimit}
-                onClick={() => toggleInterest(interest.id)}
-              />
-            ))}
+            <InterestGroup label="Health & life sciences" className="mt-5">
+              {HEALTH_LIFE_FIELDS.map((interest) => (
+                <InterestCard
+                  key={interest.id}
+                  interest={interest}
+                  selected={selectedIds.includes(interest.id)}
+                  disabled={!selectedIds.includes(interest.id) && atLimit}
+                  onClick={() => toggleInterest(interest.id)}
+                />
+              ))}
+            </InterestGroup>
+
+            <InterestGroup label="Social sciences & business" className="mt-5">
+              {PEOPLE_BUSINESS_FIELDS.map((interest) => (
+                <InterestCard
+                  key={interest.id}
+                  interest={interest}
+                  selected={selectedIds.includes(interest.id)}
+                  disabled={!selectedIds.includes(interest.id) && atLimit}
+                  onClick={() => toggleInterest(interest.id)}
+                />
+              ))}
+            </InterestGroup>
+
+            <InterestGroup label="Creative and other paths" className="mt-5">
+              {PATH_INTERESTS.map((interest) => (
+                <InterestCard
+                  key={interest.id}
+                  interest={interest}
+                  selected={selectedIds.includes(interest.id)}
+                  disabled={!selectedIds.includes(interest.id) && atLimit}
+                  onClick={() => toggleInterest(interest.id)}
+                />
+              ))}
+            </InterestGroup>
           </>
         )}
-
-        <InterestCard
-          interest={{ id: "not-sure", label: "Not sure yet", subtitle: "Let's figure it out" }}
-          icon={NOT_SURE_ICON}
-          selected={notSure}
-          disabled={false}
-          onClick={selectNotSure}
-        />
       </div>
 
-      <div className="mx-auto mt-3 max-w-xl text-center">
+      <div className="mx-auto mt-4 max-w-xl text-center">
         {!showMore && (
           <button
             type="button"
@@ -272,14 +328,18 @@ export default function TryCollegeScout() {
 
           {isSingle && (
             <>
-              <div className="mx-auto mt-6 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {singleResults.map(({ college, pathway }) => (
-                  <ResultCard key={college.id} college={college}>
-                    <p className="mt-2 text-xs font-semibold text-gold-600">{pathway}</p>
-                    <p className="mt-2 flex-1 text-xs text-slate-500">
-                      Offers bachelor&apos;s degrees in {selectedLabel.toLowerCase()}.
-                    </p>
-                  </ResultCard>
+              <div className="mx-auto mt-6 max-w-4xl">
+                {groupByTier(singleResults).map(({ tier, items }) => (
+                  <ResultTierGroup key={tier} tier={tier} total={singleTierCounts.get(tier) ?? items.length}>
+                    {items.map(({ college, pathway }) => (
+                      <ResultCard key={college.id} college={college}>
+                        <p className="mt-2 text-xs font-semibold text-gold-600">{pathway}</p>
+                        <p className="mt-2 flex-1 text-xs text-slate-500">
+                          Offers bachelor&apos;s degrees in {selectedLabel.toLowerCase()}.
+                        </p>
+                      </ResultCard>
+                    ))}
+                  </ResultTierGroup>
                 ))}
               </div>
 
@@ -341,14 +401,18 @@ export default function TryCollegeScout() {
                   Programs that combine these
                 </h3>
                 {combineResults.length > 0 ? (
-                  <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    {combineResults.map(({ college, label }) => (
-                      <ResultCard key={college.id} college={college}>
-                        <p className="mt-2 text-xs font-semibold text-gold-600">{label}</p>
-                        <p className="mt-2 flex-1 text-xs text-slate-500">
-                          One program built around {selectedLabel.toLowerCase()} together.
-                        </p>
-                      </ResultCard>
+                  <div className="mt-3">
+                    {groupByTier(combineResults).map(({ tier, items }) => (
+                      <ResultTierGroup key={tier} tier={tier} total={combineTierCounts.get(tier) ?? items.length}>
+                        {items.map(({ college, label }) => (
+                          <ResultCard key={college.id} college={college}>
+                            <p className="mt-2 text-xs font-semibold text-gold-600">{label}</p>
+                            <p className="mt-2 flex-1 text-xs text-slate-500">
+                              One program built around {selectedLabel.toLowerCase()} together.
+                            </p>
+                          </ResultCard>
+                        ))}
+                      </ResultTierGroup>
                     ))}
                   </div>
                 ) : (
@@ -364,20 +428,24 @@ export default function TryCollegeScout() {
                   Schools with a program in each
                 </h3>
                 {strongResults.length > 0 ? (
-                  <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    {strongResults.map((college) => (
-                      <ResultCard key={college.id} college={college}>
-                        <div className="mt-2 space-y-0.5">
-                          {selectedInterests.map((interest) => (
-                            <p key={interest.id} className="text-xs font-semibold text-gold-600">
-                              {interest.label}: {getPathwayLabel(college, interest.id) ?? interest.label}
+                  <div className="mt-3">
+                    {groupByTier(strongResults.map((college) => ({ college }))).map(({ tier, items }) => (
+                      <ResultTierGroup key={tier} tier={tier} total={strongTierCounts.get(tier) ?? items.length}>
+                        {items.map(({ college }) => (
+                          <ResultCard key={college.id} college={college}>
+                            <div className="mt-2 space-y-0.5">
+                              {selectedInterests.map((interest) => (
+                                <p key={interest.id} className="text-xs font-semibold text-gold-600">
+                                  {interest.label}: {getPathwayLabel(college, interest.id) ?? interest.label}
+                                </p>
+                              ))}
+                            </div>
+                            <p className="mt-2 flex-1 text-xs text-slate-500">
+                              Separate programs in each field &mdash; not a joint degree.
                             </p>
-                          ))}
-                        </div>
-                        <p className="mt-2 flex-1 text-xs text-slate-500">
-                          Separate programs in each field &mdash; not a joint degree.
-                        </p>
-                      </ResultCard>
+                          </ResultCard>
+                        ))}
+                      </ResultTierGroup>
                     ))}
                   </div>
                 ) : (
@@ -447,6 +515,23 @@ export default function TryCollegeScout() {
  * correctly without relying on the gold/navy contrast (e.g. for a
  * colorblind viewer, or on a washed-out screen).
  */
+function InterestGroup({
+  label,
+  children,
+  className,
+}: {
+  label?: string;
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <div className={className}>
+      {label && <h3 className="mb-2 text-xs font-bold uppercase tracking-wide text-slate-500">{label}</h3>}
+      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">{children}</div>
+    </div>
+  );
+}
+
 function InterestCard({
   interest,
   icon,
@@ -467,9 +552,8 @@ function InterestCard({
       disabled={disabled}
       onClick={onClick}
       aria-pressed={selected}
-      title={interest.subtitle}
       className={clsx(
-        "inline-flex items-center gap-2 rounded-full border px-3.5 py-2 text-sm font-semibold transition-colors",
+        "flex h-full flex-col items-start gap-1.5 rounded-2xl border p-3 text-left transition-colors",
         selected
           ? "border-navy-900 bg-navy-900 text-white"
           : disabled
@@ -477,9 +561,25 @@ function InterestCard({
             : "border-slate-200 bg-white text-navy-900 hover:border-slate-300 hover:bg-slate-50"
       )}
     >
-      {selected ? <Check className="h-4 w-4" strokeWidth={3} /> : <Icon className="h-4 w-4" strokeWidth={1.75} />}
-      {interest.label}
+      <span className="flex items-center gap-2">
+        {selected ? <Check className="h-4 w-4 shrink-0" strokeWidth={3} /> : <Icon className="h-4 w-4 shrink-0" strokeWidth={1.75} />}
+        <span className="text-sm font-semibold leading-tight">{interest.label}</span>
+      </span>
+      <span className={clsx("text-xs leading-snug", selected ? "text-slate-300" : "text-slate-500")}>
+        {interest.subtitle}
+      </span>
     </button>
+  );
+}
+
+function ResultTierGroup({ tier, total, children }: { tier: string; total: number; children: React.ReactNode }) {
+  return (
+    <div className="mt-5 first:mt-0">
+      <h4 className="mb-2 text-xs font-bold uppercase tracking-wide text-slate-500">
+        {tier} <span className="font-semibold normal-case text-slate-400">&middot; {total} school{total === 1 ? "" : "s"}</span>
+      </h4>
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{children}</div>
+    </div>
   );
 }
 
