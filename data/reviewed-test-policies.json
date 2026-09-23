@@ -1380,6 +1380,98 @@
     "Oberlin College has been test optional since 2020, which means that applicants can choose whether or not to submit their SAT and/or ACT scores."
    ],
    "manual": true
+  },
+  "suffolk-university": {
+   "policy": "Test-Optional",
+   "label": "Suffolk University admissions",
+   "url": "https://www.suffolk.edu/undergraduate-admission/apply/test-optional-faqs",
+   "evidence": [
+    "It's up to you whether you send us your SAT or ACT results."
+   ],
+   "manual": false,
+   "note": "Homeschooled/narrative-transcript students must still test; international applicants have a separate test-flexible policy. This records the general/domestic policy."
+  },
+  "grinnell-college": {
+   "policy": "Test-Optional",
+   "label": "Grinnell College admissions",
+   "url": "https://www.grinnell.edu/admission/apply/tips/tests",
+   "evidence": [
+    "Grinnell does not require any first-year student to submit SAT or ACT scores."
+   ],
+   "manual": false
+  },
+  "lafayette-college": {
+   "policy": "Test-Optional",
+   "label": "Lafayette College admissions",
+   "url": "https://admissions.lafayette.edu/apply/first-year-applicants/",
+   "evidence": [
+    "For applicants applying for matriculation in fall of 2027 and fall 2028, submission of standardized test scores"
+   ],
+   "manual": false
+  },
+  "smith-college": {
+   "policy": "Test-Optional",
+   "label": "Smith College admissions",
+   "url": "https://www.smith.edu/admission-aid/apply-smith/standardized-testing-policy",
+   "evidence": [
+    "Smith College has been test-optional since 2009 and remains test-optional today."
+   ],
+   "manual": false
+  },
+  "illinois-institute-of-technology": {
+   "policy": "Test-Optional",
+   "label": "Illinois Institute of Technology admissions",
+   "url": "https://www.iit.edu/admissions-aid/undergraduate-admission/first-year-students",
+   "evidence": [
+    "Illinois Tech does not require standardized tests for undergraduate applicants."
+   ],
+   "manual": false
+  },
+  "university-of-southern-mississippi": {
+   "policy": "Test-Required",
+   "label": "University of Southern Mississippi admissions",
+   "url": "https://www.usm.edu/undergraduate-admissions/applicants.php",
+   "evidence": [
+    "Submit your ACT or SAT scores."
+   ],
+   "manual": false
+  },
+  "university-of-st-thomas": {
+   "policy": "Test-Optional",
+   "label": "University of St. Thomas (MN) admissions",
+   "url": "https://www.stthomas.edu/admissions/undergraduate/first-year/test-optional/",
+   "evidence": [
+    "Students are not required to submit standardized test scores (ACT or SAT) as part of their application to St. Thomas."
+   ],
+   "manual": false
+  },
+  "wichita-state-university": {
+   "policy": "Test-Optional",
+   "label": "Wichita State University admissions",
+   "url": "https://www.wichita.edu/admissions/undergraduate/faq.php",
+   "evidence": [
+    "Wichita State is a test-optional school, meaning ACT or SAT scores are not required for admission for most applicants."
+   ],
+   "manual": false
+  },
+  "the-university-of-montana": {
+   "policy": "Test-Optional",
+   "label": "The University of Montana admissions",
+   "url": "https://www.umt.edu/admissions/apply-undergraduate.php",
+   "evidence": [
+    "ACT/SAT test scores are not required for admission to the University of Montana."
+   ],
+   "manual": false,
+   "note": "Selective programs with separate admission (e.g. Davidson Honors College) may require scores."
+  },
+  "connecticut-college": {
+   "policy": "Test-Optional",
+   "label": "Connecticut College admissions",
+   "url": "https://www.conncoll.edu/admission/apply/standardized-test-policy/",
+   "evidence": [
+    "Connecticut College is test-optional."
+   ],
+   "manual": false
   }
  }
 }

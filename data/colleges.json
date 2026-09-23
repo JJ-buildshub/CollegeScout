@@ -23603,7 +23603,7 @@
     "admitRateOverall": 0.3704,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1340-1470 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -23620,7 +23620,28 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 15"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15"
+      }
+    ],
     "financials": {
       "coaInState": 84623,
       "coaOutOfState": 84623,
@@ -23642,7 +23663,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -23715,7 +23736,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Connecticut College admissions (https://www.conncoll.edu/admission/apply/first-year-requirements-deadlines/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyProvenance": {
+      "source": "Connecticut College admissions (https://www.conncoll.edu/admission/apply/standardized-test-policy/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "fairfield-university",
@@ -26893,7 +26924,7 @@
     "admitRateOverall": 0.1451,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1418-1550 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -26910,7 +26941,23 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 15"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 5"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15"
+      }
+    ],
     "financials": {
       "coaInState": 83440,
       "coaOutOfState": 83440,
@@ -26932,7 +26979,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -27005,7 +27052,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Grinnell College admissions (https://www.grinnell.edu/admission/apply/first-year/requirements)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyProvenance": {
+      "source": "Grinnell College admissions (https://www.grinnell.edu/admission/apply/tips/tests)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "iowa-state-university",
@@ -27816,7 +27873,7 @@
     "admitRateOverall": 0.5493,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1180-1410 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -27833,7 +27890,23 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 15"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 68164,
       "coaOutOfState": 68164,
@@ -27855,7 +27928,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -27928,7 +28001,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Illinois Institute of Technology admissions (https://www.iit.edu/admissions-aid/undergraduate-admission/application-dates-and-deadlines)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyProvenance": {
+      "source": "Illinois Institute of Technology admissions (https://www.iit.edu/admissions-aid/undergraduate-admission/first-year-students)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "illinois-state-university",
@@ -29011,7 +29094,7 @@
     "admitRateOverall": 0.9395,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "970-1250 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -29028,7 +29111,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null,
+        "note": "No ED/EA/RD plans; no fixed general application deadline is published."
+      }
+    ],
     "financials": {
       "coaInState": 21780,
       "coaOutOfState": 31965,
@@ -29050,7 +29140,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -29123,7 +29213,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Wichita State University admissions (https://www.wichita.edu/admissions/undergraduate/faq.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyProvenance": {
+      "source": "Wichita State University admissions (https://www.wichita.edu/admissions/undergraduate/faq.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "eastern-kentucky-university",
@@ -29438,7 +29538,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 15",
+        "note": "Non-binding priority deadline; applications received after this date are still reviewed on a space-available basis rather than rejected (functionally rolling)."
+      }
+    ],
     "financials": {
       "coaInState": 32941,
       "coaOutOfState": 49287,
@@ -29536,6 +29643,11 @@
     "admitRateOverallSuperseded": true,
     "testingPolicyProvenance": {
       "source": "University of Louisville admissions (https://louisville.edu/admissions/apply/i-am-a-first-time-freshman/test-optional-faqs)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of Louisville admissions (https://catalog.louisville.edu/undergraduate/admission/)",
       "year": "2026-27",
       "accessed": "2026-09-22"
     }
@@ -30892,7 +31004,7 @@
     "admitRateOverall": 0.21,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1408-1540 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -30909,7 +31021,23 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 15"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 5"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15"
+      }
+    ],
     "financials": {
       "coaInState": 86030,
       "coaOutOfState": 86030,
@@ -30931,7 +31059,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -31004,7 +31132,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Smith College admissions (https://www.smith.edu/admission-aid/apply-smith/first-year-applicants)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyProvenance": {
+      "source": "Smith College admissions (https://www.smith.edu/admission-aid/apply-smith/standardized-testing-policy)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "springfield-college",
@@ -31140,7 +31278,7 @@
     "admitRateOverall": 0.8233,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1090-1280 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -31157,7 +31295,19 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 15"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 15",
+        "note": "Priority application date; Suffolk continues rolling ('ongoing') admission after this date."
+      }
+    ],
     "financials": {
       "coaInState": 65281,
       "coaOutOfState": 65281,
@@ -31179,7 +31329,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -31252,7 +31402,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Suffolk University admissions (https://www.suffolk.edu/undergraduate-admission/information-for/freshman)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyNote": "Homeschooled/narrative-transcript students must still test; international applicants have a separate test-flexible policy. This records the general/domestic policy.",
+    "testingPolicyProvenance": {
+      "source": "Suffolk University admissions (https://www.suffolk.edu/undergraduate-admission/apply/test-optional-faqs)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "the-new-england-conservatory-of-music",
@@ -33131,7 +33292,7 @@
     "admitRateOverall": 0.8536,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1223-1416 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -33148,7 +33309,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15"
+      }
+    ],
     "financials": {
       "coaInState": 66116,
       "coaOutOfState": 66116,
@@ -33170,7 +33342,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -33243,7 +33415,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of St. Thomas (MN) admissions (https://www.stthomas.edu/admissions/undergraduate/first-year/application-process/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyProvenance": {
+      "source": "University of St. Thomas (MN) admissions (https://www.stthomas.edu/admissions/undergraduate/first-year/test-optional/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "kansas-city-art-institute",
@@ -34060,7 +34242,7 @@
     "admitRateOverall": 0.9912,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -34077,7 +34259,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "August 2027",
+        "note": "Page states only a month, not a specific day; effectively rolling admission with a soft priority deadline."
+      }
+    ],
     "financials": {
       "coaInState": 26566,
       "coaOutOfState": 28566,
@@ -34099,7 +34288,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -34168,7 +34357,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of Southern Mississippi admissions (https://www.usm.edu/undergraduate-admissions/apply.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyProvenance": {
+      "source": "University of Southern Mississippi admissions (https://www.usm.edu/undergraduate-admissions/applicants.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "montana-state-university",
@@ -34321,7 +34520,7 @@
     "admitRateOverall": 0.9586,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -34338,7 +34537,19 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "December 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "March 1",
+        "note": "Priority date to be considered for fall enrollment; UM continues rolling review afterward on a space-available basis."
+      }
+    ],
     "financials": {
       "coaInState": 23570,
       "coaOutOfState": 48689,
@@ -34360,7 +34571,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -34429,7 +34640,18 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "The University of Montana admissions (https://www.umt.edu/admissions/dates-and-deadlines.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyNote": "Selective programs with separate admission (e.g. Davidson Honors College) may require scores.",
+    "testingPolicyProvenance": {
+      "source": "The University of Montana admissions (https://www.umt.edu/admissions/apply-undergraduate.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "campbell-university",
@@ -37558,7 +37780,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null,
+        "note": "No fixed calendar deadline; the only stated date is a floating priority date (the Friday before classes start each semester) for completing the full admission process."
+      }
+    ],
     "financials": {
       "coaInState": 23274,
       "coaOutOfState": 40398,
@@ -37656,6 +37885,11 @@
     "admitRateOverallSuperseded": true,
     "testingPolicyProvenance": {
       "source": "New Mexico State University admissions (https://admissions.nmsu.edu/how-to-apply/first-time-freshmen/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "applicationPlansProvenance": {
+      "source": "New Mexico State University admissions (https://catalogs.nmsu.edu/nmsu/undergraduate-admissions/)",
       "year": "2026-27",
       "accessed": "2026-09-22"
     }
@@ -39053,7 +39287,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 14121,
       "coaOutOfState": 22071,
@@ -39075,7 +39315,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -39151,6 +39391,11 @@
     "admitRateOverallSuperseded": true,
     "testingPolicyProvenance": {
       "source": "CUNY Lehman College admissions (https://www.lehman.edu/admissions/undergraduate-admissions/undergraduate-applications/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "applicationPlansProvenance": {
+      "source": "CUNY Lehman College admissions (https://www.lehman.edu/admissions/undergraduate-admissions/undergraduate-faqs/)",
       "year": "2026-27",
       "accessed": "2026-09-22"
     }
@@ -42933,7 +43178,7 @@
     "admitRateOverall": 0.3145,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1340-1490 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -42950,7 +43195,23 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 15"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 15"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15"
+      }
+    ],
     "financials": {
       "coaInState": 83133,
       "coaOutOfState": 83133,
@@ -42972,7 +43233,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -43045,7 +43306,17 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "Lafayette College admissions (https://admissions.lafayette.edu/deadlines-and-forms/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    },
+    "testingPolicyProvenance": {
+      "source": "Lafayette College admissions (https://admissions.lafayette.edu/apply/first-year-applicants/)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "lehigh-university",
@@ -45231,7 +45502,14 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "May 1",
+        "note": "No ED/EA plans found; rolling admission with a single priority deadline for fall entry."
+      }
+    ],
     "financials": {
       "coaInState": 25489,
       "coaOutOfState": 33553,
@@ -45253,7 +45531,7 @@
         "IPEDS",
         "College Scorecard"
       ],
-      "lastVerified": "2026-09-20"
+      "lastVerified": "2026-09-22"
     },
     "admissionsProvenance": {
       "source": "IPEDS 2023-24 Admissions (applicants and admitted) and College Scorecard admit rate",
@@ -45326,7 +45604,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "applicationPlansProvenance": {
+      "source": "University of Tennessee-Chattanooga admissions (https://www.utc.edu/seniors)",
+      "year": "2026-27",
+      "accessed": "2026-09-22"
+    }
   },
   {
     "id": "the-university-of-tennessee-knoxville",

@@ -3739,6 +3739,318 @@
     }
    ],
    "manual": true
+  },
+  "suffolk-university": {
+   "label": "Suffolk University admissions",
+   "url": "https://www.suffolk.edu/undergraduate-admission/information-for/freshman",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Early Action",
+    "November 15",
+    "Priority: February 15"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 15",
+     "note": "Priority application date; Suffolk continues rolling ('ongoing') admission after this date."
+    }
+   ],
+   "manual": false
+  },
+  "grinnell-college": {
+   "label": "Grinnell College admissions",
+   "url": "https://www.grinnell.edu/admission/apply/first-year/requirements",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Application Deadline Nov. 15 Jan. 5 Jan. 15"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 15"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 5"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": false
+  },
+  "lafayette-college": {
+   "label": "Lafayette College admissions",
+   "url": "https://admissions.lafayette.edu/deadlines-and-forms/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Nov. 15 – Early Decision application deadline.",
+    "Jan. 15 by 11:59 p.m. applicant’s local time – Regular Decision and Early Decision II applications deadline."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 15"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": false
+  },
+  "smith-college": {
+   "label": "Smith College admissions",
+   "url": "https://www.smith.edu/admission-aid/apply-smith/first-year-applicants",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "November 15",
+    "January 5",
+    "January 15"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 15"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 5"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": false
+  },
+  "illinois-institute-of-technology": {
+   "label": "Illinois Institute of Technology admissions",
+   "url": "https://www.iit.edu/admissions-aid/undergraduate-admission/application-dates-and-deadlines",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Early Decision applications are binding",
+    "November 15",
+    "February 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ],
+   "manual": false
+  },
+  "university-of-southern-mississippi": {
+   "label": "University of Southern Mississippi admissions",
+   "url": "https://www.usm.edu/undergraduate-admissions/apply.php",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "The priority deadline for fall 2027 freshman admission is August 2027."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "August 2027",
+     "note": "Page states only a month, not a specific day; effectively rolling admission with a soft priority deadline."
+    }
+   ],
+   "manual": false
+  },
+  "university-of-st-thomas": {
+   "label": "University of St. Thomas (MN) admissions",
+   "url": "https://www.stthomas.edu/admissions/undergraduate/first-year/application-process/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "November 1 – Early Action Deadline",
+    "January 15 – Regular Decision Deadline"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": false
+  },
+  "wichita-state-university": {
+   "label": "Wichita State University admissions",
+   "url": "https://www.wichita.edu/admissions/undergraduate/faq.php",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Applications for the next academic year open July 1, and we recommend applying early before the semester you plan to start."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "No ED/EA/RD plans; no fixed general application deadline is published."
+    }
+   ],
+   "manual": false
+  },
+  "the-university-of-montana": {
+   "label": "The University of Montana admissions",
+   "url": "https://www.umt.edu/admissions/dates-and-deadlines.php",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Early Action Application Due: Dec. 1, 2026",
+    "UM evaluates applications on a space-available basis until one week before the term begins."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "March 1",
+     "note": "Priority date to be considered for fall enrollment; UM continues rolling review afterward on a space-available basis."
+    }
+   ],
+   "manual": false
+  },
+  "connecticut-college": {
+   "label": "Connecticut College admissions",
+   "url": "https://www.conncoll.edu/admission/apply/first-year-requirements-deadlines/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "November 1",
+    "January 15"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": false
+  },
+  "the-university-of-tennessee-chattanooga": {
+   "label": "University of Tennessee-Chattanooga admissions",
+   "url": "https://www.utc.edu/seniors",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Priority deadline to complete your admission for fall is May 1."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "May 1",
+     "note": "No ED/EA plans found; rolling admission with a single priority deadline for fall entry."
+    }
+   ],
+   "manual": false
+  },
+  "cuny-lehman-college": {
+   "label": "CUNY Lehman College admissions",
+   "url": "https://www.lehman.edu/admissions/undergraduate-admissions/undergraduate-faqs/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "CUNY operates on a rolling admission basis, so you can still submit an application, but there is no guarantee that it will be completed and reviewed in time for the new semester."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": false
+  },
+  "new-mexico-state-university": {
+   "label": "New Mexico State University admissions",
+   "url": "https://catalogs.nmsu.edu/nmsu/undergraduate-admissions/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "NMSU's priority deadline for completing the entire admission process is the Friday before the first day of class each semester."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null,
+     "note": "No fixed calendar deadline; the only stated date is a floating priority date (the Friday before classes start each semester) for completing the full admission process."
+    }
+   ],
+   "manual": true
+  },
+  "university-of-louisville": {
+   "label": "University of Louisville admissions",
+   "url": "https://catalog.louisville.edu/undergraduate/admission/",
+   "accessed": "2026-09-22",
+   "evidence": [
+    "Fall Term: February 15",
+    "First-time freshmen applications and credentials received after the priority application deadlines listed above will be reviewed on a space available basis."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 15",
+     "note": "Non-binding priority deadline; applications received after this date are still reviewed on a space-available basis rather than rejected (functionally rolling)."
+    }
+   ],
+   "manual": false
   }
  }
 }
