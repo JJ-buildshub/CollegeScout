@@ -3,659 +3,6 @@
  "accessed": "2026-09-22",
  "cycle": "2026-27",
  "schools": {
-  "university-of-pennsylvania": {
-   "policy": "Test-Required",
-   "label": "Penn Admissions",
-   "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing",
-   "evidence": [
-    "Penn applicants are required to submit scores for the SAT or ACT. Applicants who face hardship in meeting this requirement can submit a waiver instead."
-   ],
-   "note": "A hardship waiver is available."
-  },
-  "ohio-state-university": {
-   "policy": "Test-Required",
-   "label": "Ohio State admissions",
-   "url": "https://undergrad.osu.edu/apply/freshmen-columbus/apply-step-by-step",
-   "evidence": [
-    "Yes, standardized test scores from ACT or SAT are required for first-year applicants to the Columbus campus.",
-    "applicants who will have been out of high school for two or more years by their term of enrollment are not required to submit scores"
-   ],
-   "note": "Columbus campus. Applicants two or more years out of high school aren't required to submit scores. Regional campuses have their own application pages."
-  },
-  "williams-college": {
-   "policy": "Test-Optional",
-   "label": "Williams admission",
-   "url": "https://www.williams.edu/admission-aid/how-to-apply/",
-   "evidence": [
-    "Williams is truly test optional, so it's entirely up to you whether you submit exam results for the SAT or ACT."
-   ],
-   "manual": true
-  },
-  "university-of-san-diego": {
-   "policy": "Test-Blind",
-   "label": "University of San Diego admission",
-   "url": "https://www.sandiego.edu/admission-and-aid/undergraduate/apply/test-free.php",
-   "evidence": [
-    "As a “test-free ” campus, we pledge not to view an incoming student’s standardized tests during the admissions process."
-   ],
-   "note": "USD calls this \"test-free\": scores are not viewed."
-  },
-  "university-of-kansas": {
-   "policy": "Test-Optional",
-   "label": "University of Kansas admissions",
-   "url": "https://admissions.ku.edu/apply",
-   "evidence": [
-    "The University of Kansas is test optional."
-   ]
-  },
-  "university-of-michigan": {
-   "policy": "Test-Optional",
-   "label": "Michigan admissions",
-   "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines",
-   "evidence": [
-    "SAT or ACT score, if available and you wish them to be considered"
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026.",
-   "manual": true
-  },
-  "university-of-texas-at-austin": {
-   "policy": "Test-Required",
-   "label": "UT Austin admissions",
-   "url": "https://admissions.utexas.edu/apply/freshman/",
-   "evidence": [
-    "Send at least one official SAT or ACT score directly from the testing agency"
-   ],
-   "note": "Official Classic Learning Test (CLT) scores also satisfy this requirement."
-  },
-  "harvard-university": {
-   "policy": "Test-Required",
-   "label": "Harvard College admissions",
-   "url": "https://college.harvard.edu/admissions/apply/first-year-applicants",
-   "evidence": [
-    "SAT or ACT - In exceptional cases when those tests are not accessible"
-   ],
-   "note": "In exceptional cases when the tests are not accessible, AP, IB or national exam results can meet the requirement.",
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "yale-university": {
-   "policy": "Test-Required",
-   "label": "Yale admissions",
-   "url": "https://admissions.yale.edu/standardized-testing",
-   "evidence": [
-    "First-year and transfer applicants are required to include scores from the ACT or SAT."
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "stanford-university": {
-   "policy": "Test-Required",
-   "label": "Stanford admission",
-   "url": "https://admission.stanford.edu/apply/first-year/testing.html",
-   "evidence": [
-    "ACT or SAT scores are required."
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "princeton-university": {
-   "policy": "Test-Optional",
-   "label": "Princeton admission",
-   "url": "https://admission.princeton.edu/apply/standardized-testing",
-   "evidence": [
-    "For first-year and transfer applicants seeking to enroll in fall 2027, Princeton remains test optional."
-   ],
-   "note": "Princeton returns to requiring SAT or ACT scores for applicants seeking to enroll in fall 2028."
-  },
-  "columbia-university": {
-   "policy": "Test-Optional",
-   "label": "Columbia undergraduate admissions",
-   "url": "https://undergrad.admissions.columbia.edu/apply/process/testing",
-   "evidence": [
-    "We will remain test optional for the 2026-2027 admissions cycle."
-   ],
-   "note": "Columbia will require SAT or ACT scores starting with the 2027-28 admission cycle."
-  },
-  "cornell-university": {
-   "policy": "Test-Required",
-   "label": "Cornell admissions",
-   "url": "https://admissions.cornell.edu/policies/standardized-testing-policy",
-   "evidence": [
-    "First-year applicants are required to submit the SAT or ACT scores when applying to Cornell."
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "brown-university": {
-   "policy": "Test-Required",
-   "label": "Brown admission",
-   "url": "https://admission.brown.edu/first-year/standardized-tests",
-   "evidence": [
-    "Brown University has returned to a policy requiring standardized test scores (either SAT or ACT scores) for first-year applicants beginning with the 2024-25 admission cycle."
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "university-of-alabama": {
-   "policy": "Test-Optional",
-   "label": "University of Alabama admissions",
-   "url": "https://admissions.ua.edu/testing-requirements/",
-   "evidence": [
-    "a standardized test score (ACT or SAT) will be required for students whose cumulative high school GPA is below 3.0"
-   ],
-   "note": "A test score is required if your cumulative high school GPA is below 3.0."
-  },
-  "university-of-pittsburgh": {
-   "policy": "Test-Optional",
-   "label": "Pitt admissions",
-   "url": "https://admissions.pitt.edu/first-year-student/",
-   "evidence": [
-    "the university has extended the test-optional program through Fall 2028"
-   ],
-   "note": "Pitt's test-optional program runs through Fall 2028 (Pittsburgh campus)."
-  },
-  "university-of-arizona": {
-   "policy": "Test-Optional",
-   "label": "University of Arizona admissions",
-   "url": "https://www.arizona.edu/admissions/undergraduate/first-year",
-   "evidence": [
-    "SAT and ACT scores are not required for general admission to the university"
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "penn-state-university": {
-   "policy": "Test-Optional",
-   "label": "Penn State admissions",
-   "url": "https://admissions.psu.edu/apply/",
-   "evidence": [
-    "For first-year applicants, Penn State is test-optional, so submitting scores is not required for your application."
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "massachusetts-institute-of-technology": {
-   "policy": "Test-Required",
-   "label": "MIT admissions",
-   "url": "https://mitadmissions.org/apply/firstyear/tests-scores/",
-   "evidence": [
-    "We require the SAT or the ACT",
-    "for both prospective first-year and transfer students."
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "northwestern-university": {
-   "policy": "Test-Optional",
-   "label": "Northwestern admissions",
-   "url": "https://admissions.northwestern.edu/faqs/standardized-testing-policy/index.html",
-   "evidence": [
-    "Northwestern is test-optional and does not require ACT or SAT scores from first-year or transfer candidates applying for full-time undergraduate study."
-   ]
-  },
-  "duke-university": {
-   "policy": "Test-Optional",
-   "label": "Duke admissions",
-   "url": "https://admissions.duke.edu/apply/",
-   "evidence": [
-    "Duke University is test-optional for both first-year and transfer applicants in the 2026-2027 admissions cycle."
-   ]
-  },
-  "vanderbilt-university": {
-   "policy": "Test-Optional",
-   "label": "Vanderbilt admissions",
-   "url": "https://admissions.vanderbilt.edu/apply/",
-   "evidence": [
-    "For students applying for fall 2027 and 2028 entry, SAT or ACT scores are optional."
-   ]
-  },
-  "rice-university": {
-   "policy": "Test-Optional",
-   "label": "Rice admission",
-   "url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
-   "evidence": [
-    "Rice recommends that degree-seeking first-year and transfer applicants submit SAT or ACT test scores if available."
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "georgetown-university": {
-   "policy": "Test-Required",
-   "label": "Georgetown admissions",
-   "url": "https://uadmissions.georgetown.edu/apply/first-year-applicants/application-requirements-and-forms/",
-   "evidence": [
-    "Georgetown requires submission of either SAT or ACT scores as part of the application process."
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "johns-hopkins-university": {
-   "policy": "Test-Required",
-   "label": "Johns Hopkins admissions",
-   "url": "https://apply.jhu.edu/frequently-asked-questions/",
-   "evidence": [
-    "Yes, we require students to submit either the SAT or ACT with their application."
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "university-of-notre-dame": {
-   "policy": "Test-Optional",
-   "label": "Notre Dame admissions",
-   "url": "https://admissions.nd.edu/apply/",
-   "evidence": [
-    "Notre Dame is test-optional through the 2026/2027 application cycle."
-   ],
-   "note": "Notre Dame will require SAT or ACT scores for applicants seeking to enroll in fall 2028."
-  },
-  "florida-state-university": {
-   "policy": "Test-Required",
-   "label": "Florida State admissions",
-   "url": "https://admissions.fsu.edu/deadlines",
-   "evidence": [
-    "At least one test score must be submitted before the material deadline"
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "university-of-south-florida": {
-   "policy": "Test-Required",
-   "label": "USF admissions",
-   "url": "https://www.usf.edu/admissions/freshmen/admission-information/requirements-deadlines.aspx",
-   "evidence": [
-    "official results for at least one college entrance exam"
-   ],
-   "note": "The SAT, ACT or CLT satisfies this requirement.",
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "university-of-central-florida": {
-   "policy": "Test-Required",
-   "label": "UCF admissions",
-   "url": "https://www.ucf.edu/admissions/undergraduate/freshman/",
-   "evidence": [
-    "Official Standardized Test Scores* from either SAT [code: 5233], ACT** [code: 0735], or CLT"
-   ],
-   "note": "The SAT, ACT or CLT satisfies this requirement.",
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "the-university-of-tennessee-knoxville": {
-   "policy": "Test-Required",
-   "label": "University of Tennessee, Knoxville admissions",
-   "url": "https://admissions.utk.edu/undergraduate-application/test-score-policy/",
-   "evidence": [
-    "All first-year undergraduate students are required to self-report their ACT or SAT scores as part of their application for admission by January 20, 2027.",
-    "Only tests taken through December 2026 will be accepted for admission and institutional merit scholarship consideration."
-   ],
-   "note": "Self-report your ACT or SAT scores by January 20, 2027; only tests taken through December 2026 count."
-  },
-  "binghamton-university": {
-   "policy": "Test-Optional",
-   "label": "Binghamton admissions",
-   "url": "https://www.binghamton.edu/admissions/undergraduate/apply/freshman/",
-   "evidence": [
-    "Binghamton University is test optional which means standardized test scores are not required."
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "auburn-university": {
-   "policy": "Test-Required",
-   "label": "Auburn admissions",
-   "url": "https://auburn.edu/admissions/prospective-students/freshmen/index.php",
-   "evidence": [
-    "Auburn University requires that a student must have ACT or SAT scores on file to have a complete application."
-   ]
-  },
-  "stony-brook-university": {
-   "policy": "Test-Optional",
-   "label": "Stony Brook admissions",
-   "url": "https://www.stonybrook.edu/undergraduate-admissions/apply/first-year.php",
-   "evidence": [
-    "Stony Brook is test optional for applicants."
-   ]
-  },
-  "university-of-south-carolina-columbia": {
-   "policy": "Test-Optional",
-   "label": "University of South Carolina admissions",
-   "url": "https://sc.edu/about/offices_and_divisions/undergraduate_admissions/apply/for_freshmen/",
-   "evidence": [
-    "USC is test-optional through the fall, spring and summer 2027 terms."
-   ],
-   "note": "Test-optional through the fall, spring and summer 2027 terms."
-  },
-  "louisiana-state-university-and-agricultural-and-mechanical-college": {
-   "policy": "Test-Optional",
-   "label": "LSU admissions",
-   "url": "https://www.lsu.edu/admissions/apply/freshman.php",
-   "evidence": [
-    "Any first-year applicant whose cumulative weighted high school GPA is lower than 3.5 is required to submit either an ACT or SAT score"
-   ],
-   "note": "Test-optional only if your cumulative weighted high school GPA is 3.5 or higher; below 3.5, an ACT or SAT score is required for admission and merit scholarships."
-  },
-  "north-carolina-state-university-at-raleigh": {
-   "policy": "Test-Optional",
-   "label": "NC State admissions",
-   "url": "https://admissions.ncsu.edu/apply/first-year/",
-   "evidence": [
-    "NC State is test optional for applicants with a weighted GPA of 2.8 or above."
-   ],
-   "note": "Test-optional applies to applicants with a weighted GPA of 2.8 or above.",
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "university-of-minnesota-twin-cities": {
-   "policy": "Test-Optional",
-   "label": "University of Minnesota Twin Cities admissions",
-   "url": "https://admissions.tc.umn.edu/admissions/freshman-admission/act-sat-information",
-   "evidence": [
-    "Freshman applicants through the fall 2027 term are not required to submit an ACT or SAT test score."
-   ]
-  },
-  "university-of-oregon": {
-   "policy": "Test-Optional",
-   "label": "University of Oregon admissions",
-   "url": "https://www.uoregon.edu/admissions/undergraduate/find-your-path/first-year-students/",
-   "evidence": [
-    "Note that the UO is a test-optional school for SAT/ACT."
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "the-university-of-tampa": {
-   "policy": "Test-Optional",
-   "label": "University of Tampa admissions",
-   "url": "https://www.ut.edu/admissions/first-year-admissions",
-   "evidence": [
-    "We do not require test scores for admission to the University."
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "university-of-north-texas": {
-   "policy": "Test-Optional",
-   "label": "University of North Texas admissions",
-   "url": "https://www.unt.edu/admissions/freshman/admission-requirements.html",
-   "evidence": [
-    "UNT is test-score-optional, however, submitting test scores can help determine admission decisions, testing exemptions and scholarship opportunities."
-   ]
-  },
-  "colorado-state-university-fort-collins": {
-   "policy": "Test-Optional",
-   "label": "Colorado State University admissions",
-   "url": "https://catalog.colostate.edu/general-catalog/admissions/how-to-apply/",
-   "evidence": [
-    "ACT/SAT test scores and recommendations are not required.",
-    "Test scores, if submitted, are only considered when applicants email admissions@colostate.edu with this request."
-   ],
-   "note": "Scores are considered only if the applicant emails admissions to request it, and are not considered at all for scholarships.",
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "texas-tech-university": {
-   "policy": "Test-Optional",
-   "label": "Texas Tech admissions",
-   "url": "https://www.depts.ttu.edu/admissions/testoptional/",
-   "evidence": [
-    "Texas Tech University Undergraduate Admissions allows you to choose whether to submit SAT or ACT scores as part of our admission and scholarship consideration."
-   ]
-  },
-  "university-of-cincinnati": {
-   "policy": "Test-Optional",
-   "label": "University of Cincinnati admissions",
-   "url": "https://www.admissions.uc.edu/test-optional.html",
-   "evidence": [
-    "Programs at University of Cincinnati will consider students for admission with or without a standardized test score as part of their application."
-   ]
-  },
-  "north-carolina-a-and-t-state-university": {
-   "policy": "Test-Optional",
-   "label": "NC A&T admissions",
-   "url": "https://www.ncat.edu/admissions/undergraduate/freshman/admissions-criteria.php",
-   "evidence": [
-    "Although test scores are optional for admission, we strongly recommend submitting your test scores because they are used for other purposes."
-   ]
-  },
-  "university-of-houston": {
-   "policy": "Test-Optional",
-   "label": "University of Houston admissions",
-   "url": "https://www.uh.edu/undergraduate-admissions/resources/test-optional-admissions/",
-   "evidence": [
-    "Freshman applicants have the option to apply for admission with or without a test score through June 1, 2030."
-   ]
-  },
-  "georgia-state-university": {
-   "policy": "Test-Required",
-   "label": "Georgia State admissions",
-   "url": "https://admissions.gsu.edu/2026/03/11/how-to-submit-your-sat-act-scores-so-your-application-isnt-held-up/",
-   "evidence": [
-    "For Fall 2026 and beyond, SAT or ACT scores are required for college admission."
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "the-university-of-texas-at-dallas": {
-   "policy": "Test-Optional",
-   "label": "UT Dallas admissions",
-   "url": "https://enroll.utdallas.edu/freshman/criteria/",
-   "evidence": [
-    "SAT I or ACT scores, if available."
-   ],
-   "note": "Scores are one holistic factor among several; not stated as required."
-  },
-  "oregon-state-university": {
-   "policy": "Test-Optional",
-   "label": "Oregon State University admissions",
-   "url": "https://admissions.oregonstate.edu/test-optional-admissions",
-   "evidence": [
-    "Oregon State University has a test-optional admissions policy for first-year students."
-   ]
-  },
-  "ball-state-university": {
-   "policy": "Test-Optional",
-   "label": "Ball State University admissions",
-   "url": "https://www.bsu.edu/admissions/undergraduate-admissions/apply-now/test-information",
-   "evidence": [
-    "Ball State University is a test-optional institution, which means you decide whether you want to provide your SAT, ACT, and/or CLT scores as part of your application."
-   ]
-  },
-  "university-of-kentucky": {
-   "policy": "Test-Optional",
-   "label": "University of Kentucky admissions",
-   "url": "https://admission.uky.edu/news/test-optional",
-   "evidence": [
-    "The University of Kentucky has implemented a test-optional policy through the 2028-29 academic year."
-   ]
-  },
-  "george-washington-university": {
-   "policy": "Test-Optional",
-   "label": "George Washington University admissions",
-   "url": "https://undergraduate.admissions.gwu.edu/test-optional",
-   "evidence": [
-    "Test scores are not required for consideration in special programs (except for GW's B.A./B.S.-M.D. program) or for merit scholarships."
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "washington-state-university": {
-   "policy": "Test-Optional",
-   "label": "Washington State University admissions",
-   "url": "https://admission.wsu.edu/apply/as/freshman/requirements-2/",
-   "evidence": [
-    "WSU does not require students to submit SAT/ACT test scores as part of the application process and will not use them in our admission decisions."
-   ]
-  },
-  "ohio-university": {
-   "policy": "Test-Optional",
-   "label": "Ohio University admissions",
-   "url": "https://www.ohio.edu/admissions/apply/test-optional",
-   "evidence": [
-    "Ohio University has adopted a test-optional pathway for admission to the Athens campus for freshman applicants."
-   ]
-  },
-  "university-of-arkansas": {
-   "policy": "Test-Optional",
-   "label": "University of Arkansas admissions",
-   "url": "https://admissions.uark.edu/apply/test-scores-and-applying.php",
-   "evidence": [
-    "optional application for admission for students with a 3.2 GPA or higher."
-   ],
-   "note": "Test-optional for applicants with a 3.2 GPA or higher; test scores are required for most scholarships and, if admitted test-optional, for placement and enrollment purposes."
-  },
-  "university-of-illinois-chicago": {
-   "policy": "Test-Optional",
-   "label": "University of Illinois Chicago admissions",
-   "url": "https://admissions.uic.edu/undergraduate/requirements-deadlines/first-year-requirements/test-optional-faq",
-   "evidence": [
-    "Effective with the 2027 undergraduate admission cycle, UIC has amended its Test-Optional policy."
-   ]
-  },
-  "university-of-rhode-island": {
-   "policy": "Test-Optional",
-   "label": "University of Rhode Island admissions",
-   "url": "https://web.uri.edu/admission/by-major/",
-   "evidence": [
-    "URI is a test-optional institution."
-   ]
-  },
-  "university-of-utah": {
-   "policy": "Test-Optional",
-   "label": "University of Utah admissions",
-   "url": "https://attheu.utah.edu/students/u-adopts-permanent-test-optional-admission-policy/",
-   "evidence": [
-    "The University of Utah is leading the state in ensuring access to all students through its permanent adoption of a test-optional"
-   ],
-   "note": "Adopted as a permanent policy; a score is required only for applicants from a non-accredited school, home school, or with a GED/HiSET."
-  },
-  "florida-agricultural-and-mechanical-university": {
-   "policy": "Test-Required",
-   "label": "FAMU admissions",
-   "url": "https://admissions.famu.edu/student-types/freshman.php",
-   "evidence": [
-    "Note: Florida A&M is not Test Optional and standardized SAT/ACT/CLT scores are required."
-   ]
-  },
-  "university-of-north-carolina-at-charlotte": {
-   "policy": "Test-Optional",
-   "label": "UNC Charlotte admissions",
-   "url": "https://admissions.charlotte.edu/apply/first-year-students/application-requirements/",
-   "evidence": [
-    "CLT scores cannot replace the standardized SAT or ACT scores that are required for students applying with a weighted GPA of 2.8 or lower."
-   ],
-   "note": "Test-optional applies above a weighted GPA of 2.8; a SAT or ACT score (not CLT) is required at or below 2.8."
-  },
-  "george-mason-university": {
-   "policy": "Test-Optional",
-   "label": "George Mason University admissions",
-   "url": "https://www.gmu.edu/freshman/requirements/score-optional",
-   "evidence": [
-    "Students do have the opportunity to decide if they would like to submit standardized test scores as a component of the application process."
-   ]
-  },
-  "iowa-state-university": {
-   "policy": "Test-Optional",
-   "label": "Iowa State University admissions",
-   "url": "https://catalog.iastate.edu/admissions/",
-   "evidence": [
-    "Iowa State is test-optional for first-year applicants. Students may choose whether they wish to report their ACT/SAT scores when they apply for admission."
-   ]
-  },
-  "the-university-of-texas-at-arlington": {
-   "policy": "Test-Optional",
-   "label": "UT Arlington admissions",
-   "url": "https://www.uta.edu/admissions/apply/freshmen",
-   "evidence": [
-    "UTA is currently test optional, therefore SAT and ACT scores are not required for an admissions decision."
-   ],
-   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
-  },
-  "university-of-vermont": {
-   "policy": "Test-Optional",
-   "label": "University of Vermont admissions",
-   "url": "https://www.uvm.edu/uvmnews/news/uvm-officially-approves-test-optional-admissions-policy",
-   "evidence": [
-    "The University of Vermont announced that it will make permanent its current test-optional admissions policy for undergraduate applicants"
-   ]
-  },
-  "university-of-oklahoma-norman-campus": {
-   "policy": "Test-Optional",
-   "label": "University of Oklahoma admissions",
-   "url": "https://www.ou.edu/admissions/apply/freshman",
-   "evidence": [
-    "OU will practice a test-optional admissions process when reviewing applications."
-   ]
-  },
-  "east-carolina-university": {
-   "policy": "Test-Optional",
-   "label": "East Carolina University admissions",
-   "url": "https://admissions.ecu.edu/apply/freshmen/",
-   "evidence": [
-    "Students with a weighted high school GPA less than 2.8 are required to submit an ACT or SAT score."
-   ],
-   "note": "Test-optional above a weighted GPA of 2.8; a score is required at or below 2.8."
-  },
-  "university-of-missouri-columbia": {
-   "policy": "Test-Optional",
-   "label": "University of Missouri admissions",
-   "url": "https://admissions.missouri.edu/apply/freshmen/test-optional/",
-   "evidence": [
-    "Freshman applicants for the Fall 2027 semester have the option of being reviewed with or without test scores"
-   ]
-  },
-  "mississippi-state-university": {
-   "policy": "Test-Optional",
-   "label": "Mississippi State University admissions",
-   "url": "https://www.admissions.msstate.edu/apply/admission-process/freshman-admissions",
-   "evidence": [
-    "Official Test Scores Optional for admission, but encouraged for scholarships."
-   ]
-  },
-  "kent-state-university-at-kent": {
-   "policy": "Test-Optional",
-   "label": "Kent State University admissions",
-   "url": "https://www.kent.edu/admissions/test-optional-policy",
-   "evidence": [
-    "If you are applying for first-year or transfer admission you are not required to submit standardized test scores (ACT or SAT)."
-   ]
-  },
-  "montana-state-university": {
-   "policy": "Test-Optional",
-   "label": "Montana State University admissions",
-   "url": "https://www.montana.edu/admissions/apply/freshman.html",
-   "evidence": [
-    "The Montana Board of Regents of Higher Education has ended the requirement that students provide ACT or SAT test scores for admission to its campuses."
-   ],
-   "note": "Set by the Montana Board of Regents for all its four-year campuses."
-  },
-  "university-of-new-hampshire": {
-   "policy": "Test-Optional",
-   "label": "University of New Hampshire admissions",
-   "url": "https://admissions.unh.edu/apply/test-optional",
-   "evidence": [
-    "Our test-optional policy reflects our holistic review to the college application process, in which standardized test scores have never been a deciding factor."
-   ]
-  },
-  "illinois-state-university": {
-   "policy": "Test-Optional",
-   "label": "Illinois State University admissions",
-   "url": "https://policy.illinoisstate.edu/students/2-1-31/",
-   "evidence": [
-    "At Illinois State University, no prospective student is required to submit any standardized test scores with their application."
-   ],
-   "note": "Required by Illinois's Higher Education Fair Admissions Act."
-  },
-  "university-of-hawaii-at-manoa": {
-   "policy": "Test-Optional",
-   "label": "University of Hawaii at Manoa admissions",
-   "url": "https://manoa.hawaii.edu/admissions/freshman/",
-   "evidence": [
-    "UH Mānoa is test-optional, which means that students can choose whether or not to submit SAT or ACT scores for admission consideration."
-   ]
-  },
-  "towson-university": {
-   "policy": "Test-Optional",
-   "label": "Towson University admissions",
-   "url": "https://catalog.towson.edu/undergraduate/admissions/undergraduate-admissions/guidelines-freshman-admission/",
-   "evidence": [
-    "TU is test-optional: applicants are not required to submit SAT/ACT scores as part of their application, but scores will be considered if they are submitted."
-   ]
-  },
-  "bowling-green-state-university": {
-   "policy": "Test-Optional",
-   "label": "Bowling Green State University admissions",
-   "url": "https://www.bgsu.edu/admissions/test-optional.html",
-   "evidence": [
-    "Bowling Green State University is offering applicants the opportunity to have their applications reviewed without consideration of test scores."
-   ]
-  },
-  "florida-international-university": {
-   "policy": "Test-Required",
-   "label": "FIU admissions",
-   "url": "https://admissions.fiu.edu/admission-standards/",
-   "evidence": [
-    "SAT, ACT and/or CLT scores are required for first time in college applicants."
-   ]
-  },
   "american-university": {
    "policy": "Test-Optional",
    "label": "American University admissions",
@@ -665,663 +12,40 @@
    ],
    "manual": true
   },
-  "rowan-university": {
+  "arkansas-tech-university": {
    "policy": "Test-Optional",
-   "label": "Rowan University admissions",
-   "url": "https://admissions.rowan.edu/admissions-process/freshman-requirements/standardized-scores.html",
+   "label": "Arkansas Tech University admissions",
+   "url": "https://www.atu.edu/admissions/requirements.php",
    "evidence": [
-    "Rowan is test optional for admission to the University only."
-   ]
-  },
-  "central-michigan-university": {
-   "policy": "Test-Optional",
-   "label": "Central Michigan University admissions",
-   "url": "https://www.cmich.edu/undergraduate/apply",
-   "evidence": [
-    "Step 3 (Freshmen only): Submit your test scores (optional)"
-   ]
-  },
-  "coastal-carolina-university": {
-   "policy": "Test-Optional",
-   "label": "Coastal Carolina University admissions",
-   "url": "https://www.coastal.edu/admissions/testopt/",
-   "evidence": [
-    "Freshman applicants who have earned a minimum 3.5 HS GPA (weighted GPA on a 4.0 scale) may choose whether or not to submit standardize"
+    "Please note, first-time students admitted without test scores must submit either ACT, SAT, CLT, or ACCUPLACER scores for placement purposes prior to registration."
    ],
-   "note": "Test-optional only above a 3.5 weighted GPA; a score is required otherwise."
+   "manual": true,
+   "note": "ATU's own pages never use the literal phrase 'test optional'; classification is inferred from a sliding-scale structure where a 3.0+ GPA admits without any test score."
   },
-  "university-of-dayton": {
-   "policy": "Test-Optional",
-   "label": "University of Dayton admissions",
-   "url": "https://udayton.edu/apply/undergraduate/resources/test-optional.php",
-   "evidence": [
-    "The University of Dayton is test-optional in admission."
-   ]
-  },
-  "university-of-north-carolina-wilmington": {
-   "policy": "Test-Optional",
-   "label": "UNC Wilmington admissions",
-   "url": "https://www.uncw.edu/admissions/undergraduate/first-year/requirements/testing",
-   "evidence": [
-    "For students applying for Fall 2026 and beyond: students with a weighted high school GPA greater than or equal to 2.50 and less than 2.80 are required to s"
-   ],
-   "note": "Test-optional above a weighted GPA of 2.80; between 2.50 and 2.80 a score of at least 17 (ACT) or 930 (SAT) is required; below 2.50, see the school's admission criteria."
-  },
-  "boise-state-university": {
-   "policy": "Test-Optional",
-   "label": "Boise State University admissions",
-   "url": "https://www.boisestate.edu/admissions/apply/resident/",
-   "evidence": [
-    "Test scores are not required and will not be used in the admission review process."
-   ]
-  },
-  "university-of-wisconsin-milwaukee": {
-   "policy": "Test-Optional",
-   "label": "UW-Milwaukee admissions",
-   "url": "https://uwm.edu/undergrad-admission/apply/new-freshman/",
-   "evidence": [
-    "UW System institutions, including UWM, are not requiring applicants to submit ACT or SAT scores as part of the application process this year."
-   ]
-  },
-  "university-at-buffalo": {
-   "policy": "Test-Optional",
-   "label": "University at Buffalo admissions",
-   "url": "https://www.buffalo.edu/admissions/apply/first-year.standardized-tests.html",
-   "evidence": [
-    "The University at Buffalo has adopted a test-optional policy. This means that standardized test scores are not required for admission or scholarship consideration."
-   ]
-  },
-  "lehigh-university": {
-   "policy": "Test-Optional",
-   "label": "Lehigh University admissions",
-   "url": "https://www2.lehigh.edu/admissions/admissions-requirements",
-   "evidence": [
-    "Lehigh University has adopted a test-optional policy regarding submission of SAT or ACT scores indefinitely."
-   ]
-  },
-  "the-university-of-texas-at-san-antonio": {
-   "policy": "Test-Optional",
-   "label": "UTSA Future Roadrunner admissions",
-   "url": "https://future.utsa.edu/freshman/admissions/",
-   "evidence": [
-    "Test Optional You do not need to submit SAT or ACT scores to be considered for admission."
-   ]
-  },
-  "william-and-mary": {
-   "policy": "Test-Optional",
-   "label": "William & Mary admission",
-   "url": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/first-year-applicants/standardizedtesting/",
-   "evidence": [
-    "Standardized testing is just one optional part of your application.",
-    "If you do not want to share your SAT or ACT, that is perfectly fine because it is a completely optional component of your application."
-   ]
-  },
-  "west-virginia-university": {
-   "policy": "Test-Optional",
-   "label": "WVU admissions",
-   "url": "https://admissions.wvu.edu/how-to-apply/first-time-freshmen/admission-requirements",
-   "evidence": [
-    "Test-Optional Admission Test-optional admission permits applicants to apply without an ACT or SAT score."
-   ],
-   "note": "Some direct-admission majors and the WV PROMISE Scholarship set their own test-score-linked requirements."
-  },
-  "kennesaw-state-university": {
+  "auburn-university": {
    "policy": "Test-Required",
-   "label": "Kennesaw State University admissions",
-   "url": "https://www.kennesaw.edu/admissions/undergraduate/admission-requirements/freshman.php",
+   "label": "Auburn admissions",
+   "url": "https://auburn.edu/admissions/prospective-students/freshmen/index.php",
    "evidence": [
-    "Is KSU test-optional? No. First-Year students applying to Kennesaw State University are required to submit official SAT or ACT scores along with official high school transcripts."
+    "Auburn University requires that a student must have ACT or SAT scores on file to have a complete application."
    ]
   },
-  "texas-state-university": {
+  "babson-college": {
    "policy": "Test-Optional",
-   "label": "Texas State University admissions",
-   "url": "https://www.admissions.txst.edu/future-students/apply-for-admission.html",
+   "label": "Babson College admissions",
+   "url": "https://undergraduatecatalog.babson.edu/standardized-testing-requirements-and-test-optional-policy",
    "evidence": [
-    "Texas State University does not require ACT or SAT test scores for first-time applicants ranked in the top 75% of their high school classes for admission to the university"
-   ],
-   "note": "Not required for applicants in the top 75% of their high school class; required for the 4th quartile."
-  },
-  "brigham-young-university": {
-   "policy": "Test-Optional",
-   "label": "BYU test-optional admissions",
-   "url": "https://testoptional.byu.edu/",
-   "evidence": [
-    "Test scores are optional for most applicants through winter 2028."
-   ],
-   "note": "Optional for most applicants; some applicants (e.g. certain non-accredited or limited coursework cases) are required to submit a score."
-  },
-  "university-of-nevada-las-vegas": {
-   "policy": "Test-Optional",
-   "label": "UNLV admissions",
-   "url": "https://www.unlv.edu/admissions/undergraduate/first-year",
-   "evidence": [
-    "ACT or SAT Scores - Test scores are not required for admission or scholarship consideration but are encouraged for UNLV course placement."
-   ]
-  },
-  "virginia-commonwealth-university": {
-   "policy": "Test-Optional",
-   "label": "VCU admissions",
-   "url": "https://admissions.vcu.edu/apply-to-vcu/undergraduate/first-year/first-year-requirements/",
-   "evidence": [
-    "Test-optional details Applicants (including those seeking scholarships) do not need to submit test scores unless applying to the Honors College guaranteed admissions programs."
-   ],
-   "note": "Test scores remain required for VCU's Guaranteed Admission Programs (e.g. Honors College guaranteed pathways)."
-  },
-  "university-of-mississippi": {
-   "policy": "Test-Optional",
-   "label": "Ole Miss admissions",
-   "url": "https://olemiss.edu/admissions/undergraduate-admissions/application-process/",
-   "evidence": [
-    "an ACT or SAT score if provided",
-    "Either an ACT or SAT score Optional for nonresident students with 3.2 unweighted cumulative GPA or higher Strongly recommended for nonresident students with"
-   ],
-   "note": "Mississippi residents: a score is used only if provided. Nonresidents: optional at 3.2+ unweighted GPA, strongly recommended below that."
-  },
-  "montclair-state-university": {
-   "policy": "Test-Optional",
-   "label": "Montclair State University admissions",
-   "url": "https://www.montclair.edu/admissions/apply-and-check-status/admissions-requirements/satact-test-optional-policy/",
-   "evidence": [
-    "Submitting SAT or ACT scores is optional."
-   ]
-  },
-  "university-of-new-mexico": {
-   "policy": "Test-Optional",
-   "label": "UNM admissions",
-   "url": "https://admissions.unm.edu/future-students/freshmen/admission-requirements.html",
-   "evidence": [
-    "Standardized scores (ACT, SAT or CLT) are not required to be considered for admission but may be helpful in some cases."
-   ]
-  },
-  "middle-tennessee-state-university": {
-   "policy": "Test-Required",
-   "label": "MTSU admissions",
-   "url": "https://www.mtsu.edu/how-to-apply/undergraduate/",
-   "evidence": [
-    "Students under the age of 21 are required to submit a valid ACT or SAT test score."
-   ],
-   "note": "Applicants 21 or older may substitute the Academic Assessment Placement Test."
-  },
-  "wayne-state-university": {
-   "policy": "Test-Optional",
-   "label": "Wayne State University admissions",
-   "url": "https://wayne.edu/admissions/freshman/deadlines",
-   "evidence": [
-    "Submit your SAT or ACT score (optional) or complete the test-optional requirements"
-   ]
-  },
-  "university-of-nevada-reno": {
-   "policy": "Test-Optional",
-   "label": "University of Nevada, Reno admissions",
-   "url": "https://www.unr.edu/admissions/freshman",
-   "evidence": [
-    "Test scores are not required for admission, but they are required for most first-year"
-   ]
-  },
-  "university-of-louisville": {
-   "policy": "Test-Optional",
-   "label": "University of Louisville admissions",
-   "url": "https://louisville.edu/admissions/apply/i-am-a-first-time-freshman/test-optional-faqs",
-   "evidence": [
-    "The University of Louisville remains test-score optional for admission for all majors. There are pathways for admission to all of our academic programs without the SAT or ACT."
-   ]
-  },
-  "western-washington-university": {
-   "policy": "Test-Optional",
-   "label": "Western Washington University admissions",
-   "url": "https://admissions.wwu.edu/first-year/apply",
-   "evidence": [
-    "Western's application process is test-optional. You are not required to submit test scores to apply for admission."
-   ]
-  },
-  "portland-state-university": {
-   "policy": "Test-Optional",
-   "label": "Portland State University admissions",
-   "url": "https://www.pdx.edu/admissions/first-year",
-   "evidence": [
-    "Submission of test scores is optional, and not required to receive an admission decision."
-   ]
-  },
-  "metropolitan-state-university-of-denver": {
-   "policy": "Test-Optional",
-   "label": "MSU Denver admissions",
-   "url": "https://www.msudenver.edu/admissions/test-optional-policy/",
-   "evidence": [
-    "Effective immediately, this bill makes it optional for Colorado's public four-year colleges and universities to require or not require national test scores in the admission process.",
-    "All public four-year colleges and universities have confirmed that they will be test-optional!"
-   ],
-   "note": "Colorado House Bill 21-1067 (2021), a permanent state law covering all Colorado public four-year institutions, not a temporary pilot."
-  },
-  "university-of-alabama-at-birmingham": {
-   "policy": "Test-Optional",
-   "label": "UAB admissions",
-   "url": "https://www.uab.edu/admissions/apply/freshman/how-to-apply",
-   "evidence": [
-    "Apply as test-optional. Students with a 3.5+ high school GPA are not required to submit test scores for admission or scholarship consideration."
-   ],
-   "note": "Test-optional for applicants with a 3.5+ unweighted high school GPA; a test score is required below that threshold."
-  },
-  "college-of-charleston": {
-   "policy": "Test-Optional",
-   "label": "College of Charleston admissions",
-   "url": "https://charleston.edu/admission/apply/undergraduate/index.php",
-   "evidence": [
-    "Standardized Test Scores: The College of Charleston is test optional."
-   ],
-   "note": "State scholarships are still awarded based on official test scores only."
-  },
-  "minnesota-state-university-mankato": {
-   "policy": "Test-Optional",
-   "label": "Minnesota State University, Mankato admissions",
-   "url": "https://mankato.mnsu.edu/future-students/undergraduate/undergraduate-admissions/",
-   "evidence": [
-    "Minnesota State Mankato is test-optional for admissions. We will make admission decisions based on high school transcripts and GPA for students who do not provide ACT or SAT scores."
-   ]
-  },
-  "east-tennessee-state-university": {
-   "policy": "Test-Optional",
-   "label": "ETSU admissions",
-   "url": "https://www.etsu.edu/admissions/apply/freshman.php",
-   "evidence": [
-    "ACT/ SAT scores are not required for admission to ETSU."
-   ]
-  },
-  "university-of-north-dakota": {
-   "policy": "Test-Optional",
-   "label": "University of North Dakota admissions",
-   "url": "https://und.edu/admissions/freshmen/apply.html",
-   "evidence": [
-    "ACT/SAT Test Scores are Not Required"
-   ]
-  },
-  "north-dakota-state-university": {
-   "policy": "Test-Optional",
-   "label": "NDSU admissions",
-   "url": "https://www.ndsu.edu/admission/first-year",
-   "evidence": [
-    "NDSU is test-optional and does not require ACT/SAT test scores for admission."
-   ]
-  },
-  "troy-university": {
-   "policy": "Test-Optional",
-   "label": "Troy University admissions",
-   "url": "https://www.troy.edu/applications-admissions/admissions-process-requirements/undergraduate/index.html",
-   "evidence": [
-    "Test Optional Admission: Students beginning classes in 2027 can be admitted without submitting ACT or RSAT scores."
-   ]
-  },
-  "university-of-maine": {
-   "policy": "Test-Optional",
-   "label": "University of Maine admissions",
-   "url": "https://go.umaine.edu/applyinfo/",
-   "evidence": [
-    "UMaine has adopted a test optional status for all of its programs."
-   ]
-  },
-  "university-of-wyoming": {
-   "policy": "Test-Optional",
-   "label": "University of Wyoming admissions",
-   "url": "https://www.uwyo.edu/admissions/freshman/index.html",
-   "evidence": [
-    "Test scores are not required for admission, but they can help secure higher financial awards."
-   ]
-  },
-  "central-connecticut-state-university": {
-   "policy": "Test-Optional",
-   "label": "Central Connecticut State University admissions",
-   "url": "https://www.ccsu.edu/first-year-admissions/admissions-requirements",
-   "evidence": [
-    "Personal essay (Optional) SAT I or ACT scores sent by high school/College Board or ACT (Optional)"
-   ]
-  },
-  "university-of-central-arkansas": {
-   "policy": "Test-Optional",
-   "label": "University of Central Arkansas admissions",
-   "url": "https://uca.edu/admissions/apply/freshman/",
-   "evidence": [
-    "Test Optional Admission Requirements** Minimum 3.0 cumulative high school grade point average (GPA) on a 4.0 grading scale"
-   ],
-   "note": "Test-optional path requires a 3.0+ cumulative unweighted GPA."
-  },
-  "high-point-university": {
-   "policy": "Test-Optional",
-   "label": "High Point University admissions",
-   "url": "https://www.highpoint.edu/admissions/apply/",
-   "evidence": [
-    "High Point University is test optional."
-   ],
-   "manual": true
-  },
-  "fairfield-university": {
-   "policy": "Test-Optional",
-   "label": "Fairfield University admissions",
-   "url": "https://www.fairfield.edu/admission-and-aid/apply/first-year-applicants/",
-   "evidence": [
-    "submitting SAT/ACT test results is optional."
+    "Babson College is Test-Optional."
    ],
    "manual": false
   },
-  "new-mexico-state-university": {
+  "ball-state-university": {
    "policy": "Test-Optional",
-   "label": "New Mexico State University admissions",
-   "url": "https://admissions.nmsu.edu/how-to-apply/first-time-freshmen/",
+   "label": "Ball State University admissions",
+   "url": "https://www.bsu.edu/admissions/undergraduate-admissions/apply-now/test-information",
    "evidence": [
-    "Official SAT or ACT scores are not required for admission."
-   ],
-   "manual": false
-  },
-  "grand-valley-state-university": {
-   "policy": "Test-Optional",
-   "label": "Grand Valley State University admissions",
-   "url": "https://www.gvsu.edu/admissions/undergraduate-application-12",
-   "evidence": [
-    "SAT or ACT test scores are optional for admission but required for some scholarships.",
-    "The decision to submit test scores will be left up to the applicant."
-   ],
-   "manual": false
-  },
-  "cuny-lehman-college": {
-   "policy": "Test-Optional",
-   "label": "CUNY Lehman College admissions",
-   "url": "https://www.lehman.edu/admissions/undergraduate-admissions/undergraduate-applications/",
-   "evidence": [
-    "SAT or ACT scores are optional"
-   ],
-   "manual": false
-  },
-  "state-university-of-new-york-at-new-paltz": {
-   "policy": "Test-Optional",
-   "label": "SUNY New Paltz admissions",
-   "url": "https://www.newpaltz.edu/admissions/freshmen.html",
-   "evidence": [
-    "SUNY New Paltz is currently test optional. Application review will focus on the strength of the high school coursework taken, the grades achieved in academic course work, letters of recommendation, the extracurricular activities, as well as the structure and quality of the student essay."
-   ],
-   "manual": false
-  },
-  "eastern-kentucky-university": {
-   "policy": "Test-Optional",
-   "label": "Eastern Kentucky University admissions",
-   "url": "https://catalogs.eku.edu/undergraduate/admission-residency/admission/",
-   "evidence": [
-    "While ACT or SAT scores are not required, students are encouraged to submit scores for proper course placement in English, mathematics, and reading courses.",
-    "Although test scores are not used for admission purposes, they are required for course placement and academic readiness purposes"
-   ],
-   "manual": false
-  },
-  "university-of-massachusetts-amherst": {
-   "policy": "Test-Optional",
-   "label": "UMass Amherst admissions",
-   "url": "https://www.umass.edu/admissions/undergraduate-admissions/connect/information-policies/test-optional-policy",
-   "evidence": [
-    "At UMass Amherst, standardized tests are optional for first-year entering applicants.",
-    "The test-optional approach at UMass Amherst applies to all majors."
-   ],
-   "manual": false
-  },
-  "virginia-polytechnic-institute-and-state-university": {
-   "policy": "Test-Optional",
-   "label": "Virginia Tech admissions",
-   "url": "https://www.vt.edu/admissions/undergraduate/apply/freshman-requirements.html",
-   "evidence": [
-    "Virginia Tech is test-optional for students entering through Fall 2028.",
-    "If you do not want to include test scores in the review of your application, it will not impact your admission decision."
-   ],
-   "manual": false
-  },
-  "northern-arizona-university": {
-   "policy": "Test-Optional",
-   "label": "Northern Arizona University admissions",
-   "url": "https://www.commonapp.org/explore/northern-arizona-university",
-   "evidence": [
-    "Test Optional/Flexible - First Year"
-   ],
-   "manual": true,
-   "note": "NAU's own admissions pages do not state a categorical testing policy; classification sourced from Common App per the documented fallback rule."
-  },
-  "cuny-hunter-college": {
-   "policy": "Test-Optional",
-   "label": "Hunter College (CUNY) admissions",
-   "url": "https://hunter-undergraduate.catalog.cuny.edu/admissions/freshman",
-   "evidence": [
-    "Hunter College will be test optional until Spring 2027."
-   ],
-   "manual": true,
-   "note": "Hunter's own catalog states the policy runs 'until Spring 2027'; the exact cutoff for Fall 2027 admission is not separately stated. Treated as continuing for the 2026-27 application cycle absent evidence of a reversal. hunter.cuny.edu itself returns 403 to automated and manual browser access alike."
-  },
-  "state-university-of-new-york-at-cortland": {
-   "policy": "Test-Optional",
-   "label": "SUNY Cortland admissions",
-   "url": "https://www2.cortland.edu/admissions/undergraduate/freshmen-applicants/requirements.dot",
-   "evidence": [
-    "SUNY Cortland is test-optional"
-   ],
-   "manual": true
-  },
-  "indiana-university-indianapolis": {
-   "policy": "Test-Optional",
-   "label": "IU Indianapolis admissions",
-   "url": "https://indianapolis.iu.edu/admissions/apply/test-scores.html",
-   "evidence": [
-    "IU Indianapolis is test optional for admissions and scholarships."
-   ],
-   "manual": false
-  },
-  "university-of-memphis": {
-   "policy": "Test-Required",
-   "label": "University of Memphis admissions",
-   "url": "https://www.memphis.edu/admissions/basics/requirements.php",
-   "evidence": [
-    "All students must provide a standardized exam result (typically the ACT and/or SAT) in support of their application for admission."
-   ],
-   "manual": false
-  },
-  "oklahoma-state-university": {
-   "policy": "Test-Optional",
-   "label": "Oklahoma State University admissions",
-   "url": "https://go.okstate.edu/admissions/freshman/admission-requirements",
-   "evidence": [
-    "Test scores are optional for admission, but required for most scholarships.",
-    "You can apply and be admitted without submitting a test score."
-   ],
-   "manual": true
-  },
-  "university-of-nebraska-lincoln": {
-   "policy": "Test-Optional",
-   "label": "University of Nebraska-Lincoln admissions",
-   "url": "https://admissions.unl.edu/apply/admission-requirements/first-year/",
-   "evidence": [
-    "You are not required to submit an ACT/SAT score to be considered for admission."
-   ],
-   "manual": true
-  },
-  "university-of-maryland-baltimore-county": {
-   "policy": "Test-Optional",
-   "label": "UMBC admissions",
-   "url": "https://umbc.edu/undergraduate/first-year-students/how-to-apply/",
-   "evidence": [
-    "If you graduated high school in the U.S. within the past three years, you may have the appropriate testing agency send us your results from the SAT I or the ACT."
-   ],
-   "manual": false,
-   "note": "Page labels the 'Standardized Test Scores' section as 'Optional' rather than using the phrase 'test-optional' as running text."
-  },
-  "california-state-university-san-bernardino": {
-   "policy": "Test-Free",
-   "label": "CSU San Bernardino admissions",
-   "url": "https://www.csusb.edu/join-the-pack/future-students/apply/freshmen-admissions-requirements",
-   "evidence": [
-    "SAT and ACT scores are no longer required and are not used in the MFAS."
-   ],
-   "manual": false,
-   "note": "CSU system-wide policy is Test-Free, matching existing CSU campus precedents in the dataset; campus page confirms scores are not used in admission scoring."
-  },
-  "howard-university": {
-   "policy": "Test-Optional",
-   "label": "Howard University admissions",
-   "url": "https://admission.howard.edu/undergraduate/admission-policy",
-   "evidence": [
-    "For the 2027-28 admission cycle, SAT/ACT test scores are not required to render a first year admission application complete.",
-    "This policy does not extend to joint degree (e.g. BS/MD, BS/DDS, BA/JD) programs."
-   ],
-   "manual": true,
-   "note": "Page explicitly labels this the 2027-28 admission cycle."
-  },
-  "cuny-brooklyn-college": {
-   "policy": "Test-Optional",
-   "label": "CUNY Brooklyn College admissions",
-   "url": "https://www.brooklyn.edu/admissions-aid/first-year/how-to-apply/requirements-and-deadlines/",
-   "evidence": [
-    "CUNY has revised its testing policy to test optional effective fall 2023 through spring 2027.",
-    "First-year applicants can choose whether to submit SAT or ACT exam scores as part of their application."
-   ],
-   "manual": true,
-   "note": "CUNY's stated test-optional policy explicitly covers 'fall 2023 through spring 2027' admission cycles; it does not separately name Fall 2027. Treated as continuing for the 2026-27 application cycle absent evidence of a reversal or updated policy."
-  },
-  "cuny-bernard-m-baruch-college": {
-   "policy": "Test-Optional",
-   "label": "Baruch College (CUNY) admissions",
-   "url": "https://baruch-undergraduate.catalog.cuny.edu/the-college/admissions/freshman-applicants/overview",
-   "evidence": [
-    "SAT and ACT test scores are not required nor considered in application review process for the Fall 2023 through Spring 2027 admission cycles.",
-    "The absence of SAT or ACT exam scores cannot be used to deny a student admission."
-   ],
-   "manual": false,
-   "note": "CUNY's stated test-optional policy explicitly covers 'fall 2023 through spring 2027' admission cycles; it does not separately name Fall 2027. Treated as continuing for the 2026-27 application cycle absent evidence of a reversal or updated policy."
-  },
-  "university-of-richmond": {
-   "policy": "Test-Optional",
-   "label": "University of Richmond admissions",
-   "url": "https://admission.richmond.edu/process/materials/test-optional.html",
-   "evidence": [
-    "test optional admission path for first-year students entering in 2027"
-   ],
-   "manual": false,
-   "note": "Non-traditional/home-schooled applicants must still submit scores."
-  },
-  "savannah-college-of-art-and-design": {
-   "policy": "Test-Optional",
-   "label": "Savannah College of Art and Design (SCAD) admissions",
-   "url": "https://www.scad.edu/admission/admission-information/frequently-asked-questions",
-   "evidence": [
-    "SCAD is a test-optional university"
-   ],
-   "manual": true
-  },
-  "denison-university": {
-   "policy": "Test-Optional",
-   "label": "Denison University admissions",
-   "url": "https://www.denison.edu/campus/admission/apply-for-admission",
-   "evidence": [
-    "Denison is test-optional",
-    "Denison applicants have not been required to submit ACT or SAT scores since 2008."
-   ],
-   "manual": false
-  },
-  "hawaii-pacific-university": {
-   "policy": "Test-Optional",
-   "label": "Hawaii Pacific University admissions",
-   "url": "https://www.hpu.edu/undergraduate-admissions/first-year/admissions-requirements.html",
-   "evidence": [
-    "Students may apply without submitting standardized test scores from the Scholastic Aptitude Test (SAT) or American College Testing (ACT)."
-   ],
-   "manual": false
-  },
-  "wesleyan-university": {
-   "policy": "Test-Optional",
-   "label": "Wesleyan University admissions",
-   "url": "https://www.wesleyan.edu/admission/undergraduate-admission/first-year.html",
-   "evidence": [
-    "Wesleyan does not require most students to submit SAT or ACT scores as part of the application for admission."
-   ],
-   "manual": false
-  },
-  "georgia-southern-university": {
-   "policy": "Test-Required",
-   "label": "Georgia Southern University admissions (Traditional Admission, Statesboro & Armstrong)",
-   "url": "https://www.georgiasouthern.edu/admissions-aid/first-year-students",
-   "evidence": [
-    "SAT Minimum Scores: Reading & Writing 480+; Math 440+",
-    "ACT Minimum Scores: English or Reading 17+; Math 17+"
-   ],
-   "manual": false,
-   "note": "Applies to the Traditional Admission pathway (Statesboro & Armstrong campuses), which sets mandatory minimum SAT/ACT/CLT thresholds with no waiver language. A separate 'Flexible Admission' pathway at the University College (East Georgia Campus, Statesboro Center, Liberty Campus) states 'Test Scores: Not required' but is a distinct, non-traditional-campus program."
-  },
-  "university-of-west-georgia": {
-   "policy": "Test-Optional",
-   "label": "University of West Georgia admissions",
-   "url": "https://www.westga.edu/undergraduate-admissions/index.php",
-   "evidence": [
-    "UWG is test-optional for Freshman applicants with a recalculated GPA of 3.2 or higher through Summer 2027!"
-   ],
-   "manual": false,
-   "note": "Policy is conditional on a recalculated GPA of 3.2 or higher; a subordinate freshman-requirements subpage has not yet been updated and still shows an older Fall 2023-Fall 2026 sunset window, but the main admissions page states the window runs through Summer 2027."
-  },
-  "southeastern-louisiana-university": {
-   "policy": "Test-Required",
-   "label": "Southeastern Louisiana University admissions",
-   "url": "https://catalog.southeastern.edu/content.php?catoid=6&navoid=181",
-   "evidence": [
-    "All beginning freshmen must have taken the ACT prior to registering for classes.",
-    "Applicants may submit official SAT scores in place of ACT."
-   ],
-   "manual": true,
-   "note": "From the 2026-2027 General Catalog's Admission Criteria section; a GPA-based alternative only satisfies a numeric threshold within the formula, it does not waive the categorical requirement to submit ACT/SAT scores."
-  },
-  "university-of-northern-iowa": {
-   "policy": "Test-Optional",
-   "label": "University of Northern Iowa admissions",
-   "url": "https://admissions.uni.edu/test-optional-admission",
-   "evidence": [
-    "Applicants have the option of being reviewed for admission with or without test scores."
-   ],
-   "manual": false
-  },
-  "university-of-louisiana-at-lafayette": {
-   "policy": "Test-Required",
-   "label": "University of Louisiana at Lafayette admissions",
-   "url": "https://catalog.louisiana.edu/content.php?catoid=26&navoid=8829",
-   "evidence": [
-    "Take and present valid results of the American College Test (ACT) or Scholastic Aptitude Test (SAT)."
-   ],
-   "manual": true,
-   "note": "From the 2026-2027 catalog's undergraduate admission requirements; corroborated by the live admissions page's 'Official scores must be sent from the SAT or ACT to make a final decision on your admission' language. A separate GPA-alternative pathway satisfies only a subject-area score threshold, not the categorical requirement to take and submit scores."
-  },
-  "university-of-nebraska-at-omaha": {
-   "policy": "Test-Optional",
-   "label": "University of Nebraska at Omaha admissions",
-   "url": "https://www.unomaha.edu/undergraduate-admissions/apply/first-year/requirements.php",
-   "evidence": [
-    "Cumulative GPA of 3.0 (4.0 scale)"
-   ],
-   "manual": true,
-   "note": "UNO's own page never uses the literal phrase 'test-optional' — it lists independent qualifying paths (class rank, test score, or GPA alone), one of which requires no test score at all. Classification is inferred from this structure rather than an explicit label; UNO has no Common App page to use as an alternate fallback."
-  },
-  "kansas-state-university": {
-   "policy": "Test-Optional",
-   "label": "Kansas State University admissions",
-   "url": "https://www.k-state.edu/admissions/undergrad/manhattan/apply/incoming-freshmen/guide.html",
-   "evidence": [
-    "K-State is test-optional, which means admission can be granted using other academic information."
-   ],
-   "manual": false
-  },
-  "university-of-idaho": {
-   "policy": "Test-Optional",
-   "label": "University of Idaho admissions",
-   "url": "https://catalog.uidaho.edu/student-services/admission/",
-   "evidence": [
-    "New first-year applicants with a cumulative GPA of 3.0 or higher are eligible for automatic admission regardless of test scores."
-   ],
-   "manual": false
-  },
-  "missouri-state-university-springfield": {
-   "policy": "Test-Optional",
-   "label": "Missouri State University-Springfield admissions",
-   "url": "https://www.missouristate.edu/Admissions/admission-requirements.htm",
-   "evidence": [
-    "you don't need to send us an ACT or SAT test score for admission purposes"
-   ],
-   "manual": false
+    "Ball State University is a test-optional institution, which means you decide whether you want to provide your SAT, ACT, and/or CLT scores as part of your application."
+   ]
   },
   "barnard-college": {
    "policy": "Test-Optional",
@@ -1334,25 +58,30 @@
    "manual": false,
    "note": "Policy is explicitly labeled temporary/reviewed annually, but this statement explicitly names the Fall 2027 cycle."
   },
-  "the-college-of-new-jersey": {
+  "binghamton-university": {
    "policy": "Test-Optional",
-   "label": "The College of New Jersey admissions",
-   "url": "https://admissions.tcnj.edu/applications/test-optional/",
+   "label": "Binghamton admissions",
+   "url": "https://www.binghamton.edu/admissions/undergraduate/apply/freshman/",
    "evidence": [
-    "TCNJ is test-optional through the 2026-2027 admissions cycle."
+    "Binghamton University is test optional which means standardized test scores are not required."
    ],
-   "manual": false,
-   "note": "Testing is required for the Seven-Year Medical/Optometry programs and for Nursing; general first-year policy is test-optional."
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
   },
-  "united-states-military-academy": {
-   "policy": "Test-Required",
-   "label": "United States Military Academy (West Point) admissions",
-   "url": "https://www.westpoint.edu/admissions/steps-to-admission/plan-your-test-strategy",
+  "boise-state-university": {
+   "policy": "Test-Optional",
+   "label": "Boise State University admissions",
+   "url": "https://www.boisestate.edu/admissions/apply/resident/",
    "evidence": [
-    "West Point requires: SAT, ACT, or CLT"
-   ],
-   "manual": false,
-   "note": "West Point's admission process requires a congressional/service-connected nomination in addition to the standard application; there is no ED/EA/RD structure, only a single annual Candidate Checklist cycle."
+    "Test scores are not required and will not be used in the admission review process."
+   ]
+  },
+  "bowling-green-state-university": {
+   "policy": "Test-Optional",
+   "label": "Bowling Green State University admissions",
+   "url": "https://www.bgsu.edu/admissions/test-optional.html",
+   "evidence": [
+    "Bowling Green State University is offering applicants the opportunity to have their applications reviewed without consideration of test scores."
+   ]
   },
   "brandeis-university": {
    "policy": "Test-Optional",
@@ -1363,6 +92,398 @@
    ],
    "manual": true
   },
+  "brigham-young-university": {
+   "policy": "Test-Optional",
+   "label": "BYU test-optional admissions",
+   "url": "https://testoptional.byu.edu/",
+   "evidence": [
+    "Test scores are optional for most applicants through winter 2028."
+   ],
+   "note": "Optional for most applicants; some applicants (e.g. certain non-accredited or limited coursework cases) are required to submit a score."
+  },
+  "brown-university": {
+   "policy": "Test-Required",
+   "label": "Brown admission",
+   "url": "https://admission.brown.edu/first-year/standardized-tests",
+   "evidence": [
+    "Brown University has returned to a policy requiring standardized test scores (either SAT or ACT scores) for first-year applicants beginning with the 2024-25 admission cycle."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "cal-poly-humboldt": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "cal-poly-pomona": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "cal-poly-san-luis-obispo": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "cal-state-east-bay": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "cal-state-fullerton": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "cal-state-la": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "cal-state-northridge": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "california-institute-of-technology": {
+   "policy": "Test-Required",
+   "label": "Caltech Undergraduate Admissions",
+   "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/standardized-tests",
+   "accessed": "2026-09-23",
+   "manual": true,
+   "evidence": [
+    "Caltech requires first-year applicants to submit either the SAT or the ACT for admissions to Caltech.",
+    "For fall 2027 applicants, Caltech does not require the ACT writing or science subscores."
+   ],
+   "note": "manual: JS-rendered page, which states \"Caltech Testing Deadlines for Fall 2027 Entry\" — the correct cycle. Caltech places scores into bands (\"Bucket A/B\") rather than always showing the exact score to the committee; the ACT writing and science subscores are not required."
+  },
+  "california-state-university-san-bernardino": {
+   "policy": "Test-Free",
+   "label": "CSU San Bernardino admissions",
+   "url": "https://www.csusb.edu/join-the-pack/future-students/apply/freshmen-admissions-requirements",
+   "evidence": [
+    "SAT and ACT scores are no longer required and are not used in the MFAS."
+   ],
+   "manual": false,
+   "note": "CSU system-wide policy is Test-Free, matching existing CSU campus precedents in the dataset; campus page confirms scores are not used in admission scoring."
+  },
+  "carroll-university": {
+   "policy": "Test-Optional",
+   "label": "Carroll University (WI) admissions",
+   "url": "https://www.carrollu.edu/admission/first-year-students/how-to-apply/",
+   "evidence": [
+    "CARROLL'S TEST OPTIONAL POLICY"
+   ],
+   "manual": false
+  },
+  "central-connecticut-state-university": {
+   "policy": "Test-Optional",
+   "label": "Central Connecticut State University admissions",
+   "url": "https://www.ccsu.edu/first-year-admissions/admissions-requirements",
+   "evidence": [
+    "Personal essay (Optional) SAT I or ACT scores sent by high school/College Board or ACT (Optional)"
+   ]
+  },
+  "central-michigan-university": {
+   "policy": "Test-Optional",
+   "label": "Central Michigan University admissions",
+   "url": "https://www.cmich.edu/undergraduate/apply",
+   "evidence": [
+    "Step 3 (Freshmen only): Submit your test scores (optional)"
+   ]
+  },
+  "champlain-college": {
+   "policy": "Test-Optional",
+   "label": "Champlain College admissions",
+   "url": "https://www.champlain.edu/admissions/undergraduate-admissions/how-to-apply",
+   "evidence": [
+    "Champlain is Test-Optional"
+   ],
+   "manual": false
+  },
+  "chico-state": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "coastal-carolina-university": {
+   "policy": "Test-Optional",
+   "label": "Coastal Carolina University admissions",
+   "url": "https://www.coastal.edu/admissions/testopt/",
+   "evidence": [
+    "Freshman applicants who have earned a minimum 3.5 HS GPA (weighted GPA on a 4.0 scale) may choose whether or not to submit standardize"
+   ],
+   "note": "Test-optional only above a 3.5 weighted GPA; a score is required otherwise."
+  },
+  "college-of-charleston": {
+   "policy": "Test-Optional",
+   "label": "College of Charleston admissions",
+   "url": "https://charleston.edu/admission/apply/undergraduate/index.php",
+   "evidence": [
+    "Standardized Test Scores: The College of Charleston is test optional."
+   ],
+   "note": "State scholarships are still awarded based on official test scores only."
+  },
+  "colorado-college": {
+   "policy": "Test-Optional",
+   "label": "Colorado College admissions",
+   "url": "https://www.coloradocollege.edu/admission/apply/admission-test-optional.html",
+   "evidence": [
+    "Colorado College is test-optional, which means you can choose whether to include SAT or ACT scores as part of your application."
+   ],
+   "manual": false
+  },
+  "colorado-state-university-fort-collins": {
+   "policy": "Test-Optional",
+   "label": "Colorado State University admissions",
+   "url": "https://catalog.colostate.edu/general-catalog/admissions/how-to-apply/",
+   "evidence": [
+    "ACT/SAT test scores and recommendations are not required.",
+    "Test scores, if submitted, are only considered when applicants email admissions@colostate.edu with this request."
+   ],
+   "note": "Scores are considered only if the applicant emails admissions to request it, and are not considered at all for scholarships.",
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "columbia-college-chicago": {
+   "policy": "Test-Free",
+   "label": "Columbia College Chicago admissions",
+   "url": "https://www.colum.edu/admissions/requirements/test-free-admissions",
+   "evidence": [
+    "Columbia College Chicago's undergraduate admissions process is entirely test-free."
+   ],
+   "manual": false,
+   "note": "A test requirement still applies to international students who cannot demonstrate English proficiency through coursework."
+  },
+  "columbia-university": {
+   "policy": "Test-Optional",
+   "label": "Columbia undergraduate admissions",
+   "url": "https://undergrad.admissions.columbia.edu/apply/process/testing",
+   "evidence": [
+    "We will remain test optional for the 2026-2027 admissions cycle."
+   ],
+   "note": "Columbia will require SAT or ACT scores starting with the 2027-28 admission cycle."
+  },
+  "connecticut-college": {
+   "policy": "Test-Optional",
+   "label": "Connecticut College admissions",
+   "url": "https://www.conncoll.edu/admission/apply/standardized-test-policy/",
+   "evidence": [
+    "Connecticut College is test-optional."
+   ],
+   "manual": false
+  },
+  "cornell-university": {
+   "policy": "Test-Required",
+   "label": "Cornell admissions",
+   "url": "https://admissions.cornell.edu/policies/standardized-testing-policy",
+   "evidence": [
+    "First-year applicants are required to submit the SAT or ACT scores when applying to Cornell."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "creighton-university": {
+   "policy": "Test-Optional",
+   "label": "Creighton University admissions",
+   "url": "https://www.creighton.edu/admission-aid/undergraduate/how-to-apply/test-optional",
+   "evidence": [
+    "ACT/SAT exam scores are not required at the time of application for admission."
+   ],
+   "manual": false
+  },
+  "csu-long-beach": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "cuny-bernard-m-baruch-college": {
+   "policy": "Test-Optional",
+   "label": "Baruch College (CUNY) admissions",
+   "url": "https://baruch-undergraduate.catalog.cuny.edu/the-college/admissions/freshman-applicants/overview",
+   "evidence": [
+    "SAT and ACT test scores are not required nor considered in application review process for the Fall 2023 through Spring 2027 admission cycles.",
+    "The absence of SAT or ACT exam scores cannot be used to deny a student admission."
+   ],
+   "manual": false,
+   "note": "CUNY's stated test-optional policy explicitly covers 'fall 2023 through spring 2027' admission cycles; it does not separately name Fall 2027. Treated as continuing for the 2026-27 application cycle absent evidence of a reversal or updated policy."
+  },
+  "cuny-brooklyn-college": {
+   "policy": "Test-Optional",
+   "label": "CUNY Brooklyn College admissions",
+   "url": "https://www.brooklyn.edu/admissions-aid/first-year/how-to-apply/requirements-and-deadlines/",
+   "evidence": [
+    "CUNY has revised its testing policy to test optional effective fall 2023 through spring 2027.",
+    "First-year applicants can choose whether to submit SAT or ACT exam scores as part of their application."
+   ],
+   "manual": true,
+   "note": "CUNY's stated test-optional policy explicitly covers 'fall 2023 through spring 2027' admission cycles; it does not separately name Fall 2027. Treated as continuing for the 2026-27 application cycle absent evidence of a reversal or updated policy."
+  },
+  "cuny-hunter-college": {
+   "policy": "Test-Optional",
+   "label": "Hunter College (CUNY) admissions",
+   "url": "https://hunter-undergraduate.catalog.cuny.edu/admissions/freshman",
+   "evidence": [
+    "Hunter College will be test optional until Spring 2027."
+   ],
+   "manual": true,
+   "note": "Hunter's own catalog states the policy runs 'until Spring 2027'; the exact cutoff for Fall 2027 admission is not separately stated. Treated as continuing for the 2026-27 application cycle absent evidence of a reversal. hunter.cuny.edu itself returns 403 to automated and manual browser access alike."
+  },
+  "cuny-lehman-college": {
+   "policy": "Test-Optional",
+   "label": "CUNY Lehman College admissions",
+   "url": "https://www.lehman.edu/admissions/undergraduate-admissions/undergraduate-applications/",
+   "evidence": [
+    "SAT or ACT scores are optional"
+   ],
+   "manual": false
+  },
+  "dallas-baptist-university": {
+   "policy": "Test-Optional",
+   "label": "Dallas Baptist University admissions",
+   "url": "https://www.dbu.edu/undergraduate/admissions/",
+   "evidence": [
+    "DBU is \"test-preferred,\" meaning that the submission of standardized test scores is currently not required for admission."
+   ],
+   "manual": false,
+   "note": "DBU's own term is 'test-preferred' rather than one of the four standard categories; mapped to Test-Optional since scores are explicitly not required, only encouraged."
+  },
+  "dartmouth-college": {
+   "policy": "Test-Required",
+   "label": "Dartmouth Admissions",
+   "url": "https://admissions.dartmouth.edu/apply/testing-policy",
+   "accessed": "2026-09-23",
+   "manual": true,
+   "evidence": [
+    "Standardized testing is a required element of Dartmouth's undergraduate application.",
+    "Informed by new research, Dartmouth reactivated the standardized testing requirement for undergraduate admission beginning with applicants to the Class of 2029."
+   ],
+   "note": "manual: the site refuses automated requests. Dartmouth reinstated the requirement starting with the Class of 2029, so it is in force for this cycle. Applicants whose curriculum has not been delivered in English for at least two years must also submit an English proficiency exam."
+  },
+  "davidson-college": {
+   "policy": "Test-Optional",
+   "label": "Davidson College admissions",
+   "url": "https://www.davidson.edu/admission-and-financial-aid/admission-process-help/testing-policy",
+   "evidence": [
+    "Since 2020, Davidson has been a test-optional institution"
+   ],
+   "manual": true
+  },
+  "delaware-state-university": {
+   "policy": "Test-Optional",
+   "label": "Delaware State University admissions",
+   "url": "https://www.desu.edu/admissions/undergraduate-students",
+   "evidence": [
+    "Delaware State University implemented a Test-Optional Policy until further notice."
+   ],
+   "manual": false
+  },
+  "denison-university": {
+   "policy": "Test-Optional",
+   "label": "Denison University admissions",
+   "url": "https://www.denison.edu/campus/admission/apply-for-admission",
+   "evidence": [
+    "Denison is test-optional",
+    "Denison applicants have not been required to submit ACT or SAT scores since 2008."
+   ],
+   "manual": false
+  },
+  "drake-university": {
+   "policy": "Test-Optional",
+   "label": "Drake University admissions",
+   "url": "https://www.drake.edu/admission-aid/first-year-students",
+   "evidence": [
+    "Drake does not require either the SAT or ACT for admission."
+   ],
+   "manual": false
+  },
+  "duke-university": {
+   "policy": "Test-Optional",
+   "label": "Duke admissions",
+   "url": "https://admissions.duke.edu/apply/",
+   "evidence": [
+    "Duke University is test-optional for both first-year and transfer applicants in the 2026-2027 admissions cycle."
+   ]
+  },
+  "east-carolina-university": {
+   "policy": "Test-Optional",
+   "label": "East Carolina University admissions",
+   "url": "https://admissions.ecu.edu/apply/freshmen/",
+   "evidence": [
+    "Students with a weighted high school GPA less than 2.8 are required to submit an ACT or SAT score."
+   ],
+   "note": "Test-optional above a weighted GPA of 2.8; a score is required at or below 2.8."
+  },
+  "east-tennessee-state-university": {
+   "policy": "Test-Optional",
+   "label": "ETSU admissions",
+   "url": "https://www.etsu.edu/admissions/apply/freshman.php",
+   "evidence": [
+    "ACT/ SAT scores are not required for admission to ETSU."
+   ]
+  },
+  "eastern-kentucky-university": {
+   "policy": "Test-Optional",
+   "label": "Eastern Kentucky University admissions",
+   "url": "https://catalogs.eku.edu/undergraduate/admission-residency/admission/",
+   "evidence": [
+    "While ACT or SAT scores are not required, students are encouraged to submit scores for proper course placement in English, mathematics, and reading courses.",
+    "Although test scores are not used for admission purposes, they are required for course placement and academic readiness purposes"
+   ],
+   "manual": false
+  },
   "emerson-college": {
    "policy": "Test-Optional",
    "label": "Emerson College admissions",
@@ -1372,24 +493,106 @@
    ],
    "manual": true
   },
-  "oberlin-college": {
+  "fairfield-university": {
    "policy": "Test-Optional",
-   "label": "Oberlin College admissions",
-   "url": "https://www.oberlin.edu/node/301611",
+   "label": "Fairfield University admissions",
+   "url": "https://www.fairfield.edu/admission-and-aid/apply/first-year-applicants/",
    "evidence": [
-    "Oberlin College has been test optional since 2020, which means that applicants can choose whether or not to submit their SAT and/or ACT scores."
+    "submitting SAT/ACT test results is optional."
    ],
-   "manual": true
+   "manual": false
   },
-  "suffolk-university": {
-   "policy": "Test-Optional",
-   "label": "Suffolk University admissions",
-   "url": "https://www.suffolk.edu/undergraduate-admission/apply/test-optional-faqs",
+  "florida-agricultural-and-mechanical-university": {
+   "policy": "Test-Required",
+   "label": "FAMU admissions",
+   "url": "https://admissions.famu.edu/student-types/freshman.php",
    "evidence": [
-    "It's up to you whether you send us your SAT or ACT results."
+    "Note: Florida A&M is not Test Optional and standardized SAT/ACT/CLT scores are required."
+   ]
+  },
+  "florida-international-university": {
+   "policy": "Test-Required",
+   "label": "FIU admissions",
+   "url": "https://admissions.fiu.edu/admission-standards/",
+   "evidence": [
+    "SAT, ACT and/or CLT scores are required for first time in college applicants."
+   ]
+  },
+  "florida-state-university": {
+   "policy": "Test-Required",
+   "label": "Florida State admissions",
+   "url": "https://admissions.fsu.edu/deadlines",
+   "evidence": [
+    "At least one test score must be submitted before the material deadline"
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "fresno-state": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "george-mason-university": {
+   "policy": "Test-Optional",
+   "label": "George Mason University admissions",
+   "url": "https://www.gmu.edu/freshman/requirements/score-optional",
+   "evidence": [
+    "Students do have the opportunity to decide if they would like to submit standardized test scores as a component of the application process."
+   ]
+  },
+  "george-washington-university": {
+   "policy": "Test-Optional",
+   "label": "George Washington University admissions",
+   "url": "https://undergraduate.admissions.gwu.edu/test-optional",
+   "evidence": [
+    "Test scores are not required for consideration in special programs (except for GW's B.A./B.S.-M.D. program) or for merit scholarships."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "georgetown-university": {
+   "policy": "Test-Required",
+   "label": "Georgetown admissions",
+   "url": "https://uadmissions.georgetown.edu/apply/first-year-applicants/application-requirements-and-forms/",
+   "evidence": [
+    "Georgetown requires submission of either SAT or ACT scores as part of the application process."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "georgia-southern-university": {
+   "policy": "Test-Required",
+   "label": "Georgia Southern University admissions (Traditional Admission, Statesboro & Armstrong)",
+   "url": "https://www.georgiasouthern.edu/admissions-aid/first-year-students",
+   "evidence": [
+    "SAT Minimum Scores: Reading & Writing 480+; Math 440+",
+    "ACT Minimum Scores: English or Reading 17+; Math 17+"
    ],
    "manual": false,
-   "note": "Homeschooled/narrative-transcript students must still test; international applicants have a separate test-flexible policy. This records the general/domestic policy."
+   "note": "Applies to the Traditional Admission pathway (Statesboro & Armstrong campuses), which sets mandatory minimum SAT/ACT/CLT thresholds with no waiver language. A separate 'Flexible Admission' pathway at the University College (East Georgia Campus, Statesboro Center, Liberty Campus) states 'Test Scores: Not required' but is a distinct, non-traditional-campus program."
+  },
+  "georgia-state-university": {
+   "policy": "Test-Required",
+   "label": "Georgia State admissions",
+   "url": "https://admissions.gsu.edu/2026/03/11/how-to-submit-your-sat-act-scores-so-your-application-isnt-held-up/",
+   "evidence": [
+    "For Fall 2026 and beyond, SAT or ACT scores are required for college admission."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "grand-valley-state-university": {
+   "policy": "Test-Optional",
+   "label": "Grand Valley State University admissions",
+   "url": "https://www.gvsu.edu/admissions/undergraduate-application-12",
+   "evidence": [
+    "SAT or ACT test scores are optional for admission but required for some scholarships.",
+    "The decision to submit test scores will be left up to the applicant."
+   ],
+   "manual": false
   },
   "grinnell-college": {
    "policy": "Test-Optional",
@@ -1397,6 +600,132 @@
    "url": "https://www.grinnell.edu/admission/apply/tips/tests",
    "evidence": [
     "Grinnell does not require any first-year student to submit SAT or ACT scores."
+   ],
+   "manual": false
+  },
+  "harvard-university": {
+   "policy": "Test-Required",
+   "label": "Harvard College admissions",
+   "url": "https://college.harvard.edu/admissions/apply/first-year-applicants",
+   "evidence": [
+    "SAT or ACT - In exceptional cases when those tests are not accessible"
+   ],
+   "note": "In exceptional cases when the tests are not accessible, AP, IB or national exam results can meet the requirement.",
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "hawaii-pacific-university": {
+   "policy": "Test-Optional",
+   "label": "Hawaii Pacific University admissions",
+   "url": "https://www.hpu.edu/undergraduate-admissions/first-year/admissions-requirements.html",
+   "evidence": [
+    "Students may apply without submitting standardized test scores from the Scholastic Aptitude Test (SAT) or American College Testing (ACT)."
+   ],
+   "manual": false
+  },
+  "high-point-university": {
+   "policy": "Test-Optional",
+   "label": "High Point University admissions",
+   "url": "https://www.highpoint.edu/admissions/apply/",
+   "evidence": [
+    "High Point University is test optional."
+   ],
+   "manual": true
+  },
+  "howard-university": {
+   "policy": "Test-Optional",
+   "label": "Howard University admissions",
+   "url": "https://admission.howard.edu/undergraduate/admission-policy",
+   "evidence": [
+    "For the 2027-28 admission cycle, SAT/ACT test scores are not required to render a first year admission application complete.",
+    "This policy does not extend to joint degree (e.g. BS/MD, BS/DDS, BA/JD) programs."
+   ],
+   "manual": true,
+   "note": "Page explicitly labels this the 2027-28 admission cycle."
+  },
+  "illinois-institute-of-technology": {
+   "policy": "Test-Optional",
+   "label": "Illinois Institute of Technology admissions",
+   "url": "https://www.iit.edu/admissions-aid/undergraduate-admission/first-year-students",
+   "evidence": [
+    "Illinois Tech does not require standardized tests for undergraduate applicants."
+   ],
+   "manual": false
+  },
+  "illinois-state-university": {
+   "policy": "Test-Optional",
+   "label": "Illinois State University admissions",
+   "url": "https://policy.illinoisstate.edu/students/2-1-31/",
+   "evidence": [
+    "At Illinois State University, no prospective student is required to submit any standardized test scores with their application."
+   ],
+   "note": "Required by Illinois's Higher Education Fair Admissions Act."
+  },
+  "indiana-university-indianapolis": {
+   "policy": "Test-Optional",
+   "label": "IU Indianapolis admissions",
+   "url": "https://indianapolis.iu.edu/admissions/apply/test-scores.html",
+   "evidence": [
+    "IU Indianapolis is test optional for admissions and scholarships."
+   ],
+   "manual": false
+  },
+  "iowa-state-university": {
+   "policy": "Test-Optional",
+   "label": "Iowa State University admissions",
+   "url": "https://catalog.iastate.edu/admissions/",
+   "evidence": [
+    "Iowa State is test-optional for first-year applicants. Students may choose whether they wish to report their ACT/SAT scores when they apply for admission."
+   ]
+  },
+  "johns-hopkins-university": {
+   "policy": "Test-Required",
+   "label": "Johns Hopkins admissions",
+   "url": "https://apply.jhu.edu/frequently-asked-questions/",
+   "evidence": [
+    "Yes, we require students to submit either the SAT or ACT with their application."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "kansas-state-university": {
+   "policy": "Test-Optional",
+   "label": "Kansas State University admissions",
+   "url": "https://www.k-state.edu/admissions/undergrad/manhattan/apply/incoming-freshmen/guide.html",
+   "evidence": [
+    "K-State is test-optional, which means admission can be granted using other academic information."
+   ],
+   "manual": false
+  },
+  "keene-state-college": {
+   "policy": "Test-Optional",
+   "label": "Keene State College admissions",
+   "url": "https://www.keene.edu/admissions/apply",
+   "evidence": [
+    "SAT and ACT scores are no longer needed to be considered for acceptance."
+   ],
+   "manual": false
+  },
+  "kennesaw-state-university": {
+   "policy": "Test-Required",
+   "label": "Kennesaw State University admissions",
+   "url": "https://www.kennesaw.edu/admissions/undergraduate/admission-requirements/freshman.php",
+   "evidence": [
+    "Is KSU test-optional? No. First-Year students applying to Kennesaw State University are required to submit official SAT or ACT scores along with official high school transcripts."
+   ]
+  },
+  "kent-state-university-at-kent": {
+   "policy": "Test-Optional",
+   "label": "Kent State University admissions",
+   "url": "https://www.kent.edu/admissions/test-optional-policy",
+   "evidence": [
+    "If you are applying for first-year or transfer admission you are not required to submit standardized test scores (ACT or SAT)."
+   ]
+  },
+  "kenyon-college": {
+   "policy": "Test-Optional",
+   "label": "Kenyon College admissions",
+   "url": "https://www.kenyon.edu/admissions-aid/apply-to-kenyon/standardized-testing-policy/",
+   "evidence": [
+    "Kenyon has adopted a test-optional policy for all students applying for admission"
    ],
    "manual": false
   },
@@ -1409,6 +738,385 @@
    ],
    "manual": false
   },
+  "lehigh-university": {
+   "policy": "Test-Optional",
+   "label": "Lehigh University admissions",
+   "url": "https://www2.lehigh.edu/admissions/admissions-requirements",
+   "evidence": [
+    "Lehigh University has adopted a test-optional policy regarding submission of SAT or ACT scores indefinitely."
+   ]
+  },
+  "louisiana-state-university-and-agricultural-and-mechanical-college": {
+   "policy": "Test-Optional",
+   "label": "LSU admissions",
+   "url": "https://www.lsu.edu/admissions/apply/freshman.php",
+   "evidence": [
+    "Any first-year applicant whose cumulative weighted high school GPA is lower than 3.5 is required to submit either an ACT or SAT score"
+   ],
+   "note": "Test-optional only if your cumulative weighted high school GPA is 3.5 or higher; below 3.5, an ACT or SAT score is required for admission and merit scholarships."
+  },
+  "macalester-college": {
+   "policy": "Test-Optional",
+   "label": "Macalester College admissions",
+   "url": "https://www.macalester.edu/admissions/us-admissions/faq/testing-policy/",
+   "evidence": [
+    "Submission of ACT or SAT scores is not required as part of the application process."
+   ],
+   "manual": false
+  },
+  "marshall-university": {
+   "policy": "Test-Optional",
+   "label": "Marshall University admissions",
+   "url": "https://www.marshall.edu/uc/",
+   "evidence": [
+    "Marshall University's University College is the official home of many different student populations including those who are undecided, conditionally admitted, test-optional and pre-nursing"
+   ],
+   "manual": true,
+   "note": "The literal 'test-optional' label comes from the University College page rather than the primary freshman admissions page, which describes conditional admission without test scores in detail but doesn't use that exact term."
+  },
+  "massachusetts-institute-of-technology": {
+   "policy": "Test-Required",
+   "label": "MIT admissions",
+   "url": "https://mitadmissions.org/apply/firstyear/tests-scores/",
+   "evidence": [
+    "We require the SAT or the ACT",
+    "for both prospective first-year and transfer students."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "metropolitan-state-university-of-denver": {
+   "policy": "Test-Optional",
+   "label": "MSU Denver admissions",
+   "url": "https://www.msudenver.edu/admissions/test-optional-policy/",
+   "evidence": [
+    "Effective immediately, this bill makes it optional for Colorado's public four-year colleges and universities to require or not require national test scores in the admission process.",
+    "All public four-year colleges and universities have confirmed that they will be test-optional!"
+   ],
+   "note": "Colorado House Bill 21-1067 (2021), a permanent state law covering all Colorado public four-year institutions, not a temporary pilot."
+  },
+  "middle-tennessee-state-university": {
+   "policy": "Test-Required",
+   "label": "MTSU admissions",
+   "url": "https://www.mtsu.edu/how-to-apply/undergraduate/",
+   "evidence": [
+    "Students under the age of 21 are required to submit a valid ACT or SAT test score."
+   ],
+   "note": "Applicants 21 or older may substitute the Academic Assessment Placement Test."
+  },
+  "minnesota-state-university-mankato": {
+   "policy": "Test-Optional",
+   "label": "Minnesota State University, Mankato admissions",
+   "url": "https://mankato.mnsu.edu/future-students/undergraduate/undergraduate-admissions/",
+   "evidence": [
+    "Minnesota State Mankato is test-optional for admissions. We will make admission decisions based on high school transcripts and GPA for students who do not provide ACT or SAT scores."
+   ]
+  },
+  "mississippi-state-university": {
+   "policy": "Test-Optional",
+   "label": "Mississippi State University admissions",
+   "url": "https://www.admissions.msstate.edu/apply/admission-process/freshman-admissions",
+   "evidence": [
+    "Official Test Scores Optional for admission, but encouraged for scholarships."
+   ]
+  },
+  "missouri-state-university-springfield": {
+   "policy": "Test-Optional",
+   "label": "Missouri State University-Springfield admissions",
+   "url": "https://www.missouristate.edu/Admissions/admission-requirements.htm",
+   "evidence": [
+    "you don't need to send us an ACT or SAT test score for admission purposes"
+   ],
+   "manual": false
+  },
+  "montana-state-university": {
+   "policy": "Test-Optional",
+   "label": "Montana State University admissions",
+   "url": "https://www.montana.edu/admissions/apply/freshman.html",
+   "evidence": [
+    "The Montana Board of Regents of Higher Education has ended the requirement that students provide ACT or SAT test scores for admission to its campuses."
+   ],
+   "note": "Set by the Montana Board of Regents for all its four-year campuses."
+  },
+  "montclair-state-university": {
+   "policy": "Test-Optional",
+   "label": "Montclair State University admissions",
+   "url": "https://www.montclair.edu/admissions/apply-and-check-status/admissions-requirements/satact-test-optional-policy/",
+   "evidence": [
+    "Submitting SAT or ACT scores is optional."
+   ]
+  },
+  "mount-holyoke-college": {
+   "policy": "Test-Optional",
+   "label": "Mount Holyoke College admissions",
+   "url": "https://www.mtholyoke.edu/admission/apply-undergraduate-first-year",
+   "evidence": [
+    "we're a test-optional institution"
+   ],
+   "manual": false
+  },
+  "muhlenberg-college": {
+   "policy": "Test-Optional",
+   "label": "Muhlenberg College admissions",
+   "url": "https://www.muhlenberg.edu/admissions-aid/application-instructions-for-first-year-students/",
+   "evidence": [
+    "Muhlenberg has been test-optional for admissions since 1996."
+   ],
+   "manual": false
+  },
+  "new-mexico-state-university": {
+   "policy": "Test-Optional",
+   "label": "New Mexico State University admissions",
+   "url": "https://admissions.nmsu.edu/how-to-apply/first-time-freshmen/",
+   "evidence": [
+    "Official SAT or ACT scores are not required for admission."
+   ],
+   "manual": false
+  },
+  "north-carolina-a-and-t-state-university": {
+   "policy": "Test-Optional",
+   "label": "NC A&T admissions",
+   "url": "https://www.ncat.edu/admissions/undergraduate/freshman/admissions-criteria.php",
+   "evidence": [
+    "Although test scores are optional for admission, we strongly recommend submitting your test scores because they are used for other purposes."
+   ]
+  },
+  "north-carolina-state-university-at-raleigh": {
+   "policy": "Test-Optional",
+   "label": "NC State admissions",
+   "url": "https://admissions.ncsu.edu/apply/first-year/",
+   "evidence": [
+    "NC State is test optional for applicants with a weighted GPA of 2.8 or above."
+   ],
+   "note": "Test-optional applies to applicants with a weighted GPA of 2.8 or above.",
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "north-dakota-state-university": {
+   "policy": "Test-Optional",
+   "label": "NDSU admissions",
+   "url": "https://www.ndsu.edu/admission/first-year",
+   "evidence": [
+    "NDSU is test-optional and does not require ACT/SAT test scores for admission."
+   ]
+  },
+  "northeastern-university": {
+   "policy": "Test-Optional",
+   "label": "Northeastern University Undergraduate Admissions",
+   "url": "https://admissions.northeastern.edu/application-information/first-year-applicants/",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "Northeastern University is test-optional and does not require applicants to submit standardized testing to be considered for admission."
+   ],
+   "note": "Test policy only — Northeastern's application deadlines are not stated on this page and were not verified in this batch."
+  },
+  "northern-arizona-university": {
+   "policy": "Test-Optional",
+   "label": "Northern Arizona University admissions",
+   "url": "https://www.commonapp.org/explore/northern-arizona-university",
+   "evidence": [
+    "Test Optional/Flexible - First Year"
+   ],
+   "manual": true,
+   "note": "NAU's own admissions pages do not state a categorical testing policy; classification sourced from Common App per the documented fallback rule."
+  },
+  "northwestern-university": {
+   "policy": "Test-Optional",
+   "label": "Northwestern admissions",
+   "url": "https://admissions.northwestern.edu/faqs/standardized-testing-policy/index.html",
+   "evidence": [
+    "Northwestern is test-optional and does not require ACT or SAT scores from first-year or transfer candidates applying for full-time undergraduate study."
+   ]
+  },
+  "oberlin-college": {
+   "policy": "Test-Optional",
+   "label": "Oberlin College admissions",
+   "url": "https://www.oberlin.edu/node/301611",
+   "evidence": [
+    "Oberlin College has been test optional since 2020, which means that applicants can choose whether or not to submit their SAT and/or ACT scores."
+   ],
+   "manual": true
+  },
+  "ohio-state-university": {
+   "policy": "Test-Required",
+   "label": "Ohio State admissions",
+   "url": "https://undergrad.osu.edu/apply/freshmen-columbus/apply-step-by-step",
+   "evidence": [
+    "Yes, standardized test scores from ACT or SAT are required for first-year applicants to the Columbus campus.",
+    "applicants who will have been out of high school for two or more years by their term of enrollment are not required to submit scores"
+   ],
+   "note": "Columbus campus. Applicants two or more years out of high school aren't required to submit scores. Regional campuses have their own application pages."
+  },
+  "ohio-university": {
+   "policy": "Test-Optional",
+   "label": "Ohio University admissions",
+   "url": "https://www.ohio.edu/admissions/apply/test-optional",
+   "evidence": [
+    "Ohio University has adopted a test-optional pathway for admission to the Athens campus for freshman applicants."
+   ]
+  },
+  "oklahoma-state-university": {
+   "policy": "Test-Optional",
+   "label": "Oklahoma State University admissions",
+   "url": "https://go.okstate.edu/admissions/freshman/admission-requirements",
+   "evidence": [
+    "Test scores are optional for admission, but required for most scholarships.",
+    "You can apply and be admitted without submitting a test score."
+   ],
+   "manual": true
+  },
+  "oregon-state-university": {
+   "policy": "Test-Optional",
+   "label": "Oregon State University admissions",
+   "url": "https://admissions.oregonstate.edu/test-optional-admissions",
+   "evidence": [
+    "Oregon State University has a test-optional admissions policy for first-year students."
+   ]
+  },
+  "penn-state-university": {
+   "policy": "Test-Optional",
+   "label": "Penn State admissions",
+   "url": "https://admissions.psu.edu/apply/",
+   "evidence": [
+    "For first-year applicants, Penn State is test-optional, so submitting scores is not required for your application."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "plymouth-state-university": {
+   "policy": "Test-Blind",
+   "label": "Plymouth State University admissions",
+   "url": "https://www.plymouth.edu/apply",
+   "evidence": [
+    "Plymouth State is also test-blind, meaning we will not ask for or use any standardized test scores when considering a student for admission or merit-based scholarships."
+   ],
+   "manual": false
+  },
+  "pomona-college": {
+   "policy": "Test-Optional",
+   "label": "Pomona College Admissions",
+   "url": "https://www.pomona.edu/admissions/apply/first-year-applicants",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "Pomona College is test optional.",
+    "SAT or ACT scores are not required to apply but students may choose to self-report them on their application."
+   ],
+   "note": "Scores may be self-reported and are accepted when sent, so optional rather than blind. The page states there is no admissions advantage to submitting."
+  },
+  "portland-state-university": {
+   "policy": "Test-Optional",
+   "label": "Portland State University admissions",
+   "url": "https://www.pdx.edu/admissions/first-year",
+   "evidence": [
+    "Submission of test scores is optional, and not required to receive an admission decision."
+   ]
+  },
+  "pratt-institute-main": {
+   "policy": "Test-Optional",
+   "label": "Pratt Institute admissions",
+   "url": "https://www.pratt.edu/resources/undergraduate-application-requirements-high-school-applicants/",
+   "evidence": [
+    "Pratt is test optional"
+   ],
+   "manual": false
+  },
+  "princeton-university": {
+   "policy": "Test-Optional",
+   "label": "Princeton admission",
+   "url": "https://admission.princeton.edu/apply/standardized-testing",
+   "evidence": [
+    "For first-year and transfer applicants seeking to enroll in fall 2027, Princeton remains test optional."
+   ],
+   "note": "Princeton returns to requiring SAT or ACT scores for applicants seeking to enroll in fall 2028."
+  },
+  "rhode-island-college": {
+   "policy": "Test-Optional",
+   "label": "Rhode Island College admissions",
+   "url": "https://www.ric.edu/admissions-financial-aid/undergraduate-admission/first-year-student-admission",
+   "evidence": [
+    "Rhode Island College is Test Optional. We do not require test results for initial admission to the College."
+   ],
+   "manual": false,
+   "note": "The teacher-education program has its own separate testing requirement, not part of general admission."
+  },
+  "rice-university": {
+   "policy": "Test-Optional",
+   "label": "Rice admission",
+   "url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+   "evidence": [
+    "Rice recommends that degree-seeking first-year and transfer applicants submit SAT or ACT test scores if available."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "rowan-university": {
+   "policy": "Test-Optional",
+   "label": "Rowan University admissions",
+   "url": "https://admissions.rowan.edu/admissions-process/freshman-requirements/standardized-scores.html",
+   "evidence": [
+    "Rowan is test optional for admission to the University only."
+   ]
+  },
+  "sacramento-state": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "san-diego-state-university": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "san-francisco-state": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "san-jose-state-university": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "savannah-college-of-art-and-design": {
+   "policy": "Test-Optional",
+   "label": "Savannah College of Art and Design (SCAD) admissions",
+   "url": "https://www.scad.edu/admission/admission-information/frequently-asked-questions",
+   "evidence": [
+    "SCAD is a test-optional university"
+   ],
+   "manual": true
+  },
+  "scripps-college": {
+   "policy": "Test-Optional",
+   "label": "Scripps College Admission",
+   "url": "https://www.scrippscollege.edu/admission/apply/first-year",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "Submitting SAT or ACT exam scores is completely optional.",
+    "Students will not be disadvantaged in the review process if they do not submit SAT or ACT exam scores."
+   ],
+   "note": "Scores are superscored when submitted, and self-reporting is addressed on the same page, so optional rather than blind. International students whose first language is not English must submit TOEFL, IELTS or Duolingo regardless."
+  },
   "smith-college": {
    "policy": "Test-Optional",
    "label": "Smith College admissions",
@@ -1418,14 +1126,721 @@
    ],
    "manual": false
   },
-  "illinois-institute-of-technology": {
-   "policy": "Test-Optional",
-   "label": "Illinois Institute of Technology admissions",
-   "url": "https://www.iit.edu/admissions-aid/undergraduate-admission/first-year-students",
+  "sonoma-state": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
    "evidence": [
-    "Illinois Tech does not require standardized tests for undergraduate applicants."
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "southeastern-louisiana-university": {
+   "policy": "Test-Required",
+   "label": "Southeastern Louisiana University admissions",
+   "url": "https://catalog.southeastern.edu/content.php?catoid=6&navoid=181",
+   "evidence": [
+    "All beginning freshmen must have taken the ACT prior to registering for classes.",
+    "Applicants may submit official SAT scores in place of ACT."
+   ],
+   "manual": true,
+   "note": "From the 2026-2027 General Catalog's Admission Criteria section; a GPA-based alternative only satisfies a numeric threshold within the formula, it does not waive the categorical requirement to submit ACT/SAT scores."
+  },
+  "stanford-university": {
+   "policy": "Test-Required",
+   "label": "Stanford admission",
+   "url": "https://admission.stanford.edu/apply/first-year/testing.html",
+   "evidence": [
+    "ACT or SAT scores are required."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "state-university-of-new-york-at-cortland": {
+   "policy": "Test-Optional",
+   "label": "SUNY Cortland admissions",
+   "url": "https://www2.cortland.edu/admissions/undergraduate/freshmen-applicants/requirements.dot",
+   "evidence": [
+    "SUNY Cortland is test-optional"
+   ],
+   "manual": true
+  },
+  "state-university-of-new-york-at-new-paltz": {
+   "policy": "Test-Optional",
+   "label": "SUNY New Paltz admissions",
+   "url": "https://www.newpaltz.edu/admissions/freshmen.html",
+   "evidence": [
+    "SUNY New Paltz is currently test optional. Application review will focus on the strength of the high school coursework taken, the grades achieved in academic course work, letters of recommendation, the extracurricular activities, as well as the structure and quality of the student essay."
    ],
    "manual": false
+  },
+  "stony-brook-university": {
+   "policy": "Test-Optional",
+   "label": "Stony Brook admissions",
+   "url": "https://www.stonybrook.edu/undergraduate-admissions/apply/first-year.php",
+   "evidence": [
+    "Stony Brook is test optional for applicants."
+   ]
+  },
+  "suffolk-university": {
+   "policy": "Test-Optional",
+   "label": "Suffolk University admissions",
+   "url": "https://www.suffolk.edu/undergraduate-admission/apply/test-optional-faqs",
+   "evidence": [
+    "It's up to you whether you send us your SAT or ACT results."
+   ],
+   "manual": false,
+   "note": "Homeschooled/narrative-transcript students must still test; international applicants have a separate test-flexible policy. This records the general/domestic policy."
+  },
+  "suny-at-purchase-college": {
+   "policy": "Test-Optional",
+   "label": "SUNY Purchase College admissions",
+   "url": "https://www.purchase.edu/live/blurbs/1809-are-satact-scores-required-for-admission",
+   "evidence": [
+    "No. Purchase has recently adopted a test-optional policy."
+   ],
+   "manual": false
+  },
+  "texas-state-university": {
+   "policy": "Test-Optional",
+   "label": "Texas State University admissions",
+   "url": "https://www.admissions.txst.edu/future-students/apply-for-admission.html",
+   "evidence": [
+    "Texas State University does not require ACT or SAT test scores for first-time applicants ranked in the top 75% of their high school classes for admission to the university"
+   ],
+   "note": "Not required for applicants in the top 75% of their high school class; required for the 4th quartile."
+  },
+  "texas-tech-university": {
+   "policy": "Test-Optional",
+   "label": "Texas Tech admissions",
+   "url": "https://www.depts.ttu.edu/admissions/testoptional/",
+   "evidence": [
+    "Texas Tech University Undergraduate Admissions allows you to choose whether to submit SAT or ACT scores as part of our admission and scholarship consideration."
+   ]
+  },
+  "the-college-of-new-jersey": {
+   "policy": "Test-Optional",
+   "label": "The College of New Jersey admissions",
+   "url": "https://admissions.tcnj.edu/applications/test-optional/",
+   "evidence": [
+    "TCNJ is test-optional through the 2026-2027 admissions cycle."
+   ],
+   "manual": false,
+   "note": "Testing is required for the Seven-Year Medical/Optometry programs and for Nursing; general first-year policy is test-optional."
+  },
+  "the-university-of-montana": {
+   "policy": "Test-Optional",
+   "label": "The University of Montana admissions",
+   "url": "https://www.umt.edu/admissions/apply-undergraduate.php",
+   "evidence": [
+    "ACT/SAT test scores are not required for admission to the University of Montana."
+   ],
+   "manual": false,
+   "note": "Selective programs with separate admission (e.g. Davidson Honors College) may require scores."
+  },
+  "the-university-of-tampa": {
+   "policy": "Test-Optional",
+   "label": "University of Tampa admissions",
+   "url": "https://www.ut.edu/admissions/first-year-admissions",
+   "evidence": [
+    "We do not require test scores for admission to the University."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "the-university-of-tennessee-knoxville": {
+   "policy": "Test-Required",
+   "label": "University of Tennessee, Knoxville admissions",
+   "url": "https://admissions.utk.edu/undergraduate-application/test-score-policy/",
+   "evidence": [
+    "All first-year undergraduate students are required to self-report their ACT or SAT scores as part of their application for admission by January 20, 2027.",
+    "Only tests taken through December 2026 will be accepted for admission and institutional merit scholarship consideration."
+   ],
+   "note": "Self-report your ACT or SAT scores by January 20, 2027; only tests taken through December 2026 count."
+  },
+  "the-university-of-texas-at-arlington": {
+   "policy": "Test-Optional",
+   "label": "UT Arlington admissions",
+   "url": "https://www.uta.edu/admissions/apply/freshmen",
+   "evidence": [
+    "UTA is currently test optional, therefore SAT and ACT scores are not required for an admissions decision."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "the-university-of-texas-at-dallas": {
+   "policy": "Test-Optional",
+   "label": "UT Dallas admissions",
+   "url": "https://enroll.utdallas.edu/freshman/criteria/",
+   "evidence": [
+    "SAT I or ACT scores, if available."
+   ],
+   "note": "Scores are one holistic factor among several; not stated as required."
+  },
+  "the-university-of-texas-at-san-antonio": {
+   "policy": "Test-Optional",
+   "label": "UTSA Future Roadrunner admissions",
+   "url": "https://future.utsa.edu/freshman/admissions/",
+   "evidence": [
+    "Test Optional You do not need to submit SAT or ACT scores to be considered for admission."
+   ]
+  },
+  "towson-university": {
+   "policy": "Test-Optional",
+   "label": "Towson University admissions",
+   "url": "https://catalog.towson.edu/undergraduate/admissions/undergraduate-admissions/guidelines-freshman-admission/",
+   "evidence": [
+    "TU is test-optional: applicants are not required to submit SAT/ACT scores as part of their application, but scores will be considered if they are submitted."
+   ]
+  },
+  "troy-university": {
+   "policy": "Test-Optional",
+   "label": "Troy University admissions",
+   "url": "https://www.troy.edu/applications-admissions/admissions-process-requirements/undergraduate/index.html",
+   "evidence": [
+    "Test Optional Admission: Students beginning classes in 2027 can be admitted without submitting ACT or RSAT scores."
+   ]
+  },
+  "uc-berkeley": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "uc-davis": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "uc-irvine": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "uc-merced": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "uc-riverside": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "uc-san-diego": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "uc-santa-barbara": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "uc-santa-cruz": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "ucla": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "united-states-military-academy": {
+   "policy": "Test-Required",
+   "label": "United States Military Academy (West Point) admissions",
+   "url": "https://www.westpoint.edu/admissions/steps-to-admission/plan-your-test-strategy",
+   "evidence": [
+    "West Point requires: SAT, ACT, or CLT"
+   ],
+   "manual": false,
+   "note": "West Point's admission process requires a congressional/service-connected nomination in addition to the standard application; there is no ED/EA/RD structure, only a single annual Candidate Checklist cycle."
+  },
+  "university-at-buffalo": {
+   "policy": "Test-Optional",
+   "label": "University at Buffalo admissions",
+   "url": "https://www.buffalo.edu/admissions/apply/first-year.standardized-tests.html",
+   "evidence": [
+    "The University at Buffalo has adopted a test-optional policy. This means that standardized test scores are not required for admission or scholarship consideration."
+   ]
+  },
+  "university-of-alabama": {
+   "policy": "Test-Optional",
+   "label": "University of Alabama admissions",
+   "url": "https://admissions.ua.edu/testing-requirements/",
+   "evidence": [
+    "a standardized test score (ACT or SAT) will be required for students whose cumulative high school GPA is below 3.0"
+   ],
+   "note": "A test score is required if your cumulative high school GPA is below 3.0."
+  },
+  "university-of-alabama-at-birmingham": {
+   "policy": "Test-Optional",
+   "label": "UAB admissions",
+   "url": "https://www.uab.edu/admissions/apply/freshman/how-to-apply",
+   "evidence": [
+    "Apply as test-optional. Students with a 3.5+ high school GPA are not required to submit test scores for admission or scholarship consideration."
+   ],
+   "note": "Test-optional for applicants with a 3.5+ unweighted high school GPA; a test score is required below that threshold."
+  },
+  "university-of-arizona": {
+   "policy": "Test-Optional",
+   "label": "University of Arizona admissions",
+   "url": "https://www.arizona.edu/admissions/undergraduate/first-year",
+   "evidence": [
+    "SAT and ACT scores are not required for general admission to the university"
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-arkansas": {
+   "policy": "Test-Optional",
+   "label": "University of Arkansas admissions",
+   "url": "https://admissions.uark.edu/apply/test-scores-and-applying.php",
+   "evidence": [
+    "optional application for admission for students with a 3.2 GPA or higher."
+   ],
+   "note": "Test-optional for applicants with a 3.2 GPA or higher; test scores are required for most scholarships and, if admitted test-optional, for placement and enrollment purposes."
+  },
+  "university-of-central-arkansas": {
+   "policy": "Test-Optional",
+   "label": "University of Central Arkansas admissions",
+   "url": "https://uca.edu/admissions/apply/freshman/",
+   "evidence": [
+    "Test Optional Admission Requirements** Minimum 3.0 cumulative high school grade point average (GPA) on a 4.0 grading scale"
+   ],
+   "note": "Test-optional path requires a 3.0+ cumulative unweighted GPA."
+  },
+  "university-of-central-florida": {
+   "policy": "Test-Required",
+   "label": "UCF admissions",
+   "url": "https://www.ucf.edu/admissions/undergraduate/freshman/",
+   "evidence": [
+    "Official Standardized Test Scores* from either SAT [code: 5233], ACT** [code: 0735], or CLT"
+   ],
+   "note": "The SAT, ACT or CLT satisfies this requirement.",
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-central-oklahoma": {
+   "policy": "Test-Optional",
+   "label": "University of Central Oklahoma admissions",
+   "url": "https://www.uco.edu/admissions-aid/get-more-information/freshman-admissions-standards",
+   "evidence": [
+    "UCO offers test-optional admission, but students may still submit ACT or SAT scores to be considered for academic scholarships."
+   ],
+   "manual": false
+  },
+  "university-of-cincinnati": {
+   "policy": "Test-Optional",
+   "label": "University of Cincinnati admissions",
+   "url": "https://www.admissions.uc.edu/test-optional.html",
+   "evidence": [
+    "Programs at University of Cincinnati will consider students for admission with or without a standardized test score as part of their application."
+   ]
+  },
+  "university-of-dayton": {
+   "policy": "Test-Optional",
+   "label": "University of Dayton admissions",
+   "url": "https://udayton.edu/apply/undergraduate/resources/test-optional.php",
+   "evidence": [
+    "The University of Dayton is test-optional in admission."
+   ]
+  },
+  "university-of-hawaii-at-manoa": {
+   "policy": "Test-Optional",
+   "label": "University of Hawaii at Manoa admissions",
+   "url": "https://manoa.hawaii.edu/admissions/freshman/",
+   "evidence": [
+    "UH Mānoa is test-optional, which means that students can choose whether or not to submit SAT or ACT scores for admission consideration."
+   ]
+  },
+  "university-of-houston": {
+   "policy": "Test-Optional",
+   "label": "University of Houston admissions",
+   "url": "https://www.uh.edu/undergraduate-admissions/resources/test-optional-admissions/",
+   "evidence": [
+    "Freshman applicants have the option to apply for admission with or without a test score through June 1, 2030."
+   ]
+  },
+  "university-of-idaho": {
+   "policy": "Test-Optional",
+   "label": "University of Idaho admissions",
+   "url": "https://catalog.uidaho.edu/student-services/admission/",
+   "evidence": [
+    "New first-year applicants with a cumulative GPA of 3.0 or higher are eligible for automatic admission regardless of test scores."
+   ],
+   "manual": false
+  },
+  "university-of-illinois-chicago": {
+   "policy": "Test-Optional",
+   "label": "University of Illinois Chicago admissions",
+   "url": "https://admissions.uic.edu/undergraduate/requirements-deadlines/first-year-requirements/test-optional-faq",
+   "evidence": [
+    "Effective with the 2027 undergraduate admission cycle, UIC has amended its Test-Optional policy."
+   ]
+  },
+  "university-of-kansas": {
+   "policy": "Test-Optional",
+   "label": "University of Kansas admissions",
+   "url": "https://admissions.ku.edu/apply",
+   "evidence": [
+    "The University of Kansas is test optional."
+   ]
+  },
+  "university-of-kentucky": {
+   "policy": "Test-Optional",
+   "label": "University of Kentucky admissions",
+   "url": "https://admission.uky.edu/news/test-optional",
+   "evidence": [
+    "The University of Kentucky has implemented a test-optional policy through the 2028-29 academic year."
+   ]
+  },
+  "university-of-louisiana-at-lafayette": {
+   "policy": "Test-Required",
+   "label": "University of Louisiana at Lafayette admissions",
+   "url": "https://catalog.louisiana.edu/content.php?catoid=26&navoid=8829",
+   "evidence": [
+    "Take and present valid results of the American College Test (ACT) or Scholastic Aptitude Test (SAT)."
+   ],
+   "manual": true,
+   "note": "From the 2026-2027 catalog's undergraduate admission requirements; corroborated by the live admissions page's 'Official scores must be sent from the SAT or ACT to make a final decision on your admission' language. A separate GPA-alternative pathway satisfies only a subject-area score threshold, not the categorical requirement to take and submit scores."
+  },
+  "university-of-louisville": {
+   "policy": "Test-Optional",
+   "label": "University of Louisville admissions",
+   "url": "https://louisville.edu/admissions/apply/i-am-a-first-time-freshman/test-optional-faqs",
+   "evidence": [
+    "The University of Louisville remains test-score optional for admission for all majors. There are pathways for admission to all of our academic programs without the SAT or ACT."
+   ]
+  },
+  "university-of-maine": {
+   "policy": "Test-Optional",
+   "label": "University of Maine admissions",
+   "url": "https://go.umaine.edu/applyinfo/",
+   "evidence": [
+    "UMaine has adopted a test optional status for all of its programs."
+   ]
+  },
+  "university-of-maryland-baltimore-county": {
+   "policy": "Test-Optional",
+   "label": "UMBC admissions",
+   "url": "https://umbc.edu/undergraduate/first-year-students/how-to-apply/",
+   "evidence": [
+    "If you graduated high school in the U.S. within the past three years, you may have the appropriate testing agency send us your results from the SAT I or the ACT."
+   ],
+   "manual": false,
+   "note": "Page labels the 'Standardized Test Scores' section as 'Optional' rather than using the phrase 'test-optional' as running text."
+  },
+  "university-of-massachusetts-amherst": {
+   "policy": "Test-Optional",
+   "label": "UMass Amherst admissions",
+   "url": "https://www.umass.edu/admissions/undergraduate-admissions/connect/information-policies/test-optional-policy",
+   "evidence": [
+    "At UMass Amherst, standardized tests are optional for first-year entering applicants.",
+    "The test-optional approach at UMass Amherst applies to all majors."
+   ],
+   "manual": false
+  },
+  "university-of-memphis": {
+   "policy": "Test-Required",
+   "label": "University of Memphis admissions",
+   "url": "https://www.memphis.edu/admissions/basics/requirements.php",
+   "evidence": [
+    "All students must provide a standardized exam result (typically the ACT and/or SAT) in support of their application for admission."
+   ],
+   "manual": false
+  },
+  "university-of-michigan": {
+   "policy": "Test-Optional",
+   "label": "Michigan admissions",
+   "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines",
+   "evidence": [
+    "SAT or ACT score, if available and you wish them to be considered"
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026.",
+   "manual": true
+  },
+  "university-of-minnesota-twin-cities": {
+   "policy": "Test-Optional",
+   "label": "University of Minnesota Twin Cities admissions",
+   "url": "https://admissions.tc.umn.edu/admissions/freshman-admission/act-sat-information",
+   "evidence": [
+    "Freshman applicants through the fall 2027 term are not required to submit an ACT or SAT test score."
+   ]
+  },
+  "university-of-mississippi": {
+   "policy": "Test-Optional",
+   "label": "Ole Miss admissions",
+   "url": "https://olemiss.edu/admissions/undergraduate-admissions/application-process/",
+   "evidence": [
+    "an ACT or SAT score if provided",
+    "Either an ACT or SAT score Optional for nonresident students with 3.2 unweighted cumulative GPA or higher Strongly recommended for nonresident students with"
+   ],
+   "note": "Mississippi residents: a score is used only if provided. Nonresidents: optional at 3.2+ unweighted GPA, strongly recommended below that."
+  },
+  "university-of-missouri-columbia": {
+   "policy": "Test-Optional",
+   "label": "University of Missouri admissions",
+   "url": "https://admissions.missouri.edu/apply/freshmen/test-optional/",
+   "evidence": [
+    "Freshman applicants for the Fall 2027 semester have the option of being reviewed with or without test scores"
+   ]
+  },
+  "university-of-nebraska-at-kearney": {
+   "policy": "Test-Optional",
+   "label": "University of Nebraska at Kearney admissions",
+   "url": "https://catalog.unk.edu/undergraduate/admissions/admission-procedures-entering-freshmen/",
+   "evidence": [
+    "UNK allows for students to self-report ACT and/or SAT scores on the admissions application."
+   ],
+   "manual": true,
+   "note": "UNK's own pages never use the literal term 'test-optional'; classification is inferred from explicit 'not required for admission' language plus GPA/class-rank alternative qualifying pathways."
+  },
+  "university-of-nebraska-at-omaha": {
+   "policy": "Test-Optional",
+   "label": "University of Nebraska at Omaha admissions",
+   "url": "https://www.unomaha.edu/undergraduate-admissions/apply/first-year/requirements.php",
+   "evidence": [
+    "Cumulative GPA of 3.0 (4.0 scale)"
+   ],
+   "manual": true,
+   "note": "UNO's own page never uses the literal phrase 'test-optional' — it lists independent qualifying paths (class rank, test score, or GPA alone), one of which requires no test score at all. Classification is inferred from this structure rather than an explicit label; UNO has no Common App page to use as an alternate fallback."
+  },
+  "university-of-nebraska-lincoln": {
+   "policy": "Test-Optional",
+   "label": "University of Nebraska-Lincoln admissions",
+   "url": "https://admissions.unl.edu/apply/admission-requirements/first-year/",
+   "evidence": [
+    "You are not required to submit an ACT/SAT score to be considered for admission."
+   ],
+   "manual": true
+  },
+  "university-of-nevada-las-vegas": {
+   "policy": "Test-Optional",
+   "label": "UNLV admissions",
+   "url": "https://www.unlv.edu/admissions/undergraduate/first-year",
+   "evidence": [
+    "ACT or SAT Scores - Test scores are not required for admission or scholarship consideration but are encouraged for UNLV course placement."
+   ]
+  },
+  "university-of-nevada-reno": {
+   "policy": "Test-Optional",
+   "label": "University of Nevada, Reno admissions",
+   "url": "https://www.unr.edu/admissions/freshman",
+   "evidence": [
+    "Test scores are not required for admission, but they are required for most first-year"
+   ]
+  },
+  "university-of-new-hampshire": {
+   "policy": "Test-Optional",
+   "label": "University of New Hampshire admissions",
+   "url": "https://admissions.unh.edu/apply/test-optional",
+   "evidence": [
+    "Our test-optional policy reflects our holistic review to the college application process, in which standardized test scores have never been a deciding factor."
+   ]
+  },
+  "university-of-new-mexico": {
+   "policy": "Test-Optional",
+   "label": "UNM admissions",
+   "url": "https://admissions.unm.edu/future-students/freshmen/admission-requirements.html",
+   "evidence": [
+    "Standardized scores (ACT, SAT or CLT) are not required to be considered for admission but may be helpful in some cases."
+   ]
+  },
+  "university-of-north-carolina-at-charlotte": {
+   "policy": "Test-Optional",
+   "label": "UNC Charlotte admissions",
+   "url": "https://admissions.charlotte.edu/apply/first-year-students/application-requirements/",
+   "evidence": [
+    "CLT scores cannot replace the standardized SAT or ACT scores that are required for students applying with a weighted GPA of 2.8 or lower."
+   ],
+   "note": "Test-optional applies above a weighted GPA of 2.8; a SAT or ACT score (not CLT) is required at or below 2.8."
+  },
+  "university-of-north-carolina-wilmington": {
+   "policy": "Test-Optional",
+   "label": "UNC Wilmington admissions",
+   "url": "https://www.uncw.edu/admissions/undergraduate/first-year/requirements/testing",
+   "evidence": [
+    "For students applying for Fall 2026 and beyond: students with a weighted high school GPA greater than or equal to 2.50 and less than 2.80 are required to s"
+   ],
+   "note": "Test-optional above a weighted GPA of 2.80; between 2.50 and 2.80 a score of at least 17 (ACT) or 930 (SAT) is required; below 2.50, see the school's admission criteria."
+  },
+  "university-of-north-dakota": {
+   "policy": "Test-Optional",
+   "label": "University of North Dakota admissions",
+   "url": "https://und.edu/admissions/freshmen/apply.html",
+   "evidence": [
+    "ACT/SAT Test Scores are Not Required"
+   ]
+  },
+  "university-of-north-texas": {
+   "policy": "Test-Optional",
+   "label": "University of North Texas admissions",
+   "url": "https://www.unt.edu/admissions/freshman/admission-requirements.html",
+   "evidence": [
+    "UNT is test-score-optional, however, submitting test scores can help determine admission decisions, testing exemptions and scholarship opportunities."
+   ]
+  },
+  "university-of-northern-iowa": {
+   "policy": "Test-Optional",
+   "label": "University of Northern Iowa admissions",
+   "url": "https://admissions.uni.edu/test-optional-admission",
+   "evidence": [
+    "Applicants have the option of being reviewed for admission with or without test scores."
+   ],
+   "manual": false
+  },
+  "university-of-notre-dame": {
+   "policy": "Test-Optional",
+   "label": "Notre Dame admissions",
+   "url": "https://admissions.nd.edu/apply/",
+   "evidence": [
+    "Notre Dame is test-optional through the 2026/2027 application cycle."
+   ],
+   "note": "Notre Dame will require SAT or ACT scores for applicants seeking to enroll in fall 2028."
+  },
+  "university-of-oklahoma-norman-campus": {
+   "policy": "Test-Optional",
+   "label": "University of Oklahoma admissions",
+   "url": "https://www.ou.edu/admissions/apply/freshman",
+   "evidence": [
+    "OU will practice a test-optional admissions process when reviewing applications."
+   ]
+  },
+  "university-of-oregon": {
+   "policy": "Test-Optional",
+   "label": "University of Oregon admissions",
+   "url": "https://www.uoregon.edu/admissions/undergraduate/find-your-path/first-year-students/",
+   "evidence": [
+    "Note that the UO is a test-optional school for SAT/ACT."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-pennsylvania": {
+   "policy": "Test-Required",
+   "label": "Penn Admissions",
+   "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing",
+   "evidence": [
+    "Penn applicants are required to submit scores for the SAT or ACT. Applicants who face hardship in meeting this requirement can submit a waiver instead."
+   ],
+   "note": "A hardship waiver is available."
+  },
+  "university-of-pittsburgh": {
+   "policy": "Test-Optional",
+   "label": "Pitt admissions",
+   "url": "https://admissions.pitt.edu/first-year-student/",
+   "evidence": [
+    "the university has extended the test-optional program through Fall 2028"
+   ],
+   "note": "Pitt's test-optional program runs through Fall 2028 (Pittsburgh campus)."
+  },
+  "university-of-rhode-island": {
+   "policy": "Test-Optional",
+   "label": "University of Rhode Island admissions",
+   "url": "https://web.uri.edu/admission/by-major/",
+   "evidence": [
+    "URI is a test-optional institution."
+   ]
+  },
+  "university-of-richmond": {
+   "policy": "Test-Optional",
+   "label": "University of Richmond admissions",
+   "url": "https://admission.richmond.edu/process/materials/test-optional.html",
+   "evidence": [
+    "test optional admission path for first-year students entering in 2027"
+   ],
+   "manual": false,
+   "note": "Non-traditional/home-schooled applicants must still submit scores."
+  },
+  "university-of-san-diego": {
+   "policy": "Test-Blind",
+   "label": "University of San Diego admission",
+   "url": "https://www.sandiego.edu/admission-and-aid/undergraduate/apply/test-free.php",
+   "evidence": [
+    "As a “test-free ” campus, we pledge not to view an incoming student’s standardized tests during the admissions process."
+   ],
+   "note": "USD calls this \"test-free\": scores are not viewed."
+  },
+  "university-of-south-carolina-columbia": {
+   "policy": "Test-Optional",
+   "label": "University of South Carolina admissions",
+   "url": "https://sc.edu/about/offices_and_divisions/undergraduate_admissions/apply/for_freshmen/",
+   "evidence": [
+    "USC is test-optional through the fall, spring and summer 2027 terms."
+   ],
+   "note": "Test-optional through the fall, spring and summer 2027 terms."
+  },
+  "university-of-south-dakota": {
+   "policy": "Test-Optional",
+   "label": "University of South Dakota admissions",
+   "url": "https://www.usd.edu/Admissions-and-Aid/Undergraduate-Admissions/How-to-Apply",
+   "evidence": [
+    "Note that a test score is not required for your application to be reviewed for admission"
+   ],
+   "manual": false
+  },
+  "university-of-south-florida": {
+   "policy": "Test-Required",
+   "label": "USF admissions",
+   "url": "https://www.usf.edu/admissions/freshmen/admission-information/requirements-deadlines.aspx",
+   "evidence": [
+    "official results for at least one college entrance exam"
+   ],
+   "note": "The SAT, ACT or CLT satisfies this requirement.",
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-southern-california": {
+   "policy": "Test-Optional",
+   "label": "USC Undergraduate Admission",
+   "url": "https://admission.usc.edu/apply/first-year/",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "We require official test scores sent from the testing agencies for those who choose to submit them as a part of their application.",
+    "Although the application process is test-optional, we still find it helpful to have work from home-schooled students that is externally graded or examined."
+   ],
+   "note": "Optional, and considered when sent — USC records the highest scores when a test was taken more than once. Not test-blind."
   },
   "university-of-southern-mississippi": {
    "policy": "Test-Required",
@@ -1445,207 +1860,82 @@
    ],
    "manual": false
   },
-  "wichita-state-university": {
-   "policy": "Test-Optional",
-   "label": "Wichita State University admissions",
-   "url": "https://www.wichita.edu/admissions/undergraduate/faq.php",
+  "university-of-texas-at-austin": {
+   "policy": "Test-Required",
+   "label": "UT Austin admissions",
+   "url": "https://admissions.utexas.edu/apply/freshman/",
    "evidence": [
-    "Wichita State is a test-optional school, meaning ACT or SAT scores are not required for admission for most applicants."
+    "Send at least one official SAT or ACT score directly from the testing agency"
    ],
-   "manual": false
+   "note": "Official Classic Learning Test (CLT) scores also satisfy this requirement."
   },
-  "the-university-of-montana": {
+  "university-of-utah": {
    "policy": "Test-Optional",
-   "label": "The University of Montana admissions",
-   "url": "https://www.umt.edu/admissions/apply-undergraduate.php",
+   "label": "University of Utah admissions",
+   "url": "https://attheu.utah.edu/students/u-adopts-permanent-test-optional-admission-policy/",
    "evidence": [
-    "ACT/SAT test scores are not required for admission to the University of Montana."
+    "The University of Utah is leading the state in ensuring access to all students through its permanent adoption of a test-optional"
+   ],
+   "note": "Adopted as a permanent policy; a score is required only for applicants from a non-accredited school, home school, or with a GED/HiSET."
+  },
+  "university-of-vermont": {
+   "policy": "Test-Optional",
+   "label": "University of Vermont admissions",
+   "url": "https://www.uvm.edu/uvmnews/news/uvm-officially-approves-test-optional-admissions-policy",
+   "evidence": [
+    "The University of Vermont announced that it will make permanent its current test-optional admissions policy for undergraduate applicants"
+   ]
+  },
+  "university-of-west-georgia": {
+   "policy": "Test-Optional",
+   "label": "University of West Georgia admissions",
+   "url": "https://www.westga.edu/undergraduate-admissions/index.php",
+   "evidence": [
+    "UWG is test-optional for Freshman applicants with a recalculated GPA of 3.2 or higher through Summer 2027!"
    ],
    "manual": false,
-   "note": "Selective programs with separate admission (e.g. Davidson Honors College) may require scores."
+   "note": "Policy is conditional on a recalculated GPA of 3.2 or higher; a subordinate freshman-requirements subpage has not yet been updated and still shows an older Fall 2023-Fall 2026 sunset window, but the main admissions page states the window runs through Summer 2027."
   },
-  "connecticut-college": {
+  "university-of-wisconsin-milwaukee": {
    "policy": "Test-Optional",
-   "label": "Connecticut College admissions",
-   "url": "https://www.conncoll.edu/admission/apply/standardized-test-policy/",
+   "label": "UW-Milwaukee admissions",
+   "url": "https://uwm.edu/undergrad-admission/apply/new-freshman/",
    "evidence": [
-    "Connecticut College is test-optional."
-   ],
-   "manual": false
+    "UW System institutions, including UWM, are not requiring applicants to submit ACT or SAT scores as part of the application process this year."
+   ]
   },
-  "pratt-institute-main": {
+  "university-of-wyoming": {
    "policy": "Test-Optional",
-   "label": "Pratt Institute admissions",
-   "url": "https://www.pratt.edu/resources/undergraduate-application-requirements-high-school-applicants/",
+   "label": "University of Wyoming admissions",
+   "url": "https://www.uwyo.edu/admissions/freshman/index.html",
    "evidence": [
-    "Pratt is test optional"
-   ],
-   "manual": false
+    "Test scores are not required for admission, but they can help secure higher financial awards."
+   ]
   },
-  "kenyon-college": {
+  "vanderbilt-university": {
    "policy": "Test-Optional",
-   "label": "Kenyon College admissions",
-   "url": "https://www.kenyon.edu/admissions-aid/apply-to-kenyon/standardized-testing-policy/",
+   "label": "Vanderbilt admissions",
+   "url": "https://admissions.vanderbilt.edu/apply/",
    "evidence": [
-    "Kenyon has adopted a test-optional policy for all students applying for admission"
-   ],
-   "manual": false
+    "For students applying for fall 2027 and 2028 entry, SAT or ACT scores are optional."
+   ]
   },
-  "macalester-college": {
+  "virginia-commonwealth-university": {
    "policy": "Test-Optional",
-   "label": "Macalester College admissions",
-   "url": "https://www.macalester.edu/admissions/us-admissions/faq/testing-policy/",
+   "label": "VCU admissions",
+   "url": "https://admissions.vcu.edu/apply-to-vcu/undergraduate/first-year/first-year-requirements/",
    "evidence": [
-    "Submission of ACT or SAT scores is not required as part of the application process."
+    "Test-optional details Applicants (including those seeking scholarships) do not need to submit test scores unless applying to the Honors College guaranteed admissions programs."
    ],
-   "manual": false
+   "note": "Test scores remain required for VCU's Guaranteed Admission Programs (e.g. Honors College guaranteed pathways)."
   },
-  "dallas-baptist-university": {
+  "virginia-polytechnic-institute-and-state-university": {
    "policy": "Test-Optional",
-   "label": "Dallas Baptist University admissions",
-   "url": "https://www.dbu.edu/undergraduate/admissions/",
+   "label": "Virginia Tech admissions",
+   "url": "https://www.vt.edu/admissions/undergraduate/apply/freshman-requirements.html",
    "evidence": [
-    "DBU is \"test-preferred,\" meaning that the submission of standardized test scores is currently not required for admission."
-   ],
-   "manual": false,
-   "note": "DBU's own term is 'test-preferred' rather than one of the four standard categories; mapped to Test-Optional since scores are explicitly not required, only encouraged."
-  },
-  "babson-college": {
-   "policy": "Test-Optional",
-   "label": "Babson College admissions",
-   "url": "https://undergraduatecatalog.babson.edu/standardized-testing-requirements-and-test-optional-policy",
-   "evidence": [
-    "Babson College is Test-Optional."
-   ],
-   "manual": false
-  },
-  "columbia-college-chicago": {
-   "policy": "Test-Free",
-   "label": "Columbia College Chicago admissions",
-   "url": "https://www.colum.edu/admissions/requirements/test-free-admissions",
-   "evidence": [
-    "Columbia College Chicago's undergraduate admissions process is entirely test-free."
-   ],
-   "manual": false,
-   "note": "A test requirement still applies to international students who cannot demonstrate English proficiency through coursework."
-  },
-  "drake-university": {
-   "policy": "Test-Optional",
-   "label": "Drake University admissions",
-   "url": "https://www.drake.edu/admission-aid/first-year-students",
-   "evidence": [
-    "Drake does not require either the SAT or ACT for admission."
-   ],
-   "manual": false
-  },
-  "western-kentucky-university": {
-   "policy": "Test-Optional",
-   "label": "Western Kentucky University admissions",
-   "url": "https://catalog.wku.edu/undergraduate/enrolling/admission/",
-   "evidence": [
-    "WKU is a test optional admission institution."
-   ],
-   "manual": false,
-   "note": "Policy is GPA-conditional: below a 2.50 unweighted high school GPA, ACT/SAT scores are required."
-  },
-  "delaware-state-university": {
-   "policy": "Test-Optional",
-   "label": "Delaware State University admissions",
-   "url": "https://www.desu.edu/admissions/undergraduate-students",
-   "evidence": [
-    "Delaware State University implemented a Test-Optional Policy until further notice."
-   ],
-   "manual": false
-  },
-  "colorado-college": {
-   "policy": "Test-Optional",
-   "label": "Colorado College admissions",
-   "url": "https://www.coloradocollege.edu/admission/apply/admission-test-optional.html",
-   "evidence": [
-    "Colorado College is test-optional, which means you can choose whether to include SAT or ACT scores as part of your application."
-   ],
-   "manual": false
-  },
-  "davidson-college": {
-   "policy": "Test-Optional",
-   "label": "Davidson College admissions",
-   "url": "https://www.davidson.edu/admission-and-financial-aid/admission-process-help/testing-policy",
-   "evidence": [
-    "Since 2020, Davidson has been a test-optional institution"
-   ],
-   "manual": true
-  },
-  "champlain-college": {
-   "policy": "Test-Optional",
-   "label": "Champlain College admissions",
-   "url": "https://www.champlain.edu/admissions/undergraduate-admissions/how-to-apply",
-   "evidence": [
-    "Champlain is Test-Optional"
-   ],
-   "manual": false
-  },
-  "mount-holyoke-college": {
-   "policy": "Test-Optional",
-   "label": "Mount Holyoke College admissions",
-   "url": "https://www.mtholyoke.edu/admission/apply-undergraduate-first-year",
-   "evidence": [
-    "we're a test-optional institution"
-   ],
-   "manual": false
-  },
-  "rhode-island-college": {
-   "policy": "Test-Optional",
-   "label": "Rhode Island College admissions",
-   "url": "https://www.ric.edu/admissions-financial-aid/undergraduate-admission/first-year-student-admission",
-   "evidence": [
-    "Rhode Island College is Test Optional. We do not require test results for initial admission to the College."
-   ],
-   "manual": false,
-   "note": "The teacher-education program has its own separate testing requirement, not part of general admission."
-  },
-  "university-of-central-oklahoma": {
-   "policy": "Test-Optional",
-   "label": "University of Central Oklahoma admissions",
-   "url": "https://www.uco.edu/admissions-aid/get-more-information/freshman-admissions-standards",
-   "evidence": [
-    "UCO offers test-optional admission, but students may still submit ACT or SAT scores to be considered for academic scholarships."
-   ],
-   "manual": false
-  },
-  "plymouth-state-university": {
-   "policy": "Test-Blind",
-   "label": "Plymouth State University admissions",
-   "url": "https://www.plymouth.edu/apply",
-   "evidence": [
-    "Plymouth State is also test-blind, meaning we will not ask for or use any standardized test scores when considering a student for admission or merit-based scholarships."
-   ],
-   "manual": false
-  },
-  "university-of-nebraska-at-kearney": {
-   "policy": "Test-Optional",
-   "label": "University of Nebraska at Kearney admissions",
-   "url": "https://catalog.unk.edu/undergraduate/admissions/admission-procedures-entering-freshmen/",
-   "evidence": [
-    "UNK allows for students to self-report ACT and/or SAT scores on the admissions application."
-   ],
-   "manual": true,
-   "note": "UNK's own pages never use the literal term 'test-optional'; classification is inferred from explicit 'not required for admission' language plus GPA/class-rank alternative qualifying pathways."
-  },
-  "creighton-university": {
-   "policy": "Test-Optional",
-   "label": "Creighton University admissions",
-   "url": "https://www.creighton.edu/admission-aid/undergraduate/how-to-apply/test-optional",
-   "evidence": [
-    "ACT/SAT exam scores are not required at the time of application for admission."
-   ],
-   "manual": false
-  },
-  "suny-at-purchase-college": {
-   "policy": "Test-Optional",
-   "label": "SUNY Purchase College admissions",
-   "url": "https://www.purchase.edu/live/blurbs/1809-are-satact-scores-required-for-admission",
-   "evidence": [
-    "No. Purchase has recently adopted a test-optional policy."
+    "Virginia Tech is test-optional for students entering through Fall 2028.",
+    "If you do not want to include test scores in the review of your application, it will not impact your admission decision."
    ],
    "manual": false
   },
@@ -1658,50 +1948,28 @@
    ],
    "manual": false
   },
-  "marshall-university": {
+  "washington-state-university": {
    "policy": "Test-Optional",
-   "label": "Marshall University admissions",
-   "url": "https://www.marshall.edu/uc/",
+   "label": "Washington State University admissions",
+   "url": "https://admission.wsu.edu/apply/as/freshman/requirements-2/",
    "evidence": [
-    "Marshall University's University College is the official home of many different student populations including those who are undecided, conditionally admitted, test-optional and pre-nursing"
-   ],
-   "manual": true,
-   "note": "The literal 'test-optional' label comes from the University College page rather than the primary freshman admissions page, which describes conditional admission without test scores in detail but doesn't use that exact term."
+    "WSU does not require students to submit SAT/ACT test scores as part of the application process and will not use them in our admission decisions."
+   ]
   },
-  "carroll-university": {
+  "wayne-state-university": {
    "policy": "Test-Optional",
-   "label": "Carroll University (WI) admissions",
-   "url": "https://www.carrollu.edu/admission/first-year-students/how-to-apply/",
+   "label": "Wayne State University admissions",
+   "url": "https://wayne.edu/admissions/freshman/deadlines",
    "evidence": [
-    "CARROLL'S TEST OPTIONAL POLICY"
-   ],
-   "manual": false
+    "Submit your SAT or ACT score (optional) or complete the test-optional requirements"
+   ]
   },
-  "university-of-south-dakota": {
+  "wesleyan-university": {
    "policy": "Test-Optional",
-   "label": "University of South Dakota admissions",
-   "url": "https://www.usd.edu/Admissions-and-Aid/Undergraduate-Admissions/How-to-Apply",
+   "label": "Wesleyan University admissions",
+   "url": "https://www.wesleyan.edu/admission/undergraduate-admission/first-year.html",
    "evidence": [
-    "Note that a test score is not required for your application to be reviewed for admission"
-   ],
-   "manual": false
-  },
-  "arkansas-tech-university": {
-   "policy": "Test-Optional",
-   "label": "Arkansas Tech University admissions",
-   "url": "https://www.atu.edu/admissions/requirements.php",
-   "evidence": [
-    "Please note, first-time students admitted without test scores must submit either ACT, SAT, CLT, or ACCUPLACER scores for placement purposes prior to registration."
-   ],
-   "manual": true,
-   "note": "ATU's own pages never use the literal phrase 'test optional'; classification is inferred from a sliding-scale structure where a 3.0+ GPA admits without any test score."
-  },
-  "keene-state-college": {
-   "policy": "Test-Optional",
-   "label": "Keene State College admissions",
-   "url": "https://www.keene.edu/admissions/apply",
-   "evidence": [
-    "SAT and ACT scores are no longer needed to be considered for acceptance."
+    "Wesleyan does not require most students to submit SAT or ACT scores as part of the application for admission."
    ],
    "manual": false
   },
@@ -1715,14 +1983,68 @@
    "manual": true,
    "note": "WVSU doesn't use the categorical label 'test-required' explicitly, but lists ACT/SAT scores as a mandatory item (joined with '-and-') for first-time freshmen with no optional/waiver language."
   },
-  "muhlenberg-college": {
+  "west-virginia-university": {
    "policy": "Test-Optional",
-   "label": "Muhlenberg College admissions",
-   "url": "https://www.muhlenberg.edu/admissions-aid/application-instructions-for-first-year-students/",
+   "label": "WVU admissions",
+   "url": "https://admissions.wvu.edu/how-to-apply/first-time-freshmen/admission-requirements",
    "evidence": [
-    "Muhlenberg has been test-optional for admissions since 1996."
+    "Test-Optional Admission Test-optional admission permits applicants to apply without an ACT or SAT score."
+   ],
+   "note": "Some direct-admission majors and the WV PROMISE Scholarship set their own test-score-linked requirements."
+  },
+  "western-kentucky-university": {
+   "policy": "Test-Optional",
+   "label": "Western Kentucky University admissions",
+   "url": "https://catalog.wku.edu/undergraduate/enrolling/admission/",
+   "evidence": [
+    "WKU is a test optional admission institution."
+   ],
+   "manual": false,
+   "note": "Policy is GPA-conditional: below a 2.50 unweighted high school GPA, ACT/SAT scores are required."
+  },
+  "western-washington-university": {
+   "policy": "Test-Optional",
+   "label": "Western Washington University admissions",
+   "url": "https://admissions.wwu.edu/first-year/apply",
+   "evidence": [
+    "Western's application process is test-optional. You are not required to submit test scores to apply for admission."
+   ]
+  },
+  "wichita-state-university": {
+   "policy": "Test-Optional",
+   "label": "Wichita State University admissions",
+   "url": "https://www.wichita.edu/admissions/undergraduate/faq.php",
+   "evidence": [
+    "Wichita State is a test-optional school, meaning ACT or SAT scores are not required for admission for most applicants."
    ],
    "manual": false
+  },
+  "william-and-mary": {
+   "policy": "Test-Optional",
+   "label": "William & Mary admission",
+   "url": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/first-year-applicants/standardizedtesting/",
+   "evidence": [
+    "Standardized testing is just one optional part of your application.",
+    "If you do not want to share your SAT or ACT, that is perfectly fine because it is a completely optional component of your application."
+   ]
+  },
+  "williams-college": {
+   "policy": "Test-Optional",
+   "label": "Williams admission",
+   "url": "https://www.williams.edu/admission-aid/how-to-apply/",
+   "evidence": [
+    "Williams is truly test optional, so it's entirely up to you whether you submit exam results for the SAT or ACT."
+   ],
+   "manual": true
+  },
+  "yale-university": {
+   "policy": "Test-Required",
+   "label": "Yale admissions",
+   "url": "https://admissions.yale.edu/standardized-testing",
+   "evidence": [
+    "First-year and transfer applicants are required to include scores from the ACT or SAT."
+   ],
+   "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
   }
  }
 }
