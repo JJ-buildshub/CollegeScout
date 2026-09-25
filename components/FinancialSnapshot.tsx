@@ -57,27 +57,10 @@ export default function FinancialSnapshot({
 
       <p className="rounded-lg bg-slate-50 p-3 text-xs leading-relaxed text-slate-600">
         This is the full yearly cost before any financial aid. What your family would actually pay
-        depends on your income and the aid the school offers. Talk with your school counselor and the
-        college&apos;s financial aid office, or use the school&apos;s net price calculator to get an estimate.
-        Cost figures are approximate, so confirm current numbers on the college&apos;s website.
+        is in the Financial Aid section. Cost figures are approximate, so confirm current numbers on
+        the college&apos;s website.
       </p>
 
-      {calculator && (
-        <a
-          href={calculator.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-sm font-semibold text-gold-600 hover:text-gold-700"
-        >
-          {calculator.label} <ExternalLink className="h-3.5 w-3.5" />
-        </a>
-      )}
-
-      {financials.meritAidNote && (
-        <p className="rounded-lg bg-slate-50 p-3 text-xs leading-relaxed text-slate-500">
-          {financials.meritAidNote}
-        </p>
-      )}
     </div>
   );
 }
