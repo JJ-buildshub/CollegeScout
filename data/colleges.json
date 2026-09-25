@@ -27656,7 +27656,7 @@
   "financials": {
    "coaInState": 28224,
    "coaOutOfState": 46964,
-   "netPriceCalculatorUrl": "https://fs.boisestate.edu/financialaid/net+price+calculator.html",
+   "netPriceCalculatorUrl": null,
    "meritAidNote": null
   },
   "campusFit": {
@@ -36989,7 +36989,7 @@
   "financials": {
    "coaInState": 25808,
    "coaOutOfState": 32416,
-   "netPriceCalculatorUrl": "https://www.unk.edu/netpricecalculator/npcalc.htm",
+   "netPriceCalculatorUrl": null,
    "meritAidNote": null
   },
   "campusFit": {
@@ -37397,7 +37397,7 @@
   "financials": {
    "coaInState": 29993,
    "coaOutOfState": 42049,
-   "netPriceCalculatorUrl": "https://www.keene.edu/npc/",
+   "netPriceCalculatorUrl": null,
    "meritAidNote": null
   },
   "campusFit": {
@@ -38486,7 +38486,7 @@
   "system": "Public",
   "location": "Henderson, NV",
   "state": "NV",
-  "website": "https://nsc.edu",
+  "website": "https://nevadastate.edu",
   "admitRateOverall": 0.8682,
   "inStateAdmitRate": null,
   "outOfStateAdmitRate": null,
@@ -38783,7 +38783,7 @@
   "financials": {
    "coaInState": 25786,
    "coaOutOfState": 43928,
-   "netPriceCalculatorUrl": "https://www.unr.edu/Prebuilt/financial-aid/net-price-calculator/index.html",
+   "netPriceCalculatorUrl": null,
    "meritAidNote": null
   },
   "campusFit": {
@@ -40419,7 +40419,7 @@
   "financials": {
    "coaInState": 28108,
    "coaOutOfState": 38018,
-   "netPriceCalculatorUrl": "https://www2.cortland.edu/cost-aid/financial-aid/net-price-calculator.dot",
+   "netPriceCalculatorUrl": null,
    "meritAidNote": null
   },
   "campusFit": {
@@ -43291,7 +43291,7 @@
   "system": "Private",
   "location": "Portland, OR",
   "state": "OR",
-  "website": "https://willamette.edu/pnca/index.html",
+  "website": "https://willamette.edu",
   "admitRateOverall": 0.7485,
   "inStateAdmitRate": null,
   "outOfStateAdmitRate": null,
