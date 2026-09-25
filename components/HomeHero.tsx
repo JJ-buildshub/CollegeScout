@@ -1,31 +1,32 @@
-import { ArrowDown } from "lucide-react";
-
-// Sends visitors straight into the interest picker right below (see
-// components/TryCollegeScout.tsx, which owns id="interests") instead of
-// splitting their attention across separate Explore Colleges / My Fit
-// buttons before they've told us anything about themselves. Both of those
-// pages stay one click away in the NavBar on every page, so nothing here is
-// actually less reachable — just no longer the first, competing choice.
+/**
+ * Two lines, sized as two voices rather than a title and a caption.
+ *
+ * Typography notes, since these numbers are deliberate:
+ * - The headline sits in a max-w-4xl measure with `text-balance` so it breaks
+ *   into two even lines instead of stranding "know to look for." on its own.
+ * - The second line runs at roughly half the headline, not a third. At 20px
+ *   semibold it read as a tag under a title; at 28-30px medium it reads as the
+ *   claim the rest of the page goes on to argue.
+ * - Padding is tighter than it was, so the block hugs two lines of text instead
+ *   of leaving a pool of empty navy beneath them.
+ *
+ * No button and no facts strip: the page below makes its case before asking for
+ * anything, and the counts and sourcing rules belong on /about-data.
+ */
 export default function HomeHero() {
+  // Slightly more room above than below: a centred text block reads as sitting
+  // high when the padding is symmetrical.
   return (
-    <section className="overflow-hidden rounded-3xl bg-navy-900 px-6 py-8 text-white sm:px-12 sm:py-14">
-      <div className="mx-auto max-w-2xl text-center xl:max-w-none">
-        <h1 className="text-4xl font-extrabold leading-tight tracking-tight sm:text-[56px]">
-          Find colleges you didn&apos;t know to look for.
+    <section className="overflow-hidden rounded-3xl border border-navy-700 bg-navy-900 px-6 pb-14 pt-16 text-white shadow-card ring-1 ring-inset ring-white/5 sm:px-12 sm:pb-16 sm:pt-20">
+      <div className="mx-auto max-w-4xl text-center">
+        {/* Non-breaking space keeps "didn't know" together — left to itself the
+            balancer split the phrase across the two lines. */}
+        <h1 className="text-balance text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-[58px]">
+          Find colleges you didn&apos;t&nbsp;know to look for.
         </h1>
-        <p className="mx-auto mt-4 max-w-xl text-sm text-slate-300 sm:text-base">
-          Tell us what you&apos;re interested in and what matters to you. We&apos;ll help you
-          discover colleges, programs, and possibilities worth a closer look.
+        <p className="mx-auto mt-6 max-w-2xl text-balance text-xl font-medium leading-snug text-gold-400 sm:text-[34px]">
+          A college is more than its ranking.
         </p>
-
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-          <a
-            href="#interests"
-            className="inline-flex items-center gap-2 rounded-full bg-gold-500 px-6 py-3 text-sm font-semibold text-navy-950 transition-colors hover:bg-gold-400"
-          >
-            Tell us what you&apos;re interested in <ArrowDown className="h-4 w-4" />
-          </a>
-        </div>
       </div>
     </section>
   );

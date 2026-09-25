@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Compass, ListChecks, SlidersHorizontal, Sparkles } from "lucide-react";
+import { Compass, ListChecks, SlidersHorizontal } from "lucide-react";
 import { colleges, getCollegeById } from "@/lib/colleges";
 import { evaluateCollegeFit } from "@/lib/gpa";
 import { computeGpaSummary, useProfile } from "@/lib/profile";
@@ -60,20 +60,16 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
   }
 
   const steps = [
+    // Discover and Understand used to be two cards that both linked to
+    // /directory, which made the journey look like four destinations when the
+    // site has three. They're one step: browsing and reading a profile are the
+    // same place.
     {
       icon: Compass,
-      title: "Discover",
+      title: "Explore",
       hook: "Find schools beyond the obvious.",
-      body: "Explore colleges and programs based on what you care about.",
+      body: "Search by what you want to study, then compare admissions, cost, career outcomes and campus life on any profile.",
       detail: mounted ? `${savedCount} school${savedCount === 1 ? "" : "s"} saved` : "Directory filters",
-      href: "/directory",
-    },
-    {
-      icon: Sparkles,
-      title: "Understand",
-      hook: "See what actually matters.",
-      body: "Compare admissions, academics, career outcomes, cost, and campus life.",
-      detail: "Full college profiles",
       href: "/directory",
     },
     {
@@ -102,7 +98,7 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
     return (
       <section className="py-2">
         <h2 className="text-xs font-bold tracking-wide text-slate-500">How CollegeScout Works</h2>
-        <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-3 grid gap-3 sm:grid-cols-3">
           {steps.map((step, i) => (
             <Link
               key={step.title}
@@ -125,8 +121,16 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
   }
 
   return (
-    <section className="py-4">
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <section id="how-it-works" className="scroll-mt-24 py-2">
+      <div className="mx-auto max-w-2xl text-center">
+        <h2 className="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-3xl">
+          Start anywhere.
+        </h2>
+        <p className="mt-3 text-sm text-slate-600 sm:text-base">
+          Three places to work, in whatever order suits you.
+        </p>
+      </div>
+      <div className="mt-7 grid gap-4 sm:grid-cols-3">
         {steps.map((step, i) => (
           <Link
             key={step.title}

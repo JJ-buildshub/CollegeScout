@@ -5,14 +5,9 @@ const INPUTS = ["GPA", "Honors/AP/IB course rigor", "SAT/ACT (optional)"];
 
 export default function FindMyFit() {
   return (
-    <section className="rounded-3xl bg-slate-50 p-6 sm:p-10">
+    <section className="rounded-3xl border border-slate-200/70 bg-slate-100 p-6 sm:p-10">
       <div className="mx-auto max-w-2xl text-center">
-        <p className="text-sm font-semibold text-navy-900">
-          A college is more than its ranking &mdash; CollegeScout weighs admissions, academics,
-          career outcomes, campus fit, and cost together.
-        </p>
-        <span className="mt-4 inline-block text-xs font-bold tracking-wide text-gold-600">My Fit</span>
-        <h2 className="mt-2 text-xl font-extrabold tracking-tight text-navy-900 sm:text-2xl">
+        <h2 className="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-[28px]">
           Now make it personal.
         </h2>
         <p className="mt-2 text-sm text-slate-500">
