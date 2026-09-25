@@ -8,9 +8,27 @@ import { colleges, displayedAdmitRate } from "@/lib/colleges";
 import type { CollegeSystem, TestingPolicy } from "@/lib/types";
 import { getInterestById, INTEREST_TAXONOMY, matchesAllInterests, normalizeInterestIds } from "@/lib/interests";
 import CollegeCard from "@/components/CollegeCard";
+import { POLICY_LABEL } from "@/components/TestingPolicyBadge";
 
 const SYSTEM_OPTIONS: CollegeSystem[] = ["UC", "CSU", "Private", "Public"];
-const TESTING_OPTIONS: TestingPolicy[] = ["Test-Free", "Test-Required", "Test-Optional", "Test-Blind", "Not verified"];
+
+/**
+ * Every state present in the directory, with how many schools it holds. Built
+ * from the records so it can't list a state we have nothing in, or miss one the
+ * directory gains later.
+ */
+const STATE_OPTIONS = Object.entries(
+  colleges.reduce<Record<string, number>>((acc, c) => {
+    if (c.state) acc[c.state] = (acc[c.state] ?? 0) + 1;
+    return acc;
+  }, {})
+).sort(([a], [b]) => a.localeCompare(b));
+const TESTING_FILTERS: { label: string; policies: TestingPolicy[] }[] = [
+  { label: POLICY_LABEL["Test-Required"], policies: ["Test-Required"] },
+  { label: POLICY_LABEL["Test-Optional"], policies: ["Test-Optional"] },
+  { label: POLICY_LABEL["Test-Blind"], policies: ["Test-Blind", "Test-Free"] },
+  { label: POLICY_LABEL["Not verified"], policies: ["Not verified"] },
+];
 
 type AdmitBucket = "any" | "under15" | "15to35" | "35to60" | "over60";
 
@@ -46,6 +64,7 @@ function DirectoryContent() {
   const [systems, setSystems] = useState<Set<CollegeSystem>>(new Set());
   const [testingPolicies, setTestingPolicies] = useState<Set<TestingPolicy>>(new Set());
   const [admitBucket, setAdmitBucket] = useState<AdmitBucket>("any");
+  const [stateFilter, setStateFilter] = useState<string>("");
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [sortBy, setSortBy] = useState<"admitRateOverall" | "name" | "cost">("name");
   const [interestIds, setInterestIds] = useState<string[]>(() => {
@@ -80,10 +99,13 @@ function DirectoryContent() {
     });
   };
 
-  const toggleTesting = (policy: TestingPolicy) => {
+  // One chip can stand for more than one stored value (Test-Blind and Test-Free
+  // read identically to an applicant), so the toggle works on the group.
+  const toggleTestingGroup = (policies: TestingPolicy[]) => {
     setTestingPolicies((prev) => {
       const next = new Set(prev);
-      next.has(policy) ? next.delete(policy) : next.add(policy);
+      const on = policies.every((x) => next.has(x));
+      policies.forEach((x) => (on ? next.delete(x) : next.add(x)));
       return next;
     });
   };
@@ -92,17 +114,20 @@ function DirectoryContent() {
     setSystems(new Set());
     setTestingPolicies(new Set());
     setAdmitBucket("any");
+    setStateFilter("");
     setQuery("");
     setInterestIds([]);
   };
 
-  const activeFilterCount = systems.size + testingPolicies.size + interestIds.length + (admitBucket !== "any" ? 1 : 0);
+  const activeFilterCount =
+    systems.size + testingPolicies.size + interestIds.length + (admitBucket !== "any" ? 1 : 0) + (stateFilter ? 1 : 0);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return colleges
       .filter((c) => {
         if (q && !c.name.toLowerCase().includes(q) && !c.location.toLowerCase().includes(q)) return false;
+        if (stateFilter && c.state !== stateFilter) return false;
         if (systems.size > 0 && !systems.has(c.system)) return false;
         if (testingPolicies.size > 0 && !testingPolicies.has(c.testingPolicy)) return false;
         if (!matchesBucket(displayedAdmitRate(c).value, admitBucket)) return false;
@@ -119,7 +144,7 @@ function DirectoryContent() {
         }
         return 0;
       });
-  }, [query, systems, testingPolicies, admitBucket, sortBy, interestIds]);
+  }, [query, systems, testingPolicies, admitBucket, stateFilter, sortBy, interestIds]);
 
   return (
     <div className="space-y-6">
@@ -128,7 +153,7 @@ function DirectoryContent() {
           Explore Colleges
         </h1>
         <p className="mt-1 text-sm text-slate-500">
-          Search and filter {colleges.length} schools by system, testing policy, and admit rate.
+          Search and filter {colleges.length} schools by state, system, testing policy, and admit rate.
         </p>
       </div>
 
@@ -191,9 +216,43 @@ function DirectoryContent() {
         </select>
       </div>
 
+      {stateFilter === "CA" && (
+        <div className="rounded-2xl border border-slate-200 bg-white p-4 text-xs leading-relaxed text-slate-600 shadow-card">
+          <span className="font-bold text-navy-900">Starting at a California community college?</span>{" "}
+          It&apos;s one of the most common routes to a UC or CSU. CollegeScout doesn&apos;t cover
+          transfer pathways yet, but{" "}
+          <a
+            href="https://assist.org/"
+            target="_blank"
+            rel="noreferrer"
+            className="font-semibold text-gold-600 hover:underline"
+          >
+            ASSIST
+          </a>
+          , California&apos;s official transfer planning tool, shows which courses transfer to each
+          campus.
+        </div>
+      )}
+
       {filtersOpen && (
         <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
           <div className="flex flex-wrap items-start justify-between gap-4">
+            <div>
+              <div className="text-xs font-bold tracking-wide text-slate-500">State</div>
+              <select
+                value={stateFilter}
+                onChange={(e) => setStateFilter(e.target.value)}
+                className="mt-2 rounded-full border border-slate-200 bg-white px-4 py-1.5 text-xs font-semibold text-slate-600 outline-none focus:ring-2 focus:ring-gold-500"
+              >
+                <option value="">All states</option>
+                {STATE_OPTIONS.map(([code, count]) => (
+                  <option key={code} value={code}>
+                    {code} ({count})
+                  </option>
+                ))}
+              </select>
+            </div>
+
             <div>
               <div className="text-xs font-bold tracking-wide text-slate-500">System</div>
               <div className="mt-2 flex flex-wrap gap-2">
@@ -219,22 +278,25 @@ function DirectoryContent() {
             <div>
               <div className="text-xs font-bold tracking-wide text-slate-500">Testing Policy</div>
               <div className="mt-2 flex flex-wrap gap-2">
-                {TESTING_OPTIONS.map((t) => (
-                  <button
-                    key={t}
-                    onClick={() => toggleTesting(t)}
-                    aria-pressed={testingPolicies.has(t)}
-                    className={clsx(
-                      "flex items-center gap-1 rounded-full border px-3 py-1.5 text-xs font-semibold",
-                      testingPolicies.has(t)
-                        ? "border-navy-900 bg-navy-900 text-white"
-                        : "border-slate-200 text-slate-600 hover:border-slate-300"
-                    )}
-                  >
-                    {testingPolicies.has(t) && <Check className="h-3 w-3" strokeWidth={3} />}
-                    {t}
-                  </button>
-                ))}
+                {TESTING_FILTERS.map((f) => {
+                  const on = f.policies.every((x) => testingPolicies.has(x));
+                  return (
+                    <button
+                      key={f.label}
+                      onClick={() => toggleTestingGroup(f.policies)}
+                      aria-pressed={on}
+                      className={clsx(
+                        "flex items-center gap-1 rounded-full border px-3 py-1.5 text-xs font-semibold",
+                        on
+                          ? "border-navy-900 bg-navy-900 text-white"
+                          : "border-slate-200 text-slate-600 hover:border-slate-300"
+                      )}
+                    >
+                      {on && <Check className="h-3 w-3" strokeWidth={3} />}
+                      {f.label}
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
