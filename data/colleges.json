@@ -23226,7 +23226,7 @@
     "system": "Public",
     "location": "Fort Collins, CO",
     "state": "CO",
-    "website": "https://colostate.edu",
+    "website": "https://www.colostate.edu/",
     "admitRateOverall": 0.8854,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
@@ -45748,7 +45748,7 @@
     "financials": {
       "coaInState": 24289,
       "coaOutOfState": 45597,
-      "netPriceCalculatorUrl": "https://www.mtsu.edu/financialaid/npcalc/npcalc.htm",
+      "netPriceCalculatorUrl": "https://w1.mtsu.edu/financial-aid/npcalc/npcalc.htm",
       "meritAidNote": null
     },
     "campusFit": {
@@ -46458,7 +46458,7 @@
     "financials": {
       "coaInState": 28073,
       "coaOutOfState": 39553,
-      "netPriceCalculatorUrl": "https://apps.highered.texas.gov/net-price-calculator/",
+      "netPriceCalculatorUrl": "https://www.finaid.txst.edu/more-info/nso/npc.html",
       "meritAidNote": null
     },
     "campusFit": {
@@ -46741,7 +46741,7 @@
     "financials": {
       "coaInState": 25261,
       "coaOutOfState": 42893,
-      "netPriceCalculatorUrl": "https://www.highered.texas.gov/institutional-resources-programs/net-price-calculator/",
+      "netPriceCalculatorUrl": "https://www.highered.texas.gov/student-financial-aid-programs/net-price-calculator/",
       "meritAidNote": null
     },
     "campusFit": {
