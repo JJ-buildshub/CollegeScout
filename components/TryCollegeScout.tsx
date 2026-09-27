@@ -28,7 +28,8 @@ import {
   Syringe,
 } from "lucide-react";
 import clsx from "clsx";
-import { admitRateTier, colleges, displayedAdmitRate, formatPercent } from "@/lib/colleges";
+import { ADMIT_TIER_RANGE, admitRateTier, colleges, displayedAdmitRate, formatPercent } from "@/lib/colleges";
+import SaveToggleButton from "./SaveToggleButton";
 import {
   DEFAULT_INTEREST_IDS,
   INTEREST_TAXONOMY,
@@ -112,7 +113,10 @@ const INTEREST_ICONS: Record<string, typeof Cog> = {
 const NOT_SURE_ICON = HelpCircle;
 
 export default function TryCollegeScout() {
-  const [selectedIds, setSelectedIds] = useState<string[]>([DEFAULT_INTEREST_IDS[0]]);
+  // Entrepreneurship rather than the first chip in the list: it's a field a
+  // student is unlikely to have a fixed school list for already, so the results
+  // are more likely to show them somewhere they hadn't thought of.
+  const [selectedIds, setSelectedIds] = useState<string[]>(["entrepreneurship"]);
   const [notSure, setNotSure] = useState(false);
   const [showMore, setShowMore] = useState(false);
 
@@ -251,9 +255,15 @@ export default function TryCollegeScout() {
       className="scroll-mt-24 rounded-3xl border border-slate-200 bg-white px-6 pb-6 pt-8 shadow-card sm:px-10 sm:pb-10 sm:pt-10"
     >
       <div className="mx-auto max-w-2xl text-center">
+        {/* A bridge out of the argument and into the tool. Without it the page
+            went from a story about two schools straight into a selector grid. */}
         <h2 className="text-xl font-extrabold tracking-tight text-navy-900 sm:text-2xl">
           What are you interested in?
         </h2>
+        <p className="mt-3 text-base text-slate-600">
+          Your turn. Pick a subject and see which schools teach it &mdash; sorted by how hard they
+          are to get into, not by rank.
+        </p>
       </div>
 
       <div className="mx-auto mt-6 max-w-4xl">
@@ -331,7 +341,7 @@ export default function TryCollegeScout() {
       </div>
 
       {notSure ? (
-        <div className="mx-auto mt-8 max-w-xl rounded-2xl bg-slate-50 p-6 text-center">
+        <div className="mx-auto mt-8 max-w-xl rounded-2xl bg-sand-100 p-6 text-center">
           <p className="text-sm text-slate-600">
             Totally fine &mdash; most students don&apos;t know yet. Browse all {colleges.length}{" "}
             schools, or see what different paths can lead to.
@@ -344,10 +354,10 @@ export default function TryCollegeScout() {
               Browse the Directory <ArrowRight className="h-4 w-4" />
             </Link>
             <a
-              href="#career-outcomes"
+              href="#compare"
               className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-navy-900 hover:border-slate-300"
             >
-              See Career Outcomes
+              See a side-by-side
             </a>
           </div>
         </div>
@@ -384,10 +394,7 @@ export default function TryCollegeScout() {
                     fullItems={groupByTier(singleFullResults).find((g) => g.tier === tier)?.items ?? items}
                     renderCard={({ college, pathway }) => (
                       <ResultCard key={college.id} college={college}>
-                        <p className="mt-2 text-xs font-semibold text-gold-600">{pathway}</p>
-                        <p className="mt-2 flex-1 text-xs text-slate-500">
-                          Offers bachelor&apos;s degrees in {selectedLabel.toLowerCase()}.
-                        </p>
+                        <p className="mt-1.5 flex-1 text-xs font-semibold text-gold-600">{pathway}</p>
                       </ResultCard>
                     )}
                   />
@@ -395,7 +402,7 @@ export default function TryCollegeScout() {
               </div>
 
               {singleMatches.length === 0 && (
-                <div className="mx-auto mt-8 max-w-xl rounded-2xl bg-slate-50 p-6 text-center">
+                <div className="mx-auto mt-8 max-w-xl rounded-2xl bg-sand-100 p-6 text-center">
                   <p className="text-sm text-slate-600">
                     No school in this dataset has a {selectedLabel} program we can point to &mdash; that doesn&apos;t
                     mean none exist, just that we can&apos;t confidently point to one yet.
@@ -541,7 +548,7 @@ export default function TryCollegeScout() {
               </div>
 
               {combineResults.length === 0 && strongTotal === 0 && (
-                <div className="mx-auto mt-8 max-w-xl rounded-2xl bg-slate-50 p-6 text-center">
+                <div className="mx-auto mt-8 max-w-xl rounded-2xl bg-sand-100 p-6 text-center">
                   <p className="text-sm text-slate-600">
                     No school in this dataset has programs in all of {selectedLabel} at once &mdash; that
                     doesn&apos;t mean none exist, just that we can&apos;t confidently point to one yet.
@@ -674,20 +681,23 @@ function ResultTierGroup<T extends { college: College }>({
   return (
     <div className="mt-5 first:mt-0">
       <div className="mb-2 flex items-center justify-between gap-2">
-        <h4 className="text-xs font-bold uppercase tracking-wide text-slate-500">
-          {tier} <span className="font-semibold normal-case text-slate-500">&middot; {total} school{total === 1 ? "" : "s"}</span>
+        <h4 className="text-[11px] font-bold uppercase tracking-wide text-slate-500">
+          {tier}{" "}
+          <span className="font-semibold normal-case text-slate-500">
+            &middot; {ADMIT_TIER_RANGE[tier]} &middot; {total} school{total === 1 ? "" : "s"}
+          </span>
         </h4>
         {canExpand && (
           <button
             type="button"
             onClick={onToggle}
-            className="shrink-0 text-xs font-semibold text-gold-600 underline underline-offset-2 hover:text-gold-700"
+            className="shrink-0 text-[11px] font-semibold text-gold-600 underline underline-offset-2 hover:text-gold-700"
           >
             {expanded ? "Show fewer" : `See all ${total}`}
           </button>
         )}
       </div>
-      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{visible.map(renderCard)}</div>
+      <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 lg:grid-cols-4">{visible.map(renderCard)}</div>
       {expanded && !showAllInTier && items.length > TIER_GROUP_PAGE_SIZE && (
         <button
           type="button"
@@ -703,15 +713,23 @@ function ResultTierGroup<T extends { college: College }>({
 
 function ResultCard({ college, children }: { college: College; children: React.ReactNode }) {
   return (
-    <Link
-      href={`/directory/${college.id}`}
-      className="flex flex-col rounded-2xl border border-slate-100 bg-slate-50 p-4 transition-colors hover:bg-slate-100"
-    >
-      <SystemBadge system={college.system} className="self-start" />
-      <h3 className="mt-3 text-sm font-bold leading-snug text-navy-900">{college.name}</h3>
+    <div className="group relative flex flex-col rounded-xl border border-sand-200 bg-sand-50 p-3 transition-colors hover:bg-sand-100">
+      <div className="flex items-start justify-between gap-1.5">
+        <SystemBadge system={college.system} />
+        <SaveToggleButton collegeId={college.id} className="relative z-10" />
+      </div>
+      <h3 className="mt-2 text-[13px] font-bold leading-snug text-navy-900">
+        <Link
+          href={`/directory/${college.id}`}
+          className="after:absolute after:inset-0 group-hover:text-navy-700"
+        >
+          {college.name}
+        </Link>
+      </h3>
       {children}
-      <p className="mt-3 text-xs text-slate-500">{formatPercent(displayedAdmitRate(college).value)} overall admit</p>
-      <span className="mt-2 text-xs font-semibold text-navy-900">View School &rarr;</span>
-    </Link>
+      <p className="mt-2 text-[11px] text-slate-500">
+        {formatPercent(displayedAdmitRate(college).value)} admit
+      </p>
+    </div>
   );
 }

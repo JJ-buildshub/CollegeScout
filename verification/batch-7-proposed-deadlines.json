@@ -1,0 +1,142 @@
+{
+ "note": "PROPOSAL — not applied. Entries ready to merge into data/reviewed-deadlines.json's \"schools\" object once the quotes pass scripts/check-reviewed-deadlines.mjs and you approve. Verified against each school's own admissions pages for the 2026-27 cycle (fall 2027 entry).",
+ "checked": "2026-09-23",
+ "cycle": "2026-27",
+ "schools": {
+  "university-of-southern-california": {
+   "label": "USC Undergraduate Admission",
+   "url": "https://admission.usc.edu/apply/first-year/",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "Early Action (EA) is non-binding and non-restrictive.",
+    "Students who are sure that USC is their first choice, and are prepared to make a commitment to attend, can apply Early Decision (ED) to USC.",
+    "Early Decision Deadline: November 1, 2026",
+    "Students applying to majors in the performing arts must apply Regular Decision by the December 1 deadline.",
+    "Final first-year deadline for majors that do not have a December 1 deadline."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 10",
+     "note": "Performing-arts majors have a single December 1 Regular Decision deadline instead; January 10 is the final deadline for all other majors."
+    }
+   ],
+   "note": "USC runs ED and EA on the same November 1 date. The page states the cycle explicitly (\"November 1, 2026\"), confirming fall 2027 entry."
+  },
+  "dartmouth-college": {
+   "label": "Dartmouth Admissions",
+   "url": "https://admissions.dartmouth.edu/apply-dartmouth",
+   "accessed": "2026-09-23",
+   "manual": true,
+   "evidence": [
+    "Early Decision (ED) is an early admission round in which students submit their application by November 1 and receive an admission decision by mid-December.",
+    "Regular Decision (RD) is an admission round in which students submit their application by January 1 and receive an admission decision by late March or early April, and, if admitted, have until May 1 to either accept or decline their offer."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 1"
+    }
+   ],
+   "note": "manual: the site refuses automated requests and the dates sit inside collapsed accordions, so this was read in a browser. Dartmouth offers no Early Action round."
+  },
+  "california-institute-of-technology": {
+   "label": "Caltech Undergraduate Admissions",
+   "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines",
+   "accessed": "2026-09-23",
+   "manual": true,
+   "evidence": [
+    "Caltech offers two decision plans: Restrictive Early Action and Regular Decision.",
+    "Although REA applications are due November 1, you will have until November 6 to submit all required and supplemental materials and standardized testing must be completed before November 30.",
+    "Although RD applications are due January 4, you will have until January 10 to submit all required and supplemental materials and standardized testing must be completed before December 31, 2026."
+   ],
+   "plans": [
+    {
+     "type": "REA",
+     "binding": false,
+     "deadline": "November 1",
+     "note": "Restrictive: an REA applicant may not apply EA or ED elsewhere, with stated exceptions including any public institution with a non-binding fall deadline."
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 4"
+    }
+   ],
+   "note": "manual: JS-rendered page. Caltech has no Early Decision round. The RD paragraph says admitted students have \"until May 1, 2026\" to decide, which is a typo on Caltech's page for the fall 2027 cycle (the REA paragraph says May 1, 2027) — it does not affect either application deadline."
+  },
+  "pomona-college": {
+   "label": "Pomona College Admissions",
+   "url": "https://www.pomona.edu/admissions/apply/first-year-applicants",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "Early Decision I Nov. 8 By Dec. 15 Jan. 1",
+    "Early Decision II Jan. 8 By Feb. 15 March 1",
+    "Regular Decision Jan. 8 By April 1 May 1"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 8"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 8"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 8"
+    }
+   ],
+   "note": "Early Decision II and Regular Decision share the January 8 deadline; they differ in that ED II is binding. Pomona offers no Early Action round."
+  },
+  "scripps-college": {
+   "label": "Scripps College Admission",
+   "url": "https://www.scrippscollege.edu/admission/apply/first-year",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "Early Decision I: November 16",
+    "Early Decision II: January 14",
+    "Regular Decision: January 14"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 16"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 14"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 14"
+    }
+   ],
+   "note": "Early Decision II and Regular Decision share the January 14 deadline; ED II binds. No Early Action round."
+  }
+ }
+}

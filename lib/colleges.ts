@@ -16,6 +16,18 @@ export function formatPercent(value: number | null): string {
   return `${Math.round(value * 100)}%`;
 }
 
+/**
+ * The admit-rate range behind each band name, for use wherever the band is shown
+ * without a percentage beside it. A student has no way to know what
+ * "Ultra-Selective" means; the number defines it without a sentence of gloss.
+ */
+export const ADMIT_TIER_RANGE: Record<string, string> = {
+  "Ultra-Selective": "under 15% admitted",
+  "Highly Selective": "15–35% admitted",
+  Selective: "35–60% admitted",
+  Accessible: "over 60% admitted",
+};
+
 export function admitRateTier(rate: number): string {
   if (rate < 0.15) return "Ultra-Selective";
   if (rate < 0.35) return "Highly Selective";

@@ -1,0 +1,18 @@
+{
+ "note": "PROPOSAL — not applied. Testing policies confirmed against each school's own page for the 2026-27 cycle. Merge into data/reviewed-test-policies.json's \"schools\" once the quotes pass scripts/check-reviewed-test-policies.mjs and you approve. Deadlines for these schools were already verified in an earlier batch, so only the testing policy is proposed here.",
+ "accessed": "2026-09-24",
+ "cycle": "2026-27",
+ "schools": {
+  "temple-university": {
+   "policy": "Test-Optional",
+   "label": "Temple University Admissions",
+   "url": "https://admissions.temple.edu/apply/first-year-students",
+   "accessed": "2026-09-24",
+   "evidence": [
+    "Temple is a test-optional school. First-year students can apply without submitting standardized test scores by selecting test-optional on the Common Application.",
+    "For students who want to send us their test scores, we accept both the SAT and the ACT."
+   ],
+   "note": "Optional and considered when sent, so optional rather than blind. Matches the stored value; this records the source. The same page also confirms the already-verified plans (Early Action November 1, Regular Decision February 1)."
+  }
+ }
+}

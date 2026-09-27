@@ -41,9 +41,21 @@ export default function NavBar() {
   const { fitCount, planCount } = useNavCounts();
 
   const NAV_LINKS = [
-    { href: "/directory", label: "Explore Colleges", icon: ScanSearch, counter: null as string | null },
-    { href: "/matcher", label: "My Fit", icon: GraduationCap, counter: `${fitCount} school${fitCount === 1 ? "" : "s"}` },
-    { href: "/checklist", label: "My Plan", icon: LayoutList, counter: `${planCount} task${planCount === 1 ? "" : "s"}` },
+    { href: "/directory", label: "Explore Colleges", icon: ScanSearch, counter: null as string | null, live: false },
+    {
+      href: "/matcher",
+      label: "My Fit",
+      icon: GraduationCap,
+      counter: `${fitCount} school${fitCount === 1 ? "" : "s"}`,
+      live: fitCount > 0,
+    },
+    {
+      href: "/checklist",
+      label: "My Plan",
+      icon: LayoutList,
+      counter: `${planCount} task${planCount === 1 ? "" : "s"}`,
+      live: planCount > 0,
+    },
   ];
 
   return (
@@ -63,7 +75,7 @@ export default function NavBar() {
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
-          {NAV_LINKS.map(({ href, label, icon: Icon, counter }) => {
+          {NAV_LINKS.map(({ href, label, icon: Icon, counter, live }) => {
             const active = pathname === href || pathname?.startsWith(href + "/");
             return (
               <Link
@@ -78,11 +90,21 @@ export default function NavBar() {
               >
                 <Icon className="h-4 w-4" />
                 {label}
-                {counter && (
-                  <span className={clsx("text-xs font-semibold", active ? "text-gold-400" : "text-slate-500")}>
-                    &middot; {counter}
-                  </span>
-                )}
+                {counter &&
+                  (live ? (
+                    <span
+                      className={clsx(
+                        "rounded-full px-2 py-0.5 text-xs font-bold",
+                        active ? "bg-gold-400 text-navy-950" : "bg-navy-900 text-gold-400"
+                      )}
+                    >
+                      {counter}
+                    </span>
+                  ) : (
+                    <span className={clsx("text-xs font-semibold", active ? "text-gold-400" : "text-slate-400")}>
+                      &middot; {counter}
+                    </span>
+                  ))}
               </Link>
             );
           })}
@@ -101,7 +123,7 @@ export default function NavBar() {
       {open && (
         <nav className="border-t border-slate-200 bg-white px-4 pb-3 pt-2 md:hidden">
           <div className="flex flex-col gap-1">
-            {NAV_LINKS.map(({ href, label, icon: Icon, counter }) => {
+            {NAV_LINKS.map(({ href, label, icon: Icon, counter, live }) => {
               const active = pathname === href || pathname?.startsWith(href + "/");
               return (
                 <Link

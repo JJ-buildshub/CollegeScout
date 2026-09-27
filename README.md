@@ -1,12 +1,28 @@
 # CollegeScout
 
-A California high school college planning portal built with Next.js (App Router), TypeScript, Tailwind CSS, and Lucide icons.
+A free college research site for US high school students, built with Next.js
+(App Router), TypeScript, Tailwind CSS and Lucide icons. Live at
+[collegescout.app](https://collegescout.app).
 
-## Views
+It covers **336 colleges** across 50 states and DC — 173 out-of-state public,
+138 private, 16 CSU and 9 UC campuses — chosen from federal IPEDS data by size
+and programmes offered.
 
-1. **College Intelligence Directory** (`/directory`) — search and filter 35 benchmark schools (UC, CSU, Private, Out-of-State Public) by system, testing policy, and admit rate; click into a full profile page for flagship programs, career outcomes, ideal-student archetype, and deadlines.
-2. **Admissions Fit & Matcher** (`/matcher`) — enter your unweighted GPA plus honors/AP/IB coursework to calculate your official UC-capped weighted GPA (bonus points capped at 8 semesters), then see every school sorted into Safety / Target / Reach based on GPA position within the school's mid-50% band and its overall admit rate.
-3. **High School Runway Checklist** (`/checklist`) — a grade-specific (9/10/11) action plan across Academics, Testing, Extracurriculars, College Research, and Financial Planning, with progress saved locally in your browser.
+## Pages
+
+1. **Explore Colleges** (`/directory`) — search and filter all 336 schools by
+   state, system, testing policy and admit rate. Each profile covers
+   preparation, admissions, applying, academics, cost, financial aid and
+   campus.
+2. **My Fit** (`/matcher`) — enter unweighted GPA plus honors/AP/IB coursework
+   to calculate the UC-capped weighted GPA (bonus points capped at 8
+   semesters), then see every school sorted into Reach / Target / Likely, based
+   on GPA position within the school's mid-50% band and its admit rate.
+3. **My Plan** (`/checklist`) — a grade-specific action plan across academics,
+   testing, extracurriculars, college research and financial planning.
+
+Everything a student enters stays in their own browser. There are no accounts
+and nothing is uploaded.
 
 ## Getting started
 
@@ -17,8 +33,40 @@ npm install
 npm run dev
 ```
 
-Then open http://localhost:3000.
+Then open http://localhost:3100.
+
+Note: `next build` and `next dev` share the `.next` directory, so stop the dev
+server before building or the running server will die mid-build.
 
 ## Data
 
-School benchmark data lives in `data/colleges.json`, sourced from the project's `colleges.json`.
+School data lives in `data/colleges.json`, from Common Data Sets, IPEDS, the
+US Department of Education's College Scorecard and schools' own admissions
+pages.
+
+Fields carry their own provenance rather than the record being trusted as a
+whole, so the site can say which figures have been checked against a school's
+own page and which haven't. Anything unverified renders as "Not confirmed yet"
+instead of being presented as fact.
+
+Current coverage, out of 336:
+
+| Field | Sourced |
+| --- | --- |
+| Application plans and deadlines | 279 |
+| Testing policy | 222 |
+| Admissions | 211 |
+| Cost | 208 |
+| GPA / SAT | 158 |
+| Career outcomes | 0 |
+
+Career outcomes are **not displayed**. Every figure the site held was
+unsourced, so the section was removed rather than shipped unverified; the nine
+College Scorecard earnings figures that do carry a source are retained in
+`careerOutcomes.earnings` for when the section returns. Note that those measure
+median earnings 10 years after entry, not a first-job starting salary.
+
+Verification runs in batches: `verification/*-quotes.json` holds a quote from
+each school's own page, `scripts/check-reviewed-*.mjs` re-checks those quotes
+against the live page, and `scripts/apply-reviewed-*.py --apply` writes the
+result.

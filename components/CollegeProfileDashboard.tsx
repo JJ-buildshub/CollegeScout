@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { ArrowLeft, Award, Briefcase, ExternalLink, MapPin } from "lucide-react";
+import { ArrowLeft, Award, ExternalLink, MapPin } from "lucide-react";
 import clsx from "clsx";
 import type { College, FieldProvenance, ScorecardData } from "@/lib/types";
 import { formatPercent, admitRateTier, displayedAdmitRate } from "@/lib/colleges";
@@ -15,6 +15,7 @@ import AddToApplicationsButton from "./AddToApplicationsButton";
 import TestingPolicyBadge from "./TestingPolicyBadge";
 import ApplicationPlanBadges from "./ApplicationPlanBadges";
 import FinancialSnapshot from "./FinancialSnapshot";
+import FinancialAid from "./FinancialAid";
 import ApplicationRequirements from "./ApplicationRequirements";
 import AdmissionOverview from "./AdmissionOverview";
 import CampusFitStats from "./CampusFitStats";
@@ -25,7 +26,7 @@ const SECTIONS = [
   { id: "apply", label: "Applying" },
   { id: "academics", label: "Academics" },
   { id: "cost", label: "Cost" },
-  { id: "outcomes", label: "Outcomes" },
+  { id: "aid", label: "Financial Aid" },
   { id: "campus", label: "Campus" },
 ];
 
@@ -36,7 +37,13 @@ const SECTIONS = [
 const NAV_HEIGHT = 68;
 const HEADER_COMPACT_HEIGHT = 56;
 const SECTION_BAR_TOP = NAV_HEIGHT + HEADER_COMPACT_HEIGHT;
-const SCROLL_OFFSET = SECTION_BAR_TOP + 56;
+// Fallback only, for the first paint and for SSR. The section bar's real
+// height depends on the font, and hard-coding it here is what desynced the
+// scroll-spy when the site gained a typeface: the bar rendered 49px tall while
+// this said 56, so the highlight fired one section early. Measured at runtime
+// below and this value is only used until that measurement lands.
+const SECTION_BAR_HEIGHT_FALLBACK = 56;
+const SCROLL_OFFSET = SECTION_BAR_TOP + SECTION_BAR_HEIGHT_FALLBACK;
 
 export default function CollegeProfileDashboard({ college }: { college: College }) {
   const router = useRouter();
@@ -46,6 +53,8 @@ export default function CollegeProfileDashboard({ college }: { college: College 
   // version shrank the header in the page flow at 48px of scroll, which moved
   // every element below it by 70px and made the page jump and flicker.
   const bannerRef = useRef<HTMLDivElement>(null);
+  const sectionBarRef = useRef<HTMLElement>(null);
+  const [sectionBarHeight, setSectionBarHeight] = useState(SECTION_BAR_HEIGHT_FALLBACK);
   const [showBar, setShowBar] = useState(false);
   // Schools added from bulk public data have no curated preparation list; the section and its tab are left out rather than shown empty.
   const hasPrep = college.idealStudentArchetype.highSchoolCoursePrereqs.length > 0;
@@ -73,22 +82,62 @@ export default function CollegeProfileDashboard({ college }: { college: College 
     return () => observer.disconnect();
   }, []);
 
+  // The bar's height drives both the spy line and every section's scroll
+  // margin, so it's measured rather than assumed — a font or padding change
+  // can't silently put the two out of step again.
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries.filter((e) => e.isIntersecting);
-        if (visible.length === 0) return;
-        const top = visible.reduce((a, b) => (a.boundingClientRect.top < b.boundingClientRect.top ? a : b));
-        setActiveId(top.target.id);
-      },
-      { rootMargin: `-${SECTION_BAR_TOP + 44}px 0px -60% 0px`, threshold: 0 }
-    );
-    SECTIONS.forEach(({ id }) => {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el);
-    });
+    const el = sectionBarRef.current;
+    if (!el) return;
+    const measure = () => setSectionBarHeight(el.getBoundingClientRect().height);
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(el);
     return () => observer.disconnect();
   }, []);
+
+  // Which section the bar highlights. Deliberately not an IntersectionObserver:
+  // the sections here vary hugely in height (Applying can be 190px, Admissions
+  // over 1000px), and any "which visible section is nearest the top" rule picks
+  // the wrong one as soon as a short section sits beside a tall one. The rule
+  // that holds regardless of height is simply: the active section is the last
+  // one whose top has passed under the sticky bar.
+  useEffect(() => {
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const line = SECTION_BAR_TOP + sectionBarHeight;
+      const ids = sections.map((s) => s.id);
+
+      // At the very bottom the last section may be too short to ever reach the
+      // line, so it could never light its own tab.
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+        setActiveId(ids[ids.length - 1]);
+        return;
+      }
+
+      // 1px of tolerance: an anchor jump lands the section at exactly `line`,
+      // and sub-pixel layout means top can come back as 180.0001, which a
+      // strict <= would reject — leaving the previous tab highlighted.
+      let current = ids[0];
+      for (const id of ids) {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top - line <= 1) current = id;
+      }
+      setActiveId(current);
+    };
+
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      if (frame) cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, [sections, sectionBarHeight]);
 
   // CSU uses its own GPA calculation, not UC's, so it's treated like Private/
   // Public here (unweighted) rather than grouped with UC — see
@@ -99,7 +148,13 @@ export default function CollegeProfileDashboard({ college }: { college: College 
   const isUcOrCsu = college.system === "UC" || college.system === "CSU";
   const cappedGpaLabel =
     college.system === "CSU" ? "Mid-50% GPA (Capped, as reported)" : "Mid-50% UC-Capped GPA";
-  const scrollMt = `scroll-mt-[${SCROLL_OFFSET}px]`;
+  // An inline style, NOT a Tailwind class. `scroll-mt-[${SCROLL_OFFSET}px]` was
+  // built by template literal, and Tailwind only generates classes it can find
+  // as literal strings in the source — so the class was emitted onto every
+  // section and never had a rule behind it. Anchor jumps landed each section at
+  // y=0, hidden behind the 180px sticky stack: the tab bar said "Academics"
+  // while Cost filled the screen.
+  const sectionScroll = { scrollMarginTop: SECTION_BAR_TOP + sectionBarHeight };
 
   // Only UC/CSU schools report a capped-weighted figure at all — Private and
   // Public never do, so that box doesn't belong on their page.
@@ -142,7 +197,6 @@ export default function CollegeProfileDashboard({ college }: { college: College 
       [
         admitRate.provenance ?? college.admissionsProvenance,
         college.gpaSatProvenance,
-        college.outcomesProvenance,
         college.costProvenance,
         college.applicationPlansProvenance,
         college.testingPolicyProvenance,
@@ -244,12 +298,6 @@ export default function CollegeProfileDashboard({ college }: { college: College 
               provenance={college.gpaSatProvenance}
             />
           )}
-          <GlanceStat
-            label="Median Starting Salary"
-            value={college.careerOutcomes.medianStartingSalary ?? "Not reported"}
-            showSource
-            provenance={college.outcomesProvenance}
-          />
           {college.financials.coaInState !== null && (
             <GlanceStat
               label="Cost of Attendance"
@@ -284,6 +332,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
 
         {/* Sticky section bar */}
         <nav
+          ref={sectionBarRef}
           className="sticky z-30 -mx-4 mt-4 overflow-x-auto border-b border-slate-200 bg-white/95 px-4 backdrop-blur sm:-mx-6 sm:px-6"
           style={{ top: SECTION_BAR_TOP }}
         >
@@ -306,7 +355,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
         <div className="space-y-10 py-6">
           {/* Preparation: only when there is a curated list to show */}
           {hasPrep && (
-            <section id="overview" className={scrollMt}>
+            <section id="overview" style={sectionScroll}>
               <h2 className="text-lg font-bold text-navy-900">Preparation</h2>
               <div className="mt-3 w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
                 <div>
@@ -331,7 +380,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
           )}
 
           {/* Admissions */}
-          <section id="admissions" className={scrollMt}>
+          <section id="admissions" style={sectionScroll}>
             <h2 className="text-lg font-bold text-navy-900">Admissions</h2>
             <div className="mt-3 empty:hidden">
               <AdmissionOverview college={college} />
@@ -380,13 +429,6 @@ export default function CollegeProfileDashboard({ college }: { college: College 
 
               <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
                 <div className="text-xs font-bold tracking-wide text-slate-600">
-                  Application Deadlines
-                  <SourceMark provenance={college.applicationPlansProvenance} />
-                </div>
-                <div className="mt-2">
-                  <ApplicationPlanBadges plans={college.applicationPlans} />
-                </div>
-                <div className="mt-4 border-t border-slate-100 pt-4">
                   <div className="text-xs font-bold tracking-wide text-slate-600">Impacted Majors</div>
                   {college.impactedMajors.length > 0 ? (
                     <div className="mt-2 flex flex-wrap gap-1.5">
@@ -410,15 +452,24 @@ export default function CollegeProfileDashboard({ college }: { college: College 
           </section>
 
           {/* Applying */}
-          <section id="apply" className={scrollMt}>
+          <section id="apply" style={sectionScroll}>
             <h2 className="text-lg font-bold text-navy-900">Applying</h2>
+            <div className="mt-3 w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+              <div className="text-xs font-bold tracking-wide text-slate-600">
+                Application Deadlines
+                <SourceMark provenance={college.applicationPlansProvenance} />
+              </div>
+              <div className="mt-2">
+                <ApplicationPlanBadges plans={college.applicationPlans} />
+              </div>
+            </div>
             <div className="mt-3">
               <ApplicationRequirements college={college} />
             </div>
           </section>
 
           {/* Academics */}
-          <section id="academics" className={scrollMt}>
+          <section id="academics" style={sectionScroll}>
             <h2 className="text-lg font-bold text-navy-900">Academics</h2>
             <div className="mt-3 grid items-start gap-4 lg:grid-cols-2">
               {college.flagshipPrograms.length > 0 && (
@@ -450,7 +501,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                       ))}
                     </div>
                   ) : (
-                    <p className="mt-2 text-sm text-slate-500">Not publicly reported.</p>
+                    <p className="mt-2 text-sm text-slate-500">We haven&apos;t confirmed this yet.</p>
                   )}
                 </div>
                 <div className="mt-4 border-t border-slate-100 pt-4">
@@ -477,7 +528,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
           </section>
 
           {/* Cost */}
-          <section id="cost" className={scrollMt}>
+          <section id="cost" style={sectionScroll}>
             <h2 className="text-lg font-bold text-navy-900">Cost</h2>
             <div className="mt-3">
               <div className="max-w-2xl rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
@@ -491,52 +542,22 @@ export default function CollegeProfileDashboard({ college }: { college: College 
             </div>
           </section>
 
-          {/* Outcomes */}
-          <section id="outcomes" className={scrollMt}>
-            <h2 className="text-lg font-bold text-navy-900">Outcomes</h2>
-            <div className="mt-3 w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-              <div className="flex items-center gap-2">
-                <Briefcase className="h-4 w-4 text-gold-600" />
-                <h3 className="text-sm font-bold text-navy-900">Career Outcomes</h3>
-              </div>
-              <div className="mt-4 grid grid-cols-2 gap-4">
-                <Stat
-                  label="Placement Rate"
-                  value={college.careerOutcomes.placementRate}
-                  showSource
-                  provenance={college.outcomesProvenance}
-                />
-                <Stat
-                  label="Median Starting Salary"
-                  value={college.careerOutcomes.medianStartingSalary}
-                  showSource
-                  provenance={college.outcomesProvenance}
-                />
-              </div>
-              <div className="mt-4 border-t border-slate-100 pt-4">
-                <div className="text-xs font-bold tracking-wide text-slate-600">Top Recruiters</div>
-                {college.careerOutcomes.topRecruiters.length > 0 ? (
-                  <div className="mt-2 flex flex-wrap gap-1.5">
-                    {college.careerOutcomes.topRecruiters.map((r) => (
-                      <span key={r} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
-                        {r}
-                      </span>
-                    ))}
-                  </div>
-                ) : (
-                  <p className="mt-2 text-sm text-slate-500">Not publicly reported.</p>
-                )}
-              </div>
+          {/* Financial aid — separate from Cost on purpose: Cost is the
+              school's published price, this is what happens to it. */}
+          <section id="aid" style={sectionScroll}>
+            <h2 className="text-lg font-bold text-navy-900">Financial Aid</h2>
+            <div className="mt-3">
+              <FinancialAid college={college} />
             </div>
           </section>
 
           {/* Campus */}
-          <section id="campus" className={scrollMt}>
+          <section id="campus" style={sectionScroll}>
             <h2 className="text-lg font-bold text-navy-900">Campus</h2>
             <div className="mt-3 w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
               <h3 className="text-sm font-bold text-navy-900">Campus Fit</h3>
               <div className="mt-4">
-                <CampusFitStats fit={college.campusFit} />
+                <CampusFitStats fit={college.campusFit} location={college.location} />
               </div>
             </div>
           </section>
@@ -666,19 +687,31 @@ function Stat({
   value,
   showSource,
   provenance,
+  sub,
+  emptyLabel = "Not publicly reported",
 }: {
   label: string;
   value: string | null;
   showSource?: boolean;
   provenance?: FieldProvenance;
+  /** Quiet source line under the value, for figures that carry their own. */
+  sub?: string;
+  /**
+   * What to show when there's no value. The default says the school doesn't
+   * publish it, which is only fair for figures we pull from a source that
+   * reports nulls. For curated fields nobody has researched yet, pass something
+   * that says so instead of putting words in the school's mouth.
+   */
+  emptyLabel?: string;
 }) {
   return (
     <div>
       <div className="text-xs font-semibold tracking-wide text-slate-600">{label}</div>
       <div className="mt-0.5 text-lg font-bold text-navy-900">
-        {value ?? "Not publicly reported"}
+        {value ?? emptyLabel}
         {showSource && <SourceMark provenance={provenance} />}
       </div>
+      {sub && value && <div className="mt-0.5 text-xs text-slate-500">{sub}</div>}
     </div>
   );
 }

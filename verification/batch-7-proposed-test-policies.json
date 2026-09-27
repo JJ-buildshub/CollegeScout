@@ -1,0 +1,329 @@
+{
+ "note": "PROPOSAL — not applied. Entries ready to merge into data/reviewed-test-policies.json's \"schools\" object once the quotes pass scripts/check-reviewed-test-policies.mjs and you approve.",
+ "accessed": "2026-09-23",
+ "cycle": "2026-27",
+ "schools": {
+  "university-of-southern-california": {
+   "policy": "Test-Optional",
+   "label": "USC Undergraduate Admission",
+   "url": "https://admission.usc.edu/apply/first-year/",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "We require official test scores sent from the testing agencies for those who choose to submit them as a part of their application.",
+    "Although the application process is test-optional, we still find it helpful to have work from home-schooled students that is externally graded or examined."
+   ],
+   "note": "Optional, and considered when sent — USC records the highest scores when a test was taken more than once. Not test-blind."
+  },
+  "dartmouth-college": {
+   "policy": "Test-Required",
+   "label": "Dartmouth Admissions",
+   "url": "https://admissions.dartmouth.edu/apply/testing-policy",
+   "accessed": "2026-09-23",
+   "manual": true,
+   "evidence": [
+    "Standardized testing is a required element of Dartmouth's undergraduate application.",
+    "Informed by new research, Dartmouth reactivated the standardized testing requirement for undergraduate admission beginning with applicants to the Class of 2029."
+   ],
+   "note": "manual: the site refuses automated requests. Dartmouth reinstated the requirement starting with the Class of 2029, so it is in force for this cycle. Applicants whose curriculum has not been delivered in English for at least two years must also submit an English proficiency exam."
+  },
+  "california-institute-of-technology": {
+   "policy": "Test-Required",
+   "label": "Caltech Undergraduate Admissions",
+   "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/standardized-tests",
+   "accessed": "2026-09-23",
+   "manual": true,
+   "evidence": [
+    "Caltech requires first-year applicants to submit either the SAT or the ACT for admissions to Caltech.",
+    "For fall 2027 applicants, Caltech does not require the ACT writing or science subscores."
+   ],
+   "note": "manual: JS-rendered page, which states \"Caltech Testing Deadlines for Fall 2027 Entry\" — the correct cycle. Caltech places scores into bands (\"Bucket A/B\") rather than always showing the exact score to the committee; the ACT writing and science subscores are not required."
+  },
+  "pomona-college": {
+   "policy": "Test-Optional",
+   "label": "Pomona College Admissions",
+   "url": "https://www.pomona.edu/admissions/apply/first-year-applicants",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "Pomona College is test optional.",
+    "SAT or ACT scores are not required to apply but students may choose to self-report them on their application."
+   ],
+   "note": "Scores may be self-reported and are accepted when sent, so optional rather than blind. The page states there is no admissions advantage to submitting."
+  },
+  "northeastern-university": {
+   "policy": "Test-Optional",
+   "label": "Northeastern University Undergraduate Admissions",
+   "url": "https://admissions.northeastern.edu/application-information/first-year-applicants/",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "Northeastern University is test-optional and does not require applicants to submit standardized testing to be considered for admission."
+   ],
+   "note": "Test policy only — Northeastern's application deadlines are not stated on this page and were not verified in this batch."
+  },
+  "scripps-college": {
+   "policy": "Test-Optional",
+   "label": "Scripps College Admission",
+   "url": "https://www.scrippscollege.edu/admission/apply/first-year",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "Submitting SAT or ACT exam scores is completely optional.",
+    "Students will not be disadvantaged in the review process if they do not submit SAT or ACT exam scores."
+   ],
+   "note": "Scores are superscored when submitted, and self-reporting is addressed on the same page, so optional rather than blind. International students whose first language is not English must submit TOEFL, IELTS or Duolingo regardless."
+  },
+  "uc-berkeley": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "ucla": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "uc-san-diego": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "uc-davis": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "uc-irvine": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "uc-santa-barbara": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "uc-santa-cruz": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "uc-riverside": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "uc-merced": {
+   "policy": "Test-Blind",
+   "label": "University of California admissions (system-wide)",
+   "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "UC will not consider SAT or ACT test scores when making admissions decisions or awarding scholarships."
+   ],
+   "note": "System-wide UC policy; one application covers all nine campuses."
+  },
+  "cal-poly-san-luis-obispo": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "san-jose-state-university": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "san-diego-state-university": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "cal-poly-pomona": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "csu-long-beach": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "cal-state-fullerton": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "sacramento-state": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "cal-state-northridge": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "cal-state-la": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "san-francisco-state": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "sonoma-state": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "cal-state-east-bay": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "fresno-state": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "chico-state": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  },
+  "cal-poly-humboldt": {
+   "policy": "Test-Blind",
+   "label": "The California State University (system-wide testing requirements)",
+   "url": "https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx",
+   "accessed": "2026-09-23",
+   "evidence": [
+    "The California State University (CSU) no longer uses ACT or SAT examinations in determining admission eligibility for all CSU campuses.",
+    "If accepted to a CSU campus, ACT or SAT test scores can be used as one of the measures to place students in the proper mathematics and written communication courses."
+   ],
+   "note": "System-wide CSU policy covering every campus. Scores play no part in admission eligibility, but CSU does use them after acceptance as one measure for math and written-communication course placement — so a student may still have a reason to send them."
+  }
+ }
+}
