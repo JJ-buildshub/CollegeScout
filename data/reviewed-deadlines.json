@@ -2088,7 +2088,7 @@
    "url": "https://www.ncat.edu/admissions/undergraduate/dates-and-deadlines.php",
    "accessed": "2026-09-20",
    "evidence": [
-    "Fall 2027 Deadline New First-Year Early Action: Application due on November 1st. All documents due November 15th. Decision notification by January 30th.",
+    "Fall 2027 Deadlines New First-Year Early Action: Application due on November 1st. All documents due November 15th. Decision notification by January 30th.",
     "Regular Decision: Application due on February 1st. All documents due February 15th. Decision notification by April 1st."
    ],
    "plans": [
@@ -2102,7 +2102,8 @@
      "binding": false,
      "deadline": "February 1"
     }
-   ]
+   ],
+   "note": "Deadlines unchanged since first recorded; the page heading changed from \"Fall 2027 Deadline\" to \"Fall 2027 Deadlines\"."
   },
   "north-carolina-state-university-at-raleigh": {
    "label": "NC State admissions",
@@ -4594,7 +4595,8 @@
      "note": "No ED/EA/RD plans; no fixed general application deadline is published."
     }
    ],
-   "manual": false
+   "manual": true,
+   "note": "The admissions FAQ renders its answers with JavaScript, so the quote cannot be checked by fetching the HTML. Confirmed by reading the page in a browser."
   },
   "william-and-mary": {
    "label": "William & Mary admissions",
