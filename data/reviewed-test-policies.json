@@ -1891,10 +1891,10 @@
    "label": "University of West Georgia admissions",
    "url": "https://www.westga.edu/undergraduate-admissions/index.php",
    "evidence": [
-    "UWG is test-optional for Freshman applicants with a recalculated GPA of 3.2 or higher through Summer 2027!"
+    "UWG is test-optional for Freshman applicants with a recalculated GPA of 3.2 or higher through Summer 2028!"
    ],
    "manual": false,
-   "note": "Policy is conditional on a recalculated GPA of 3.2 or higher; a subordinate freshman-requirements subpage has not yet been updated and still shows an older Fall 2023-Fall 2026 sunset window, but the main admissions page states the window runs through Summer 2027."
+   "note": "Policy is conditional on a recalculated GPA of 3.2 or higher. The window now runs through Summer 2028; it read Summer 2027 when this was first recorded, so the school extended it rather than changing the policy."
   },
   "university-of-wisconsin-milwaukee": {
    "policy": "Test-Optional",
@@ -2017,7 +2017,8 @@
    "evidence": [
     "Wichita State is a test-optional school, meaning ACT or SAT scores are not required for admission for most applicants."
    ],
-   "manual": false
+   "manual": true,
+   "note": "The admissions FAQ renders its answers with JavaScript, so the quote cannot be checked by fetching the HTML. Confirmed by reading the page in a browser."
   },
   "william-and-mary": {
    "policy": "Test-Optional",
