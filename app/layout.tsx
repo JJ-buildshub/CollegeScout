@@ -68,6 +68,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <span>Your profile, saved schools and tasks are stored only in this browser — never uploaded, no account needed.</span>
             <ResetDataButton />
           </p>
+          <p className="mt-2">
+            Spotted something wrong, or want to get in touch?{" "}
+            <a
+              href="mailto:hello.collegescout@gmail.com"
+              className="font-semibold text-navy-900 underline underline-offset-2 hover:text-navy-700"
+            >
+              hello.collegescout@gmail.com
+            </a>
+          </p>
         </footer>
         <Analytics />
       </body>
