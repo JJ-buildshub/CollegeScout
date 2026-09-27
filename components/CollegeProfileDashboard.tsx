@@ -6,6 +6,7 @@ import { ArrowLeft, Award, ExternalLink, MapPin } from "lucide-react";
 import clsx from "clsx";
 import type { College, FieldProvenance, ScorecardData } from "@/lib/types";
 import { formatPercent, admitRateTier, displayedAdmitRate } from "@/lib/colleges";
+import { CONTACT_EMAIL, SITE_URL } from "@/lib/site";
 import { hasReliableResidencySplit } from "@/lib/gpa";
 import { useCollegeList } from "@/lib/collegeList";
 import SystemBadge, { SYSTEM_ACCENT } from "./SystemBadge";
@@ -564,7 +565,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
         </div>
 
         {sourceNotes.length > 0 && (
-          <div className="space-y-1 border-t border-slate-200 pb-8 pt-4 text-xs text-slate-500">
+          <div className="space-y-1 border-t border-slate-200 pt-4 text-xs text-slate-500">
             {sourceNotes.map((note, i) => (
               <p key={note}>
                 <span className="mr-1 font-bold">{FOOTNOTE_MARKS[Math.min(i, FOOTNOTE_MARKS.length - 1)]}</span>
@@ -573,6 +574,34 @@ export default function CollegeProfileDashboard({ college }: { college: College 
             ))}
           </div>
         )}
+
+        {/* Deliberately not gated on sourceNotes: a reader who doubts a figure
+            needs a way to say so whether or not this page happens to carry
+            footnotes — and the pages with the least sourcing are the ones most
+            likely to need it. The school and the page are filled in for them,
+            so a correction takes one line rather than an explanation of which
+            profile they were looking at. */}
+        <div
+          className={clsx(
+            "pb-8 pt-4 text-xs text-slate-500",
+            sourceNotes.length === 0 && "border-t border-slate-200"
+          )}
+        >
+          <a
+            href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
+              `Correction: ${college.name}`
+            )}&body=${encodeURIComponent(
+              `Page: ${SITE_URL}/directory/${college.id}
+
+Which figure looks wrong, and what should it be?
+
+`
+            )}`}
+            className="font-semibold text-navy-900 underline underline-offset-2 hover:text-navy-700"
+          >
+            Suggest a correction for this page
+          </a>
+        </div>
       </div>
     </div>
     </SourceNotes.Provider>

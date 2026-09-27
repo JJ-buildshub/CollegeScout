@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 };
 
 import Link from "next/link";
+import { CONTACT_EMAIL } from "@/lib/site";
 
 export default function AboutDataPage() {
   return (
@@ -59,10 +60,10 @@ export default function AboutDataPage() {
             looks out of date, or you want to know how we arrived at a number, write to us —
             corrections are checked against the school&apos;s own page and fixed.{" "}
             <a
-              href="mailto:hello.collegescout@gmail.com"
+              href={`mailto:${CONTACT_EMAIL}`}
               className="font-semibold text-navy-900 underline underline-offset-2 hover:text-navy-700"
             >
-              hello.collegescout@gmail.com
+              {CONTACT_EMAIL}
             </a>
           </p>
         </div>

@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import NavBar from "@/components/NavBar";
 import DataHealthBanner from "@/components/DataHealthBanner";
 import ResetDataButton from "@/components/ResetDataButton";
-import { SITE_URL } from "@/lib/site";
+import { CONTACT_EMAIL, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 // Variable font: no `weight` (that would pin static cuts and disallow `axes`),
@@ -71,10 +71,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <p className="mt-2">
             Questions, feedback or a correction?{" "}
             <a
-              href="mailto:hello.collegescout@gmail.com"
+              href={`mailto:${CONTACT_EMAIL}`}
               className="font-semibold text-navy-900 underline underline-offset-2 hover:text-navy-700"
             >
-              hello.collegescout@gmail.com
+              {CONTACT_EMAIL}
             </a>
           </p>
         </footer>
