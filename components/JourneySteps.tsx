@@ -74,8 +74,8 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
     },
     {
       icon: SlidersHorizontal,
-      title: "Match",
-      hook: "Find your fit.",
+      title: "My Fit",
+      hook: "See which schools fit you.",
       body: "Understand how schools align with your academic profile, interests, and priorities.",
       detail: mounted
         ? hasUsableGpa
@@ -86,7 +86,7 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
     },
     {
       icon: ListChecks,
-      title: "Plan",
+      title: "My Plan",
       hook: "Know what comes next.",
       body: "Build your list and stay ahead of applications, deadlines, and milestones.",
       detail: mounted ? `${planCount} task${planCount === 1 ? "" : "s"} remaining` : "Runway milestones",
@@ -123,7 +123,7 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
   return (
     <section id="how-it-works" className="scroll-mt-24 py-2">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-3xl">
+        <h2 className="font-display text-2xl font-extrabold tracking-tight text-navy-900 sm:text-3xl">
           Start anywhere.
         </h2>
         <p className="mt-3 text-sm text-slate-600 sm:text-base">
@@ -138,13 +138,13 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
             className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-card transition-all hover:-translate-y-0.5 hover:shadow-cardHover"
           >
             <div className="flex items-center gap-2 text-xs font-semibold tracking-wide text-gold-600">
-              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-navy-900 text-[10px] font-bold text-gold-400">
+              <span className="flex h-4 w-4 items-center justify-center rounded-full bg-navy-900 text-[9px] font-bold text-gold-400">
                 {i + 1}
               </span>
               {step.title}
             </div>
             <div className="mt-3 flex items-center gap-2 text-base font-bold text-navy-900">
-              <step.icon className="h-4 w-4 text-navy-900" /> {step.hook}
+              <step.icon className="h-3.5 w-3.5 shrink-0 text-navy-900" /> {step.hook}
             </div>
             <p className="mt-1.5 flex-1 text-sm text-slate-500">{step.body}</p>
             <p className="mt-3 text-xs font-semibold text-gold-600">{step.detail}</p>

@@ -1,5 +1,30 @@
 import type { Config } from "tailwindcss";
 
+/*
+ * The whole site's colour is these ten values: `navy` is the dark brand
+ * surface (hero, buttons), `gold` the highlight, `sand` the warm neutral that
+ * replaced Tailwind's cool slate greys. Kept in one block so the scheme can be
+ * swapped without touching a single component.
+ */
+/* palette:start */
+const palette = {
+  navy: { 950: "#071810", 900: "#10291c", 800: "#1a3b29", 700: "#27523a" },
+  // Full scale: components reference 50/100/300/700 as well, and a missing
+  // key emits no CSS at all rather than failing loudly — which is exactly
+  // how the nav counters ended up with no text colour.
+  gold: {
+    50: "#f8fbe8",
+    100: "#eef6c6",
+    300: "#e0ef86",
+    400: "#d6e85c",
+    500: "#b4c93c",
+    600: "#6f7d16",
+    700: "#4f5a10",
+  },
+  sand: { 50: "#fdfbf7", 100: "#f1ece2", 200: "#e2d9c9" },
+};
+/* palette:end */
+
 const config: Config = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,21 +33,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        navy: {
-          950: "#050b1a",
-          900: "#0a1428",
-          800: "#0f1d3a",
-          700: "#16294d",
-        },
-        gold: {
-          400: "#f2c14e",
-          500: "#e3a83b",
-          600: "#c98a1f",
-        },
-      },
+      colors: palette,
       fontFamily: {
+        display: ["var(--font-display)", "Georgia", "serif"],
         sans: [
+          "var(--font-body)",
           "ui-sans-serif",
           "system-ui",
           "-apple-system",

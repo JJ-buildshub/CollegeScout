@@ -23,23 +23,23 @@ export const POLICY_LABEL: Record<TestingPolicy, string> = {
 
 const META: Record<TestingPolicy, { style: string; note: string }> = {
   "Test-Required": {
-    style: "bg-rose-50 text-rose-700 ring-1 ring-inset ring-rose-200",
+    style: "bg-[#f7edea] text-[#8a4a38] ring-1 ring-inset ring-[#ecd7d0]",
     note: "You must submit SAT or ACT scores to apply here.",
   },
   "Test-Optional": {
-    style: "bg-amber-50 text-amber-700 ring-1 ring-inset ring-amber-200",
+    style: "bg-[#f4efe3] text-[#775f2c] ring-1 ring-inset ring-[#e6dac2]",
     note: "You choose whether to send scores. They're read if you do, so send them only if they help.",
   },
   "Test-Free": {
-    style: "bg-emerald-50 text-emerald-700 ring-1 ring-inset ring-emerald-200",
+    style: "bg-[#ecf2ec] text-[#2f5540] ring-1 ring-inset ring-[#d5e4d8]",
     note: "This school doesn't look at SAT or ACT scores for admission, even if you send them.",
   },
   "Test-Blind": {
-    style: "bg-emerald-50 text-emerald-700 ring-1 ring-inset ring-emerald-200",
+    style: "bg-[#ecf2ec] text-[#2f5540] ring-1 ring-inset ring-[#d5e4d8]",
     note: "This school doesn't look at SAT or ACT scores for admission, even if you send them.",
   },
   "Not verified": {
-    style: "bg-white text-slate-500 ring-1 ring-inset ring-slate-300",
+    style: "bg-white text-[#6f6a60] ring-1 ring-inset ring-[#ddd6c9]",
     note: "We haven't confirmed this school's test policy on its own admissions page yet. Check the school's site.",
   },
 };

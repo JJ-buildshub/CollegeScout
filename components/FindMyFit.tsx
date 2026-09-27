@@ -5,14 +5,14 @@ const INPUTS = ["GPA", "Honors/AP/IB course rigor", "SAT/ACT (optional)"];
 
 export default function FindMyFit() {
   return (
-    <section className="rounded-3xl border border-slate-200/70 bg-slate-100 p-6 sm:p-10">
+    <section className="rounded-3xl border border-sand-200 bg-sand-100 p-5 sm:p-8">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-[28px]">
-          Now make it personal.
+        <h2 className="font-display text-2xl font-extrabold tracking-tight text-navy-900 sm:text-[28px]">
+          Which of these schools make sense for you?
         </h2>
         <p className="mt-2 text-sm text-slate-500">
-          Tell CollegeScout about your academics. We&apos;ll help you narrow the universe into
-          schools worth a closer look &mdash; sorted into Reach, Target, and Likely for You.
+          Add your GPA, course rigour and test scores, and every school gets sorted into Reach,
+          Target and Likely &mdash; for you specifically.
         </p>
       </div>
 

@@ -7,13 +7,49 @@ html {
 }
 
 body {
-  background-color: #f6f7fb;
-  color: #0f1d3a;
+  /* Warm off-white rather than the cool grey-blue default. Paper, not dashboard. */
+  /* palette:page-start */
+  background-color: #faf7f1;
+  color: #1a3b29;
+  /* palette:page-end */
+}
+
+/*
+ * Hero surface. A flat block of colour at this size reads as a slab; three
+ * off-centre radial blooms give it depth without becoming a "gradient banner".
+ * The four values live in one variable block so the whole treatment can be
+ * recoloured from here — see tailwind.config.ts for the rest of the palette.
+ */
+/* hero:start */
+:root {
+  --hero-base: #10291c;
+  --hero-bloom-a: rgba(64, 132, 90, 0.55);
+  --hero-bloom-b: rgba(32, 92, 96, 0.5);
+  --hero-bloom-c: rgba(16, 66, 44, 0.6);
+  --hero-sub: #d6e85c;
+  /* Accent, mirrored from tailwind.config.ts `gold` for the two rules below
+     that can't read the Tailwind theme. Change both together. */
+  --accent: #d6e85c;
+  --accent-ring: #b4c93c;
+  --ink: #071810;
+}
+/* hero:end */
+
+.hero-surface .hero-sub {
+  color: var(--hero-sub);
+}
+
+.hero-surface {
+  background-color: var(--hero-base);
+  background-image:
+    radial-gradient(62% 95% at 10% 4%, var(--hero-bloom-a) 0%, transparent 62%),
+    radial-gradient(58% 88% at 90% 12%, var(--hero-bloom-b) 0%, transparent 60%),
+    radial-gradient(75% 105% at 48% 112%, var(--hero-bloom-c) 0%, transparent 66%);
 }
 
 ::selection {
-  background-color: #f2c14e;
-  color: #0a1428;
+  background-color: var(--accent);
+  color: var(--ink);
 }
 
 /*
@@ -34,7 +70,7 @@ select:focus-visible,
 textarea:focus-visible,
 [tabindex]:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f2c14e;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--accent-ring);
 }
 
 @layer utilities {

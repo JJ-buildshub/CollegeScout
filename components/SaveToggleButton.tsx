@@ -25,7 +25,7 @@ export default function SaveToggleButton({
         toggleSaved(collegeId);
       }}
       className={clsx(
-        "flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-colors duration-150",
+        "flex h-6 w-6 shrink-0 items-center justify-center rounded-full transition-colors duration-150",
         saved ? "bg-gold-500 text-navy-950" : "bg-slate-100 text-slate-400 hover:bg-slate-200",
         className
       )}

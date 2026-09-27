@@ -15,7 +15,7 @@ import type { College } from "@/lib/types";
  * ends of the selectivity range.
  */
 const EXAMPLE_INTEREST = "computer science";
-const EXAMPLE_IDS = ["stanford-university", "san-jose-state-university"];
+const EXAMPLE_IDS = ["stanford-university", "university-of-illinois-urbana-champaign"];
 
 /**
  * Matches the example interest against a school's own flagshipPrograms, so each
@@ -34,41 +34,81 @@ function formatUsd(n: number): string {
 }
 
 /**
- * On a phone the two cards stack, putting 491px between the two admit-rate bars
- * — far enough apart that the comparison this section exists to make can't
- * actually be made. This puts the two contrasting figures side by side above
- * them on narrow screens; the full cards still follow for the detail.
+ * On a phone, one comparison — not two. The previous version showed a compact
+ * "at a glance" pair AND the full cards below it, repeating 4%, 42%, $97,545 and
+ * $34,226 within a few hundred pixels, in 1,599px of scroll for two schools.
+ *
+ * This is a real comparison table: one row per figure, one column per school, so
+ * the numbers line up and can actually be read against each other. The cards are
+ * desktop-only, where they have the width to sit side by side.
  */
-function CompareAtAGlance({ examples }: { examples: College[] }) {
+function MobileComparison({ examples }: { examples: College[] }) {
+  const Row = ({ label, children }: { label: string; children: React.ReactNode }) => (
+    <div className="grid grid-cols-[4.75rem_1fr_1fr] items-baseline gap-2 border-t border-slate-200 py-2.5">
+      <div className="text-[11px] font-semibold leading-tight text-slate-500">{label}</div>
+      {children}
+    </div>
+  );
+
   return (
-    <div className="mx-auto mt-6 grid max-w-md grid-cols-2 gap-3 sm:hidden">
-      {examples.map((college) => {
-        const rate = displayedAdmitRate(college).value;
-        const cost = college.financials.coaInState;
-        return (
-          <div key={college.id} className="rounded-2xl border border-slate-200 bg-white p-4">
-            <div className="text-xs font-bold leading-tight text-navy-900">{college.name}</div>
-            <div className="mt-3 text-3xl font-extrabold leading-none text-navy-900">
-              {formatPercent(rate)}
-            </div>
-            <div className="mt-2 h-2 overflow-hidden rounded-full bg-slate-200">
-              <div
-                className={`h-full rounded-full ${rate >= 0.5 ? "bg-gold-500" : "bg-navy-900"}`}
-                style={{ width: `${Math.max(rate * 100, 2)}%` }}
-              />
-            </div>
-            <div className="mt-1.5 text-[10px] text-slate-500">admitted</div>
-            {cost !== null && (
-              <div className="mt-3 border-t border-slate-100 pt-3">
-                <div className="text-base font-extrabold leading-none text-navy-900">
-                  {formatUsd(cost)}
-                </div>
-                <div className="mt-1 text-[10px] text-slate-500">a year, before aid</div>
-              </div>
-            )}
+    <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-4 sm:hidden">
+      <div className="grid grid-cols-[4.75rem_1fr_1fr] gap-2">
+        <div />
+        {examples.map((c) => (
+          <div key={c.id} className="text-xs font-bold leading-tight text-navy-900">
+            {c.name.replace("University of Illinois Urbana-Champaign", "Illinois").replace(" University", "")}
           </div>
-        );
-      })}
+        ))}
+      </div>
+
+      <Row label="Admitted">
+        {examples.map((c) => {
+          const rate = displayedAdmitRate(c).value;
+          return (
+            <div key={c.id}>
+              <div className="text-xl font-extrabold leading-none text-navy-900">{formatPercent(rate)}</div>
+              <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-slate-200">
+                <div
+                  className={`h-full rounded-full ${rate >= 0.5 ? "bg-gold-500" : "bg-navy-900"}`}
+                  style={{ width: `${Math.max(rate * 100, 3)}%` }}
+                />
+              </div>
+            </div>
+          );
+        })}
+      </Row>
+
+      <Row label="Cost a year">
+        {examples.map((c) => (
+          <div key={c.id} className="text-sm font-extrabold text-navy-900">
+            {c.financials.coaInState !== null ? formatUsd(c.financials.coaInState) : "—"}
+          </div>
+        ))}
+      </Row>
+
+      <Row label="In work, 6 months">
+        {examples.map((c) => (
+          <div key={c.id} className="text-sm font-bold text-navy-900">
+            {(c.careerOutcomes.placementRate ?? "—").replace(" within 6 months", "")}
+          </div>
+        ))}
+      </Row>
+
+      <Row label="Starting pay">
+        {examples.map((c) => (
+          <div key={c.id} className="text-sm font-bold text-navy-900">
+            {c.careerOutcomes.medianStartingSalary ?? "—"}
+          </div>
+        ))}
+      </Row>
+
+      <Row label="">
+        {examples.map((c) => (
+          <Link key={c.id} href={`/directory/${c.id}`} className="text-xs font-semibold text-gold-600">
+            View profile &rarr;
+          </Link>
+        ))}
+      </Row>
     </div>
   );
 }
@@ -102,7 +142,7 @@ function ExampleCard({ college }: { college: College }) {
       <div className="mt-3">
         <div className="flex items-baseline justify-between gap-2">
           <span className="text-xs font-bold tracking-wide text-slate-600">{tier}</span>
-          <span className="text-2xl font-extrabold leading-none text-navy-900">
+          <span className="font-display text-2xl font-extrabold leading-none text-navy-900">
             {formatPercent(rate)}
           </span>
         </div>
@@ -160,7 +200,7 @@ function ExampleCard({ college }: { college: College }) {
             {outcomes.topRecruiters.slice(0, 4).map((r) => (
               <span
                 key={r}
-                className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600"
+                className="rounded-full bg-sand-100 px-2.5 py-1 text-xs font-medium text-slate-600"
               >
                 {r}
               </span>
@@ -189,20 +229,21 @@ export default function CareerOutcomesStory() {
   );
 
   return (
-    <section id="career-outcomes" className="rounded-3xl border border-slate-200/70 bg-slate-100 px-6 py-10 sm:px-12 sm:py-12">
+    <section id="career-outcomes" className="rounded-3xl border border-sand-200 bg-sand-100 px-5 py-8 sm:px-10 sm:py-10">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-[28px]">
-          Two schools, one subject.
+        <h2 className="font-display text-2xl font-extrabold tracking-tight text-navy-900 sm:text-[28px]">
+          Same interest. Different odds. Very different price.
         </h2>
         <p className="mt-4 text-base text-slate-600 sm:text-lg">
-          Both are known for {EXAMPLE_INTEREST}. One admits 4 in 100. The other admits most who
-          apply.
+          Both are known for {EXAMPLE_INTEREST}. Compare them on what you&apos;d pay, how likely you
+          are to get in, and where their graduates end up &mdash; then decide which one is right for
+          you.
         </p>
       </div>
 
-      <CompareAtAGlance examples={examples} />
+      <MobileComparison examples={examples} />
 
-      <div className="mx-auto mt-6 grid max-w-4xl gap-6 sm:mt-8 sm:grid-cols-2">
+      <div className="mx-auto mt-8 hidden max-w-4xl gap-6 sm:grid sm:grid-cols-2">
         {examples.map((college) => (
           <ExampleCard key={college.id} college={college} />
         ))}
@@ -219,7 +260,7 @@ export default function CareerOutcomesStory() {
             .{" "}
           </>
         )}
-        The second school is the one most students never hear about.
+        You can compare any two schools this way.
       </p>
     </section>
   );

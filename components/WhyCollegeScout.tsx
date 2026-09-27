@@ -30,32 +30,29 @@ const DIMENSIONS = [
 
 export default function WhyCollegeScout() {
   return (
-    <section className="rounded-3xl border border-slate-200/70 bg-slate-100 px-6 py-14 sm:px-12 sm:py-16">
+    <section className="py-2">
       <div className="mx-auto max-w-2xl text-center">
         {/* Opens on what the reader gains, not on what rankings get wrong — the
             hero already makes the ranking point, and repeating it here framed
             the visitor as someone who'd been taken in. The one critical line
             lands at the end of the section instead, once the five are shown. */}
-        <h2 className="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-[28px]">
+        <h2 className="font-display text-2xl font-extrabold tracking-tight text-navy-900 sm:text-[28px]">
           What actually makes a college right for you.
         </h2>
         <p className="mt-3 text-base text-slate-600">
-          Five questions worth asking about any school &mdash; and every profile answers them from
-          the school&apos;s own published figures.
+          Compare every college on the same five things.
         </p>
       </div>
 
-      <div className="mx-auto mt-10 flex max-w-4xl flex-wrap justify-center gap-4">
+      <div className="mx-auto mt-8 grid max-w-5xl gap-x-8 gap-y-6 sm:grid-cols-3 lg:grid-cols-5">
         {DIMENSIONS.map(({ icon: Icon, title, body }) => (
           <div
             key={title}
-            className="w-full rounded-2xl border border-slate-200 bg-white p-5 shadow-card sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.75rem)]"
+            className="border-t-2 border-navy-900/10 pt-4"
           >
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-navy-900/5 text-navy-900">
-              <Icon className="h-5 w-5" strokeWidth={2} />
-            </span>
-            <h3 className="mt-4 text-sm font-bold text-navy-900">{title}</h3>
-            <p className="mt-1.5 text-sm text-slate-500">{body}</p>
+            <Icon className="h-4 w-4 text-gold-600" strokeWidth={2} />
+            <h3 className="mt-3 text-sm font-bold text-navy-900">{title}</h3>
+            <p className="mt-1.5 text-sm leading-snug text-slate-500">{body}</p>
           </div>
         ))}
       </div>

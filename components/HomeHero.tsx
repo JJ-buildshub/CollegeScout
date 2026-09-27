@@ -17,15 +17,15 @@ export default function HomeHero() {
   // Slightly more room above than below: a centred text block reads as sitting
   // high when the padding is symmetrical.
   return (
-    <section className="overflow-hidden rounded-3xl border border-navy-700 bg-navy-900 px-6 pb-14 pt-16 text-white shadow-card ring-1 ring-inset ring-white/5 sm:px-12 sm:pb-16 sm:pt-20">
-      <div className="mx-auto max-w-4xl text-center">
+    <section className="hero-surface overflow-hidden rounded-3xl border border-white/10 px-5 pb-7 pt-8 text-white shadow-card ring-1 ring-inset ring-white/5 sm:px-12 sm:pb-10 sm:pt-12">
+      <div className="max-w-3xl">
         {/* Non-breaking space keeps "didn't know" together — left to itself the
             balancer split the phrase across the two lines. */}
-        <h1 className="text-balance text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-[58px]">
+        <h1 className="font-display text-balance text-[30px] font-extrabold leading-[1.08] tracking-tight sm:text-[56px] sm:leading-[1.02]">
           Find colleges you didn&apos;t&nbsp;know to look for.
         </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-balance text-xl font-medium leading-snug text-gold-400 sm:text-[34px]">
-          A college is more than its ranking.
+        <p className="mt-3 max-w-xl text-balance text-[15px] font-medium leading-snug hero-sub sm:mt-5 sm:text-[22px]">
+          Built by a high school student, from the numbers colleges publish themselves.
         </p>
       </div>
     </section>

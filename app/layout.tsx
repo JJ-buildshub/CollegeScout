@@ -1,20 +1,53 @@
 import type { Metadata } from "next";
+import { Fraunces, Inter } from "next/font/google";
 import Link from "next/link";
 import { Analytics } from "@vercel/analytics/next";
 import NavBar from "@/components/NavBar";
 import DataHealthBanner from "@/components/DataHealthBanner";
 import ResetDataButton from "@/components/ResetDataButton";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
+// Variable font: no `weight` (that would pin static cuts and disallow `axes`),
+// so every weight the headings use comes from one file.
+const display = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const body = Inter({ subsets: ["latin"], variable: "--font-body", display: "swap" });
+
+const DESCRIPTION =
+  "Compare 336 US colleges on admissions, cost, career outcomes and campus life — from the numbers colleges publish themselves. Free, no account needed.";
+
 export const metadata: Metadata = {
-  title: "CollegeScout | Find Colleges You Didn't Know to Look For",
-  description:
-    "Explore Colleges, My Fit, and My Plan to help students discover schools based on fit — not just rankings.",
+  // metadataBase resolves every relative URL below, and without it Next emits
+  // share-preview tags pointing at localhost.
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "CollegeScout | Find Colleges You Didn't Know to Look For",
+    template: "%s | CollegeScout",
+  },
+  description: DESCRIPTION,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: "CollegeScout",
+    url: "/",
+    title: "Find colleges you didn't know to look for",
+    description: DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Find colleges you didn't know to look for",
+    description: DESCRIPTION,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${display.variable} ${body.variable}`}>
       <body className="min-h-screen antialiased">
         <NavBar />
         <DataHealthBanner />

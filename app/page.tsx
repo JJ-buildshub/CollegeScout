@@ -8,46 +8,49 @@ import AccessMissionStatement from "@/components/AccessMissionStatement";
 import AccessMission from "@/components/AccessMission";
 
 /**
- * Order:
- *   1 hero                                     navy
- *   2 what actually makes a college right      slate
- *   3 start anywhere                           light
- *   4 two schools, one subject                 slate
- *   5 what are you interested in               white card  <- the tool
- *   6 now make it personal                     slate
- *   7 why we built it                          NAVY   <- closes the argument
- *   8 where the numbers come from              light
+ * The first five minutes of using CollegeScout, not a description of it:
  *
- * The mission sits at the end rather than a third of the way down: it reads as
- * earned once someone has used the thing, and as a claim when it interrupts.
+ *   1 hero — who built this, and the promise            navy
+ *   2 great guidance shouldn't depend on what you can afford  <- why it exists
+ *   3 same interest, different odds, different price     slate <- proof
+ *   4 what are you interested in                         white <- try it
+ *   5 which of these schools make sense for you          slate <- personalise
+ *   6 what actually makes a college right for you              <- the system, once it means something
+ *   7 explore / my fit / my plan                               <- the three parts
+ *   8 where the numbers come from                        light
+ *
+ * The dimensions list sits AFTER the tool on purpose. Placed before it, a
+ * student who has just seen two real schools compared gets an evaluation
+ * framework instead of their own results — a pause in the story at exactly the
+ * moment they want to act.
  */
 export default function HomePage() {
   return (
     <div>
       <HomeHero />
 
-      <div className="mt-16">
-        <WhyCollegeScout />
+      <div className="mt-10 sm:mt-16">
+        <AccessMissionStatement />
       </div>
-      <div className="mt-12">
-        <JourneySteps />
-      </div>
-      <div className="mt-12">
+      <div className="mt-10 sm:mt-12">
         <CareerOutcomesStory />
       </div>
 
-      {/* The tool */}
-      <div className="mt-16">
+      {/* Try it */}
+      <div className="mt-10 sm:mt-16">
         <TryCollegeScout />
       </div>
-      <div className="mt-16">
+      <div className="mt-10 sm:mt-16">
         <FindMyFit />
       </div>
-
-      <div className="mt-16">
-        <AccessMissionStatement />
+      <div className="mt-10 sm:mt-12">
+        <WhyCollegeScout />
       </div>
-      <div className="mt-16">
+      <div className="mt-10 sm:mt-16">
+        <JourneySteps />
+      </div>
+
+      <div className="mt-10 sm:mt-16">
         <AccessMission />
       </div>
     </div>
