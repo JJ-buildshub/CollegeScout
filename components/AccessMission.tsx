@@ -12,7 +12,12 @@ import { colleges } from "@/lib/colleges";
  */
 export default function AccessMission() {
   const publicCount = colleges.filter((c) => ["Public", "UC", "CSU"].includes(c.system)).length;
-  const states = new Set(colleges.map((c) => c.state).filter(Boolean)).size;
+  // DC is stored in the `state` field but isn't a state. Counting the raw set
+  // and then writing "and DC" claimed 51 states (there are 50) and counted DC
+  // twice, so it's pulled out of the number and named in words instead.
+  const stateValues = new Set(colleges.map((c) => c.state).filter(Boolean));
+  const includesDc = stateValues.delete("DC");
+  const states = stateValues.size;
   // Rounded DOWN to the ten below, so "over N" is always true — at 336 that's
   // 330, and it stays true as schools are added rather than quietly becoming a
   // claim we've outgrown.
@@ -34,7 +39,7 @@ export default function AccessMission() {
             Over {roundedFloor} colleges in the database
           </span>{" "}
           &mdash; {publicCount} public and {colleges.length - publicCount} private, across all{" "}
-          {states} states and DC. Chosen from federal IPEDS data by size and programmes offered,
+          {states} states{includesDc ? " and DC" : ""}. Chosen from federal IPEDS data by size and programmes offered,
           never by ranking.
         </p>
       </div>
