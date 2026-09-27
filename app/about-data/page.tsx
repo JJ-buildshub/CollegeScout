@@ -53,10 +53,11 @@ export default function AboutDataPage() {
           </p>
         </div>
         <div className="border-t border-slate-100 pt-4">
-          <h2 className="text-sm font-bold text-navy-900">Found something wrong?</h2>
+          <h2 className="text-sm font-bold text-navy-900">Questions and corrections</h2>
           <p className="mt-1.5 text-sm leading-relaxed text-slate-600">
-            Tell us and we&apos;ll check it against the school&apos;s own page and correct it.
-            Questions and feedback are welcome at the same address.{" "}
+            Every figure here is meant to trace back to a source you can check yourself. If one
+            looks out of date, or you want to know how we arrived at a number, write to us —
+            corrections are checked against the school&apos;s own page and fixed.{" "}
             <a
               href="mailto:hello.collegescout@gmail.com"
               className="font-semibold text-navy-900 underline underline-offset-2 hover:text-navy-700"

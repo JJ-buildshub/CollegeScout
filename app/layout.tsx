@@ -69,7 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <ResetDataButton />
           </p>
           <p className="mt-2">
-            Spotted something wrong, or want to get in touch?{" "}
+            Questions, feedback or a correction?{" "}
             <a
               href="mailto:hello.collegescout@gmail.com"
               className="font-semibold text-navy-900 underline underline-offset-2 hover:text-navy-700"
