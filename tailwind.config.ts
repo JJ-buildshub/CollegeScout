@@ -22,6 +22,22 @@ const palette = {
     700: "#4f5a10",
   },
   sand: { 50: "#fdfbf7", 100: "#f1ece2", 200: "#e2d9c9" },
+  // Tailwind's stock `slate` is a cool blue-grey, and text-slate-500 (147 uses)
+  // is light enough that body copy reads as a caption. Remapped to a warm
+  // charcoal scale: same class names, darker and warmer values, so secondary
+  // text actually holds the page against the forest-green headings.
+  slate: {
+    50: "#faf8f4",
+    100: "#f2efe8",
+    200: "#e6e1d6",
+    300: "#d3ccbf",
+    400: "#9a9287",
+    500: "#4a463e",
+    600: "#33302a",
+    700: "#26231e",
+    800: "#1a1814",
+    900: "#121008",
+  },
 };
 /* palette:end */
 

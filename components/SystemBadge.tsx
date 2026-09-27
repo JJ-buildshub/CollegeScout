@@ -12,15 +12,20 @@ const SYSTEM_STYLES: Record<CollegeSystem, string> = {
   Public: "bg-[#f5efe4] text-[#7a5c2c] ring-1 ring-inset ring-[#e7dac2]",
 };
 
-// Accent colors per system, shared by every card and profile header so a
-// school type reads the same color everywhere on the site. `banner` is the
-// muted solid profile-header background: dark enough for white text to stay
-// readable (all four are at least 5:1), soft enough not to shout.
+// Accent colors per system, shared by every card and profile header so a school
+// type reads the same color everywhere on the site.
+//
+// `banner` is deliberately the same brand green for all four. It used to be a
+// per-system slab — purple for private, ochre for public — which meant a
+// full-width band of unrelated colour led every profile, and a visitor moving
+// between two schools saw what looked like two different sites. The system is
+// already named in words directly inside that banner, so the colour was
+// carrying no information the label didn't.
 export const SYSTEM_ACCENT: Record<CollegeSystem, { edge: string; text: string; banner: string }> = {
-  UC: { edge: "bg-[#5b7ba6]", text: "text-[#3b567f]", banner: "bg-[#3f5f8a]" },
-  CSU: { edge: "bg-[#55806a]", text: "text-[#38604d]", banner: "bg-[#3f6b57]" },
-  Private: { edge: "bg-[#7d6394]", text: "text-[#5f4573]", banner: "bg-[#6a4f80]" },
-  Public: { edge: "bg-[#9c7a3c]", text: "text-[#7a5c2c]", banner: "bg-[#8a6a34]" },
+  UC: { edge: "bg-[#5b7ba6]", text: "text-[#3b567f]", banner: "hero-surface" },
+  CSU: { edge: "bg-[#55806a]", text: "text-[#38604d]", banner: "hero-surface" },
+  Private: { edge: "bg-[#7d6394]", text: "text-[#5f4573]", banner: "hero-surface" },
+  Public: { edge: "bg-[#9c7a3c]", text: "text-[#7a5c2c]", banner: "hero-surface" },
 };
 
 export default function SystemBadge({ system, className }: { system: CollegeSystem; className?: string }) {
