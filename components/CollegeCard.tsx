@@ -93,8 +93,9 @@ export default function CollegeCard({ college }: { college: College }) {
           </div>
         </dl>
 
-        <div className="mt-auto flex items-center justify-between pt-5 text-xs font-semibold">
-          <span className="text-gold-600">View profile &rarr;</span>
+        {/* No "View profile" link: the title above stretches over the whole
+            card, so the card already is that link. */}
+        <div className="mt-auto flex items-center justify-end pt-5 text-xs font-semibold">
           <div className="relative z-10 flex items-center gap-3">
             {college.website && (
               <a

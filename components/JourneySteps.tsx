@@ -68,7 +68,7 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
       icon: Compass,
       title: "Explore",
       hook: "Find schools beyond the obvious.",
-      body: "Search by what you want to study, then compare admissions, cost, career outcomes and campus life on any profile.",
+      body: "Search by what you want to study, then compare admissions, cost and campus life on any profile.",
       detail: mounted ? `${savedCount} school${savedCount === 1 ? "" : "s"} saved` : "Directory filters",
       href: "/directory",
     },

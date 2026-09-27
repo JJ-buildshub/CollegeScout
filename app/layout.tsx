@@ -19,7 +19,7 @@ const display = Fraunces({
 const body = Inter({ subsets: ["latin"], variable: "--font-body", display: "swap" });
 
 const DESCRIPTION =
-  "Compare 336 US colleges on admissions, cost, career outcomes and campus life — from the numbers colleges publish themselves. Free, no account needed.";
+  "Compare 336 US colleges on admissions, cost and campus life — from the numbers colleges publish themselves. Free, no account needed.";
 
 export const metadata: Metadata = {
   // metadataBase resolves every relative URL below, and without it Next emits

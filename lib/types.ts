@@ -9,9 +9,25 @@ export interface FlagshipProgram {
   selectivityNote: string;
 }
 
+/**
+ * An earnings figure that knows what it measures. The previous shape was a
+ * bare `medianStartingSalary: string`, which had nowhere to record the metric
+ * or the source — so a correction ended up inside the value itself, as
+ * "$64,172 (median earnings 10 years after entry, College Scorecard — not a
+ * first-job starting salary figure)", displayed under a "Median Starting
+ * Salary" label it contradicted.
+ */
+export interface EarningsFigure {
+  amount: number;
+  /** What the number measures. Drives the label, so the two can't disagree. */
+  metric: "median-earnings-10y";
+  source: string;
+  year: string;
+}
+
 export interface CareerOutcomes {
   placementRate: string | null;
-  medianStartingSalary: string | null;
+  earnings: EarningsFigure | null;
   topRecruiters: string[];
 }
 
@@ -175,7 +191,7 @@ export interface College {
   testingPolicyProvenance?: FieldProvenance;
   /** Scope or exceptions for testingPolicy, e.g. "Columbus campus" or "A hardship waiver is available." */
   testingPolicyNote?: string;
-  /** Source/year for careerOutcomes.placementRate / medianStartingSalary. Unpopulated until researched. */
+  /** Source/year for careerOutcomes.placementRate. Unpopulated until researched. */
   outcomesProvenance?: FieldProvenance;
   /**
    * College Scorecard's IPEDS unit ID for this school — the crosswalk key

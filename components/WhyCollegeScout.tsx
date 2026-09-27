@@ -1,4 +1,4 @@
-import { Banknote, GraduationCap, LineChart, School, Users2 } from "lucide-react";
+import { Banknote, GraduationCap, LineChart, Users2 } from "lucide-react";
 
 const DIMENSIONS = [
   {
@@ -10,11 +10,6 @@ const DIMENSIONS = [
     icon: GraduationCap,
     title: "Academics",
     body: "Does it actually offer what you want to study?",
-  },
-  {
-    icon: School,
-    title: "Career Outcomes",
-    body: "Where do graduates work, and what opportunities does the program create?",
   },
   {
     icon: Users2,
@@ -35,12 +30,12 @@ export default function WhyCollegeScout() {
         {/* Opens on what the reader gains, not on what rankings get wrong — the
             hero already makes the ranking point, and repeating it here framed
             the visitor as someone who'd been taken in. The one critical line
-            lands at the end of the section instead, once the five are shown. */}
+            lands at the end of the section instead, once the four are shown. */}
         <h2 className="font-display text-2xl font-extrabold tracking-tight text-navy-900 sm:text-[28px]">
           What actually makes a college right for you.
         </h2>
         <p className="mt-3 text-base text-slate-600">
-          Compare every college on the same five things.
+          Compare every college on the same four things.
         </p>
       </div>
 

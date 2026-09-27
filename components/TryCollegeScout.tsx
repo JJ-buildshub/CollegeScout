@@ -354,10 +354,10 @@ export default function TryCollegeScout() {
               Browse the Directory <ArrowRight className="h-4 w-4" />
             </Link>
             <a
-              href="#career-outcomes"
+              href="#compare"
               className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-navy-900 hover:border-slate-300"
             >
-              See Career Outcomes
+              See a side-by-side
             </a>
           </div>
         </div>

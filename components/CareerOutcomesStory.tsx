@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { admitRateTier, displayedAdmitRate, formatPercent, getCollegeById } from "@/lib/colleges";
 import type { College } from "@/lib/types";
 
@@ -55,9 +54,13 @@ function MobileComparison({ examples }: { examples: College[] }) {
       <div className="grid grid-cols-[4.75rem_1fr_1fr] gap-2">
         <div />
         {examples.map((c) => (
-          <div key={c.id} className="text-xs font-bold leading-tight text-navy-900">
+          <Link
+            key={c.id}
+            href={`/directory/${c.id}`}
+            className="text-xs font-bold leading-tight text-navy-900 underline-offset-2 hover:underline"
+          >
             {c.name.replace("University of Illinois Urbana-Champaign", "Illinois").replace(" University", "")}
-          </div>
+          </Link>
         ))}
       </div>
 
@@ -86,29 +89,6 @@ function MobileComparison({ examples }: { examples: College[] }) {
         ))}
       </Row>
 
-      <Row label="In work, 6 months">
-        {examples.map((c) => (
-          <div key={c.id} className="text-sm font-bold text-navy-900">
-            {(c.careerOutcomes.placementRate ?? "—").replace(" within 6 months", "")}
-          </div>
-        ))}
-      </Row>
-
-      <Row label="Starting pay">
-        {examples.map((c) => (
-          <div key={c.id} className="text-sm font-bold text-navy-900">
-            {c.careerOutcomes.medianStartingSalary ?? "—"}
-          </div>
-        ))}
-      </Row>
-
-      <Row label="">
-        {examples.map((c) => (
-          <Link key={c.id} href={`/directory/${c.id}`} className="text-xs font-semibold text-gold-600">
-            View profile &rarr;
-          </Link>
-        ))}
-      </Row>
     </div>
   );
 }
@@ -116,7 +96,6 @@ function MobileComparison({ examples }: { examples: College[] }) {
 function ExampleCard({ college }: { college: College }) {
   const rate = displayedAdmitRate(college).value;
   const tier = admitRateTier(rate);
-  const outcomes = college.careerOutcomes;
   const flagship = flagshipFor(college);
   // Published cost of attendance, before aid — deliberately not an average net
   // price. A net-price average is taken across every aided student, so quoting
@@ -162,8 +141,10 @@ function ExampleCard({ college }: { college: College }) {
         </p>
       )}
 
-      {/* Cost sits under selectivity and above outcomes: how hard is it to get
-          in, what will it actually cost, then where does it lead. */}
+      {/* Cost sits under selectivity: how hard is it to get in, then what will
+          it actually cost. Where it leads belongs here too, but career outcomes
+          are off the site until they're verified against each school's own
+          reporting — see outcomesProvenance, currently 0/336. */}
       {coaInState !== null && (
         <div className="mt-3 border-t border-slate-100 pt-3">
           <div className="text-xs font-semibold tracking-wide text-slate-500">
@@ -176,42 +157,6 @@ function ExampleCard({ college }: { college: College }) {
         </div>
       )}
 
-      <div className="mt-4 grid grid-cols-2 gap-4">
-        <div>
-          <div className="text-xs font-semibold tracking-wide text-slate-500">Placement Rate</div>
-          <div className="mt-0.5 text-base font-bold text-navy-900">
-            {outcomes.placementRate ?? "Not confirmed yet"}
-          </div>
-        </div>
-        <div>
-          <div className="text-xs font-semibold tracking-wide text-slate-500">
-            Median Starting Salary
-          </div>
-          <div className="mt-0.5 text-base font-bold text-navy-900">
-            {outcomes.medianStartingSalary ?? "Not confirmed yet"}
-          </div>
-        </div>
-      </div>
-
-      {outcomes.topRecruiters.length > 0 && (
-        <div className="mt-3">
-          <div className="text-xs font-semibold tracking-wide text-slate-500">Top Recruiters</div>
-          <div className="mt-2 flex flex-wrap gap-1.5">
-            {outcomes.topRecruiters.slice(0, 4).map((r) => (
-              <span
-                key={r}
-                className="rounded-full bg-sand-100 px-2.5 py-1 text-xs font-medium text-slate-600"
-              >
-                {r}
-              </span>
-            ))}
-          </div>
-        </div>
-      )}
-
-      <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-gold-600">
-        View full profile <ArrowRight className="h-3.5 w-3.5" />
-      </span>
     </Link>
   );
 }
@@ -229,15 +174,14 @@ export default function CareerOutcomesStory() {
   );
 
   return (
-    <section id="career-outcomes" className="rounded-3xl border border-sand-200 bg-sand-100 px-5 py-8 sm:px-10 sm:py-10">
+    <section id="compare" className="rounded-3xl border border-sand-200 bg-sand-100 px-5 py-8 sm:px-10 sm:py-10">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="font-display text-2xl font-extrabold tracking-tight text-navy-900 sm:text-[28px]">
           Same interest. Different odds. Very different price.
         </h2>
         <p className="mt-4 text-base text-slate-600 sm:text-lg">
-          Both are known for {EXAMPLE_INTEREST}. Compare them on what you&apos;d pay, how likely you
-          are to get in, and where their graduates end up &mdash; then decide which one is right for
-          you.
+          Both are known for {EXAMPLE_INTEREST}. Compare them on how likely you are to get in and
+          what you&apos;d pay &mdash; then decide which one is right for you.
         </p>
       </div>
 
@@ -260,7 +204,6 @@ export default function CareerOutcomesStory() {
             .{" "}
           </>
         )}
-        You can compare any two schools this way.
       </p>
     </section>
   );
