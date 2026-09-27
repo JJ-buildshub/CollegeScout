@@ -30,11 +30,12 @@ export const metadata: Metadata = {
     template: "%s | CollegeScout",
   },
   description: DESCRIPTION,
-  alternates: { canonical: "/" },
+  // No canonical here. Metadata set on a layout is inherited by every page
+  // beneath it, so a canonical of "/" told search engines that all 336 college
+  // profiles were duplicates of the homepage. Each route declares its own.
   openGraph: {
     type: "website",
     siteName: "CollegeScout",
-    url: "/",
     title: "Find colleges you didn't know to look for",
     description: DESCRIPTION,
   },

@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About the data",
+  description:
+    "Where CollegeScout figures come from, how each one is verified, and what has not been confirmed yet.",
+  alternates: { canonical: "/about-data" },
+  openGraph: { title: "About the data | CollegeScout", description: "Where CollegeScout figures come from, how each one is verified, and what has not been confirmed yet.", url: "/about-data" },
+};
+
 import Link from "next/link";
 
 export default function AboutDataPage() {

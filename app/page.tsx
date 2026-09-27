@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+  openGraph: { url: "/" },
+};
+
 import HomeHero from "@/components/HomeHero";
 import JourneySteps from "@/components/JourneySteps";
 import CareerOutcomesStory from "@/components/CareerOutcomesStory";
