@@ -5286,6 +5286,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "Applicants with a gap year must submit test scores.",
+    "testingPolicyProvenance": {
+      "source": "UIUC admissions (https://admissions.illinois.edu/faq/applicant-freshman)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -6723,6 +6729,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "The Physician-Scientist Program (B.S./M.D.) with Albany Medical College still requires official SAT or ACT scores.",
+    "testingPolicyProvenance": {
+      "source": "RPI undergraduate admissions (https://undergrad.admissions.rpi.edu/prospective-students/prospective-students-frequently-asked-questions/fall-2027-admission-cycle-test)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -9127,6 +9139,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "CMC states it will return to a test-required policy for the Fall 2028 admission cycle.",
+    "testingPolicyProvenance": {
+      "source": "Claremont McKenna admission (https://www.cmc.edu/admission/first-year-application-instructions/test-optional-policy-faq)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -9291,6 +9309,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Harvey Mudd admission (https://www.hmc.edu/admission/apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -9633,6 +9656,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Occidental College admission (https://www.oxy.edu/admission-aid/apply/test-optional-admission-policy)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -9803,6 +9831,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "LMU admission (https://admission.lmu.edu/learnmore/prospectivestudents/first-yearapplicants/)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -10150,6 +10183,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "University of San Francisco admission (https://www.usfca.edu/admission/undergraduate/what-we-look-for)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -10320,6 +10358,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Chapman University admission (https://www.chapman.edu/admission/undergraduate/how-to-apply/test-optional.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -10489,6 +10532,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "Scores are still required to be considered for the Regents Scholars Program scholarship, though not for admission.",
+    "testingPolicyProvenance": {
+      "source": "Pepperdine admission (https://admission.pepperdine.edu/apply/undergraduate/requirements/test-scores.htm)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -10648,6 +10697,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "University of the Pacific admission (https://www.pacific.edu/admission/undergraduate/test-scores)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -10813,6 +10867,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "University of Redlands admissions (https://www.redlands.edu/admissions-and-aid/first-year/how-to-apply)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -11328,6 +11387,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Wellesley College admission (https://www.wellesley.edu/admission-aid/faqs)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -11497,6 +11561,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Bowdoin College admissions (https://www.bowdoin.edu/admissions/apply/test-optional-policy/index.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -11664,6 +11733,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Middlebury College admissions (https://www.middlebury.edu/college/admissions/apply/standardized-tests)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -11833,6 +11907,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Carleton College admissions (https://www.carleton.edu/admissions/apply/steps/materials/)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -11999,6 +12078,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Colgate University admission (https://www.colgate.edu/admission-aid/apply)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -12166,6 +12250,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Vassar College admission (https://www.vassar.edu/admission/apply/requirements/)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -12332,6 +12421,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Hamilton College admission (https://www.hamilton.edu/admission/apply/testing)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
