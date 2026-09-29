@@ -17861,6 +17861,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "SMU requires official test scores at the time of enrolment, though not for admission.",
+    "testingPolicyProvenance": {
+      "source": "SMU admission (https://www.smu.edu/admission/apply/undergraduate-admission/testing)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -18031,6 +18037,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "Applicants from non-graded high schools are encouraged to submit scores to be competitive for merit scholarships.",
+    "testingPolicyProvenance": {
+      "source": "University of Denver admission (https://www.du.edu/admission-aid/undergraduate/first-year-applicants/admission-standards)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -18544,6 +18556,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "Applicants with high school equivalency credentials are strongly encouraged to submit scores as evidence of college readiness.",
+    "testingPolicyProvenance": {
+      "source": "University of Delaware admissions (https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/freshman-admissions/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -18710,6 +18728,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "Scores are read but set aside if they would weaken the application. The BA/BS+MD Early Assurance Program does require SAT or ACT scores.",
+    "testingPolicyProvenance": {
+      "source": "Drexel University admissions (https://drexel.edu/admissions/apply/undergrad-instructions/first-year-instructions/standardized-tests)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -18877,6 +18901,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Temple University admissions (https://admissions.temple.edu/apply/first-year-students/test-optional)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -19039,6 +19068,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "UConn admissions (https://admissions.uconn.edu/apply/first-year/instructions/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
