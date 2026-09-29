@@ -2417,6 +2417,133 @@
    ],
    "manual": false,
    "note": "ASU's aptitude requirement can be met by class rank, GPA or a test score, so a test is one route among several."
+  },
+  "colby-college": {
+   "policy": "Test-Optional",
+   "label": "Colby College admission",
+   "url": "https://afa.colby.edu/apply/faq/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Yes, Colby is a test-optional institution."
+   ],
+   "manual": true
+  },
+  "bates-college": {
+   "policy": "Test-Optional",
+   "label": "Bates College admission",
+   "url": "https://www.bates.edu/admission/apply/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "The SAT and the ACT is optional for all students applying to Bates."
+   ],
+   "manual": false
+  },
+  "worcester-polytechnic-institute": {
+   "policy": "Test-Optional",
+   "label": "WPI undergraduate admissions",
+   "url": "https://www.wpi.edu/admissions/undergraduate/apply/how-to/test-optional-admissions",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Therefore, WPI reverted to its prior practice and remains test optional."
+   ],
+   "manual": false,
+   "note": "WPI ran a test-blind pilot from 2021 to 2024 and has since reverted; this record was Test-Blind until corrected on 2026-09-29."
+  },
+  "case-western-reserve-university": {
+   "policy": "Test-Optional",
+   "label": "Case Western Reserve admission",
+   "url": "https://case.edu/admission/apply/application-requirements-enhancements/test-optional",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Case Western Reserve is Test Optional"
+   ],
+   "manual": false
+  },
+  "rochester-institute-of-technology": {
+   "policy": "Test-Optional",
+   "label": "RIT admissions",
+   "url": "https://www.rit.edu/admissions/first-year-application",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "This means submitting SAT or ACT scores as part of your application is not required. You can choose whether or not you'd like to submit them."
+   ],
+   "manual": false
+  },
+  "stevens-institute-of-technology": {
+   "policy": "Test-Optional",
+   "label": "Stevens Institute of Technology admissions",
+   "url": "https://www.stevens.edu/page-basic/submit-your-test-scores",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "While submitting test scores is optional, applicants who feel their scores reflect their academic abilities and college readiness are encouraged to include them, as these may strengthen their application."
+   ],
+   "manual": false,
+   "note": "The Accelerated Pre-Medicine and Pre-Law programmes require SAT or ACT scores, and from the Fall 2027 class the Pinnacle Scholars Program will require SAT, ACT and/or AP scores."
+  },
+  "university-of-colorado-boulder": {
+   "policy": "Test-Optional",
+   "label": "CU Boulder admissions",
+   "url": "https://www.colorado.edu/admissions/process/first-year/plan",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "ACT or SAT scores are not required for first-year students, but you may self-report your scores if you would like us to take your scores into consideration when reviewing your application."
+   ],
+   "manual": false
+  },
+  "texas-am-university": {
+   "policy": "Test-Optional",
+   "label": "Texas A&M admissions",
+   "url": "https://admissions.tamu.edu/apply/freshman/index.html",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Texas A&M University is test optional and will not require ACT or SAT scores for freshman applicants."
+   ],
+   "manual": false,
+   "note": "Texas residents who completed non-traditional schooling need a 1290 SAT or 27 ACT to be ranked for top-10% automatic admission from Fall 2027."
+  },
+  "miami-university-ohio": {
+   "policy": "Test-Optional",
+   "label": "Miami University admission",
+   "url": "https://miamioh.edu/admission-aid/apply/first-year-students/college-entrance-testing.html",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Any applicant may choose to submit ACT or SAT test scores if they would like them considered as part of their holistic application review."
+   ],
+   "manual": false,
+   "note": "The Presidential Fellows scholarship does require self-reported test scores."
+  },
+  "baylor-university": {
+   "policy": "Test-Optional",
+   "label": "Baylor University admissions",
+   "url": "https://admissions.web.baylor.edu/admissions/incoming-freshman/application-process",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Students are not required to submit standardized test scores for admission."
+   ],
+   "manual": false,
+   "note": "Homeschooled applicants, applicants from schools issuing only narrative evaluations, and applicants graduating high school early must still submit scores."
+  },
+  "texas-christian-university": {
+   "policy": "Test-Optional",
+   "label": "TCU admissions",
+   "url": "https://admissions.tcu.edu/apply/first-year/testing-policy-sat-act.php",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "TCU is test-optional through 2028."
+   ],
+   "manual": false,
+   "note": "The same page still carries legacy pre-2020 text saying scores must be submitted; the test-optional statement is the lead line of every section and is what the page's structured data exposes."
+  },
+  "elon-university": {
+   "policy": "Test-Optional",
+   "label": "Elon University admissions",
+   "url": "https://www.elon.edu/u/admissions/undergraduate/apply/application-requirements/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Admission to Elon is test-optional."
+   ],
+   "manual": false,
+   "note": "Home-schooled applicants are required to submit standardized test scores for admission and scholarship consideration."
   }
  }
 }

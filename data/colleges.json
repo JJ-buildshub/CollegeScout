@@ -12595,6 +12595,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Colby College admission (https://afa.colby.edu/apply/faq/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -12764,6 +12769,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Bates College admission (https://www.bates.edu/admission/apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -13991,7 +14001,7 @@
     "admitRateOverall": 0.6016,
     "inStateAdmitRate": 0.381,
     "outOfStateAdmitRate": 0.381,
-    "testingPolicy": "Test-Blind",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1330-1470",
@@ -14157,6 +14167,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "WPI ran a test-blind pilot from 2021 to 2024 and has since reverted; this record was Test-Blind until corrected on 2026-09-29.",
+    "testingPolicyProvenance": {
+      "source": "WPI undergraduate admissions (https://www.wpi.edu/admissions/undergraduate/apply/how-to/test-optional-admissions)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -14327,6 +14343,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Case Western Reserve admission (https://case.edu/admission/apply/application-requirements-enhancements/test-optional)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -14499,6 +14520,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "RIT admissions (https://www.rit.edu/admissions/first-year-application)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -14668,6 +14694,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "The Accelerated Pre-Medicine and Pre-Law programmes require SAT or ACT scores, and from the Fall 2027 class the Pinnacle Scholars Program will require SAT, ACT and/or AP scores.",
+    "testingPolicyProvenance": {
+      "source": "Stevens Institute of Technology admissions (https://www.stevens.edu/page-basic/submit-your-test-scores)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -16953,6 +16985,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "CU Boulder admissions (https://www.colorado.edu/admissions/process/first-year/plan)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -17118,6 +17155,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "Texas residents who completed non-traditional schooling need a 1290 SAT or 27 ACT to be ranked for top-10% automatic admission from Fall 2027.",
+    "testingPolicyProvenance": {
+      "source": "Texas A&M admissions (https://admissions.tamu.edu/apply/freshman/index.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -17291,6 +17334,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "The Presidential Fellows scholarship does require self-reported test scores.",
+    "testingPolicyProvenance": {
+      "source": "Miami University admission (https://miamioh.edu/admission-aid/apply/first-year-students/college-entrance-testing.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -17458,6 +17507,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "Homeschooled applicants, applicants from schools issuing only narrative evaluations, and applicants graduating high school early must still submit scores.",
+    "testingPolicyProvenance": {
+      "source": "Baylor University admissions (https://admissions.web.baylor.edu/admissions/incoming-freshman/application-process)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -17630,6 +17685,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "The same page still carries legacy pre-2020 text saying scores must be submitted; the test-optional statement is the lead line of every section and is what the page's structured data exposes.",
+    "testingPolicyProvenance": {
+      "source": "TCU admissions (https://admissions.tcu.edu/apply/first-year/testing-policy-sat-act.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -18142,6 +18203,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "Home-schooled applicants are required to submit standardized test scores for admission and scholarship consideration.",
+    "testingPolicyProvenance": {
+      "source": "Elon University admissions (https://www.elon.edu/u/admissions/undergraduate/apply/application-requirements/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
