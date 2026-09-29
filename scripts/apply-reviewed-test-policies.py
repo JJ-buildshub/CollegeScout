@@ -38,7 +38,10 @@ def main():
         print(f"{c['name']}")
         print(f"  testingPolicy: {c['testingPolicy']}  ->  {entry['policy']}")
         print(f"  note:          {entry.get('note', '(none)')}")
-        print(f"  source:        {entry['url']}  (accessed {reviewed['accessed']})")
+        # An entry added in a later pass carries its own `accessed` date; the
+        # file-level one is only a default for entries that predate the field.
+        accessed = entry.get("accessed", reviewed["accessed"])
+        print(f"  source:        {entry['url']}  (accessed {accessed})")
         c["testingPolicy"] = entry["policy"]
         if entry.get("note"):
             c["testingPolicyNote"] = entry["note"]
@@ -47,7 +50,7 @@ def main():
         c["testingPolicyProvenance"] = {
             "source": f"{entry['label']} ({entry['url']})",
             "year": reviewed["cycle"],
-            "accessed": reviewed["accessed"],
+            "accessed": accessed,
         }
         if entry.get("provenanceNote"):
             c["testingPolicyProvenance"]["note"] = entry["provenanceNote"]

@@ -2046,6 +2046,129 @@
     "First-year and transfer applicants are required to include scores from the ACT or SAT."
    ],
    "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "santa-clara-university": {
+   "policy": "Test-Optional",
+   "label": "Santa Clara University admission",
+   "url": "https://www.scu.edu/admission/undergraduate/first-year-students/test-optional/",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "Scores on the SAT or ACT (including the enhanced version) are not required for students applying to Santa Clara University for the 2027 term."
+   ],
+   "manual": false
+  },
+  "university-of-washington": {
+   "policy": "Test-Optional",
+   "label": "University of Washington admissions",
+   "url": "https://admit.washington.edu/apply/first-year/how-to-apply/test-scores/",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "The UW is technically test-optional."
+   ],
+   "manual": false,
+   "note": "Scores are not required, but the UW may read them for a small number of applicants, and home-schooled applicants or those from schools without letter or numeric grades are still required to submit them."
+  },
+  "georgia-institute-of-technology": {
+   "policy": "Test-Required",
+   "label": "Georgia Tech admission",
+   "url": "https://admission.gatech.edu/first-year/standardized-tests",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "In order to complete your application, you must submit either an SAT or ACT test score."
+   ],
+   "manual": false
+  },
+  "amherst-college": {
+   "policy": "Test-Optional",
+   "label": "Amherst College admission",
+   "url": "https://www.amherst.edu/admission/apply/firstyear/testing",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "Standardized testing (either SAT or ACT) is an optional part of our admission application for both first-year applicants and transfer applicants and constitutes only one element of our comprehensive and holistic application review process."
+   ],
+   "manual": false
+  },
+  "swarthmore-college": {
+   "policy": "Test-Optional",
+   "label": "Swarthmore College admissions",
+   "url": "https://www.swarthmore.edu/admissions-aid/standardized-testing-policy",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "Because we are test-optional, you have the option to suppress your scores."
+   ],
+   "manual": false
+  },
+  "emory-university": {
+   "policy": "Test-Optional",
+   "label": "Emory University admission",
+   "url": "https://apply.emory.edu/apply/requirements/exams",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "Emory University is Test Optional for the 2026–2027 application cycle."
+   ],
+   "manual": false
+  },
+  "university-of-wisconsin-madison": {
+   "policy": "Test-Optional",
+   "label": "UW-Madison admissions",
+   "url": "https://admissions.wisc.edu/act_sat_faq/",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "Students who are applying for admission in Spring 2027, Fall 2027, and Spring 2028 will not be required to submit an ACT or SAT score as part of their application for admission."
+   ],
+   "manual": false,
+   "note": "The waiver is confirmed through Spring 2028; the Board of Regents has not yet decided on Fall 2028 and beyond."
+  },
+  "boston-university": {
+   "policy": "Test-Optional",
+   "label": "Boston University admissions",
+   "url": "https://www.bu.edu/admissions/apply/first-year/test-policy/",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "Boston University has decided to remain test optional for students applying for admission through fall 2028 and spring 2029"
+   ],
+   "manual": false
+  },
+  "tufts-university": {
+   "policy": "Test-Optional",
+   "label": "Tufts admissions",
+   "url": "https://admissions.tufts.edu/apply/applying-to-tufts/sat-and-act-tests/",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "Tufts University is test-optional for all undergraduate applicants."
+   ],
+   "manual": false
+  },
+  "new-york-university": {
+   "policy": "Test-Optional",
+   "label": "NYU undergraduate admissions",
+   "url": "https://www.nyu.edu/admissions/undergraduate-admissions/how-to-apply/standardized-tests.html",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "NYU will continue to remain test-optional through the 2027-2028 application cycle."
+   ],
+   "manual": true
+  },
+  "university-of-chicago": {
+   "policy": "Test-Optional",
+   "label": "UChicago college admissions",
+   "url": "https://collegeadmissions.uchicago.edu/apply/application/required-materials/",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "Submitting an SAT or ACT is optional and not required for admission."
+   ],
+   "manual": true,
+   "note": "UChicago reads submitted scores but will not let them count against an applicant."
+  },
+  "university-of-virginia": {
+   "policy": "Test-Optional",
+   "label": "UVA admission",
+   "url": "https://admission.virginia.edu/admission/deadlines-instructions",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "If you're applying for first year admission for Fall 2027, you'll have the choice of sharing or not sharing standardized test scores."
+   ],
+   "manual": true
   }
  }
 }
