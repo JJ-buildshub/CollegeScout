@@ -5,7 +5,7 @@
     "system": "UC",
     "rank": 15,
     "location": "Berkeley, CA",
-    "admitRateOverall": 0.11,
+    "admitRateOverall": 0.1098,
     "inStateAdmitRate": 0.14,
     "outOfStateAdmitRate": 0.08,
     "testingPolicy": "Test-Blind",
@@ -167,6 +167,10 @@
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -175,7 +179,7 @@
     "system": "UC",
     "rank": 15,
     "location": "Los Angeles, CA",
-    "admitRateOverall": 0.09,
+    "admitRateOverall": 0.0897,
     "inStateAdmitRate": 0.1,
     "outOfStateAdmitRate": 0.08,
     "testingPolicy": "Test-Blind",
@@ -339,6 +343,10 @@
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -347,7 +355,7 @@
     "system": "UC",
     "rank": 28,
     "location": "La Jolla, CA",
-    "admitRateOverall": 0.24,
+    "admitRateOverall": 0.2671,
     "inStateAdmitRate": 0.25,
     "outOfStateAdmitRate": 0.23,
     "testingPolicy": "Test-Blind",
@@ -511,6 +519,10 @@
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -519,7 +531,7 @@
     "system": "UC",
     "rank": 28,
     "location": "Davis, CA",
-    "admitRateOverall": 0.37,
+    "admitRateOverall": 0.4183,
     "inStateAdmitRate": 0.36,
     "outOfStateAdmitRate": 0.41,
     "testingPolicy": "Test-Blind",
@@ -682,6 +694,10 @@
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -690,7 +706,7 @@
     "system": "UC",
     "rank": 33,
     "location": "Irvine, CA",
-    "admitRateOverall": 0.21,
+    "admitRateOverall": 0.2857,
     "inStateAdmitRate": 0.2,
     "outOfStateAdmitRate": 0.24,
     "testingPolicy": "Test-Blind",
@@ -855,6 +871,10 @@
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -863,7 +883,7 @@
     "system": "UC",
     "rank": 35,
     "location": "Santa Barbara, CA",
-    "admitRateOverall": 0.26,
+    "admitRateOverall": 0.3297,
     "inStateAdmitRate": 0.28,
     "outOfStateAdmitRate": 0.22,
     "testingPolicy": "Test-Blind",
@@ -1028,6 +1048,10 @@
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -1036,7 +1060,7 @@
     "system": "UC",
     "rank": 82,
     "location": "Santa Cruz, CA",
-    "admitRateOverall": 0.47,
+    "admitRateOverall": 0.6579,
     "inStateAdmitRate": 0.45,
     "outOfStateAdmitRate": 0.53,
     "testingPolicy": "Test-Blind",
@@ -1201,6 +1225,10 @@
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -1209,7 +1237,7 @@
     "system": "UC",
     "rank": 76,
     "location": "Riverside, CA",
-    "admitRateOverall": 0.68,
+    "admitRateOverall": 0.7639,
     "inStateAdmitRate": 0.67,
     "outOfStateAdmitRate": 0.72,
     "testingPolicy": "Test-Blind",
@@ -1374,6 +1402,10 @@
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -1382,7 +1414,7 @@
     "system": "UC",
     "rank": 60,
     "location": "Merced, CA",
-    "admitRateOverall": 0.88,
+    "admitRateOverall": 0.9053,
     "inStateAdmitRate": 0.87,
     "outOfStateAdmitRate": 0.91,
     "testingPolicy": "Test-Blind",
@@ -1546,6 +1578,10 @@
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -1554,7 +1590,7 @@
     "system": "CSU",
     "rank": 1,
     "location": "San Luis Obispo, CA",
-    "admitRateOverall": 0.29,
+    "admitRateOverall": 0.3132,
     "inStateAdmitRate": 0.28,
     "outOfStateAdmitRate": 0.32,
     "testingPolicy": "Test-Blind",
@@ -1717,6 +1753,10 @@
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -1725,7 +1765,7 @@
     "system": "CSU",
     "rank": 16,
     "location": "San Jose, CA",
-    "admitRateOverall": 0.75,
+    "admitRateOverall": 0.8461,
     "inStateAdmitRate": 0.74,
     "outOfStateAdmitRate": 0.8,
     "testingPolicy": "Test-Blind",
@@ -1890,6 +1930,10 @@
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -1898,7 +1942,7 @@
     "system": "CSU",
     "rank": 105,
     "location": "San Diego, CA",
-    "admitRateOverall": 0.34,
+    "admitRateOverall": 0.3619,
     "inStateAdmitRate": 0.32,
     "outOfStateAdmitRate": 0.38,
     "testingPolicy": "Test-Blind",
@@ -2061,6 +2105,10 @@
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -2069,7 +2117,7 @@
     "system": "CSU",
     "rank": 14,
     "location": "Pomona, CA",
-    "admitRateOverall": 0.55,
+    "admitRateOverall": 0.7517,
     "inStateAdmitRate": 0.54,
     "outOfStateAdmitRate": 0.6,
     "testingPolicy": "Test-Blind",
@@ -2232,6 +2280,10 @@
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -2240,7 +2292,7 @@
     "system": "CSU",
     "rank": 105,
     "location": "Long Beach, CA",
-    "admitRateOverall": 0.4,
+    "admitRateOverall": 0.4627,
     "inStateAdmitRate": 0.39,
     "outOfStateAdmitRate": 0.45,
     "testingPolicy": "Test-Blind",
@@ -2402,6 +2454,10 @@
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -2410,7 +2466,7 @@
     "system": "Private",
     "rank": 3,
     "location": "Stanford, CA",
-    "admitRateOverall": 0.037,
+    "admitRateOverall": 0.0361,
     "inStateAdmitRate": 0.045,
     "outOfStateAdmitRate": 0.032,
     "testingPolicy": "Test-Required",
@@ -2578,6 +2634,10 @@
       "year": "2026-27",
       "accessed": "2026-09-22",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -2586,7 +2646,7 @@
     "system": "Private",
     "rank": 28,
     "location": "Los Angeles, CA",
-    "admitRateOverall": 0.099,
+    "admitRateOverall": 0.0981,
     "inStateAdmitRate": 0.11,
     "outOfStateAdmitRate": 0.09,
     "testingPolicy": "Test-Optional",
@@ -2757,6 +2817,10 @@
       "source": "USC Undergraduate Admission (https://admission.usc.edu/apply/first-year/)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -2765,7 +2829,7 @@
     "system": "Private",
     "rank": 53,
     "location": "Santa Clara, CA",
-    "admitRateOverall": 0.52,
+    "admitRateOverall": 0.48,
     "inStateAdmitRate": 0.5,
     "outOfStateAdmitRate": 0.55,
     "testingPolicy": "Test-Optional",
@@ -2937,6 +3001,10 @@
       "source": "Santa Clara University admission (https://www.scu.edu/admission/undergraduate/first-year-students/test-optional/)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -2945,7 +3013,7 @@
     "system": "Private",
     "rank": 2,
     "location": "Cambridge, MA",
-    "admitRateOverall": 0.045,
+    "admitRateOverall": 0.0455,
     "inStateAdmitRate": 0.05,
     "outOfStateAdmitRate": 0.04,
     "testingPolicy": "Test-Required",
@@ -3111,6 +3179,10 @@
       "year": "2026-27",
       "accessed": "2026-09-20",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -3119,7 +3191,7 @@
     "system": "Private",
     "rank": 24,
     "location": "Pittsburgh, PA",
-    "admitRateOverall": 0.11,
+    "admitRateOverall": 0.1166,
     "inStateAdmitRate": 0.12,
     "outOfStateAdmitRate": 0.1,
     "testingPolicy": "Test-Optional",
@@ -3277,6 +3349,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -3285,7 +3361,7 @@
     "system": "Private",
     "rank": 4,
     "location": "Cambridge, MA",
-    "admitRateOverall": 0.034,
+    "admitRateOverall": 0.0365,
     "inStateAdmitRate": 0.04,
     "outOfStateAdmitRate": 0.032,
     "testingPolicy": "Test-Required",
@@ -3451,6 +3527,10 @@
       "year": "2026-27",
       "accessed": "2026-09-22",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -3459,7 +3539,7 @@
     "system": "Private",
     "rank": 1,
     "location": "Princeton, NJ",
-    "admitRateOverall": 0.045,
+    "admitRateOverall": 0.0462,
     "inStateAdmitRate": 0.05,
     "outOfStateAdmitRate": 0.042,
     "testingPolicy": "Test-Optional",
@@ -3624,6 +3704,10 @@
       "source": "Princeton admission (https://admission.princeton.edu/apply/standardized-testing)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -3632,7 +3716,7 @@
     "system": "Private",
     "rank": 5,
     "location": "New Haven, CT",
-    "admitRateOverall": 0.044,
+    "admitRateOverall": 0.0387,
     "inStateAdmitRate": 0.05,
     "outOfStateAdmitRate": 0.041,
     "testingPolicy": "Test-Required",
@@ -3797,6 +3881,10 @@
       "year": "2026-27",
       "accessed": "2026-09-22",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -3805,7 +3893,7 @@
     "system": "Private",
     "rank": 12,
     "location": "New York, NY",
-    "admitRateOverall": 0.039,
+    "admitRateOverall": 0.0399,
     "inStateAdmitRate": 0.045,
     "outOfStateAdmitRate": 0.036,
     "testingPolicy": "Test-Optional",
@@ -3968,6 +4056,10 @@
       "source": "Columbia undergraduate admissions (https://undergrad.admissions.columbia.edu/apply/process/testing)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -4140,6 +4232,10 @@
       "source": "Penn Admissions (https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -4148,7 +4244,7 @@
     "system": "Private",
     "rank": 12,
     "location": "Ithaca, NY",
-    "admitRateOverall": 0.075,
+    "admitRateOverall": 0.0876,
     "inStateAdmitRate": 0.09,
     "outOfStateAdmitRate": 0.068,
     "testingPolicy": "Test-Required",
@@ -4313,6 +4409,10 @@
       "year": "2026-27",
       "accessed": "2026-09-22",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -4321,7 +4421,7 @@
     "system": "Private",
     "rank": 9,
     "location": "Providence, RI",
-    "admitRateOverall": 0.051,
+    "admitRateOverall": 0.0539,
     "inStateAdmitRate": 0.06,
     "outOfStateAdmitRate": 0.048,
     "testingPolicy": "Test-Required",
@@ -4486,6 +4586,10 @@
       "year": "2026-27",
       "accessed": "2026-09-22",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -4494,7 +4598,7 @@
     "system": "Private",
     "rank": 18,
     "location": "Hanover, NH",
-    "admitRateOverall": 0.053,
+    "admitRateOverall": 0.054,
     "inStateAdmitRate": 0.06,
     "outOfStateAdmitRate": 0.05,
     "testingPolicy": "Test-Required",
@@ -4658,6 +4762,10 @@
       "source": "Dartmouth Admissions (https://admissions.dartmouth.edu/apply/testing-policy)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -4666,7 +4774,7 @@
     "system": "Private",
     "rank": 7,
     "location": "Pasadena, CA",
-    "admitRateOverall": 0.027,
+    "admitRateOverall": 0.0257,
     "inStateAdmitRate": 0.03,
     "outOfStateAdmitRate": 0.025,
     "testingPolicy": "Test-Required",
@@ -4831,6 +4939,10 @@
       "source": "Caltech Undergraduate Admissions (https://www.admissions.caltech.edu/apply/first-year-applicants/standardized-tests)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -4839,7 +4951,7 @@
     "system": "Public",
     "rank": 43,
     "location": "West Lafayette, IN",
-    "admitRateOverall": 0.5,
+    "admitRateOverall": 0.4987,
     "inStateAdmitRate": 0.6,
     "outOfStateAdmitRate": 0.41,
     "testingPolicy": "Test-Required",
@@ -4998,6 +5110,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -5006,7 +5122,7 @@
     "system": "Public",
     "rank": 35,
     "location": "Urbana-Champaign, IL",
-    "admitRateOverall": 0.42,
+    "admitRateOverall": 0.4237,
     "inStateAdmitRate": 0.54,
     "outOfStateAdmitRate": 0.33,
     "testingPolicy": "Test-Optional",
@@ -5166,6 +5282,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -5174,7 +5294,7 @@
     "system": "Public",
     "rank": 40,
     "location": "Seattle, WA",
-    "admitRateOverall": 0.42,
+    "admitRateOverall": 0.3915,
     "inStateAdmitRate": 0.52,
     "outOfStateAdmitRate": 0.35,
     "testingPolicy": "Test-Optional",
@@ -5334,6 +5454,10 @@
       "source": "University of Washington admissions (https://admit.washington.edu/apply/first-year/how-to-apply/test-scores/)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -5342,7 +5466,7 @@
     "system": "Public",
     "rank": 21,
     "location": "Ann Arbor, MI",
-    "admitRateOverall": 0.17,
+    "admitRateOverall": 0.1564,
     "inStateAdmitRate": 0.38,
     "outOfStateAdmitRate": 0.12,
     "testingPolicy": "Test-Optional",
@@ -5511,6 +5635,10 @@
       "year": "2026-27",
       "accessed": "2026-09-22",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -5519,7 +5647,7 @@
     "system": "Public",
     "rank": 33,
     "location": "Atlanta, GA",
-    "admitRateOverall": 0.13,
+    "admitRateOverall": 0.1407,
     "inStateAdmitRate": 0.32,
     "outOfStateAdmitRate": 0.09,
     "testingPolicy": "Test-Required",
@@ -5687,6 +5815,10 @@
       "source": "Georgia Tech admission (https://admission.gatech.edu/first-year/standardized-tests)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -5695,7 +5827,7 @@
     "system": "Public",
     "rank": 32,
     "location": "Austin, TX",
-    "admitRateOverall": 0.29,
+    "admitRateOverall": 0.2664,
     "inStateAdmitRate": 0.34,
     "outOfStateAdmitRate": 0.1,
     "testingPolicy": "Test-Required",
@@ -5862,6 +5994,10 @@
       "source": "UT Austin admissions (https://admissions.utexas.edu/apply/freshman/)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -5870,7 +6006,7 @@
     "system": "Private",
     "rank": 53,
     "location": "Boston, MA",
-    "admitRateOverall": 0.056,
+    "admitRateOverall": 0.0522,
     "inStateAdmitRate": 0.065,
     "outOfStateAdmitRate": 0.054,
     "testingPolicy": "Test-Optional",
@@ -6043,6 +6179,10 @@
       "source": "Northeastern University Undergraduate Admissions (https://admissions.northeastern.edu/application-information/first-year-applicants/)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -6051,7 +6191,7 @@
     "system": "Private",
     "rank": 4,
     "location": "Claremont, CA",
-    "admitRateOverall": 0.071,
+    "admitRateOverall": 0.0709,
     "inStateAdmitRate": 0.071,
     "outOfStateAdmitRate": 0.071,
     "testingPolicy": "Test-Optional",
@@ -6222,6 +6362,10 @@
       "source": "Pomona College Admissions (https://www.pomona.edu/admissions/apply/first-year-applicants)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -6230,7 +6374,7 @@
     "system": "Private",
     "rank": 1,
     "location": "Williamstown, MA",
-    "admitRateOverall": 0.086,
+    "admitRateOverall": 0.0825,
     "inStateAdmitRate": 0.086,
     "outOfStateAdmitRate": 0.086,
     "testingPolicy": "Test-Optional",
@@ -6397,6 +6541,10 @@
       "source": "Williams admission (https://www.williams.edu/admission-aid/how-to-apply/)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -6405,7 +6553,7 @@
     "system": "Private",
     "rank": 64,
     "location": "Troy, NY",
-    "admitRateOverall": 0.64,
+    "admitRateOverall": 0.6347,
     "inStateAdmitRate": 0.64,
     "outOfStateAdmitRate": 0.64,
     "testingPolicy": "Test-Optional",
@@ -6571,6 +6719,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -6579,7 +6731,7 @@
     "system": "Public",
     "rank": 169,
     "location": "Tuscaloosa, AL",
-    "admitRateOverall": 0.766,
+    "admitRateOverall": 0.7665,
     "inStateAdmitRate": 0.766,
     "outOfStateAdmitRate": 0.766,
     "testingPolicy": "Test-Optional",
@@ -6728,6 +6880,10 @@
       "source": "University of Alabama admissions (https://admissions.ua.edu/testing-requirements/)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -6736,7 +6892,7 @@
     "system": "Public",
     "rank": 69,
     "location": "Pittsburgh, PA",
-    "admitRateOverall": 0.581,
+    "admitRateOverall": 0.5808,
     "inStateAdmitRate": 0.581,
     "outOfStateAdmitRate": 0.581,
     "testingPolicy": "Test-Optional",
@@ -6895,6 +7051,10 @@
       "year": "2026-27",
       "accessed": "2026-09-20",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -6903,7 +7063,7 @@
     "system": "Private",
     "rank": 37,
     "location": "Medford, MA",
-    "admitRateOverall": 0.115,
+    "admitRateOverall": 0.1149,
     "inStateAdmitRate": 0.115,
     "outOfStateAdmitRate": 0.115,
     "testingPolicy": "Test-Optional",
@@ -7070,6 +7230,10 @@
       "source": "Tufts admissions (https://admissions.tufts.edu/apply/applying-to-tufts/sat-and-act-tests/)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -7240,6 +7404,10 @@
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -7410,6 +7578,10 @@
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -7580,6 +7752,10 @@
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -7749,6 +7925,10 @@
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -7918,6 +8098,10 @@
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -8087,6 +8271,10 @@
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -8256,6 +8444,10 @@
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -8425,6 +8617,10 @@
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -8594,6 +8790,10 @@
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -8602,7 +8802,7 @@
     "system": "CSU",
     "rank": 160,
     "location": "Arcata, CA",
-    "admitRateOverall": 0.98,
+    "admitRateOverall": 0.982,
     "inStateAdmitRate": 0.98,
     "outOfStateAdmitRate": 0.98,
     "testingPolicy": "Test-Blind",
@@ -8758,6 +8958,10 @@
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -8766,7 +8970,7 @@
     "system": "Private",
     "rank": 9,
     "location": "Claremont, CA",
-    "admitRateOverall": 0.1,
+    "admitRateOverall": 0.0959,
     "inStateAdmitRate": 0.1,
     "outOfStateAdmitRate": 0.1,
     "testingPolicy": "Test-Optional",
@@ -8919,6 +9123,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -8927,7 +9135,7 @@
     "system": "Private",
     "rank": 19,
     "location": "Claremont, CA",
-    "admitRateOverall": 0.13,
+    "admitRateOverall": 0.1266,
     "inStateAdmitRate": 0.13,
     "outOfStateAdmitRate": 0.13,
     "testingPolicy": "Test-Optional",
@@ -9079,6 +9287,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -9087,7 +9299,7 @@
     "system": "Private",
     "rank": 35,
     "location": "Claremont, CA",
-    "admitRateOverall": 0.38,
+    "admitRateOverall": 0.3829,
     "inStateAdmitRate": 0.38,
     "outOfStateAdmitRate": 0.38,
     "testingPolicy": "Test-Optional",
@@ -9247,6 +9459,10 @@
       "source": "Scripps College Admission (https://www.scrippscollege.edu/admission/apply/first-year)",
       "year": "2026-27",
       "accessed": "2026-09-23"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -9255,7 +9471,7 @@
     "system": "Private",
     "rank": 50,
     "location": "Los Angeles, CA",
-    "admitRateOverall": 0.44,
+    "admitRateOverall": 0.4417,
     "inStateAdmitRate": 0.44,
     "outOfStateAdmitRate": 0.44,
     "testingPolicy": "Test-Optional",
@@ -9413,6 +9629,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -9421,7 +9641,7 @@
     "system": "Private",
     "rank": 130,
     "location": "Los Angeles, CA",
-    "admitRateOverall": 0.45,
+    "admitRateOverall": 0.4508,
     "inStateAdmitRate": 0.45,
     "outOfStateAdmitRate": 0.45,
     "testingPolicy": "Test-Optional",
@@ -9579,6 +9799,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -9587,7 +9811,7 @@
     "system": "Private",
     "rank": 110,
     "location": "San Diego, CA",
-    "admitRateOverall": 0.52,
+    "admitRateOverall": 0.5238,
     "inStateAdmitRate": 0.52,
     "outOfStateAdmitRate": 0.52,
     "testingPolicy": "Test-Blind",
@@ -9752,6 +9976,10 @@
       "source": "University of San Diego admission (https://www.sandiego.edu/admission-and-aid/undergraduate/apply/test-free.php)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -9760,7 +9988,7 @@
     "system": "Private",
     "rank": 180,
     "location": "San Francisco, CA",
-    "admitRateOverall": 0.62,
+    "admitRateOverall": 0.6171,
     "inStateAdmitRate": 0.62,
     "outOfStateAdmitRate": 0.62,
     "testingPolicy": "Test-Optional",
@@ -9918,6 +10146,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -9926,7 +10158,7 @@
     "system": "Private",
     "rank": 125,
     "location": "Orange, CA",
-    "admitRateOverall": 0.65,
+    "admitRateOverall": 0.6543,
     "inStateAdmitRate": 0.65,
     "outOfStateAdmitRate": 0.65,
     "testingPolicy": "Test-Optional",
@@ -10084,6 +10316,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -10092,7 +10328,7 @@
     "system": "Private",
     "rank": 90,
     "location": "Malibu, CA",
-    "admitRateOverall": 0.63,
+    "admitRateOverall": 0.6286,
     "inStateAdmitRate": 0.63,
     "outOfStateAdmitRate": 0.63,
     "testingPolicy": "Test-Optional",
@@ -10249,6 +10485,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -10257,7 +10497,7 @@
     "system": "Private",
     "rank": 150,
     "location": "Stockton, CA",
-    "admitRateOverall": 0.71,
+    "admitRateOverall": 0.7132,
     "inStateAdmitRate": 0.71,
     "outOfStateAdmitRate": 0.71,
     "testingPolicy": "Test-Optional",
@@ -10404,6 +10644,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -10412,7 +10656,7 @@
     "system": "Private",
     "rank": 170,
     "location": "Redlands, CA",
-    "admitRateOverall": 0.83,
+    "admitRateOverall": 0.8271,
     "inStateAdmitRate": 0.83,
     "outOfStateAdmitRate": 0.83,
     "testingPolicy": "Test-Optional",
@@ -10565,6 +10809,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -10573,7 +10821,7 @@
     "system": "Private",
     "rank": 2,
     "location": "Amherst, Massachusetts",
-    "admitRateOverall": 0.09,
+    "admitRateOverall": 0.0901,
     "inStateAdmitRate": 0.09,
     "outOfStateAdmitRate": 0.09,
     "testingPolicy": "Test-Optional",
@@ -10732,6 +10980,10 @@
       "source": "Amherst College admission (https://www.amherst.edu/admission/apply/firstyear/testing)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -10740,7 +10992,7 @@
     "system": "Private",
     "rank": 3,
     "location": "Swarthmore, Pennsylvania",
-    "admitRateOverall": 0.075,
+    "admitRateOverall": 0.0746,
     "inStateAdmitRate": 0.075,
     "outOfStateAdmitRate": 0.075,
     "testingPolicy": "Test-Optional",
@@ -10902,6 +11154,10 @@
       "source": "Swarthmore College admissions (https://www.swarthmore.edu/admissions-aid/standardized-testing-policy)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -10910,7 +11166,7 @@
     "system": "Private",
     "rank": 5,
     "location": "Wellesley, Massachusetts",
-    "admitRateOverall": 0.14,
+    "admitRateOverall": 0.1405,
     "inStateAdmitRate": 0.14,
     "outOfStateAdmitRate": 0.14,
     "testingPolicy": "Test-Optional",
@@ -11068,6 +11324,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -11076,7 +11336,7 @@
     "system": "Private",
     "rank": 6,
     "location": "Brunswick, Maine",
-    "admitRateOverall": 0.071,
+    "admitRateOverall": 0.0713,
     "inStateAdmitRate": 0.071,
     "outOfStateAdmitRate": 0.071,
     "testingPolicy": "Test-Optional",
@@ -11233,6 +11493,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -11241,7 +11505,7 @@
     "system": "Private",
     "rank": 9,
     "location": "Middlebury, Vermont",
-    "admitRateOverall": 0.107,
+    "admitRateOverall": 0.1075,
     "inStateAdmitRate": 0.107,
     "outOfStateAdmitRate": 0.107,
     "testingPolicy": "Test-Optional",
@@ -11396,6 +11660,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -11404,7 +11672,7 @@
     "system": "Private",
     "rank": 8,
     "location": "Northfield, Minnesota",
-    "admitRateOverall": 0.204,
+    "admitRateOverall": 0.2041,
     "inStateAdmitRate": 0.204,
     "outOfStateAdmitRate": 0.204,
     "testingPolicy": "Test-Optional",
@@ -11561,6 +11829,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -11569,7 +11841,7 @@
     "system": "Private",
     "rank": 14,
     "location": "Hamilton, New York",
-    "admitRateOverall": 0.139,
+    "admitRateOverall": 0.1388,
     "inStateAdmitRate": 0.139,
     "outOfStateAdmitRate": 0.139,
     "testingPolicy": "Test-Optional",
@@ -11723,6 +11995,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -11731,7 +12007,7 @@
     "system": "Private",
     "rank": 13,
     "location": "Poughkeepsie, New York",
-    "admitRateOverall": 0.186,
+    "admitRateOverall": 0.1857,
     "inStateAdmitRate": 0.186,
     "outOfStateAdmitRate": 0.186,
     "testingPolicy": "Test-Optional",
@@ -11886,6 +12162,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -11894,7 +12174,7 @@
     "system": "Private",
     "rank": 15,
     "location": "Clinton, New York",
-    "admitRateOverall": 0.136,
+    "admitRateOverall": 0.1362,
     "inStateAdmitRate": 0.136,
     "outOfStateAdmitRate": 0.136,
     "testingPolicy": "Test-Optional",
@@ -12048,6 +12328,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -12056,7 +12340,7 @@
     "system": "Private",
     "rank": 17,
     "location": "Waterville, Maine",
-    "admitRateOverall": 0.071,
+    "admitRateOverall": 0.0709,
     "inStateAdmitRate": 0.071,
     "outOfStateAdmitRate": 0.071,
     "testingPolicy": "Test-Optional",
@@ -12213,6 +12497,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -12221,7 +12509,7 @@
     "system": "Private",
     "rank": 22,
     "location": "Lewiston, Maine",
-    "admitRateOverall": 0.133,
+    "admitRateOverall": 0.1332,
     "inStateAdmitRate": 0.133,
     "outOfStateAdmitRate": 0.133,
     "testingPolicy": "Test-Optional",
@@ -12378,6 +12666,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -12542,6 +12834,10 @@
       "source": "Duke admissions (https://admissions.duke.edu/apply/)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -12716,6 +13012,10 @@
       "source": "UChicago college admissions (https://collegeadmissions.uchicago.edu/apply/application/required-materials/)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -12724,7 +13024,7 @@
     "system": "Private",
     "rank": 9,
     "location": "Evanston, Illinois",
-    "admitRateOverall": 0.077,
+    "admitRateOverall": 0.0769,
     "inStateAdmitRate": 0.077,
     "outOfStateAdmitRate": 0.077,
     "testingPolicy": "Test-Optional",
@@ -12882,6 +13182,10 @@
       "source": "Northwestern admissions (https://admissions.northwestern.edu/faqs/standardized-testing-policy/index.html)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -13053,6 +13357,10 @@
       "source": "Vanderbilt admissions (https://admissions.vanderbilt.edu/apply/)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -13225,6 +13533,10 @@
       "year": "2026-27",
       "accessed": "2026-09-22",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -13233,7 +13545,7 @@
     "system": "Private",
     "rank": 9,
     "location": "Baltimore, Maryland",
-    "admitRateOverall": 0.064,
+    "admitRateOverall": 0.0644,
     "inStateAdmitRate": 0.064,
     "outOfStateAdmitRate": 0.064,
     "testingPolicy": "Test-Required",
@@ -13396,6 +13708,10 @@
       "year": "2026-27",
       "accessed": "2026-09-22",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -13404,7 +13720,7 @@
     "system": "Private",
     "rank": 22,
     "location": "Washington, D.C.",
-    "admitRateOverall": 0.135,
+    "admitRateOverall": 0.1291,
     "inStateAdmitRate": 0.135,
     "outOfStateAdmitRate": 0.135,
     "testingPolicy": "Test-Required",
@@ -13566,6 +13882,10 @@
       "year": "2026-27",
       "accessed": "2026-09-22",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -13574,7 +13894,7 @@
     "system": "Private",
     "rank": 60,
     "location": "Worcester, Massachusetts",
-    "admitRateOverall": 0.381,
+    "admitRateOverall": 0.6016,
     "inStateAdmitRate": 0.381,
     "outOfStateAdmitRate": 0.381,
     "testingPolicy": "Test-Blind",
@@ -13739,6 +14059,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -13747,7 +14071,7 @@
     "system": "Private",
     "rank": 53,
     "location": "Cleveland, Ohio",
-    "admitRateOverall": 0.378,
+    "admitRateOverall": 0.3654,
     "inStateAdmitRate": 0.378,
     "outOfStateAdmitRate": 0.378,
     "testingPolicy": "Test-Optional",
@@ -13905,6 +14229,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -13913,7 +14241,7 @@
     "system": "Private",
     "rank": 100,
     "location": "Rochester, New York",
-    "admitRateOverall": 0.67,
+    "admitRateOverall": 0.6693,
     "inStateAdmitRate": 0.67,
     "outOfStateAdmitRate": 0.67,
     "testingPolicy": "Test-Optional",
@@ -14073,6 +14401,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -14081,7 +14413,7 @@
     "system": "Private",
     "rank": 90,
     "location": "Hoboken, New Jersey",
-    "admitRateOverall": 0.476,
+    "admitRateOverall": 0.4758,
     "inStateAdmitRate": 0.476,
     "outOfStateAdmitRate": 0.476,
     "testingPolicy": "Test-Optional",
@@ -14238,6 +14570,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -14246,7 +14582,7 @@
     "system": "Private",
     "rank": 34,
     "location": "Rochester, New York",
-    "admitRateOverall": 0.419,
+    "admitRateOverall": 0.4008,
     "inStateAdmitRate": 0.419,
     "outOfStateAdmitRate": 0.419,
     "testingPolicy": "Test-Optional",
@@ -14401,6 +14737,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -14409,7 +14749,7 @@
     "system": "Public",
     "rank": 22,
     "location": "Chapel Hill, North Carolina",
-    "admitRateOverall": 0.153,
+    "admitRateOverall": 0.1534,
     "inStateAdmitRate": 0.38,
     "outOfStateAdmitRate": 0.066,
     "testingPolicy": "Test-Optional",
@@ -14568,6 +14908,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -14576,7 +14920,7 @@
     "system": "Public",
     "rank": 24,
     "location": "Charlottesville, Virginia",
-    "admitRateOverall": 0.156,
+    "admitRateOverall": 0.1681,
     "inStateAdmitRate": 0.236,
     "outOfStateAdmitRate": 0.127,
     "testingPolicy": "Test-Optional",
@@ -14745,6 +15089,10 @@
       "source": "UVA admission (https://admission.virginia.edu/admission/deadlines-instructions)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -14917,6 +15265,10 @@
     "applicationPlansProvenance": {
       "source": "University of Florida admissions (https://admissions.ufl.edu/apply/freshman/deadlines)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -14925,7 +15277,7 @@
     "system": "Public",
     "rank": 41,
     "location": "Columbus, Ohio",
-    "admitRateOverall": 0.61,
+    "admitRateOverall": 0.6057,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Required",
@@ -15089,6 +15441,10 @@
       "source": "Ohio State admissions (https://undergrad.osu.edu/apply/freshmen-columbus/apply-step-by-step)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -15097,7 +15453,7 @@
     "system": "Public",
     "rank": 60,
     "location": "University Park, Pennsylvania",
-    "admitRateOverall": 0.61,
+    "admitRateOverall": 0.6056,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -15263,6 +15619,10 @@
       "year": "2026-27",
       "accessed": "2026-09-22",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -15271,7 +15631,7 @@
     "system": "Public",
     "rank": 35,
     "location": "Madison, Wisconsin",
-    "admitRateOverall": 0.45,
+    "admitRateOverall": 0.452,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -15436,6 +15796,10 @@
       "source": "UW-Madison admissions (https://admissions.wisc.edu/act_sat_faq/)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -15444,7 +15808,7 @@
     "system": "Public",
     "rank": 63,
     "location": "Bloomington, Indiana",
-    "admitRateOverall": 0.78,
+    "admitRateOverall": 0.7821,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -15603,6 +15967,10 @@
     "applicationPlansProvenance": {
       "source": "Indiana University admissions (https://admissions.indiana.edu/apply/deadlines.html)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -15611,7 +15979,7 @@
     "system": "Public",
     "rank": 44,
     "location": "College Park, Maryland",
-    "admitRateOverall": 0.45,
+    "admitRateOverall": 0.4479,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -15769,6 +16137,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -15777,7 +16149,7 @@
     "system": "Public",
     "rank": 55,
     "location": "New Brunswick/Piscataway, New Jersey",
-    "admitRateOverall": 0.58,
+    "admitRateOverall": 0.5815,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -15935,6 +16307,10 @@
     "applicationPlansProvenance": {
       "source": "Rutgers admissions (https://admissions.rutgers.edu/apply/dates-deadlines/new-brunswick)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -15943,7 +16319,7 @@
     "system": "Public",
     "rank": 105,
     "location": "Tucson, Arizona",
-    "admitRateOverall": 0.86,
+    "admitRateOverall": 0.8614,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -16108,6 +16484,10 @@
       "year": "2026-27",
       "accessed": "2026-09-22",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -16116,7 +16496,7 @@
     "system": "Public",
     "rank": 121,
     "location": "Tempe, Arizona",
-    "admitRateOverall": 0.899,
+    "admitRateOverall": 0.8989,
     "inStateAdmitRate": 0.916,
     "outOfStateAdmitRate": 0.892,
     "testingPolicy": "Test-Optional",
@@ -16271,6 +16651,10 @@
       "source": "ASU admissions (https://admission.asu.edu/apply/first-year)",
       "year": "2026-27",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -16279,7 +16663,7 @@
     "system": "Public",
     "rank": 93,
     "location": "Boulder, Colorado",
-    "admitRateOverall": 0.78,
+    "admitRateOverall": 0.7808,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -16437,6 +16821,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -16445,7 +16833,7 @@
     "system": "Public",
     "rank": 47,
     "location": "College Station, Texas",
-    "admitRateOverall": 0.57,
+    "admitRateOverall": 0.5743,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -16598,6 +16986,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -16606,7 +16998,7 @@
     "system": "Public",
     "rank": 100,
     "location": "Oxford, Ohio",
-    "admitRateOverall": 0.75,
+    "admitRateOverall": 0.754,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -16767,6 +17159,10 @@
       "source": "Miami University admissions (https://miamioh.edu/admission-aid/apply/dates-deadlines/undergraduate-students.html)",
       "year": "2026-27",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026. December 1 is also Miami's priority date for most merit scholarships; that is not an admission deadline."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -16775,7 +17171,7 @@
     "system": "Private",
     "rank": 130,
     "location": "Waco, Texas",
-    "admitRateOverall": 0.51,
+    "admitRateOverall": 0.5128,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -16930,6 +17326,10 @@
     "applicationPlansProvenance": {
       "source": "Baylor admissions (https://admissions.web.baylor.edu/admission/incoming-freshman/application-process/admission-plans)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -16938,7 +17338,7 @@
     "system": "Private",
     "rank": 110,
     "location": "Fort Worth, Texas",
-    "admitRateOverall": 0.44,
+    "admitRateOverall": 0.4449,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -17098,6 +17498,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -17106,7 +17510,7 @@
     "system": "Private",
     "rank": 87,
     "location": "Dallas, Texas (University Park)",
-    "admitRateOverall": 0.63,
+    "admitRateOverall": 0.6335,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -17264,6 +17668,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -17272,7 +17680,7 @@
     "system": "Private",
     "rank": 101,
     "location": "Denver, Colorado",
-    "admitRateOverall": 0.78,
+    "admitRateOverall": 0.7781,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -17430,6 +17838,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -17438,7 +17850,7 @@
     "system": "Private",
     "rank": 112,
     "location": "Elon, North Carolina",
-    "admitRateOverall": 0.66,
+    "admitRateOverall": 0.6635,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -17598,6 +18010,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -17606,7 +18022,7 @@
     "system": "Public",
     "rank": 130,
     "location": "Burlington, Vermont",
-    "admitRateOverall": 0.65,
+    "admitRateOverall": 0.653,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -17761,6 +18177,10 @@
       "source": "University of Vermont admissions (https://www.uvm.edu/uvmnews/news/uvm-officially-approves-test-optional-admissions-policy)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -17769,7 +18189,7 @@
     "system": "Public",
     "rank": 89,
     "location": "Newark, Delaware",
-    "admitRateOverall": 0.71,
+    "admitRateOverall": 0.706,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -17925,6 +18345,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -17933,7 +18357,7 @@
     "system": "Private",
     "rank": 103,
     "location": "Philadelphia, Pennsylvania",
-    "admitRateOverall": 0.79,
+    "admitRateOverall": 0.7944,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -18087,6 +18511,10 @@
     "applicationPlansProvenance": {
       "source": "Drexel admissions (https://drexel.edu/admissions/apply/undergrad-instructions/first-year-instructions/application-deadlines)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -18095,7 +18523,7 @@
     "system": "Public",
     "rank": 127,
     "location": "Philadelphia, Pennsylvania",
-    "admitRateOverall": 0.8,
+    "admitRateOverall": 0.8041,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -18250,6 +18678,10 @@
     "applicationPlansProvenance": {
       "source": "Temple admissions (https://admissions.temple.edu/apply/first-year-students)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -18258,7 +18690,7 @@
     "system": "Public",
     "rank": 63,
     "location": "Storrs, Connecticut",
-    "admitRateOverall": 0.52,
+    "admitRateOverall": 0.5239,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -18408,6 +18840,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -18416,7 +18852,7 @@
     "system": "Public",
     "rank": 68,
     "location": "Clemson, South Carolina",
-    "admitRateOverall": 0.38,
+    "admitRateOverall": 0.3834,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -18565,6 +19001,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -18573,7 +19013,7 @@
     "system": "Public",
     "rank": 85,
     "location": "East Lansing, Michigan",
-    "admitRateOverall": 0.85,
+    "admitRateOverall": 0.848,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -18726,6 +19166,10 @@
       "source": "Michigan State admissions (https://admissions.msu.edu/apply/first-year/dates-and-deadlines)",
       "year": "2026-27",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -18734,7 +19178,7 @@
     "system": "Public",
     "rank": 93,
     "location": "Iowa City, Iowa",
-    "admitRateOverall": 0.84,
+    "admitRateOverall": 0.8362,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -18883,6 +19327,10 @@
     "applicationPlansProvenance": {
       "source": "University of Iowa admissions (https://admissions.uiowa.edu/apply/how-apply/first-year-admissions)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -18891,7 +19339,7 @@
     "system": "Public",
     "rank": 130,
     "location": "Lawrence, Kansas",
-    "admitRateOverall": 0.93,
+    "admitRateOverall": 0.9348,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
     "testingPolicy": "Test-Optional",
@@ -19044,6 +19492,10 @@
       "year": "2026-27",
       "accessed": "2026-09-20",
       "note": "Early Action read on KU's official Spanish admissions site (es.admissions.ku.edu/apply and /early-action). The English /early-action page returns 'Access Denied' to automated requests, and the English apply page's deadline list omits the Early Action row. Early Action is non-binding by definition; the pages don't call KU rolling, so no Rolling plan is stored."
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -19052,7 +19504,7 @@
     "system": "Private",
     "rank": 35,
     "location": "New York, New York (Greenwich Village)",
-    "admitRateOverall": 0.091,
+    "admitRateOverall": 0.0923,
     "inStateAdmitRate": 0.091,
     "outOfStateAdmitRate": 0.091,
     "testingPolicy": "Test-Optional",
@@ -19223,6 +19675,10 @@
       "source": "NYU undergraduate admissions (https://www.nyu.edu/admissions/undergraduate-admissions/how-to-apply/standardized-tests.html)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -19231,7 +19687,7 @@
     "system": "Private",
     "rank": 20,
     "location": "Notre Dame, Indiana",
-    "admitRateOverall": 0.094,
+    "admitRateOverall": 0.1127,
     "inStateAdmitRate": 0.094,
     "outOfStateAdmitRate": 0.094,
     "testingPolicy": "Test-Optional",
@@ -19400,6 +19856,10 @@
       "source": "Notre Dame admissions (https://admissions.nd.edu/apply/)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -19408,7 +19868,7 @@
     "system": "Private",
     "rank": 24,
     "location": "Atlanta, Georgia",
-    "admitRateOverall": 0.107,
+    "admitRateOverall": 0.1065,
     "inStateAdmitRate": 0.107,
     "outOfStateAdmitRate": 0.107,
     "testingPolicy": "Test-Optional",
@@ -19579,6 +20039,10 @@
       "source": "Emory University admission (https://apply.emory.edu/apply/requirements/exams)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -19587,7 +20051,7 @@
     "system": "Private",
     "rank": 15,
     "location": "St. Louis, Missouri",
-    "admitRateOverall": 0.119,
+    "admitRateOverall": 0.1206,
     "inStateAdmitRate": 0.119,
     "outOfStateAdmitRate": 0.119,
     "testingPolicy": "Test-Optional",
@@ -19755,6 +20219,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -19763,7 +20231,7 @@
     "system": "Private",
     "rank": 41,
     "location": "Boston, Massachusetts",
-    "admitRateOverall": 0.128,
+    "admitRateOverall": 0.1111,
     "inStateAdmitRate": 0.128,
     "outOfStateAdmitRate": 0.128,
     "testingPolicy": "Test-Optional",
@@ -19934,6 +20402,10 @@
       "source": "Boston University admissions (https://www.bu.edu/admissions/apply/first-year/test-policy/)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -19942,7 +20414,7 @@
     "system": "Private",
     "rank": 44,
     "location": "New Orleans, Louisiana",
-    "admitRateOverall": 0.145,
+    "admitRateOverall": 0.1398,
     "inStateAdmitRate": 0.145,
     "outOfStateAdmitRate": 0.145,
     "testingPolicy": "Test-Optional",
@@ -20110,6 +20582,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -20118,7 +20594,7 @@
     "system": "Private",
     "rank": 39,
     "location": "Chestnut Hill, Massachusetts",
-    "admitRateOverall": 0.162,
+    "admitRateOverall": 0.1643,
     "inStateAdmitRate": 0.162,
     "outOfStateAdmitRate": 0.162,
     "testingPolicy": "Test-Optional",
@@ -20284,6 +20760,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -20292,7 +20772,7 @@
     "system": "Private",
     "rank": 57,
     "location": "Coral Gables, Florida",
-    "admitRateOverall": 0.176,
+    "admitRateOverall": 0.189,
     "inStateAdmitRate": 0.176,
     "outOfStateAdmitRate": 0.176,
     "testingPolicy": "Test-Required",
@@ -20462,6 +20942,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -20470,7 +20954,7 @@
     "system": "Private",
     "rank": 47,
     "location": "Winston-Salem, North Carolina",
-    "admitRateOverall": 0.208,
+    "admitRateOverall": 0.2167,
     "inStateAdmitRate": 0.208,
     "outOfStateAdmitRate": 0.208,
     "testingPolicy": "Test-Optional",
@@ -20633,6 +21117,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -20641,7 +21129,7 @@
     "system": "Private",
     "rank": 51,
     "location": "Villanova, Pennsylvania (Philadelphia Main Line)",
-    "admitRateOverall": 0.281,
+    "admitRateOverall": 0.2698,
     "inStateAdmitRate": 0.281,
     "outOfStateAdmitRate": 0.281,
     "testingPolicy": "Test-Optional",
@@ -20812,6 +21300,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -20820,7 +21312,7 @@
     "system": "Public",
     "rank": 47,
     "location": "Athens, Georgia",
-    "admitRateOverall": 0.343,
+    "admitRateOverall": 0.377,
     "inStateAdmitRate": 0.343,
     "outOfStateAdmitRate": 0.343,
     "testingPolicy": "Test-Required",
@@ -20982,6 +21474,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
@@ -20990,7 +21486,7 @@
     "system": "Private",
     "rank": 61,
     "location": "Syracuse, New York",
-    "admitRateOverall": 0.43,
+    "admitRateOverall": 0.4592,
     "inStateAdmitRate": 0.43,
     "outOfStateAdmitRate": 0.43,
     "testingPolicy": "Test-Optional",
@@ -21161,6 +21657,10 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "admissionsProvenance": {
+      "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+      "year": "2024"
     }
   },
   {
