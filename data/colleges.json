@@ -34184,7 +34184,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 27350,
       "coaOutOfState": 44197,
@@ -34284,6 +34290,11 @@
       "source": "Wayne State University admissions (https://wayne.edu/admissions/freshman/deadlines)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "applicationPlansProvenance": {
+      "source": "Wayne State University admissions (https://wayne.edu/admissions/first-year/application-process)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -34900,7 +34911,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 57410,
       "coaOutOfState": 57410,
@@ -34995,6 +35012,11 @@
     "testingPolicyNote": "Missouri applicants who may qualify for the Bright Flight program are asked to submit scores, so scores are accepted and used.",
     "testingPolicyProvenance": {
       "source": "Kansas City Art Institute admissions (https://kcai.edu/admissions-aid/first-year-student/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Kansas City Art Institute admissions (https://kcai.edu/admissions-aid/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -35449,7 +35471,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 22225,
       "coaOutOfState": 22225,
@@ -35544,6 +35572,11 @@
     "testingPolicyNote": "Admission has five routes and the first is GPA alone with no test. The other routes pair a lower GPA or class rank with an ACT or SAT minimum. The sentence search engines surface about scores being required applies to applicants without a high school diploma, not to regular freshmen. MUW never uses the phrase test-optional.",
     "testingPolicyProvenance": {
       "source": "Mississippi University for Women admissions (https://www.muw.edu/admissions/freshman/requirements/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Mississippi University for Women 2026-27 bulletin (https://bulletin.muw.edu/content.php?catoid=57&navoid=3676)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -36138,7 +36171,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 62187,
       "coaOutOfState": 62187,
@@ -36233,6 +36272,11 @@
     "testingPolicyNote": "Applicants within a year of high school graduation still need scores. The page names Fall 2022 but was last modified in April 2026, so the policy is current rather than COVID-era residue.",
     "testingPolicyProvenance": {
       "source": "Campbell University admissions (https://www.campbell.edu/admissions/undergraduate/high-school-student/admissions-requirements/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Campbell University admissions FAQ (https://www.campbell.edu/admissions/admissions-faq/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -37004,7 +37048,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 20"
+      }
+    ],
     "financials": {
       "coaInState": 26470,
       "coaOutOfState": 44204,
@@ -37103,6 +37153,11 @@
     "testingPolicyNote": "Applicants with a weighted GPA between 2.5 and 2.8 must submit an ACT of 17 or an SAT of 930. Filmmaking sets its own threshold at 3.0. Scores are also an alternative route for applicants below the GPA minimum. UNCSA's required-documents pages still carry a superseded COVID-era waiver line.",
     "testingPolicyProvenance": {
       "source": "UNCSA bulletin (https://www.uncsa.edu/bulletin/current/undergraduate/admissions.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "UNCSA undergraduate admissions (https://www.uncsa.edu/admissions/design-production/undergraduate/index.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -37426,7 +37481,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "August 1"
+      }
+    ],
     "financials": {
       "coaInState": 23716,
       "coaOutOfState": 28370,
@@ -37522,6 +37583,11 @@
       "source": "NDSU admissions (https://www.ndsu.edu/admission/first-year)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "applicationPlansProvenance": {
+      "source": "North Dakota State University admission (https://www.ndsu.edu/admission/how_to_apply/first_year)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -40010,7 +40076,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 65647,
       "coaOutOfState": 65647,
@@ -40107,6 +40179,11 @@
       "source": "AMDA admissions (https://www.amda.edu/admissions-aid/undergraduate/more-info/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "AMDA consolidated catalog (https://amda.catalog.amda.edu/about-amda/admissions/undergraduate-admissions)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -40136,7 +40213,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 1"
+      }
+    ],
     "financials": {
       "coaInState": 89538,
       "coaOutOfState": 89538,
@@ -40237,6 +40325,11 @@
       "source": "Barnard College admissions (https://barnard.edu/admissions/temporary-test-optional-policy)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "applicationPlansProvenance": {
+      "source": "Barnard College catalog (https://catalog.barnard.edu/barnard-college/admissions/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -40979,7 +41072,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 1"
+      }
+    ],
     "financials": {
       "coaInState": 26838,
       "coaOutOfState": 37418,
@@ -41076,6 +41175,11 @@
       "source": "FIT undergraduate admissions (https://www.fitnyc.edu/admissions/undergraduate-applicants/apply/index.php)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "FIT admissions deadlines (https://www.fitnyc.edu/admissions/undergraduate-applicants/apply/deadlines.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -41105,7 +41209,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "December 1"
+      }
+    ],
     "financials": {
       "coaInState": 77703,
       "coaOutOfState": 77703,
@@ -41200,6 +41310,11 @@
     "testingPolicyNote": "MSM will read scores if an applicant feels they help, so they are optional rather than disregarded. Admission centres on an audition.",
     "testingPolicyProvenance": {
       "source": "Manhattan School of Music admission (https://www.msmnyc.edu/admission/admission-faq/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Manhattan School of Music admission (https://www.msmnyc.edu/admission/apply-to-msm/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -41954,7 +42069,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "December 1"
+      }
+    ],
     "financials": {
       "coaInState": 83892,
       "coaOutOfState": 83892,
@@ -42051,6 +42172,11 @@
       "source": "The Juilliard School application requirements (https://www.juilliard.edu/arm/dance/college/dance/bachelor-fine-arts)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "The Juilliard School admissions (https://www.juilliard.edu/admissions)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -42080,7 +42206,23 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15"
+      }
+    ],
     "financials": {
       "coaInState": 88284,
       "coaOutOfState": 88284,
@@ -42175,6 +42317,11 @@
     "testingPolicyNote": "Recorded as test-blind because the school states outright that scores play no part in review, rather than only that they are not required.",
     "testingPolicyProvenance": {
       "source": "The New School how to apply (https://www.newschool.edu/lang/how-to-apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "The New School dates and deadlines (https://www.newschool.edu/admission/prospective-undergraduate-students/dates-deadlines/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }

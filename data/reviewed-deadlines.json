@@ -5096,6 +5096,233 @@
    ],
    "manual": false,
    "note": "Berklee's regular row covers two terms in one sentence: December 1 is the summer deadline and January 15 the fall one. Audition and interview windows and the May 1 deposit are not application deadlines."
+  },
+  "american-musical-and-dramatic-academy": {
+   "label": "AMDA consolidated catalog",
+   "url": "https://amda.catalog.amda.edu/about-amda/admissions/undergraduate-admissions",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "AMDA has a rolling admissions policy for the application and selection process of all programs.",
+    "Applications and students are accepted throughout the year."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": true,
+   "note": "AMDA publishes no calendar deadline. It recommends applying 60 to 90 days before the applicant's own intended start date, which is relative rather than a fixed date. The many audition dates on its site are not application deadlines."
+  },
+  "barnard-college": {
+   "label": "Barnard College catalog",
+   "url": "https://catalog.barnard.edu/barnard-college/admissions/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Students applying under the Early Decision plan must apply by November 1st.",
+    "The deadline for Regular Decision is January 1st."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 1"
+    }
+   ],
+   "manual": false,
+   "note": "Barnard's live admissions pages still carry last cycle's dates, including a one-off extension of Regular Decision to January 11 that applied to that cycle only. The year-free catalog is used instead; month and day agree across all three Barnard sources."
+  },
+  "fashion-institute-of-technology": {
+   "label": "FIT admissions deadlines",
+   "url": "https://www.fitnyc.edu/admissions/undergraduate-applicants/apply/deadlines.php",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "January 1: Application Deadline",
+    "All supplemental materials must be received by February 1 to receive priority consideration for the fall semester."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 1"
+    }
+   ],
+   "manual": true,
+   "note": "February 1 is the supplemental materials deadline for transcripts, essay, portfolio and English proficiency, not the application date. October 1 and November 1 are the spring equivalents. FIT runs one fall round and does not describe itself as rolling."
+  },
+  "manhattan-school-of-music": {
+   "label": "Manhattan School of Music admission",
+   "url": "https://www.msmnyc.edu/admission/apply-to-msm/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "The Fall 2027 application is currently open. Please take care to submit your application before December 1."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "December 1"
+    }
+   ],
+   "manual": false,
+   "note": "MSM's dates page calls December 1 a priority application deadline, but the school runs one fixed round with set auditions and an April decision release rather than rolling admission. Prescreening videos are due the same day, which is a separate requirement."
+  },
+  "the-juilliard-school": {
+   "label": "The Juilliard School admissions",
+   "url": "https://www.juilliard.edu/admissions",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Tue, Dec 1",
+    "BFA in Dance",
+    "All Music Degrees (except AD Opera Studies)"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "December 1"
+    }
+   ],
+   "manual": true,
+   "note": "December 1 covers the BFA in Dance and all music degrees. BFA Acting applicants who must prescreen apply a month earlier, by November 2. Prescreening materials are due the same day as the application but are a separate requirement. Evidence is weak by necessity: juilliard.edu is walled against automated reading, rendering a few hundred characters, and its deadline table puts every date inside markup, so only short fragments can be quoted. Re-read in a browser before relying on this one."
+  },
+  "the-new-school": {
+   "label": "The New School dates and deadlines",
+   "url": "https://www.newschool.edu/admission/prospective-undergraduate-students/dates-deadlines/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Fall Early Action or Early Decision: November 1",
+    "Fall Regular Decision: January 15"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": true,
+   "note": "These are the dates for Parsons, Parsons Paris and Eugene Lang. Mannes has a single December 1 date and offers neither early round; the School of Drama has Early Action on November 1 and a January 15 date but no Early Decision; the School of Jazz and Contemporary Music has January 15 only. Applications after the deadlines are accepted on a rolling basis."
+  },
+  "wayne-state-university": {
+   "label": "Wayne State University admissions",
+   "url": "https://wayne.edu/admissions/first-year/application-process",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Typically, you should receive a decision from admissions after Oct. 1. If you apply after Oct. 1, you should receive a decision within two to three weeks after submitting your application and any outstanding materials."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": false,
+   "note": "Wayne State publishes no domestic first-year deadline on any admissions page or in its bulletin. The August 1 date on its site governs international applicants, and December 1 is the priority date for merit scholarship consideration."
+  },
+  "kansas-city-art-institute": {
+   "label": "Kansas City Art Institute admissions",
+   "url": "https://kcai.edu/admissions-aid/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Applications are welcomed after our deadlines, and scholarships are awarded on a first come, first served basis."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ],
+   "manual": false,
+   "note": "November 1 and January 15 are the spring entry dates and May 1 is the enrolment deposit. A December 1 Early Action date circulates on third-party sites but appears nowhere on KCAI's own pages or in its catalog."
+  },
+  "mississippi-university-for-women": {
+   "label": "Mississippi University for Women 2026-27 bulletin",
+   "url": "https://bulletin.muw.edu/content.php?catoid=57&navoid=3676",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Undergraduate applicants are advised to submit admission materials well in advance of the period for which enrollment is sought.",
+    "Late application may necessitate that the individual register for classes after the semester has begun."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": true,
+   "note": "The May 1 and October 1 dates in the bulletin's application deadlines section apply only to international students, which the same sentence states. No date is published for domestic first-year applicants."
+  },
+  "campbell-university": {
+   "label": "Campbell University admissions FAQ",
+   "url": "https://www.campbell.edu/admissions/admissions-faq/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Applications are accepted until the start date of the semester for which you are applying.",
+    "The earliest one may apply is January 1 of the year you plan to enroll."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": false,
+   "note": "Campbell states it has no deadline and evaluates applications as they are completed. It encourages early application for housing, advising and scholarships but attaches no date to that."
+  },
+  "university-of-north-carolina-school-of-the-arts": {
+   "label": "UNCSA undergraduate admissions",
+   "url": "https://www.uncsa.edu/admissions/design-production/undergraduate/index.aspx",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "To meet the deadline, applicants must have submitted all required materials:"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 20"
+    }
+   ],
+   "manual": false,
+   "note": "UNCSA has no central deadline page; each conservatory publishes its own. January 20 covers Design and Production, Drama, Dance and Music. Filmmaking differs, with an early date of October 15 and a deadline of January 7. Dance's November 2 priority date grants early audition scheduling and Music's December 1 is a pre-screening date; neither is a separate admission round."
+  },
+  "north-dakota-state-university": {
+   "label": "North Dakota State University admission",
+   "url": "https://www.ndsu.edu/admission/how_to_apply/first_year",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Admission decisions are typically mailed within 2-3 weeks after all required application materials have been received."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "August 1"
+    }
+   ],
+   "manual": false,
+   "note": "December 1 and July 1 on the same page govern spring and summer entry. The February 1 and March 1 dates that circulate are scholarship and financial aid dates."
   }
  }
 }
