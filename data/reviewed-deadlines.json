@@ -4669,6 +4669,191 @@
     }
    ],
    "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
+  },
+  "university-of-alabama": {
+   "label": "University of Alabama admissions",
+   "url": "https://admissions.ua.edu/freshman/steps/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "To ensure consideration for admission and all available scholarship opportunities, submit an application and all supporting documents by the December 4 priority deadline."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "December 4"
+    }
+   ],
+   "manual": false,
+   "note": "Alabama names no early or regular rounds and calls December 4 a priority deadline rather than a final one. The same date is also the scholarship consideration date."
+  },
+  "university-of-alaska-anchorage": {
+   "label": "UAA admissions deadlines",
+   "url": "https://www.uaa.alaska.edu/admissions/deadlines.cshtml",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Application deadline: July 15, 2027"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "July 15"
+    }
+   ],
+   "manual": false,
+   "note": "UAA publishes one undergraduate deadline for fall with no early rounds. A late application deadline of August 15 exists with an additional fee. Corroborated by UAA's own 2026-27 catalog."
+  },
+  "arkansas-tech-university": {
+   "label": "Arkansas Tech admission requirements",
+   "url": "https://www.atu.edu/admissions/requirements.php",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Priority Fall Application Deadline - August 1"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "August 1"
+    }
+   ],
+   "manual": false,
+   "note": "Arkansas Tech states no final deadline and uses no early or regular round names. Its scholarship pages give separate February 1 and August 15 dates, which are not application deadlines."
+  },
+  "embry-riddle-aeronautical-university-prescott": {
+   "label": "Embry-Riddle Prescott admissions",
+   "url": "https://prescott.erau.edu/admissions/apply",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "November 1 — Decision by December 15. First priority for merit scholarships."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": false,
+   "note": "Regular applications are rolling with no stated final date. A separate Prescott page gives a January 15 filing priority date for fall."
+  },
+  "art-center-college-of-design": {
+   "label": "ArtCenter important dates",
+   "url": "https://www.artcenter.edu/admissions/undergraduate-admissions/important-dates.html",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "ArtCenter has a rolling admission deadline policy and prospective students may apply at any time.",
+    "The deadline is ideal for Fall applicants who are well prepared to submit their application, portfolio, and all required materials by November 15."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ],
+   "manual": false,
+   "note": "ArtCenter admits on a rolling basis with February 1 as the fall priority date. Entertainment Design is the exception, where February 1 is a hard deadline."
+  },
+  "azusa-pacific-university": {
+   "label": "Azusa Pacific freshman admissions",
+   "url": "https://www.apu.edu/undergraduate-admissions/freshman/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "The following deadlines are firm and apply to first-year freshmen and transfer students.",
+    "March 1 priority application deadline (recommended deadline)"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "March 1"
+    }
+   ],
+   "manual": false,
+   "note": "APU publishes two deadlines and no early round: March 1 priority and June 1 final, after which applicants may be waitlisted. Review is rolling. Nursing has its own November 15 date."
+  },
+  "california-institute-of-the-arts": {
+   "label": "CalArts application deadlines",
+   "url": "https://calarts.edu/admissions-aid/admissions/application-process/application-deadlines-and-fees",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Fall 2027 Application Deadlines",
+    "$85 - Regular deadline of January 5, 2027",
+    "The preferred deadline at CalArts is a reduced application fee, NOT early decision."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 5"
+    }
+   ],
+   "manual": false,
+   "note": "CalArts' December 1 preferred deadline buys a reduced application fee and is explicitly not an admission round. Applications continue on a rolling basis after January 5 until each programme closes."
+  },
+  "laguna-college-of-art-and-design": {
+   "label": "LCAD how to apply",
+   "url": "https://www.lcad.edu/how-to-apply-bfa/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "LCAD has a rolling admissions policy and will accept applications until we’ve filled all spots for an incoming class.",
+    "Fall: December 1st"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "December 1"
+    }
+   ],
+   "manual": false,
+   "note": "December 1 is the fall priority date, which LCAD elsewhere also calls an early action date. It is the same date rather than a second round. The August 1 and January 15 dates on its pages are deposit dates for accepted students."
+  },
+  "brigham-young-university-hawaii": {
+   "label": "BYU-Hawaii application deadlines",
+   "url": "https://admissions.byuh.edu/application-deadlines-decisions-schedule",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Applicants who apply by the priority deadline will receive their admission decision earlier than those who apply after the priority deadline."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ],
+   "manual": false,
+   "note": "BYU-Hawaii runs three intakes a year, so autumn is one of three entry terms rather than the main one. February 1 is the fall priority deadline for domestic and international applicants alike; the final deadline differs by group, August 1 domestic and May 1 international. Decisions are released on a rolling basis."
+  },
+  "university-of-hawaii-at-hilo": {
+   "label": "UH Hilo freshman admissions",
+   "url": "https://hilo.hawaii.edu/admissions/freshman.php",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Fall: July 1st"
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "July 1"
+    }
+   ],
+   "manual": false,
+   "note": "UH Hilo presents one flat fall deadline and uses neither the word rolling nor priority, so it is recorded as a regular deadline. July 15 is the separate supporting-document deadline."
   }
  }
 }

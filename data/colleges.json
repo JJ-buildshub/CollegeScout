@@ -6790,7 +6790,13 @@
         "Early demonstrated interest in a specific college (e.g., shadowing hours for nursing, case competitions for business)"
       ]
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "December 4"
+      }
+    ],
     "financials": {
       "coaInState": 35392,
       "coaOutOfState": 60400,
@@ -6896,6 +6902,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of Alabama admissions (https://admissions.ua.edu/freshman/steps/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -21981,7 +21992,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "July 15"
+      }
+    ],
     "financials": {
       "coaInState": 24096,
       "coaOutOfState": 37680,
@@ -22073,6 +22090,11 @@
     "testingPolicyNote": "Scores are still used for maths and English course placement. UAA's catalog says scores are not used in the admissions decision \"for most programs\" without naming exceptions, so this label rests on the admissions FAQ.",
     "testingPolicyProvenance": {
       "source": "University of Alaska Anchorage admissions (https://www.uaa.alaska.edu/admissions/apply/faq.cshtml)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "UAA admissions deadlines (https://www.uaa.alaska.edu/admissions/deadlines.cshtml)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -22662,7 +22684,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "August 1"
+      }
+    ],
     "financials": {
       "coaInState": 22808,
       "coaOutOfState": 28802,
@@ -22763,6 +22791,11 @@
       "source": "Arkansas Tech University admissions (https://www.atu.edu/admissions/requirements.php)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "applicationPlansProvenance": {
+      "source": "Arkansas Tech admission requirements (https://www.atu.edu/admissions/requirements.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -23076,7 +23109,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 62798,
       "coaOutOfState": 62798,
@@ -23175,6 +23219,11 @@
     "testingPolicyNote": "The page says test-optional \"for most undergraduate programs\" without naming an exception; no ERAU page identifies a programme that requires scores.",
     "testingPolicyProvenance": {
       "source": "Embry-Riddle admissions (https://erau.edu/admissions/undergraduate-admissions/first-time-students)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Embry-Riddle Prescott admissions (https://prescott.erau.edu/admissions/apply)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -23343,7 +23392,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 15"
+      },
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 75649,
       "coaOutOfState": 75649,
@@ -23440,6 +23500,11 @@
       "source": "ArtCenter admissions (https://www.artcenter.edu/admissions/undergraduate-admissions/application-requirements.html)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "ArtCenter important dates (https://www.artcenter.edu/admissions/undergraduate-admissions/important-dates.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -23469,7 +23534,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "March 1"
+      }
+    ],
     "financials": {
       "coaInState": 56313,
       "coaOutOfState": 56313,
@@ -23569,6 +23640,11 @@
       "source": "Azusa Pacific admissions (https://www.apu.edu/undergraduate-admissions/requirements/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Azusa Pacific freshman admissions (https://www.apu.edu/undergraduate-admissions/freshman/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -23598,7 +23674,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 5"
+      }
+    ],
     "financials": {
       "coaInState": 77560,
       "coaOutOfState": 77560,
@@ -23693,6 +23775,11 @@
     "testingPolicyNote": "CalArts still publishes its CEEB and ACT codes for applicants who choose to submit, so scores are read rather than disregarded.",
     "testingPolicyProvenance": {
       "source": "CalArts admissions (https://calarts.edu/admissions-aid/admissions/application-process)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "CalArts application deadlines (https://calarts.edu/admissions-aid/admissions/application-process/application-deadlines-and-fees)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -23862,7 +23949,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "December 1"
+      }
+    ],
     "financials": {
       "coaInState": 57989,
       "coaOutOfState": 57989,
@@ -23957,6 +24050,11 @@
     "testingPolicyNote": "The page lists SAT/ACT scores among optional supplementary materials rather than stating a named policy.",
     "testingPolicyProvenance": {
       "source": "LCAD admissions (https://www.lcad.edu/first-year-students/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "LCAD how to apply (https://www.lcad.edu/how-to-apply-bfa/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -27233,7 +27331,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 25098,
       "coaOutOfState": 25098,
@@ -27332,6 +27436,11 @@
     "testingPolicyNote": "BYU-Hawaii's course catalog still carries pre-2020 text saying the ACT or SAT is required. Two admissions-office pages state the opposite and are treated as authoritative; worth re-checking next cycle.",
     "testingPolicyProvenance": {
       "source": "BYU-Hawaii admissions (https://admissions.byuh.edu/new-domestic-students)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "BYU-Hawaii application deadlines (https://admissions.byuh.edu/application-deadlines-decisions-schedule)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -27508,7 +27617,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "July 1"
+      }
+    ],
     "financials": {
       "coaInState": 21173,
       "coaOutOfState": 34133,
@@ -27607,6 +27722,11 @@
     "testingPolicyNote": "Admission is earned on GPA alone; scores are a second route for applicants below a 2.7.",
     "testingPolicyProvenance": {
       "source": "UH Hilo catalog (https://hilo.hawaii.edu/catalog/admission-of-first-time-freshmen)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "UH Hilo freshman admissions (https://hilo.hawaii.edu/admissions/freshman.php)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
