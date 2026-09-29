@@ -4854,6 +4854,132 @@
    ],
    "manual": false,
    "note": "UH Hilo presents one flat fall deadline and uses neither the word rolling nor priority, so it is recorded as a regular deadline. July 15 is the separate supporting-document deadline."
+  },
+  "massachusetts-college-of-art-and-design": {
+   "label": "MassArt how to apply",
+   "url": "https://massart.edu/admissions/first-time-undergraduates/how-to-apply/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "To be considered, you must submit all application requirements by December 1, be in good academic standing at your current school, and indicate your interest in Early Action on your application.",
+    "Applications received after the priority deadline are considered on an ongoing, space-available basis."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "February 15"
+    }
+   ],
+   "manual": false,
+   "note": "February 15 is the priority application date, after which applications are considered on a space-available basis. March 1 on the same table is the financial aid priority date."
+  },
+  "springfield-college": {
+   "label": "Springfield College first-year deadlines",
+   "url": "https://springfield.edu/admissions/undergraduate-admissions/dates-and-deadlines",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Springfield College accepts applications on a rolling admissions basis for all programs.",
+    "December 1: Application Deadline",
+    "January 15: Application Deadline"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "December 1"
+    },
+    {
+     "type": "ED2",
+     "binding": true,
+     "deadline": "January 15"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": false,
+   "note": "Springfield is rolling for all programmes and additionally offers two binding Early Decision rounds. Its Physical Therapy and Physician Assistant programmes happen to use the same two dates for their own separate deadlines. The January 1 and February 1 dates are credential deadlines and May 1 is the enrolment deposit."
+  },
+  "the-new-england-conservatory-of-music": {
+   "label": "New England Conservatory undergraduate applicants",
+   "url": "https://necmusic.edu/admissions/undergraduate-applicants/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "To complete an application for undergraduate admission, submit the following materials using the online application by December 1."
+   ],
+   "plans": [
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "December 1"
+    }
+   ],
+   "manual": true,
+   "note": "The November 1 date on the same page governs spring entry, not fall. The January 15, February 15, March 1, February 1 and May 1 dates are for recommendations, aid, English retesting, video auditions and enrolment respectively."
+  },
+  "hillsdale-college": {
+   "label": "Hillsdale College admissions",
+   "url": "https://www.hillsdale.edu/admissions/apply/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Early Decision November 1",
+    "Regular Decision March 15"
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "March 15"
+    }
+   ],
+   "manual": false,
+   "note": "A third row on the same page, also dated November 1, governs spring entry. The November 15 and December 15 dates are scholarship consideration dates, and February 1 and May 1 are enrolment deposits."
+  },
+  "lawrence-technological-university": {
+   "label": "Lawrence Technological University admissions",
+   "url": "https://ltu.edu/admissions/first-year-students/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "LTU has a rolling admission policy. That means qualified applicants are accepted in the order that they apply."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": false,
+   "note": "Lawrence Tech publishes no priority or preferred admission date. The only other date in its deadlines section is the FAFSA opening."
+  },
+  "northwood-university": {
+   "label": "Northwood University admissions",
+   "url": "https://www.northwood.edu/admissions/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "The deadline to apply to Northwood is a week before classes start. We accept students up until the start of the semester."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": false,
+   "note": "Northwood publishes no calendar admission date. The priority-deadline wording on its site appears in a financial aid answer rather than an admissions one."
   }
  }
 }

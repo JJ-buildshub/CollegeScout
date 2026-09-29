@@ -31967,7 +31967,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "December 1"
+      },
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "February 15"
+      }
+    ],
     "financials": {
       "coaInState": 34239,
       "coaOutOfState": 62239,
@@ -32062,6 +32073,11 @@
     "testingPolicyNote": "MassArt reserves the right to use submitted scores in institutional profile reports for enrolled students.",
     "testingPolicyProvenance": {
       "source": "MassArt admissions (https://massart.edu/admissions/first-time-undergraduates/admissions-standards/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "MassArt how to apply (https://massart.edu/admissions/first-time-undergraduates/how-to-apply/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -32394,7 +32410,23 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "December 1"
+      },
+      {
+        "type": "ED2",
+        "binding": true,
+        "deadline": "January 15"
+      },
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 60729,
       "coaOutOfState": 60729,
@@ -32493,6 +32525,11 @@
     "testingPolicyNote": "Submitted scores have no impact on merit-based aid and may not influence the admission decision.",
     "testingPolicyProvenance": {
       "source": "Springfield College admissions (https://springfield.edu/admissions/undergraduate-admissions/application-checklist-first-year-students)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Springfield College first-year deadlines (https://springfield.edu/admissions/undergraduate-admissions/dates-and-deadlines)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -32671,7 +32708,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "December 1"
+      }
+    ],
     "financials": {
       "coaInState": 81277,
       "coaOutOfState": 81277,
@@ -32766,6 +32809,11 @@
     "testingPolicyNote": "NEC's own website never mentions SAT or ACT: its undergraduate requirements list, FAQs and site search all return nothing. The policy is stated only in the official catalog. A TOEFL score is required of applicants whose native language is not English.",
     "testingPolicyProvenance": {
       "source": "New England Conservatory 2026-27 academic catalog (https://necmusic.smartcatalogiq.com/en/2026-2027/nec-academic-catalog-2026-2027/nec-admissions-policies)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "New England Conservatory undergraduate applicants (https://necmusic.edu/admissions/undergraduate-applicants/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -33657,7 +33705,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "March 15"
+      }
+    ],
     "financials": {
       "coaInState": null,
       "coaOutOfState": null,
@@ -33741,6 +33800,11 @@
       "source": "Hillsdale College admissions (https://www.hillsdale.edu/admissions-aid/admissions-2/application-process-2/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Hillsdale College admissions (https://www.hillsdale.edu/admissions/apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -33770,7 +33834,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 58166,
       "coaOutOfState": 58166,
@@ -33867,6 +33937,11 @@
       "source": "Lawrence Technological University admissions (https://ltu.edu/admissions/first-year-students/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Lawrence Technological University admissions (https://ltu.edu/admissions/first-year-students/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -33896,7 +33971,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 48780,
       "coaOutOfState": 48780,
@@ -33990,6 +34071,11 @@
     "admitRateOverallSuperseded": true,
     "testingPolicyNote": "Scores are encouraged because they may open up more merit scholarships. Northwood's 2019-20 and 2020-21 catalog PDFs are still hosted on its site and treat scores as required; the live admissions page governs.",
     "testingPolicyProvenance": {
+      "source": "Northwood University admissions (https://www.northwood.edu/admissions/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
       "source": "Northwood University admissions (https://www.northwood.edu/admissions/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
