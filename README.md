@@ -53,9 +53,9 @@ Current coverage, out of 336:
 
 | Field | Sourced |
 | --- | --- |
-| Application plans and deadlines | 279 |
-| Testing policy | 222 |
-| Admissions | 211 |
+| Application plans and deadlines | 331 |
+| Testing policy | 332 |
+| Admissions | 336 |
 | Cost | 208 |
 | GPA / SAT | 158 |
 | Career outcomes | 0 |
@@ -66,7 +66,22 @@ College Scorecard earnings figures that do carry a source are retained in
 `careerOutcomes.earnings` for when the section returns. Note that those measure
 median earnings 10 years after entry, not a first-job starting salary.
 
-Verification runs in batches: `verification/*-quotes.json` holds a quote from
-each school's own page, `scripts/check-reviewed-*.mjs` re-checks those quotes
-against the live page, and `scripts/apply-reviewed-*.py --apply` writes the
-result.
+Verification runs in batches. `data/reviewed-*.json` holds, for each school, a
+quote from its own page and the URL that quote sits on;
+`scripts/check-reviewed-*.mjs` re-fetches every page and confirms the quote is
+still there, word for word; `scripts/apply-reviewed-*.py --apply` writes the
+result into `colleges.json`. Entries on pages that block automated reading are
+marked `manual` and are skipped by the checker.
+
+The check proves a sentence exists on a page. It cannot prove the sentence means
+what we took it to mean, and that is where the real errors live. Every one of
+these was a real, verbatim, on-page sentence that would have produced a wrong
+record: a deadline that governed international applicants, a "regular decision"
+date that was a scholarship deadline, a testing requirement that applied only to
+home-schooled applicants, a page still showing the previous cycle, a policy
+stated only on a Spanish-language page. A quote that passes the checker still
+needs a person to read what it governs.
+
+Where a school contradicts itself, the admissions site wins over the catalog —
+catalogs routinely carry pre-2020 text. Where a school publishes nothing, the
+record says so rather than inheriting a plausible date from elsewhere.
