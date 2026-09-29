@@ -2169,6 +2169,190 @@
     "If you're applying for first year admission for Fall 2027, you'll have the choice of sharing or not sharing standardized test scores."
    ],
    "manual": true
+  },
+  "bowdoin-college": {
+   "policy": "Test-Optional",
+   "label": "Bowdoin College admissions",
+   "url": "https://www.bowdoin.edu/admissions/apply/test-optional-policy/index.html",
+   "evidence": [
+    "For candidates electing to submit them, test scores will be reviewed along with other indicators of academic ability."
+   ],
+   "accessed": "2026-09-28",
+   "manual": false
+  },
+  "middlebury-college": {
+   "policy": "Test-Optional",
+   "label": "Middlebury College admissions",
+   "url": "https://www.middlebury.edu/college/admissions/apply/standardized-tests",
+   "evidence": [
+    "Middlebury is test optional."
+   ],
+   "accessed": "2026-09-28",
+   "manual": false
+  },
+  "carleton-college": {
+   "policy": "Test-Optional",
+   "label": "Carleton College admissions",
+   "url": "https://www.carleton.edu/admissions/apply/steps/materials/",
+   "evidence": [
+    "As of 2025, Carleton has adopted a permanent test-optional policy for all applicants."
+   ],
+   "accessed": "2026-09-28",
+   "manual": false
+  },
+  "colgate-university": {
+   "policy": "Test-Optional",
+   "label": "Colgate University admission",
+   "url": "https://www.colgate.edu/admission-aid/apply",
+   "evidence": [
+    "Submission of SAT and ACT scores is optional for Colgate applicants."
+   ],
+   "accessed": "2026-09-28",
+   "manual": false
+  },
+  "vassar-college": {
+   "policy": "Test-Optional",
+   "label": "Vassar College admission",
+   "url": "https://www.vassar.edu/admission/apply/requirements/",
+   "evidence": [
+    "Vassar does not require applicants to submit SAT or ACT scores."
+   ],
+   "accessed": "2026-09-28",
+   "manual": false
+  },
+  "hamilton-college": {
+   "policy": "Test-Optional",
+   "label": "Hamilton College admission",
+   "url": "https://www.hamilton.edu/admission/apply/testing",
+   "evidence": [
+    "All candidates are given full consideration, regardless of whether they include scores as part of their application."
+   ],
+   "accessed": "2026-09-28",
+   "manual": false
+  },
+  "university-of-illinois-urbana-champaign": {
+   "policy": "Test-Optional",
+   "label": "UIUC admissions",
+   "url": "https://admissions.illinois.edu/faq/applicant-freshman",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "Yes, ACT/SAT scores are optional for all first-year applicants, including international students, homeschooled students, and recruited student-athletes."
+   ],
+   "manual": false,
+   "note": "Applicants with a gap year must submit test scores."
+  },
+  "rensselaer-polytechnic-institute": {
+   "policy": "Test-Optional",
+   "label": "RPI undergraduate admissions",
+   "url": "https://undergrad.admissions.rpi.edu/prospective-students/prospective-students-frequently-asked-questions/fall-2027-admission-cycle-test",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "RPI will remain test-optional through the Fall 2030 application cycle."
+   ],
+   "manual": false,
+   "note": "The Physician-Scientist Program (B.S./M.D.) with Albany Medical College still requires official SAT or ACT scores."
+  },
+  "claremont-mckenna-college": {
+   "policy": "Test-Optional",
+   "label": "Claremont McKenna admission",
+   "url": "https://www.cmc.edu/admission/first-year-application-instructions/test-optional-policy-faq",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "CMC has decided to extend our test-optional policy through the Fall 2027 admission cycle."
+   ],
+   "manual": false,
+   "note": "CMC states it will return to a test-required policy for the Fall 2028 admission cycle."
+  },
+  "harvey-mudd-college": {
+   "policy": "Test-Optional",
+   "label": "Harvey Mudd admission",
+   "url": "https://www.hmc.edu/admission/apply/",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "HMC extends its ACT/SAT optional pilot for another year, through 2027."
+   ],
+   "manual": false
+  },
+  "occidental-college": {
+   "policy": "Test-Optional",
+   "label": "Occidental College admission",
+   "url": "https://www.oxy.edu/admission-aid/apply/test-optional-admission-policy",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "Occidental is test-optional for all students."
+   ],
+   "manual": false
+  },
+  "loyola-marymount-university": {
+   "policy": "Test-Optional",
+   "label": "LMU admission",
+   "url": "https://admission.lmu.edu/learnmore/prospectivestudents/first-yearapplicants/",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "The ACT or SAT is optional for students."
+   ],
+   "manual": false
+  },
+  "university-of-san-francisco": {
+   "policy": "Test-Optional",
+   "label": "University of San Francisco admission",
+   "url": "https://www.usfca.edu/admission/undergraduate/what-we-look-for",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "USF does not require students to submit standardized test scores when applying for undergraduate admission."
+   ],
+   "manual": true
+  },
+  "chapman-university": {
+   "policy": "Test-Optional",
+   "label": "Chapman University admission",
+   "url": "https://www.chapman.edu/admission/undergraduate/how-to-apply/test-optional.aspx",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "Chapman University's undergraduate programs have a test-optional admission policy."
+   ],
+   "manual": false
+  },
+  "pepperdine-university": {
+   "policy": "Test-Optional",
+   "label": "Pepperdine admission",
+   "url": "https://admission.pepperdine.edu/apply/undergraduate/requirements/test-scores.htm",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "Pepperdine is test optional."
+   ],
+   "manual": false,
+   "note": "Scores are still required to be considered for the Regents Scholars Program scholarship, though not for admission."
+  },
+  "university-of-the-pacific": {
+   "policy": "Test-Optional",
+   "label": "University of the Pacific admission",
+   "url": "https://www.pacific.edu/admission/undergraduate/test-scores",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "You can provide a test score if you are proud of that score and want to share it with us, or you do not need to share a test score to have your application be complete."
+   ],
+   "manual": false
+  },
+  "university-of-redlands": {
+   "policy": "Test-Optional",
+   "label": "University of Redlands admissions",
+   "url": "https://www.redlands.edu/admissions-and-aid/first-year/how-to-apply",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "Redlands is a test-optional institution, and the choice will be yours to make as to whether you submit your test scores or not."
+   ],
+   "manual": true
+  },
+  "wellesley-college": {
+   "policy": "Test-Optional",
+   "label": "Wellesley College admission",
+   "url": "https://www.wellesley.edu/admission-aid/faqs",
+   "accessed": "2026-09-28",
+   "evidence": [
+    "Wellesley College will continue to be test optional for those applying for entry in fall 2027."
+   ],
+   "manual": false
   }
  }
 }
