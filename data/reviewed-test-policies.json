@@ -2911,6 +2911,17 @@
    ],
    "manual": false,
    "note": "GPA alone is a complete route to admission. Home-schooled applicants and graduates of unaccredited high schools have no GPA-only route, so a score is required for them."
+  },
+  "arkansas-state-university": {
+   "policy": "Test-Required",
+   "label": "Arkansas State undergraduate admissions",
+   "url": "https://www.astate.edu/admissions-and-aid/undergraduate-admissions/undergraduate-admissions-requirements.html",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Freshman applicants meeting one of the following criteria are automatically admitted to A-State (minimum test scores still required):"
+   ],
+   "manual": false,
+   "note": "A-State accepts the Accuplacer in place of the ACT or SAT, so a test score is required but it need not be the SAT or ACT."
   }
  }
 }
