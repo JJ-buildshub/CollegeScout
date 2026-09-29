@@ -166,7 +166,7 @@
     "testingPolicyProvenance": {
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -338,7 +338,7 @@
     "testingPolicyProvenance": {
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -510,7 +510,7 @@
     "testingPolicyProvenance": {
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -681,7 +681,7 @@
     "testingPolicyProvenance": {
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -854,7 +854,7 @@
     "testingPolicyProvenance": {
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -1027,7 +1027,7 @@
     "testingPolicyProvenance": {
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -1200,7 +1200,7 @@
     "testingPolicyProvenance": {
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -1373,7 +1373,7 @@
     "testingPolicyProvenance": {
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -1545,7 +1545,7 @@
     "testingPolicyProvenance": {
       "source": "University of California admissions (system-wide) (https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/filling-out-the-application.html)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -1716,7 +1716,7 @@
     "testingPolicyProvenance": {
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -1889,7 +1889,7 @@
     "testingPolicyProvenance": {
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -2060,7 +2060,7 @@
     "testingPolicyProvenance": {
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -2231,7 +2231,7 @@
     "testingPolicyProvenance": {
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -2401,7 +2401,7 @@
     "testingPolicyProvenance": {
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -2756,7 +2756,7 @@
     "testingPolicyProvenance": {
       "source": "USC Undergraduate Admission (https://admission.usc.edu/apply/first-year/)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -2932,6 +2932,11 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "testingPolicyProvenance": {
+      "source": "Santa Clara University admission (https://www.scu.edu/admission/undergraduate/first-year-students/test-optional/)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -4652,7 +4657,7 @@
     "testingPolicyProvenance": {
       "source": "Dartmouth Admissions (https://admissions.dartmouth.edu/apply/testing-policy)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -4825,7 +4830,7 @@
     "testingPolicyProvenance": {
       "source": "Caltech Undergraduate Admissions (https://www.admissions.caltech.edu/apply/first-year-applicants/standardized-tests)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -5323,6 +5328,12 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "testingPolicyNote": "Scores are not required, but the UW may read them for a small number of applicants, and home-schooled applicants or those from schools without letter or numeric grades are still required to submit them.",
+    "testingPolicyProvenance": {
+      "source": "University of Washington admissions (https://admit.washington.edu/apply/first-year/how-to-apply/test-scores/)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -5671,6 +5682,11 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "testingPolicyProvenance": {
+      "source": "Georgia Tech admission (https://admission.gatech.edu/first-year/standardized-tests)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -6026,7 +6042,7 @@
     "testingPolicyProvenance": {
       "source": "Northeastern University Undergraduate Admissions (https://admissions.northeastern.edu/application-information/first-year-applicants/)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -6205,7 +6221,7 @@
     "testingPolicyProvenance": {
       "source": "Pomona College Admissions (https://www.pomona.edu/admissions/apply/first-year-applicants)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -7049,6 +7065,11 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "testingPolicyProvenance": {
+      "source": "Tufts admissions (https://admissions.tufts.edu/apply/applying-to-tufts/sat-and-act-tests/)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -7218,7 +7239,7 @@
     "testingPolicyProvenance": {
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -7388,7 +7409,7 @@
     "testingPolicyProvenance": {
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -7558,7 +7579,7 @@
     "testingPolicyProvenance": {
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -7727,7 +7748,7 @@
     "testingPolicyProvenance": {
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -7896,7 +7917,7 @@
     "testingPolicyProvenance": {
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -8065,7 +8086,7 @@
     "testingPolicyProvenance": {
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -8234,7 +8255,7 @@
     "testingPolicyProvenance": {
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -8403,7 +8424,7 @@
     "testingPolicyProvenance": {
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -8572,7 +8593,7 @@
     "testingPolicyProvenance": {
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -8736,7 +8757,7 @@
     "testingPolicyProvenance": {
       "source": "The California State University (system-wide testing requirements) (https://www.calstate.edu/apply/freshman/getting_into_the_csu/Pages/testing-requirements.aspx)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -9225,7 +9246,7 @@
     "testingPolicyProvenance": {
       "source": "Scripps College Admission (https://www.scrippscollege.edu/admission/apply/first-year)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-09-23"
     }
   },
   {
@@ -10706,6 +10727,11 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "testingPolicyProvenance": {
+      "source": "Amherst College admission (https://www.amherst.edu/admission/apply/firstyear/testing)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -10871,6 +10897,11 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "testingPolicyProvenance": {
+      "source": "Swarthmore College admissions (https://www.swarthmore.edu/admissions-aid/standardized-testing-policy)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -12679,6 +12710,12 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "testingPolicyNote": "UChicago reads submitted scores but will not let them count against an applicant.",
+    "testingPolicyProvenance": {
+      "source": "UChicago college admissions (https://collegeadmissions.uchicago.edu/apply/application/required-materials/)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -14703,6 +14740,11 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "testingPolicyProvenance": {
+      "source": "UVA admission (https://admission.virginia.edu/admission/deadlines-instructions)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -15388,6 +15430,12 @@
     "applicationPlansProvenance": {
       "source": "UW-Madison admissions (https://admissions.wisc.edu/deadlines/)",
       "year": "2026-27"
+    },
+    "testingPolicyNote": "The waiver is confirmed through Spring 2028; the Board of Regents has not yet decided on Fall 2028 and beyond.",
+    "testingPolicyProvenance": {
+      "source": "UW-Madison admissions (https://admissions.wisc.edu/act_sat_faq/)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -19170,6 +19218,11 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "testingPolicyProvenance": {
+      "source": "NYU undergraduate admissions (https://www.nyu.edu/admissions/undergraduate-admissions/how-to-apply/standardized-tests.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -19521,6 +19574,11 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "testingPolicyProvenance": {
+      "source": "Emory University admission (https://apply.emory.edu/apply/requirements/exams)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -19871,6 +19929,11 @@
     "applicationPlansProvenance": {
       "source": "Common App requirements grid (https://content.commonapp.org/Files/ReqGrid.pdf)",
       "year": "2026-27"
+    },
+    "testingPolicyProvenance": {
+      "source": "Boston University admissions (https://www.bu.edu/admissions/apply/first-year/test-policy/)",
+      "year": "2026-27",
+      "accessed": "2026-09-28"
     }
   },
   {
@@ -26303,7 +26366,7 @@
       "year": "2026-27",
       "accessed": "2026-09-22"
     },
-    "testingPolicyNote": "Policy is conditional on a recalculated GPA of 3.2 or higher; a subordinate freshman-requirements subpage has not yet been updated and still shows an older Fall 2023-Fall 2026 sunset window, but the main admissions page states the window runs through Summer 2027.",
+    "testingPolicyNote": "Policy is conditional on a recalculated GPA of 3.2 or higher. The window now runs through Summer 2028; it read Summer 2027 when this was first recorded, so the school extended it rather than changing the policy.",
     "testingPolicyProvenance": {
       "source": "University of West Georgia admissions (https://www.westga.edu/undergraduate-admissions/index.php)",
       "year": "2026-27",
@@ -29318,7 +29381,8 @@
       "source": "Wichita State University admissions (https://www.wichita.edu/admissions/undergraduate/faq.php)",
       "year": "2026-27",
       "accessed": "2026-09-22"
-    }
+    },
+    "testingPolicyNote": "The admissions FAQ renders its answers with JavaScript, so the quote cannot be checked by fetching the HTML. Confirmed by reading the page in a browser."
   },
   {
     "id": "eastern-kentucky-university",
