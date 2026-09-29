@@ -2608,6 +2608,134 @@
     "At UConn, we understand that one test may not accurately define a student’s academic progress and potential, which is why we are allowing first-year applicants the choice to submit standardized test results for the foreseeable future."
    ],
    "manual": false
+  },
+  "clemson-university": {
+   "policy": "Test-Optional",
+   "label": "Clemson University admissions",
+   "url": "https://www.clemson.edu/admissions/undergraduate-admissions/apply/first-year.html",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Clemson has adopted a test-optional policy."
+   ],
+   "manual": false
+  },
+  "michigan-state-university": {
+   "policy": "Test-Optional",
+   "label": "Michigan State University admissions",
+   "url": "https://admissions.msu.edu/apply/first-year/act-sat-test-optional",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "MSU is test optional, which means that prospective first-year students have the opportunity to apply for admission without submitting an ACT or SAT score."
+   ],
+   "manual": false
+  },
+  "university-of-iowa": {
+   "policy": "Test-Optional",
+   "label": "University of Iowa admissions",
+   "url": "https://admissions.uiowa.edu/testing",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Applicants can self-report a test score on the application for admission or apply without providing a test score."
+   ],
+   "manual": false,
+   "note": "Direct Admission to the College of Nursing requires an ACT or SAT score, though admission to the university does not."
+  },
+  "washington-university-in-st-louis": {
+   "policy": "Test-Optional",
+   "label": "WashU admissions",
+   "url": "https://admissions.washu.edu/how-to-apply/first-year-us-applicants/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "WashU is test optional."
+   ],
+   "manual": false,
+   "note": "WashU's admissions leadership has said publicly it expects to announce a change to this policy; re-check before the next cycle."
+  },
+  "tulane-university": {
+   "policy": "Test-Optional",
+   "label": "Tulane University admission",
+   "url": "https://admission.tulane.edu/apply/instructions/standardized-tests",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "The submission of SAT or ACT scores will remain optional for Fall 2027 first-year and transfer admission to Tulane."
+   ],
+   "manual": false,
+   "note": "Scores are required for admission to Tulane's Pathways to Medicine program."
+  },
+  "boston-college": {
+   "policy": "Test-Optional",
+   "label": "Boston College admission",
+   "url": "https://www.bc.edu/bc-web/admission/apply/test-optional.html",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Boston College offers a test-optional admission policy."
+   ],
+   "manual": false,
+   "note": "Home-schooled applicants are strongly encouraged to submit scores so their applications can be read in context."
+  },
+  "university-of-miami": {
+   "policy": "Test-Required",
+   "label": "University of Miami admissions",
+   "url": "https://admissions.miami.edu/undergraduate/application-process/admission-requirements/testing-policy/index.html",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "The University of Miami requires prospective students to include standardized test scores as part of their undergraduate admission application."
+   ],
+   "manual": false,
+   "note": "Performance and portfolio programmes in music, the BFA programmes, architecture, applicants finishing secondary school outside the US and transfers with 24+ credits may apply with or without scores."
+  },
+  "wake-forest-university": {
+   "policy": "Test-Optional",
+   "label": "Wake Forest admissions",
+   "url": "https://admissions.wfu.edu/become-a-deacon/first-year/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "There is a sizable portion of our applicant pool that chooses to submit their scores, but neither the SAT or ACT are required in our admissions process."
+   ],
+   "manual": false,
+   "note": "Wake Forest has been test-optional since 2008, so its pages name no cycle."
+  },
+  "villanova-university": {
+   "policy": "Test-Optional",
+   "label": "Villanova University undergraduate admission",
+   "url": "https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/first-year-applicants.html",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Villanova University remains test-optional for applicants through the 2026-27 admission campaign (Class of 2031)."
+   ],
+   "manual": false,
+   "note": "Applicants home-schooled for more than one full academic year are required to submit SAT and/or ACT scores."
+  },
+  "university-of-georgia": {
+   "policy": "Test-Required",
+   "label": "University of Georgia admissions",
+   "url": "https://admissions.uga.edu/apply/first-year-applicants/first-year-criteria/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "There is no test optional pathway to UGA."
+   ],
+   "manual": false
+  },
+  "syracuse-university": {
+   "policy": "Test-Optional",
+   "label": "Syracuse University admissions",
+   "url": "https://www.syracuse.edu/admissions-aid/application-process/undergraduate/college-specific-requirements/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "SAT/ACT scores are not required for students applying for Fall 2026, Spring 2027, Fall 2027 or Spring 2028 admission."
+   ],
+   "manual": false
+  },
+  "university-of-alaska-anchorage": {
+   "policy": "Test-Free",
+   "label": "University of Alaska Anchorage admissions",
+   "url": "https://www.uaa.alaska.edu/admissions/apply/faq.cshtml",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Standardized test scores are not used in the Admission decision; however, they are used for placement into math and English courses."
+   ],
+   "manual": false,
+   "note": "Scores are still used for maths and English course placement. UAA's catalog says scores are not used in the admissions decision \"for most programs\" without naming exceptions, so this label rests on the admissions FAQ."
   }
  }
 }
