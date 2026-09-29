@@ -5323,6 +5323,93 @@
    ],
    "manual": false,
    "note": "December 1 and July 1 on the same page govern spring and summer entry. The February 1 and March 1 dates that circulate are scholarship and financial aid dates."
+  },
+  "university-of-mary": {
+   "label": "University of Mary admission requirements",
+   "url": "https://www.umary.edu/admission-aid/undergraduate-admissions/admission-requirements",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "We operate on a rolling admissions policy, so you can apply at any time. Once your application is complete, we will notify you of an admission decision within two weeks."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": false,
+   "note": "The July 1 Early Assurance and February 15 Direct Admission dates are applied for through the student portal after acceptance, so neither is a first-year application deadline."
+  },
+  "valley-city-state-university": {
+   "label": "Valley City State University 2026-27 catalog",
+   "url": "https://catalog.vcsu.edu/undergraduate-catalog/general-information/faq/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Although there isn’t an official application deadline, there are scholarship and financial aid deadlines, as well as residence hall room availability that may be jeopardized by applying late."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": false,
+   "note": "VCSU states outright that it has no application deadline. The scholarship and housing dates it references are undated on that page."
+  },
+  "university-of-nebraska-at-kearney": {
+   "label": "UNK academic policies handbook",
+   "url": "https://www.unk.edu/offices/registrar/academic_policies_handbook/Admission_Policies.php",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Undergraduate applications and the application fee should be deposited at least one month prior to the beginning of the student's first semester at UNK."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": false,
+   "note": "UNK's only guidance is relative rather than a calendar date. Neither its admissions pages nor its 2026-27 catalog publishes a first-year date; the dated deadlines on its site belong to Graduate Studies."
+  },
+  "plymouth-state-university": {
+   "label": "Plymouth State University first-year students",
+   "url": "https://www.plymouth.edu/admissions/undergraduate/first-year-students",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Fall Semester: Applications for Fall will continue to be accepted while space remains.",
+    "Candidates applying after deadlines may receive consideration on a space-available basis. The University reserves the right to close admission prior to the above deadlines if enrollment has reached full capacity."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": false,
+   "note": "The December 1 date on the same page governs spring entry, and the May 1 and January 3 dates are enrolment deposits."
+  },
+  "nevada-state-university": {
+   "label": "Nevada State University application information",
+   "url": "https://nevadastate.edu/admissions/application-information/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Priority Submission: July 1, 2027",
+    "You are a First Year Student if you have never attended college before and are applying to begin your college experience."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "July 1"
+    }
+   ],
+   "manual": false,
+   "note": "July 1 is the first-year priority date for Fall 2027. Other tabs on the same page carry different priority dates that do not apply to first-year applicants: August 10 for transfers and August 1 for returning students. July 15 is the transcript deadline."
   }
  }
 }
