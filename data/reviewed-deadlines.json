@@ -5565,6 +5565,110 @@
    ],
    "manual": true,
    "note": "WVSU's admissions pages publish no deadline, so the catalog governs. Its October 1 and March 1 dates are for submitting official records rather than the application itself, and its three-month rule applies to international applicants."
+  },
+  "yeshiva-university": {
+   "label": "Yeshiva University deadlines",
+   "url": "https://apply.yu.edu/deadlines",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "*Any applications received or completed after the posted deadline, (excluding honors for which there is no waitlist) will be waitlisted and considered for admission based on availability."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 2"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ],
+   "manual": false,
+   "note": "The November 2 Early Decision round is the Honors route: Yeshiva states that all Honors applicants must apply through Early Decision. February 1 is the general route. December 15 on the same page is spring entry."
+  },
+  "northeastern-state-university": {
+   "label": "Northeastern State University admissions FAQ",
+   "url": "https://nsuok.edu/AboutUs/FAQs/Admissions.aspx",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "The application deadline for the fall semester is August 1, spring is December 1, and summer is May 1.",
+    "You are encouraged to apply early."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "August 1"
+    }
+   ],
+   "manual": false,
+   "note": "NSU's own catalog independently gives August 1 for fall and frames it as a date applications should be received before. NSU publishes no named admission rounds."
+  },
+  "pacific-northwest-college-of-art": {
+   "label": "PNCA undergraduate admissions",
+   "url": "https://pnca.willamette.edu/admissions/apply/undergraduate",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Fall 2027 Early Application Deadline is November 15",
+    "Apply by midnight on February 1st to be eligible for all of our top juried scholarships and top merit-based scholarships for Fall."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "February 1"
+    }
+   ],
+   "manual": false,
+   "note": "PNCA keeps its own dates and does not share Willamette's College of Arts and Sciences deadlines of November 1 and January 15. February 1 is PNCA's priority date rather than a final cutoff; November 15 is its one unambiguous hard date. The November 1 date on its page governs spring entry."
+  },
+  "marywood-university": {
+   "label": "Marywood University 2026-27 undergraduate catalog",
+   "url": "https://marywood.smartcatalogiq.com/en/2026-2027/undergraduate-catalog/undergraduate-admission",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Marywood’s Office of University Admissions operates on a rolling admissions basis which means applications are accepted at any time."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": true,
+   "note": "Marywood's admissions pages publish no first-year deadline, so this comes from its catalog. The March 1 date on its site governs talent awards in art, music and theatre, and the June 1 and November 1 dates appear only on its international page."
+  },
+  "moore-college-of-art-and-design": {
+   "label": "Moore College of Art and Design how to apply",
+   "url": "https://moore.edu/admissions-aid/undergraduate-students/how-to-apply/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Students who submit their application, transcript, and portfolio by December 7, 2026 will receive a decision by the end of December.",
+    "While there are no formal deadlines for all programs, we recommend submitting your application by the priority date of December 8.",
+    "Moore reviews and accepts applications on an ongoing basis throughout the year as space remains available in each program."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 7"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "December 8"
+    }
+   ],
+   "manual": false,
+   "note": "Moore states there is no final cutoff and continues evaluating applicants until orientation. The $1,000 grant attached to the December 8 priority date is an incentive rather than the date's purpose."
   }
  }
 }
