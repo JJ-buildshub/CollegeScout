@@ -2791,6 +2791,126 @@
    ],
    "manual": false,
    "note": "Lawrence Tech's own label is test-optional, but its page states submitted scores do not influence the admission decision and are used only for course placement and scholarship upgrades."
+  },
+  "embry-riddle-aeronautical-university-prescott": {
+   "policy": "Test-Optional",
+   "label": "Embry-Riddle admissions",
+   "url": "https://erau.edu/admissions/undergraduate-admissions/first-time-students",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Embry-Riddle is test-optional for most undergraduate programs."
+   ],
+   "manual": false,
+   "note": "The page says test-optional \"for most undergraduate programs\" without naming an exception; no ERAU page identifies a programme that requires scores."
+  },
+  "art-center-college-of-design": {
+   "policy": "Test-Optional",
+   "label": "ArtCenter admissions",
+   "url": "https://www.artcenter.edu/admissions/undergraduate-admissions/application-requirements.html",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Effective with applicants for Spring 2019 and forward, the submission of SAT or ACT scores is optional."
+   ],
+   "manual": false,
+   "note": "The policy sentence is dated to Spring 2019 but sits on the current application-requirements page, with no competing newer statement."
+  },
+  "azusa-pacific-university": {
+   "policy": "Test-Optional",
+   "label": "Azusa Pacific admissions",
+   "url": "https://www.apu.edu/undergraduate-admissions/requirements/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "SAT and ACT test scores are not required for admission."
+   ],
+   "manual": false,
+   "note": "Scores are encouraged because they may be used to determine additional academic scholarship awards, though not for admission."
+  },
+  "california-institute-of-the-arts": {
+   "policy": "Test-Optional",
+   "label": "CalArts admissions",
+   "url": "https://calarts.edu/admissions-aid/admissions/application-process",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "We do not require the SAT, ACT, or GRE as part of your application."
+   ],
+   "manual": false,
+   "note": "CalArts still publishes its CEEB and ACT codes for applicants who choose to submit, so scores are read rather than disregarded."
+  },
+  "laguna-college-of-art-and-design": {
+   "policy": "Test-Optional",
+   "label": "LCAD admissions",
+   "url": "https://www.lcad.edu/first-year-students/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "You also may submit SAT/ACT test scores and letters of recommendation—preferably from art instructor(s)."
+   ],
+   "manual": false,
+   "note": "The page lists SAT/ACT scores among optional supplementary materials rather than stating a named policy."
+  },
+  "brigham-young-university-hawaii": {
+   "policy": "Test-Optional",
+   "label": "BYU-Hawaii admissions",
+   "url": "https://admissions.byuh.edu/new-domestic-students",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Students have the option whether or not to report their ACT or SAT scores."
+   ],
+   "manual": false,
+   "note": "BYU-Hawaii's course catalog still carries pre-2020 text saying the ACT or SAT is required. Two admissions-office pages state the opposite and are treated as authoritative; worth re-checking next cycle."
+  },
+  "university-of-hawaii-at-hilo": {
+   "policy": "Test-Optional",
+   "label": "UH Hilo catalog",
+   "url": "https://hilo.hawaii.edu/catalog/admission-of-first-time-freshmen",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Inadmissible applicants with a cumulative GPA of less than a 2.7 have the option to submit their SAT or ACT test results for admission consideration."
+   ],
+   "manual": false,
+   "note": "Admission is earned on GPA alone; scores are a second route for applicants below a 2.7."
+  },
+  "lewis-clark-state-college": {
+   "policy": "Test-Optional",
+   "label": "Lewis-Clark State College admissions",
+   "url": "https://www.lcsc.edu/admissions/applicant-information/first-year-student",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Test scores are not required for admissions purposes."
+   ],
+   "manual": false,
+   "note": "Scores are recommended for course placement, where ALEKS or a writing placement exam is an accepted alternative."
+  },
+  "school-of-the-art-institute-of-chicago": {
+   "policy": "Test-Optional",
+   "label": "SAIC admissions",
+   "url": "https://www.saic.edu/admissions/undergraduate/faq",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "ACT and/or SAT scores are optional, but if you believe your scores provide additional insight into your academic abilities, please feel free to submit them."
+   ],
+   "manual": false
+  },
+  "marian-university": {
+   "policy": "Test-Blind",
+   "label": "Marian University 2026-27 undergraduate catalog",
+   "url": "https://www.marian.edu/academics/_assets/_documents/2026-27-Undergraduate-Catalog.pdf",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Marian University is test blind."
+   ],
+   "manual": true,
+   "note": "The catalog adds that scores are not used for admission or scholarship consideration, so there is no scholarship carve-out. Marian's HTML admission-requirements pages have been removed, leaving the catalog PDF as the only source on its own domain."
+  },
+  "emporia-state-university": {
+   "policy": "Test-Optional",
+   "label": "Emporia State University admissions",
+   "url": "https://www.emporia.edu/admissions-costs/admissions-and-costs/emporia-state-university-admissions/undergraduate-admissions-process/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "New, First-Time Undergraduates: Graduate from an accredited high school AND achieve one of the following: cumulative high school (unweighted) GPA of 2.25 or above OR ACT composite score of 21 or higher OR a new SAT composite score of 1060 or higher."
+   ],
+   "manual": false,
+   "note": "GPA alone is a complete route to admission. Home-schooled applicants and graduates of unaccredited high schools have no GPA-only route, so a score is required for them."
   }
  }
 }
