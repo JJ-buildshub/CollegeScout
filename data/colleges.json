@@ -44835,7 +44835,7 @@
     "admitRateOverall": 0.6058,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1050-1240 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -44947,7 +44947,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Applicants choose whether their scores are considered. Communication Sciences and Disorders prefers scores but does not require them.",
+    "testingPolicyProvenance": {
+      "source": "Marywood University undergraduate admissions (https://www.marywood.edu/admissions/undergraduate/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "moore-college-of-art-and-design",
@@ -49902,7 +49908,7 @@
     "admitRateOverall": 0.7046,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -49978,7 +49984,13 @@
         "provenance": null
       }
     },
-    "admitRateOverallSuperseded": false
+    "admitRateOverallSuperseded": false,
+    "testingPolicyNote": "Cornish is now Cornish College of the Arts at Seattle University; this page is the post-merger admissions checklist, which lists ACT or SAT scores as optional. The pre-merger catalog agrees on the policy but carries superseded deadlines.",
+    "testingPolicyProvenance": {
+      "source": "Cornish College of the Arts admissions (https://www.cornish.edu/admissions/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "washington-state-university",
@@ -50674,7 +50686,7 @@
     "admitRateOverall": 0.9862,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "830-1040 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -50786,7 +50798,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Fairmont State lists three routes to regular admission from the Fall 2026 cycle under the West Virginia HEPC standards, and the third is a 2.5 GPA with no test. The other two pair a lower GPA with an ACT 18 or SAT 960. Older text higher up the same page still implies recent graduates must submit scores; the dated HEPC block is newer and more specific and is taken as governing.",
+    "testingPolicyProvenance": {
+      "source": "Fairmont State University admissions checklist (https://www.fairmontstate.edu/admissions/checklist.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "marshall-university",

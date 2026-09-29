@@ -3054,6 +3054,39 @@
    ],
    "manual": false,
    "note": "Applicants with a weighted GPA between 2.5 and 2.8 must submit an ACT of 17 or an SAT of 930. Filmmaking sets its own threshold at 3.0. Scores are also an alternative route for applicants below the GPA minimum. UNCSA's required-documents pages still carry a superseded COVID-era waiver line."
+  },
+  "marywood-university": {
+   "policy": "Test-Optional",
+   "label": "Marywood University undergraduate admissions",
+   "url": "https://www.marywood.edu/admissions/undergraduate/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Students who have taken the SAT or ACT are encouraged, but not required, to submit their test scores with their application."
+   ],
+   "manual": false,
+   "note": "Applicants choose whether their scores are considered. Communication Sciences and Disorders prefers scores but does not require them."
+  },
+  "cornish-college-of-the-arts": {
+   "policy": "Test-Optional",
+   "label": "Cornish College of the Arts admissions",
+   "url": "https://www.cornish.edu/admissions/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Please note: If you choose to submit test scores, the writing sections of either test are not required."
+   ],
+   "manual": false,
+   "note": "Cornish is now Cornish College of the Arts at Seattle University; this page is the post-merger admissions checklist, which lists ACT or SAT scores as optional. The pre-merger catalog agrees on the policy but carries superseded deadlines."
+  },
+  "fairmont-state-university": {
+   "policy": "Test-Optional",
+   "label": "Fairmont State University admissions checklist",
+   "url": "https://www.fairmontstate.edu/admissions/checklist.aspx",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "3) A high school diploma with a high school GPA of 2.5"
+   ],
+   "manual": false,
+   "note": "Fairmont State lists three routes to regular admission from the Fall 2026 cycle under the West Virginia HEPC standards, and the third is a 2.5 GPA with no test. The other two pair a lower GPA with an ACT 18 or SAT 960. Older text higher up the same page still implies recent graduates must submit scores; the dated HEPC block is newer and more specific and is taken as governing."
   }
  }
 }
