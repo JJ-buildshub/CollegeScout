@@ -2353,6 +2353,70 @@
     "Wellesley College will continue to be test optional for those applying for entry in fall 2027."
    ],
    "manual": false
+  },
+  "university-of-rochester": {
+   "policy": "Test-Optional",
+   "label": "University of Rochester admissions",
+   "url": "https://admissions.rochester.edu/applying/testing-policies/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "The University of Rochester’s undergraduate admissions process is test optional."
+   ],
+   "manual": false,
+   "note": "English-language testing (TOEFL or IELTS) is still required for some students."
+  },
+  "university-of-florida": {
+   "policy": "Test-Required",
+   "label": "University of Florida admissions",
+   "url": "https://admissions.ufl.edu/apply/freshman/requirements",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "All applicants must submit test scores from the SAT, ACT and/or CLT."
+   ],
+   "manual": false
+  },
+  "indiana-university-bloomington": {
+   "policy": "Test-Optional",
+   "label": "Indiana University Bloomington admissions",
+   "url": "https://admissions.indiana.edu/test-optional/index.html",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Indiana University Bloomington is a test-optional institution providing students with the choice of whether to include test scores with their application for admission."
+   ],
+   "manual": false
+  },
+  "university-of-maryland": {
+   "policy": "Test-Optional",
+   "label": "University of Maryland admissions",
+   "url": "https://admissions.umd.edu/apply/freshman-application-faqs",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "UMD is currently test-optional and has extended this policy through to the Spring and Fall 2027 application cycles."
+   ],
+   "manual": false,
+   "note": "UMD has committed only through the Fall 2027 cycle and is assessing the policy beyond it."
+  },
+  "rutgers-university": {
+   "policy": "Test-Optional",
+   "label": "Rutgers University–New Brunswick admissions",
+   "url": "https://admissions.rutgers.edu/apply/first-year-applicants",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Rutgers University–New Brunswick is test optional."
+   ],
+   "manual": false,
+   "note": "The policy is set per campus: Rutgers–Newark is test blind, and Rutgers–Camden is test optional. This record covers New Brunswick."
+  },
+  "arizona-state-university": {
+   "policy": "Test-Optional",
+   "label": "Arizona State University admission",
+   "url": "https://admission.asu.edu/apply/first-year/admission",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "ACT or SAT scores are not required for admission, but may be submitted for ASU course placement or as supplemental information."
+   ],
+   "manual": false,
+   "note": "ASU's aptitude requirement can be met by class rank, GPA or a test score, so a test is one route among several."
   }
  }
 }

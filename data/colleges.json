@@ -14835,6 +14835,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "English-language testing (TOEFL or IELTS) is still required for some students.",
+    "testingPolicyProvenance": {
+      "source": "University of Rochester admissions (https://admissions.rochester.edu/applying/testing-policies/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -15363,6 +15369,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "University of Florida admissions (https://admissions.ufl.edu/apply/freshman/requirements)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -16065,6 +16076,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Indiana University Bloomington admissions (https://admissions.indiana.edu/test-optional/index.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -16235,6 +16251,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "UMD has committed only through the Fall 2027 cycle and is assessing the policy beyond it.",
+    "testingPolicyProvenance": {
+      "source": "University of Maryland admissions (https://admissions.umd.edu/apply/freshman-application-faqs)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -16405,6 +16427,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "The policy is set per campus: Rutgers–Newark is test blind, and Rutgers–Camden is test optional. This record covers New Brunswick.",
+    "testingPolicyProvenance": {
+      "source": "Rutgers University–New Brunswick admissions (https://admissions.rutgers.edu/apply/first-year-applicants)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -16749,6 +16777,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "ASU's aptitude requirement can be met by class rank, GPA or a test score, so a test is one route among several.",
+    "testingPolicyProvenance": {
+      "source": "Arizona State University admission (https://admission.asu.edu/apply/first-year/admission)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
