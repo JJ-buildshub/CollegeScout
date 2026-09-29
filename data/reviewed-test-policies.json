@@ -2988,6 +2988,72 @@
    ],
    "manual": false,
    "note": "MSM will read scores if an applicant feels they help, so they are optional rather than disregarded. Admission centres on an audition."
+  },
+  "the-new-england-conservatory-of-music": {
+   "policy": "Test-Optional",
+   "label": "New England Conservatory 2026-27 academic catalog",
+   "url": "https://necmusic.smartcatalogiq.com/en/2026-2027/nec-academic-catalog-2026-2027/nec-admissions-policies",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "NEC does not require the submission of any standardized test (SAT, ACT, GRE) scores as part of the admissions process, except for the Test of English as a Foreign Language (TOEFL)."
+   ],
+   "manual": false,
+   "note": "NEC's own website never mentions SAT or ACT: its undergraduate requirements list, FAQs and site search all return nothing. The policy is stated only in the official catalog. A TOEFL score is required of applicants whose native language is not English."
+  },
+  "northwood-university": {
+   "policy": "Test-Optional",
+   "label": "Northwood University admissions",
+   "url": "https://www.northwood.edu/admissions/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Test scores are not required for admission to Northwood University."
+   ],
+   "manual": false,
+   "note": "Scores are encouraged because they may open up more merit scholarships. Northwood's 2019-20 and 2020-21 catalog PDFs are still hosted on its site and treat scores as required; the live admissions page governs."
+  },
+  "kansas-city-art-institute": {
+   "policy": "Test-Optional",
+   "label": "Kansas City Art Institute admissions",
+   "url": "https://kcai.edu/admissions-aid/first-year-student/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "KCAI does not require standardized test scores."
+   ],
+   "manual": false,
+   "note": "Missouri applicants who may qualify for the Bright Flight program are asked to submit scores, so scores are accepted and used."
+  },
+  "mississippi-university-for-women": {
+   "policy": "Test-Optional",
+   "label": "Mississippi University for Women admissions",
+   "url": "https://www.muw.edu/admissions/freshman/requirements/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Complete the College Prep Curriculum with a minimum 3.2 GPA"
+   ],
+   "manual": false,
+   "note": "Admission has five routes and the first is GPA alone with no test. The other routes pair a lower GPA or class rank with an ACT or SAT minimum. The sentence search engines surface about scores being required applies to applicants without a high school diploma, not to regular freshmen. MUW never uses the phrase test-optional."
+  },
+  "campbell-university": {
+   "policy": "Test-Optional",
+   "label": "Campbell University admissions",
+   "url": "https://www.campbell.edu/admissions/undergraduate/high-school-student/admissions-requirements/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Starting in Fall 2022, undergraduate applicants have the option to be reviewed for admission and potential merit-based scholarships without submission of SAT or ACT score results."
+   ],
+   "manual": false,
+   "note": "Applicants within a year of high school graduation still need scores. The page names Fall 2022 but was last modified in April 2026, so the policy is current rather than COVID-era residue."
+  },
+  "university-of-north-carolina-school-of-the-arts": {
+   "policy": "Test-Optional",
+   "label": "UNCSA bulletin",
+   "url": "https://www.uncsa.edu/bulletin/current/undergraduate/admissions.aspx",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "A standardized test score is optional for a student with a weighted High School GPA greater than or equal to 2.8."
+   ],
+   "manual": false,
+   "note": "Applicants with a weighted GPA between 2.5 and 2.8 must submit an ACT of 17 or an SAT of 930. Filmmaking sets its own threshold at 3.0. Scores are also an alternative route for applicants below the GPA minimum. UNCSA's required-documents pages still carry a superseded COVID-era waiver line."
   }
  }
 }

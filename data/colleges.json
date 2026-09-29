@@ -32534,7 +32534,7 @@
     "admitRateOverall": 0.411,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -32642,7 +32642,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "NEC's own website never mentions SAT or ACT: its undergraduate requirements list, FAQs and site search all return nothing. The policy is stated only in the official catalog. A TOEFL score is required of applicants whose native language is not English.",
+    "testingPolicyProvenance": {
+      "source": "New England Conservatory 2026-27 academic catalog (https://necmusic.smartcatalogiq.com/en/2026-2027/nec-academic-catalog-2026-2027/nec-admissions-policies)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "university-of-massachusetts-amherst",
@@ -33753,7 +33759,7 @@
     "admitRateOverall": 0.6451,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -33861,7 +33867,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Scores are encouraged because they may open up more merit scholarships. Northwood's 2019-20 and 2020-21 catalog PDFs are still hosted on its site and treat scores as required; the live admissions page governs.",
+    "testingPolicyProvenance": {
+      "source": "Northwood University admissions (https://www.northwood.edu/admissions/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "wayne-state-university",
@@ -34589,7 +34601,7 @@
     "admitRateOverall": 0.5476,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -34697,7 +34709,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Missouri applicants who may qualify for the Bright Flight program are asked to submit scores, so scores are accepted and used.",
+    "testingPolicyProvenance": {
+      "source": "Kansas City Art Institute admissions (https://kcai.edu/admissions-aid/first-year-student/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "missouri-state-university-springfield",
@@ -35132,7 +35150,7 @@
     "admitRateOverall": 0.9031,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -35240,7 +35258,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Admission has five routes and the first is GPA alone with no test. The other routes pair a lower GPA or class rank with an ACT or SAT minimum. The sentence search engines surface about scores being required applies to applicants without a high school diploma, not to regular freshmen. MUW never uses the phrase test-optional.",
+    "testingPolicyProvenance": {
+      "source": "Mississippi University for Women admissions (https://www.muw.edu/admissions/freshman/requirements/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "university-of-mississippi",
@@ -35815,7 +35839,7 @@
     "admitRateOverall": 0.8718,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -35923,7 +35947,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Applicants within a year of high school graduation still need scores. The page names Fall 2022 but was last modified in April 2026, so the policy is current rather than COVID-era residue.",
+    "testingPolicyProvenance": {
+      "source": "Campbell University admissions (https://www.campbell.edu/admissions/undergraduate/high-school-student/admissions-requirements/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "davidson-college",
@@ -36675,7 +36705,7 @@
     "admitRateOverall": 0.2997,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1150-1350 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -36787,7 +36817,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Applicants with a weighted GPA between 2.5 and 2.8 must submit an ACT of 17 or an SAT of 930. Filmmaking sets its own threshold at 3.0. Scores are also an alternative route for applicants below the GPA minimum. UNCSA's required-documents pages still carry a superseded COVID-era waiver line.",
+    "testingPolicyProvenance": {
+      "source": "UNCSA bulletin (https://www.uncsa.edu/bulletin/current/undergraduate/admissions.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "university-of-north-carolina-wilmington",
