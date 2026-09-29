@@ -4980,6 +4980,122 @@
    ],
    "manual": false,
    "note": "Northwood publishes no calendar admission date. The priority-deadline wording on its site appears in a financial aid answer rather than an admissions one."
+  },
+  "lewis-clark-state-college": {
+   "label": "Lewis-Clark State College admissions",
+   "url": "https://www.lcsc.edu/admissions/applicant-information/first-year-student",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Decisions on applications are made on a rolling basis.",
+    "Aug 08 Fall Semester"
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "August 8"
+    }
+   ],
+   "manual": false,
+   "note": "The March 1 date that dominates search results is a financial aid and scholarship priority deadline under its own heading, not the application deadline. LC State's own catalog carries the same August 8 date."
+  },
+  "school-of-the-art-institute-of-chicago": {
+   "label": "SAIC how to apply",
+   "url": "https://www.saic.edu/admissions/undergraduate/how-apply-freshman",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "APR 15 Final Application Deadline*",
+    "*Applications received after these deadlines will be reviewed on a case-by-case basis."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 15"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "April 15"
+    }
+   ],
+   "manual": false,
+   "note": "The January 15 date widely cited as SAIC's regular deadline is, on SAIC's own page, the final merit scholarship deadline. The final application deadline for fall is April 15. The November 1 and January 1 dates on the same page belong to the spring admission table."
+  },
+  "marian-university": {
+   "label": "Marian University admissions",
+   "url": "https://www.marian.edu/admissions/application-process/high-school-students",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "To be considered for admission in the fall or spring semesters, submit your application to the Office of Undergraduate Admission by these dates.",
+    "Admission decisions are made on a rolling basis."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "July 31"
+    }
+   ],
+   "manual": false,
+   "note": "The November 1 date on Marian's site is an eligibility condition for named scholarships, with its own November 15 scholarship deadline, not an admission round. December 11 governs spring entry."
+  },
+  "emporia-state-university": {
+   "label": "Emporia State University 2026-27 catalog",
+   "url": "https://www.emporia.edu/documents/4334/2026-2027_ESU_Catalog.pdf",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "New students may begin their study during the fall semester (August), the spring semester (January), or the summer session."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": true,
+   "note": "Emporia State publishes no first-year application deadline on its admissions site or in its catalog, which says only that materials should be submitted as early as possible. The December 1 date on its key-dates list is a scholarship priority date."
+  },
+  "western-kentucky-university": {
+   "label": "Western Kentucky University catalog",
+   "url": "https://catalog.wku.edu/undergraduate/enrolling/admission/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Upon receipt of all these items, an application decision can be made (based on the qualifications for admission listed above) and notice to the student will ensue."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": false,
+   "note": "WKU publishes no first-year application deadline across its admissions index, freshman requirements, checklist, calendar or catalog. The December 31 date often cited is explicitly a scholarship priority deadline."
+  },
+  "berklee-college-of-music": {
+   "label": "Berklee College of Music deadlines",
+   "url": "https://college.berklee.edu/admissions/undergraduate/deadlines",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Application and supporting documents due: November 1",
+    "Early Action is nonbinding, and applicants receive the same scholarship consideration as Regular Action."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": false,
+   "note": "Berklee's regular row covers two terms in one sentence: December 1 is the summer deadline and January 15 the fall one. Audition and interview windows and the May 1 deposit are not application deadlines."
   }
  }
 }

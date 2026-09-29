@@ -28613,7 +28613,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "August 8"
+      }
+    ],
     "financials": {
       "coaInState": 21925,
       "coaOutOfState": 36343,
@@ -28707,6 +28713,11 @@
     "admitRateOverallSuperseded": true,
     "testingPolicyNote": "Scores are recommended for course placement, where ALEKS or a writing placement exam is an accepted alternative.",
     "testingPolicyProvenance": {
+      "source": "Lewis-Clark State College admissions (https://www.lcsc.edu/admissions/applicant-information/first-year-student)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
       "source": "Lewis-Clark State College admissions (https://www.lcsc.edu/admissions/applicant-information/first-year-student)",
       "year": "2026-27",
       "accessed": "2026-09-29"
@@ -29311,7 +29322,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 15"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "April 15"
+      }
+    ],
     "financials": {
       "coaInState": 75625,
       "coaOutOfState": 75625,
@@ -29405,6 +29427,11 @@
     "admitRateOverallSuperseded": true,
     "testingPolicyProvenance": {
       "source": "SAIC admissions (https://www.saic.edu/admissions/undergraduate/faq)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "SAIC how to apply (https://www.saic.edu/admissions/undergraduate/how-apply-freshman)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -29864,7 +29891,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "July 31"
+      }
+    ],
     "financials": {
       "coaInState": 56258,
       "coaOutOfState": 56258,
@@ -29961,6 +29994,11 @@
       "source": "Marian University 2026-27 undergraduate catalog (https://www.marian.edu/academics/_assets/_documents/2026-27-Undergraduate-Catalog.pdf)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Marian University admissions (https://www.marian.edu/admissions/application-process/high-school-students)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -29990,7 +30028,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 21967,
       "coaOutOfState": 30280,
@@ -30085,6 +30129,11 @@
     "testingPolicyNote": "GPA alone is a complete route to admission. Home-schooled applicants and graduates of unaccredited high schools have no GPA-only route, so a score is required for them.",
     "testingPolicyProvenance": {
       "source": "Emporia State University admissions (https://www.emporia.edu/admissions-costs/admissions-and-costs/emporia-state-university-admissions/undergraduate-admissions-process/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Emporia State University 2026-27 catalog (https://www.emporia.edu/documents/4334/2026-2027_ESU_Catalog.pdf)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -30826,7 +30875,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 24188,
       "coaOutOfState": 39536,
@@ -30927,6 +30982,11 @@
       "source": "Western Kentucky University admissions (https://catalog.wku.edu/undergraduate/enrolling/admission/)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "applicationPlansProvenance": {
+      "source": "Western Kentucky University catalog (https://catalog.wku.edu/undergraduate/enrolling/admission/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -31531,7 +31591,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 1"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "January 15"
+      }
+    ],
     "financials": {
       "coaInState": 72700,
       "coaOutOfState": 72700,
@@ -31626,6 +31697,11 @@
     "testingPolicyNote": "Admission centres on an audition and interview, which are not standardized tests.",
     "testingPolicyProvenance": {
       "source": "Berklee College of Music admissions (https://college.berklee.edu/admissions/undergraduate/how-to-apply)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Berklee College of Music deadlines (https://college.berklee.edu/admissions/undergraduate/deadlines)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
