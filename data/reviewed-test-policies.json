@@ -3087,6 +3087,138 @@
    ],
    "manual": false,
    "note": "Fairmont State lists three routes to regular admission from the Fall 2026 cycle under the West Virginia HEPC standards, and the third is a 2.5 GPA with no test. The other two pair a lower GPA with an ACT 18 or SAT 960. Older text higher up the same page still implies recent graduates must submit scores; the dated HEPC block is newer and more specific and is taken as governing."
+  },
+  "northeastern-state-university": {
+   "policy": "Test-Optional",
+   "label": "Northeastern State University admissions FAQ",
+   "url": "https://nsuok.edu/AboutUs/FAQs/Admissions.aspx",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "You still have the opportunity to be admitted to NSU without test scores as part of our Test Optional Pilot Program."
+   ],
+   "manual": false,
+   "note": "NSU's requirements page and catalog both still list participation in the ACT or SAT among the conditions for freshman admission; the admissions FAQ describes the Test Optional Pilot Program and is the more specific statement. Pilot applicants must meet a GPA or class-rank condition and take placement tests, and scores are required to be considered for scholarships."
+  },
+  "black-hills-state-university": {
+   "policy": "Test-Optional",
+   "label": "Black Hills State University admissions",
+   "url": "https://www.bhsu.edu/admissions/apply.html",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Standardized test scores are not required for admission, if a student meets one of the other minimum academic requirements (GPA or class rank)."
+   ],
+   "manual": false,
+   "note": "Admission runs on a 2.6 GPA, an ACT 18 or SAT 970, or top 60% class rank, so GPA alone is a complete route. Submitted scores may be used for scholarship eligibility and for maths and English placement."
+  },
+  "northern-state-university": {
+   "policy": "Test-Optional",
+   "label": "Northern State University admissions",
+   "url": "https://northern.edu/admissions/undergraduate-admissions-requirements",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "No, you may be admitted without an ACT or SAT score."
+   ],
+   "manual": false,
+   "note": "Admission runs on an ACT 18 or SAT 960, a 2.6 GPA, or top 60% class rank, so GPA alone is a complete route. Some scholarships do require a score, and some options require ACCUPLACER placement testing."
+  },
+  "south-dakota-state-university": {
+   "policy": "Test-Optional",
+   "label": "South Dakota State University 2026-27 undergraduate catalog",
+   "url": "https://catalog.sdstate.edu/content.php?catoid=60&navoid=13252",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "SDSU is a test optional institution meaning that ACT or SAT scores are not required as part of the admission process."
+   ],
+   "manual": true,
+   "note": "SDSU's admissions site never uses the phrase and its checklist lists an ACT or SAT score report as an item, which reads as required; its own freshman requirements on the same page are index-style and admit on a 2.6 GPA alone. The official catalog resolves it explicitly. Scores are encouraged for conditional admission decisions, scholarships and placement."
+  },
+  "the-university-of-tennessee-chattanooga": {
+   "policy": "Test-Required",
+   "label": "UTC freshman requirements",
+   "url": "https://www.utc.edu/seniors",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "All applicants are required to submit ACT/SAT scores, regardless of class rank or GPA."
+   ],
+   "manual": false,
+   "note": "Every admission route on the page, in-state and out-of-state, pairs a GPA with a minimum score, and the 2026-27 catalog lists ACT or SAT scores among the credentials all freshman applicants must submit. Applicants aged 21 and over are exempt. A page titled Test Optional Admission exists in UTC's site index but returns 403 to every method including a real browser, so it is not reachable by an applicant either and could not be confirmed."
+  },
+  "vermont-state-university": {
+   "policy": "Test-Optional",
+   "label": "Vermont State University admission",
+   "url": "https://vermontstate.edu/admission/how-to-apply/undergraduate-application-information/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Scores are optional for most scholars seeking admission. Scores will be considered in review if submitted."
+   ],
+   "manual": true,
+   "note": "Accuplacer placement testing is required for Dental Hygiene, the Nursing programmes, Radiologic Science and Respiratory Therapy, but that is placement testing rather than the ACT or SAT, which stay optional across the institution."
+  },
+  "the-juilliard-school": {
+   "policy": "Test-Optional",
+   "label": "The Juilliard School application requirements",
+   "url": "https://www.juilliard.edu/arm/dance/college/dance/bachelor-fine-arts",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "In most cases, the Juilliard School requires no specific courses, GPAs, standardized test scores, or class rankings for entry to this program."
+   ],
+   "manual": true,
+   "note": "Home-schooled applicants are required to submit official SAT or ACT scores; that requirement sits under its own heading and does not apply to other applicants. An SAT or ACT score is also one of several accepted proofs of English proficiency."
+  },
+  "the-new-school": {
+   "policy": "Test-Blind",
+   "label": "The New School how to apply",
+   "url": "https://www.newschool.edu/lang/how-to-apply/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "The New School does not require submission of SAT or ACT scores, and they do not play a part in our review process."
+   ],
+   "manual": true,
+   "note": "Recorded as test-blind because the school states outright that scores play no part in review, rather than only that they are not required."
+  },
+  "yeshiva-university": {
+   "policy": "Test-Optional",
+   "label": "Yeshiva University freshman applicants",
+   "url": "https://apply.yu.edu/freshman",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "YU requires standardized test scores ONLY for applicants to our Honors program."
+   ],
+   "manual": false,
+   "note": "Honors applicants must submit scores, and Early Admission applicants applying before earning a diploma need an SAT of 1340 or an ACT of 29. All other applicants may submit scores, which are read if sent."
+  },
+  "rhode-island-school-of-design": {
+   "policy": "Test-Optional",
+   "label": "RISD first-year admissions",
+   "url": "https://www.risd.edu/admissions/first-year/apply-risd",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Although the SAT and ACT are not required for admission, applicants may submit scores to satisfy the English proficiency requirement."
+   ],
+   "manual": false,
+   "note": "RISD superscores submitted results, so scores are read when sent. An SAT of 600 in evidence-based reading and writing, or an ACT of 25, can serve as proof of English proficiency."
+  },
+  "moore-college-of-art-and-design": {
+   "policy": "Test-Optional",
+   "label": "Moore College of Art and Design admissions",
+   "url": "https://moore.edu/viewbook/viewbook-apply/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Submission of standardized test scores is optional."
+   ],
+   "manual": false,
+   "note": "Moore lists SAT and ACT scores under optional supporting documentation. Its portfolio requirement is separate and is not a standardized test."
+  },
+  "pacific-northwest-college-of-art": {
+   "policy": "Test-Optional",
+   "label": "Willamette University admissions, which covers PNCA",
+   "url": "https://willamette.edu/admissions/test-optional",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "When you apply to Willamette, you can decide whether your standardized test results accurately reflect your academic ability and potential."
+   ],
+   "manual": false,
+   "note": "PNCA is part of Willamette University and its own pages never mention the SAT or ACT, so the policy comes from the shared Willamette admissions site that routes PNCA applicants. Submitted scores are reviewed alongside other indicators. International applicants must provide a TOEFL or IELTS but may apply without SAT or ACT scores."
   }
  }
 }

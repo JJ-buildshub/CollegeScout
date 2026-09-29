@@ -41655,7 +41655,7 @@
     "admitRateOverall": 0.0915,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -41763,7 +41763,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Home-schooled applicants are required to submit official SAT or ACT scores; that requirement sits under its own heading and does not apply to other applicants. An SAT or ACT score is also one of several accepted proofs of English proficiency.",
+    "testingPolicyProvenance": {
+      "source": "The Juilliard School application requirements (https://www.juilliard.edu/arm/dance/college/dance/bachelor-fine-arts)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "the-new-school",
@@ -41775,7 +41781,7 @@
     "admitRateOverall": 0.6347,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Blind",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -41883,7 +41889,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Recorded as test-blind because the school states outright that scores play no part in review, rather than only that they are not required.",
+    "testingPolicyProvenance": {
+      "source": "The New School how to apply (https://www.newschool.edu/lang/how-to-apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "united-states-military-academy",
@@ -42160,7 +42172,7 @@
     "admitRateOverall": 0.5562,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1320-1500 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -42272,7 +42284,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Honors applicants must submit scores, and Early Admission applicants applying before earning a diploma need an SAT of 1340 or an ACT of 29. All other applicants may submit scores, which are read if sent.",
+    "testingPolicyProvenance": {
+      "source": "Yeshiva University freshman applicants (https://apply.yu.edu/freshman)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "bowling-green-state-university",
@@ -43457,7 +43475,7 @@
     "admitRateOverall": 0.9959,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "920-1145 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -43569,7 +43587,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "NSU's requirements page and catalog both still list participation in the ACT or SAT among the conditions for freshman admission; the admissions FAQ describes the Test Optional Pilot Program and is the more specific statement. Pilot applicants must meet a GPA or class-rank condition and take placement tests, and scores are required to be considered for scholarships.",
+    "testingPolicyProvenance": {
+      "source": "Northeastern State University admissions FAQ (https://nsuok.edu/AboutUs/FAQs/Admissions.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "oklahoma-state-university",
@@ -44132,7 +44156,7 @@
     "admitRateOverall": 0.7485,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -44240,7 +44264,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "PNCA is part of Willamette University and its own pages never mention the SAT or ACT, so the policy comes from the shared Willamette admissions site that routes PNCA applicants. Submitted scores are reviewed alongside other indicators. International applicants must provide a TOEFL or IELTS but may apply without SAT or ACT scores.",
+    "testingPolicyProvenance": {
+      "source": "Willamette University admissions, which covers PNCA (https://willamette.edu/admissions/test-optional)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "portland-state-university",
@@ -44965,7 +44995,7 @@
     "admitRateOverall": 0.5646,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1233-1411 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -45077,7 +45107,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Moore lists SAT and ACT scores under optional supporting documentation. Its portfolio requirement is separate and is not a standardized test.",
+    "testingPolicyProvenance": {
+      "source": "Moore College of Art and Design admissions (https://moore.edu/viewbook/viewbook-apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "muhlenberg-college",
@@ -45387,7 +45423,7 @@
     "admitRateOverall": 0.1866,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1370-1540 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -45499,7 +45535,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "RISD superscores submitted results, so scores are read when sent. An SAT of 600 in evidence-based reading and writing, or an ACT of 25, can serve as proof of English proficiency.",
+    "testingPolicyProvenance": {
+      "source": "RISD first-year admissions (https://www.risd.edu/admissions/first-year/apply-risd)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "university-of-rhode-island",
@@ -46115,7 +46157,7 @@
     "admitRateOverall": 0.9633,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -46223,7 +46265,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Admission runs on a 2.6 GPA, an ACT 18 or SAT 970, or top 60% class rank, so GPA alone is a complete route. Submitted scores may be used for scholarship eligibility and for maths and English placement.",
+    "testingPolicyProvenance": {
+      "source": "Black Hills State University admissions (https://www.bhsu.edu/admissions/apply.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "northern-state-university",
@@ -46235,7 +46283,7 @@
     "admitRateOverall": 0.93,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -46343,7 +46391,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Admission runs on an ACT 18 or SAT 960, a 2.6 GPA, or top 60% class rank, so GPA alone is a complete route. Some scholarships do require a score, and some options require ACCUPLACER placement testing.",
+    "testingPolicyProvenance": {
+      "source": "Northern State University admissions (https://northern.edu/admissions/undergraduate-admissions-requirements)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "south-dakota-state-university",
@@ -46355,7 +46409,7 @@
     "admitRateOverall": 0.9834,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1040-1300 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -46479,6 +46533,12 @@
       "source": "South Dakota State University admissions (https://www.sdstate.edu/admissions/undergraduate-admissions)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "testingPolicyNote": "SDSU's admissions site never uses the phrase and its checklist lists an ACT or SAT score report as an item, which reads as required; its own freshman requirements on the same page are index-style and admit on a 2.6 GPA alone. The official catalog resolves it explicitly. Scores are encouraged for conditional admission decisions, scholarships and placement.",
+    "testingPolicyProvenance": {
+      "source": "South Dakota State University 2026-27 undergraduate catalog (https://catalog.sdstate.edu/content.php?catoid=60&navoid=13252)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -46903,7 +46963,7 @@
     "admitRateOverall": 0.8109,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1005-1185 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -47027,6 +47087,12 @@
       "source": "University of Tennessee-Chattanooga admissions (https://www.utc.edu/seniors)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "testingPolicyNote": "Every admission route on the page, in-state and out-of-state, pairs a GPA with a minimum score, and the 2026-27 catalog lists ACT or SAT scores among the credentials all freshman applicants must submit. Applicants aged 21 and over are exempt. A page titled Test Optional Admission exists in UTC's site index but returns 403 to every method including a real browser, so it is not reachable by an applicant either and could not be confirmed.",
+    "testingPolicyProvenance": {
+      "source": "UTC freshman requirements (https://www.utc.edu/seniors)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -49788,7 +49854,7 @@
     "admitRateOverall": 0.8167,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -49896,7 +49962,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Accuplacer placement testing is required for Dental Hygiene, the Nursing programmes, Radiologic Science and Respiratory Therapy, but that is placement testing rather than the ACT or SAT, which stay optional across the institution.",
+    "testingPolicyProvenance": {
+      "source": "Vermont State University admission (https://vermontstate.edu/admission/how-to-apply/undergraduate-application-information/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "cornish-college-of-the-arts",
