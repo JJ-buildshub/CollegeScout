@@ -37617,7 +37617,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 33672,
       "coaOutOfState": 33672,
@@ -37712,6 +37718,11 @@
     "testingPolicyNote": "The incoming-freshman page still carries COVID-era text about test cancellations; this quote is from the current admissions page.",
     "testingPolicyProvenance": {
       "source": "University of Mary undergraduate admissions (https://www.umary.edu/admission-aid/undergraduate-admissions)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "University of Mary admission requirements (https://www.umary.edu/admission-aid/undergraduate-admissions/admission-requirements)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -37880,7 +37891,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 20468,
       "coaOutOfState": 25498,
@@ -37975,6 +37992,11 @@
     "testingPolicyNote": "The same catalog page contradicts itself, listing official ACT or SAT results under application materials. The admissions site resolves it: its application checklist has no test scores and its guidelines require core courses and a 2.0 GPA, so GPA alone is a complete route. Scores are used for maths and English placement.",
     "testingPolicyProvenance": {
       "source": "Valley City State University catalog (https://catalog.vcsu.edu/undergraduate-catalog/admissions/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Valley City State University 2026-27 catalog (https://catalog.vcsu.edu/undergraduate-catalog/general-information/faq/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -38146,7 +38168,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 25808,
       "coaOutOfState": 32416,
@@ -38247,6 +38275,11 @@
       "source": "University of Nebraska at Kearney admissions (https://catalog.unk.edu/undergraduate/admissions/admission-procedures-entering-freshmen/)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "applicationPlansProvenance": {
+      "source": "UNK academic policies handbook (https://www.unk.edu/offices/registrar/academic_policies_handbook/Admission_Policies.php)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -38679,7 +38712,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 29644,
       "coaOutOfState": 40584,
@@ -38775,6 +38814,11 @@
       "source": "Plymouth State University admissions (https://www.plymouth.edu/apply)",
       "year": "2026-27",
       "accessed": "2026-09-22"
+    },
+    "applicationPlansProvenance": {
+      "source": "Plymouth State University first-year students (https://www.plymouth.edu/admissions/undergraduate/first-year-students)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -39668,7 +39712,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "July 1"
+      }
+    ],
     "financials": {
       "coaInState": 23718,
       "coaOutOfState": 38786,
@@ -39763,6 +39813,11 @@
     "testingPolicyNote": "Nevada State's own admissions pages are silent on SAT/ACT, listing only a 2.5 GPA and course units, so this comes from the official catalog. The 2023-24 catalog said scores were required, making this a recent reversal rather than legacy text. Scores are used for course placement.",
     "testingPolicyProvenance": {
       "source": "Nevada State University 2026-27 undergraduate catalog (https://nsc.smartcatalogiq.com/en/2026-2027/undergraduate-catalog/admissions-information/admission-application/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Nevada State University application information (https://nevadastate.edu/admissions/application-information/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
