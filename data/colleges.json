@@ -19234,6 +19234,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Clemson University admissions (https://www.clemson.edu/admissions/undergraduate-admissions/apply/first-year.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -19399,6 +19404,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Michigan State University admissions (https://admissions.msu.edu/apply/first-year/act-sat-test-optional)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -19560,6 +19570,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "Direct Admission to the College of Nursing requires an ACT or SAT score, though admission to the university does not.",
+    "testingPolicyProvenance": {
+      "source": "University of Iowa admissions (https://admissions.uiowa.edu/testing)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -20452,6 +20468,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "WashU's admissions leadership has said publicly it expects to announce a change to this policy; re-check before the next cycle.",
+    "testingPolicyProvenance": {
+      "source": "WashU admissions (https://admissions.washu.edu/how-to-apply/first-year-us-applicants/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -20815,6 +20837,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "Scores are required for admission to Tulane's Pathways to Medicine program.",
+    "testingPolicyProvenance": {
+      "source": "Tulane University admission (https://admission.tulane.edu/apply/instructions/standardized-tests)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -20993,6 +21021,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "Home-schooled applicants are strongly encouraged to submit scores so their applications can be read in context.",
+    "testingPolicyProvenance": {
+      "source": "Boston College admission (https://www.bc.edu/bc-web/admission/apply/test-optional.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -21175,6 +21209,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "Performance and portfolio programmes in music, the BFA programmes, architecture, applicants finishing secondary school outside the US and transfers with 24+ credits may apply with or without scores.",
+    "testingPolicyProvenance": {
+      "source": "University of Miami admissions (https://admissions.miami.edu/undergraduate/application-process/admission-requirements/testing-policy/index.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -21350,6 +21390,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "Wake Forest has been test-optional since 2008, so its pages name no cycle.",
+    "testingPolicyProvenance": {
+      "source": "Wake Forest admissions (https://admissions.wfu.edu/become-a-deacon/first-year/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -21533,6 +21579,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "Applicants home-schooled for more than one full academic year are required to submit SAT and/or ACT scores.",
+    "testingPolicyProvenance": {
+      "source": "Villanova University undergraduate admission (https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/first-year-applicants.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -21707,6 +21759,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "University of Georgia admissions (https://admissions.uga.edu/apply/first-year-applicants/first-year-criteria/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -21890,6 +21947,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyProvenance": {
+      "source": "Syracuse University admissions (https://www.syracuse.edu/admissions-aid/application-process/undergraduate/college-specific-requirements/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -21902,7 +21964,7 @@
     "admitRateOverall": 0.6652,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Free",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -22007,7 +22069,13 @@
         "provenance": null
       }
     },
-    "admitRateOverallSuperseded": false
+    "admitRateOverallSuperseded": false,
+    "testingPolicyNote": "Scores are still used for maths and English course placement. UAA's catalog says scores are not used in the admissions decision \"for most programs\" without naming exceptions, so this label rests on the admissions FAQ.",
+    "testingPolicyProvenance": {
+      "source": "University of Alaska Anchorage admissions (https://www.uaa.alaska.edu/admissions/apply/faq.cshtml)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "auburn-university",
