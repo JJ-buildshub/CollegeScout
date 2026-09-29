@@ -23053,7 +23053,7 @@
     "admitRateOverall": 0.7658,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1160-1360 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -23165,7 +23165,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "The page says test-optional \"for most undergraduate programs\" without naming an exception; no ERAU page identifies a programme that requires scores.",
+    "testingPolicyProvenance": {
+      "source": "Embry-Riddle admissions (https://erau.edu/admissions/undergraduate-admissions/first-time-students)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "northern-arizona-university",
@@ -23314,7 +23320,7 @@
     "admitRateOverall": 0.7454,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -23422,7 +23428,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "The policy sentence is dated to Spring 2019 but sits on the current application-requirements page, with no competing newer statement.",
+    "testingPolicyProvenance": {
+      "source": "ArtCenter admissions (https://www.artcenter.edu/admissions/undergraduate-admissions/application-requirements.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "azusa-pacific-university",
@@ -23434,7 +23446,7 @@
     "admitRateOverall": 0.8843,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "994-1314 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -23545,7 +23557,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Scores are encouraged because they may be used to determine additional academic scholarship awards, though not for admission.",
+    "testingPolicyProvenance": {
+      "source": "Azusa Pacific admissions (https://www.apu.edu/undergraduate-admissions/requirements/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "california-institute-of-the-arts",
@@ -23557,7 +23575,7 @@
     "admitRateOverall": 0.3234,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -23665,7 +23683,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "CalArts still publishes its CEEB and ACT codes for applicants who choose to submit, so scores are read rather than disregarded.",
+    "testingPolicyProvenance": {
+      "source": "CalArts admissions (https://calarts.edu/admissions-aid/admissions/application-process)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "california-state-university-san-bernardino",
@@ -23815,7 +23839,7 @@
     "admitRateOverall": 0.9432,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -23923,7 +23947,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "The page lists SAT/ACT scores among optional supplementary materials rather than stating a named policy.",
+    "testingPolicyProvenance": {
+      "source": "LCAD admissions (https://www.lcad.edu/first-year-students/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "colorado-college",
@@ -27180,7 +27210,7 @@
     "admitRateOverall": 0.4696,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "985-1191 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -27292,7 +27322,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "BYU-Hawaii's course catalog still carries pre-2020 text saying the ACT or SAT is required. Two admissions-office pages state the opposite and are treated as authoritative; worth re-checking next cycle.",
+    "testingPolicyProvenance": {
+      "source": "BYU-Hawaii admissions (https://admissions.byuh.edu/new-domestic-students)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "hawaii-pacific-university",
@@ -27449,7 +27485,7 @@
     "admitRateOverall": 0.6063,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "898-1110 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -27561,7 +27597,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Admission is earned on GPA alone; scores are a second route for applicants below a 2.7.",
+    "testingPolicyProvenance": {
+      "source": "UH Hilo catalog (https://hilo.hawaii.edu/catalog/admission-of-first-time-freshmen)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "university-of-hawaii-at-manoa",
@@ -28428,7 +28470,7 @@
     "admitRateOverall": 0.8769,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -28536,7 +28578,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Scores are recommended for course placement, where ALEKS or a writing placement exam is an accepted alternative.",
+    "testingPolicyProvenance": {
+      "source": "Lewis-Clark State College admissions (https://www.lcsc.edu/admissions/applicant-information/first-year-student)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "university-of-idaho",
@@ -29120,7 +29168,7 @@
     "admitRateOverall": 0.7747,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -29228,7 +29276,12 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyProvenance": {
+      "source": "SAIC admissions (https://www.saic.edu/admissions/undergraduate/faq)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "university-of-illinois-chicago",
@@ -29668,7 +29721,7 @@
     "admitRateOverall": 0.9546,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Blind",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -29776,7 +29829,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "The catalog adds that scores are not used for admission or scholarship consideration, so there is no scholarship carve-out. Marian's HTML admission-requirements pages have been removed, leaving the catalog PDF as the only source on its own domain.",
+    "testingPolicyProvenance": {
+      "source": "Marian University 2026-27 undergraduate catalog (https://www.marian.edu/academics/_assets/_documents/2026-27-Undergraduate-Catalog.pdf)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "emporia-state-university",
@@ -29788,7 +29847,7 @@
     "admitRateOverall": 0.9771,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -29896,7 +29955,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "GPA alone is a complete route to admission. Home-schooled applicants and graduates of unaccredited high schools have no GPA-only route, so a score is required for them.",
+    "testingPolicyProvenance": {
+      "source": "Emporia State University admissions (https://www.emporia.edu/admissions-costs/admissions-and-costs/emporia-state-university-admissions/undergraduate-admissions-process/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "kansas-state-university",
