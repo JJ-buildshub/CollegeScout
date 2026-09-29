@@ -2544,6 +2544,70 @@
    ],
    "manual": false,
    "note": "Home-schooled applicants are required to submit standardized test scores for admission and scholarship consideration."
+  },
+  "southern-methodist-university": {
+   "policy": "Test-Optional",
+   "label": "SMU admission",
+   "url": "https://www.smu.edu/admission/apply/undergraduate-admission/testing",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "SMU is fully test-optional."
+   ],
+   "manual": false,
+   "note": "SMU requires official test scores at the time of enrolment, though not for admission."
+  },
+  "university-of-denver": {
+   "policy": "Test-Optional",
+   "label": "University of Denver admission",
+   "url": "https://www.du.edu/admission-aid/undergraduate/first-year-applicants/admission-standards",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "However, we are a test-optional university, and submitting test scores is your choice."
+   ],
+   "manual": false,
+   "note": "Applicants from non-graded high schools are encouraged to submit scores to be competitive for merit scholarships."
+  },
+  "university-of-delaware": {
+   "policy": "Test-Optional",
+   "label": "University of Delaware admissions",
+   "url": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/freshman-admissions/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "All students applying to UD may choose whether or not to submit their SAT or ACT scores as a part of their application."
+   ],
+   "manual": false,
+   "note": "Applicants with high school equivalency credentials are strongly encouraged to submit scores as evidence of college readiness."
+  },
+  "drexel-university": {
+   "policy": "Test-Optional",
+   "label": "Drexel University admissions",
+   "url": "https://drexel.edu/admissions/apply/undergrad-instructions/first-year-instructions/standardized-tests",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Drexel practices a No Harm Test-Optional review for fall entry."
+   ],
+   "manual": false,
+   "note": "Scores are read but set aside if they would weaken the application. The BA/BS+MD Early Assurance Program does require SAT or ACT scores."
+  },
+  "temple-university": {
+   "policy": "Test-Optional",
+   "label": "Temple University admissions",
+   "url": "https://admissions.temple.edu/apply/first-year-students/test-optional",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Standardized test scores are otherwise entirely optional and in no way required for admission."
+   ],
+   "manual": false
+  },
+  "university-of-connecticut": {
+   "policy": "Test-Optional",
+   "label": "UConn admissions",
+   "url": "https://admissions.uconn.edu/apply/first-year/instructions/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "At UConn, we understand that one test may not accurately define a student’s academic progress and potential, which is why we are allowing first-year applicants the choice to submit standardized test results for the foreseeable future."
+   ],
+   "manual": false
   }
  }
 }
