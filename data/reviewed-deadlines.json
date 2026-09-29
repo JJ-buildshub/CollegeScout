@@ -5410,6 +5410,161 @@
    ],
    "manual": false,
    "note": "July 1 is the first-year priority date for Fall 2027. Other tabs on the same page carry different priority dates that do not apply to first-year applicants: August 10 for transfers and August 1 for returning students. July 15 is the transcript deadline."
+  },
+  "rhode-island-school-of-design": {
+   "label": "RISD first-year admissions",
+   "url": "https://www.risd.edu/admissions/first-year/apply-risd",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Students applying for admission to the Brown|RISD Dual Degree Program (BRDD) must complete the application process at both institutions by our respective deadlines: January 5 for Brown and January 20 for RISD."
+   ],
+   "plans": [
+    {
+     "type": "ED",
+     "binding": true,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 20"
+    }
+   ],
+   "manual": false,
+   "note": "RISD offers early decision and regular decision only, with no second early round. The January 10 and January 25 dates widely circulated by third parties do not match RISD's own page. November 15 and January 25 are financial aid deadlines."
+  },
+  "black-hills-state-university": {
+   "label": "Black Hills State University 2026-27 catalog",
+   "url": "https://catalog.bhsu.edu/content.php?catoid=41&navoid=1210",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "The BHSU Admissions Office processes applications on a rolling basis.",
+    "It is recommended, though not required, that you apply at least three months prior to the term to which you intend to enroll."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": true,
+   "note": "BHSU publishes no date for domestic first-year applicants; its only calendar dates, July 1 and December 1, govern applicants from outside the US. Its catalog site serves the archived 2025-26 edition by default, so this links the current one."
+  },
+  "university-of-south-dakota": {
+   "label": "University of South Dakota 2026-27 catalog",
+   "url": "https://catalog.usd.edu/content.php?catoid=42&navoid=2726",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Applicants desiring to enroll at the University of South Dakota are encouraged to apply at least four months but not less than ten days prior to the planned date of attendance."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": true,
+   "note": "USD publishes no calendar deadline; its guidance is relative to the applicant's own start date. Its former deadlines page still appears in search results but now returns a not-found error."
+  },
+  "vermont-state-university": {
+   "label": "Vermont State University application information",
+   "url": "https://vermontstate.edu/admission/how-to-apply/undergraduate-application-information/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Vermont State University has rolling admission for most programs.",
+    "Files completed after the priority deadline will be reviewed on a rolling admissions basis dependent on space availability."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": false,
+   "note": "The December 1 priority date on this page is scoped to six named health and aviation programmes, so it is not attached to the general first-year plan. August 1 governs Early College dual enrolment."
+  },
+  "cornish-college-of-the-arts": {
+   "label": "Cornish College of the Arts at Seattle University admissions",
+   "url": "https://www.cornish.edu/admissions/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Complete all parts of the application, including an audition or portfolio review, by November 1 and receive an admission decision by late December.",
+    "Complete all parts of your application, including an audition or portfolio review, by January 15 to receive your admissions reply in early March."
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 1"
+    },
+    {
+     "type": "RD",
+     "binding": false,
+     "deadline": "January 15"
+    }
+   ],
+   "manual": false,
+   "note": "Cornish applicants apply through Seattle University, whose own first-year page gives the same two dates. After January 15 applications continue to be considered as space allows. The audition or portfolio is due with the application rather than separately."
+  },
+  "milwaukee-institute-of-art-and-design": {
+   "label": "MIAD apply now",
+   "url": "https://www.miad.edu/apply-now",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "MIAD’s Application & Merit Scholarship Priority Deadline is February 15.",
+    "December 1, 2026 Early Application Date"
+   ],
+   "plans": [
+    {
+     "type": "EA",
+     "binding": false,
+     "deadline": "December 1"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "February 15"
+    }
+   ],
+   "manual": false,
+   "note": "February 15 governs applications as well as merit aid, in MIAD's own wording. December 1 is MIAD's early application date rather than a named early action round. MIAD's Spanish-language page carries a further August 1 final fall deadline that appears nowhere in English, so its true final cutoff is later than its English pages show."
+  },
+  "fairmont-state-university": {
+   "label": "Fairmont State University 2026-27 catalog",
+   "url": "https://catalog.fairmontstate.edu/content.php?catoid=32&navoid=5917",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "For priority registration, make sure all the pieces of your admission file are in and complete six weeks prior to the start of the semester. Double-check the requirements of your program, some ask for applications much earlier."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": true,
+   "note": "Fairmont's catalog refers to a published deadline for each term but never gives one, and its admissions pages offer only relative guidance. The July 1 and November 1 dates in its catalog sit under international student requirements."
+  },
+  "west-virginia-state-university": {
+   "label": "West Virginia State University 2026-27 catalog",
+   "url": "https://wvstateu.edu/wp-content/uploads/2026/09/WVSU-2026-2027-Academic-Catalog.pdf",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Applications will be accepted at any time throughout the year."
+   ],
+   "plans": [
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": null
+    }
+   ],
+   "manual": true,
+   "note": "WVSU's admissions pages publish no deadline, so the catalog governs. Its October 1 and March 1 dates are for submitting official records rather than the application itself, and its three-month rule applies to international applicants."
   }
  }
 }
