@@ -65,6 +65,10 @@ const BASE_FIELDS = [
   "student.size",
   "cost.tuition.in_state",
   "cost.tuition.out_of_state",
+  // Published cost of attendance. The 208 records sourced before this script
+  // existed used this field; without it the remaining 128 have no federal
+  // figure to check against, only tuition, which is a fraction of the total.
+  "cost.attendance.academic_year",
 ];
 
 // "latest.<field>" is Scorecard's own alias for "the most recent value
@@ -266,6 +270,7 @@ function buildScorecardData(result) {
       tuitionInState: metric(result, result["latest.cost.tuition.in_state"], "cost.tuition.in_state"),
       tuitionOutOfState: metric(result, result["latest.cost.tuition.out_of_state"], "cost.tuition.out_of_state"),
       admitRateOverall: metric(result, admit.value, admit.field ?? "admissions.admission_rate.overall"),
+      costOfAttendance: metric(result, result["latest.cost.attendance.academic_year"], "cost.attendance.academic_year"),
     },
     admitValue: admit.value,
   };
