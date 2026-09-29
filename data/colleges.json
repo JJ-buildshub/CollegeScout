@@ -42673,7 +42673,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "ED",
+        "binding": true,
+        "deadline": "November 2"
+      },
+      {
+        "type": "RD",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 70892,
       "coaOutOfState": 70892,
@@ -42772,6 +42783,11 @@
     "testingPolicyNote": "Honors applicants must submit scores, and Early Admission applicants applying before earning a diploma need an SAT of 1340 or an ACT of 29. All other applicants may submit scores, which are read if sent.",
     "testingPolicyProvenance": {
       "source": "Yeshiva University freshman applicants (https://apply.yu.edu/freshman)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Yeshiva University deadlines (https://apply.yu.edu/deadlines)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -43976,7 +43992,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "August 1"
+      }
+    ],
     "financials": {
       "coaInState": 21551,
       "coaOutOfState": 31031,
@@ -44074,6 +44096,11 @@
     "admitRateOverallSuperseded": true,
     "testingPolicyNote": "NSU's requirements page and catalog both still list participation in the ACT or SAT among the conditions for freshman admission; the admissions FAQ describes the Test Optional Pilot Program and is the more specific statement. Pilot applicants must meet a GPA or class-rank condition and take placement tests, and scores are required to be considered for scholarships.",
     "testingPolicyProvenance": {
+      "source": "Northeastern State University admissions FAQ (https://nsuok.edu/AboutUs/FAQs/Admissions.aspx)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
       "source": "Northeastern State University admissions FAQ (https://nsuok.edu/AboutUs/FAQs/Admissions.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-29"
@@ -44657,7 +44684,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 15"
+      },
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "February 1"
+      }
+    ],
     "financials": {
       "coaInState": 70376,
       "coaOutOfState": 70376,
@@ -44752,6 +44790,11 @@
     "testingPolicyNote": "PNCA is part of Willamette University and its own pages never mention the SAT or ACT, so the policy comes from the shared Willamette admissions site that routes PNCA applicants. Submitted scores are reviewed alongside other indicators. International applicants must provide a TOEFL or IELTS but may apply without SAT or ACT scores.",
     "testingPolicyProvenance": {
       "source": "Willamette University admissions, which covers PNCA (https://willamette.edu/admissions/test-optional)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "PNCA undergraduate admissions (https://pnca.willamette.edu/admissions/apply/undergraduate)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
@@ -45366,7 +45409,13 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": null
+      }
+    ],
     "financials": {
       "coaInState": 55582,
       "coaOutOfState": 55582,
@@ -45467,6 +45516,11 @@
       "source": "Marywood University undergraduate admissions (https://www.marywood.edu/admissions/undergraduate/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Marywood University 2026-27 undergraduate catalog (https://marywood.smartcatalogiq.com/en/2026-2027/undergraduate-catalog/undergraduate-admission)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
     }
   },
   {
@@ -45496,7 +45550,18 @@
       "highSchoolCoursePrereqs": [],
       "highImpactSpikes": []
     },
-    "applicationPlans": [],
+    "applicationPlans": [
+      {
+        "type": "EA",
+        "binding": false,
+        "deadline": "December 7"
+      },
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "December 8"
+      }
+    ],
     "financials": {
       "coaInState": 71327,
       "coaOutOfState": 71327,
@@ -45595,6 +45660,11 @@
     "testingPolicyNote": "Moore lists SAT and ACT scores under optional supporting documentation. Its portfolio requirement is separate and is not a standardized test.",
     "testingPolicyProvenance": {
       "source": "Moore College of Art and Design admissions (https://moore.edu/viewbook/viewbook-apply/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    },
+    "applicationPlansProvenance": {
+      "source": "Moore College of Art and Design how to apply (https://moore.edu/admissions-aid/undergraduate-students/how-to-apply/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
     }
