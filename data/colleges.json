@@ -22515,7 +22515,7 @@
     "admitRateOverall": 0.8226,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Required",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1030-1180 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -22627,7 +22627,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "A-State accepts the Accuplacer in place of the ACT or SAT, so a test score is required but it need not be the SAT or ACT.",
+    "testingPolicyProvenance": {
+      "source": "Arkansas State undergraduate admissions (https://www.astate.edu/admissions-and-aid/undergraduate-admissions/undergraduate-admissions-requirements.html)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "arkansas-tech-university",
