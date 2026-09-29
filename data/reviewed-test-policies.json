@@ -2736,6 +2736,61 @@
    ],
    "manual": false,
    "note": "Scores are still used for maths and English course placement. UAA's catalog says scores are not used in the admissions decision \"for most programs\" without naming exceptions, so this label rests on the admissions FAQ."
+  },
+  "berklee-college-of-music": {
+   "policy": "Test-Blind",
+   "label": "Berklee College of Music admissions",
+   "url": "https://college.berklee.edu/admissions/undergraduate/how-to-apply",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Berklee is test-blind and does not require SAT or ACT for admission."
+   ],
+   "manual": false,
+   "note": "Admission centres on an audition and interview, which are not standardized tests."
+  },
+  "massachusetts-college-of-art-and-design": {
+   "policy": "Test-Free",
+   "label": "MassArt admissions",
+   "url": "https://massart.edu/admissions/first-time-undergraduates/admissions-standards/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "MassArt no longer requires SAT or ACT scores, and we don’t factor them into admission or merit scholarship decisions."
+   ],
+   "manual": false,
+   "note": "MassArt reserves the right to use submitted scores in institutional profile reports for enrolled students."
+  },
+  "springfield-college": {
+   "policy": "Test-Optional",
+   "label": "Springfield College admissions",
+   "url": "https://springfield.edu/admissions/undergraduate-admissions/application-checklist-first-year-students",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Springfield College is SAT/ACT optional for all programs."
+   ],
+   "manual": false,
+   "note": "Submitted scores have no impact on merit-based aid and may not influence the admission decision."
+  },
+  "hillsdale-college": {
+   "policy": "Test-Optional",
+   "label": "Hillsdale College admissions",
+   "url": "https://www.hillsdale.edu/admissions-aid/admissions-2/application-process-2/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Applicants may further demonstrate academic preparedness by supplementing the application file with an ACT, CLT, or SAT score, or may choose to apply without a standardized test score."
+   ],
+   "manual": false,
+   "note": "Applicants whose first language is not English must show English proficiency, for which an SAT or ACT score is one of several accepted options."
+  },
+  "lawrence-technological-university": {
+   "policy": "Test-Optional",
+   "label": "Lawrence Technological University admissions",
+   "url": "https://ltu.edu/admissions/first-year-students/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Lawrence Tech has adopted a test-optional policy."
+   ],
+   "manual": false,
+   "note": "Lawrence Tech's own label is test-optional, but its page states submitted scores do not influence the admission decision and are used only for course placement and scholarship upgrades."
   }
  }
 }
