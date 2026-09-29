@@ -2922,6 +2922,72 @@
    ],
    "manual": false,
    "note": "A-State accepts the Accuplacer in place of the ACT or SAT, so a test score is required but it need not be the SAT or ACT."
+  },
+  "university-of-mary": {
+   "policy": "Test-Optional",
+   "label": "University of Mary undergraduate admissions",
+   "url": "https://www.umary.edu/admission-aid/undergraduate-admissions",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "If your ACT or SAT scores are not listed on your transcript, send a copy of your score report as well (optional)."
+   ],
+   "manual": false,
+   "note": "The incoming-freshman page still carries COVID-era text about test cancellations; this quote is from the current admissions page."
+  },
+  "valley-city-state-university": {
+   "policy": "Test-Optional",
+   "label": "Valley City State University catalog",
+   "url": "https://catalog.vcsu.edu/undergraduate-catalog/admissions/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "ACT/SAT test scores encouraged but not required."
+   ],
+   "manual": false,
+   "note": "The same catalog page contradicts itself, listing official ACT or SAT results under application materials. The admissions site resolves it: its application checklist has no test scores and its guidelines require core courses and a 2.0 GPA, so GPA alone is a complete route. Scores are used for maths and English placement."
+  },
+  "nevada-state-university": {
+   "policy": "Test-Optional",
+   "label": "Nevada State University 2026-27 undergraduate catalog",
+   "url": "https://nsc.smartcatalogiq.com/en/2026-2027/undergraduate-catalog/admissions-information/admission-application/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Official SAT/ACT scores are not required for first time-freshmen."
+   ],
+   "manual": false,
+   "note": "Nevada State's own admissions pages are silent on SAT/ACT, listing only a 2.5 GPA and course units, so this comes from the official catalog. The 2023-24 catalog said scores were required, making this a recent reversal rather than legacy text. Scores are used for course placement."
+  },
+  "american-musical-and-dramatic-academy": {
+   "policy": "Test-Optional",
+   "label": "AMDA admissions",
+   "url": "https://www.amda.edu/admissions-aid/undergraduate/more-info/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "Although not required for admission to AMDA, we welcome your SAT/ACT scores if you would like to share them with us."
+   ],
+   "manual": true,
+   "note": "International applicants may use an SAT or ACT score to evidence English proficiency, alongside TOEFL, IELTS, PTE and Duolingo."
+  },
+  "fashion-institute-of-technology": {
+   "policy": "Test-Optional",
+   "label": "FIT undergraduate admissions",
+   "url": "https://www.fitnyc.edu/admissions/undergraduate-applicants/apply/index.php",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "SAT and ACT test scores are not required for admissions purposes."
+   ],
+   "manual": false,
+   "note": "FIT says scores are not required and that any submitted score is used for maths placement. It never says scores are disregarded in admission, so the literal wording is followed rather than the stronger test-blind reading. The same paragraph still carries a stale line about Fall 2022 and the Presidential Scholars programme, which the current catalog does not repeat."
+  },
+  "manhattan-school-of-music": {
+   "policy": "Test-Optional",
+   "label": "Manhattan School of Music admission",
+   "url": "https://www.msmnyc.edu/admission/admission-faq/",
+   "accessed": "2026-09-29",
+   "evidence": [
+    "SAT, ACT, or GRE scores are not required."
+   ],
+   "manual": false,
+   "note": "MSM will read scores if an applicant feels they help, so they are optional rather than disregarded. Admission centres on an audition."
   }
  }
 }
