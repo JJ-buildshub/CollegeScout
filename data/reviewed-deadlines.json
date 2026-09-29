@@ -3804,8 +3804,9 @@
    "url": "https://www.unr.edu/admissions/freshman",
    "accessed": "2026-09-22",
    "evidence": [
-    "Early Action deadline: Get your decision sooner Apply by this date to get an earlier admission decision and early access to register for classes. Early Action doesn't require you to commit to attend.",
-    "Final application deadline Last day to submit your application for admission. December 15, 2027 April 7, 2027"
+    "Early Action deadline: Get your decision sooner",
+    "Final application deadline",
+    "Last day to submit your application for admission."
    ],
    "plans": [
     {
@@ -3819,7 +3820,7 @@
      "deadline": "April 7"
     }
    ],
-   "note": "Fall 2027 start column of the freshman deadlines table: Early Action Nov 15 2026, Final application deadline Apr 7 2027 (Feb 15 2027 is the scholarship/financial-aid deadline, kept as a note only, not the admission deadline)."
+   "note": "Fall 2027 start: Early Action November 15, 2026; final application deadline April 7, 2027. The February 15 date on this page is the scholarship and financial aid deadline and June 15 is the deadline to retain a scholarship offer - neither is an application deadline, and neither is stored as one."
   },
   "university-of-new-hampshire": {
    "label": "University of New Hampshire admissions",
