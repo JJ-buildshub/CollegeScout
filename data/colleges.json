@@ -31323,7 +31323,7 @@
     "admitRateOverall": 0.4353,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Blind",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -31431,7 +31431,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Admission centres on an audition and interview, which are not standardized tests.",
+    "testingPolicyProvenance": {
+      "source": "Berklee College of Music admissions (https://college.berklee.edu/admissions/undergraduate/how-to-apply)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "brandeis-university",
@@ -31753,7 +31759,7 @@
     "admitRateOverall": 0.7627,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Free",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -31861,7 +31867,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "MassArt reserves the right to use submitted scores in institutional profile reports for enrolled students.",
+    "testingPolicyProvenance": {
+      "source": "MassArt admissions (https://massart.edu/admissions/first-time-undergraduates/admissions-standards/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "mount-holyoke-college",
@@ -32174,7 +32186,7 @@
     "admitRateOverall": 0.7189,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1070-1260 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -32286,7 +32298,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Submitted scores have no impact on merit-based aid and may not influence the admission decision.",
+    "testingPolicyProvenance": {
+      "source": "Springfield College admissions (https://springfield.edu/admissions/undergraduate-admissions/application-checklist-first-year-students)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "suffolk-university",
@@ -33425,7 +33443,7 @@
     "admitRateOverall": 0.2072,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "1340-1510 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -33520,7 +33538,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Applicants whose first language is not English must show English proficiency, for which an SAT or ACT score is one of several accepted options.",
+    "testingPolicyProvenance": {
+      "source": "Hillsdale College admissions (https://www.hillsdale.edu/admissions-aid/admissions-2/application-process-2/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "lawrence-technological-university",
@@ -33532,7 +33556,7 @@
     "admitRateOverall": 0.559,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "N/A (Not reported)",
@@ -33640,7 +33664,13 @@
         }
       }
     },
-    "admitRateOverallSuperseded": true
+    "admitRateOverallSuperseded": true,
+    "testingPolicyNote": "Lawrence Tech's own label is test-optional, but its page states submitted scores do not influence the admission decision and are used only for course placement and scholarship upgrades.",
+    "testingPolicyProvenance": {
+      "source": "Lawrence Technological University admissions (https://ltu.edu/admissions/first-year-students/)",
+      "year": "2026-27",
+      "accessed": "2026-09-29"
+    }
   },
   {
     "id": "northwood-university",
