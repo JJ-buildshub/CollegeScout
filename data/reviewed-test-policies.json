@@ -1607,8 +1607,10 @@
    "label": "University of Minnesota Twin Cities admissions",
    "url": "https://admissions.tc.umn.edu/admissions/freshman-admission/act-sat-information",
    "evidence": [
-    "Freshman applicants through the fall 2027 term are not required to submit an ACT or SAT test score."
-   ]
+    "On your application, you will indicate whether you would like an ACT/SAT score considered in the review of your application."
+   ],
+   "note": "Minnesota rewrote this page in early October 2026. The previous wording named the fall 2027 term explicitly; the current page states the choice without a cycle. The policy is unchanged: applicants choose whether their score is considered, and an application receives full consideration either way.",
+   "accessed": "2026-10-07"
   },
   "university-of-mississippi": {
    "policy": "Test-Optional",

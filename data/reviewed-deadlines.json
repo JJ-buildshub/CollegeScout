@@ -1957,9 +1957,9 @@
   "missouri-state-university-springfield": {
    "label": "Missouri State University-Springfield admissions",
    "url": "https://www.missouristate.edu/Admissions/how-to-apply.htm",
-   "accessed": "2026-09-22",
+   "accessed": "2026-10-07",
    "evidence": [
-    "You may apply for admission starting the summer before your senior year, and we review applications on a rolling basis."
+    "You may apply for admission starting the summer before your senior year, and we review applications as they are completed."
    ],
    "plans": [
     {
@@ -1970,7 +1970,8 @@
     }
    ],
    "manual": false,
-   "provenanceNote": "Page explicitly names the Fall 2027 semester cycle."
+   "provenanceNote": "Page explicitly names the Fall 2027 semester cycle.",
+   "note": "Missouri State reworded this sentence in early October 2026, from \"on a rolling basis\" to \"as they are completed\"; the policy is unchanged. December 1 is a FAFSA, scholarship and housing priority date, not an admission deadline. The page now also gives a first decision release of December 15 for Fall 2027, which is a notification date rather than a deadline."
   },
   "montana-state-university": {
    "label": "Montana State University admissions",
@@ -4824,19 +4825,19 @@
   "brigham-young-university-hawaii": {
    "label": "BYU-Hawaii application deadlines",
    "url": "https://admissions.byuh.edu/application-deadlines-decisions-schedule",
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-07",
    "evidence": [
-    "Applicants who apply by the priority deadline will receive their admission decision earlier than those who apply after the priority deadline."
+    "Fall (September) September 1 February 1 March 1 April"
    ],
    "plans": [
     {
      "type": "Rolling",
      "binding": false,
-     "deadline": "February 1"
+     "deadline": "March 1"
     }
    ],
    "manual": false,
-   "note": "BYU-Hawaii runs three intakes a year, so autumn is one of three entry terms rather than the main one. February 1 is the fall priority deadline for domestic and international applicants alike; the final deadline differs by group, August 1 domestic and May 1 international. Decisions are released on a rolling basis."
+   "note": "BYU-Hawaii restructured this table between 29 September and 7 October 2026. February 1, previously the priority deadline, is now the document deadline, and the application deadline is March 1. BYU-Hawaii runs three intakes a year, so autumn is one of three entry terms rather than the main one. Decisions are released on a rolling basis."
   },
   "university-of-hawaii-at-hilo": {
    "label": "UH Hilo freshman admissions",
