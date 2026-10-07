@@ -3194,7 +3194,7 @@
     "admitRateOverall": 0.1166,
     "inStateAdmitRate": 0.12,
     "outOfStateAdmitRate": 0.1,
-    "testingPolicy": "Test-Optional",
+    "testingPolicy": "Varies by college",
     "mid50_GPA_Unweighted": "3.89 - 4.00",
     "mid50_GPA_UCCapped": "N/A (Private)",
     "mid50_SAT": "1500 - 1570",
@@ -3353,6 +3353,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "The School of Computer Science requires an SAT or ACT score. Five units - Engineering, Dietrich, the Heinz Information Systems programme, the Mellon College of Science and Tepper - are test flexible: a test is required, but IB, AP, A-Level or the French Baccalaureate may stand in for the SAT or ACT. The College of Fine Arts is test optional and requires a portfolio or audition.",
+    "testingPolicyProvenance": {
+      "source": "Carnegie Mellon standardized testing (https://www.cmu.edu/admission/admission/standardized-testing)",
+      "year": "2026-27",
+      "accessed": "2026-10-07"
     }
   },
   {
@@ -4954,7 +4960,7 @@
     "admitRateOverall": 0.4987,
     "inStateAdmitRate": 0.6,
     "outOfStateAdmitRate": 0.41,
-    "testingPolicy": "Test-Required",
+    "testingPolicy": "Test-Expected",
     "mid50_GPA_Unweighted": "3.70 - 3.98",
     "mid50_GPA_UCCapped": "N/A (Public)",
     "mid50_SAT": "1210 - 1440",
@@ -5114,6 +5120,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "Purdue describes itself as test expected. It expects scores but states that applicants who were unable to take a test may still submit an application. Its admissions site is rendered entirely in the browser, so the quote cannot be checked by fetching the HTML.",
+    "testingPolicyProvenance": {
+      "source": "Purdue admissions (https://admissions.purdue.edu/become-student/guide/)",
+      "year": "2026-27",
+      "accessed": "2026-10-07"
     }
   },
   {
@@ -15055,6 +15067,12 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "testingPolicyNote": "Optional only at a weighted GPA of 2.8 or above. Below that, an ACT score of 17 or an SAT score of 930 is required - a UNC System Board of Governors rule effective from 2026-27. The label is true for most applicants; anyone below a 2.8 must read this condition.",
+    "testingPolicyProvenance": {
+      "source": "UNC admissions (https://admissions.unc.edu/faqs/how-does-unc-look-at-act-or-sat-test-scores/)",
+      "year": "2026-27",
+      "accessed": "2026-10-07"
     }
   },
   {
@@ -51117,7 +51135,7 @@
     "admitRateOverall": 0.6054,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
-    "testingPolicy": "Not verified",
+    "testingPolicy": "Test-Optional",
     "mid50_GPA_Unweighted": "N/A (Not reported)",
     "mid50_GPA_UCCapped": "N/A (Not reported)",
     "mid50_SAT": "940-1140 (SAT evidence-based reading + math, 25th-75th percentile)",
@@ -51245,6 +51263,12 @@
       "source": "MIAD apply now (https://www.miad.edu/apply-now)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "testingPolicyNote": "MIAD's English admissions pages never state a testing policy; they list the SAT and ACT only as score-report codes. The only statement on its own site is on the Spanish-language admissions page, which reads \"ACT / SAT scores (recommended but not required)\".",
+    "testingPolicyProvenance": {
+      "source": "MIAD admissions (Spanish-language page) (https://www.miad.edu/es/admisiones)",
+      "year": "2026-27",
+      "accessed": "2026-10-07"
     }
   },
   {

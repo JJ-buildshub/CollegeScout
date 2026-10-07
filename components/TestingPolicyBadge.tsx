@@ -18,6 +18,8 @@ export const POLICY_LABEL: Record<TestingPolicy, string> = {
   "Test-Optional": "SAT/ACT optional",
   "Test-Free": "Doesn't use SAT/ACT",
   "Test-Blind": "Doesn't use SAT/ACT",
+  "Test-Expected": "SAT/ACT expected",
+  "Varies by college": "Depends on your college",
   "Not verified": "Not confirmed yet",
 };
 
@@ -37,6 +39,14 @@ const META: Record<TestingPolicy, { style: string; note: string }> = {
   "Test-Blind": {
     style: "bg-[#ecf2ec] text-[#2f5540] ring-1 ring-inset ring-[#d5e4d8]",
     note: "This school doesn't look at SAT or ACT scores for admission, even if you send them.",
+  },
+  "Test-Expected": {
+    style: "bg-[#f4efe3] text-[#775f2c] ring-1 ring-inset ring-[#e6dac2]",
+    note: "This school expects scores and will accept an application without them. Sending them is the safer choice unless you have a reason not to.",
+  },
+  "Varies by college": {
+    style: "bg-[#f4efe3] text-[#775f2c] ring-1 ring-inset ring-[#e6dac2]",
+    note: "The rule depends on which college or programme you apply to here. Check the note on this school's profile.",
   },
   "Not verified": {
     style: "bg-white text-[#6f6a60] ring-1 ring-inset ring-[#ddd6c9]",
