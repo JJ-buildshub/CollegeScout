@@ -27335,7 +27335,7 @@
       {
         "type": "Rolling",
         "binding": false,
-        "deadline": "February 1"
+        "deadline": "March 1"
       }
     ],
     "financials": {
@@ -27442,7 +27442,7 @@
     "applicationPlansProvenance": {
       "source": "BYU-Hawaii application deadlines (https://admissions.byuh.edu/application-deadlines-decisions-schedule)",
       "year": "2026-27",
-      "accessed": "2026-09-29"
+      "accessed": "2026-10-07"
     }
   },
   {
@@ -34731,13 +34731,14 @@
     "testingPolicyProvenance": {
       "source": "University of Minnesota Twin Cities admissions (https://admissions.tc.umn.edu/admissions/freshman-admission/act-sat-information)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-07"
     },
     "applicationPlansProvenance": {
       "source": "University of Minnesota Twin Cities admissions (https://admissions.tc.umn.edu/apply/freshman-application-deadlines)",
       "year": "2026-27",
       "accessed": "2026-09-20"
-    }
+    },
+    "testingPolicyNote": "Minnesota rewrote this page in early October 2026. The previous wording named the fall 2027 term explicitly; the current page states the choice without a cycle. The policy is unchanged: applicants choose whether their score is considered, and an application receives full consideration either way."
   },
   {
     "id": "university-of-st-thomas",
@@ -35154,7 +35155,7 @@
     "applicationPlansProvenance": {
       "source": "Missouri State University-Springfield admissions (https://www.missouristate.edu/Admissions/how-to-apply.htm)",
       "year": "2026-27",
-      "accessed": "2026-09-22",
+      "accessed": "2026-10-07",
       "note": "Page explicitly names the Fall 2027 semester cycle."
     },
     "testingPolicyProvenance": {
