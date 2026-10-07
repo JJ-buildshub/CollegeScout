@@ -1,7 +1,21 @@
 export type CollegeSystem = "UC" | "CSU" | "Private" | "Public";
 
 /** "Not verified" means the school's own page has not been read yet; never a guess at the policy. */
-export type TestingPolicy = "Test-Free" | "Test-Required" | "Test-Optional" | "Test-Blind" | "Not verified";
+/**
+ * Four values covered most schools and misrepresented the rest. Carnegie Mellon
+ * requires a test in Computer Science, accepts AP or IB instead in five
+ * colleges, and is optional in Fine Arts. Purdue calls itself "test expected" -
+ * it expects scores but accepts applications without them. Neither is required
+ * nor optional, and calling them either tells a student something false.
+ */
+export type TestingPolicy =
+  | "Test-Free"
+  | "Test-Required"
+  | "Test-Optional"
+  | "Test-Blind"
+  | "Test-Expected"
+  | "Varies by college"
+  | "Not verified";
 
 export interface FlagshipProgram {
   name: string;

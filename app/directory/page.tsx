@@ -27,6 +27,10 @@ const TESTING_FILTERS: { label: string; policies: TestingPolicy[] }[] = [
   { label: POLICY_LABEL["Test-Required"], policies: ["Test-Required"] },
   { label: POLICY_LABEL["Test-Optional"], policies: ["Test-Optional"] },
   { label: POLICY_LABEL["Test-Blind"], policies: ["Test-Blind", "Test-Free"] },
+  // A student who must sit the test is better served seeing "expected" and
+  // "varies" alongside "required" than not finding those schools at all.
+  { label: POLICY_LABEL["Test-Expected"], policies: ["Test-Expected"] },
+  { label: POLICY_LABEL["Varies by college"], policies: ["Varies by college"] },
   { label: POLICY_LABEL["Not verified"], policies: ["Not verified"] },
 ];
 

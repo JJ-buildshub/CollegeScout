@@ -3221,6 +3221,50 @@
    ],
    "manual": false,
    "note": "PNCA is part of Willamette University and its own pages never mention the SAT or ACT, so the policy comes from the shared Willamette admissions site that routes PNCA applicants. Submitted scores are reviewed alongside other indicators. International applicants must provide a TOEFL or IELTS but may apply without SAT or ACT scores."
+  },
+  "carnegie-mellon-university": {
+   "policy": "Varies by college",
+   "label": "Carnegie Mellon standardized testing",
+   "url": "https://www.cmu.edu/admission/admission/standardized-testing",
+   "accessed": "2026-10-07",
+   "evidence": [
+    "Carnegie Mellon's undergraduate admission test policy varies according to college or program:"
+   ],
+   "manual": false,
+   "note": "The School of Computer Science requires an SAT or ACT score. Five units - Engineering, Dietrich, the Heinz Information Systems programme, the Mellon College of Science and Tepper - are test flexible: a test is required, but IB, AP, A-Level or the French Baccalaureate may stand in for the SAT or ACT. The College of Fine Arts is test optional and requires a portfolio or audition."
+  },
+  "purdue-university": {
+   "policy": "Test-Expected",
+   "label": "Purdue admissions",
+   "url": "https://admissions.purdue.edu/become-student/guide/",
+   "accessed": "2026-10-07",
+   "evidence": [
+    "Purdue expects applicants to have SAT, ACT or CLT scores."
+   ],
+   "manual": true,
+   "note": "Purdue describes itself as test expected. It expects scores but states that applicants who were unable to take a test may still submit an application. Its admissions site is rendered entirely in the browser, so the quote cannot be checked by fetching the HTML."
+  },
+  "milwaukee-institute-of-art-and-design": {
+   "policy": "Test-Optional",
+   "label": "MIAD admissions (Spanish-language page)",
+   "url": "https://www.miad.edu/es/admisiones",
+   "accessed": "2026-10-07",
+   "evidence": [
+    "Puntuaciones ACT / SAT (recomendado pero no obligatorio)"
+   ],
+   "manual": false,
+   "note": "MIAD's English admissions pages never state a testing policy; they list the SAT and ACT only as score-report codes. The only statement on its own site is on the Spanish-language admissions page, which reads \"ACT / SAT scores (recommended but not required)\"."
+  },
+  "university-of-north-carolina-chapel-hill": {
+   "policy": "Test-Optional",
+   "label": "UNC admissions",
+   "url": "https://admissions.unc.edu/faqs/how-does-unc-look-at-act-or-sat-test-scores/",
+   "accessed": "2026-10-07",
+   "evidence": [
+    "students with a weighted GPA of 2.8 or above (on a 4.0 scale) are not required to submit a test score. Students with a weighted GPA below 2.8 (on a 4.0 scale) are required to submit either an ACT score of 17 or higher or an SAT score of 930 or higher."
+   ],
+   "manual": false,
+   "note": "Optional only at a weighted GPA of 2.8 or above. Below that, an ACT score of 17 or an SAT score of 930 is required - a UNC System Board of Governors rule effective from 2026-27. The label is true for most applicants; anyone below a 2.8 must read this condition."
   }
  }
 }
