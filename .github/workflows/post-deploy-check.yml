@@ -1,0 +1,73 @@
+# A Next.js build can succeed and still ship a broken page. That happened on
+# this project: a font change compiled cleanly, deployed, and rendered an empty
+# body. HTTP 200, no build error, nothing to notice. This checks what the live
+# site actually serves after a deploy, not whether the build exited zero.
+name: Post-deploy check
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Wait for Vercel, then check what the site really serves
+        run: |
+          node --input-type=module -e '
+          const ROUTES = [
+            ["home",      "https://collegescout.app/",                                 2000],
+            ["directory", "https://collegescout.app/directory",                        5000],
+            ["profile",   "https://collegescout.app/directory/stanford-university",    3000],
+            ["my fit",    "https://collegescout.app/matcher",                          1500],
+            ["my plan",   "https://collegescout.app/checklist",                         500],
+            ["about",     "https://collegescout.app/about-data",                        800],
+            ["sitemap",   "https://collegescout.app/sitemap.xml",                      1000],
+          ];
+
+          const get = async (url) => {
+            const r = await fetch(url, { redirect: "follow", cache: "no-store",
+              headers: { "User-Agent": "collegescout-post-deploy-check" } });
+            return { status: r.status, body: await r.text(), url: r.url };
+          };
+
+          // Vercel takes a minute or two to build. Poll the homepage until it
+          // answers properly rather than guessing at a fixed sleep.
+          let ready = false;
+          for (let i = 0; i < 20 && !ready; i++) {
+            try {
+              const r = await get(ROUTES[0][1]);
+              ready = r.status === 200 && r.body.includes("CollegeScout");
+            } catch {}
+            if (!ready) await new Promise((r) => setTimeout(r, 15000));
+          }
+          if (!ready) { console.error("homepage never came back healthy after 5 minutes"); process.exit(1); }
+
+          const problems = [];
+          for (const [name, url, minChars] of ROUTES) {
+            try {
+              const r = await get(url);
+              if (r.status !== 200) { problems.push(`${name}: HTTP ${r.status}`); continue; }
+              // The empty-page failure mode: a 200 with nothing rendered in it.
+              if (r.body.length < minChars) problems.push(`${name}: only ${r.body.length} bytes, expected at least ${minChars}`);
+              if (!url.endsWith(".xml") && !r.body.includes("CollegeScout")) problems.push(`${name}: page content missing`);
+            } catch (e) {
+              problems.push(`${name}: request failed - ${(e.cause && e.cause.code) || e.message}`);
+            }
+          }
+
+          if (problems.length) {
+            console.error("The deploy is live but these routes are wrong:");
+            problems.forEach((p) => console.error("  - " + p));
+            process.exit(1);
+          }
+          console.log("All " + ROUTES.length + " routes serving correctly.");
+          '

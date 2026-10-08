@@ -1,0 +1,71 @@
+# Colleges change their own pages, and when they do our stored quote stops
+# matching. That is the only signal we get that a record has gone stale.
+# Measured drift is roughly one page in 250 per week; one in 750 changes in a
+# way that alters the answer. Over a nine-month admissions cycle that is enough
+# wrong records to matter, and nothing else surfaces them.
+name: Data decay check
+
+on:
+  schedule:
+    # 06:17 UTC on Mondays. Off-the-hour deliberately: every scheduled job in
+    # the world fires at :00, and GitHub delays runs when its queue is busy.
+    - cron: "17 6 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # The verifiers import only Node builtins, so there is nothing to install.
+      - name: Re-check every recorded testing-policy quote
+        id: policies
+        continue-on-error: true
+        run: node scripts/check-reviewed-test-policies.mjs 2>&1 | tee policies.txt
+
+      - name: Re-check every recorded deadline quote
+        id: deadlines
+        continue-on-error: true
+        run: node scripts/check-reviewed-deadlines.mjs 2>&1 | tee deadlines.txt
+
+      - name: Open an issue if any page stopped matching
+        if: steps.policies.outcome == 'failure' || steps.deadlines.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          {
+            echo "A college changed a page we quote. Each line below is a stored"
+            echo "quote that no longer appears on the school's own page."
+            echo
+            echo "A failure does not always mean the data is wrong. Most are"
+            echo "rewordings. Check what the page says now before changing a value:"
+            echo "the policy or date may be unchanged and only the sentence moved."
+            echo
+            echo "### Testing policies"
+            echo '```'
+            grep -E "NOT FOUND|could not load|matched their school page" policies.txt || echo "(no output)"
+            echo '```'
+            echo
+            echo "### Deadlines"
+            echo '```'
+            grep -E "NOT FOUND|could not load|matched their school page" deadlines.txt || echo "(no output)"
+            echo '```'
+            echo
+            echo "Fix by updating the quote in \`data/reviewed-*.json\`, re-running the"
+            echo "checker, then \`python scripts/apply-reviewed-*.py --apply\`."
+          } > body.md
+          gh issue create \
+            --title "Data decay: a college changed a page we quote ($(date -u +%Y-%m-%d))" \
+            --body-file body.md \
+            --label "data" || gh issue create \
+            --title "Data decay: a college changed a page we quote ($(date -u +%Y-%m-%d))" \
+            --body-file body.md
