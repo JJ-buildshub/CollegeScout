@@ -51,6 +51,7 @@ const MAX_RESULTS = 6;
 // digit real matches in this dataset — the caveat should show for those too,
 // not just for a near-zero count.
 const LOW_MATCH_THRESHOLD = 8;
+const SELECTION_STORAGE_KEY = "collegescout:home-interests";
 
 const DEFAULT_INTERESTS = INTEREST_TAXONOMY.filter((i) => DEFAULT_INTEREST_IDS.includes(i.id));
 const OVERFLOW_INTERESTS = INTEREST_TAXONOMY.filter((i) => !DEFAULT_INTEREST_IDS.includes(i.id));
@@ -119,6 +120,41 @@ export default function TryCollegeScout() {
   const [selectedIds, setSelectedIds] = useState<string[]>(["entrepreneurship"]);
   const [notSure, setNotSure] = useState(false);
   const [showMore, setShowMore] = useState(false);
+
+  // The selection lives in sessionStorage as well as in state, because opening
+  // a school unmounts this component and coming back remounts it — without
+  // this, Back returned to Entrepreneurship rather than to what the student
+  // had picked. Session rather than local storage on purpose: a new visit
+  // should still open on the default. Restored in an effect, not in the
+  // initial state, so the first render matches the server's.
+  const [restored, setRestored] = useState(false);
+  useEffect(() => {
+    try {
+      const raw = window.sessionStorage.getItem(SELECTION_STORAGE_KEY);
+      if (raw) {
+        const saved = JSON.parse(raw);
+        const ids = Array.isArray(saved?.selectedIds)
+          ? saved.selectedIds
+              .filter((id: unknown) => INTEREST_TAXONOMY.some((i) => i.id === id))
+              .slice(0, MAX_SELECTED_INTERESTS)
+          : [];
+        setSelectedIds(ids);
+        setNotSure(saved?.notSure === true);
+        setShowMore(saved?.showMore === true);
+      }
+    } catch {
+      // Storage unavailable or unreadable — keep the default selection.
+    }
+    setRestored(true);
+  }, []);
+  useEffect(() => {
+    if (!restored) return;
+    try {
+      window.sessionStorage.setItem(SELECTION_STORAGE_KEY, JSON.stringify({ selectedIds, notSure, showMore }));
+    } catch {
+      // Storage unavailable — the selection just won't survive leaving the page.
+    }
+  }, [restored, selectedIds, notSure, showMore]);
 
   const selectedInterests = INTEREST_TAXONOMY.filter((i) => selectedIds.includes(i.id));
   const atLimit = selectedIds.length >= MAX_SELECTED_INTERESTS;
