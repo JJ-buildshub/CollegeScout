@@ -1,0 +1,81 @@
+# The post-deploy check only runs when something is pushed. A site can also
+# break with no deploy at all: a lapsed domain, an expired certificate, a
+# Vercel outage, a changed DNS record. This looks at the live site once a day
+# so that kind of failure is noticed without anyone having to open it.
+name: Daily uptime check
+
+on:
+  schedule:
+    # 14:23 UTC daily, early morning Pacific. Off-the-hour deliberately: every
+    # scheduled job in the world fires at :00, and GitHub delays runs when its
+    # queue is busy.
+    - cron: "23 14 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  uptime:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Check what the live site serves
+        run: |
+          node --input-type=module -e '
+          const ROUTES = [
+            ["home",         "https://collegescout.app/",                                 2000],
+            ["directory",    "https://collegescout.app/directory",                        5000],
+            ["profile",      "https://collegescout.app/directory/stanford-university",    3000],
+            ["my fit",       "https://collegescout.app/matcher",                          1500],
+            ["my plan",      "https://collegescout.app/checklist",                         500],
+            ["about",        "https://collegescout.app/about-data",                        800],
+            ["sitemap",      "https://collegescout.app/sitemap.xml",                      1000],
+            ["www redirect", "https://www.collegescout.app/",                             2000],
+          ];
+
+          const check = async ([name, url, minChars]) => {
+            try {
+              const t0 = Date.now();
+              const r = await fetch(url, { redirect: "follow", cache: "no-store",
+                headers: { "User-Agent": "collegescout-uptime-check" } });
+              const body = await r.text();
+              const ms = Date.now() - t0;
+              if (r.status !== 200) return `${name}: HTTP ${r.status}`;
+              // A 200 with nothing rendered in it has happened here before.
+              if (body.length < minChars) return `${name}: only ${body.length} bytes, expected at least ${minChars}`;
+              if (name === "sitemap") {
+                const n = body.split("<url>").length - 1;
+                return n < 300 ? `sitemap only lists ${n} URLs, expected about 341` : null;
+              }
+              if (!body.includes("CollegeScout")) return `${name}: page content missing`;
+              if (name === "www redirect" && !r.url.startsWith("https://collegescout.app"))
+                return `www did not redirect to the bare domain, landed on ${r.url}`;
+              if (ms > 10000) return `${name}: slow, ${ms}ms`;
+              return null;
+            } catch (e) {
+              return `${name}: request failed - ${(e.cause && e.cause.code) || e.message}`;
+            }
+          };
+
+          // A failed run emails the owner, so one dropped connection should not
+          // count. Anything still wrong a minute later is reported.
+          let failing = ROUTES;
+          let problems = [];
+          for (let attempt = 0; attempt < 2 && failing.length; attempt++) {
+            if (attempt) await new Promise((r) => setTimeout(r, 60000));
+            const results = await Promise.all(failing.map(check));
+            failing = failing.filter((_, i) => results[i]);
+            problems = results.filter(Boolean);
+          }
+
+          if (problems.length) {
+            console.error("The live site has problems:");
+            problems.forEach((p) => console.error("  - " + p));
+            process.exit(1);
+          }
+          console.log("All " + ROUTES.length + " routes serving correctly.");
+          '
