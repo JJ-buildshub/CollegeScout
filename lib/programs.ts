@@ -9,6 +9,8 @@ import rawPrograms from "@/data/programs.json";
 interface ProgramsFile {
   source: string;
   year: string;
+  /** Field key -> federal CIP code prefixes that make it up (set in scripts/import-programs.mjs). */
+  fields: Record<string, string[]>;
   byCollege: Record<string, Record<string, number>>;
 }
 
@@ -18,6 +20,11 @@ const programs = rawPrograms as unknown as ProgramsFile;
 export const MIN_PROGRAM_DEGREES = 10;
 
 export const PROGRAMS_SOURCE = { source: programs.source, year: programs.year };
+
+/** The CIP code prefixes covered by these field keys — what decides whether a given major belongs to a field. */
+export function cipPrefixesFor(fields: string[]): string[] {
+  return fields.flatMap((f) => programs.fields[f] ?? []);
+}
 
 /** Bachelor's degrees the school awarded in a field (0 if none reported). */
 export function degreesIn(collegeId: string, field: string): number {

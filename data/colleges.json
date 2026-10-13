@@ -154,6 +154,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 45619,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -328,6 +335,13 @@
         "value": 0.0897,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 38614,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -506,6 +520,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 38701,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -679,6 +700,13 @@
         "value": 0.4183,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 41238,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -855,6 +883,13 @@
         "value": 0.2857,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 38632,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -1034,6 +1069,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 41573,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -1209,6 +1251,13 @@
         "value": 0.6579,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 41179,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -1388,6 +1437,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 38942,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -1565,6 +1621,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 39665,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -1737,6 +1800,13 @@
         "value": 0.3132,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 32265,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -1915,6 +1985,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 26593,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -2091,6 +2168,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 27780,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -2263,6 +2347,13 @@
         "value": 0.7517,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 23955,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -2438,6 +2529,13 @@
         "value": 0.4627,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 22679,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -2618,6 +2716,13 @@
         "value": 0.0361,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 87833,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -2802,6 +2907,13 @@
         "value": 0.0981,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 90300,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -2990,6 +3102,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 82026,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -3163,6 +3282,13 @@
         "value": 0.0455,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 82730,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -3343,6 +3469,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 83654,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -3516,6 +3649,13 @@
         "value": 0.0365,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 85540,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -3696,6 +3836,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 84040,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -3871,6 +4018,13 @@
         "value": 0.0387,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 88300,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -4049,6 +4203,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 89472,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -4225,6 +4386,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 89028,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -4399,6 +4567,13 @@
         "value": 0.0876,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 88140,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -4578,6 +4753,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 87648,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -4755,6 +4937,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 87793,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -4930,6 +5119,13 @@
         "value": 0.0257,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 86886,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -5110,6 +5306,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 24591,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -5288,6 +5491,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 33642,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -5458,6 +5668,13 @@
         "value": 0.3915,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 32446,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -5637,6 +5854,13 @@
         "value": 0.1564,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 34654,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -5822,6 +6046,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 28167,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -5997,6 +6228,13 @@
         "value": 0.2664,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 31247,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -6185,6 +6423,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 84641,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -6367,6 +6612,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 85300,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -6544,6 +6796,13 @@
         "value": 0.0825,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 84860,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -6731,6 +6990,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 82404,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -6902,6 +7168,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 33382,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -7070,6 +7343,13 @@
         "value": 0.5808,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 38105,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -7254,6 +7534,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 88300,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -7423,6 +7710,13 @@
         "value": 0.9052,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 18269,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -7599,6 +7893,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 22945,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -7771,6 +8072,13 @@
         "value": 0.9345,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 20485,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -7946,6 +8254,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 18403,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -8117,6 +8432,13 @@
         "value": 0.9644,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 26488,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -8292,6 +8614,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 24648,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -8463,6 +8792,13 @@
         "value": 0.9739,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 22850,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -8638,6 +8974,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 20095,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -8811,6 +9154,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 26283,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -8977,6 +9327,13 @@
         "value": 0.982,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 25170,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -9152,6 +9509,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 86500,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -9322,6 +9686,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 90165,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -9490,6 +9861,13 @@
         "value": 0.3829,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 87564,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -9669,6 +10047,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 84800,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -9844,6 +10229,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 83943,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -10016,6 +10408,13 @@
         "value": 0.5238,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 78720,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -10196,6 +10595,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 80141,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -10369,6 +10775,13 @@
         "value": 0.6543,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 83146,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -10545,6 +10958,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 93512,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -10708,6 +11128,13 @@
         "value": 0.7132,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 71515,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -10880,6 +11307,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 76630,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -11049,6 +11483,13 @@
         "value": 0.0901,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 87640,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -11223,6 +11664,13 @@
         "value": 0.0746,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 84103,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -11400,6 +11848,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 86290,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -11574,6 +12029,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 85100,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -11744,6 +12206,13 @@
         "value": 0.1075,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 85880,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -11920,6 +12389,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 84893,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -12089,6 +12565,13 @@
         "value": 0.1388,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 87070,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -12263,6 +12746,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 87419,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -12432,6 +12922,13 @@
         "value": 0.1362,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 84230,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -12608,6 +13105,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 85420,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -12782,6 +13286,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 83532,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -12947,6 +13458,13 @@
         "value": 0.0571,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 87072,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -13127,6 +13645,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 90360,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -13295,6 +13820,13 @@
         "value": 0.0769,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 91250,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -13472,6 +14004,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 89590,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -13644,6 +14183,13 @@
         "value": 0.08,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 79788,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -13822,6 +14368,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 85947,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -13993,6 +14546,13 @@
         "value": 0.1291,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 88741,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -14180,6 +14740,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 78679,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -14354,6 +14921,13 @@
         "value": 0.3654,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 85851,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -14533,6 +15107,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 74626,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -14707,6 +15288,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 79790,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -14878,6 +15466,13 @@
         "value": 0.4008,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 85962,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -15055,6 +15650,13 @@
         "value": 0.1534,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 26055,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -15239,6 +15841,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 39926,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -15420,6 +16029,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 22523,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -15593,6 +16209,13 @@
         "value": 0.6057,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 30305,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -15770,6 +16393,13 @@
         "value": 0.6056,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 39694,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -15950,6 +16580,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 28679,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -16127,6 +16764,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 28801,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -16300,6 +16944,13 @@
         "value": 0.4479,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 29299,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -16476,6 +17127,13 @@
         "value": 0.5815,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 36993,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -16655,6 +17313,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 29423,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -16825,6 +17490,13 @@
         "value": 0.8989,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 30111,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -17004,6 +17676,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 37684,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -17172,6 +17851,13 @@
         "value": 0.5743,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 32696,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -17352,6 +18038,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 38757,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -17524,6 +18217,13 @@
         "value": 0.5128,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 74226,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -17704,6 +18404,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 76604,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -17880,6 +18587,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 85606,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -18054,6 +18768,13 @@
         "value": 0.7781,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 78476,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -18234,6 +18955,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 62266,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -18399,6 +19127,13 @@
         "value": 0.653,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 35649,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -18575,6 +19310,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 30952,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -18745,6 +19487,13 @@
         "value": 0.7944,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 76835,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -18920,6 +19669,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 40903,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -19087,6 +19843,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 39426,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -19251,6 +20014,13 @@
         "value": 0.3834,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 35015,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -19422,6 +20192,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 32198,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -19589,6 +20366,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 28596,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -19751,6 +20535,13 @@
         "value": 0.9348,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 26751,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -19938,6 +20729,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 84374,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -20114,6 +20912,13 @@
         "value": 0.1127,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 83271,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -20302,6 +21107,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 83622,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -20487,6 +21299,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 88488,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -20669,6 +21488,13 @@
         "value": 0.1111,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 86285,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -20856,6 +21682,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 87004,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -21038,6 +21871,13 @@
         "value": 0.1643,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 89493,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -21228,6 +22068,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 86078,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -21407,6 +22254,13 @@
         "value": 0.2167,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 87499,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -21598,6 +22452,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 84793,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -21776,6 +22637,13 @@
         "value": 0.377,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 27993,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -21966,6 +22834,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 84517,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -22102,6 +22977,13 @@
       "admitRateOverall": {
         "value": null,
         "provenance": null
+      },
+      "costOfAttendance": {
+        "value": 24096,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": false,
@@ -22249,6 +23131,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 34919,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -22387,6 +23276,13 @@
         "value": 0.9604,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 23165,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -22530,6 +23426,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 28145,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -22663,6 +23566,13 @@
         "value": 0.8226,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 25082,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -22799,6 +23709,13 @@
         "value": 0.9589,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 22808,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -22943,6 +23860,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 27767,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -23083,6 +24007,13 @@
         "value": 0.8949,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 25029,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -23231,6 +24162,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 62798,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -23366,6 +24304,13 @@
         "value": 0.8961,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 29933,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -23510,6 +24455,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 75649,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -23650,6 +24602,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 56313,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -23785,6 +24744,13 @@
         "value": 0.3234,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 77560,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -23925,6 +24891,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 17427,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -24060,6 +25033,13 @@
         "value": 0.9432,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 57989,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -24218,6 +25198,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 86921,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -24353,6 +25340,13 @@
         "value": 0.8854,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 31642,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -24492,6 +25486,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 24622,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -24627,6 +25628,13 @@
         "value": 0.7333,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 24870,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -24784,6 +25792,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 84623,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -24939,6 +25954,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 76074,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -25088,6 +26110,13 @@
         "value": 0.1649,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 89020,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -25245,6 +26274,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 76058,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -25393,6 +26429,13 @@
         "value": 0.4709,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 83856,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -25546,6 +26589,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 54630,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -25685,6 +26735,13 @@
         "value": 0.4658,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 27939,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -25837,6 +26894,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 23970,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -25986,6 +27050,13 @@
         "value": 0.5466,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 21462,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -26145,6 +27216,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 25720,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -26294,6 +27372,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 51614,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -26440,6 +27525,13 @@
         "value": 0.4011,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 23133,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -26595,6 +27687,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 22859,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -26735,6 +27834,13 @@
         "value": 0.8789,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 24430,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -26884,6 +27990,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 28241,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -27026,6 +28139,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 24008,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -27164,6 +28284,13 @@
         "value": 0.8298,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 63627,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -27307,6 +28434,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 21981,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -27446,6 +28580,13 @@
         "value": 0.4696,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 25098,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -27594,6 +28735,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 50674,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -27732,6 +28880,13 @@
         "value": 0.6063,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 21173,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -27874,6 +29029,13 @@
         "value": 0.866,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 26433,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -28020,6 +29182,13 @@
         "value": 0.6385,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 64835,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -28172,6 +29341,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 83440,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -28310,6 +29486,13 @@
         "value": 0.8866,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 24018,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -28453,6 +29636,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 22278,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -28590,6 +29780,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 28224,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -28724,6 +29921,13 @@
         "value": 0.8769,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 21925,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -28867,6 +30071,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 23738,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -29003,6 +30214,13 @@
         "value": 0.8946,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 51889,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -29157,6 +30375,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 68164,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -29296,6 +30521,13 @@
         "value": 0.8815,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 34309,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -29438,6 +30670,13 @@
         "value": 0.7747,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 75625,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -29585,6 +30824,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 27521,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -29724,6 +30970,13 @@
         "value": 0.855,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 26146,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -29868,6 +31121,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 23316,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -30002,6 +31262,13 @@
         "value": 0.9546,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 56258,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -30139,6 +31406,13 @@
         "value": 0.9771,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 21967,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -30283,6 +31557,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 27402,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -30424,6 +31705,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 21780,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -30563,6 +31851,13 @@
         "value": 0.7761,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 23735,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -30711,6 +32006,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 34391,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -30852,6 +32154,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 32941,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -30990,6 +32299,13 @@
         "value": 0.9387,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 24188,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -31134,6 +32450,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 34705,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -31269,6 +32592,13 @@
         "value": 0.9931,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 23604,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -31410,6 +32740,13 @@
         "value": 0.8701,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 24884,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -31568,6 +32905,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 80192,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -31707,6 +33051,13 @@
         "value": 0.4353,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 72700,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -31865,6 +33216,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 86448,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -32020,6 +33378,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 80399,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -32159,6 +33524,13 @@
         "value": 0.7627,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 34239,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -32312,6 +33684,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 84926,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -32461,6 +33840,13 @@
         "value": 0.21,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 86030,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -32613,6 +33999,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 60729,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -32760,6 +34153,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 65281,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -32895,6 +34295,13 @@
         "value": 0.411,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 81277,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -33043,6 +34450,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 34549,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -33187,6 +34601,13 @@
         "value": 0.8197,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 28535,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -33334,6 +34755,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 28576,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -33474,6 +34902,13 @@
         "value": 0.9664,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 27328,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -33617,6 +35052,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 30681,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -33758,6 +35200,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 28367,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -33845,8 +35294,11 @@
     "ipedsUnitId": 170286,
     "scorecard": {
       "netPriceOverall": {
-        "value": null,
-        "provenance": null
+        "value": 17140.5,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.consumer.overall_median)",
+          "year": "award year not identified (checked 2020–2026)"
+        }
       },
       "netPriceByIncomeBand": {
         "value": null,
@@ -33886,6 +35338,10 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": null,
+        "provenance": null
       }
     },
     "admitRateOverallSuperseded": true,
@@ -34023,6 +35479,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 58166,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -34158,6 +35621,13 @@
         "value": 0.6451,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 48780,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -34299,6 +35769,13 @@
         "value": 0.8116,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 27350,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -34456,6 +35933,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 82991,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -34591,6 +36075,13 @@
         "value": 0.8844,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 23995,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -34743,6 +36234,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 30061,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -34889,6 +36387,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 66116,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -35023,6 +36528,13 @@
         "value": 0.5476,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 57410,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -35167,6 +36679,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 25048,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -35309,6 +36828,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 31713,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -35449,6 +36975,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 29267,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -35583,6 +37116,13 @@
         "value": 0.9031,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 22225,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -35727,6 +37267,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 28660,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -35863,6 +37410,13 @@
         "value": 0.9912,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 26566,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -36003,6 +37557,13 @@
         "value": 0.8214,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 25905,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -36148,6 +37709,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 23570,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -36283,6 +37851,13 @@
         "value": 0.8718,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 62187,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -36436,6 +38011,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 79475,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -36575,6 +38157,13 @@
         "value": 0.8921,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 23867,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -36733,6 +38322,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 65548,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -36876,6 +38472,13 @@
         "value": 0.499,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 20427,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -37023,6 +38626,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 26425,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -37164,6 +38774,13 @@
         "value": 0.2997,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 26470,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -37312,6 +38929,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 26547,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -37458,6 +39082,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 23010,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -37595,6 +39226,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 23716,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -37729,6 +39367,13 @@
         "value": 0.753,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 33672,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -37869,6 +39514,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 25605,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -38003,6 +39655,13 @@
         "value": 0.9907,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 20468,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -38146,6 +39805,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 63423,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -38286,6 +39952,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 25808,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -38421,6 +40094,13 @@
         "value": 0.8698,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 21120,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -38565,6 +40245,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 26697,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -38693,6 +40380,13 @@
         "value": 0.9033,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 29993,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -38824,6 +40518,13 @@
         "value": 0.8754,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 29644,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -38971,6 +40672,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 35537,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -39116,6 +40824,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 28305,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -39254,6 +40969,13 @@
         "value": 0.7766,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 35842,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -39407,6 +41129,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 38860,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -39547,6 +41276,13 @@
         "value": 0.8897,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 23274,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -39690,6 +41426,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 21259,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -39824,6 +41567,13 @@
         "value": 0.8682,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 23718,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -39968,6 +41718,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 19638,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -40109,6 +41866,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 25786,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -40243,6 +42007,13 @@
         "value": 0.2448,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 65647,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -40391,6 +42162,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 89538,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -40537,6 +42315,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 30345,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -40678,6 +42463,13 @@
         "value": 0.4752,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 14170,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -40822,6 +42614,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 14151,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -40962,6 +42761,13 @@
         "value": 0.538,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 13905,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -41105,6 +42911,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 14121,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -41239,6 +43052,13 @@
         "value": 0.6024,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 26838,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -41376,6 +43196,13 @@
         "value": 0.4078,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 77703,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -41525,6 +43352,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 80049,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -41671,6 +43505,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 29043,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -41810,6 +43651,13 @@
         "value": 0.5979,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 28108,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -41957,6 +43805,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 28428,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -42102,6 +43957,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 30539,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -42236,6 +44098,13 @@
         "value": 0.0915,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 83892,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -42385,6 +44254,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 88284,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -42469,8 +44345,11 @@
     "ipedsUnitId": 197036,
     "scorecard": {
       "netPriceOverall": {
-        "value": null,
-        "provenance": null
+        "value": 17140.5,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.avg_net_price.consumer.overall_median)",
+          "year": "award year not identified (checked 2020–2026)"
+        }
       },
       "netPriceByIncomeBand": {
         "value": null,
@@ -42504,6 +44383,10 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": null,
+        "provenance": null
       }
     },
     "admitRateOverallSuperseded": true,
@@ -42648,6 +44531,13 @@
         "value": 0.7418,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 30785,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -42796,6 +44686,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 70892,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -42935,6 +44832,13 @@
         "value": 0.8096,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 33007,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -43087,6 +44991,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 81900,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -43226,6 +45137,13 @@
         "value": 0.8634,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 30567,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -43376,6 +45294,13 @@
         "value": 0.3103,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 87590,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -43533,6 +45458,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 87404,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -43676,6 +45608,13 @@
         "value": 0.8499,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 30586,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -43824,6 +45763,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 32171,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -43970,6 +45916,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 65881,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -44108,6 +46061,13 @@
         "value": 0.9959,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 21551,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -44251,6 +46211,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 28290,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -44379,6 +46346,13 @@
         "value": 0.7812,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 26392,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -44519,6 +46493,13 @@
         "value": 0.766,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 28872,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -44662,6 +46643,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 31653,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -44803,6 +46791,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 70376,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -44938,6 +46933,13 @@
         "value": 0.9087,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 21590,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -45083,6 +47085,13 @@
         "value": 0.883,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 34793,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -45237,6 +47246,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 83133,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -45387,6 +47403,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 80856,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -45525,6 +47548,13 @@
         "value": 0.6058,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 55582,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -45671,6 +47701,13 @@
         "value": 0.5646,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 71327,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -45824,6 +47861,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 77270,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -45971,6 +48015,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 17454,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -46115,6 +48166,13 @@
         "value": 0.1866,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 81727,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -46268,6 +48326,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 34321,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -46416,6 +48481,13 @@
         "value": 0.7527,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 26692,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -46574,6 +48646,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 32362,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -46721,6 +48800,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 31638,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -46858,6 +48944,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 21277,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -46987,6 +49080,13 @@
         "value": 0.93,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 22077,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -47124,6 +49224,13 @@
         "value": 0.9834,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 24636,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -47267,6 +49374,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 24422,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -47405,6 +49519,13 @@
         "value": 0.8619,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 27042,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -47548,6 +49669,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 24289,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -47689,6 +49817,13 @@
         "value": 0.8109,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 25489,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -47839,6 +49974,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 33678,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -47982,6 +50124,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 25169,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -48120,6 +50269,13 @@
         "value": 0.8884,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 52716,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -48264,6 +50420,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 28073,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -48406,6 +50569,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 27443,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -48545,6 +50715,13 @@
         "value": 0.799,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 25261,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -48690,6 +50867,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 29807,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -48830,6 +51014,13 @@
         "value": 0.8679,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 22352,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -48973,6 +51164,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 26185,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -49114,6 +51312,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 26243,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -49253,6 +51458,13 @@
         "value": 0.6778,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 22690,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -49401,6 +51613,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 25557,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -49545,6 +51764,13 @@
         "value": 0.8748,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 28604,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -49702,6 +51928,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 80961,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -49842,6 +52075,13 @@
         "value": 0.9262,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 38954,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -49989,6 +52229,13 @@
         "value": 0.5478,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 36951,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -50141,6 +52388,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 87000,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -50289,6 +52543,13 @@
         "value": 0.3407,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 43035,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -50441,6 +52702,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 65009,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -50575,6 +52843,13 @@
         "value": 0.8167,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 25988,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -50824,6 +53099,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 27648,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -50971,6 +53253,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 30359,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -51109,6 +53398,13 @@
         "value": 0.6684,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 52639,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -51256,6 +53552,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 53528,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -51392,6 +53695,13 @@
         "value": 0.9068,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 22756,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -51532,6 +53842,13 @@
         "value": 0.9862,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 20018,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -51676,6 +53993,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 22022,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -51815,6 +54139,13 @@
         "value": 0.9596,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 19772,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }
@@ -51959,6 +54290,13 @@
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
           "year": "2024"
         }
+      },
+      "costOfAttendance": {
+        "value": 26415,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
+          "year": "2024"
+        }
       }
     },
     "admitRateOverallSuperseded": true,
@@ -52094,6 +54432,13 @@
         "value": 0.9688,
         "provenance": {
           "source": "College Scorecard (latest.admissions.admission_rate.overall)",
+          "year": "2024"
+        }
+      },
+      "costOfAttendance": {
+        "value": 24818,
+        "provenance": {
+          "source": "College Scorecard (latest.cost.attendance.academic_year)",
           "year": "2024"
         }
       }

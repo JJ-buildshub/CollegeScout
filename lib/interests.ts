@@ -1,6 +1,6 @@
 import type { College } from "./types";
 import { admitRateTier, displayedAdmitRate } from "./colleges";
-import { degreesIn, MIN_PROGRAM_DEGREES, offersProgram, PROGRAMS_SOURCE } from "./programs";
+import { degreesIn, offersProgram } from "./programs";
 
 export interface Interest {
   id: string;
@@ -257,14 +257,6 @@ function searchableStrings(college: College): string[] {
   ].filter(isDegreePathway);
 }
 
-/** What we can honestly say when only degree counts (no named program) tie a school to an interest, e.g. "1,048 bachelor's degrees awarded (2022-23)". */
-function programSummary(college: College, interest: Interest): string | null {
-  if (!interest.programs) return null;
-  const n = Math.max(...interest.programs.map((f) => degreesIn(college.id, f)));
-  if (n < MIN_PROGRAM_DEGREES) return null;
-  return `${n.toLocaleString()} bachelor's degrees awarded (${PROGRAMS_SOURCE.year})`;
-}
-
 /** True when real IPEDS degree counts show the school has a program for this interest. */
 function offersInterestProgram(college: College, interest: Interest): boolean {
   return !!interest.programs && offersProgram(college.id, interest.programs);
@@ -323,10 +315,47 @@ export function getCombinedProgramLabel(college: College, interestIds: string[])
 }
 
 /**
+ * Whether a label, as it will be shown, really names a programme across all of
+ * these interests. getCombinedProgramLabel matches on the full tag, so
+ * "Computer Science (College of Engineering)" passes for Engineering + CS and
+ * is then shown as just "Computer Science"; and a tag like "College of
+ * Engineering and Computing" is where the subjects are housed, not something a
+ * student enrols in. Both would be a false "combined program" on a card.
+ */
+function namesEveryInterest(label: string, interestIds: string[]): boolean {
+  if (/\b(college|school|department|institute) of\b/i.test(label)) return false;
+  const lower = label.toLowerCase();
+  return interestIds.every((id) => getInterestById(id)?.keywords.some((kw) => lower.includes(kw.toLowerCase())));
+}
+
+/**
+ * The one degree at this school that joins several of the given interests, and
+ * which of them it joins. Tries all of them together first, then — for three
+ * interests — each pair, since a single degree spanning three fields barely
+ * exists but one spanning two of the three is still worth telling a student.
+ */
+export function findCombinedProgram(
+  college: College,
+  interestIds: string[]
+): { label: string; interestIds: string[] } | null {
+  const sets: string[][] = [interestIds];
+  if (interestIds.length === 3) {
+    const [a, b, c] = interestIds;
+    sets.push([a, b], [a, c], [b, c]);
+  }
+  for (const ids of sets) {
+    const label = getCombinedProgramLabel(college, ids);
+    if (label && namesEveryInterest(label, ids)) return { label, interestIds: ids };
+  }
+  return null;
+}
+
+/**
  * A short, human-readable pathway label for how this college addresses the
  * given interest — e.g. "BS in Business + Data Science" for UIUC under
  * "Data Science + Business". Prefers interdisciplinaryPathways (usually a
  * specific joint-degree name) over the broader primaryDisciplines list.
+ * `null` when no curated tag names the field.
  */
 export function getPathwayLabel(college: College, interestId: string): string | null {
   const interest = getInterestById(interestId);
@@ -348,7 +377,39 @@ export function getPathwayLabel(college: College, interestId: string): string | 
       return trimAttribution(best);
     }
   }
-  return programSummary(college, interest);
+  // Matched on degree counts alone. The count itself is deliberately not shown:
+  // it orders the results, but on a card it invites comparing a small school's
+  // number against a huge one's.
+  return null;
+}
+
+/**
+ * Bachelor's degrees the school awards a year in this interest's field (the
+ * largest of its fields when it maps to more than one). 0 when the interest
+ * has no degree-count field or the school reports none — such schools sort
+ * after every school with a count, never ahead of one.
+ */
+export function degreesForInterest(college: College, interestId: string): number {
+  const interest = getInterestById(interestId);
+  if (!interest?.programs) return 0;
+  return Math.max(0, ...interest.programs.map((f) => degreesIn(college.id, f)));
+}
+
+/**
+ * For two or three interests at once: the smallest of the school's counts, so
+ * a school leads only when it is sizeable in every field picked, not when one
+ * huge programme hides a token one.
+ */
+export function degreesAcrossInterests(college: College, interestIds: string[]): number {
+  if (interestIds.length === 0) return 0;
+  return Math.min(...interestIds.map((id) => degreesForInterest(college, id)));
+}
+
+/** Schools with a degree joining the picked fields first, then largest programme, then by name — the order "See all" lists use. */
+export function byDegreesDesc<T extends { college: College; degrees: number; combined?: unknown }>(a: T, b: T): number {
+  if (!!a.combined !== !!b.combined) return a.combined ? -1 : 1;
+  if (a.degrees !== b.degrees) return b.degrees - a.degrees;
+  return a.college.name.localeCompare(b.college.name);
 }
 
 export function countMatches(colleges: College[], interestId: string): number {
@@ -387,17 +448,18 @@ function stateOf(college: College): string {
  * already-confirmed matches, instead of a single straight sort — round-robins
  * across the site's existing admit-rate tiers (Ultra-Selective/Highly
  * Selective/Selective/Accessible, from `admitRateTier`) so a student sees a
- * genuine spread of selectivity rather than six similar schools, breaking
- * ties within a tier by match specificity then name, and preferring not to
+ * genuine spread of selectivity rather than six similar schools. Within a
+ * tier the school awarding the most degrees in the field comes first (when
+ * `degrees` is given), then match specificity, then name — preferring not to
  * repeat a state when an alternative in the same admit-rate tier exists.
  * Deterministic — no randomness, no new data fields.
  */
 export function pickDiverseSlate(
-  candidates: { college: College; tier: number }[],
+  candidates: { college: College; tier: number; degrees?: number; combined?: unknown }[],
   limit: number
 ): College[] {
   const bandOrder = ["Ultra-Selective", "Highly Selective", "Selective", "Accessible"] as const;
-  const groups: Record<(typeof bandOrder)[number], { college: College; tier: number }[]> = {
+  const groups: Record<(typeof bandOrder)[number], { college: College; tier: number; degrees?: number; combined?: unknown }[]> = {
     "Ultra-Selective": [],
     "Highly Selective": [],
     Selective: [],
@@ -408,6 +470,12 @@ export function pickDiverseSlate(
   }
   for (const band of bandOrder) {
     groups[band].sort((a, b) => {
+      // One degree joining the picked fields is the most specific answer to
+      // "where can I study these together", so it leads its tier.
+      if (!!a.combined !== !!b.combined) return a.combined ? -1 : 1;
+      const ad = a.degrees ?? 0;
+      const bd = b.degrees ?? 0;
+      if (ad !== bd) return bd - ad;
       if (a.tier !== b.tier) return a.tier - b.tier;
       return a.college.name.localeCompare(b.college.name);
     });

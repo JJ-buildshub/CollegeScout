@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { colleges, getCollegeById } from "@/lib/colleges";
+import { getSchoolMajors } from "@/lib/majors";
 import CollegeProfileDashboard from "@/components/CollegeProfileDashboard";
 
 export function generateStaticParams() {
@@ -30,5 +31,5 @@ export default function CollegeDetailPage({ params }: { params: { id: string } }
   const college = getCollegeById(params.id);
   if (!college) notFound();
 
-  return <CollegeProfileDashboard college={college} />;
+  return <CollegeProfileDashboard college={college} majors={getSchoolMajors(college.id)} />;
 }
