@@ -34,6 +34,9 @@ const TESTING_FILTERS: { label: string; policies: TestingPolicy[] }[] = [
   { label: POLICY_LABEL["Not verified"], policies: ["Not verified"] },
 ];
 
+const SORT_OPTIONS = ["name", "admitRateOverall", "cost"] as const;
+type SortBy = (typeof SORT_OPTIONS)[number];
+
 type AdmitBucket = "any" | "under15" | "15to35" | "35to60" | "over60";
 
 const ADMIT_BUCKETS: { id: AdmitBucket; label: string }[] = [
@@ -64,31 +67,51 @@ function DirectoryContent() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  const [query, setQuery] = useState("");
-  const [systems, setSystems] = useState<Set<CollegeSystem>>(new Set());
-  const [testingPolicies, setTestingPolicies] = useState<Set<TestingPolicy>>(new Set());
-  const [admitBucket, setAdmitBucket] = useState<AdmitBucket>("any");
-  const [stateFilter, setStateFilter] = useState<string>("");
-  const [filtersOpen, setFiltersOpen] = useState(false);
-  const [sortBy, setSortBy] = useState<"admitRateOverall" | "name" | "cost">("name");
-  const [interestIds, setInterestIds] = useState<string[]>(() => {
-    const raw = searchParams.get("interests");
-    return raw ? normalizeInterestIds(raw.split(",").filter(Boolean)) : [];
+  // Every filter starts from the address and is written back to it, so the
+  // view a student built is what they return to after opening a school, and
+  // is what a copied link shows someone else. Only the interest filter used
+  // to do this; state, system, testing policy, admit rate, search and sort
+  // lived in memory and reset to nothing on Back. Each value read from the
+  // address is checked against the real options, so an edited or outdated
+  // link narrows to what still exists instead of filtering on nonsense.
+  const list = (name: string) => (searchParams.get(name) ?? "").split(",").filter(Boolean);
+  const [query, setQuery] = useState(() => searchParams.get("q") ?? "");
+  const [systems, setSystems] = useState<Set<CollegeSystem>>(
+    () => new Set(SYSTEM_OPTIONS.filter((option) => list("system").includes(option)))
+  );
+  const [testingPolicies, setTestingPolicies] = useState<Set<TestingPolicy>>(
+    () => new Set(TESTING_FILTERS.flatMap((f) => f.policies).filter((policy) => list("testing").includes(policy)))
+  );
+  const [admitBucket, setAdmitBucket] = useState<AdmitBucket>(
+    () => ADMIT_BUCKETS.find((bucket) => bucket.id === searchParams.get("admit"))?.id ?? "any"
+  );
+  const [stateFilter, setStateFilter] = useState<string>(() => {
+    const raw = searchParams.get("state");
+    return raw && STATE_OPTIONS.some(([code]) => code === raw) ? raw : "";
   });
+  const [filtersOpen, setFiltersOpen] = useState(false);
+  const [sortBy, setSortBy] = useState<SortBy>(
+    () => SORT_OPTIONS.find((option) => option === searchParams.get("sort")) ?? "name"
+  );
+  const [interestIds, setInterestIds] = useState<string[]>(() =>
+    normalizeInterestIds(list("interests"))
+  );
 
-  // Keep the URL in sync so an interest-filtered view stays bookmarkable/shareable
-  // and survives back-navigation from a college profile.
   useEffect(() => {
     const params = new URLSearchParams(searchParams.toString());
-    if (interestIds.length > 0) {
-      params.set("interests", interestIds.join(","));
-    } else {
-      params.delete("interests");
-    }
+    const put = (name: string, value: string) => (value ? params.set(name, value) : params.delete(name));
+    put("interests", interestIds.join(","));
+    put("q", query.trim());
+    put("state", stateFilter);
+    put("system", SYSTEM_OPTIONS.filter((option) => systems.has(option)).join(","));
+    put("testing", [...testingPolicies].join(","));
+    put("admit", admitBucket === "any" ? "" : admitBucket);
+    put("sort", sortBy === "name" ? "" : sortBy);
     const nextQuery = params.toString();
+    if (nextQuery === searchParams.toString()) return;
     router.replace(nextQuery ? `${pathname}?${nextQuery}` : pathname, { scroll: false });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [interestIds]);
+  }, [interestIds, query, stateFilter, systems, testingPolicies, admitBucket, sortBy]);
 
   const selectedInterests = interestIds.map(getInterestById).filter((i): i is NonNullable<typeof i> => !!i);
   const removeInterest = (id: string) => setInterestIds((prev) => prev.filter((x) => x !== id));
