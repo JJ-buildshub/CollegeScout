@@ -56,7 +56,7 @@ Current coverage, out of 336:
 | Application plans and deadlines | 331 |
 | Testing policy | 336 |
 | Admissions | 336 |
-| Cost | 208 |
+| Cost | 333 |
 | GPA / SAT | 158 |
 | Career outcomes | 0 |
 

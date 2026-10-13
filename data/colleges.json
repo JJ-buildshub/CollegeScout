@@ -62,8 +62,8 @@
       }
     ],
     "financials": {
-      "coaInState": 54674,
-      "coaOutOfState": 93944,
+      "coaInState": 45619,
+      "coaOutOfState": 79819,
       "netPriceCalculatorUrl": "https://financialaid.berkeley.edu/how-aid-works/estimate-your-financial-aid/",
       "meritAidNote": "As a UC campus, Berkeley offers essentially no merit scholarships and relies almost entirely on demonstrated financial need, so families should plan around the sticker price unless need-based aid applies."
     },
@@ -178,6 +178,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -243,8 +248,8 @@
       }
     ],
     "financials": {
-      "coaInState": 39559,
-      "coaOutOfState": 77161,
+      "coaInState": 38614,
+      "coaOutOfState": 72814,
       "netPriceCalculatorUrl": "https://admission.ucla.edu/tuition-aid/net-cost-calculator",
       "meritAidNote": "UCLA (like the rest of the UC system) does not award merit-based scholarships through its central financial aid office, so families should plan around need-based aid (Cal Grant, Pell, Blue and Gold) rather than counting on a merit discount."
     },
@@ -361,6 +366,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -426,8 +436,8 @@
       }
     ],
     "financials": {
-      "coaInState": 44811,
-      "coaOutOfState": 82413,
+      "coaInState": 38701,
+      "coaOutOfState": 72901,
       "netPriceCalculatorUrl": "https://fas.ucsd.edu/forms-and-resources/financial-aid-estimator/index.html",
       "meritAidNote": "UC San Diego's aid is overwhelmingly need-based rather than merit-based, so applicants should treat the net price calculator (not a hoped-for scholarship) as the realistic starting point for budgeting."
     },
@@ -544,6 +554,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -609,8 +624,8 @@
       }
     ],
     "financials": {
-      "coaInState": 44202,
-      "coaOutOfState": 78402,
+      "coaInState": 41238,
+      "coaOutOfState": 75438,
       "netPriceCalculatorUrl": "https://myawards.ucdavis.edu/AidEstimator",
       "meritAidNote": "As with other UC campuses, UC Davis financial aid is need-based rather than merit-based, so admitted students should lean on the FAFSA/Dream Act application and net price tools rather than expecting an automatic scholarship for grades or test scores."
     },
@@ -726,6 +741,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -791,8 +811,8 @@
       }
     ],
     "financials": {
-      "coaInState": 41878,
-      "coaOutOfState": 76078,
+      "coaInState": 38632,
+      "coaOutOfState": 72832,
       "netPriceCalculatorUrl": "https://www.ofas.uci.edu/content/Calculator.aspx",
       "meritAidNote": "UC Irvine, like every UC campus, does not offer merit scholarships from its central aid office, so families should budget from the net price calculator's need-based estimate rather than hoping for a merit award."
     },
@@ -910,6 +930,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -975,8 +1000,8 @@
       }
     ],
     "financials": {
-      "coaInState": 44907,
-      "coaOutOfState": 79107,
+      "coaInState": 41573,
+      "coaOutOfState": 75773,
       "netPriceCalculatorUrl": "https://finaid.ucsb.edu/net-price-calculator",
       "meritAidNote": "UCSB's financial aid is need-based, not merit-based, so a strong applicant shouldn't expect a scholarship simply for high grades or test scores -- the net price calculator is the more reliable planning tool."
     },
@@ -1094,6 +1119,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -1159,8 +1189,8 @@
       }
     ],
     "financials": {
-      "coaInState": 44047,
-      "coaOutOfState": 78247,
+      "coaInState": 41179,
+      "coaOutOfState": 75379,
       "netPriceCalculatorUrl": "https://app.meadowfi.com/ucsc",
       "meritAidNote": "UC Santa Cruz does not provide institutional merit scholarships, so admitted families should rely on need-based aid estimates rather than assuming a merit discount off the sticker price."
     },
@@ -1278,6 +1308,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -1343,8 +1378,8 @@
       }
     ],
     "financials": {
-      "coaInState": 43603,
-      "coaOutOfState": 77803,
+      "coaInState": 38942,
+      "coaOutOfState": 73142,
       "netPriceCalculatorUrl": "https://admission.universityofcalifornia.edu/tuition-financial-aid/estimate-your-aid.html",
       "meritAidNote": "UC Riverside's aid packages are built around demonstrated need rather than merit, which works in favor of many applicants given the campus's relatively lower cost of attendance and strong need-based aid track record."
     },
@@ -1462,6 +1497,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -1527,8 +1567,8 @@
       }
     ],
     "financials": {
-      "coaInState": 43966,
-      "coaOutOfState": 78166,
+      "coaInState": 39665,
+      "coaOutOfState": 73865,
       "netPriceCalculatorUrl": "https://admission.universityofcalifornia.edu/tuition-financial-aid/estimate-your-aid.html",
       "meritAidNote": "UC Merced leans heavily on need-based aid and serves a high proportion of Pell-eligible students, so its real value for many families shows up in the net price calculator rather than in any merit scholarship line."
     },
@@ -1645,6 +1685,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -1711,8 +1756,8 @@
       }
     ],
     "financials": {
-      "coaInState": 40823,
-      "coaOutOfState": 63757,
+      "coaInState": 32265,
+      "coaOutOfState": 53334,
       "netPriceCalculatorUrl": "https://www.calpoly.edu/financial-aid/costs-and-affordability/undergraduate-costs-of-attendance/undergraduate-net-price-calculator",
       "meritAidNote": "Cal Poly is a need-based-aid campus with very limited merit scholarship funding, so out-of-state and higher-income families should not expect significant tuition discounting."
     },
@@ -1827,6 +1872,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -1893,8 +1943,8 @@
       }
     ],
     "financials": {
-      "coaInState": 34889,
-      "coaOutOfState": 47489,
+      "coaInState": 26593,
+      "coaOutOfState": 39193,
       "netPriceCalculatorUrl": "https://www.sjsu.edu/faso/applying/net-price.php",
       "meritAidNote": "As a large CSU with a single admission pool, SJSU doesn't tie merit money to your application plan, so filing the FAFSA/CADAA early and applying for departmental scholarships after admission is your best lever on cost."
     },
@@ -2011,6 +2061,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -2077,8 +2132,8 @@
       }
     ],
     "financials": {
-      "coaInState": 36090,
-      "coaOutOfState": 48690,
+      "coaInState": 27780,
+      "coaOutOfState": 40380,
       "netPriceCalculatorUrl": "https://sacd.sdsu.edu/financial-aid/financial-aid/eligibility/cost-of-attendance/net-price-calculator",
       "meritAidNote": "SDSU's merit scholarships are largely automatic based on your admissions index of GPA and test scores, so a strong senior-year transcript matters more here than hunting for a special scholarship application."
     },
@@ -2193,6 +2248,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -2259,8 +2319,8 @@
       }
     ],
     "financials": {
-      "coaInState": 29722,
-      "coaOutOfState": 42322,
+      "coaInState": 23955,
+      "coaOutOfState": 36555,
       "netPriceCalculatorUrl": "https://www.cpp.edu/financial-aid/resources/net-price-calculator.shtml",
       "meritAidNote": "Cal Poly Pomona's merit aid is modest and mostly channeled through college-specific and donor scholarships you apply for after admission, so treat the out-of-state cost gap as the real number to budget around."
     },
@@ -2375,6 +2435,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -2441,8 +2506,8 @@
       }
     ],
     "financials": {
-      "coaInState": 28970,
-      "coaOutOfState": 41570,
+      "coaInState": 22679,
+      "coaOutOfState": 35279,
       "netPriceCalculatorUrl": null,
       "meritAidNote": "Like most CSUs, Long Beach's merit dollars are limited and mostly awarded through Presidential and college-level scholarship applications after admission, so families should plan around sticker price rather than count on a discount."
     },
@@ -2556,6 +2621,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -2628,8 +2698,8 @@
       }
     ],
     "financials": {
-      "coaInState": 97545,
-      "coaOutOfState": 97545,
+      "coaInState": 87833,
+      "coaOutOfState": 87833,
       "netPriceCalculatorUrl": "https://financialaid.stanford.edu/undergrad/how/calculator/index.html?tab=net-price-calculator",
       "meritAidNote": "Stanford offers no merit aid at all; its generous need-based program is the only lever, so families above the aid-eligibility threshold should plan for close to full price."
     },
@@ -2743,6 +2813,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -2819,8 +2894,8 @@
       }
     ],
     "financials": {
-      "coaInState": 99139,
-      "coaOutOfState": 99139,
+      "coaInState": 90300,
+      "coaOutOfState": 90300,
       "netPriceCalculatorUrl": "https://financialaid.usc.edu/npc",
       "meritAidNote": "USC automatically considers EA applicants for merit scholarships with no separate application, but with such a huge applicant pool the strongest awards go to students who apply by the early deadline with a clearly distinctive academic record."
     },
@@ -2933,6 +3008,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -3013,8 +3093,8 @@
       }
     ],
     "financials": {
-      "coaInState": 86694,
-      "coaOutOfState": 86694,
+      "coaInState": 82026,
+      "coaOutOfState": 82026,
       "netPriceCalculatorUrl": "https://www.scu.edu/financialaid/Net-Price-Calculator.cfm",
       "meritAidNote": "Santa Clara automatically considers all admitted first-year applicants for merit scholarships, so a strong transcript matters more than a separate scholarship application."
     },
@@ -3124,6 +3204,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -3195,8 +3280,8 @@
       }
     ],
     "financials": {
-      "coaInState": 85960,
-      "coaOutOfState": 85960,
+      "coaInState": 82730,
+      "coaOutOfState": 82730,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/mit",
       "meritAidNote": "MIT awards 100% need-based aid with no merit scholarships at all, so families should treat the net price calculator, not sticker price, as the real planning number."
     },
@@ -3309,6 +3394,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -3379,8 +3469,8 @@
       }
     ],
     "financials": {
-      "coaInState": 86812,
-      "coaOutOfState": 86812,
+      "coaInState": 83654,
+      "coaOutOfState": 83654,
       "netPriceCalculatorUrl": "https://www.cmu.edu/admission/costs-aid/net-price-calculator",
       "meritAidNote": "CMU's merit scholarships are limited to a handful of specific programs, so most admitted students should plan around need-based aid rather than count on a merit award."
     },
@@ -3492,6 +3582,11 @@
       "source": "Carnegie Mellon standardized testing (https://www.cmu.edu/admission/admission/standardized-testing)",
       "year": "2026-27",
       "accessed": "2026-10-07"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -3562,8 +3657,8 @@
       }
     ],
     "financials": {
-      "coaInState": 89315,
-      "coaOutOfState": 89315,
+      "coaInState": 85540,
+      "coaOutOfState": 85540,
       "netPriceCalculatorUrl": "https://college.harvard.edu/financial-aid/net-price-calculator",
       "meritAidNote": "Harvard awards no merit scholarships at all — every dollar of Harvard aid is need-based, so the net price calculator is the only reliable way to estimate cost."
     },
@@ -3677,6 +3772,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -3747,8 +3847,8 @@
       }
     ],
     "financials": {
-      "coaInState": 87888,
-      "coaOutOfState": 87888,
+      "coaInState": 84040,
+      "coaOutOfState": 84040,
       "netPriceCalculatorUrl": "https://admission.princeton.edu/cost-aid/financial-aid-estimator",
       "meritAidNote": "Princeton offers only need-based grants and meets 100% of demonstrated need, so families should expect the sticker price to matter far less than what the net price calculator shows."
     },
@@ -3861,6 +3961,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -3931,8 +4036,8 @@
       }
     ],
     "financials": {
-      "coaInState": 91950,
-      "coaOutOfState": 91950,
+      "coaInState": 88300,
+      "coaOutOfState": 88300,
       "netPriceCalculatorUrl": "https://admissions.yale.edu/estimate-your-cost",
       "meritAidNote": "Yale, like its Ivy peers, awards no merit scholarships, so admitted students should treat the net price calculator as the real number to budget around."
     },
@@ -4045,6 +4150,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -4115,8 +4225,8 @@
       }
     ],
     "financials": {
-      "coaInState": 92373,
-      "coaOutOfState": 92373,
+      "coaInState": 89472,
+      "coaOutOfState": 89472,
       "netPriceCalculatorUrl": "https://cc-seas.financialaid.columbia.edu/estimate-cost",
       "meritAidNote": "Columbia meets full demonstrated need but offers no merit scholarships, so the published sticker price is rarely what a family actually ends up paying."
     },
@@ -4227,6 +4337,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -4297,8 +4412,8 @@
       }
     ],
     "financials": {
-      "coaInState": 92288,
-      "coaOutOfState": 92288,
+      "coaInState": 89028,
+      "coaOutOfState": 89028,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/upenn",
       "meritAidNote": "Penn is need-based only with no merit scholarships, so admitted students should rely on the net price calculator rather than expecting a merit award to close the gap."
     },
@@ -4410,6 +4525,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -4480,8 +4600,8 @@
       }
     ],
     "financials": {
-      "coaInState": 92150,
-      "coaOutOfState": 92150,
+      "coaInState": 88140,
+      "coaOutOfState": 88140,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/cornell",
       "meritAidNote": "Cornell's aid is entirely need-based across every one of its colleges, so applicants shouldn't expect a merit scholarship to change the math — the net price calculator is the more useful tool."
     },
@@ -4594,6 +4714,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -4664,8 +4789,8 @@
       }
     ],
     "financials": {
-      "coaInState": 91676,
-      "coaOutOfState": 91676,
+      "coaInState": 87648,
+      "coaOutOfState": 87648,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/brown",
       "meritAidNote": "Brown meets 100% of demonstrated need with no loans but offers no merit aid, so the Open Curriculum's flexibility is the draw here, not scholarship leverage."
     },
@@ -4778,6 +4903,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -4848,8 +4978,8 @@
       }
     ],
     "financials": {
-      "coaInState": 91312,
-      "coaOutOfState": 91312,
+      "coaInState": 87793,
+      "coaOutOfState": 87793,
       "netPriceCalculatorUrl": "https://admissions.dartmouth.edu/afford/estimate-your-cost",
       "meritAidNote": "Dartmouth is need-based only, so students should treat the net price calculator, not a hoped-for merit award, as the realistic cost estimate."
     },
@@ -4961,6 +5091,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -5032,8 +5167,8 @@
       }
     ],
     "financials": {
-      "coaInState": 90822,
-      "coaOutOfState": 90822,
+      "coaInState": 86886,
+      "coaOutOfState": 86886,
       "netPriceCalculatorUrl": "https://www.finaid.caltech.edu/npc",
       "meritAidNote": "Caltech's aid is need-based only within a very small, intensely STEM-focused class, so admitted students should lean on the net price calculator rather than expect merit money."
     },
@@ -5145,6 +5280,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -5215,8 +5355,8 @@
       }
     ],
     "financials": {
-      "coaInState": 26172,
-      "coaOutOfState": 44974,
+      "coaInState": 24591,
+      "coaOutOfState": 43393,
       "netPriceCalculatorUrl": "https://www.purdue.edu/dfa/cost/calculator/",
       "meritAidNote": "Purdue extends automatic merit scholarships to strong out-of-state applicants as well as Indiana residents, so top students shouldn't assume they'll pay full non-resident sticker price."
     },
@@ -5329,6 +5469,11 @@
       "source": "Purdue admissions (https://admissions.purdue.edu/become-student/guide/)",
       "year": "2026-27",
       "accessed": "2026-10-07"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -5399,8 +5544,8 @@
       }
     ],
     "financials": {
-      "coaInState": 34226,
-      "coaOutOfState": 53346,
+      "coaInState": 33642,
+      "coaOutOfState": 52762,
       "netPriceCalculatorUrl": "https://secure.osfa.illinois.edu/NPC/NPC.asp",
       "meritAidNote": "Illinois offers relatively little merit aid to out-of-state students, so the in-state/out-of-state cost gap is one of the widest among these flagships and deserves careful budgeting up front."
     },
@@ -5514,6 +5659,11 @@
       "source": "UIUC admissions (https://admissions.illinois.edu/faq/applicant-freshman)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -5579,8 +5729,8 @@
       }
     ],
     "financials": {
-      "coaInState": 35305,
-      "coaOutOfState": 65541,
+      "coaInState": 32446,
+      "coaOutOfState": 62682,
       "netPriceCalculatorUrl": "https://www.washington.edu/financialaid/getting-started/net-price-calculator/",
       "meritAidNote": "UW's aid philosophy leans need-based with very limited merit scholarships, so admitted students shouldn't count on a merit award to close the large in-state/out-of-state cost gap."
     },
@@ -5693,6 +5843,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -5768,8 +5923,8 @@
       }
     ],
     "financials": {
-      "coaInState": 38548,
-      "coaOutOfState": 84164,
+      "coaInState": 34654,
+      "coaOutOfState": 77864,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/umich",
       "meritAidNote": "Michigan offers a modest number of competitive merit scholarships, but most non-resident families should expect to pay close to the high out-of-state sticker price."
     },
@@ -5881,6 +6036,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -5956,8 +6116,8 @@
       }
     ],
     "financials": {
-      "coaInState": 29666,
-      "coaOutOfState": 52092,
+      "coaInState": 28167,
+      "coaOutOfState": 50593,
       "netPriceCalculatorUrl": "https://admission.gatech.edu/npc_2024/",
       "meritAidNote": "Georgia Tech's marquee merit programs like HOPE and Zell Miller are reserved for Georgia residents, so out-of-state families should plan around full sticker price and lean on outside scholarships."
     },
@@ -6068,6 +6228,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -6138,8 +6303,8 @@
       }
     ],
     "financials": {
-      "coaInState": 32446,
-      "coaOutOfState": 65666,
+      "coaInState": 31247,
+      "coaOutOfState": 64467,
       "netPriceCalculatorUrl": "https://www.onestop.utexas.edu/managing-costs/cost-tuition-rates/cost-of-attendance/net-price-calculator/",
       "meritAidNote": "UT Austin's merit scholarships are mostly awarded through McCombs, Cockrell, and other college-specific programs rather than one general pool, so it pays to check each college's own scholarship deadlines early."
     },
@@ -6254,6 +6419,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -6334,8 +6504,8 @@
       }
     ],
     "financials": {
-      "coaInState": 88542,
-      "coaOutOfState": 88542,
+      "coaInState": 84641,
+      "coaOutOfState": 84641,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/northeastern",
       "meritAidNote": "Unlike most peer research universities, Northeastern awards substantial merit scholarships to a majority of admits, so a strong Early Action application can meaningfully lower the price."
     },
@@ -6446,6 +6616,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -6519,8 +6694,8 @@
       }
     ],
     "financials": {
-      "coaInState": 95670,
-      "coaOutOfState": 95670,
+      "coaInState": 85300,
+      "coaOutOfState": 85300,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/pomona",
       "meritAidNote": "Pomona meets full demonstrated need with grants and offers no merit scholarships, so aid eligibility hinges entirely on financial need rather than academic profile."
     },
@@ -6636,6 +6811,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -6704,8 +6884,8 @@
       }
     ],
     "financials": {
-      "coaInState": 95300,
-      "coaOutOfState": 95300,
+      "coaInState": 84860,
+      "coaOutOfState": 84860,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/williams",
       "meritAidNote": "Like most highly selective liberal arts colleges, Williams awards aid purely on demonstrated need with no merit scholarships, so a strong applicant without financial need should expect to pay full price."
     },
@@ -6822,6 +7002,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -6898,8 +7083,8 @@
       }
     ],
     "financials": {
-      "coaInState": 90076,
-      "coaOutOfState": 90076,
+      "coaInState": 82404,
+      "coaOutOfState": 82404,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/rpi",
       "meritAidNote": "RPI is known for awarding substantial merit scholarships to strong STEM applicants, so meaningful tuition discounting is realistic even without demonstrated financial need."
     },
@@ -7013,6 +7198,11 @@
       "source": "RPI undergraduate admissions (https://undergrad.admissions.rpi.edu/prospective-students/prospective-students-frequently-asked-questions/fall-2027-admission-cycle-test)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -7076,8 +7266,8 @@
       }
     ],
     "financials": {
-      "coaInState": 35392,
-      "coaOutOfState": 60400,
+      "coaInState": 33382,
+      "coaOutOfState": 55374,
       "netPriceCalculatorUrl": "https://ua.clearcostcalculator.com/student/default/netpricecalculator/survey",
       "meritAidNote": "Alabama is well known for generous automatic and competitive merit scholarships tied to GPA and test scores, making it one of the more realistic merit-aid options for strong out-of-state students despite its high sticker price."
     },
@@ -7192,6 +7382,11 @@
       "source": "University of Alabama admissions (https://admissions.ua.edu/freshman/steps/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -7257,8 +7452,8 @@
       }
     ],
     "financials": {
-      "coaInState": 37456,
-      "coaOutOfState": 58152,
+      "coaInState": 38105,
+      "coaOutOfState": 57609,
       "netPriceCalculatorUrl": "https://pitt.studentaidcalculator.com/survey.aspx",
       "meritAidNote": "Pitt offers merit scholarships to competitive applicants, particularly through its Honors College and early-deadline scholarship pool, so strong students should apply by the priority deadline to maximize merit consideration."
     },
@@ -7370,6 +7565,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -7442,8 +7642,8 @@
       }
     ],
     "financials": {
-      "coaInState": 93182,
-      "coaOutOfState": 93182,
+      "coaInState": 88300,
+      "coaOutOfState": 88300,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/tufts",
       "meritAidNote": "Tufts, like most need-blind private research universities, does not offer merit scholarships, so its cost is addressed primarily through need-based aid alone."
     },
@@ -7556,6 +7756,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -7624,8 +7829,8 @@
       }
     ],
     "financials": {
-      "coaInState": 31998,
-      "coaOutOfState": 44598,
+      "coaInState": 18269,
+      "coaOutOfState": 30869,
       "netPriceCalculatorUrl": "https://www.fullerton.edu/financialaid/understanding-aid/cost-of-attendance/net-price-calculator/",
       "meritAidNote": "Like most CSUs, aid here is overwhelmingly need-based (Cal Grant, Pell, State University Grant); dedicated merit scholarships exist but are modest relative to overall cost, so families should lean on the FAFSA/CADAA and Cal Grant timeline rather than counting on merit money."
     },
@@ -7737,6 +7942,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -7805,8 +8015,8 @@
       }
     ],
     "financials": {
-      "coaInState": 33256,
-      "coaOutOfState": 45856,
+      "coaInState": 22945,
+      "coaOutOfState": 35545,
       "netPriceCalculatorUrl": "https://www.csus.edu/administration-business-affairs/bursar/net-price-calculator.html",
       "meritAidNote": "Aid is predominantly need-based via Cal Grant, Pell, and the State University Grant; merit scholarships are available but limited in size, so the FAFSA/CADAA and Cal Grant deadlines matter more than chasing merit awards."
     },
@@ -7918,6 +8128,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -7986,8 +8201,8 @@
       }
     ],
     "financials": {
-      "coaInState": 25990,
-      "coaOutOfState": 38590,
+      "coaInState": 20485,
+      "coaOutOfState": 33085,
       "netPriceCalculatorUrl": "https://www.csun.edu/financialaid/financial-aid-basics/cost-attendance/net-price-calculator",
       "meritAidNote": "Financial aid here skews heavily need-based (Cal Grant, Pell, SUG); institutional merit awards exist but are limited, so timely FAFSA/CADAA filing matters far more than merit competitions."
     },
@@ -8099,6 +8314,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -8166,8 +8386,8 @@
       }
     ],
     "financials": {
-      "coaInState": 34518,
-      "coaOutOfState": 47118,
+      "coaInState": 18403,
+      "coaOutOfState": 31003,
       "netPriceCalculatorUrl": "https://www.calstatela.edu/financialaid/net-price-calculator",
       "meritAidNote": "Aid is overwhelmingly need-based given the student population profile (high share of Pell-eligible, first-generation students); merit scholarships are a minor piece of the puzzle compared to Cal Grant and Pell."
     },
@@ -8279,6 +8499,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -8346,8 +8571,8 @@
       }
     ],
     "financials": {
-      "coaInState": 36050,
-      "coaOutOfState": 48650,
+      "coaInState": 26488,
+      "coaOutOfState": 39088,
       "netPriceCalculatorUrl": "https://financialaid.sfsu.edu/net-price-calculator",
       "meritAidNote": "Given San Francisco's high cost of living, need-based aid (Cal Grant, Pell, SUG) is the primary lever for affordability; merit aid exists but is modest relative to the total cost of attendance."
     },
@@ -8459,6 +8684,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -8526,8 +8756,8 @@
       }
     ],
     "financials": {
-      "coaInState": 28882,
-      "coaOutOfState": 41482,
+      "coaInState": 24648,
+      "coaOutOfState": 37248,
       "netPriceCalculatorUrl": "https://financialaid.sonoma.edu/cost-attendance/net-price-calculator",
       "meritAidNote": "As one of the smaller, less heavily applied-to CSU campuses, Sonoma State has historically been more willing to extend targeted scholarships to strong applicants, though need-based Cal Grant/Pell aid still forms the bulk of most students' packages."
     },
@@ -8639,6 +8869,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -8706,8 +8941,8 @@
       }
     ],
     "financials": {
-      "coaInState": 30143,
-      "coaOutOfState": 42743,
+      "coaInState": 22850,
+      "coaOutOfState": 35450,
       "netPriceCalculatorUrl": null,
       "meritAidNote": "Aid is predominantly need-based (Cal Grant, Pell, SUG); merit scholarships exist but are limited, so the FAFSA/CADAA and Cal Grant deadlines are the most important levers for affordability."
     },
@@ -8819,6 +9054,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -8886,8 +9126,8 @@
       }
     ],
     "financials": {
-      "coaInState": 25028,
-      "coaOutOfState": 37628,
+      "coaInState": 20095,
+      "coaOutOfState": 32695,
       "netPriceCalculatorUrl": "https://studentaffairs.fresnostate.edu/financialaid/netprice/index.html",
       "meritAidNote": "Fresno State has one of the more affordable in-state costs of attendance in the CSU system; aid remains mostly need-based (Cal Grant, Pell, SUG), with modest merit scholarships available for standout applicants."
     },
@@ -8999,6 +9239,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -9066,8 +9311,8 @@
       }
     ],
     "financials": {
-      "coaInState": 29088,
-      "coaOutOfState": 41688,
+      "coaInState": 26283,
+      "coaOutOfState": 38883,
       "netPriceCalculatorUrl": "https://www.csuchico.edu/fa/cost/price-calculator.shtml",
       "meritAidNote": "Aid is mostly need-based (Cal Grant, Pell, SUG); Chico does offer some merit scholarships for competitive applicants, but they cover a modest share of overall cost."
     },
@@ -9179,6 +9424,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -9241,8 +9491,8 @@
       }
     ],
     "financials": {
-      "coaInState": 27570,
-      "coaOutOfState": 40170,
+      "coaInState": 25170,
+      "coaOutOfState": 37770,
       "netPriceCalculatorUrl": "https://www.humboldt.edu/calculator/",
       "meritAidNote": "As the CSU's most remote and smallest campus by enrollment, Humboldt has historically extended more targeted scholarship support (including its polytechnic transition funding) to attract students, though need-based Cal Grant/Pell aid still anchors most financial aid packages."
     },
@@ -9354,6 +9604,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -9421,8 +9676,8 @@
       }
     ],
     "financials": {
-      "coaInState": 91510,
-      "coaOutOfState": 91510,
+      "coaInState": 86500,
+      "coaOutOfState": 86500,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/claremontmckenna",
       "meritAidNote": "CMC's aid is primarily need-based, though a limited number of competitive merit scholarships exist; families should expect the net price calculator to be the most reliable early estimate rather than counting on merit aid."
     },
@@ -9532,6 +9787,11 @@
       "source": "Claremont McKenna admission (https://www.cmc.edu/admission/first-year-application-instructions/test-optional-policy-faq)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -9599,8 +9859,8 @@
       }
     ],
     "financials": {
-      "coaInState": 93131,
-      "coaOutOfState": 93131,
+      "coaInState": 90165,
+      "coaOutOfState": 90165,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/hmc",
       "meritAidNote": "HMC's aid is need-based rather than merit-based; the average reported net price (around $44,000 per IPEDS) reflects generous need-based packaging rather than merit discounting."
     },
@@ -9708,6 +9968,11 @@
       "source": "Harvey Mudd admission (https://www.hmc.edu/admission/apply/)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -9775,8 +10040,8 @@
       }
     ],
     "financials": {
-      "coaInState": 90886,
-      "coaOutOfState": 90886,
+      "coaInState": 87564,
+      "coaOutOfState": 87564,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/scrippscollege",
       "meritAidNote": "Scripps aid is primarily need-based; families should rely on the net price calculator rather than assume merit discounting."
     },
@@ -9887,6 +10152,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -9959,8 +10229,8 @@
       }
     ],
     "financials": {
-      "coaInState": 88656,
-      "coaOutOfState": 88656,
+      "coaInState": 84800,
+      "coaOutOfState": 84800,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/occidental",
       "meritAidNote": "Occidental's Early Decision admits are guaranteed a minimum $20,000 annual Oxy Commitment Scholarship; beyond that, aid is primarily need-based."
     },
@@ -10069,6 +10339,11 @@
       "source": "Occidental College admission (https://www.oxy.edu/admission-aid/apply/test-optional-admission-policy)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -10141,8 +10416,8 @@
       }
     ],
     "financials": {
-      "coaInState": 89891,
-      "coaOutOfState": 89891,
+      "coaInState": 83943,
+      "coaOutOfState": 83943,
       "netPriceCalculatorUrl": "https://lmu.studentaidcalculator.com/survey.aspx",
       "meritAidNote": "LMU offers a mix of merit scholarships (often awarded automatically based on the admission application) and need-based aid; families should treat the net price calculator as an early estimate."
     },
@@ -10251,6 +10526,11 @@
       "source": "LMU admission (https://admission.lmu.edu/learnmore/prospectivestudents/first-yearapplicants/)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -10323,8 +10603,8 @@
       }
     ],
     "financials": {
-      "coaInState": 84912,
-      "coaOutOfState": 84912,
+      "coaInState": 78720,
+      "coaOutOfState": 78720,
       "netPriceCalculatorUrl": "https://www.sandiego.edu/admissions/undergraduate/tuition-financial-aid/net-price-calculator.php",
       "meritAidNote": "USD awards merit scholarships automatically to many admitted students based on the admission application; families should still use the net price calculator for a personalized estimate."
     },
@@ -10435,6 +10715,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -10507,8 +10792,8 @@
       }
     ],
     "financials": {
-      "coaInState": 84784,
-      "coaOutOfState": 84784,
+      "coaInState": 80141,
+      "coaOutOfState": 80141,
       "netPriceCalculatorUrl": "https://www.usfca.edu/admission/financial-aid/net-price-calculator",
       "meritAidNote": "USF offers merit scholarships awarded automatically upon admission based on academic profile, layered with need-based aid; the net price calculator is the most reliable early estimate."
     },
@@ -10617,6 +10902,11 @@
       "source": "University of San Francisco admission (https://www.usfca.edu/admission/undergraduate/what-we-look-for)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -10689,8 +10979,8 @@
       }
     ],
     "financials": {
-      "coaInState": 87730,
-      "coaOutOfState": 87730,
+      "coaInState": 83146,
+      "coaOutOfState": 83146,
       "netPriceCalculatorUrl": "https://www.chapman.edu/students/tuition-and-aid/financial-aid/net-cost-calculator/index.aspx",
       "meritAidNote": "Chapman evaluates nearly all applicants for merit scholarships automatically as part of the admission review, factoring in GPA and test scores if submitted; no separate scholarship application is required."
     },
@@ -10799,6 +11089,11 @@
       "source": "Chapman University admission (https://www.chapman.edu/admission/undergraduate/how-to-apply/test-optional.aspx)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -10871,8 +11166,8 @@
       }
     ],
     "financials": {
-      "coaInState": 95168,
-      "coaOutOfState": 95168,
+      "coaInState": 93512,
+      "coaOutOfState": 93512,
       "netPriceCalculatorUrl": "https://seaver.pepperdine.edu/admission/financial-aid/undergraduate/npc",
       "meritAidNote": "Pepperdine guarantees Early Decision admits a minimum of $25,000 in merit aid annually; Early Action and Regular Decision applicants are also considered for merit scholarships automatically based on their application."
     },
@@ -10981,6 +11276,11 @@
       "source": "Pepperdine admission (https://admission.pepperdine.edu/apply/undergraduate/requirements/test-scores.htm)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -11043,8 +11343,8 @@
       }
     ],
     "financials": {
-      "coaInState": 79532,
-      "coaOutOfState": 79532,
+      "coaInState": 71515,
+      "coaOutOfState": 71515,
       "netPriceCalculatorUrl": "https://pacific.clearcostcalculator.com/student/default/netpricecalculator/survey",
       "meritAidNote": "Pacific awards merit scholarships automatically based on the admission application; families should use the net price calculator for a personalized estimate given the wide reported test-score range on campus."
     },
@@ -11152,6 +11452,11 @@
       "source": "University of the Pacific admission (https://www.pacific.edu/admission/undergraduate/test-scores)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -11219,8 +11524,8 @@
       }
     ],
     "financials": {
-      "coaInState": 84808,
-      "coaOutOfState": 84808,
+      "coaInState": 76630,
+      "coaOutOfState": 76630,
       "netPriceCalculatorUrl": "https://www.redlands.edu/npc",
       "meritAidNote": "Redlands reports that the large majority of incoming students receive institutional grants or scholarships, resulting in an average net price well below the sticker price; families should use the net price calculator for a personalized estimate."
     },
@@ -11329,6 +11634,11 @@
       "source": "University of Redlands admissions (https://www.redlands.edu/admissions-and-aid/first-year/how-to-apply)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -11396,8 +11706,8 @@
       }
     ],
     "financials": {
-      "coaInState": 96926,
-      "coaOutOfState": 96926,
+      "coaInState": 87640,
+      "coaOutOfState": 87640,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/amherst",
       "meritAidNote": "Amherst is need-blind for domestic applicants and meets 100% of demonstrated need using grants and work-study only (no loans required). There is no merit-scholarship program; every aid dollar is need-based."
     },
@@ -11507,6 +11817,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -11579,8 +11894,8 @@
       }
     ],
     "financials": {
-      "coaInState": 88696,
-      "coaOutOfState": 88696,
+      "coaInState": 84103,
+      "coaOutOfState": 84103,
       "netPriceCalculatorUrl": "https://www.swarthmore.edu/financial-aid/net-price-calculator",
       "meritAidNote": "Swarthmore is need-blind and meets 100% of demonstrated need with no-loan packages; there is no merit aid — average grants cover roughly 90% of tuition for the ~58% of students who receive aid."
     },
@@ -11688,6 +12003,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -11760,8 +12080,8 @@
       }
     ],
     "financials": {
-      "coaInState": 93233,
-      "coaOutOfState": 93233,
+      "coaInState": 86290,
+      "coaOutOfState": 86290,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/wellesley",
       "meritAidNote": "Wellesley is need-blind for domestic applicants and meets 100% of demonstrated need; it does not offer merit scholarships."
     },
@@ -11870,6 +12190,11 @@
       "source": "Wellesley College admission (https://www.wellesley.edu/admission-aid/faqs)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -11942,8 +12267,8 @@
       }
     ],
     "financials": {
-      "coaInState": 86320,
-      "coaOutOfState": 86320,
+      "coaInState": 85100,
+      "coaOutOfState": 85100,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/bowdoin",
       "meritAidNote": "Bowdoin is need-blind, meets 100% of demonstrated need without loans, and offers no merit scholarships; roughly half of first-years receive need-based grants averaging over $66,000."
     },
@@ -12051,6 +12376,11 @@
       "source": "Bowdoin College admissions (https://www.bowdoin.edu/admissions/apply/test-optional-policy/index.html)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -12123,8 +12453,8 @@
       }
     ],
     "financials": {
-      "coaInState": 88850,
-      "coaOutOfState": 88850,
+      "coaInState": 85880,
+      "coaOutOfState": 85880,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/middlebury",
       "meritAidNote": "Middlebury meets 100% of demonstrated need with a need-based aid model and awards essentially no merit aid (fewer than a handful of non-need institutional grants campus-wide)."
     },
@@ -12230,6 +12560,11 @@
       "source": "Middlebury College admissions (https://www.middlebury.edu/college/admissions/apply/standardized-tests)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -12302,8 +12637,8 @@
       }
     ],
     "financials": {
-      "coaInState": 89204,
-      "coaOutOfState": 89204,
+      "coaInState": 84893,
+      "coaOutOfState": 84893,
       "netPriceCalculatorUrl": "https://www.carleton.edu/admissions/apply/afford/aid-estimators/npc/",
       "meritAidNote": "Carleton is need-blind for domestic applicants and meets 100% of demonstrated need; it does not offer academic merit scholarships."
     },
@@ -12411,6 +12746,11 @@
       "source": "Carleton College admissions (https://www.carleton.edu/admissions/apply/steps/materials/)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -12483,8 +12823,8 @@
       }
     ],
     "financials": {
-      "coaInState": 91222,
-      "coaOutOfState": 91222,
+      "coaInState": 87070,
+      "coaOutOfState": 87070,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/colgate",
       "meritAidNote": "Colgate meets 100% of demonstrated need but, unlike most peers in this batch, also awards non-need-based aid, including merit and athletic scholarships (average first-year athletic award exceeded $48,000)."
     },
@@ -12589,6 +12929,11 @@
       "source": "Colgate University admission (https://www.colgate.edu/admission-aid/apply)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -12661,8 +13006,8 @@
       }
     ],
     "financials": {
-      "coaInState": 93320,
-      "coaOutOfState": 93320,
+      "coaInState": 87419,
+      "coaOutOfState": 87419,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/vassar",
       "meritAidNote": "Vassar is need-blind, meets 100% of demonstrated need, and awards no merit-based scholarships; families earning under $75,000 are not required to take loans."
     },
@@ -12768,6 +13113,11 @@
       "source": "Vassar College admission (https://www.vassar.edu/admission/apply/requirements/)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -12840,8 +13190,8 @@
       }
     ],
     "financials": {
-      "coaInState": 88270,
-      "coaOutOfState": 88270,
+      "coaInState": 84230,
+      "coaOutOfState": 84230,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/hamilton",
       "meritAidNote": "Hamilton meets 100% of demonstrated financial need for admitted students who qualify; the college does not publicize a merit-scholarship program."
     },
@@ -12946,6 +13296,11 @@
       "source": "Hamilton College admission (https://www.hamilton.edu/admission/apply/testing)",
       "year": "2026-27",
       "accessed": "2026-09-28"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -13018,8 +13373,8 @@
       }
     ],
     "financials": {
-      "coaInState": 89190,
-      "coaOutOfState": 89190,
+      "coaInState": 85420,
+      "coaOutOfState": 85420,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/colby",
       "meritAidNote": "Colby is need-blind and meets 100% of demonstrated need; it does not offer academic merit scholarships."
     },
@@ -13127,6 +13482,11 @@
       "source": "Colby College admission (https://afa.colby.edu/apply/faq/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -13199,8 +13559,8 @@
       }
     ],
     "financials": {
-      "coaInState": 90380,
-      "coaOutOfState": 90380,
+      "coaInState": 83532,
+      "coaOutOfState": 83532,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/bates",
       "meritAidNote": "Bates meets 100% of demonstrated need and awards no institutional merit scholarships — all aid is need-based."
     },
@@ -13308,6 +13668,11 @@
       "source": "Bates College admission (https://www.bates.edu/admission/apply/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -13370,8 +13735,8 @@
       }
     ],
     "financials": {
-      "coaInState": 92042,
-      "coaOutOfState": 92042,
+      "coaInState": 87072,
+      "coaOutOfState": 87072,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/duke",
       "meritAidNote": "Duke is need-blind for domestic applicants and meets 100% of demonstrated need with no loans for most families; it does not offer traditional merit scholarships outside of a small number of highly selective named programs (e.g., the joint Robertson Scholars program with UNC)."
     },
@@ -13483,6 +13848,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -13555,8 +13925,8 @@
       }
     ],
     "financials": {
-      "coaInState": 98301,
-      "coaOutOfState": 98301,
+      "coaInState": 90360,
+      "coaOutOfState": 90360,
       "netPriceCalculatorUrl": "https://financialaid.uchicago.edu/undergraduate/resources-and-tools/net-price-calculator/",
       "meritAidNote": "UChicago is need-blind for domestic applicants and meets full demonstrated need; it does not offer merit-based scholarships -- all institutional aid is need-based."
     },
@@ -13668,6 +14038,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -13732,8 +14107,8 @@
       }
     ],
     "financials": {
-      "coaInState": 99375,
-      "coaOutOfState": 99375,
+      "coaInState": 91250,
+      "coaOutOfState": 91250,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/northwestern",
       "meritAidNote": "Northwestern is need-blind for domestic applicants and meets 100% of demonstrated need; it does not offer merit-based scholarships -- all institutional aid is need-based."
     },
@@ -13845,6 +14220,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -13914,8 +14294,8 @@
       }
     ],
     "financials": {
-      "coaInState": 94142,
-      "coaOutOfState": 94142,
+      "coaInState": 89590,
+      "coaOutOfState": 89590,
       "netPriceCalculatorUrl": "https://www.vanderbilt.edu/financialaid/net-price-calculator/",
       "meritAidNote": "Vanderbilt is need-blind for domestic applicants and meets 100% of demonstrated need with no loans; it offers a limited number of highly competitive merit scholarships (e.g., Ingram, Cornelius Vanderbilt Scholarships) to a small share of admits."
     },
@@ -14027,6 +14407,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -14095,8 +14480,8 @@
       }
     ],
     "financials": {
-      "coaInState": 98039,
-      "coaOutOfState": 98039,
+      "coaInState": 79788,
+      "coaOutOfState": 79788,
       "netPriceCalculatorUrl": "https://financialaid.rice.edu/cost-attendance/estimate-your-cost",
       "meritAidNote": "Rice is need-blind for domestic applicants and meets 100% of demonstrated need; it offers generous need-based grants (including full-tuition/full-ride grants for lower-income families) but limited traditional merit scholarships."
     },
@@ -14210,6 +14595,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -14278,8 +14668,8 @@
       }
     ],
     "financials": {
-      "coaInState": 94858,
-      "coaOutOfState": 94858,
+      "coaInState": 85947,
+      "coaOutOfState": 85947,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/jhu",
       "meritAidNote": "Johns Hopkins is need-blind for domestic applicants and meets 100% of demonstrated need with no loans for most families; it does not offer merit-based scholarships -- all institutional aid is need-based."
     },
@@ -14392,6 +14782,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -14458,8 +14853,8 @@
       }
     ],
     "financials": {
-      "coaInState": 101688,
-      "coaOutOfState": 101688,
+      "coaInState": 88741,
+      "coaOutOfState": 88741,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/georgetown",
       "meritAidNote": "Georgetown is need-blind for domestic applicants and meets 100% of demonstrated need; it does not offer merit-based scholarships -- all institutional aid is need-based."
     },
@@ -14573,6 +14968,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -14650,8 +15050,8 @@
       }
     ],
     "financials": {
-      "coaInState": 87570,
-      "coaOutOfState": 87570,
+      "coaInState": 78679,
+      "coaOutOfState": 78679,
       "netPriceCalculatorUrl": "https://www.wpi.edu/admissions/tuition-aid/financial-need/net-price-calculator",
       "meritAidNote": "WPI awards merit scholarships to a substantial share of admitted students based on academic profile, alongside need-based aid; exact award amounts vary by applicant strength and are not published as guaranteed figures."
     },
@@ -14763,6 +15163,11 @@
       "source": "WPI undergraduate admissions (https://www.wpi.edu/admissions/undergraduate/apply/how-to/test-optional-admissions)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -14833,8 +15238,8 @@
       }
     ],
     "financials": {
-      "coaInState": 90714,
-      "coaOutOfState": 90714,
+      "coaInState": 85851,
+      "coaOutOfState": 85851,
       "netPriceCalculatorUrl": "https://case.edu/financialaid/resources/net-price-calculator/",
       "meritAidNote": "Case Western awards merit scholarships to a significant portion of admitted students automatically based on academic profile, in addition to need-based aid; exact amounts vary by applicant strength."
     },
@@ -14945,6 +15350,11 @@
       "source": "Case Western Reserve admission (https://case.edu/admission/apply/application-requirements-enhancements/test-optional)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -15017,8 +15427,8 @@
       }
     ],
     "financials": {
-      "coaInState": 84868,
-      "coaOutOfState": 84868,
+      "coaInState": 74626,
+      "coaOutOfState": 74626,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/rit",
       "meritAidNote": "RIT states that 100% of incoming first-year and transfer students receive some form of aid; it awards substantial merit scholarships based on academic profile in addition to need-based aid, though exact guaranteed amounts are not published."
     },
@@ -15129,6 +15539,11 @@
       "source": "RIT admissions (https://www.rit.edu/admissions/first-year-application)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -15198,8 +15613,8 @@
       }
     ],
     "financials": {
-      "coaInState": 91294,
-      "coaOutOfState": 91294,
+      "coaInState": 79790,
+      "coaOutOfState": 79790,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/stevens",
       "meritAidNote": "Stevens awards merit scholarships to a substantial share of admitted students automatically based on academic profile, in addition to need-based aid; exact amounts vary by applicant strength."
     },
@@ -15311,6 +15726,11 @@
       "source": "Stevens Institute of Technology admissions (https://www.stevens.edu/page-basic/submit-your-test-scores)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -15378,8 +15798,8 @@
       }
     ],
     "financials": {
-      "coaInState": 95966,
-      "coaOutOfState": 95966,
+      "coaInState": 85962,
+      "coaOutOfState": 85962,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/Rochester",
       "meritAidNote": "Rochester meets full demonstrated need for admitted students and also offers a range of merit scholarships (e.g., Rochester, Renaissance Scholarships) to academically strong admits; exact award amounts vary by applicant strength."
     },
@@ -15491,6 +15911,11 @@
       "source": "University of Rochester admissions (https://admissions.rochester.edu/applying/testing-policies/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -15562,8 +15987,8 @@
       }
     ],
     "financials": {
-      "coaInState": 27766,
-      "coaOutOfState": 63898,
+      "coaInState": 26055,
+      "coaOutOfState": 58264,
       "netPriceCalculatorUrl": "https://studentaid.unc.edu/net-price-calculator/",
       "meritAidNote": "UNC's Common Data Set confirms institutional scholarship/grant aid is not available to nonresident undergraduates, so out-of-state families should plan around full-freight cost or the Morehead-Cain/Robertson scholar competitions rather than counting on university merit aid; the need-based Carolina Covenant is open to qualifying low-income students regardless of residency."
     },
@@ -15675,6 +16100,11 @@
       "source": "UNC admissions (https://admissions.unc.edu/faqs/how-does-unc-look-at-act-or-sat-test-scores/)",
       "year": "2026-27",
       "accessed": "2026-10-07"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -15751,8 +16181,8 @@
       }
     ],
     "financials": {
-      "coaInState": 41803,
-      "coaOutOfState": 79512,
+      "coaInState": 39926,
+      "coaOutOfState": 77635,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/virginia",
       "meritAidNote": "UVA's AccessUVA program meets 100% of demonstrated need for admitted students regardless of residency, but out-of-state merit scholarships (e.g., Jefferson Scholars) are exceptionally limited in number, so most non-Virginians should plan on need-based aid or full cost."
     },
@@ -15863,6 +16293,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -15940,8 +16375,8 @@
       }
     ],
     "financials": {
-      "coaInState": 24181,
-      "coaOutOfState": 48686,
+      "coaInState": 22523,
+      "coaOutOfState": 44801,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/ufl",
       "meritAidNote": "UF's Common Data Set confirms institutional scholarship or grant aid is not offered to nonresident undergraduates, so out-of-state admits should not expect UF-funded merit money and must budget for the full non-resident cost of attendance."
     },
@@ -16051,6 +16486,11 @@
       "source": "University of Florida admissions (https://admissions.ufl.edu/apply/freshman/requirements)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -16122,8 +16562,8 @@
       }
     ],
     "financials": {
-      "coaInState": 32082,
-      "coaOutOfState": 58860,
+      "coaInState": 30305,
+      "coaOutOfState": 57083,
       "netPriceCalculatorUrl": "https://sfa.osu.edu/incoming-freshmen/about-aid/net-price-calculator",
       "meritAidNote": "Ohio State awards a mix of Eminence Fellows/Morrill and college-specific merit scholarships to top applicants regardless of residency, but competition for non-resident merit dollars is steep given the school's large out-of-state applicant pool."
     },
@@ -16234,6 +16674,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -16306,8 +16751,8 @@
       }
     ],
     "financials": {
-      "coaInState": 41338,
-      "coaOutOfState": 62484,
+      "coaInState": 39694,
+      "coaOutOfState": 60840,
       "netPriceCalculatorUrl": "https://app.meadowfi.com/pennstate",
       "meritAidNote": "Penn State's merit scholarships are largely funneled through the Schreyer Honors College and college-specific awards; because Penn State enrolls a very large out-of-state population, merit aid is competitive but not need-restricted."
     },
@@ -16419,6 +16864,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -16490,8 +16940,8 @@
       }
     ],
     "financials": {
-      "coaInState": 30644,
-      "coaOutOfState": 63268,
+      "coaInState": 28679,
+      "coaOutOfState": 59179,
       "netPriceCalculatorUrl": "https://financialaid.wisc.edu/net-price-calculator/",
       "meritAidNote": "UW-Madison's out-of-state population is large and merit aid (e.g., the Bucky's Tuition Promise is need-based/in-state only) is limited for nonresidents, so most out-of-state families should plan for close to the sticker price unless a specific college-level scholarship applies."
     },
@@ -16603,6 +17053,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -16674,8 +17129,8 @@
       }
     ],
     "financials": {
-      "coaInState": 30602,
-      "coaOutOfState": 60349,
+      "coaInState": 28801,
+      "coaOutOfState": 58548,
       "netPriceCalculatorUrl": "https://academics.iu.edu/cost-estimator/index.html",
       "meritAidNote": "IU's automatic merit scholarships (e.g., academic achievement awards) are available to out-of-state admits based on GPA and test scores, making it one of the more merit-accessible Big Ten flagships for competitive non-resident applicants."
     },
@@ -16786,6 +17241,11 @@
       "source": "Indiana University Bloomington admissions (https://admissions.indiana.edu/test-optional/index.html)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -16857,8 +17317,8 @@
       }
     ],
     "financials": {
-      "coaInState": 31731,
-      "coaOutOfState": 61108,
+      "coaInState": 29299,
+      "coaOutOfState": 58676,
       "netPriceCalculatorUrl": "https://financialaid.umd.edu/resources-policies/net-price-calculator",
       "meritAidNote": "Maryland's Banneker/Key merit scholarship is extremely competitive and open to nonresidents, but the bulk of Maryland's aid budget is need-based and skews toward in-state students, so out-of-state admits should expect limited merit support."
     },
@@ -16969,6 +17429,11 @@
       "source": "University of Maryland admissions (https://admissions.umd.edu/apply/freshman-application-faqs)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -17040,8 +17505,8 @@
       }
     ],
     "financials": {
-      "coaInState": 39519,
-      "coaOutOfState": 59031,
+      "coaInState": 36993,
+      "coaOutOfState": 56505,
       "netPriceCalculatorUrl": "https://scarlethub.rutgers.edu/financial-services/tools-resources/net-price-calculator/",
       "meritAidNote": "Rutgers offers merit scholarships to out-of-state admits with strong academic profiles, but the gap between in-state and out-of-state cost of attendance is comparatively narrow for a public flagship, softening the out-of-state cost premium somewhat."
     },
@@ -17152,6 +17617,11 @@
       "source": "Rutgers University–New Brunswick admissions (https://admissions.rutgers.edu/apply/first-year-applicants)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -17224,8 +17694,8 @@
       }
     ],
     "financials": {
-      "coaInState": 35722,
-      "coaOutOfState": 64074,
+      "coaInState": 29423,
+      "coaOutOfState": 57775,
       "netPriceCalculatorUrl": "https://financialaid.arizona.edu/cost/npc",
       "meritAidNote": "Arizona is known for aggressive automatic merit scholarships tied to GPA and test scores that substantially discount the out-of-state sticker price for well-qualified applicants, making it one of the more generous merit-aid flagships for non-residents."
     },
@@ -17336,6 +17806,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -17403,8 +17878,8 @@
       }
     ],
     "financials": {
-      "coaInState": 34175,
-      "coaOutOfState": 55091,
+      "coaInState": 30111,
+      "coaOutOfState": 51027,
       "netPriceCalculatorUrl": "https://app.meadowfi.com/asu",
       "meritAidNote": "ASU's Common Data Set confirms non-need-based institutional aid is available to nonresidents (averaging roughly $12,700 per awarded student), and ASU is well known for large automatic New American University merit scholarships tied to GPA and test scores."
     },
@@ -17516,6 +17991,11 @@
       "source": "Arizona State University admission (https://admission.asu.edu/apply/first-year/admission)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -17587,8 +18067,8 @@
       }
     ],
     "financials": {
-      "coaInState": 38456,
-      "coaOutOfState": 67708,
+      "coaInState": 37684,
+      "coaOutOfState": 66936,
       "netPriceCalculatorUrl": "https://ofa.colorado.edu/netpricecalculator/",
       "meritAidNote": "CU Boulder offers merit scholarships to strong out-of-state applicants (e.g., Chancellor's/Regents-style awards), but the out-of-state cost of attendance is among the highest of the public flagships in this set, so merit aid rarely closes the full gap."
     },
@@ -17698,6 +18178,11 @@
       "source": "CU Boulder admissions (https://www.colorado.edu/admissions/process/first-year/plan)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -17764,8 +18249,8 @@
       }
     ],
     "financials": {
-      "coaInState": 33876,
-      "coaOutOfState": 60846,
+      "coaInState": 32696,
+      "coaOutOfState": 59666,
       "netPriceCalculatorUrl": "https://aggie.tamu.edu/paying-for-college/cost-of-attendance/net-price-calculator.html",
       "meritAidNote": "Texas A&M offers merit scholarships to top out-of-state applicants, but as with most Texas public flagships, the bulk of institutional aid favors in-state residents under state law, so non-residents should plan primarily around the sticker cost of attendance."
     },
@@ -17876,6 +18361,11 @@
       "source": "Texas A&M admissions (https://admissions.tamu.edu/apply/freshman/index.html)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -17950,8 +18440,8 @@
       }
     ],
     "financials": {
-      "coaInState": 39576,
-      "coaOutOfState": 62636,
+      "coaInState": 38757,
+      "coaOutOfState": 61817,
       "netPriceCalculatorUrl": "https://miamioh.edu/onestop/paying-for-college/costs/net-price-calculators/index.html",
       "meritAidNote": "Miami does not publish a rigid automatic GPA/SAT scale. Students are automatically considered for merit scholarships from the Common App with no separate application, but awards are decided through a holistic review of the transcript (Miami recalculates a weighted 4.0 GPA) rather than a fixed formula. Because Miami is test-optional and doesn't require scores for most scholarships, GPA/rigor carries more weight than test scores in merit decisions. Renewal requires a 3.0 college GPA."
     },
@@ -18062,6 +18552,11 @@
       "source": "Miami University admission (https://miamioh.edu/admission-aid/apply/first-year-students/college-entrance-testing.html)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -18131,8 +18626,8 @@
       }
     ],
     "financials": {
-      "coaInState": 78816,
-      "coaOutOfState": 78816,
+      "coaInState": 74226,
+      "coaOutOfState": 74226,
       "netPriceCalculatorUrl": "https://www.baylor.edu/sfs/netpricecalculator/npcalc.htm",
       "meritAidNote": "Baylor does NOT use an automatic GPA/SAT scale for freshmen — its site explicitly states scholarships are awarded via 'a full review of comprehensive high school academic performance,' not a formula. Named tiers run from Independence ($12,500/yr) through President's ($32,000/yr), automatically considered with no extra application, final upon admission, renewable at a 3.0 college GPA. (Transfers do get a published GPA-tiered scale, $12,000-$25,000.)"
     },
@@ -18242,6 +18737,11 @@
       "source": "Baylor University admissions (https://admissions.web.baylor.edu/admissions/incoming-freshman/application-process)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -18316,8 +18816,8 @@
       }
     ],
     "financials": {
-      "coaInState": 83662,
-      "coaOutOfState": 83662,
+      "coaInState": 76604,
+      "coaOutOfState": 76604,
       "netPriceCalculatorUrl": "https://financialaid.tcu.edu/cost/net-price-calculator.php",
       "meritAidNote": "TCU states that applicants are 'automatically considered' for academic scholarships upon application, but does not publish a public GPA/SAT award matrix — decisions come from holistic review rather than a fixed scale. Roughly 3 in 4 students receive some scholarship or aid."
     },
@@ -18427,6 +18927,11 @@
       "source": "TCU admissions (https://admissions.tcu.edu/apply/first-year/testing-policy-sat-act.php)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -18499,8 +19004,8 @@
       }
     ],
     "financials": {
-      "coaInState": 89602,
-      "coaOutOfState": 89602,
+      "coaInState": 85606,
+      "coaOutOfState": 85606,
       "netPriceCalculatorUrl": "https://www.smu.edu/enrollment-services/student-financial-services/cost-and-payment/net-price-calculator",
       "meritAidNote": "SMU's public admissions pages do not disclose a specific automatic GPA/SAT award chart; merit scholarships (e.g., Hilltop Scholars, President's Scholarship) appear to be awarded through the general admission review rather than a published formula. Families should confirm the current scale directly with SMU financial aid, as no automatic scale could be verified from public sources in this research pass."
     },
@@ -18610,6 +19115,11 @@
       "source": "SMU admission (https://www.smu.edu/admission/apply/undergraduate-admission/testing)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -18682,8 +19192,8 @@
       }
     ],
     "financials": {
-      "coaInState": 82566,
-      "coaOutOfState": 82566,
+      "coaInState": 78476,
+      "coaOutOfState": 78476,
       "netPriceCalculatorUrl": "https://www.du.edu/financialaid/undergraduate/calculator/",
       "meritAidNote": "DU's public pages emphasize over $116 million in annual institutional aid but do not publish a GPA/SAT-based automatic scholarship scale; merit awards (e.g., Chancellor's/Pioneer scholarships) appear to be determined through holistic review of the admission application rather than a fixed formula."
     },
@@ -18793,6 +19303,11 @@
       "source": "University of Denver admission (https://www.du.edu/admission-aid/undergraduate/first-year-applicants/admission-standards)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -18867,8 +19382,8 @@
       }
     ],
     "financials": {
-      "coaInState": 65443,
-      "coaOutOfState": 65443,
+      "coaInState": 62266,
+      "coaOutOfState": 62266,
       "netPriceCalculatorUrl": "https://elon.studentaidcalculator.com/survey.aspx",
       "meritAidNote": "Elon's public pages do not publish an automatic GPA/SAT scholarship matrix. Its named merit programs (e.g., Elon College Fellows, Presidential Scholarship) are competitive, holistic-review awards — some requiring supplemental essays or interviews — rather than an automatic scale tied purely to stats."
     },
@@ -18978,6 +19493,11 @@
       "source": "Elon University admissions (https://www.elon.edu/u/admissions/undergraduate/apply/application-requirements/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -19043,8 +19563,8 @@
       }
     ],
     "financials": {
-      "coaInState": 36802,
-      "coaOutOfState": 63246,
+      "coaInState": 35649,
+      "coaOutOfState": 62093,
       "netPriceCalculatorUrl": "https://www.uvm.edu/studentfinancialservices/net_price_calculator",
       "meritAidNote": "Not a merit-scale-first school (not in the 'automatic scholarship' category); no automatic GPA/SAT scholarship matrix was identified from public sources."
     },
@@ -19152,6 +19672,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -19223,8 +19748,8 @@
       }
     ],
     "financials": {
-      "coaInState": 35446,
-      "coaOutOfState": 60036,
+      "coaInState": 30952,
+      "coaOutOfState": 55542,
       "netPriceCalculatorUrl": "https://www.udel.edu/apply/undergraduate-admissions/financing-your-degree/net-price-calculator/",
       "meritAidNote": "Not marketed as an automatic-scale merit school; no published GPA/SAT scholarship chart was identified from public sources."
     },
@@ -19333,6 +19858,11 @@
       "source": "University of Delaware admissions (https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/freshman-admissions/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -19402,8 +19932,8 @@
       }
     ],
     "financials": {
-      "coaInState": 83708,
-      "coaOutOfState": 83708,
+      "coaInState": 76835,
+      "coaOutOfState": 76835,
       "netPriceCalculatorUrl": "https://drexel.edu/drexelcentral/finaid/prospective-students/net-price-calculator/",
       "meritAidNote": "Not marketed as an automatic-scale merit school; no published GPA/SAT scholarship chart was identified from public sources. Co-op earnings (averaging roughly $18,700 per 6-month term) function as a major de facto cost offset even though they are wages, not scholarship aid."
     },
@@ -19512,6 +20042,11 @@
       "source": "Drexel University admissions (https://drexel.edu/admissions/apply/undergrad-instructions/first-year-instructions/standardized-tests)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -19582,8 +20117,8 @@
       }
     ],
     "financials": {
-      "coaInState": 46506,
-      "coaOutOfState": 62453,
+      "coaInState": 40903,
+      "coaOutOfState": 56850,
       "netPriceCalculatorUrl": "https://sfs.temple.edu/sites/sfs/files/NetPrice.html",
       "meritAidNote": "Not marketed as an automatic-scale merit school; no published GPA/SAT scholarship chart was identified from public sources."
     },
@@ -19691,6 +20226,11 @@
       "source": "Temple University admissions (https://admissions.temple.edu/apply/first-year-students/test-optional)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -19756,8 +20296,8 @@
       }
     ],
     "financials": {
-      "coaInState": 40744,
-      "coaOutOfState": 63412,
+      "coaInState": 39426,
+      "coaOutOfState": 62094,
       "netPriceCalculatorUrl": "https://financialaid.uconn.edu/pricecalc/",
       "meritAidNote": "Not marketed as an automatic-scale merit school; no published GPA/SAT scholarship chart was identified from public sources."
     },
@@ -19865,6 +20405,11 @@
       "source": "UConn admissions (https://admissions.uconn.edu/apply/first-year/instructions/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -19929,8 +20474,8 @@
       }
     ],
     "financials": {
-      "coaInState": 35814,
-      "coaOutOfState": 61126,
+      "coaInState": 35015,
+      "coaOutOfState": 60327,
       "netPriceCalculatorUrl": "https://netprice.app.clemson.edu/calc/",
       "meritAidNote": "Not marketed as an automatic-scale merit school; no published GPA/SAT scholarship chart was identified from public sources."
     },
@@ -20038,6 +20583,11 @@
       "source": "Clemson University admissions (https://www.clemson.edu/admissions/undergraduate-admissions/apply/first-year.html)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -20104,8 +20654,8 @@
       }
     ],
     "financials": {
-      "coaInState": 34240,
-      "coaOutOfState": 61624,
+      "coaInState": 32198,
+      "coaOutOfState": 59582,
       "netPriceCalculatorUrl": "https://msu.clearcostcalculator.com/student/default/netpricecalculator/survey",
       "meritAidNote": "Not marketed as an automatic-scale merit school; no published GPA/SAT scholarship chart was identified from public sources."
     },
@@ -20215,6 +20765,11 @@
       "source": "Michigan State University admissions (https://admissions.msu.edu/apply/first-year/act-sat-test-optional)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -20279,8 +20834,8 @@
       }
     ],
     "financials": {
-      "coaInState": 29219,
-      "coaOutOfState": 51307,
+      "coaInState": 28596,
+      "coaOutOfState": 50684,
       "netPriceCalculatorUrl": "https://admissions.uiowa.edu/finances/net-price-calculator",
       "meritAidNote": "Not marketed as an automatic-scale merit school; no published GPA/SAT scholarship chart was identified from public sources."
     },
@@ -20389,6 +20944,11 @@
       "source": "University of Iowa admissions (https://admissions.uiowa.edu/testing)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -20450,8 +21010,8 @@
       }
     ],
     "financials": {
-      "coaInState": 28808,
-      "coaOutOfState": 47138,
+      "coaInState": 26751,
+      "coaOutOfState": 45081,
       "netPriceCalculatorUrl": "https://tcc.ruffalonl.com/University-of-Kansas-Lawrence/Net-Price-Calculator",
       "meritAidNote": "Not marketed as an automatic-scale merit school in the sources reviewed; December 1 is cited as the priority deadline for freshman scholarship consideration, but no published GPA/SAT award matrix was identified."
     },
@@ -20561,6 +21121,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -20635,8 +21200,8 @@
       }
     ],
     "financials": {
-      "coaInState": 89172,
-      "coaOutOfState": 89172,
+      "coaInState": 84374,
+      "coaOutOfState": 84374,
       "netPriceCalculatorUrl": "https://www.nyu.edu/admissions/financial-aid-and-scholarships/applying-and-planning-for-undergraduate-aid/estimate-your-cost.html",
       "meritAidNote": "NYU is need-aware for a portion of the applicant pool and has historically met a lower share of demonstrated need than peer privates, with very limited merit aid; families should run the net price calculator early and not count on a merit award to close the gap."
     },
@@ -20751,6 +21316,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -20820,8 +21390,8 @@
       }
     ],
     "financials": {
-      "coaInState": 91986,
-      "coaOutOfState": 91986,
+      "coaInState": 83271,
+      "coaOutOfState": 83271,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/nd",
       "meritAidNote": "Notre Dame is need-based and meets 100% of demonstrated need without loans for most families; there is very little separate merit aid outside a handful of highly selective named scholarships (e.g., Stamps Scholars), so admitted families should plan around the need-based aid estimate rather than a merit discount."
     },
@@ -20939,6 +21509,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -21013,8 +21588,8 @@
       }
     ],
     "financials": {
-      "coaInState": 97860,
-      "coaOutOfState": 97860,
+      "coaInState": 83622,
+      "coaOutOfState": 83622,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/emory",
       "meritAidNote": "Emory meets 100% of demonstrated need for admitted students and offers a small number of highly selective merit awards (e.g., the Emory Scholars Program), but general applicants should not expect a merit discount -- the net price calculator's need-based estimate is the realistic planning number for most families."
     },
@@ -21129,6 +21704,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -21205,8 +21785,8 @@
       }
     ],
     "financials": {
-      "coaInState": 102260,
-      "coaOutOfState": 102260,
+      "coaInState": 88488,
+      "coaOutOfState": 88488,
       "netPriceCalculatorUrl": "https://financialaid.washu.edu/costs/cost-calculators/net-price-calculator",
       "meritAidNote": "WashU meets 100% of demonstrated need and offers a set of named merit scholarships (e.g., Danforth, Ervin, Rodriguez Scholars), but these are extremely competitive and limited in number -- most admitted students should plan around need-based aid rather than merit."
     },
@@ -21322,6 +21902,11 @@
       "source": "WashU admissions (https://admissions.washu.edu/how-to-apply/first-year-us-applicants/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -21396,8 +21981,8 @@
       }
     ],
     "financials": {
-      "coaInState": 92925,
-      "coaOutOfState": 92925,
+      "coaInState": 86285,
+      "coaOutOfState": 86285,
       "netPriceCalculatorUrl": "https://www.bu.edu/finaid/aid-basics/cost-of-education/net-price-calculator/",
       "meritAidNote": "BU offers substantial merit scholarships (Trustee and Presidential Scholarships being the most prestigious, awarded automatically to top applicants without a separate application), making it one of the more merit-aid-friendly options among this group of highly selective privates."
     },
@@ -21512,6 +22097,11 @@
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
       "year": "2024"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -21588,8 +22178,8 @@
       }
     ],
     "financials": {
-      "coaInState": 94554,
-      "coaOutOfState": 94554,
+      "coaInState": 87004,
+      "coaOutOfState": 87004,
       "netPriceCalculatorUrl": "https://admission.tulane.edu/tuition-aid/net-price-calculator",
       "meritAidNote": "Tulane is known for a genuinely competitive merit scholarship program (Dean's, President's, and the flagship Paul Tulane Award) awarded automatically based on the application, in addition to need-based aid that met an average of 94% of demonstrated need for aided first-years -- making it one of the more merit-generous options in this group."
     },
@@ -21705,6 +22295,11 @@
       "source": "Tulane University admission (https://admission.tulane.edu/apply/instructions/standardized-tests)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -21779,8 +22374,8 @@
       }
     ],
     "financials": {
-      "coaInState": 94720,
-      "coaOutOfState": 94720,
+      "coaInState": 89493,
+      "coaOutOfState": 89493,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/bc",
       "meritAidNote": "Boston College is need-blind for domestic applicants and meets 100% of demonstrated need, but offers very little separate merit aid (a handful of Presidential Scholars each year) -- most families should plan around the need-based net price calculator rather than a merit award."
     },
@@ -21896,6 +22491,11 @@
       "source": "Boston College admission (https://www.bc.edu/bc-web/admission/apply/test-optional.html)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -21974,8 +22574,8 @@
       }
     ],
     "financials": {
-      "coaInState": 96144,
-      "coaOutOfState": 96144,
+      "coaInState": 86078,
+      "coaOutOfState": 86078,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/app/miami",
       "meritAidNote": "Miami has historically been generous with merit scholarships (including flagship awards like the Stamps and Singer Scholarships) alongside need-based aid, though competition for the largest awards is intense; admitted students should check their financial aid portal closely, as packages vary widely."
     },
@@ -22091,6 +22691,11 @@
       "source": "University of Miami admissions (https://admissions.miami.edu/undergraduate/application-process/admission-requirements/testing-policy/index.html)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -22162,8 +22767,8 @@
       }
     ],
     "financials": {
-      "coaInState": 101800,
-      "coaOutOfState": 101800,
+      "coaInState": 87499,
+      "coaOutOfState": 87499,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/wfu",
       "meritAidNote": "Wake Forest meets 100% of demonstrated need for admitted students (with an average aid package around $79,000 for aided first-years) and offers a set of competitive named merit scholarships (e.g., Nancy Susan Reynolds, Gordon Scholars), though these go to a small subset of applicants -- most families should budget from the need-based estimate."
     },
@@ -22279,6 +22884,11 @@
       "source": "Wake Forest admissions (https://admissions.wfu.edu/become-a-deacon/first-year/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -22358,8 +22968,8 @@
       }
     ],
     "financials": {
-      "coaInState": 97048,
-      "coaOutOfState": 97048,
+      "coaInState": 84793,
+      "coaOutOfState": 84793,
       "netPriceCalculatorUrl": "https://npc.collegeboard.org/student/app/villanova",
       "meritAidNote": "Villanova's aid is predominantly need-based (meeting an average of 84% of demonstrated need for aided first-years) with only a small, highly selective Presidential Scholarship program for merit -- most families should plan around the need-based net price estimate."
     },
@@ -22475,6 +23085,11 @@
       "source": "Villanova University undergraduate admission (https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/first-year-applicants.html)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
@@ -22545,8 +23160,8 @@
       }
     ],
     "financials": {
-      "coaInState": 28768,
-      "coaOutOfState": 49612,
+      "coaInState": 27993,
+      "coaOutOfState": 48231,
       "netPriceCalculatorUrl": "https://osfa.uga.edu/sites/default/files/npcalc.htm",
       "meritAidNote": "In-state Georgia residents benefit enormously from the HOPE and Zell Miller Scholarships, which can cover most or all tuition -- but these do not apply to out-of-state students. Out-of-state families should expect to pay close to the full out-of-state sticker price, aside from a very small number of highly competitive merit awards like the Foundation Fellowship."
     },
@@ -22661,6 +23276,11 @@
       "source": "University of Georgia admissions (https://admissions.uga.edu/apply/first-year-applicants/first-year-criteria/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard; the out-of-state figure adds the published tuition difference (out-of-state minus in-state tuition)."
     }
   },
   {
@@ -22740,8 +23360,8 @@
       }
     ],
     "financials": {
-      "coaInState": 86675,
-      "coaOutOfState": 86675,
+      "coaInState": 84517,
+      "coaOutOfState": 84517,
       "netPriceCalculatorUrl": "https://www.syracuse.edu/admissions-aid/tuition-fees/undergraduate-costs/net-price-calculator/",
       "meritAidNote": "Syracuse offers a range of merit scholarships (e.g., Chancellor's and Dean's Scholarships) awarded automatically based on the application alongside need-based aid, making it more merit-accessible than many of the highly selective privates in this group -- but families should still confirm actual awards via the net price calculator rather than assuming the largest scholarship."
     },
@@ -22856,6 +23476,11 @@
       "source": "Syracuse University admissions (https://www.syracuse.edu/admissions-aid/application-process/undergraduate/college-specific-requirements/)",
       "year": "2026-27",
       "accessed": "2026-09-29"
+    },
+    "costProvenance": {
+      "source": "College Scorecard (latest.cost.attendance.academic_year)",
+      "year": "2024",
+      "note": "Cost of attendance from College Scorecard (academic-year cost)."
     }
   },
   {
