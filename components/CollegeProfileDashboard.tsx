@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { ArrowLeft, Award, ExternalLink, MapPin } from "lucide-react";
 import clsx from "clsx";
 import type { College, FieldProvenance, ScorecardData } from "@/lib/types";
+import type { SchoolMajors } from "@/lib/majors";
 import { formatPercent, admitRateTier, displayedAdmitRate } from "@/lib/colleges";
 import { CONTACT_EMAIL, SITE_URL } from "@/lib/site";
 import { hasReliableResidencySplit } from "@/lib/gpa";
@@ -20,6 +21,7 @@ import FinancialAid from "./FinancialAid";
 import ApplicationRequirements from "./ApplicationRequirements";
 import AdmissionOverview from "./AdmissionOverview";
 import CampusFitStats from "./CampusFitStats";
+import MajorsCard from "./MajorsCard";
 
 const SECTIONS = [
   { id: "overview", label: "Preparation" },
@@ -46,7 +48,7 @@ const SECTION_BAR_TOP = NAV_HEIGHT + HEADER_COMPACT_HEIGHT;
 const SECTION_BAR_HEIGHT_FALLBACK = 56;
 const SCROLL_OFFSET = SECTION_BAR_TOP + SECTION_BAR_HEIGHT_FALLBACK;
 
-export default function CollegeProfileDashboard({ college }: { college: College }) {
+export default function CollegeProfileDashboard({ college, majors }: { college: College; majors: SchoolMajors }) {
   const router = useRouter();
   // Whether the full banner has scrolled out of view, which is when the compact
   // school bar fades in. Driven by an IntersectionObserver, not a scroll
@@ -159,8 +161,24 @@ export default function CollegeProfileDashboard({ college }: { college: College 
 
   // Only UC/CSU schools report a capped-weighted figure at all — Private and
   // Public never do, so that box doesn't belong on their page.
-  const gpaSatBoxes = [
-    { label: "Mid-50% Unweighted GPA", value: college.mid50_GPA_Unweighted },
+  const unweightedGpa = summariseGpa(college.mid50_GPA_Unweighted);
+  const gpaSatBoxes: { label: string; value: string; note?: string }[] = [
+    ...(unweightedGpa
+      ? [
+          {
+            label:
+              unweightedGpa.kind === "range"
+                ? "Mid-50% Unweighted GPA"
+                : unweightedGpa.kind === "average"
+                  ? unweightedGpa.unweighted
+                    ? "Average Unweighted GPA"
+                    : "Average GPA"
+                  : "Unweighted GPA",
+            value: unweightedGpa.headline,
+            note: unweightedGpa.note,
+          },
+        ]
+      : []),
     ...(isUcOrCsu ? [{ label: cappedGpaLabel, value: college.mid50_GPA_UCCapped }] : []),
     { label: "Mid-50% SAT", value: college.mid50_SAT },
   ].filter((box) => hasReportedValue(box.value));
@@ -291,14 +309,31 @@ export default function CollegeProfileDashboard({ college }: { college: College 
               />
             </div>
           </div>
-          {hasReportedValue(usesUcCapped ? college.mid50_GPA_UCCapped : college.mid50_GPA_Unweighted) && (
-            <GlanceStat
-              label={usesUcCapped ? "GPA Range (UC-Capped)" : "GPA Range (Unweighted)"}
-              value={usesUcCapped ? college.mid50_GPA_UCCapped : college.mid50_GPA_Unweighted}
-              showSource
-              provenance={college.gpaSatProvenance}
-            />
-          )}
+          {usesUcCapped
+            ? hasReportedValue(college.mid50_GPA_UCCapped) && (
+                <GlanceStat
+                  label="GPA Range (UC-Capped)"
+                  value={college.mid50_GPA_UCCapped}
+                  showSource
+                  provenance={college.gpaSatProvenance}
+                />
+              )
+            : unweightedGpa &&
+              unweightedGpa.kind !== "unpublished" && (
+                <GlanceStat
+                  label={
+                    unweightedGpa.kind === "range"
+                      ? "GPA Range (Unweighted)"
+                      : unweightedGpa.unweighted
+                        ? "Average GPA (Unweighted)"
+                        : "Average GPA"
+                  }
+                  value={unweightedGpa.headline}
+                  sub={unweightedGpa.kind === "average" ? "An average; the school publishes no range" : undefined}
+                  showSource
+                  provenance={college.gpaSatProvenance}
+                />
+              )}
           {college.financials.coaInState !== null && (
             <GlanceStat
               label="Cost of Attendance"
@@ -413,6 +448,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                         key={box.label}
                         label={box.label}
                         value={box.value}
+                        note={box.note}
                         showSource
                         provenance={college.gpaSatProvenance}
                       />
@@ -428,27 +464,7 @@ export default function CollegeProfileDashboard({ college }: { college: College 
                 </div>
               </div>
 
-              <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-                <div className="text-xs font-bold tracking-wide text-slate-600">
-                  <div className="text-xs font-bold tracking-wide text-slate-600">Impacted Majors</div>
-                  {college.impactedMajors.length > 0 ? (
-                    <div className="mt-2 flex flex-wrap gap-1.5">
-                      {college.impactedMajors.map((m) => (
-                        <span
-                          key={m}
-                          className="rounded-full bg-rose-50 px-2.5 py-1 text-xs font-medium text-rose-600 ring-1 ring-inset ring-rose-200"
-                        >
-                          {m}
-                        </span>
-                      ))}
-                    </div>
-                  ) : (
-                    <p className="mt-2 text-sm text-slate-500">
-                      {college.rank === undefined ? "Not researched yet." : "No internally-impacted majors reported."}
-                    </p>
-                  )}
-                </div>
-              </div>
+              <MajorsCard collegeName={college.name} majors={majors} />
             </div>
           </section>
 
@@ -676,6 +692,42 @@ function SourceMark({ provenance }: { provenance?: FieldProvenance | null }) {
 }
 
 /** "N/A (...)"-style placeholder strings mean the field isn't reported — never render an empty box for one. */
+/**
+ * The unweighted-GPA field is meant to hold a mid-50% range ("3.90 - 4.00"),
+ * but a dozen schools publish no range, and for those the field holds a
+ * sentence instead: "Average unweighted GPA 3.67 (discrete 25th/75th
+ * percentile range not published)". Printed as-is in a stat tile that sentence
+ * rendered in the type size meant for a number. This turns the field into a
+ * short headline plus, where there is more to say, the sentence as a note.
+ * `null` when nothing was reported at all.
+ */
+function summariseGpa(
+  value: string
+):
+  | { kind: "range"; headline: string; note?: undefined; unweighted: true }
+  | { kind: "average"; headline: string; note: string; unweighted: boolean }
+  | { kind: "unpublished"; headline: string; note: string; unweighted: true }
+  | null {
+  const text = value.trim();
+  if (!hasReportedValue(text)) return null;
+  const range = text.match(/^(\d+\.\d+)\s*-\s*(\d+\.\d+)\b/);
+  if (range) return { kind: "range", headline: `${range[1]} - ${range[2]}`, unweighted: true };
+  // Only a sentence that leads with the average is read as one. "Not
+  // published; reports only a weighted average of 4.19" mentions a number too,
+  // but it is a weighted figure and must not appear under an unweighted label.
+  const average = text.match(/^Average\b([^0-9]*?)(\d\.\d{1,2})/i);
+  if (average) {
+    const approximate = /approximately/i.test(average[1]);
+    return {
+      kind: "average",
+      headline: `${approximate ? "about " : ""}${average[2]}`,
+      note: text,
+      unweighted: /unweighted/i.test(average[1]),
+    };
+  }
+  return { kind: "unpublished", headline: "Not published", note: text, unweighted: true };
+}
+
 function hasReportedValue(value: string): boolean {
   return !value.trim().toUpperCase().startsWith("N/A");
 }
@@ -786,11 +838,14 @@ function ScorecardTuitionRow({ scorecard }: { scorecard: ScorecardData }) {
 function GpaBox({
   label,
   value,
+  note,
   showSource,
   provenance,
 }: {
   label: string;
   value: string;
+  /** The school's own wording when there is no plain range to show. */
+  note?: string;
   showSource?: boolean;
   provenance?: FieldProvenance;
 }) {
@@ -801,6 +856,7 @@ function GpaBox({
         {value}
         {showSource && <SourceMark provenance={provenance} />}
       </div>
+      {note && <p className="mt-1.5 text-[11px] leading-snug text-slate-500">{note}</p>}
     </div>
   );
 }

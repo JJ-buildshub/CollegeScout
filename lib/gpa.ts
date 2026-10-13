@@ -594,7 +594,7 @@ function evaluateUcFit(
 ): FitResult {
   const { rate: admitRate, context: residencyContext } = resolveAdmitRate(college, residency, homeState);
   const majorNote =
-    "Major and campus selectivity can differ from this figure — some majors and campuses admit separately and more selectively than the overall rate (see the school's own 'Impacted Majors,' when reported).";
+    "Major and campus selectivity can differ from this figure — some majors and campuses admit separately and more selectively than the overall rate, so check the school's own admissions page for the major you want.";
 
   if (ucCappedGpa === null) {
     // Never hint at an SAT score here (the third param to estimateFromAdmitRateOnly) — UC doesn't use one.

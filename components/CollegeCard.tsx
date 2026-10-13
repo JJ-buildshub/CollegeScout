@@ -18,7 +18,7 @@ function realRange(value: string): string | null {
   return m ? `${m[1]}–${m[2]}` : null;
 }
 
-export default function CollegeCard({ college }: { college: College }) {
+export default function CollegeCard({ college, interestsQuery }: { college: College; interestsQuery?: string }) {
   const admitRate = displayedAdmitRate(college);
   const pct = Math.round(admitRate.value * 100);
   const accent = SYSTEM_ACCENT[college.system];
@@ -46,7 +46,10 @@ export default function CollegeCard({ college }: { college: College }) {
         {/* The title link stretches over the whole card (after:inset-0), so the
             card is one click target without nesting the Website link inside it. */}
         <h3 className="mt-1 text-lg font-extrabold leading-snug tracking-tight text-navy-900 group-hover:text-gold-600">
-          <Link href={`/directory/${college.id}`} className="after:absolute after:inset-0 after:content-['']">
+          <Link
+            href={`/directory/${college.id}${interestsQuery ? `?interests=${interestsQuery}` : ""}`}
+            className="after:absolute after:inset-0 after:content-['']"
+          >
             {college.name}
           </Link>
         </h3>
