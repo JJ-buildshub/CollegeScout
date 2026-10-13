@@ -287,7 +287,7 @@ export default function CollegeProfileDashboard({ college, majors }: { college: 
 
       <div className="mx-auto max-w-5xl">
         {/* At-a-glance strip */}
-        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-flow-col lg:auto-cols-fr lg:grid-cols-none">
           <div className="col-span-2 rounded-xl border border-slate-200 bg-white p-4">
             <div className="text-[11px] font-semibold tracking-wide text-slate-600">Admit Rate</div>
             <div className="mt-1 flex items-baseline gap-2">
@@ -393,7 +393,7 @@ export default function CollegeProfileDashboard({ college, majors }: { college: 
           {hasPrep && (
             <section id="overview" style={sectionScroll}>
               <h2 className="text-lg font-bold text-navy-900">Preparation</h2>
-              <div className="mt-3 w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+              <div className="mt-3 w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
                 <div>
                   <div className="text-xs font-bold tracking-wide text-slate-600">
                     Helpful high school preparation
@@ -421,8 +421,8 @@ export default function CollegeProfileDashboard({ college, majors }: { college: 
             <div className="mt-3 empty:hidden">
               <AdmissionOverview college={college} />
             </div>
-            <div className="mt-3 grid items-start gap-4 lg:grid-cols-2">
-              <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+            <div className="mt-3 grid items-stretch gap-4 lg:grid-cols-2">
+              <div className="w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
                 <div className={`grid gap-4 ${GRID_COLS_CLASS[admitBoxes.length]}`}>
                   {admitBoxes.map((box) => (
                     <Stat
@@ -471,7 +471,7 @@ export default function CollegeProfileDashboard({ college, majors }: { college: 
           {/* Applying */}
           <section id="apply" style={sectionScroll}>
             <h2 className="text-lg font-bold text-navy-900">Applying</h2>
-            <div className="mt-3 w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+            <div className="mt-3 w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
               <div className="text-xs font-bold tracking-wide text-slate-600">
                 Application Deadlines
                 <SourceMark provenance={college.applicationPlansProvenance} />
@@ -488,9 +488,9 @@ export default function CollegeProfileDashboard({ college, majors }: { college: 
           {/* Academics */}
           <section id="academics" style={sectionScroll}>
             <h2 className="text-lg font-bold text-navy-900">Academics</h2>
-            <div className="mt-3 grid items-start gap-4 lg:grid-cols-2">
+            <div className="mt-3 grid items-stretch gap-4 lg:grid-cols-2">
               {college.flagshipPrograms.length > 0 && (
-                <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+                <div className="w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
                   <div className="flex items-center gap-2">
                     <Award className="h-4 w-4 text-gold-600" />
                     <h3 className="text-sm font-bold text-navy-900">Flagship Programs</h3>
@@ -505,7 +505,7 @@ export default function CollegeProfileDashboard({ college, majors }: { college: 
                 </div>
               )}
 
-              <div className="w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+              <div className="w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
                 <h3 className="text-sm font-bold text-navy-900">Career &amp; Major Pathways</h3>
                 <div className="mt-4">
                   <div className="text-xs font-bold tracking-wide text-slate-600">Primary Disciplines</div>
@@ -548,7 +548,7 @@ export default function CollegeProfileDashboard({ college, majors }: { college: 
           <section id="cost" style={sectionScroll}>
             <h2 className="text-lg font-bold text-navy-900">Cost</h2>
             <div className="mt-3">
-              <div className="max-w-2xl rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+              <div className="w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
                 <FinancialSnapshot
                   financials={college.financials}
                   ipedsUnitId={college.ipedsUnitId ?? null}
@@ -571,7 +571,7 @@ export default function CollegeProfileDashboard({ college, majors }: { college: 
           {/* Campus */}
           <section id="campus" style={sectionScroll}>
             <h2 className="text-lg font-bold text-navy-900">Campus</h2>
-            <div className="mt-3 w-fit max-w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+            <div className="mt-3 w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
               <h3 className="text-sm font-bold text-navy-900">Campus Fit</h3>
               <div className="mt-4">
                 <CampusFitStats fit={college.campusFit} location={college.location} />
