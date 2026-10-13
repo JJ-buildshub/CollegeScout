@@ -34,18 +34,26 @@ import {
   DEFAULT_INTEREST_IDS,
   INTEREST_TAXONOMY,
   MAX_SELECTED_INTERESTS,
+  byDegreesDesc,
   countMatches,
-  getCombinedProgramLabel,
+  degreesAcrossInterests,
+  degreesForInterest,
+  findCombinedProgram,
+  getInterestById,
   getMatchTier,
   getPathwayLabel,
-  matchesAllInterests,
   matchesInterest,
   pickDiverseSlate,
 } from "@/lib/interests";
+import { MIN_PROGRAM_DEGREES, PROGRAMS_SOURCE } from "@/lib/programs";
 import type { College } from "@/lib/types";
 import SystemBadge from "./SystemBadge";
 
 const MAX_RESULTS = 6;
+// A school offering only some of the picked fields is shown under the exact
+// combination it offers, and there can be several combinations, so each gets
+// one example per selectivity tier rather than six.
+const MAX_PARTIAL_RESULTS = 4;
 // Bumped from 3: several interests in the new, more specific taxonomy
 // (e.g. Games & Interactive Media, Sports & Movement) genuinely have single-
 // digit real matches in this dataset — the caveat should show for those too,
@@ -112,6 +120,18 @@ const INTEREST_ICONS: Record<string, typeof Cog> = {
   "media-communication": Megaphone,
 };
 const NOT_SURE_ICON = HelpCircle;
+
+/**
+ * The named program at this school for an interest, when its curated tags have
+ * one that says more than the interest's own name ("Engineering: Engineering"
+ * told a reader nothing). Empty otherwise — the card is already in that
+ * interest's list.
+ */
+function pathwayNote(college: College, interestId: string): string {
+  const label = getPathwayLabel(college, interestId);
+  const interestLabel = getInterestById(interestId)?.label ?? "";
+  return label && label.toLowerCase() !== interestLabel.toLowerCase() ? label : "";
+}
 
 export default function TryCollegeScout() {
   // Entrepreneurship rather than the first chip in the list: it's a field a
@@ -184,20 +204,27 @@ export default function TryCollegeScout() {
 
   const singleResults = useMemo(() => {
     if (singleMatches.length === 0) return [];
-    const candidates = singleMatches.map((college) => ({ college, tier: getMatchTier(college, selectedIds[0]) }));
+    const candidates = singleMatches.map((college) => ({
+      college,
+      tier: getMatchTier(college, selectedIds[0]),
+      degrees: degreesForInterest(college, selectedIds[0]),
+    }));
     return pickDiverseSlate(candidates, MAX_RESULTS).map((college) => ({
       college,
-      pathway: getPathwayLabel(college, selectedIds[0]) ?? college.careerMajorTags.primaryDisciplines[0] ?? "",
+      pathway: pathwayNote(college, selectedIds[0]),
     }));
   }, [singleMatches, selectedIds]);
 
   // Every match, not just the diverse-slate examples — rendered per tier only
   // once that tier's "See all" is expanded.
   const singleFullResults = useMemo(() => {
-    return singleMatches.map((college) => ({
-      college,
-      pathway: getPathwayLabel(college, selectedIds[0]) ?? college.careerMajorTags.primaryDisciplines[0] ?? "",
-    }));
+    return singleMatches
+      .map((college) => ({
+        college,
+        degrees: degreesForInterest(college, selectedIds[0]),
+        pathway: pathwayNote(college, selectedIds[0]),
+      }))
+      .sort(byDegreesDesc);
   }, [singleMatches, selectedIds]);
 
   const singleTierCounts = useMemo(() => countsByTier(singleMatches), [singleMatches]);
@@ -206,12 +233,15 @@ export default function TryCollegeScout() {
   // section — reset whenever the selection changes so a new interest doesn't
   // inherit a stale expansion.
   const [singleExpandedTiers, setSingleExpandedTiers] = useState<Set<string>>(new Set());
-  const [combineExpandedTiers, setCombineExpandedTiers] = useState<Set<string>>(new Set());
-  const [strongExpandedTiers, setStrongExpandedTiers] = useState<Set<string>>(new Set());
+  // Keyed by the combination of picked interests a section's schools offer.
+  const [multiExpandedTiers, setMultiExpandedTiers] = useState<Record<string, Set<string>>>({});
+  // With three interests, schools offering just one are the weakest matches and
+  // the longest list, so they start as a one-line summary.
+  const [showSingleField, setShowSingleField] = useState(false);
   useEffect(() => {
     setSingleExpandedTiers(new Set());
-    setCombineExpandedTiers(new Set());
-    setStrongExpandedTiers(new Set());
+    setMultiExpandedTiers({});
+    setShowSingleField(false);
   }, [selectedIds, notSure]);
 
   function toggleTier(setter: (fn: (prev: Set<string>) => Set<string>) => void, tier: string) {
@@ -223,60 +253,75 @@ export default function TryCollegeScout() {
     });
   }
 
-  // Multi-interest view: split into "combine" and "strong in each," each
-  // drawing its top slate the same diverse way.
-  const {
-    combineResults,
-    combineFullResults,
-    combineTotal,
-    combineTierCounts,
-    strongResults,
-    strongFullResults,
-    strongTotal,
-    strongTierCounts,
-  } = useMemo(() => {
-    if (notSure || selectedIds.length < 2) {
-      return {
-        combineResults: [],
-        combineFullResults: [],
-        combineTotal: 0,
-        combineTierCounts: new Map<string, number>(),
-        strongResults: [],
-        strongFullResults: [],
-        strongTotal: 0,
-        strongTierCounts: new Map<string, number>(),
-      };
-    }
-    const combineLabels = new Map<string, string>();
-    for (const c of colleges) {
-      const label = getCombinedProgramLabel(c, selectedIds);
-      if (label) combineLabels.set(c.id, label);
-    }
-    const combineCandidates = colleges
-      .filter((c) => combineLabels.has(c.id))
-      .map((college) => ({ college, tier: 1 }));
-    const combineSlate = pickDiverseSlate(combineCandidates, MAX_RESULTS).map((college) => ({
-      college,
-      label: combineLabels.get(college.id)!,
-    }));
+  function toggleMultiTier(key: string, tier: string) {
+    setMultiExpandedTiers((prev) => {
+      const next = new Set(prev[key] ?? []);
+      if (next.has(tier)) next.delete(tier);
+      else next.add(tier);
+      return { ...prev, [key]: next };
+    });
+  }
 
-    const strong = colleges.filter((c) => !combineLabels.has(c.id) && matchesAllInterests(c, selectedIds));
-    const strongCandidates = strong.map((college) => ({
-      college,
-      tier: Math.min(...selectedIds.map((id) => getMatchTier(college, id))),
-    }));
+  // Multi-interest view. A student picking several fields is saying "any of
+  // these interests me", not "only show me schools with every one". So every
+  // school offering at least one is included, grouped by how many of the
+  // picked fields it offers — all of them first. Below that, schools are split
+  // by exactly which fields they offer: ordering a mixed group by programme
+  // size let the large fields (engineering, computing) take every example slot
+  // and hid a smaller one (nursing) the student had also asked for. A school
+  // with a single degree joining the fields says so on its card.
+  const multiGroups = useMemo(() => {
+    if (notSure || selectedIds.length < 2) return [];
+    const rows = colleges
+      .map((college) => {
+        const matchedIds = selectedIds.filter((id) => matchesInterest(college, id));
+        return {
+          college,
+          matchedIds,
+          tier: Math.min(4, ...matchedIds.map((id) => getMatchTier(college, id))),
+          degrees: degreesAcrossInterests(college, matchedIds),
+          combined: findCombinedProgram(college, matchedIds),
+        };
+      })
+      .filter((row) => row.matchedIds.length > 0);
 
-    return {
-      combineResults: combineSlate,
-      combineFullResults: combineCandidates.map((c) => ({ college: c.college, label: combineLabels.get(c.college.id)! })),
-      combineTotal: combineLabels.size,
-      combineTierCounts: countsByTier(combineCandidates.map((c) => c.college)),
-      strongResults: pickDiverseSlate(strongCandidates, MAX_RESULTS),
-      strongFullResults: strong.map((college) => ({ college })),
-      strongTotal: strong.length,
-      strongTierCounts: countsByTier(strong),
-    };
+    const groups = [];
+    for (let matchCount = selectedIds.length; matchCount >= 1; matchCount--) {
+      const inGroup = rows.filter((row) => row.matchedIds.length === matchCount);
+      if (inGroup.length === 0) continue;
+      const byCombination = new Map<string, typeof inGroup>();
+      for (const row of inGroup) {
+        const key = row.matchedIds.join("+");
+        byCombination.set(key, [...(byCombination.get(key) ?? []), row]);
+      }
+      const limit = matchCount === selectedIds.length ? MAX_RESULTS : MAX_PARTIAL_RESULTS;
+      const sections = [...byCombination.entries()]
+        .map(([key, members]) => {
+          const byId = new Map(members.map((m) => [m.college.id, m]));
+          return {
+            key,
+            label: members[0].matchedIds.map((id) => getInterestById(id)?.label ?? id).join(" + "),
+            total: members.length,
+            tierCounts: countsByTier(members.map((m) => m.college)),
+            examples: pickDiverseSlate(members, limit).map((college) => byId.get(college.id)!),
+            full: [...members].sort(byDegreesDesc),
+          };
+        })
+        .sort((a, b) => b.total - a.total);
+      groups.push({ matchCount, total: inGroup.length, sections });
+    }
+    return groups;
   }, [selectedIds, notSure]);
+
+  const multiTotal = multiGroups.reduce((sum, g) => sum + g.total, 0);
+  const multiAllTotal = multiGroups.find((g) => g.matchCount === selectedIds.length)?.total ?? 0;
+  const allOfThem = selectedIds.length === 2 ? "both" : `all ${selectedIds.length}`;
+  const multiGroupHeading = (matchCount: number) =>
+    matchCount === selectedIds.length
+      ? `Schools offering ${allOfThem}`
+      : matchCount === 1
+        ? "Schools offering one of them"
+        : `Schools offering ${matchCount} of the ${selectedIds.length}`;
 
   const isMulti = !notSure && selectedIds.length > 1;
   const isSingle = !notSure && selectedIds.length === 1;
@@ -416,6 +461,8 @@ export default function TryCollegeScout() {
             </div>
           )}
 
+          {isSingle && singleTotal > 0 && <HowChosen multi={false} />}
+
           {isSingle && (
             <>
               <div className="mx-auto mt-6 max-w-4xl">
@@ -429,7 +476,7 @@ export default function TryCollegeScout() {
                     exampleItems={items}
                     fullItems={groupByTier(singleFullResults).find((g) => g.tier === tier)?.items ?? items}
                     renderCard={({ college, pathway }) => (
-                      <ResultCard key={college.id} college={college}>
+                      <ResultCard key={college.id} college={college} interestsQuery={interestsQuery}>
                         <p className="mt-1.5 flex-1 text-xs font-semibold text-gold-600">{pathway}</p>
                       </ResultCard>
                     )}
@@ -468,156 +515,182 @@ export default function TryCollegeScout() {
             </>
           )}
 
-          {isMulti && (
+          {isMulti && multiTotal > 0 && (
             <>
-              {(combineTotal > 0 || strongTotal > 0) && (
-                <div className="mx-auto mt-6 flex max-w-4xl flex-wrap items-center justify-between gap-3 rounded-2xl bg-navy-900 px-5 py-4 text-white">
-                  <p className="text-sm font-semibold">
-                    <span className="text-2xl font-black tabular-nums text-gold-400">{combineTotal + strongTotal}</span>{" "}
-                    school{combineTotal + strongTotal === 1 ? "" : "s"} match {selectedLabel}
-                    {combineTotal > 0 && strongTotal > 0
-                      ? ` — ${combineTotal} with one combined program, ${strongTotal} with separate programs in each`
-                      : combineTotal > 0
-                        ? " with one combined program"
-                        : " with separate programs in each"}
-                  </p>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setCombineExpandedTiers(new Set(TIER_ORDER));
-                      setStrongExpandedTiers(new Set(TIER_ORDER));
-                    }}
-                    className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-gold-500 px-4 py-2 text-xs font-bold text-navy-950 hover:bg-gold-400"
-                  >
-                    See all {combineTotal + strongTotal} <ArrowRight className="h-3.5 w-3.5" />
-                  </button>
-                </div>
-              )}
-
-              <div className="mx-auto mt-8 max-w-4xl">
-                <h3 className="text-sm font-bold tracking-wide text-slate-600">
-                  Programs that combine these
-                </h3>
-                {combineResults.length > 0 ? (
-                  <div className="mt-3">
-                    {groupByTier(combineResults).map(({ tier, items }) => (
-                      <ResultTierGroup
-                        key={tier}
-                        tier={tier}
-                        total={combineTierCounts.get(tier) ?? items.length}
-                        expanded={combineExpandedTiers.has(tier)}
-                        onToggle={() => toggleTier(setCombineExpandedTiers, tier)}
-                        exampleItems={items}
-                        fullItems={groupByTier(combineFullResults).find((g) => g.tier === tier)?.items ?? items}
-                        renderCard={({ college, label }) => (
-                          <ResultCard key={college.id} college={college}>
-                            <p className="mt-2 text-xs font-semibold text-gold-600">{label}</p>
-                            <p className="mt-2 flex-1 text-xs text-slate-500">
-                              One program built around {selectedLabel.toLowerCase()} together.
-                            </p>
-                          </ResultCard>
-                        )}
-                      />
-                    ))}
-                  </div>
-                ) : (
-                  <p className="mt-3 text-sm text-slate-500">
-                    No school in this dataset has one program combining all of {selectedLabel} &mdash; here&apos;s
-                    who has a program in each field separately:
-                  </p>
-                )}
+              <div className="mx-auto mt-6 flex max-w-4xl flex-wrap items-center justify-between gap-3 rounded-2xl bg-navy-900 px-5 py-4 text-white">
+                <p className="text-sm font-semibold">
+                  <span className="text-2xl font-black tabular-nums text-gold-400">{multiTotal}</span>{" "}
+                  school{multiTotal === 1 ? "" : "s"} offer at least one of {selectedLabel}
+                  {multiAllTotal > 0 ? ` — ${multiAllTotal} offer ${allOfThem}` : ""}
+                </p>
+                <button
+                  type="button"
+                  onClick={() => {
+                      setShowSingleField(true);
+                      setMultiExpandedTiers(
+                        Object.fromEntries(
+                          multiGroups.flatMap((g) => g.sections.map((sec) => [sec.key, new Set<string>(TIER_ORDER)]))
+                        )
+                      );
+                  }}
+                  className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-gold-500 px-4 py-2 text-xs font-bold text-navy-950 hover:bg-gold-400"
+                >
+                  See all {multiTotal} <ArrowRight className="h-3.5 w-3.5" />
+                </button>
               </div>
 
-              <div className="mx-auto mt-8 max-w-4xl">
-                <h3 className="text-sm font-bold tracking-wide text-slate-600">
-                  Schools with a program in each
-                </h3>
-                {strongResults.length > 0 ? (
-                  <div className="mt-3">
-                    {groupByTier(strongResults.map((college) => ({ college }))).map(({ tier, items }) => (
-                      <ResultTierGroup
-                        key={tier}
-                        tier={tier}
-                        total={strongTierCounts.get(tier) ?? items.length}
-                        expanded={strongExpandedTiers.has(tier)}
-                        onToggle={() => toggleTier(setStrongExpandedTiers, tier)}
-                        exampleItems={items}
-                        fullItems={groupByTier(strongFullResults).find((g) => g.tier === tier)?.items ?? items}
-                        renderCard={({ college }) => (
-                          <ResultCard key={college.id} college={college}>
-                            <div className="mt-2 space-y-0.5">
-                              {selectedInterests.map((interest) => (
-                                <p key={interest.id} className="text-xs font-semibold text-gold-600">
-                                  {interest.label}: {getPathwayLabel(college, interest.id) ?? interest.label}
-                                </p>
-                              ))}
-                            </div>
-                            <p className="mt-2 flex-1 text-xs text-slate-500">
-                              Separate programs in each field &mdash; not a joint degree.
-                            </p>
-                          </ResultCard>
-                        )}
-                      />
-                    ))}
-                  </div>
-                ) : (
-                  <p className="mt-3 text-sm text-slate-500">
-                    No school in this dataset has programs in all of {selectedLabel} at once. Try dropping
-                    one interest, or{" "}
-                    <Link href="/directory" className="font-semibold text-navy-900 underline underline-offset-2">
-                      browse everything
-                    </Link>
-                    .
-                  </p>
-                )}
-                {strongTotal > 0 && strongTotal < LOW_MATCH_THRESHOLD && (
-                  <p className="mt-3 text-xs text-slate-500">
-                    Only {strongTotal} school{strongTotal === 1 ? "" : "s"} in this dataset{" "}
-                    {strongTotal === 1 ? "matches" : "match"} all of {selectedLabel} &mdash; that doesn&apos;t
-                    mean other schools don&apos;t offer these. Try dropping an interest, or{" "}
-                    <Link href="/directory" className="font-semibold text-navy-900 underline underline-offset-2">
-                      browse everything
-                    </Link>
-                    .
-                  </p>
-                )}
-              </div>
+              <HowChosen multi />
 
-              {combineResults.length === 0 && strongTotal === 0 && (
-                <div className="mx-auto mt-8 max-w-xl rounded-2xl bg-sand-100 p-6 text-center">
-                  <p className="text-sm text-slate-600">
-                    No school in this dataset has programs in all of {selectedLabel} at once &mdash; that
-                    doesn&apos;t mean none exist, just that we can&apos;t confidently point to one yet.
-                  </p>
-                  <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
-                    <Link
-                      href="/directory"
-                      className="inline-flex items-center gap-2 rounded-full bg-navy-900 px-4 py-2 text-sm font-semibold text-white hover:bg-navy-800"
-                    >
-                      Browse the Directory <ArrowRight className="h-4 w-4" />
-                    </Link>
+              {multiGroups.map((group) => {
+                const collapsed = group.matchCount === 1 && selectedIds.length === 3 && !showSingleField;
+                return (
+                  <div key={group.matchCount} className="mx-auto mt-8 max-w-4xl">
+                    <h3 className="text-sm font-bold tracking-wide text-slate-600">
+                      {multiGroupHeading(group.matchCount)}{" "}
+                      <span className="font-semibold text-slate-500">&middot; {group.total}</span>
+                    </h3>
+                    {collapsed ? (
+                      <p className="mt-2 text-sm text-slate-600">
+                        {group.sections.map((section) => `${section.label} only (${section.total})`).join(", ")}.{" "}
+                        <button
+                          type="button"
+                          onClick={() => setShowSingleField(true)}
+                          className="font-semibold text-gold-600 underline underline-offset-2 hover:text-gold-700"
+                        >
+                          Show them
+                        </button>
+                      </p>
+                    ) : (
+                      group.sections.map((section) => (
+                        <div key={section.key} className="mt-3">
+                          {group.matchCount < selectedIds.length && (
+                            <p className="mb-2 text-sm font-semibold text-navy-900">
+                              {section.label}
+                              {group.matchCount === 1 ? " only" : ""}{" "}
+                              <span className="font-normal text-slate-500">
+                                &middot; {section.total} school{section.total === 1 ? "" : "s"}
+                              </span>
+                            </p>
+                          )}
+                          {groupByTier(section.examples).map(({ tier, items }) => (
+                            <ResultTierGroup
+                              key={tier}
+                              tier={tier}
+                              total={section.tierCounts.get(tier) ?? items.length}
+                              expanded={multiExpandedTiers[section.key]?.has(tier) ?? false}
+                              onToggle={() => toggleMultiTier(section.key, tier)}
+                              exampleItems={items}
+                              fullItems={groupByTier(section.full).find((g) => g.tier === tier)?.items ?? items}
+                              renderCard={({ college, matchedIds, combined }) => (
+                                <ResultCard key={college.id} college={college} interestsQuery={interestsQuery}>
+                                  <div className="mt-2 flex-1 space-y-0.5">
+                                    {matchedIds.map((id) => {
+                                      const label = getInterestById(id)?.label ?? id;
+                                      const note = pathwayNote(college, id);
+                                      return (
+                                        <p key={id} className="text-xs font-semibold text-gold-600">
+                                          {label}
+                                          {note ? `: ${note}` : ""}
+                                        </p>
+                                      );
+                                    })}
+                                  </div>
+                                  {combined && (
+                                    <p className="mt-2 rounded-lg bg-navy-900 px-2 py-1 text-[11px] font-semibold leading-snug text-white">
+                                      Combined program: {combined.label}
+                                    </p>
+                                  )}
+                                </ResultCard>
+                              )}
+                            />
+                          ))}
+                        </div>
+                      ))
+                    )}
                   </div>
-                </div>
-              )}
+                );
+              })}
             </>
           )}
 
-          <p className="mx-auto mt-6 max-w-xl text-center text-xs text-slate-500">
-            These are examples of how each program is structured &mdash; not a ranking or a recommendation.
-            Every interest above can be explored the same way.
-          </p>
+          {isMulti && multiTotal === 0 && (
+            <div className="mx-auto mt-8 max-w-xl rounded-2xl bg-sand-100 p-6 text-center">
+              <p className="text-sm text-slate-600">
+                No school in this dataset has a program we can point to in any of {selectedLabel} &mdash; that
+                doesn&apos;t mean none exist, just that we can&apos;t confidently point to one yet.
+              </p>
+              <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+                <Link
+                  href="/directory"
+                  className="inline-flex items-center gap-2 rounded-full bg-navy-900 px-4 py-2 text-sm font-semibold text-white hover:bg-navy-800"
+                >
+                  Browse the Directory <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          )}
 
           <div className="mt-6 text-center">
             <Link
               href={`/directory?interests=${interestsQuery}`}
               className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-5 py-2.5 text-sm font-semibold text-navy-900 transition-colors hover:border-slate-300"
             >
-              See all matching programs <ArrowRight className="h-4 w-4" />
+              {isMulti ? `Explore schools offering ${allOfThem}` : "See all matching programs"}{" "}
+              <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </>
       )}
     </section>
+  );
+}
+
+/**
+ * The rules behind the results, in the order they are applied, so a family can
+ * see why a school is or isn't here and why it sits where it does. Closed by
+ * default; every number in it is read from the same constants the matching
+ * uses, so the explanation cannot drift from what the code does.
+ */
+function HowChosen({ multi }: { multi: boolean }) {
+  return (
+    <details className="mx-auto mt-3 max-w-4xl rounded-2xl border border-slate-200 bg-sand-50 px-5 py-3 text-sm text-slate-600">
+      <summary className="cursor-pointer font-semibold text-navy-900">How we chose and ordered these schools</summary>
+      <ol className="mt-3 list-decimal space-y-2 pl-5">
+        <li>
+          <span className="font-semibold text-navy-900">Which schools count.</span> A school counts for a field when it
+          awarded at least {MIN_PROGRAM_DEGREES} bachelor&apos;s degrees in it in {PROGRAMS_SOURCE.year} (
+          {PROGRAMS_SOURCE.source.split(",")[0]}, U.S. Department of Education), or when a program it runs names the
+          field. A newer or very small program can be missed.
+        </li>
+        {multi && (
+          <li>
+            <span className="font-semibold text-navy-900">More of your fields first.</span> Schools offering every field
+            you picked come first, then schools offering some of them, grouped by exactly which ones, so you can see
+            what each school is missing.
+          </li>
+        )}
+        <li>
+          <span className="font-semibold text-navy-900">Grouped by how hard they are to get into.</span> Four groups by
+          admit rate, from under 15% to over 60%, so you see reaches and realistic options side by side.
+        </li>
+        <li>
+          <span className="font-semibold text-navy-900">Largest programs first.</span> Within a group, the school
+          awarding the most degrees in {multi ? "your fields" : "the field"} leads
+          {multi
+            ? ", after any school with one program that combines them. For a school offering several of your fields, we use its smallest one, so a school leads only if it is sizeable in each."
+            : "."}{" "}
+          Size is not quality: a small program can be excellent.
+        </li>
+        <li>
+          <span className="font-semibold text-navy-900">A few examples, then everything.</span> You first see a handful
+          per group, from different states where possible. &ldquo;See all&rdquo; shows every school that counts.
+        </li>
+      </ol>
+      <p className="mt-3 text-xs text-slate-500">
+        This is not a ranking and not a recommendation. It does not yet know your grades, your state or your budget
+        &mdash; My Fit does that part.
+      </p>
+    </details>
   );
 }
 
@@ -747,7 +820,16 @@ function ResultTierGroup<T extends { college: College }>({
   );
 }
 
-function ResultCard({ college, children }: { college: College; children: React.ReactNode }) {
+function ResultCard({
+  college,
+  interestsQuery,
+  children,
+}: {
+  college: College;
+  /** Carried to the school page so it can lead with the majors in what the student picked. */
+  interestsQuery: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="group relative flex flex-col rounded-xl border border-sand-200 bg-sand-50 p-3 transition-colors hover:bg-sand-100">
       <div className="flex items-start justify-between gap-1.5">
@@ -756,7 +838,7 @@ function ResultCard({ college, children }: { college: College; children: React.R
       </div>
       <h3 className="mt-2 text-[13px] font-bold leading-snug text-navy-900">
         <Link
-          href={`/directory/${college.id}`}
+          href={`/directory/${college.id}${interestsQuery ? `?interests=${interestsQuery}` : ""}`}
           className="after:absolute after:inset-0 group-hover:text-navy-700"
         >
           {college.name}
