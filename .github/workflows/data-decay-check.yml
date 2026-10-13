@@ -7,8 +7,9 @@ name: Data decay check
 
 on:
   schedule:
-    # 06:17 UTC on Mondays. Off-the-hour deliberately: every scheduled job in
-    # the world fires at :00, and GitHub delays runs when its queue is busy.
+    # 06:17 UTC on Mondays, which is Sunday night Pacific. Off-the-hour
+    # deliberately: every scheduled job in the world fires at :00, and GitHub
+    # delays runs when its queue is busy.
     - cron: "17 6 * * 1"
   workflow_dispatch: {}
 
@@ -19,6 +20,12 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
+    # Naming the shell turns on pipefail. Without it a step ending in "| tee"
+    # reports tee's exit code, which is always zero: the checkers failed and
+    # the step passed, so the issue below was never opened.
+    defaults:
+      run:
+        shell: bash
     steps:
       - uses: actions/checkout@v4
 
@@ -37,8 +44,37 @@ jobs:
         continue-on-error: true
         run: node scripts/check-reviewed-deadlines.mjs 2>&1 | tee deadlines.txt
 
+      - name: Re-check every quoted essay prompt
+        id: applications
+        continue-on-error: true
+        run: node scripts/check-applications.mjs 2>&1 | tee applications.txt
+
+      - name: Re-check every quoted UC, CSU and application-system rule
+        id: systems
+        continue-on-error: true
+        run: node scripts/check-system-requirements.mjs 2>&1 | tee systems.txt
+
+      # Many schools refuse automated requests outright: about twenty answer
+      # 403 or 429 on any given run, and Princeton's site is not down. Only two
+      # results say the stored link itself is wrong: the page is gone, or the
+      # school now lives on a different domain. Report those and nothing else,
+      # or this issue would be opened every week and stop being read.
+      - name: Re-check every school's website link
+        id: websites
+        continue-on-error: true
+        run: |
+          node scripts/check-college-websites.mjs > websites-all.txt 2>&1 || true
+          head -n 1 websites-all.txt
+          grep -E "^- .(domain-changed|fail)\]" websites-all.txt > websites-flagged.txt || true
+          grep -E "domain-changed|HTTP (404|410)" websites-flagged.txt > websites.txt || true
+          cat websites.txt
+          test ! -s websites.txt
+
       - name: Open an issue if any page stopped matching
-        if: steps.policies.outcome == 'failure' || steps.deadlines.outcome == 'failure'
+        if: >-
+          steps.policies.outcome == 'failure' || steps.deadlines.outcome == 'failure' ||
+          steps.applications.outcome == 'failure' || steps.systems.outcome == 'failure' ||
+          steps.websites.outcome == 'failure'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -60,8 +96,26 @@ jobs:
             grep -E "NOT FOUND|could not load|matched their school page" deadlines.txt || echo "(no output)"
             echo '```'
             echo
-            echo "Fix by updating the quote in \`data/reviewed-*.json\`, re-running the"
-            echo "checker, then \`python scripts/apply-reviewed-*.py --apply\`."
+            echo "### Essay prompts"
+            echo '```'
+            grep -E "NOT FOUND|could not load|matched their source page" applications.txt || echo "(no output)"
+            echo '```'
+            echo
+            echo "### UC, CSU and application-system rules"
+            echo '```'
+            grep -E "NOT FOUND|could not load|matched their source page" systems.txt || echo "(no output)"
+            echo '```'
+            echo
+            echo "### School website links that are gone or have moved domain"
+            echo '```'
+            grep . websites.txt || echo "(none)"
+            echo '```'
+            echo
+            echo "Fix policies and deadlines by updating the quote in \`data/reviewed-*.json\`,"
+            echo "re-running the checker, then \`python scripts/apply-reviewed-*.py --apply\`."
+            echo "Essay prompts, system rules and website links are edited directly in"
+            echo "\`data/applications.json\`, \`data/system-requirements.json\` and"
+            echo "\`data/colleges.json\`."
           } > body.md
           gh issue create \
             --title "Data decay: a college changed a page we quote ($(date -u +%Y-%m-%d))" \
