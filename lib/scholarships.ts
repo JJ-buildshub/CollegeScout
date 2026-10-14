@@ -52,6 +52,12 @@ export interface Scholarship {
   state?: string;
   /** Counties or area served, when the sponsor states it. */
   region?: string;
+  /** Counties the program serves, as named on its own pages. */
+  counties?: string[];
+  /** Covers part of its state, but the pages do not name the counties. */
+  areaCheck?: boolean;
+  /** Open across its whole state. */
+  statewide?: boolean;
   /** Grades in which a student applies or enters. */
   grades: ScholarshipGrade[];
   award: string;

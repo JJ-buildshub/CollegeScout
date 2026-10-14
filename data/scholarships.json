@@ -1,5 +1,5 @@
 {
-  "note": "Scholarships and competitions a student can apply for while in high school, quoted from the sponsoring organization's own pages. Each evidence line is the page's exact wording; scripts/check-scholarships.mjs verifies them against the live pages. Fields other than evidence are our summary and say nothing the pages do not. 'Not confirmed' means we could not source it. prize, task, tagline, closes and deadlineShort are our own short wording of the sourced fields below them; closes is this cycle's deadline as an ISO date when there is a single one. changed lists well-known programs whose rules no longer match what students are commonly told; heard is our wording of the common belief and is not sourced, now is our summary of the quoted lines. only and area are also our wording: the gate most students will not pass, and where a regional program applies.",
+  "note": "Scholarships and competitions a student can apply for while in high school, quoted from the sponsoring organization's own pages. Each evidence line is the page's exact wording; scripts/check-scholarships.mjs verifies them against the live pages. Fields other than evidence are our summary and say nothing the pages do not. 'Not confirmed' means we could not source it. prize, task, tagline, closes and deadlineShort are our own short wording of the sourced fields below them; closes is this cycle's deadline as an ISO date when there is a single one. changed lists well-known programs whose rules no longer match what students are commonly told; heard is our wording of the common belief and is not sourced, now is our summary of the quoted lines. only and area are also our wording: the gate most students will not pass, and where a regional program applies. counties lists the counties a regional program serves, as named on its own pages (backed by evidence); areaCheck marks a program that covers part of the state without naming counties; statewide marks one open across its state.",
   "checked": "2026-10-13",
   "programs": {
     "questbridge-national-college-match": {
@@ -4484,7 +4484,8 @@
             "All Junior and Senior CSF members may apply."
           ]
         }
-      ]
+      ],
+      "statewide": true
     },
     "california-state-pta-graduating-senior-scholarships": {
       "prize": "PTA senior scholarship",
@@ -4558,7 +4559,8 @@
             "Eligible graduating high school seniors may apply for the Volunteer Service Scholarship and the $500 Dr. Ralph E. White Scholarship for medical-field education."
           ]
         }
-      ]
+      ],
+      "statewide": true
     },
     "cta-scholarship-for-dependent-children": {
       "prize": "Up to $5,000",
@@ -4621,7 +4623,8 @@
             "A maximum of one scholarship of up to $5,000 is awarded."
           ]
         }
-      ]
+      ],
+      "statewide": true
     },
     "california-table-grape-scholarships": {
       "prize": "Up to $25,000",
@@ -4679,7 +4682,8 @@
             "Download the application for more information on eligibility criteria and required application materials."
           ]
         }
-      ]
+      ],
+      "areaCheck": true
     },
     "svcf-managed-scholarships": {
       "prize": "One application, many scholarships",
@@ -4766,7 +4770,8 @@
             "No, it is against SVCF's policies to pay scholarships directly to students."
           ]
         }
-      ]
+      ],
+      "areaCheck": true
     },
     "san-diego-foundation-common-scholarship-application": {
       "prize": "$1,000 to $10,000",
@@ -4852,6 +4857,9 @@
             "Nearly 40% of our scholarships are renewable for either two or four years."
           ]
         }
+      ],
+      "counties": [
+        "San Diego"
       ]
     },
     "sacramento-region-community-foundation-scholarships": {
@@ -4917,7 +4925,21 @@
             "Graduating high school senior in Yolo County",
             "We do not recommend using an old reference letter."
           ]
+        },
+        {
+          "label": "About the Sacramento Region Community Foundation (counties served)",
+          "url": "https://www.sacregcf.org/about/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "El Dorado, Placer, Sacramento, and Yolo counties"
+          ]
         }
+      ],
+      "counties": [
+        "El Dorado",
+        "Placer",
+        "Sacramento",
+        "Yolo"
       ]
     },
     "edison-scholars": {
@@ -4981,7 +5003,8 @@
             "to receive updates when the application period for the 2027 Edison Scholars program opens this fall."
           ]
         }
-      ]
+      ],
+      "areaCheck": true
     },
     "pge-better-together-stem-scholarships": {
       "prize": "$1,000 to $10,000",
@@ -5047,7 +5070,8 @@
             "Deadline: Feb. 28, 2026"
           ]
         }
-      ]
+      ],
+      "areaCheck": true
     },
     "cif-scholar-athlete-of-the-year": {
       "prize": "Up to $10,000",
@@ -5095,7 +5119,70 @@
             "Additionally, 20 Section winners (one male and one female student-athlete in each Section) will be awarded a $1,500 scholarship."
           ]
         }
-      ]
+      ],
+      "statewide": true
+    },
+    "calkids": {
+      "prize": "$500 to $1,500",
+      "task": "Claim it online",
+      "only": "Low-income or English learner public school students",
+      "area": "California",
+      "tagline": "California already set aside money for college for many public school students. If you qualify, the account exists; you just claim it with your student ID number. $500, plus $500 more for foster youth and $500 more for homeless youth.",
+      "closes": null,
+      "deadlineShort": "No deadline posted",
+      "name": "CalKIDS",
+      "runBy": "State of California (ScholarShare Investment Board)",
+      "homepage": "https://calkids.org/",
+      "kind": "program",
+      "local": true,
+      "findLocal": "",
+      "state": "CA",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "$500 for low-income or English learner public school students, $500 more for foster youth and $500 more for homeless youth, held in a CalKIDS Scholarship Account for college.",
+      "eligibility": [
+        "Public school students enrolled in grades 1-12 during the 2021-2022 academic year, or in 1st grade in 2022-2023 or any school year after",
+        "Identified as English Learner or low-income by the Local Control Funding Formula, and enrolled on Fall Census Day"
+      ],
+      "whatYouSubmit": [
+        "Nothing to apply for: you claim an account that already exists",
+        "To claim: your Statewide Student Identifier (SSID) or the CalKIDS Code from the letter you received, your date of birth, and the county where you were enrolled"
+      ],
+      "howToApply": [
+        "Find your SSID (CalKIDS says it can be found through the CaliforniaColleges.edu website) or the CalKIDS Code from your letter",
+        "Claim your CalKIDS Scholarship Account on calkids.org",
+        "Later, use the money for college costs at eligible schools"
+      ],
+      "prepare": [
+        "Ask your school or check CaliforniaColleges.edu for your SSID"
+      ],
+      "opens": "Not confirmed",
+      "deadline": "Not confirmed (calkids.org states no deadline to claim)",
+      "cycle": "Not confirmed",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "This is money already set aside, not a contest, so there is no application round. calkids.org lists tuition and fees, books and supplies, room and board, and computer equipment as uses. The same program also funds accounts for California children born on or after July 1, 2022.",
+      "sources": [
+        {
+          "label": "CalKIDS: about students, claiming and using the account",
+          "url": "https://calkids.org/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "$500 for low-income or English learner public school students",
+            "$500 more for foster youth",
+            "$500 more for homeless youth",
+            "Public school students enrolled in grades 1-12 during the 2021-2022 academic year",
+            "Public school students enrolled in the 1st grade during the 2022-2023 academic year and every school year thereafter",
+            "must also be identified as English Learner or low-income by the Local Control Funding Formula",
+            "Statewide Student Identifier (SSID) or CalKIDS Code on the letter you received",
+            "This video explains how to leverage the CaliforniaColleges.edu website to find your SSID"
+          ]
+        }
+      ],
+      "statewide": true
     }
   },
   "changed": {
