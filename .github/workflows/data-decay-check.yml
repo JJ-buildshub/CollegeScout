@@ -54,6 +54,16 @@ jobs:
         continue-on-error: true
         run: node scripts/check-system-requirements.mjs 2>&1 | tee systems.txt
 
+      - name: Re-check every quoted scholarship rule
+        id: scholarships
+        continue-on-error: true
+        run: node scripts/check-scholarships.mjs 2>&1 | tee scholarships.txt
+
+      - name: Re-check every quoted state aid rule
+        id: stateaid
+        continue-on-error: true
+        run: node scripts/check-state-aid.mjs 2>&1 | tee stateaid.txt
+
       # Many schools refuse automated requests outright: about twenty answer
       # 403 or 429 on any given run, and Princeton's site is not down. Only two
       # results say the stored link itself is wrong: the page is gone, or the
@@ -74,6 +84,7 @@ jobs:
         if: >-
           steps.policies.outcome == 'failure' || steps.deadlines.outcome == 'failure' ||
           steps.applications.outcome == 'failure' || steps.systems.outcome == 'failure' ||
+          steps.scholarships.outcome == 'failure' || steps.stateaid.outcome == 'failure' ||
           steps.websites.outcome == 'failure'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -106,6 +117,16 @@ jobs:
             grep -E "NOT FOUND|could not load|matched their source page" systems.txt || echo "(no output)"
             echo '```'
             echo
+            echo "### Scholarships"
+            echo '```'
+            grep -E "NOT FOUND|could not load|matched their school page" scholarships.txt || echo "(no output)"
+            echo '```'
+            echo
+            echo "### State aid"
+            echo '```'
+            grep -E "NOT FOUND|could not load|matched their school page" stateaid.txt || echo "(no output)"
+            echo '```'
+            echo
             echo "### School website links that are gone or have moved domain"
             echo '```'
             grep . websites.txt || echo "(none)"
@@ -114,8 +135,8 @@ jobs:
             echo "Fix policies and deadlines by updating the quote in \`data/reviewed-*.json\`,"
             echo "re-running the checker, then \`python scripts/apply-reviewed-*.py --apply\`."
             echo "Essay prompts, system rules and website links are edited directly in"
-            echo "\`data/applications.json\`, \`data/system-requirements.json\` and"
-            echo "\`data/colleges.json\`."
+            echo "\`data/applications.json\`, \`data/system-requirements.json\`,"
+            echo "\`data/scholarships.json\`, \`data/state-aid.json\` and \`data/colleges.json\`."
           } > body.md
           gh issue create \
             --title "Data decay: a college changed a page we quote ($(date -u +%Y-%m-%d))" \

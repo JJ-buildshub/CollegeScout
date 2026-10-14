@@ -1,0 +1,241 @@
+{
+  "note": "Aid a state offers its own residents, quoted from the page of the agency that runs each program. Each evidence line is the page's exact wording; scripts/check-state-aid.mjs verifies them against the live pages. Not yet shown anywhere on the site. Fields other than evidence are our summary of the page and say nothing the evidence or the page does not.",
+  "checked": "2026-10-13",
+  "states": {
+    "CA": {
+      "name": "California",
+      "agency": "California Student Aid Commission",
+      "agencyUrl": "https://www.csac.ca.gov/programs",
+      "pageNote": "csac.ca.gov answers a few automated requests and then stops, so its entries are marked manual: they were read in a browser on the checked date and are skipped by the checker.",
+      "programs": {
+        "cal-grant": {
+          "name": "Cal Grant",
+          "runBy": "California Student Aid Commission",
+          "kind": "grant",
+          "url": "https://www.csac.ca.gov/cal-grants",
+          "whoApplies": [
+            "high school senior"
+          ],
+          "eligibility": "California resident with financial need, within income and asset ceilings, with a verified GPA or test score on file, attending a Cal Grant eligible institution at least half-time, working toward a first undergraduate degree or certificate.",
+          "award": "Depends on the award type (A, B or C) and the type of school. Up to 4 years of full-time attendance.",
+          "howToApply": "No separate application. File the FAFSA or California Dream Act Application and confirm the school has sent a GPA.",
+          "deadline": "March 2 priority deadline; September 2 if attending a California Community College.",
+          "evidence": [
+            "The Cal Grant Program is California's main financial aid program that does not need to be paid back.",
+            "The FAFSA or CADAA must be submitted by the March 2 priority deadline to maximize financial aid opportunities or by September 2 if attending or planning to attend a California Community College.",
+            "Be a California resident attending a Cal Grant eligible institution",
+            "Have a verified high school GPA, college GPA, or test score (SAT, ACT, GED, TASC, HiSet) on file with CSAC"
+          ],
+          "manual": true
+        },
+        "cal-grant-a": {
+          "name": "Cal Grant A",
+          "runBy": "California Student Aid Commission",
+          "kind": "grant",
+          "url": "https://www.csac.ca.gov/cal-grant/award-types",
+          "whoApplies": [
+            "high school senior"
+          ],
+          "eligibility": "Low to middle income students within income and asset ceilings for their family size. Minimum 3.00 high school GPA, or 2.40 community college or college GPA.",
+          "award": "Tuition and fees at four-year colleges. 2026-27 maximum: $15,588 at UC (2026-27 cohort), $6,838 at CSU, $4,000 to $9,358 at private institutions, $3,024 for a community college bachelor's degree program. Held in reserve for up to 2 years for students who start at a community college.",
+          "howToApply": "Students do not apply for a specific Cal Grant type; see Cal Grant.",
+          "deadline": "See Cal Grant.",
+          "awardYear": "2026-27",
+          "evidence": [
+            "Minimum GPA requirement: 3.00 high school GPA or 2.40 community college or college GPA.",
+            "MAXIMUM ANNUAL CAL GRANT A AWARD FOR 2026-2027 ACADEMIC YEAR",
+            "$15,588",
+            "$6,838",
+            "$4,000 - $9,358"
+          ],
+          "manual": true
+        },
+        "cal-grant-b": {
+          "name": "Cal Grant B",
+          "runBy": "California Student Aid Commission",
+          "kind": "grant",
+          "url": "https://www.csac.ca.gov/cal-grant/award-types",
+          "whoApplies": [
+            "high school senior"
+          ],
+          "eligibility": "Low income students within income and asset ceilings for their family size. Minimum 2.00 high school GPA.",
+          "award": "An Access Award of up to $1,648 in the first academic year; tuition and fees at four-year colleges from the second year, on top of the Access Award.",
+          "howToApply": "Students do not apply for a specific Cal Grant type; see Cal Grant.",
+          "deadline": "See Cal Grant.",
+          "awardYear": "2026-27",
+          "evidence": [
+            "Minimum GPA requirement: 2.00 high school GPA, 2.0 community college or college GPA (for Community College Entitlement and Competitive awards), or 2.40 community college GPA (for Transfer Entitlement award).",
+            "MAXIMUM ANNUAL CAL GRANT B AWARD FOR 2026-2027 ACADEMIC YEAR"
+          ],
+          "manual": true
+        },
+        "middle-class-scholarship": {
+          "name": "Middle Class Scholarship",
+          "runBy": "California Student Aid Commission",
+          "kind": "scholarship",
+          "url": "https://www.csac.ca.gov/middle-class-scholarship",
+          "whoApplies": [
+            "high school senior"
+          ],
+          "eligibility": "California resident attending a UC, CSU or California Community College bachelor's degree program. Family income and assets up to $250,000 for students attending between July 2026 and June 2027.",
+          "award": "Varies with the student's cost of attendance and other aid already awarded, and with the funding in the state budget. Up to 8 semesters or 12 quarters.",
+          "howToApply": "No separate application. File the FAFSA or California Dream Act Application.",
+          "deadline": "For July 2026 to June 2027: March 2, 2026 for Dream Act applicants, March 3, 2026 for FAFSA applicants.",
+          "awardYear": "2026-27",
+          "evidence": [
+            "Be a California resident attending a University of California (UC), California State University (CSU), or a CA Community College (CCC) Bachelor's degree program",
+            "Students attending college between July 2026 and June 2027: up to $250,000",
+            "FAFSA Applicants: March 3, 2026"
+          ],
+          "manual": true
+        },
+        "california-dream-act-application": {
+          "name": "California Dream Act Application",
+          "runBy": "California Student Aid Commission",
+          "kind": "application",
+          "url": "https://www.csac.ca.gov/undocumented",
+          "whoApplies": [
+            "high school senior"
+          ],
+          "eligibility": "Undocumented students in California who do not qualify for the FAFSA, attended 3 or more years of school in California and graduated from a California high school or equivalent (AB 540), and will enroll at a qualifying California college. Also students from mixed-status families.",
+          "award": "Not an award. It is the application that opens state and institutional aid, including Cal Grant and the Middle Class Scholarship, to students who cannot file the FAFSA.",
+          "howToApply": "File the California Dream Act Application at dream.csac.ca.gov.",
+          "deadline": "Same as the state aid it is used for; see Cal Grant.",
+          "evidence": [
+            "The CADAA is for undocumented students in California who don't qualify for FAFSA and plan to attend a college in California.",
+            "You attended 3+ years of school in California + graduated from a California high school (or equivalent) (AB 540)",
+            "Your information is never shared with the federal government or used for immigration enforcement."
+          ],
+          "manual": true
+        },
+        "chafee-grant": {
+          "name": "Chafee Grant for Foster Youth",
+          "runBy": "California Student Aid Commission",
+          "kind": "grant",
+          "url": "https://www.csac.ca.gov/chafee",
+          "whoApplies": [
+            "high school senior"
+          ],
+          "eligibility": "Current or former foster youth who were a ward of the court, living in foster care for at least one day between the ages of 16 and 18, and who have not turned 26 by July 1 of the award year. Enrolled at least half-time.",
+          "award": "Up to $5,000 a year; up to $4,500 for 2026-27. Up to 5 years. Funding is limited and awards are not guaranteed.",
+          "howToApply": "A one-time Chafee Grant application, plus the FAFSA or California Dream Act Application each year.",
+          "deadline": "Application opens October 1 of the preceding academic year and is accepted until July 31 of the academic year.",
+          "awardYear": "2026-27",
+          "evidence": [
+            "Be a current or former foster youth who was a ward of the court, living in foster care for at least one day between the ages of 16 and 18.",
+            "For the 2026-27 academic year: Up to $4,500 ($2,250 per semester or $1,500 per quarter).",
+            "Payment on an eligible California Chafee Grant Award is not guaranteed as funding is limited."
+          ],
+          "manual": true
+        },
+        "foster-youth-access-award": {
+          "name": "Cal Grant Foster Youth Access Award",
+          "runBy": "California Student Aid Commission",
+          "kind": "grant",
+          "url": "https://www.csac.ca.gov/cal-grant/access",
+          "whoApplies": [
+            "high school senior"
+          ],
+          "eligibility": "Cal Grant recipients who are current or former foster youth, in an out-of-home foster care placement at any time since age 13, and under 26 as of July 1 of the award year.",
+          "award": "Up to $6,000 on top of a Cal Grant A or B; up to $4,000 on top of a Cal Grant C.",
+          "howToApply": "No separate application. Answer the foster care question on the FAFSA or California Dream Act Application.",
+          "deadline": "March 2 at a UC, CSU, private school or community college bachelor's program; September 2 at a community college.",
+          "evidence": [
+            "Be a current or former foster youth who was a dependent or ward of the court, living in an out-of-home foster care placement, at any time since age 13.",
+            "Students awarded Cal Grant A can receive the Foster Youth Access Award for up to $6,000."
+          ],
+          "manual": true
+        },
+        "law-enforcement-personnel-dependents-grant": {
+          "name": "Law Enforcement Personnel Dependents Grant",
+          "runBy": "California Student Aid Commission",
+          "kind": "grant",
+          "url": "https://www.csac.ca.gov/faforfirst",
+          "whoApplies": [
+            "high school senior"
+          ],
+          "eligibility": "Dependents and spouses of California peace officers, firefighters, law enforcement and Department of Corrections employees who lost their lives or were totally disabled in the line of duty. Must show financial need and be enrolled at least half-time.",
+          "award": "Up to the Cal Grant award amount or the student's remaining unmet need. Up to four years.",
+          "howToApply": "A separate application each award year, in addition to the FAFSA or California Dream Act Application.",
+          "deadline": "2026-27 application period: July 1, 2026 to June 30, 2027.",
+          "awardYear": "2026-27",
+          "evidence": [
+            "Award Amount: Up to the Cal Grant award amount or the student's remaining unmet need verified by their institution's Financial Aid Office",
+            "2026-27 application period: July 1, 2026 – June 30, 2027"
+          ],
+          "manual": true
+        },
+        "california-college-promise-grant": {
+          "name": "California College Promise Grant",
+          "runBy": "California Community Colleges",
+          "kind": "fee waiver",
+          "url": "https://icangotocollege.com/financial-aid/california-college-promise-grant",
+          "whoApplies": [
+            "high school senior"
+          ],
+          "eligibility": "California residents with financial need attending a California community college. To keep it: a cumulative GPA of 2.0 or higher and completion of more than 50 percent of coursework attempted.",
+          "award": "Waives the community college enrollment fee of $46 per unit.",
+          "howToApply": "FAFSA or California Dream Act Application.",
+          "deadline": "Not stated on the page.",
+          "evidence": [
+            "enrollment fees of $46 per unit",
+            "Sustain a cumulative GPA of 2.0 or higher"
+          ]
+        },
+        "calkids": {
+          "name": "CalKIDS",
+          "runBy": "ScholarShare Investment Board, State of California",
+          "kind": "savings account",
+          "url": "https://calkids.org/",
+          "whoApplies": [
+            "any grade"
+          ],
+          "eligibility": "Public school students in grades 1-12 during 2021-22, or in 1st grade in 2022-23 and each year after, who are identified as English Learner or low-income by the Local Control Funding Formula. Also every child born in California on or after July 1, 2022.",
+          "award": "$500 for low-income or English learner public school students, $500 more for foster youth, $500 more for homeless youth. $25 or $100 for newborns.",
+          "howToApply": "No application. Claim the account online with the student's Statewide Student Identifier, date of birth and county of enrollment.",
+          "deadline": "Not stated on the page.",
+          "evidence": [
+            "$500 for low-income or English learner public school students",
+            "$500 more for foster youth",
+            "$500 more for homeless youth",
+            "Public school students enrolled in grades 1-12 during the 2021-2022 academic year"
+          ]
+        },
+        "uc-blue-and-gold": {
+          "name": "Blue and Gold Opportunity Plan",
+          "runBy": "University of California",
+          "kind": "tuition commitment",
+          "url": "https://admission.universityofcalifornia.edu/tuition-financial-aid/types-of-aid/blue-and-gold-opportunity-plan.html",
+          "whoApplies": [
+            "high school senior"
+          ],
+          "eligibility": "California students at a UC campus. The page states an income of up to $100,000 for most families whose tuition is covered.",
+          "award": "Enough grant and scholarship funds to cover UC tuition.",
+          "howToApply": "No separate application. File the FAFSA or California Dream Act Application and the Cal Grant GPA Verification Form.",
+          "deadline": "March 2.",
+          "evidence": [
+            "Most California families that earn up to $100,000 receive enough grant and scholarship funds to cover their UC tuition.",
+            "Just make sure to file a FAFSA or CA Dream Act application by March 2."
+          ]
+        },
+        "western-undergraduate-exchange": {
+          "name": "Western Undergraduate Exchange",
+          "runBy": "Western Interstate Commission for Higher Education",
+          "kind": "reduced tuition",
+          "url": "https://www.wiche.edu/tuition-savings/wue/",
+          "whoApplies": [
+            "high school senior"
+          ],
+          "eligibility": "Residents of the WICHE region, which includes California. Each participating college sets its own criteria.",
+          "award": "Tuition of no more than 150% of the college's resident rate at more than 170 public colleges in other western states. Not a scholarship.",
+          "howToApply": "Apply directly to the college.",
+          "deadline": "Set by each college.",
+          "evidence": [
+            "pay no more than 150% of the institution's resident tuition rate.",
+            "Participating colleges and universities set their own WUE eligibility criteria and manage their WUE rates independently"
+          ]
+        }
+      }
+    }
+  }
+}

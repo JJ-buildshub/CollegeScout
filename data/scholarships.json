@@ -1,0 +1,1869 @@
+{
+  "note": "Scholarships and competitions a student can apply for while in high school, quoted from the sponsoring organization's own pages. Each evidence line is the page's exact wording; scripts/check-scholarships.mjs verifies them against the live pages. Fields other than evidence are our summary and say nothing the pages do not. 'Not confirmed' means we could not source it. prize, task, tagline, closes and deadlineShort are our own short wording of the sourced fields below them; closes is this cycle's deadline as an ISO date when there is a single one.",
+  "checked": "2026-10-13",
+  "programs": {
+    "questbridge-national-college-match": {
+      "prize": "Full ride",
+      "task": "Application",
+      "closes": "2026-10-01",
+      "deadlineShort": "Oct 1",
+      "tagline": "One free application, and a shot at a full four-year scholarship at one of 55 partner colleges. Aimed at students earning mostly A's whose families earn under about $65,000.",
+      "name": "QuestBridge National College Match",
+      "runBy": "QuestBridge",
+      "homepage": "https://www.questbridge.org/apply-to-college/programs/national-college-match",
+      "kind": "scholarship",
+      "grades": [
+        12
+      ],
+      "award": "Full four-year Match Scholarship to one of 55 partner colleges, provided by the college and described as worth over $360,000; covers tuition and fees, housing and food, books and supplies, and travel, with no parental contribution and no student loans.",
+      "eligibility": [
+        "High school senior currently attending high school in the U.S., or a U.S. citizen or permanent resident living abroad; international students living outside the U.S. are not eligible",
+        "Planning to attend college in the fall after senior year (entering as a full-time first-year student)",
+        "Typical Finalists earn primarily A's in the most challenging courses offered",
+        "Typical Finalists come from a household earning less than $65,000 a year (for a household of four) with minimal assets",
+        "QuestBridge says there are no absolute cut-offs for GPA, test scores or income; applications are reviewed holistically",
+        "Test scores are not required to apply (some partner colleges may require them)"
+      ],
+      "whatYouSubmit": [
+        "Information on your academics, activities, household and financial background",
+        "Writing section (short answers and essays; the prompts are inside the application and not published on the public pages)",
+        "Two teacher recommendations from teachers of core academic subjects (English, History/Social Studies, Math, Science, Foreign Language), preferably from junior year",
+        "School Report (the counselor recommendation) from your current high school counselor",
+        "Most up-to-date high school transcript (unofficial copies accepted)",
+        "School Profile (optional, but recommended)",
+        "Standardized test score reports to date, if taken (SAT, ACT, IB, AP, English proficiency; unofficial reports accepted)",
+        "Later, by October 15: Match Rankings Form and a Match Agreement Form signed by the applicant, a parent/guardian and the school counselor",
+        "Finalists only: official documentation verifying finances and each ranked college's additional Match Requirements, sent to the colleges by November 1"
+      ],
+      "howToApply": [
+        "Start the free National College Match application in late summer before senior year",
+        "Gather materials: recommenders, counselor, financial documents, transcript, test scores (if taken), School Profile",
+        "Submit the application by the October 1 deadline",
+        "October 2 to October 15: rank up to 15 partner colleges on the Match Rankings Form and upload the signed Match Agreement Form (ranking is a binding commitment, except at MIT)",
+        "October 21: Finalist decisions released",
+        "November 1: Finalists submit Match Requirements to each college they ranked",
+        "December 1: Match Day; matched Finalists are admitted early with the full four-year scholarship",
+        "Finalists who do not match can continue through QuestBridge Regular Decision (form due December 10)"
+      ],
+      "prepare": [
+        "Have the previous year's tax returns, W-2s or other financial documents on hand; QuestBridge says access to them is highly recommended to complete the application accurately",
+        "Ask two core-subject teachers (preferably from junior year) to be recommenders, and add your counselor for the School Report",
+        "Write and save essays and short answers in a document outside the application, as QuestBridge advises",
+        "Know the Early Application Policy before ranking: applicants who rank colleges cannot apply elsewhere through Early Decision or Single-Choice/Restrictive Early Action",
+        "High school juniors cannot apply; QuestBridge points 11th graders to its College Prep Scholars Program (application available in February of junior year)"
+      ],
+      "opens": "Late summer before senior year (exact date not given on the public pages)",
+      "deadline": "October 1, 11:59 p.m. Pacific Time (the 2026 deadline was Thursday, October 1, 2026)",
+      "cycle": "2026 National College Match (high school class of 2027)",
+      "fee": "Free. QuestBridge says applying is free of charge; it notes Finalists may face outside costs such as the College Board's CSS Profile ($25 for one college plus $16 for each additional college, with fee waivers available).",
+      "notes": "The 2026 deadline (October 1, 2026) has already passed as of the check date; the pages do not yet give 2027 dates. Essay prompts and word limits are not on the public pages (they are inside the application). Income figure of $65,000 is described as typical, not a hard cut-off. Three of the sources are on questbridge.zendesk.com, which is AskQB, QuestBridge's own help portal linked from questbridge.org.",
+      "sources": [
+        {
+          "label": "National College Match overview",
+          "url": "https://www.questbridge.org/apply-to-college/programs/national-college-match",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Come from a household earning less than $65,000 annually (for a household of four) with minimal assets.",
+            "Earn primarily A's in the most challenging courses offered and demonstrate strong writing ability and intellectual curiosity.",
+            "QuestBridge National College Match Scholarships are worth over $360,000 and cover tuition, housing, food, and other expenses.",
+            "Match Scholarships have no parental contribution and no student loans, and they are provided directly by our college partners.",
+            "The deadline for the 2026 QuestBridge National College Match was Thursday, October 1, at 11:59 p.m. Pacific Time"
+          ]
+        },
+        {
+          "label": "Apply to the National College Match",
+          "url": "https://www.questbridge.org/apply-to-college/programs/national-college-match/apply",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "It is open to any high school senior currently attending high school in the U.S. and U.S. Citizens and Permanent Residents living abroad.",
+            "The National College Match is for students planning to attend college in the fall after their senior year.",
+            "International students living outside the U.S. are not eligible.",
+            "there are no absolute criteria or cut-offs for GPA, standardized test scores, income, or other factors",
+            "Note: Test scores are not required to apply.",
+            "Information on your academics, activities, household, and financial background",
+            "Two teacher recommendations from core academic subjects",
+            "Current high school transcript and additional transcripts (unofficial transcripts are accepted)",
+            "School Report from your current high school counselor",
+            "School Profile (optional, but recommended)",
+            "We accept SAT, ACT, IB, AP, and English language proficiency exam test scores (unofficial test score reports are accepted).",
+            "W-2(s), or other financial documents is highly recommended to complete the application accurately.",
+            "Begin your free National College Match application in late summer before your senior year.",
+            "Rank up to 15 college partners to be considered for early admission and a full four-year scholarship.",
+            "Students who are selected as Finalists will need to submit official documentation verifying their financial situation directly to the colleges to which they apply.",
+            "National College Match applicants who rank colleges cannot apply to other colleges through Early Decision or Single-Choice Early Action (also known as Restrictive Early Action)."
+          ]
+        },
+        {
+          "label": "Dates & Deadlines",
+          "url": "https://www.questbridge.org/apply-to-college/programs/national-college-match/apply/dates-and-deadlines",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "All deadlines occur at 11:59 p.m. Pacific Time.",
+            "National College Match application deadline.",
+            "Rank up to 15 schools through the Match Rankings Form, which is available on your Manage page.",
+            "It must be signed by the applicant, their parent/guardian, and school counselor, and uploaded to the Manage page.",
+            "Finalist decisions released on the Manage page.",
+            "Finalists should submit all necessary materials to each college partner they ranked.",
+            "Match results released through the Manage page.",
+            "QuestBridge Regular Decision Form deadline."
+          ]
+        },
+        {
+          "label": "The Match Scholarship",
+          "url": "https://www.questbridge.org/apply-to-college/programs/national-college-match/the-match-scholarship",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Worth over $360,000, Match Scholarships cover tuition, housing, food, and other expenses.",
+            "The Match Scholarship covers the full cost of attendance, including:"
+          ]
+        },
+        {
+          "label": "AskQB: Is there a fee to apply to QuestBridge?",
+          "url": "https://questbridge.zendesk.com/hc/en-us/articles/218776947-Is-there-a-fee-to-apply-to-QuestBridge-Are-there-any-other-costs-associated-with-the-National-College-Match",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Applying to the National College Match, like all of QuestBridge's programming and opportunities, is free of charge.",
+            "The application costs $25 to complete and send to one college, plus $16 to send to each additional college you select."
+          ]
+        },
+        {
+          "label": "AskQB: Who should complete my recommendations",
+          "url": "https://questbridge.zendesk.com/hc/en-us/articles/218777257-Who-should-complete-my-recommendations-and-how-many-do-I-need-to-submit",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "We ask for two teacher recommendations and one School Report (also known as the counselor recommendation) for the National College Match application.",
+            "preferably during your junior year"
+          ]
+        },
+        {
+          "label": "AskQB: Can I apply if I am not a high school senior?",
+          "url": "https://questbridge.zendesk.com/hc/en-us/articles/218776927-Can-I-apply-to-the-National-College-Match-if-I-am-not-a-high-school-senior",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "which uses a different application available in February of a student's junior year",
+            "The National College Match is only for students who will be entering college as full-time, first-year students"
+          ]
+        },
+        {
+          "label": "AskQB: Completing the Application: Quick Start Guide",
+          "url": "https://questbridge.zendesk.com/hc/en-us/articles/360025077033-Completing-the-Application-Quick-Start-Guide",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Review the prompt(s) in the Writing section and begin brainstorming how to highlight your unique story.",
+            "in a document outside of the application (such as in Microsoft Word), to avoid losing your work"
+          ]
+        }
+      ]
+    },
+    "coca-cola-scholars-program": {
+      "prize": "$20,000",
+      "task": "Application",
+      "closes": "2026-09-30",
+      "deadlineShort": "Sep 30",
+      "tagline": "Round one has no essays, no transcript and no recommendations. You enter your grades and what you do in school and your community. 150 students win.",
+      "name": "Coca-Cola Scholars Program",
+      "runBy": "Coca-Cola Scholars Foundation",
+      "homepage": "https://www.coca-colascholarsfoundation.org/apply/",
+      "kind": "scholarship",
+      "grades": [
+        12
+      ],
+      "award": "$20,000 scholarship; 150 Coca-Cola Scholars are selected each year. Recipients have up to 10 years to use the award.",
+      "eligibility": [
+        "Currently enrolled high school or home-schooled student attending school in one of the 50 states, the District of Columbia, Puerto Rico or select DoD schools, graduating during the 2026-2027 school year",
+        "U.S. citizen, U.S. national, U.S. permanent resident, refugee, asylee, Cuban-Haitian entrant or humanitarian parolee (the status must be held by the application deadline; pending applications do not count)",
+        "Planning to pursue a degree at an accredited U.S. post-secondary institution",
+        "Able to verify a minimum overall B/3.0 GPA in high school coursework",
+        "Not a child or grandchild of current employees, officers or owners of Coca-Cola bottling companies, The Coca-Cola Company, its divisions or subsidiaries",
+        "Not already a high school graduate; students at American or expat schools abroad are not eligible",
+        "Not need-based: applicants are evaluated on leadership, academics and service"
+      ],
+      "whatYouSubmit": [
+        "Phase 1 online application: no essays, no transcript and no recommendations; the application includes sections for academic information (courses and grades) and school and community activities",
+        "Phase 2 (Semifinalists only): essays, a transcript and a recommendation (topics, lengths and who writes the recommendation are not stated on the public pages)",
+        "Phase 3 (Regional Finalists only): an interview with Coke Scholar alumni and staff"
+      ],
+      "howToApply": [
+        "Phase 1: complete the online application on the Foundation's portal between August 3 and September 30 (online only; no mailed or emailed applications)",
+        "By the end of October all applicants are notified; about 1% (about 1,200) are named Semifinalists",
+        "Phase 2: Semifinalists complete a second application due in November",
+        "Phase 3: 250 Regional Finalists interview in late January or early February",
+        "Phase 4: 150 Regional Finalists are invited in April to the required Coke Scholars Weekend in Atlanta to confirm selection"
+      ],
+      "prepare": [
+        "Apply at the very start of senior year: the application is open only August 3 to September 30",
+        "Have your high school courses and grades and your school and community activities ready to enter (the Phase 1 application asks for them)",
+        "Do not send extra transcripts, essays or recommendation letters; the Foundation says it does not accept supplemental material"
+      ],
+      "opens": "Monday, August 3, 2026 (after 10 am Eastern)",
+      "deadline": "Wednesday, September 30, 2026, 5 pm Eastern",
+      "cycle": "2027 Coca-Cola Scholars (students graduating high school in 2026-2027)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The 2027 application closed on September 30, 2026 (before the check date); the site says more than 113,000 applications are being reviewed. GPA wording differs between pages: the eligibility list says 'minimum overall B/3.0 GPA' while the FAQ says 'minimum 3.0 unweighted GPA'. Phase 2 essay topics and the recommender are not published. DACA students are told only that applicants must be eligible for federal financial aid.",
+      "sources": [
+        {
+          "label": "Apply to be a Coke Scholar (eligibility, selection process, FAQ)",
+          "url": "https://www.coca-colascholarsfoundation.org/apply/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "150 Coca-Cola Scholars are selected each year to receive this $20,000 scholarship.",
+            "who will graduate high school during the 2026-2027 academic school year",
+            "Able to verify a minimum overall B/3.0 GPA in high school coursework",
+            "Planning to pursue a degree at an accredited U.S. post-secondary institution",
+            "based on the guidelines utilized by U.S. Department of Education for Federal Financial Aid eligibility",
+            "Children or grandchildren of current employees, officers, or owners of Coca-Cola bottling companies, The Coca-Cola Company, Company divisions, or subsidiaries.",
+            "students graduating from an American or expat school abroad are not eligible for this award",
+            "This phase requires no essays, no transcript, and no recommendations.",
+            "invited to complete a Phase 2 application due in November with essays, a transcript, and a recommendation",
+            "250 will advance as Regional Finalists and will participate in a final interview with Coke Scholar alumni and staff in late January or early February",
+            "150 Regional Finalists are invited in April to the required Coke Scholars Weekend in Atlanta to confirm selection as Coca-Cola Scholars",
+            "By the end of October, all applicants will be notified of their application status.",
+            "The deadline for the 2027 Coke Scholars application is 5pm Eastern on September 30, 2026.",
+            "Applicants are evaluated on leadership, academics, and service.",
+            "The 2027 Coca-Cola Scholars application is now closed.",
+            "The Community Activities section is where you will record non-school related or sponsored activities.",
+            "In the Academic Information section, for each course you enter, you will be able to indicate the class status, course level, and grade."
+          ]
+        },
+        {
+          "label": "Frequently Asked Questions",
+          "url": "https://www.coca-colascholarsfoundation.org/about/faq",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "on August 3, 2026, after 10 am Eastern",
+            "The deadline for the 2027 Coke Scholars application is 5 pm Eastern on September 30, 2026.",
+            "High school seniors with a minimum 3.0 unweighted GPA may apply on our website in August of their senior year until the September 30 deadline.",
+            "All applications must be submitted through the Coca-Cola Scholars Foundation application portal.",
+            "we do not accept additional information submitted to supplement your application, including but not limited to transcripts, essays, letters of recommendation, or similar items",
+            "recipients have up to 10 years to use their full award"
+          ]
+        }
+      ]
+    },
+    "the-gates-scholarship": {
+      "prize": "Full cost of college",
+      "task": "Application",
+      "closes": "2026-09-15",
+      "deadlineShort": "Sep 15",
+      "tagline": "Pays whatever your other financial aid doesn't cover. For Pell-eligible seniors with a 3.3 weighted GPA or higher.",
+      "name": "The Gates Scholarship",
+      "runBy": "Gates Foundation (The Gates Scholarship program)",
+      "homepage": "https://www.thegatesscholarship.org/scholarship",
+      "kind": "scholarship",
+      "grades": [
+        12
+      ],
+      "award": "Last-dollar scholarship: funding for the full cost of attendance (tuition, fees, books, housing and food, possibly other personal costs) that is not already covered by other financial aid and the Student Aid Index.",
+      "eligibility": [
+        "A high school senior",
+        "Pell-eligible",
+        "A U.S. citizen or permanent resident",
+        "In good academic standing with a minimum cumulative weighted GPA of 3.3 on a 4.0 scale (or equivalent)",
+        "Plans to enroll full-time in a four-year degree program at a U.S. accredited, not-for-profit, private or public college or university",
+        "The sponsor's 'ideal candidate' is in the top 10% of the graduating class and shows leadership through community service, extracurricular or other activities"
+      ],
+      "whatYouSubmit": [
+        "Not confirmed (the application contents, essays and recommendations are described only in the help center, which loads its answers with JavaScript)"
+      ],
+      "howToApply": [
+        "Create a profile and apply online (profile available July 15, 2026)",
+        "Submit the application by the September 15, 2026 deadline",
+        "Semifinalist phase: December 2026 to January 2027",
+        "Finalist interviews: March 2027",
+        "Selection: April 2027; awards July to September 2027"
+      ],
+      "prepare": [
+        "Check Pell eligibility with your family before applying (it is a basic requirement)",
+        "The deadline falls in mid-September of senior year, earlier than most scholarships"
+      ],
+      "opens": "July 15, 2026",
+      "deadline": "September 15, 2026",
+      "cycle": "2026-27 (high school class of 2027)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Only one page on thegatesscholarship.org delivers its text without JavaScript. The help-center pages list questions (GED, grade level, institutions) but their answers do not download, so required essays, recommendations and documents are Not confirmed. The dates sit in a timeline widget where the label, the day and the year are separate page elements; the quoted lines join them with spaces. The page shows 'Status: Open' although its own deadline of September 15, 2026 is before the check date. Unlike some earlier descriptions of this scholarship, the page lists no race or ethnicity requirement.",
+      "sources": [
+        {
+          "label": "The Gates Scholarship (overview, eligibility, timeline)",
+          "url": "https://www.thegatesscholarship.org/scholarship",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The Gates Scholarship (TGS) is a highly selective, last-dollar scholarship for outstanding high school seniors from low-income households.",
+            "that is not already covered by other financial aid and the Student Aid Index",
+            "Cost of attendance includes tuition, fees, books, housing and food, and may include additional personal costs.",
+            "A US citizen or permanent resident",
+            "In good academic standing with a minimum cumulative weighted GPA of 3.3 on a 4.0 scale (or equivalent)",
+            "a student must plan to enroll full-time, in a four-year degree program, at a US accredited, not-for-profit, private or public college or university",
+            "An outstanding academic record in high school (in the top 10% of his/her graduating class)",
+            "Available July 15 2026 Deadline Sept 15 2026",
+            "Semifinalist Phase Dec - Jan 2027",
+            "Finalist Interviews March 2027",
+            "Selection April 2027"
+          ]
+        }
+      ]
+    },
+    "jack-kent-cooke-college-scholarship": {
+      "prize": "Up to $55,000 a year",
+      "task": "Application",
+      "closes": "2026-11-11",
+      "deadlineShort": "Nov 11",
+      "tagline": "Up to four years of funding for high-achieving seniors with financial need. Free to apply, and it runs through the Common App.",
+      "name": "Cooke College Scholarship Program",
+      "runBy": "Jack Kent Cooke Foundation",
+      "homepage": "https://www.jkcf.org/our-scholarships/college-scholarship-program/",
+      "kind": "scholarship",
+      "grades": [
+        12
+      ],
+      "award": "Last-dollar funding after all institutional aid, up to $55,000 per year, renewable each year for up to four years toward a bachelor's degree; plus advising. In April 2026, 60 new College Scholars were selected (plus 56 Young Scholar seniors).",
+      "eligibility": [
+        "Senior standing: complete four years of high school in the U.S., a U.S. territory or on a U.S. military base and plan to graduate in spring 2027",
+        "Intend to enroll in an accredited four-year college beginning in fall 2027",
+        "Minimum cumulative unweighted GPA of 3.75",
+        "Must have taken and must submit a score from at least one of SAT, ACT, AP or IB (no minimum score)",
+        "Unmet financial need: family income up to $95,000 is considered (last year's new scholars averaged about $42,000)",
+        "U.S. citizenship is not required, but you must reside in the U.S. or a U.S. territory and attend all four years of high school in the U.S.",
+        "Gap-year students and GED holders are not eligible"
+      ],
+      "whatYouSubmit": [
+        "Common App general sections (contact information, school, grades, activities and honors) with Jack Kent Cooke Foundation added like a college",
+        "Cooke-specific questions: eligibility, test score(s), several short essays, extracurricular activities and honors, intended major, financial information",
+        "Family Adjusted Gross Income (AGI) from federal tax returns for the past three years (or estimates with an explanation if no return was filed)",
+        "Two academic recommendations: one from an 11th grade teacher in a core academic subject, one from another core subject teacher or professor who has worked with you since ninth grade",
+        "One counselor recommendation from your high school counselor (or principal/other school official if there is no counselor)",
+        "School Report submitted by your counselor through Common App",
+        "Transcript (see notes: one page says unofficial, the FAQ says official via the counselor)",
+        "Self-reported standardized test score(s): SAT, ACT, AP or IB",
+        "A statement of any generative AI use in the application"
+      ],
+      "howToApply": [
+        "Create a Common App account and add 'Jack Kent Cooke Foundation' as one of your colleges",
+        "Invite your counselor and two teachers as recommenders in Common App",
+        "Submit by November 11, 2026",
+        "January 2027: semifinalists announced (an official transcript may be requested); the Foundation conducts a full financial review during selection",
+        "March 2027: scholarship recipients announced"
+      ],
+      "prepare": [
+        "Take at least one of the SAT, ACT, an AP exam or an IB exam before applying; a score is required",
+        "Ask an 11th grade core-subject teacher for a recommendation (one of the two must come from an 11th grade teacher)",
+        "Gather your family's federal tax returns for the past three years (AGI for each year is required)",
+        "Write the essays yourself: the Foundation expects responses to be wholly your own and asks you to report any AI use"
+      ],
+      "opens": "August 19, 2026",
+      "deadline": "November 11, 2026",
+      "cycle": "2027 College Scholarship Program (graduating spring 2027, enrolling fall 2027)",
+      "fee": "No cost or fee to complete and submit a Cooke Scholarship application.",
+      "notes": "Contradictions on the sponsor's own pages: (1) How to Apply says 'You must submit unofficial transcripts' while the FAQ says an official transcript is required and is submitted by the counselor; (2) the income limit is written both as 'family annual gross income up to $95,000' and 'family adjusted gross income up to $95,000'; (3) the timeline says recipients are announced in March 2027 while the FAQ says last year's scholars were selected in April 2026. Essay topics and lengths are not published. Online four-year programs are not funded.",
+      "sources": [
+        {
+          "label": "How to Apply",
+          "url": "https://www.jkcf.org/our-scholarships/college-scholarship-program/how-to-apply/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Complete four years of high school in the U.S., a U.S territory, or on a U.S. military base and plan to graduate in spring 2027.",
+            "Intend to enroll in an accredited four-year college beginning in fall 2027.",
+            "Earn a minimum, cumulative unweighted GPA of 3.75 or above.",
+            "There is no minimum score requirement to apply, however, applicants must have taken one (or more) of these tests and submit the score.",
+            "We will consider applicants with family annual gross income up to $95,000.",
+            "We will consider applicants with a family adjusted gross income up to $95,000.",
+            "Application opens. Apply online in the Common App.",
+            "Semifinalists are announced. All applicants will be notified of their status via email.",
+            "Scholarship recipients are announced. All semifinalists will be notified of their status via email.",
+            "One recommendation must be from an 11th grade teacher in a core academic subject (English/language arts, mathematics, social studies/history, science, or foreign language).",
+            "A second recommendation can come from another core subject teacher or professor who has worked with you any time since ninth grade.",
+            "you are required to submit one counselor recommendation from your high school counselor through the Common App",
+            "You must submit unofficial transcripts and self-report your courses/grades accurately in Common App.",
+            "If you are chosen as a semifinalist, we may request an official copy of your transcript later in the review process.",
+            "In Common App, the application requires that you invite your school counselor to submit this document to your application portal.",
+            "can provide as much as $55,000 per year to pursue a bachelor's degree at any accredited undergraduate institution",
+            "Last year's cohort of new College Scholarship recipients had an average family income of approximately $42,000."
+          ]
+        },
+        {
+          "label": "FAQs",
+          "url": "https://www.jkcf.org/our-scholarships/college-scholarship-program/faqs/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The 2027 College Scholarship Program application will be open August 19, 2026 - November 11, 2026.",
+            "There is no cost or fee associated with completing and submitting a Cooke Scholarship application.",
+            "Financial information, including the last three years' Adjusted Gross Income (AGI) for your household",
+            "Several short essays",
+            "Add Jack Kent Cooke Foundation just like you would a college.",
+            "Students who are taking a gap year after high school graduation are not eligible to apply for the Cooke College Scholarship Program.",
+            "If you received a GED diploma, you are not eligible to apply to the Cooke College Scholarship Program.",
+            "You must, however, reside in the United States or a U.S. territory and attend all four years of high school in the United States.",
+            "Yes, and your official high school transcript will be submitted by your school counselor through Common App.",
+            "These scores are self-reported through Common App under the \"My Common Application\" section.",
+            "The Foundation asks applicants to report any AI usage in the application.",
+            "The Cooke Foundation expects that your application responses are wholly your own.",
+            "In April 2026, 60 new College Scholars were selected for the Cooke College Scholarship Program, in addition to the 56 Young Scholar seniors who received the College Scholarship as well.",
+            "The award, which is last dollar funding after all institutional aid, can be as much as $55,000 a year.",
+            "The Cooke College Scholarship is intended to provide four years of funding for recipients.",
+            "The scholarship is renewable each year."
+          ]
+        }
+      ]
+    },
+    "elks-most-valuable-student": {
+      "prize": "Up to $30,000",
+      "task": "Application",
+      "closes": "2026-11-12",
+      "deadlineShort": "Nov 12",
+      "tagline": "500 seniors win every year, judged on grades, leadership and financial need. No SAT or ACT needed.",
+      "name": "Elks Most Valuable Student (MVS) Scholarship",
+      "runBy": "Elks National Foundation",
+      "homepage": "https://www.elks.org/scholars/scholarships/mvs.cfm",
+      "kind": "scholarship",
+      "grades": [
+        12
+      ],
+      "award": "500 four-year scholarships. The top 20 scholars receive $30,000 each (four-year total) and the 480 runners-up receive $4,000 each. (The same page also says awards range from $1,000 to $7,500 per year.) Paid directly to the school.",
+      "eligibility": [
+        "Current high school senior, or the equivalent; high school graduates are not eligible",
+        "U.S. citizen on the date the application is submitted; permanent legal resident status does not qualify",
+        "Does not need to be related to a member of the Elks",
+        "Must enroll in a four-year undergraduate degree program at an accredited U.S. college or university, full-time (a two-year college for the first two years of a four-year program is acceptable)",
+        "No minimum or maximum income, but financial need is scored",
+        "Home-schooled students are eligible"
+      ],
+      "whatYouSubmit": [
+        "Online application hosted by ISTS, including financial information (essay topics and lengths at the application stage are Not confirmed)",
+        "Counselor Report completed by your counselor (the application is not 'Complete' until it is in)",
+        "ACT/SAT scores are not required",
+        "Quarter Finalists (January): transcript and FAFSA Submission Summary",
+        "National Semi-Finalists (March): updated application information, an additional essay and a teacher's evaluation"
+      ],
+      "howToApply": [
+        "Apply online through the ISTS portal by November 12, 2026 (program code ElksMVS if prompted)",
+        "Applications advance through local Lodge, district and state levels to reach the national competition",
+        "Late December 2026: applicants advancing from Lodge selection are notified",
+        "Mid-January 2027: applicants advancing to Quarter Finalist judging upload transcript and FAFSA Submission Summary",
+        "March 2027: 500 National Semi-Finalists are notified and submit an additional essay and a teacher's evaluation",
+        "Top 20 finalists attend a mandatory Leadership Weekend in Chicago, April 29 to May 2, 2027 (expenses covered); 500 national winners announced in April 2027"
+      ],
+      "prepare": [
+        "Use a personal email address when applying; the sponsor warns some high school email domains block outside email",
+        "Ask your counselor early for the Counselor Report and monitor that the application status reaches 'Complete'",
+        "File the FAFSA: Quarter Finalists must upload a FAFSA Submission Summary in January",
+        "Male and female students compete separately",
+        "Applicants are judged on scholarship, leadership and financial need"
+      ],
+      "opens": "Not confirmed (an August 1, 2026 opening date appears only in commented-out page code, not in the visible page)",
+      "deadline": "November 12, 2026, 11:59 p.m. Pacific Time",
+      "cycle": "2027 MVS contest (high school class of 2027)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Award amounts are inconsistent on the sponsor's page: one bullet says scholarships range 'from $1,000 per year to $7,500 per year', the next paragraph says top 20 receive $30,000 and 480 runners-up $4,000, and the table header beneath is still labelled '2026 Most Valuable Student Award'. The page also contains hidden (commented-out) leftovers from earlier years. What the initial application asks for (essays, activities) is not described on the public pages. The standardized test requirement has been waived.",
+      "sources": [
+        {
+          "label": "Most Valuable Student scholarship page",
+          "url": "https://www.elks.org/scholars/scholarships/mvs.cfm",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Current high school seniors, or the equivalent, who are citizens of the United States are eligible to apply.",
+            "High school graduates are not eligible to apply.",
+            "Applicants must be citizens of the United States on the date their applications are submitted; permanent legal resident status does not qualify.",
+            "Scholarships are available only to students who enroll in four-year undergraduate degree programs at accredited U.S. American colleges or universities.",
+            "The 2027 application deadline is November 12, 2026 at 11:59 p.m., Pacific Time.",
+            "The Elks National Foundation will award 500 four-year scholarships.",
+            "Male and female students compete separately.",
+            "Ranging from $1,000 per year to $7,500 per year, Most Valuable Student scholarships are for students pursuing a four-year degree, on a full-time basis (minimum of 12 semester hours)",
+            "The Top 20 scholars, selected from the 500 national semi-finalists, receive an invitation to the weekend and scholarships of $30,000.",
+            "The 480 runners-up receive scholarships of $4,000.",
+            "Applicants will be judged on scholarship, leadership, and financial need.",
+            "If prompted, the program code is: ElksMVS",
+            "will announce the 500 national winners of the 2027 contest in April 2027"
+          ]
+        },
+        {
+          "label": "Most Valuable Student FAQs",
+          "url": "https://www.elks.org/scholarWeb/resources/mvsFAQ.cfm",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "You do not have to be a member (or the dependent of a member) of the Elks to qualify.",
+            "The application deadline for the 2027 contest is November 12, 2026 at 11:59 p.m., PST.",
+            "The requirements of your application have been met, but your Counselor Report is incomplete.",
+            "Applications must advance through local, district and state levels to reach the national competition.",
+            "In January, Quarter Finalists are required to upload their transcript and FAFSA Submission Summary.",
+            "National Semi-Finalists are required to submit an additional essay, and a teacher's evaluation.",
+            "The 500 National Semi-Finalists will be notified by email in late March 2027.",
+            "Notifications are sent to applicants advancing from Lodge selection in late December 2026.",
+            "The top 20 National Finalists will be selected to attend a mandatory Leadership Weekend in Chicago from April 29 to May 2, 2027.",
+            "No, we have waived the standardized test requirement for the MVS contest.",
+            "There is not a minimum income required in order to apply nor is there a maximum income we would not consider.",
+            "It is important to use a personal email address when applying, as some high school email domains may restrict outside email.",
+            "Home-schooled students are eligible to apply for the scholarship.",
+            "It is acceptable for a student to enroll in a two-year college for the first two years of the four-year program."
+          ]
+        },
+        {
+          "label": "Scholarship Guidelines",
+          "url": "https://www.elks.org/scholars/scholarships/guidelines.cfm",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "All checks are paid directly to the school; under no circumstance can we make payment directly to the student."
+          ]
+        }
+      ]
+    },
+    "regeneron-science-talent-search": {
+      "prize": "Up to $250,000",
+      "task": "Research paper",
+      "closes": "2026-11-05",
+      "deadlineShort": "Nov 5",
+      "tagline": "Did your own science or math research? Write it up. The top 300 get $2,000 each, and the 40 finalists get at least $25,000 and a week in Washington, DC.",
+      "name": "Regeneron Science Talent Search (STS)",
+      "runBy": "Society for Science",
+      "homepage": "https://www.societyforscience.org/regeneron-sts/",
+      "kind": "competition",
+      "grades": [
+        12
+      ],
+      "award": "$3.1 million in awards each year. Top 300 scholars receive $2,000 each (plus $2,000 to their school); the 40 finalists receive at least $25,000 and a week in Washington, DC; top ten awards range from $40,000 to $250,000 for first place. Every entrant who submits receives a t-shirt, laptop sticker and a one-year Science News subscription.",
+      "eligibility": [
+        "Living in and attending the last year of secondary school in the U.S. or its territories, regardless of citizenship (U.S. citizens living abroad may also qualify)",
+        "Students at American schools abroad who are not U.S. citizens are not eligible",
+        "The research must be independent and individual; team research is not eligible and a team project cannot be split",
+        "The project must have data and results; ideas without results and literature reviews are not accepted",
+        "Research from any year of high school is eligible",
+        "Homeschooled students may enter",
+        "Students who worked with a mentor may enter but need the mentor's permission to submit the research"
+      ],
+      "whatYouSubmit": [
+        "Research Report: an original scientific paper of at most 20 pages describing an independent research project",
+        "Educator Recommendation",
+        "Project Recommendation",
+        "High School Report (transcript), shared via your counselor",
+        "Application sections about you, your research project, prior research projects, your activities and how you spend your time",
+        "Short essays (questions are in a PDF of the 2027 Application Questions; not quoted here)",
+        "Test scores (optional)",
+        "Disclosures of all support received with the research project and application, including paid programs and any family or personal relationship with a mentor",
+        "Rules paperwork where the research involves humans, vertebrate animals, cell lines or tissue, or hazardous biological agents"
+      ],
+      "howToApply": [
+        "Complete the application in the online system between June 1 and November 5, 2026 (8 pm ET); recommendations are due at the same time",
+        "January 7, 2027: top 300 scholars announced",
+        "January 21, 2027: top 40 finalists announced",
+        "March 11 to 17, 2027: Finals Week in Washington, DC, with project judging and panel judging by PhD scientists",
+        "March 16, 2027: winners announced at the awards ceremony"
+      ],
+      "prepare": [
+        "Complete an independent research project with data and results before senior-year fall; the Society says this research frequently spans a year or more",
+        "Get any needed pre-approvals before starting research involving humans, vertebrate animals, cell lines or tissue, or hazardous agents (STS rules differ from ISEF rules)",
+        "Get your mentor's permission to submit the research",
+        "Do not use generative AI to write application answers, draft the Research Report or generate citations (prohibited); disclose any AI use in the research",
+        "Aim to submit by the Customer Support Deadline of November 4, 2026, 8 pm ET, which the Society strongly encourages"
+      ],
+      "opens": "June 1, 2026",
+      "deadline": "November 5, 2026, 8 pm ET",
+      "cycle": "Regeneron STS 2027 (high school class of 2027)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The full Official Rules, research report guidelines, recommendation instructions and the essay questions are PDFs, which were not read; eligibility here comes from the HTML FAQ. The Society's page says Regeneron committed to sponsor the Science Talent Search 'through 2027', so the title sponsor may change after this cycle. No entry fee is mentioned on the HTML pages, but that is not the same as a statement that entry is free.",
+      "sources": [
+        {
+          "label": "Regeneron STS home (dates)",
+          "url": "https://www.societyforscience.org/regeneron-sts/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Application Deadline is November 5, 2026 at 8pm ET.",
+            "$3.1 million in awards are distributed annually, including the first place prize of $250,000.",
+            "Top 300 Scholars Announced January 7, 2027",
+            "Top 40 Finalists Announced January 21, 2027",
+            "Winners Announced at Awards Ceremony Tuesday, March 16, 2027",
+            "In 2016, Regeneron made a generous commitment to serve as the exclusive partner for the Science Talent Search through 2027."
+          ]
+        },
+        {
+          "label": "Application Requirements",
+          "url": "https://www.societyforscience.org/regeneron-sts/application-requirements/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The Regeneron STS 2027 application is now open through 8PM ET on Thursday, November 5, 2026.",
+            "Applications are only accepted through the online system and must be properly submitted by the application deadline.",
+            "Describing an original, independent research project that meets all eligibility requirements.",
+            "Research conducted during any year of high school is eligible for Regeneron STS.",
+            "About you, your research project, prior research projects, your activities and how you spend your time.",
+            "Disclosures of all support received with the research project and application are required.",
+            "Note that Regeneron STS rules are somewhat different from Regeneron ISEF rules."
+          ]
+        },
+        {
+          "label": "Frequently Asked Questions",
+          "url": "https://www.societyforscience.org/regeneron-sts/frequently-asked-questions/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Any student who is living in and attending their last year of secondary school in the US and its territories may apply, regardless of citizenship.",
+            "Students attending American schools abroad, but who are not US citizens, are not eligible.",
+            "No; only independent, individual research is eligible.",
+            "Note that literature reviews are also not permitted for entry to Regeneron STS.",
+            "If you have not yet built your device and/or collected data, then this project is not eligible for Regeneron STS.",
+            "Student researchers will also need to obtain permission from their mentors before submitting their research to Regeneron STS.",
+            "The Regeneron STS 2027 application is now open from June 1 to November 5, 2026.",
+            "All recommendations are due on November 5 at 8PM ET, no exceptions.",
+            "The Customer Support Deadline is November 4, 2026 at 8PM ET",
+            "The application consists of essay questions, questions about your project, a maximum 20-page original scientific paper, recommendations, transcripts and optional test scores.",
+            "Entrants will submit a written report of their research, request recommendations from teachers and mentors, share transcripts via their counselors.",
+            "Frequently this research spans a year or more, but some students have completed research in as short as six weeks.",
+            "Students may not use generative AI to write Regeneron STS application questions, draft the Research Report or generate citations.",
+            "However, entrants AND mentors must disclose participation in paid programs.",
+            "Finalists undergo two types of judging",
+            "Homeschooled students should contact the Society to have their school added to the high school lookup function, just as other new schools are added."
+          ]
+        },
+        {
+          "label": "Awards",
+          "url": "https://www.societyforscience.org/regeneron-sts/sts-awards/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "300 Regeneron STS Scholars chosen from all STS entrants receive $2,000.",
+            "40 Regeneron STS Finalists chosen from the 300 Scholars receive $25,000 (minimally) and a week in Washington, DC.",
+            "Finalists who place in the top ten receive awards ranging from $40,000 for tenth place to $250,000 for first place.",
+            "All Regeneron STS entrants who submit their applications by the November deadline receive a t-shirt, laptop sticker and a one-year subscription to Science News magazine"
+          ]
+        },
+        {
+          "label": "Official Rules (landing page)",
+          "url": "https://www.societyforscience.org/regeneron-sts/official-rules/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Research that involves humans, vertebrate animals, cell lines or tissue or PHBAs in any way likely requires pre-approval and/or documentation paperwork."
+          ]
+        }
+      ]
+    },
+    "hsf-scholar-program": {
+      "prize": "$500 to $5,000",
+      "task": "Application",
+      "closes": "2026-02-15",
+      "deadlineShort": "Feb 15",
+      "tagline": "For students of Hispanic heritage with a 3.0 GPA or higher. 10,000 are picked each year for mentoring and career support, and some also get a scholarship.",
+      "name": "HSF Scholar Program (high school applicants)",
+      "runBy": "Hispanic Scholarship Fund",
+      "homepage": "https://www.hsf.net/scholarship",
+      "kind": "program",
+      "grades": [
+        12
+      ],
+      "award": "Designation as an HSF Scholar (10,000 selected each year) with access to Scholar Support Services (career services, mentorship, leadership development, conferences). Scholars may also be eligible for a scholarship of $500 to $5,000, depending on available funds; a scholarship is not guaranteed.",
+      "eligibility": [
+        "Open to students of all races who identify as being of Hispanic heritage",
+        "U.S. citizen, permanent legal resident, or DACA",
+        "Minimum 3.0 GPA on a 4.0 scale (or equivalent) for high school students",
+        "Plan to enroll full-time in an accredited, public or not-for-profit, four-year university in the U.S. for the coming academic year (2026-2027 on the current page)",
+        "Complete and submit the FAFSA for that academic year"
+      ],
+      "whatYouSubmit": [
+        "FAFSA for the coming academic year (a stated eligibility requirement)",
+        "Other application contents (essays, recommendations, transcript): Not confirmed; the page says only that documents are collected June to November after selection"
+      ],
+      "howToApply": [
+        "Create a profile and apply online at hsf.net (2026 cycle: profile available January 5, 2026)",
+        "Submit by the deadline (2026 cycle: February 15, 2026)",
+        "Finalist phase: March",
+        "Selection: June",
+        "Documents: June to November; awards in the fall"
+      ],
+      "prepare": [
+        "File the FAFSA for the year you will start college (required for eligibility)",
+        "Keep your GPA at 3.0 or above on a 4.0 scale (the minimum for high school students)"
+      ],
+      "opens": "January 5, 2026 (2026 cycle; the next cycle's date is not yet posted)",
+      "deadline": "February 15, 2026 (2026 cycle; the next cycle's date is not yet posted)",
+      "cycle": "2026 HSF Scholar Program (for the 2026-2027 academic year); status shown as Closed",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The site still shows the 2026 application (closed); dates for students starting college in fall 2027 are not posted. The page does not name a grade: it says 'high school students' who plan to enroll full-time in 2026-2027, which means seniors; grade 12 is an inference from that. HSF's help-center pages (including 'I am a high school student. When can I apply?') load their answers with JavaScript and could not be read, so essays, recommendations and required documents are Not confirmed. Being named an HSF Scholar does not guarantee money: scholarships depend on available funds. The dates sit in a timeline widget where label, day and year are separate page elements; the quoted lines join them with spaces.",
+      "sources": [
+        {
+          "label": "2026 HSF Scholar Program Application",
+          "url": "https://www.hsf.net/scholarship",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Every year, HSF selects 10,000 outstanding students as HSF Scholars from a broad and talented pool of applicants",
+            "be eligible to receive a scholarship, depending on available funds",
+            "Award amounts range from $500 - $5,000, based on relative need.",
+            "US Citizen, Permanent Legal Resident, or DACA",
+            "Minimum of 3.0 GPA on a 4.0 scale (or equivalent) for high school students",
+            "Plan to enroll full-time in an accredited, public or not-for-profit, four-year university, or graduate school in the US for the 2026-2027 academic year",
+            "Complete and submit the 2026-2027 Free Application for Federal Student Aid (FAFSA)",
+            "The HSF Scholar Program is open to students of all races who identify as being of Hispanic heritage",
+            "Available January 5 2026 Deadline February 15 2026",
+            "Finalist Phase March 2026 Selection June 2026",
+            "Documents June - November 2026"
+          ]
+        }
+      ]
+    },
+    "horatio-alger-national-scholarship": {
+      "prize": "$25,000",
+      "task": "Essays",
+      "closes": null,
+      "deadlineShort": "March 1",
+      "tagline": "For juniors who have pushed through hard times. You tell your story. 105 students win, and it's free to apply.",
+      "name": "Horatio Alger National Scholarship",
+      "runBy": "Horatio Alger Association of Distinguished Americans",
+      "homepage": "https://horatioalger.org/scholarships-and-services/undergraduate-scholarships/",
+      "kind": "scholarship",
+      "grades": [
+        11
+      ],
+      "award": "105 scholarships at $25,000 each. Funds are sent directly to the college.",
+      "eligibility": [
+        "Enrolled full time as a high school junior in the United States",
+        "Strong commitment to pursue and complete a bachelor's degree at an accredited non-profit public or private institution in the U.S. immediately after high school (may start at a two-year institution and transfer)",
+        "Financial need: adjusted gross family income of $100,000 or lower",
+        "Involved in co-curricular and community service activities",
+        "Display integrity and perseverance in overcoming adversity",
+        "Minimum GPA of 2.0",
+        "United States citizen (permanent residents do not qualify)",
+        "No minimum SAT or ACT score"
+      ],
+      "whatYouSubmit": [
+        "Online application (one application covers every Horatio Alger scholarship you are eligible for)",
+        "Essay responses: describe your Horatio Alger story and share your American Dream experience (lengths not stated)",
+        "Adversity section describing the adversities you have experienced",
+        "Counselor Certification Form, completed online by your high school counselor (verifies GPA, class rank, coursework)",
+        "Support Form, completed online by an adult over 21 who is not related to you and knows the adversities you wrote about",
+        "High school transcript that includes your fall grades",
+        "Income verification, most often your parents' tax form (W-2s, pay stubs, free/reduced lunch letters and state tax returns are not accepted)",
+        "Recipients must later upload proof of U.S. citizenship"
+      ],
+      "howToApply": [
+        "Review eligibility and click Apply Now during the application period (December 1 to March 1 for juniors)",
+        "Write the essay responses and complete the adversity section",
+        "Enter your counselor's email so they receive the Counselor Certification Form request, and confirm they got it",
+        "Enter your Support Form provider's email; once they confirm, the adversity section can no longer be edited",
+        "Upload the transcript and income verification through the online application (mail, email and fax are not accepted)",
+        "Only recipients are notified, by email and mail, in April/May"
+      ],
+      "prepare": [
+        "Finish and review your adversity section before asking the Support Form provider to confirm it; it locks after they submit",
+        "Follow up with your counselor and provider: the sponsor warns school email systems often block the automatic request",
+        "Get a copy of your parents' federal tax return, or request an IRS tax transcript if you cannot get one",
+        "Wait for fall-semester grades to be on your transcript; the transcript must include them"
+      ],
+      "opens": "December 1",
+      "deadline": "March 1 for high school juniors (the FAQ states a 12:00 p.m. E.T. cut-off)",
+      "cycle": "Not confirmed (pages give December 1 to March 1 without a year; for current juniors that would be December 2026 to March 2027)",
+      "fee": "No fees to apply.",
+      "notes": "This is the juniors' National Scholarship; the Association's other listed programs are mostly for seniors and tied to specific colleges or states. The sponsor's pages give the application window without a year. The FAQ says applications must be in 'by 12:00 p.m. E.T.' (noon as written; possibly a typo for midnight, so apply early). The old national-scholarships URL now returns a 'page not available' notice after a site redesign. Essay length limits are not published.",
+      "sources": [
+        {
+          "label": "Undergraduate Scholarships (how it works, National Scholarship eligibility)",
+          "url": "https://horatioalger.org/scholarships-and-services/undergraduate-scholarships/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Award Amount: 105 scholarships at $25,000 each",
+            "Be enrolled full time as a high school junior in the United States",
+            "Demonstrate financial need ($100,000 or lower adjusted gross family income is required)",
+            "Be involved in co-curricular and community service activities",
+            "Display integrity and perseverance in overcoming adversity",
+            "Maintain a minimum grade point average (GPA) of 2.0",
+            "students may start their studies at a two-year institution and then transfer to a four-year institution",
+            "By filling out one application, you will be considered for all scholarships for which you are eligible, except for some Specialized Scholarships",
+            "Describe your Horatio Alger story. Share your American Dream experience.",
+            "Enter your Counselor's email address so that they will receive a request to submit the Counselor Certification Form on your behalf.",
+            "Enter the email address of an adult over the age of 21 who is not related to you and is familiar with the adversities you have written about in your short responses",
+            "Once your Support Form Provider completes their review, you will not be able to edit your adversity section.",
+            "High School Transcript (must include your fall grades)",
+            "Contact your Counselor to ensure that they have received the request (sometimes school accounts block emails, so you may need to resend)."
+          ]
+        },
+        {
+          "label": "Undergraduate Applicant FAQ",
+          "url": "https://horatioalger.org/undergraduate-applicant-faq/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "No, there are not any fees to apply for the Horatio Alger Association's scholarships.",
+            "open now through March 1 st for high school juniors and February 15th for high school seniors",
+            "your application and all required materials must be submitted online application by 12:00 p.m. E.T.",
+            "No, the Association does not require a minimum SAT or ACT.",
+            "Yes, an applicant's adjusted gross family income must be $100,000 or lower.",
+            "U.S. permanent residents do not qualify for our scholarships.",
+            "The Certification Form is an online form completed by the student's high school counselor",
+            "The Adversity section provides an opportunity for applicants to share the types of adversities they have experienced in their life.",
+            "You have the option to submit a copy of the tax transcript which can be requested through the IRS website",
+            "Free/reduced lunch forms/letters/statements",
+            "Documents submitted by mail, email, or fax will not be accepted",
+            "Only applicants who have been awarded a scholarship will be notified.",
+            "The notifications will be sent via email and mail in April/May.",
+            "Funds will be sent directly to your college to be credited to your account.",
+            "Yes, all scholarship recipients are required to verify citizenship by uploading one of the following documents when accepting their award:"
+          ]
+        },
+        {
+          "label": "Scholarships (application periods)",
+          "url": "https://horatioalger.org/scholarships/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Junior Application Period: December 1 - March 1",
+            "For current high school juniors, high school seniors, and college students planning to pursue a bachelor's degree"
+          ]
+        }
+      ]
+    },
+    "vfw-voice-of-democracy": {
+      "prize": "Up to $35,000",
+      "task": "Audio essay",
+      "closes": "2026-10-31",
+      "deadlineShort": "Oct 31",
+      "tagline": "Record an audio essay and hand it in at your local VFW post. This year's theme: “What a Veteran Taught Me About America.”",
+      "name": "Voice of Democracy",
+      "runBy": "Veterans of Foreign Wars (VFW)",
+      "homepage": "https://www.vfw.org/community/youth-and-education/youth-scholarships",
+      "kind": "competition",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "National first place: $35,000 scholarship paid directly to the winner's American university, college or vocational/technical school. Other national scholarships range up to $21,000. The first place winner from each VFW Department (state) wins at least $1,000 and a trip to a four-day youth leadership program at Valley Forge.",
+      "eligibility": [
+        "Students in grades 9 through 12",
+        "Other eligibility rules (citizenship, home school, age limits): Not confirmed - they are only in the PDF entry form"
+      ],
+      "whatYouSubmit": [
+        "A recorded audio essay on the year's theme. The 2026-27 theme is \"What a Veteran Taught Me About America.\"",
+        "A completed 2026-2027 entry form",
+        "Required length of the recording: Not confirmed (only in the PDF entry form)"
+      ],
+      "howToApply": [
+        "Download the 2026-2027 entry form from the VFW youth scholarships page",
+        "Find a local participating VFW Post to sponsor your entry",
+        "Turn in the audio essay and entry form to that Post by midnight, Oct. 31",
+        "A first place winner is named for each VFW Department (state); those winners receive a scholarship of at least $1,000 and the Valley Forge trip",
+        "National scholarships are awarded, with $35,000 for national first place"
+      ],
+      "prepare": [
+        "You must find a local participating VFW Post before the deadline, because entries go to the Post, not to VFW national"
+      ],
+      "opens": "Not confirmed",
+      "deadline": "Midnight, October 31, 2026 (to the local VFW Post)",
+      "cycle": "2026-27",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The VFW page gives only an overview. The detailed rules (recording length, eligibility details, judging) are in the PDF entry form, which could not be read as text, so those fields are Not confirmed. The page does not name the judging rounds between Post and Department.",
+      "sources": [
+        {
+          "label": "VFW Youth Scholarships (Voice of Democracy)",
+          "url": "https://www.vfw.org/community/youth-and-education/youth-scholarships",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "nearly 28,000 ninth through 12th grade students from across the country enter",
+            "The national first place winner receives a $35,000 scholarship paid directly to the recipient's American university, college or vocational/technical school.",
+            "The complete list of other national scholarships range up to $21,000, with the first place winner from each VFW Department (state) winning a scholarship of at least $1,000.",
+            "VFW Department (state) first place winners also receive a trip to participate in Founding Forward's Spirit of America Youth Leadership experience at Valley Forge",
+            "Students interested in participating must submit their audio essay prepared on this year's theme, with a completed entry form to their local participating VFW Post.",
+            "then find your sponsoring local VFW Post as essays must be turned in by midnight, Oct. 31",
+            "The 2026-27 theme is: \"What a Veteran Taught Me About America.\""
+          ]
+        }
+      ]
+    },
+    "american-legion-oratorical-contest": {
+      "prize": "Up to $25,000",
+      "task": "Speech",
+      "closes": null,
+      "deadlineShort": "Set by your state",
+      "tagline": "Give an 8 to 10 minute speech about the U.S. Constitution. You start at a local American Legion contest and can work up to nationals.",
+      "name": "American Legion National Oratorical Contest",
+      "runBy": "The American Legion",
+      "homepage": "https://www.legion.org/oratorical",
+      "kind": "competition",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "National winner $25,000 scholarship; second place $22,500; third place $20,000. Each department (state) winner who is certified into and participates in the national contest's first round receives $2,000, and those who advance past the first round receive an additional $2,000. Scholarships can be used at any college or university in the United States.",
+      "eligibility": [
+        "Citizen or lawful permanent resident of the United States",
+        "Under age 20 on the date of the national contest",
+        "Currently enrolled in a high school or junior high school (public, parochial, military, private or home school) whose curriculum is high school level, grades 9 through 12",
+        "Must live in, or attend school in, the department (state) where you enter, and can enter through only one department",
+        "Students who graduate early during the school year can compete if they are not enrolled in college or another institution of higher learning at the time of the department finals",
+        "The three finalists of a national contest cannot compete again"
+      ],
+      "whatYouSubmit": [
+        "A prepared oration of 8 to 10 minutes on some aspect of the U.S. Constitution, with emphasis on a citizen's duties and obligations to our government, delivered without notes, lectern, amplification, prompting or props",
+        "An assigned-topic speech of 3 to 5 minutes on a constitutional topic drawn at the contest about five minutes before you speak",
+        "Appropriate business attire; uniforms are not permitted"
+      ],
+      "howToApply": [
+        "Competition begins at the American Legion post level",
+        "It advances to a state (department) competition; each department arranges the contests leading up to its finals",
+        "Each department certifies one winner to the national contest",
+        "At nationals, department winners compete in two speaking rounds, then a final round decides the top three",
+        "The 2027 National Finals are May 14-16 at Hillsdale College in Hillsdale, Michigan; the Legion pays travel and lodging for department winners and their chaperones"
+      ],
+      "prepare": [
+        "The same subject and oration used in the department contest must be used in the national contest",
+        "The 2027 assigned topics are the Preamble; Article VI Paragraph 2; Amendment XIV Section 3; and Amendment XXII Section 1 - you must be ready to speak on any of them",
+        "Quotations of more than 10 words need the author's name in the manuscript and cited orally",
+        "A chaperone over 21 years of age must accompany each contestant at nationals"
+      ],
+      "opens": "Not confirmed (local and state contest dates are set by each American Legion department)",
+      "deadline": "Not confirmed (set by each American Legion department); National Finals are May 14-16, 2027",
+      "cycle": "2026-27",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Entry dates are set state by state; the national pages link to each department. Below the department finals the national rules are guidelines only, so local contests may differ. The home page still says 2026 scholarships total more than $203,500.",
+      "sources": [
+        {
+          "label": "Oratorical Contest Rules and Regulations",
+          "url": "https://www.legion.org/get-involved/youth-programs/oratorical-contest/how-to-participate",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Eligible participants must be citizens of or lawful permanent residents of the United States.",
+            "any student under the age of 20 years on the date of the national contest who is presently enrolled in a high school or junior high school (public, parochial, military, private or home school)",
+            "The curriculum of the school must be considered to be of high school level, commencing with grade 9 and terminating with grade 12.",
+            "Contestants must either be legally domiciled within or attend an educational institution within the department that they enter competition.",
+            "Contestants can enter competition through only one department.",
+            "The three finalists of the national contest are ineligible for further participation at any level.",
+            "The same subject and oration used in the department contest must be used in the national contest.",
+            "The use of notes, amplification, lectern or speaker's stand or any manner of prompting is not permitted.",
+            "Contestants must deliver their prepared oration in no fewer than eight minutes and no more than 10 minutes.",
+            "The assigned topic runs no fewer than three minutes and no more than five minutes.",
+            "Where quotations are more than 10 words in length, the author's name must be given in the manuscript and cited orally.",
+            "Appropriate business attire is required for all contestants.",
+            "The American Legion pays travel and lodging expenses for department winners and their chaperones.",
+            "A chaperone over 21 years of age must accompany each contestant.",
+            "High school students that graduate early during the school year are eligible to compete if they are not enrolled in a college, university, trade school or other institution of higher learning",
+            "Uniforms are not permitted.",
+            "Props are not permitted.",
+            "The oration must be on some aspect of the Constitution, with emphasis on a citizen's duties and obligations to our government."
+          ]
+        },
+        {
+          "label": "About the National Oratorical Contest",
+          "url": "https://www.legion.org/get-involved/youth-programs/oratorical-contest/about-the-oratorical-contest",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The overall national contest winner gets a $25,000 scholarship.",
+            "Second place takes home $22,500, and third gets $20,000.",
+            "Those who advance past the first round receive an additional $2,000 scholarship.",
+            "receives a $2,000 scholarship",
+            "High school students under age 20 are eligible.",
+            "Competition begins at the post level and advances to a state competition.",
+            "Legion department representatives certify one winner per state to the national contest, where department winners compete against each other in two speaking rounds.",
+            "The 2027 National Finals will be held May 14-16 in Hillsdale, Michigan, at Hillsdale College.",
+            "which can be used at any college or university in the United States",
+            "The contest caps off with a final round that decides the three top finishers."
+          ]
+        },
+        {
+          "label": "Oratorical Contest Assigned Topics",
+          "url": "https://www.legion.org/get-involved/youth-programs/oratorical-contest/oratorical-contest-assigned-topics",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Assigned Topics for 2027 Oratorical Contest",
+            "Article VI Paragraph 2",
+            "Amendment XIV Section 3",
+            "Amendment XXII Section 1",
+            "will be made known to the audience and each contestant approximately five (5) minutes prior to the time of delivery"
+          ]
+        },
+        {
+          "label": "State and Local Oratorical Contests",
+          "url": "https://www.legion.org/get-involved/youth-programs/oratorical-contest/state-and-local-oratorical-contests",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Arrangements for contests leading up to the department finals shall be the responsibility of each American Legion department.",
+            "For competition prior to the department finals, the contest rules and regulations are not mandatory; they are offered as guidelines."
+          ]
+        }
+      ]
+    },
+    "regeneron-isef": {
+      "prize": "Up to $100,000",
+      "task": "Science project",
+      "closes": null,
+      "deadlineShort": "Set by your local fair",
+      "tagline": "Take a research project to a local science fair. Win there and you can qualify for ISEF in Los Angeles in May.",
+      "name": "Regeneron International Science and Engineering Fair (ISEF)",
+      "runBy": "Society for Science",
+      "homepage": "https://www.societyforscience.org/isef/",
+      "kind": "competition",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "Grand Awards in each of the 22 categories: 1st $6,000, 2nd $2,400, 3rd $1,200, 4th $600 (teams split the award equally). Top awards chosen from the 1st Award winners include the George D. Yancopoulos Innovator Award of $100,000 and two Regeneron Young Scientist Awards of $75,000 each. Special Awards from other organizations add scholarships, internships and other prizes.",
+      "eligibility": [
+        "Students in grades 9-12 or equivalent",
+        "You cannot enter ISEF directly: you must compete in a Regeneron ISEF affiliated science fair and win the right to attend",
+        "The project may include no more than 12 months of continuous research, and no research performed more than 18 months before the ISEF you compete in",
+        "Projects must follow the International Rules for Pre-College Science Research; the full eligibility rules are in that rulebook (PDF), not confirmed here"
+      ],
+      "whatYouSubmit": [
+        "A research project entered in a Society-affiliated fair (22 categories at ISEF)",
+        "The forms required by the International Rules, which document that the project followed the rules",
+        "If you are named a finalist: a Finalist Questionnaire, due 12 calendar days after your fair date"
+      ],
+      "howToApply": [
+        "Find a Society-affiliated fair in your area; students generally start at a local school fair and progress upward",
+        "Before experimenting, check the rules with your affiliated fair's Scientific Review Committee",
+        "Compete at the affiliated local, regional, state or national fair; each fair may send a pre-determined number of projects to ISEF",
+        "Finalists submit the Finalist Questionnaire within 12 calendar days of their fair",
+        "Compete at Regeneron ISEF 2027 in Los Angeles, California, May 8-14, 2027, where each entry is judged at least four times"
+      ],
+      "prepare": [
+        "Start from the affiliated fair that covers your area, because that is the only route to ISEF",
+        "Ask rules questions before starting experiments - especially on vertebrate animals, human subjects or potentially hazardous biological agents",
+        "Keep the research within the 12-month and 18-month limits"
+      ],
+      "opens": "Not confirmed (each affiliated fair sets its own entry dates)",
+      "deadline": "Not confirmed for students (set by each affiliated fair). All affiliated fairs conclude by mid-April; ISEF itself is May 8-14, 2027.",
+      "cycle": "2026-27",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The Society's pages give different award totals on different pages (more than $9 million, over $7 million, nearly $9 million). The affiliated-fair dates table gives April 12, 2027 as the last date to hold an affiliated fair. Student-level entry fees and deadlines belong to each affiliated fair and are not on the Society's pages. The full rulebook (age limits, team size) is a PDF and was not read.",
+      "sources": [
+        {
+          "label": "ISEF FAQ",
+          "url": "https://www.societyforscience.org/isef/faq/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Students in grades 9-12 or equivalent must compete in a Regeneron ISEF affiliated science fair and win the right to attend Regeneron ISEF.",
+            "Each affiliated fair may send a pre-determined number of projects to ISEF (as calculated by participation and high school population) to compete in 22 different",
+            "Students may present work that includes no more than 12 months of continuous research, and they may not include research performed more than 18 months before the Regeneron ISEF",
+            "Local, regional and state affiliated fairs take place throughout the year, but all conclude by mid-April.",
+            "Students cannot represent themselves at Regeneron ISEF because this competition is a closed event.",
+            "Students can generally start at a local school science fair and then progress on to the upper levels of competition, in which a Regeneron ISEF-affiliated fair may be the last tier.",
+            "Each affiliated fair has an established Scientific Review Committee (SRC) to answer your inquiries before experimentation.",
+            "Each entry is judged at least four times with category awards given in first, second, third and fourth place.",
+            "Awards are $6,000, $2,400, $1,200 and $600 respectively in each of the 22 categories.",
+            "The top winner of the Regeneron ISEF receives an award of $100,000, with the next top two winners each receiving $75,000.",
+            "especially pertaining to the use of vertebrates, human subjects, or potentially hazardous biological agents"
+          ]
+        },
+        {
+          "label": "Regeneron ISEF Awards",
+          "url": "https://www.societyforscience.org/isef/awards/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "If in teams, members will split the award equally.",
+            "George D. Yancopoulos Innovator Award of $100,000",
+            "Regeneron Young Scientist Awards (2) of $75,000 each",
+            "Each year, organizations representing a wide variety of scientific disciplines provide awards, scholarships, internship and other prizes to hundreds of student Finalists."
+          ]
+        },
+        {
+          "label": "Affiliated Fair Network (dates and deadlines)",
+          "url": "https://www.societyforscience.org/isef/affiliated-fair-network/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Society affiliated science fairs across the world are the first step to competing at Regeneron ISEF and Thermo Fisher JIC",
+            "Your Fair Date + 12 Calendar Days",
+            "Deadline to submit Finalist Questionnaire and Official Party Registration.",
+            "Last date to hold a Regeneron ISEF affiliated fair."
+          ]
+        },
+        {
+          "label": "International Rules",
+          "url": "https://www.societyforscience.org/isef/international-rules/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The International Rules are the official rules of the Regeneron ISEF and students competing at Society-affiliated science fairs.",
+            "The Rules and Guidelines booklet includes the forms necessary to document adherence to the rules."
+          ]
+        },
+        {
+          "label": "Grand Award Judging (ISEF 2027 dates)",
+          "url": "https://www.societyforscience.org/isef/grand-award/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Regeneron ISEF 2027 will be held in Los Angeles, California from May 8-14, 2027."
+          ]
+        }
+      ]
+    },
+    "breakthrough-junior-challenge": {
+      "prize": "$250,000",
+      "task": "2-minute video",
+      "closes": "2026-09-15",
+      "deadlineShort": "Sep 15",
+      "tagline": "Make a video, two minutes or less, that explains a big idea in physics, life sciences or math. If you win, your teacher gets $50,000 and your school gets a science lab.",
+      "name": "Breakthrough Junior Challenge",
+      "runBy": "Breakthrough Prize Foundation (founded by Julia and Yuri Milner)",
+      "homepage": "https://breakthroughjuniorchallenge.org/",
+      "kind": "competition",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "Winner: $250,000 post-secondary scholarship (tuition and fees at colleges and universities worldwide), a $50,000 cash prize for the teacher the student names, and a $100,000 Breakthrough Science Lab for the school.",
+      "eligibility": [
+        "Age-based, not grade-based: 13 or older by May 11, 2026 and not older than 18 (not yet 19) as of October 1, 2026",
+        "Open worldwide, including homeschooled students; entries must be in English",
+        "Students who meet the age limits can enter even if already enrolled in college",
+        "Individuals only - you must be the sole creator of your submission",
+        "One entry per person",
+        "Minors need a parent's or legal guardian's permission to enter"
+      ],
+      "whatYouSubmit": [
+        "An original video of 2:00 minutes or less explaining a theory, concept or principle in physics, life sciences or mathematics, submitted as a YouTube link",
+        "An online application with a short questionnaire about yourself, your school and your chosen topic",
+        "The name of a teacher (current or past teacher or tutor; not a parent, sibling or grandparent)",
+        "A government-issued document verifying age and nationality (birth certificate, state ID, country ID or passport)",
+        "Scores for at least five other contestants' videos during the Peer-to-Peer Review"
+      ],
+      "howToApply": [
+        "Sign up on the Challenge website and complete the application (opened May 11, 2026)",
+        "Submit the application and video by September 15, 2026 at 11:59 PM PDT",
+        "Score at least five other submissions in the Peer-to-Peer Review by September 30, 2026 at 11:59 PM PDT",
+        "Administrative review, then the Evaluation Panel scores and judges the top 75 submissions",
+        "Challenge staff verify up to 30 submissions selected by the Evaluation Panel",
+        "Popular Vote names a Popular Vote Top Scorer and 7 Regional Champions; finalists are posted",
+        "The Selection Committee decides which finalists advance to the final phase; the winner is announced on a date set by the sponsor"
+      ],
+      "prepare": [
+        "Videos are judged on engagement, illumination, creativity and difficulty",
+        "The topic must fit physics, life sciences or mathematics, or the entry may be disqualified",
+        "You must name a teacher in the application, so choose one before applying",
+        "Have a government-issued proof of age ready"
+      ],
+      "opens": "May 11, 2026",
+      "deadline": "September 15, 2026 at 11:59 PM PDT (this cycle has closed)",
+      "cycle": "2026",
+      "fee": "No fee: the Official Rules say \"No Purchase Or Payment Necessary To Enter Or Win.\"",
+      "notes": "The 2026 submission period has ended; dates for the 2027 Challenge are not posted. Eligibility is by age (13-18), so some middle school and first-year college students also qualify.",
+      "sources": [
+        {
+          "label": "Enter",
+          "url": "https://breakthroughjuniorchallenge.org/enter",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "13 or older by 12:01 AM PDT (West Coast USA) on May 11, 2026",
+            "Not older than 18 (not yet 19) as of 11:59 PM PDT (West Coast USA) on October 1, 2026",
+            "We welcome submissions in English from anyone of those ages, including homeschooled students, students with disabilities, and students from all over the world.",
+            "Applications will be taken starting May 11, 2026",
+            "answer a short questionnaire about yourself, your school and your chosen Challenge topic, and submit your completed video",
+            "Select a theory, concept, or principle in physics, life sciences, mathematics.",
+            "Create a short video (no more than 2:00 minutes) to communicate the idea in an engaging, illuminating, and imaginative way.",
+            "Submit a YouTube video link in your application",
+            "Submissions are due no later than September 15, 2026 at 11:59 PM PDT (West Coast USA).",
+            "you must score at least five other submissions by September 30, 2026 at 11:59 PM PDT (West Coast USA)",
+            "To get the ball rolling, sign up"
+          ]
+        },
+        {
+          "label": "Timeline",
+          "url": "https://breakthroughjuniorchallenge.org/timeline",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "In this period, the Evaluation Panel will score and judge the top 75 submissions in accordance with the criteria set forth in the Rules.",
+            "In this period, Challenge staff will review and verify the submissions (up to 30) selected by the Evaluation Panel.",
+            "As a result of the Popular Vote, a Popular Vote Top Scorer and 7 Regional Champions will be named."
+          ]
+        },
+        {
+          "label": "FAQ",
+          "url": "https://breakthroughjuniorchallenge.org/faq",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "I meet the age requirement, but I am now enrolled in college or university.",
+            "You must name a teacher in the application.",
+            "Parents, siblings and grandparents may not be named as your teacher in the application.",
+            "An official government-issued document such as a birth certificate, state ID, country ID, or passport document verifying your age and nationality.",
+            "Your video must be 2 minutes (2:00) in length or shorter to qualify for the Challenge.",
+            "The Challenge is a competition for individuals only.",
+            "However, you must be the sole creator of your submission.",
+            "The Selection Committee decides which Finalists will advance to the final phase of the challenge.",
+            "The winner will be announced on a date to be determined by the Competition Sponsor.",
+            "The $250,000 is for a post-secondary scholarship and can be used for tuition and fees at colleges and universities worldwide.",
+            "Is the $50,000 prize for my teacher a cash reward?",
+            "What is the difference between the Administrative Review and the Verification process?"
+          ]
+        },
+        {
+          "label": "Official Rules",
+          "url": "https://breakthroughjuniorchallenge.org/rules",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "No Purchase Or Payment Necessary To Enter Or Win.",
+            "If You are a minor, You must have Your parent's or legal guardian's permission to enter",
+            "are in English, including all scripts and voiceovers",
+            "Limit to one (1) Entry per person during the Competition Period."
+          ]
+        },
+        {
+          "label": "Judging",
+          "url": "https://breakthroughjuniorchallenge.org/judging",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Your video will be judged according to the following criteria:",
+            "Is the subject typically taught at high school level or beyond?"
+          ]
+        },
+        {
+          "label": "Prizes",
+          "url": "https://breakthroughjuniorchallenge.org/prize",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "$100,000 Breakthrough Science Lab",
+            "$50,000 Prize for your teacher",
+            "$250,000 Post-secondary scholarship"
+          ]
+        }
+      ]
+    },
+    "davidson-fellows-scholarship": {
+      "prize": "Up to $100,000",
+      "task": "Major project",
+      "closes": null,
+      "deadlineShort": "Not posted yet",
+      "tagline": "Built, written or discovered something serious? This is for students 18 or younger with a finished project at close to college-graduate level.",
+      "name": "Davidson Fellows Scholarship",
+      "runBy": "Davidson Institute",
+      "homepage": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/",
+      "kind": "scholarship",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "$100,000, $50,000 or $25,000 scholarship, with the level decided by the judges. Usable only for qualified tuition and related expenses; available for 10 years from the date of the award.",
+      "eligibility": [
+        "Age-based, not grade-based: 18 or younger as of the application deadline, with no minimum age; students at any grade level may apply",
+        "U.S. citizen residing in the United States, or Permanent Resident of the United States residing in the United States, or stationed overseas due to active U.S. military duty",
+        "Must have completed a significant piece of work in one of the categories (Science, Technology, Engineering, Mathematics, Literature, Music, Philosophy, Outside the Box) and be able to show it is your own",
+        "Projects are expected to be at, or close to, the college graduate level; not geared toward students at the novice level",
+        "Teams of no more than two people are allowed; both must meet the requirements and the scholarship is split evenly",
+        "Not eligible: community service projects, literature reviews, projects with no data, projects involving live vertebrates, and arts such as photography, sculpture, film and visual arts",
+        "Must be available to attend, with one parent or guardian, the awards reception in Washington, DC in September (travel and lodging provided)",
+        "Named Davidson Fellows cannot reapply; other applicants may reapply with a different or expanded work"
+      ],
+      "whatYouSubmit": [
+        "An initial application portion with a brief description of the project or portfolio, used to check eligibility",
+        "The required elements for your one chosen category (the Literature category requires three entries; other category checklists are downloads and were not confirmed here)",
+        "Two nominator forms from two different nominators who are not family members",
+        "One parent approval form (one per team member for teams)",
+        "The Attachments listed for the category; all application materials must be typed",
+        "Disclosure, by both applicant and nominators, of any paid research program used"
+      ],
+      "howToApply": [
+        "Check eligibility and review your category's requirements",
+        "Teams of two must email the Fellows program before starting the application",
+        "Submit the initial portion of the online application; it is held for review for 1-2 business days",
+        "Once approved, complete part two: enter your nominators' information and send them their forms, send a parent the approval form, and upload all category requirements",
+        "Applications are checked for completeness, then evaluated by an independent team of judges with expertise in the field",
+        "All applicants are notified on or before July 15"
+      ],
+      "prepare": [
+        "Submit the initial portion as early as possible so you and your nominators have more time",
+        "Choose nominators using the sponsor's sample nominating form, and give them time to complete it",
+        "Google products (Google Docs and videos) are not accepted as file types",
+        "All submissions are run through plagiarism detection and AI-generated text detection software"
+      ],
+      "opens": "Fall 2026 (for the 2027 application)",
+      "deadline": "Not confirmed for 2027. The previous cycle's deadline was February 18, 2026, 11:59pm Pacific Time.",
+      "cycle": "2027",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "As of 2026-10-13 the pages still show the closed 2026 cycle and its February 18, 2026 deadline; the 2027 deadline is not yet posted. The detailed per-category requirement checklists are downloads and were not read. The pages say eligibility rules were updated ('We've made some eligibility updates'). No high school enrollment is required - eligibility is by age only.",
+      "sources": [
+        {
+          "label": "Fellows Scholarship Eligibility and FAQs",
+          "url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/eligibility-and-application/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Be 18 or younger as of the application deadline to be eligible.",
+            "Be a U.S. citizen residing in the United States, or a Permanent Resident of the United States residing in the United States, or be stationed overseas due to active U.S. military duty.",
+            "There is no minimum age for eligibility.",
+            "The Davidson Fellows scholarship eligibility is based on age, not grade level.",
+            "Have completed a significant piece of work in one of the submission categories.",
+            "Be able to demonstrate that the work is his or her own creation.",
+            "This scholarship is not geared toward students at the novice level.",
+            "Teams may be no more than two people.",
+            "Scholarship money will be split evenly between the two team members.",
+            "Projects involving live vertebrates are not eligible.",
+            "If you have no data, you are not eligible for consideration.",
+            "No, literature reviews are not eligible for consideration.",
+            "Community service projects are NOT eligible.",
+            "Projects in the arts including photography, sculpture, film, visual, etc. are not eligible for consideration.",
+            "(Travel expenses and lodging will be provided by the Institute.)",
+            "the awards reception and other recognition events to be held in September in Washington, DC",
+            "Every applicant must submit the required elements outlined within their category of choice, plus two nominator forms and all of the Attachments.",
+            "Yes, two different nominators are required.",
+            "Family members may NOT serve as nominators.",
+            "All application materials must be typed.",
+            "Applicants may apply in only one category.",
+            "MUST disclose participation in a paid program",
+            "The 2026 Davidson Fellows deadline is February 18, 2026.",
+            "All applicants are notified on or before July 15 each year.",
+            "Scholarship money will be available for 10 years from the date of the award.",
+            "Each scholarship may be used only for qualified tuition and related expenses",
+            "Individuals who have been named Davidson Fellows are not eligible to reapply.",
+            "reviewed by an independent team of judges comprised of professionals with expertise in related domain areas",
+            "Yes! Two-person teams are eligible to apply."
+          ]
+        },
+        {
+          "label": "How to Apply for the Fellows Scholarship",
+          "url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/eligibility/how-to-apply/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The 2027 application will open in Fall of 2026.",
+            "The initial portion asks for a brief description of the project/portfolio to ensure eligibility.",
+            "Once the initial portion of your application has been submitted, it will be held for review (1-2 business days).",
+            "Please submit the initial portion of the application as soon as possible.",
+            "NOTE: only one parent approval form is required.",
+            "If it is a team submission, one parent form is required per team member.",
+            "Students can apply with one project only.",
+            "GOOGLE PRODUCTS ARE NOT ACCEPTED, THIS INCLUDES GOOGLE DOCS AND VIDEOS.",
+            "All submissions are run through plagiarism detection and AI-generated text detection software.",
+            "decide whether they will receive a $100,000, $50,000 or $25,000 scholarship",
+            "Especially for your nominators, give them time to fill out their forms.",
+            "The deadline for receipt of all application materials is",
+            "so you can choose the best nominators to support your submission",
+            "Application categories are Science, Technology, Engineering, Mathematics, Literature, Music, Philosophy and Outside the Box.",
+            "BEFORE you start the application"
+          ]
+        },
+        {
+          "label": "Scholarship Categories",
+          "url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/scholarship-categories/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "This category requires three entries consisting of any combination of fiction, nonfiction, poetry, and drama or screenplay.",
+            "For gifted students who excel in a specific work or study that does not fit into one of the other Fellows Scholarship categories."
+          ]
+        }
+      ]
+    },
+    "gloria-barron-prize-for-young-heroes": {
+      "prize": "$10,000",
+      "task": "Service project",
+      "closes": null,
+      "deadlineShort": "March 15 (first step)",
+      "tagline": "Started a project that helps people or the planet? 25 young leaders win each year. It has to be your idea, not a school assignment.",
+      "name": "Gloria Barron Prize for Young Heroes",
+      "runBy": "Young Heroes Project",
+      "homepage": "https://barronprize.org/",
+      "kind": "scholarship",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "$10,000 to each winner, to be applied to higher education or to the winner's service project (co-applicants share one award). 25 young leaders are honored each year. Winners also receive a plaque and recognition certificate.",
+      "eligibility": [
+        "Age-based, not grade-based: between the ages of 8 and 18 (not yet age 19) on the annual application deadline of April 15",
+        "Permanent, legal resident of the U.S. or Canada with a social security number or valid tax i.d. number, currently residing in the 50 U.S. states, District of Columbia, or Canada (residents of U.S. territories are not eligible)",
+        "Has organized and led an extraordinary service activity that is clearly benefitting other people or the planet (research projects that are already helping can qualify)",
+        "The service activity must have been initiated primarily by the applicant and cannot have been done solely for a school or work assignment",
+        "Currently working on the service project, or has done so within the past 12 months",
+        "Applies as an individual, or as one of no more than two co-applicants"
+      ],
+      "whatYouSubmit": [
+        "Step 1: an online pre-application form",
+        "Step 2: the full online application, which includes a Project Summary and a Project Essay",
+        "A letter from a Lead Reference - an adult advocate (for example a teacher, librarian, school counselor, youth service official or religious leader) with solid knowledge of your activities",
+        "Two additional letters of recommendation; no family member may write any of the three letters, and the references must submit them through the online system",
+        "Parental consent if you will be under 16 on the April 15 deadline",
+        "Optional: up to five supplemental materials or links"
+      ],
+      "howToApply": [
+        "Complete the pre-application (Step 1) by March 15, 5 PM Mountain Time",
+        "Within 10 days you are told by email whether you are eligible to proceed",
+        "If eligible, complete the full online application (Step 2), including all three letters, by April 15, 5 PM Mountain Time",
+        "All applicants are emailed in early September about whether they were chosen"
+      ],
+      "prepare": [
+        "The prize does not accept nominations - the student applies, and an adult can offer to be the Lead Reference",
+        "Line up three non-family references early, because they must upload their own letters before the April 15 deadline and incomplete applications are not considered"
+      ],
+      "opens": "Not confirmed for 2027. In the 2026 cycle the pre-application link was available from January 7, 2026.",
+      "deadline": "Pre-application: March 15, 5 PM Mountain Time. Full application: April 15, 5 PM Mountain Time (stated as the deadline each year).",
+      "cycle": "2027",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "New since the 2026 awards cycle: a two-step process with a pre-application that closes a month before the full application. The opening date shown (January 7) is for 2026; the site had not posted 2027 dates as of 2026-10-13. The contents of an application are treated as public information once submitted. The prize may go to a service project rather than college costs.",
+      "sources": [
+        {
+          "label": "Apply",
+          "url": "https://barronprize.org/apply/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Beginning with our 2026 awards cycle, the Barron Prize has moved to a two-step application process.",
+            "Applicant must be between the ages of 8 and 18 (not yet age 19) on our annual application deadline of April 15.",
+            "Applicant must be a permanent, legal resident of the U.S. or Canada with a social security number or valid tax i.d. number.",
+            "Applicant must be currently residing in the 50 U.S. states, District of Columbia, or Canada.",
+            "Applicant has organized and led an extraordinary service activity that is clearly benefitting other people or the planet.",
+            "The service activity must have been initiated primarily by the applicant and cannot have been done solely to complete an assignment for school or work.",
+            "Applicant is currently working on his/her inspiring service project or has done so within the past 12 months.",
+            "No more than two co-applicants may apply together (and if selected as a winner, co-applicants share one award).",
+            "Winners each receive $10,000 to be applied to their higher education or to their service project.",
+            "Each winner receives a beautiful personalized plaque and recognition certificate.",
+            "Pre-Applications must be completed and submitted online by our deadline of 5:00 PM MT on March 15 each year.",
+            "Pre-applicants will be notified via email within 10 days of submitting the Step 1 pre-application form regarding their eligibility to proceed to Step 2 of the application process",
+            "Full Applications must be completed and submitted online by our deadline of 5:00 PM MT on April 15 each year, when the system will automatically close.",
+            "Parental consent is required for applicants who are not yet 16 years of age or older.",
+            "Applications must include a letter from the Lead Reference.",
+            "Examples of Lead References include teachers, librarians, school counselors, youth service officials, and religious leaders.",
+            "Applications must also include two additional letters of recommendation.",
+            "cannot act as a Lead Reference nor write the other two required letters of recommendation",
+            "Letters of recommendation must be submitted by references using our online system.",
+            "Incomplete applications will not be considered.",
+            "Contents of the application are considered public information once submitted and should not include private or privileged information.",
+            "Each year, the Barron Prize honors 25 outstanding young leaders ages 8 to 18 who have made a significant positive difference to people and the environment.",
+            "This can include research projects that are already helping",
+            "Please read these requirements carefully before you begin the application process."
+          ]
+        },
+        {
+          "label": "Frequently Asked Questions",
+          "url": "https://barronprize.org/faqs/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The pre-application link is available from January 7 – March 15, 2026",
+            "Step 1 (pre-application): March 15, 5 pm Mountain Time.",
+            "Step 2 (full application): April 15, 5 pm Mountain Time.",
+            "Please include in the Project Summary and Project Essay (first paragraph) that you are co-applying",
+            "Residents of U.S. territories are not eligible to apply",
+            "You can upload up to five additional materials (or provide up to five links) that provide further information about your project.",
+            "We will email all applicants in early September as to whether or not they were chosen as winners this year.",
+            "We do not accept nominations, but you can direct the student to our application and offer to serve as their Lead Reference."
+          ]
+        }
+      ]
+    },
+    "ayn-rand-institute-essay-contests": {
+      "prize": "Up to $25,000",
+      "task": "Essay",
+      "closes": null,
+      "deadlineShort": "Not posted yet",
+      "tagline": "Read one of Ayn Rand's novels and write an essay about it.",
+      "name": "Ayn Rand Institute Essay Contests (Anthem, The Fountainhead, Atlas Shrugged)",
+      "runBy": "Ayn Rand Institute",
+      "homepage": "https://aynrand.org/students/essay-contests/",
+      "kind": "competition",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "Up to $25,000 in scholarship prizes. Prize amounts for each contest: Not confirmed.",
+      "eligibility": [
+        "Anthem contest: all middle and high school students worldwide, ages 13 and older",
+        "The Fountainhead contest: all middle and high school students worldwide, ages 13 and older",
+        "Atlas Shrugged contest: all high school, college, and graduate students worldwide",
+        "All participants must be enrolled in school during the contest period"
+      ],
+      "whatYouSubmit": [
+        "An original essay responding to each of the chosen contest's prompts, about the Ayn Rand novel for that contest",
+        "Essay prompts and required length: Not confirmed (loaded by JavaScript on the sponsor's site)"
+      ],
+      "howToApply": [
+        "Select the contest that matches your grade level and the novel you want to write about",
+        "Read the novel",
+        "Create an account and submit your application",
+        "Write and submit an essay for each of the contest's prompts before the contest deadline"
+      ],
+      "prepare": [
+        "You must read the novel for your contest (Anthem, The Fountainhead or Atlas Shrugged) before writing"
+      ],
+      "opens": "Not confirmed",
+      "deadline": "Not confirmed",
+      "cycle": "Not confirmed",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The contest site is a JavaScript app: the list of current contests, their deadlines, prompts, word limits and prize tables do not appear in the downloadable page text, and most FAQ answers are collapsed. Only the facts above could be quoted. The eligibility wording now includes middle school students for Anthem and The Fountainhead and graduate students for Atlas Shrugged, and the contest now asks for an essay per prompt rather than one essay. A person should open the page in a browser to fill in deadlines, lengths and prizes.",
+      "sources": [
+        {
+          "label": "Ayn Rand Institute Essay Contests",
+          "url": "https://aynrand.org/students/essay-contests/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Win up to $25,000 in scholarship prizes by writing about one of Ayn Rand's classic novels.",
+            "The Anthem contest is open to all middle & high school students worldwide, ages 13 and older.",
+            "The Fountainhead contest is open to all middle & high school students worldwide, ages 13 and older.",
+            "The Atlas Shrugged contest is open to all high school, college, and graduate students worldwide.",
+            "All participants must be enrolled in school during the contest period.",
+            "Choose the contest that matches your grade level and the Ayn Rand novel you want to write about.",
+            "Read the novel carefully and take notes on themes, characters, and passages that stand out to you.",
+            "Create an account and submit your application.",
+            "Write an original essay responding to each of the contest's prompts and submit each essay before the contest deadline."
+          ]
+        }
+      ]
+    },
+    "scholastic-art-and-writing-awards": {
+      "prize": "Up to $12,500",
+      "task": "Art or writing",
+      "closes": null,
+      "deadlineShort": "Dec 1 to Jan 4, by region",
+      "tagline": "Send in art or writing you've made, in any of 20+ categories, with no set prompt. It costs $15 an entry, or nothing if you can't afford it.",
+      "name": "Scholastic Art & Writing Awards",
+      "runBy": "Alliance for Young Artists & Writers",
+      "homepage": "https://www.artandwriting.org/",
+      "kind": "competition",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "Regional awards: Gold Key, Silver Key, Honorable Mention, and American Visions / American Voices Nominee. Gold Key works advance to national judging for National Medals. Scholarships: sixteen $12,500 Gold Medal Portfolio scholarships and $2,000 for Silver Medal Portfolios (graduating seniors only); Best-in-Grade $500; American Voices & Visions $500; Herblock Award for Editorial Cartoon $2,000; New York Life Award $2,500.",
+      "eligibility": [
+        "A teen in grades 7-12, age 13 and up",
+        "Residing in the United States, U.S. territories or military bases, or Canada (excluding Quebec)",
+        "Work must be original; a work whose final product is AI-generated is ineligible",
+        "Works cannot be entered as a group collaboration",
+        "Portfolio entries (and portfolio scholarships) are only for students in grade 12"
+      ],
+      "whatYouSubmit": [
+        "Art or writing uploaded to the online portal in one of more than twenty categories; there are no pre-defined prompts",
+        "An account with your name, date of birth, grade, school, email, phone number, and a parent/guardian name and email",
+        "An entry fee or a fee waiver for each entry",
+        "Seniors' portfolio: six works from one or several categories (art portfolios only art, writing portfolios only writing), plus personal statements",
+        "For sponsored scholarships: tick the scholarship in the entry and add a personal statement of at least 50 words",
+        "A statement of whether and how you used AI technologies"
+      ],
+      "howToApply": [
+        "Create an account at portal.artandwriting.org; you are assigned to a regional program by your school zip code (home zip code if homeschooled or in a virtual school)",
+        "Pick a category and upload your work; you can credit one educator per work",
+        "Pay the entry fee or use a fee waiver, before your region's deadline",
+        "Regional judging: results on Regional Announcement Day, January 27, 2027",
+        "Gold Key works automatically advance to national judging; results on National Announcement Day, March 31, 2027",
+        "Gold Medalists are invited to the National Ceremony at Carnegie Hall in New York City (National Awards Week June 8-11, 2027)"
+      ],
+      "prepare": [
+        "Find your own region's deadline - art and writing deadlines can differ, and late entries are not accepted",
+        "Enter early: the portal is slowest in the last 24 hours before major regional deadlines",
+        "Document your creative process in case the originality of the work is questioned",
+        "If your school is not on the portal's list, request it early; adding a school takes around five business days"
+      ],
+      "opens": "October 1, 2026",
+      "deadline": "Varies by region. The first regional entry deadline is December 1, 2026; some are as late as January 4, 2027.",
+      "cycle": "2026-27 (the 2027 Awards)",
+      "fee": "$15 per individual entry and $40 per portfolio entry, as of October 1, 2026. Fee waivers are available in all regions for teens who cannot afford the fee; you certify your need when entering and no proof is required in the portal, though some regional affiliates may ask for more information.",
+      "notes": "This is the only program in this batch with an entry fee, and the fee is charged per work, so several entries add up. The FAQ dates the $15/$40 amounts 'As of October 1, 2026', which reads as a recent change. The school or educator can pay on the student's behalf. Grades 7-8 are also eligible. Per-category rules (word limits, file formats) are on a separate categories page and were not extracted.",
+      "sources": [
+        {
+          "label": "Frequently Asked Questions",
+          "url": "https://www.artandwriting.org/frequently-asked-questions/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "As of October 1, 2026, entry fees are $15 for an individual entry and $40 for a portfolio entry.",
+            "Entry fees can be paid by the teen and their family or their educator/school.",
+            "Fee waivers are available for individual teens/families who cannot afford the entry fee, to ensure those teens are able to participate in the Scholastic Awards.",
+            "You do not need to provide any proof of financial need at this step.",
+            "To participate in the Awards, you must be a teen in grades 7–12, age 13 and up, and residing in the United States, U.S. territories or military bases, or Canada (excluding Quebec).",
+            "Complete payment or use a fee waiver.",
+            "Parent/Guardian Name and Email",
+            "There are no pre-defined prompts.",
+            "Entry deadlines range from December to January and vary by region.",
+            "The Scholastic Awards do not permit and will deem ineligible any entered work for which the final product is itself AI-generated.",
+            "As part of the entry process, you will be asked to indicate whether and how you've used AI-technologies during the creation of your work.",
+            "It is highly encouraged that all artists and writers document their creative process.",
+            "Teen accounts are assigned to a regional program based on their school zip code.",
+            "Our team will review your request, which will take around five business days to complete.",
+            "We experience extremely high traffic in the final 24 hours leading up to major regional deadlines.",
+            "We do not accept entries after the deadline has passed.",
+            "Works cannot be entered as a group collaboration.",
+            "Gold Key, Silver Key, Honorable Mention, American Visions Nominee, and American Voices Nominee.",
+            "Gold Key works automatically advance to national judging.",
+            "Gold Medalists will be invited to the National Ceremony in New York City at Carnegie Hall in June.",
+            "Portfolio scholarships are for graduating seniors only.",
+            "The Portfolio category is only available to participants in grade 12.",
+            "Portfolio entries consist of six works that can come from one category or any combination of multiple categories.",
+            "Art portfolios may only contain works from art categories, and writing portfolios are limited to writing categories.",
+            "which awards sixteen $12,500 Gold Medal Portfolio scholarships (eight writing and eight art)",
+            "Additional $2,000 scholarships are given to students earning Silver Medal Portfolios.",
+            "The committee will review the personal statements that were submitted in addition to the six works.",
+            "enter a personal statement on why they are applying (50 words minimum)",
+            "one educator per work",
+            "Teens who are homeschooled or attend a virtual school are assigned to a regional program based on their home zip code."
+          ]
+        },
+        {
+          "label": "How to Enter",
+          "url": "https://www.artandwriting.org/awards/how-to-enter/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Entry fees are $15 per individual entry and $40 per portfolio.",
+            "Portfolio entries are only open to current seniors.",
+            "Across all regions, the Scholastic Awards offer fee waivers for teens who cannot afford the entry fee.",
+            "You are not required to provide proof of financial need within the Portal.",
+            "Some Regional Affiliates may request more information when using a fee waiver.",
+            "The Scholastic Awards accept work in more than twenty categories.",
+            "The Scholastic Awards open for entries in the fall.",
+            "Deadlines are determined by region and begin in December."
+          ]
+        },
+        {
+          "label": "Calendar",
+          "url": "https://www.artandwriting.org/awards/how-to-enter/calendar/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "October 1, 2026: The 2027 Scholastic Art & Writing Awards open for entries.",
+            "December 1, 2026: The first regional entry deadline.",
+            "Some are as late as January 4, 2027.",
+            "January 27, 2027: Regional Announcement Day!",
+            "March 31, 2027: National Announcement Day!",
+            "June 8–June 11, 2027: National Awards Week in New York City."
+          ]
+        },
+        {
+          "label": "Scholarships",
+          "url": "https://www.artandwriting.org/scholarships/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "High school seniors submitting a portfolio of six works are eligible for scholarships of up to $12,500.",
+            "Works selected as juror favorites from each grade will receive $500 scholarships.",
+            "A selection of works representing each region of the Awards will receive $500 each.",
+            "Artworks on current events are eligible for $2,000 scholarships.",
+            "Works about personal grief, loss, and bereavement are eligible for $2,500 scholarships/travel stipends."
+          ]
+        }
+      ]
+    },
+    "united-states-senate-youth-program": {
+      "prize": "$12,500",
+      "task": "State application",
+      "closes": null,
+      "deadlineShort": "Set by your state",
+      "tagline": "Hold an elected or appointed leadership role at school? 104 students win a scholarship and a paid-for week in Washington, D.C.",
+      "name": "United States Senate Youth Program (USSYP)",
+      "runBy": "United States Senate; funded by The Hearst Foundations",
+      "homepage": "https://ussenateyouth.org/",
+      "kind": "program",
+      "grades": [
+        11,
+        12
+      ],
+      "award": "A $12,500 undergraduate college scholarship for each of the 104 delegates, plus Washington Week in Washington, D.C. (March 6-13, 2027), with transportation, hotel and meals provided by The Hearst Foundations.",
+      "eligibility": [
+        "High school junior or senior who has not previously been a delegate to Washington Week or received a USSYP scholarship",
+        "Must hold a qualifying elected or appointed leadership position for the entire 2026-2027 academic year - for example student body or class president, vice president, secretary or treasurer; Student Council representative; or a National Honor Society officer",
+        "Positions that do not qualify include Boys/Girls State or Nation, membership (not office) in the National Honor Society, Scouts or sports teams, founder of a self-created group, and Mock Trial, Debate or Model UN roles",
+        "Legal permanent resident or citizen of the United States at the time of application",
+        "Living in and enrolled for the entire academic year in a public or independent high school in the state where at least one parent or guardian currently resides",
+        "Home-educated students must be approved by their state department of education to apply",
+        "A student who graduates high school at the close of the Fall 2026 semester / quarter is not eligible",
+        "Must attend the entire Washington Week to receive the scholarship"
+      ],
+      "whatYouSubmit": [
+        "Your state's USSYP application (each state has its own; the Senate and The Hearst Foundations do not provide it)",
+        "In many states, a public affairs, government and history exam; states may also ask for additional essays and/or personal interviews",
+        "If selected: a statement of participation including a code of conduct agreement signed by the student and parents/legal guardians"
+      ],
+      "howToApply": [
+        "Get the application through your high school principal, school counselor or social studies teacher, or ask your state selection contact directly",
+        "Apply by your state's deadline; teachers and principals nominate qualified students starting in early fall",
+        "State-level education officials run the selection (the process varies by state)",
+        "The chief state school officer makes the final selection of two delegates and two alternates and submits the names by December 1, 2026",
+        "Delegates attend Washington Week, March 6-13, 2027"
+      ],
+      "prepare": [
+        "You must already hold a qualifying leadership position for the whole school year - check the list before applying",
+        "For the exam, the sponsor advises studying the Constitution including the history of its drafting and all of the amendments, landmark U.S. Supreme Court cases, American political history and foreign policy, and current elected and appointed officials",
+        "Not all states use the exam, so check your state selection contact's page",
+        "Parents/guardians must get the delegate to the nearest commercial airport or train station at their own expense"
+      ],
+      "opens": "Early fall (varies by state)",
+      "deadline": "Varies by state. The national deadline for states to submit their delegate selections is December 1, 2026, so state deadlines fall before that.",
+      "cycle": "2026-27",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Student deadlines are on each state's page (reached from the state list on the home page) and were not collected. The home page still carries an old COVID-era notice about the 2021 online program and a $10,000 scholarship; the current amount stated elsewhere on the site is $12,500.",
+      "sources": [
+        {
+          "label": "How to Apply / How to Qualify",
+          "url": "https://ussenateyouth.org/selection_process_qualify/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Rising high school juniors and seniors may obtain a USSYP application through their high school principals, school counselors and social studies teachers",
+            "All student delegates to the United States Senate Youth Program are selected by state-level education officials",
+            "Any high school junior or senior student is eligible for the program provided he or she has not previously been a delegate to Washington Week and has not received a USSYP scholarship.",
+            "Each student must be a legal permanent resident or citizen of the United States at the time of application.",
+            "in which at least one of their parents or guardians currently resides",
+            "Home-educated students must be approved by their state department of education to apply.",
+            "A student who graduates high school at the close of the Fall 2026 semester / quarter is not eligible to apply for the program.",
+            "Attendance during the entire Washington Week program is required to receive the financial scholarship.",
+            "Student Body president, vice president, secretary or treasurer",
+            "Class president, vice president, secretary or treasurer",
+            "Student Council representative",
+            "Attendance or officer position at Boys/Girls Nation or State, or Junior State conferences",
+            "Founder or chairperson of a self-created group",
+            "A participant, captain or officer in Mock Trial, Debate Team, Model UN or other academic club",
+            "A National Honor Society officer",
+            "Students must be living in and enrolled for the entire academic year in a public or independent high school",
+            "Member of the National Honor Society",
+            "Member or leader of the Boy Scouts, Girl Scouts or a sports team",
+            "during the entire 2026-2027 academic year"
+          ]
+        },
+        {
+          "label": "Overview",
+          "url": "https://ussenateyouth.org/about_overview/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The 104 student delegates also receive a $12,500 undergraduate college scholarship to the college or university of their choice with encouragement to continue coursework in government and history.",
+            "The selection process begins when public and private high school teachers and principals nominate qualified students starting in early fall.",
+            "Selection processes vary by state, but many states administer a comprehensive public affairs, government and history test prepared annually for the program by a college professor of political science.",
+            "States may also ask for additional essays and/or personal interviews.",
+            "The chief state school officer in each state makes the final selection of two delegates and two alternates by December 1, 2026."
+          ]
+        },
+        {
+          "label": "Home page",
+          "url": "https://ussenateyouth.org/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The national deadline for all states to submit their delegate selections is December 1, 2026.",
+            "hotel and meal expenses will be provided by",
+            "In addition, each delegate will also be awarded a $12,500 college scholarship for undergraduate studies, with encouragement to pursue coursework in history and political science.",
+            "To apply, please contact your state selection contact.",
+            "The 65th annual United States Senate Youth Program Washington Week will be in Washington, D.C. March 6 – 13, 2027."
+          ]
+        },
+        {
+          "label": "Official Rules",
+          "url": "https://ussenateyouth.org/selection_process_rules/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "the program requires each delegate to submit a statement of participation including a code of conduct agreement to be signed by students and parents/legal guardians",
+            "It will be the responsibility of the parents/legal guardians to transport (at their expense) each delegate to the nearest commercial airport or train station",
+            "ARRIVAL D.C.: Saturday, March 6, between",
+            "DEPARTURE D.C.: Saturday, March 13, between"
+          ]
+        },
+        {
+          "label": "Annual Public Affairs Exam",
+          "url": "https://ussenateyouth.org/selection-process/annual-public-affairs-exam/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Not all states utilize the exam, and some states utilize only certain sections.",
+            "To prepare for the examination, students are advised to study the Constitution including the history of its drafting and all of the amendments.",
+            "Students should have knowledge of landmark U.S. Supreme Court cases throughout the nation's history and should review general knowledge about American political history and foreign policy."
+          ]
+        }
+      ]
+    },
+    "coolidge-scholarship": {
+      "prize": "Full ride",
+      "task": "Essays",
+      "closes": "2026-12-01",
+      "deadlineShort": "Dec 1",
+      "tagline": "Tuition, room and board at any accredited U.S. college, for juniors. The essays include questions about Calvin Coolidge's autobiography.",
+      "name": "Coolidge Scholarship",
+      "runBy": "Calvin Coolidge Presidential Fund (supporting organization of the Calvin Coolidge Presidential Foundation)",
+      "homepage": "https://coolidgescholars.org/",
+      "kind": "scholarship",
+      "grades": [
+        11
+      ],
+      "award": "Full ride: full tuition, room and board, and required fees for four years of undergraduate study at any accredited U.S. college or university, plus an annual stipend for books and supplies. Finalists who do not win are eligible for a one-time Finalist Award scholarship, and a larger group of top applicants are named Coolidge Senators.",
+      "eligibility": [
+        "Current high school juniors only (or the equivalent if home schooled), intending to enroll full-time at an accredited U.S. college or university for the first time in fall 2028",
+        "Citizen or legal permanent resident of the United States by the 2026-27 scholarship deadline (those attending high school abroad may apply)",
+        "Juniors taking some courses at a local college are eligible",
+        "Not eligible: seniors, juniors graduating early in spring 2027, and juniors planning a gap year",
+        "Cannot be the immediate family member of a current employee, trustee, or significant donor of the Coolidge Foundation or Fund"
+      ],
+      "whatYouSubmit": [
+        "The online application, including essays; the second and third essay questions require reading The Autobiography of Calvin Coolidge",
+        "Two letters of reference, each from one individual who is not a family member or a peer; each letter at most 1,200 words, uploaded by the writer",
+        "A high school transcript (an unofficial copy is accepted), with GPA and class rank information",
+        "An Honesty Statement",
+        "Number of essays and their word limits: Not confirmed (inside the application portal)"
+      ],
+      "howToApply": [
+        "Complete the online application; it is live for the 2026-27 cycle",
+        "Submit all materials, including the letters of reference, by December 1, 2026 at 5:00 PM Pacific Time",
+        "Late January 2027: all applicants learn whether they advance to the Second Assessment Round",
+        "Late January/early February 2027: the virtual Second Assessment - an additional extended-response essay and a multiple-choice and fill-in-the-blank test on President Coolidge",
+        "Spring 2027: finalists are invited to Finalist Interview Weekend in Vermont, with travel and lodging covered for the finalist and one parent",
+        "All applicants are informed of the outcome by June 1, 2027"
+      ],
+      "prepare": [
+        "Read The Autobiography of Calvin Coolidge before writing; older editions are acceptable and can be found at most libraries",
+        "Ask your two letter writers for permission before listing them; you may submit your application before their letters arrive",
+        "Academic excellence is the primary selection criterion; the secondary criteria are interest in public policy, appreciation of Coolidge values, humility and service",
+        "Use parenthetical citations in essays rather than a bibliography"
+      ],
+      "opens": "Fall 2026 (the application is live)",
+      "deadline": "December 1, 2026 at 5:00 PM Pacific Time",
+      "cycle": "2026-27",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Juniors only - seniors cannot apply, with no exceptions. The process now has a proctored Second Assessment Round (essay plus a test on Coolidge) between the application and the finalist interviews. Essay prompts and word limits are inside the application portal and were not readable. The number of scholarships is set each year and is not stated.",
+      "sources": [
+        {
+          "label": "Eligibility",
+          "url": "https://coolidgescholars.org/eligibility/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "That is to say, students in their junior year of high school, or the equivalent if home schooled, are eligible to apply.",
+            "2026-27 Coolidge Scholarship applicants must be citizens or legal permanent residents of the United States of America by the 2026-27 scholarship deadline.",
+            "U.S. citizens or legal permanent residents currently attending high school abroad are indeed eligible to apply.",
+            "(Students who are currently high school juniors but take some courses at a local college are indeed eligible to apply for the Coolidge Scholarship.)",
+            "No, only current high school juniors are eligible to apply.",
+            "No, only high school juniors graduating in the spring of 2028 and starting college in the fall of 2028 are eligible to apply for the 2026-27 scholarship.",
+            "cannot be the immediate family member of any current employee, trustee, or significant donor"
+          ]
+        },
+        {
+          "label": "Selection Timeline",
+          "url": "https://coolidgescholars.org/selection-timeline/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The Coolidge Scholarship application is now live and accepting applications for the 2026-27 scholarship cycle.",
+            "December 1, 2026 at 5:00 PM Pacific Time",
+            "All application materials, including letters of reference must be submitted by the deadline.",
+            "All applicants will be notified whether they have advanced to the",
+            "an additional extended-response essay related to the essay topics in the Scholarship application",
+            "a multiple-choice and fill-in-the-blank assessment covering President Coolidge",
+            "Travel and lodging costs will be covered for finalists and one parent to attend Finalist Weekend.",
+            "All applicants will be informed of the outcome of their application by June 1, 2027."
+          ]
+        },
+        {
+          "label": "FAQ",
+          "url": "https://coolidgescholars.org/about/faq/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "It covers a student's full tuition, room and board, and required fees for four years of undergraduate study.",
+            "The Coolidge Scholarship also provides an annual stipend for books and supplies.",
+            "The Coolidge Scholarship may be used at any accredited American college or university where the student gains admittance.",
+            "The number of new Coolidge Scholarships is determined annually.",
+            "Following the initial review of applications, several hundred applicants will be invited to complete a virtual, proctored Second Assessment.",
+            "are eligible to receive a one-time Finalist Award scholarship",
+            "The second and third essay questions ask me to read",
+            "Older editions of the Autobiography are also acceptable for you to read, and can be found at most libraries.",
+            "Please use parenthetical citations within the essays rather than creating a bibliography",
+            "Please note that your letters may NOT be from a member of your family or one of your peers (i.e. someone close to your own age).",
+            "Please speak with your letter writers to gain their permission before you list them in your application.",
+            "Only two letters of reference can be submitted on behalf of an applicant.",
+            "Students can submit their applications as soon as they are ready.",
+            "Can I submit an unofficial copy of my high school transcript?",
+            "I do not have access to the most recent version of my transcript, class rank, and/or GPA until after the scholarship deadline.",
+            "a larger group of top applicants to the Scholarship are designated as",
+            "the scholarship's secondary criteria: humility, service, interest in policy, and appreciation of Coolidge values",
+            "If your \"Honesty Statement,\" \"Letters of Reference\" and/or \"Academic Information\" form is tagged as"
+          ]
+        },
+        {
+          "label": "Recommendation Guidelines",
+          "url": "https://coolidgescholars.org/letter-of-recommendation/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Your letter should not exceed a maximum of 1,200 words.",
+            "Co-written letters or letters signed by multiple individuals are not allowed."
+          ]
+        },
+        {
+          "label": "Selection Criteria",
+          "url": "https://coolidgescholars.org/selection-criteria/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Above all, Coolidge Scholars must possess a distinguished academic record.",
+            "Competitive candidates will have pursued and succeeded in the most rigorous course of study available to them."
+          ]
+        }
+      ]
+    }
+  }
+}
