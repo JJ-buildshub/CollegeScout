@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Compass, GraduationCap, LayoutList, Menu, ScanSearch, X } from "lucide-react";
+import { Award, Compass, GraduationCap, LayoutList, Menu, ScanSearch, X } from "lucide-react";
 import clsx from "clsx";
 import { getCollegeById } from "@/lib/colleges";
 import { useProfile } from "@/lib/profile";
@@ -56,6 +56,7 @@ export default function NavBar() {
       counter: `${planCount} task${planCount === 1 ? "" : "s"}`,
       live: planCount > 0,
     },
+    { href: "/scholarships", label: "Scholarships", icon: Award, counter: null as string | null, live: false },
   ];
 
   return (

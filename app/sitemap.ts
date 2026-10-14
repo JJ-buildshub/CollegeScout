@@ -3,12 +3,12 @@ import { colleges } from "@/lib/colleges";
 import { SITE_URL } from "@/lib/site";
 
 /**
- * 336 college profiles plus the five static routes. Without this, the profiles
+ * 336 college profiles plus the six static routes. Without this, the profiles
  * are only reachable by crawling the directory's client-filtered grid, which is
  * the bulk of what the site has to offer.
  */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/directory", "/matcher", "/checklist", "/about-data"].map((path) => ({
+  const staticRoutes = ["", "/directory", "/matcher", "/checklist", "/scholarships", "/about-data"].map((path) => ({
     url: `${SITE_URL}${path}`,
     changeFrequency: "weekly" as const,
     priority: path === "" ? 1 : 0.8,
