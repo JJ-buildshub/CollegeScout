@@ -32,6 +32,7 @@ jobs:
             ["profile",      "https://collegescout.app/directory/stanford-university",    3000],
             ["my fit",       "https://collegescout.app/matcher",                          1500],
             ["my plan",      "https://collegescout.app/checklist",                         500],
+            ["scholarships", "https://collegescout.app/scholarships",                     5000],
             ["about",        "https://collegescout.app/about-data",                        800],
             ["sitemap",      "https://collegescout.app/sitemap.xml",                      1000],
             ["www redirect", "https://www.collegescout.app/",                             2000],
@@ -49,7 +50,7 @@ jobs:
               if (body.length < minChars) return `${name}: only ${body.length} bytes, expected at least ${minChars}`;
               if (name === "sitemap") {
                 const n = body.split("<url>").length - 1;
-                return n < 300 ? `sitemap only lists ${n} URLs, expected about 341` : null;
+                return n < 300 ? `sitemap only lists ${n} URLs, expected about 342` : null;
               }
               if (!body.includes("CollegeScout")) return `${name}: page content missing`;
               if (name === "www redirect" && !r.url.startsWith("https://collegescout.app"))

@@ -29,6 +29,7 @@ jobs:
             ["profile",   "https://collegescout.app/directory/stanford-university",    3000],
             ["my fit",    "https://collegescout.app/matcher",                          1500],
             ["my plan",   "https://collegescout.app/checklist",                         500],
+            ["scholarships", "https://collegescout.app/scholarships",                  5000],
             ["about",     "https://collegescout.app/about-data",                        800],
             ["sitemap",   "https://collegescout.app/sitemap.xml",                      1000],
           ];
