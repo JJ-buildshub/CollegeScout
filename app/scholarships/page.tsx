@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
-import { ExternalLink, Search } from "lucide-react";
+import { ExternalLink, MapPin, Search } from "lucide-react";
 import {
   FEE_NOT_STATED,
   SCHOLARSHIP_GRADES,
@@ -128,6 +128,8 @@ function ScholarshipCard({ program, today }: { program: Scholarship; today: Date
           <Chip tone={when.tone}>{when.label}</Chip>
           {program.task && <Chip>You make: {program.task}</Chip>}
           {isFree(program) && <Chip>Free to enter</Chip>}
+          {program.local && <Chip>{program.area ?? "Through a local club"}</Chip>}
+          {program.only && <Chip tone="closed">Only for: {program.only}</Chip>}
           <Chip tone="gold">
             {program.grades.length === 4 ? "Any grade, 9th to 12th" : `${program.grades.map(ordinal).join(" and ")} grade`}
           </Chip>
@@ -183,15 +185,28 @@ function ScholarshipCard({ program, today }: { program: Scholarship; today: Date
             ))}{" "}
             &middot; we checked on {formatDate(scholarshipsChecked)}
           </p>
-          <a
-            href={program.homepage}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-full bg-navy-900 px-5 py-2.5 text-sm font-bold text-white hover:bg-navy-800"
-          >
-            Go to the official page
-            <ExternalLink className="h-4 w-4" aria-hidden="true" />
-          </a>
+          <div className="flex flex-wrap gap-2">
+            {program.findLocal && (
+              <a
+                href={program.findLocal}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-full px-5 py-2.5 text-sm font-bold text-navy-900 ring-1 ring-navy-900 hover:bg-sand-50"
+              >
+                <MapPin className="h-4 w-4" aria-hidden="true" />
+                Find one near you
+              </a>
+            )}
+            <a
+              href={program.homepage}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-full bg-navy-900 px-5 py-2.5 text-sm font-bold text-white hover:bg-navy-800"
+            >
+              Go to the official page
+              <ExternalLink className="h-4 w-4" aria-hidden="true" />
+            </a>
+          </div>
         </div>
       </div>
     </details>
@@ -203,6 +218,7 @@ export default function ScholarshipsPage() {
   const [grade, setGrade] = useState<ScholarshipGrade | null>(null);
   const [openOnly, setOpenOnly] = useState(false);
   const [query, setQuery] = useState("");
+  const [where, setWhere] = useState<"all" | "national" | "local">("all");
 
   const shown = useMemo(() => {
     // Soonest deadline first, then programs with no single date, then ones already closed.
@@ -219,9 +235,10 @@ export default function ScholarshipsPage() {
     return scholarships
       .filter(matches)
       .filter((program) => grade === null || program.grades.includes(grade))
+      .filter((program) => where === "all" || (where === "local") === Boolean(program.local))
       .filter((program) => !openOnly || !today || (daysLeft(program, today) ?? 0) >= 0)
       .sort((a, b) => rank(a) - rank(b) || a.name.localeCompare(b.name));
-  }, [grade, openOnly, query, today]);
+  }, [grade, openOnly, query, today, where]);
 
   const needle = query.trim().toLowerCase();
   const changedShown = changedPrograms.filter((program) =>
@@ -266,6 +283,36 @@ export default function ScholarshipsPage() {
             </button>
           ))}
         </div>
+        <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Filter by where it is run">
+          {(
+            [
+              ["all", "National and local"],
+              ["national", "National only"],
+              ["local", "Near you"],
+            ] as const
+          ).map(([value, label]) => (
+            <button
+              key={value}
+              type="button"
+              aria-pressed={where === value}
+              onClick={() => setWhere(value)}
+              className={clsx(
+                "rounded-full px-4 py-2 text-sm font-semibold transition-colors",
+                where === value
+                  ? "bg-gold-400 text-navy-950"
+                  : "bg-white text-slate-600 ring-1 ring-slate-200 hover:bg-slate-100 hover:text-navy-900"
+              )}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+        {where === "local" && (
+          <p className="max-w-2xl text-sm leading-relaxed text-slate-600">
+            These are handed out by a club, post or chapter in your own area, so you&apos;re only up against
+            students near you. Each one sets its own amount and deadline. You have to ask.
+          </p>
+        )}
         <div className="relative max-w-md">
           <Search
             className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"

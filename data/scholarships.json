@@ -1,13 +1,13 @@
 {
-  "note": "Scholarships and competitions a student can apply for while in high school, quoted from the sponsoring organization's own pages. Each evidence line is the page's exact wording; scripts/check-scholarships.mjs verifies them against the live pages. Fields other than evidence are our summary and say nothing the pages do not. 'Not confirmed' means we could not source it. prize, task, tagline, closes and deadlineShort are our own short wording of the sourced fields below them; closes is this cycle's deadline as an ISO date when there is a single one. changed lists well-known programs whose rules no longer match what students are commonly told; heard is our wording of the common belief and is not sourced, now is our summary of the quoted lines.",
+  "note": "Scholarships and competitions a student can apply for while in high school, quoted from the sponsoring organization's own pages. Each evidence line is the page's exact wording; scripts/check-scholarships.mjs verifies them against the live pages. Fields other than evidence are our summary and say nothing the pages do not. 'Not confirmed' means we could not source it. prize, task, tagline, closes and deadlineShort are our own short wording of the sourced fields below them; closes is this cycle's deadline as an ISO date when there is a single one. changed lists well-known programs whose rules no longer match what students are commonly told; heard is our wording of the common belief and is not sourced, now is our summary of the quoted lines. only and area are also our wording: the gate most students will not pass, and where a regional program applies.",
   "checked": "2026-10-13",
   "programs": {
     "questbridge-national-college-match": {
       "prize": "Full ride",
       "task": "Application",
+      "tagline": "One free application, and a shot at a full four-year scholarship at one of 55 partner colleges. Aimed at students earning mostly A's whose families earn under about $65,000.",
       "closes": "2026-10-01",
       "deadlineShort": "Oct 1",
-      "tagline": "One free application, and a shot at a full four-year scholarship at one of 55 partner colleges. Aimed at students earning mostly A's whose families earn under about $65,000.",
       "name": "QuestBridge National College Match",
       "runBy": "QuestBridge",
       "homepage": "https://www.questbridge.org/apply-to-college/programs/national-college-match",
@@ -158,9 +158,9 @@
     "coca-cola-scholars-program": {
       "prize": "$20,000",
       "task": "Application",
+      "tagline": "Round one has no essays, no transcript and no recommendations. You enter your grades and what you do in school and your community. 150 students win.",
       "closes": "2026-09-30",
       "deadlineShort": "Sep 30",
-      "tagline": "Round one has no essays, no transcript and no recommendations. You enter your grades and what you do in school and your community. 150 students win.",
       "name": "Coca-Cola Scholars Program",
       "runBy": "Coca-Cola Scholars Foundation",
       "homepage": "https://www.coca-colascholarsfoundation.org/apply/",
@@ -243,9 +243,9 @@
     "the-gates-scholarship": {
       "prize": "Full cost of college",
       "task": "Application",
+      "tagline": "Pays whatever your other financial aid doesn't cover. For Pell-eligible seniors with a 3.3 weighted GPA or higher.",
       "closes": "2026-09-15",
       "deadlineShort": "Sep 15",
-      "tagline": "Pays whatever your other financial aid doesn't cover. For Pell-eligible seniors with a 3.3 weighted GPA or higher.",
       "name": "The Gates Scholarship",
       "runBy": "Gates Foundation (The Gates Scholarship program)",
       "homepage": "https://www.thegatesscholarship.org/scholarship",
@@ -305,9 +305,9 @@
     "jack-kent-cooke-college-scholarship": {
       "prize": "Up to $55,000 a year",
       "task": "Application",
+      "tagline": "Up to four years of funding for high-achieving seniors with financial need. Free to apply, and it runs through the Common App.",
       "closes": "2026-11-11",
       "deadlineShort": "Nov 11",
-      "tagline": "Up to four years of funding for high-achieving seniors with financial need. Free to apply, and it runs through the Common App.",
       "name": "Cooke College Scholarship Program",
       "runBy": "Jack Kent Cooke Foundation",
       "homepage": "https://www.jkcf.org/our-scholarships/college-scholarship-program/",
@@ -407,9 +407,9 @@
     "elks-most-valuable-student": {
       "prize": "Up to $30,000",
       "task": "Application",
+      "tagline": "500 seniors win every year, judged on grades, leadership and financial need. No SAT or ACT needed.",
       "closes": "2026-11-12",
       "deadlineShort": "Nov 12",
-      "tagline": "500 seniors win every year, judged on grades, leadership and financial need. No SAT or ACT needed.",
       "name": "Elks Most Valuable Student (MVS) Scholarship",
       "runBy": "Elks National Foundation",
       "homepage": "https://www.elks.org/scholars/scholarships/mvs.cfm",
@@ -508,9 +508,9 @@
     "regeneron-science-talent-search": {
       "prize": "Up to $250,000",
       "task": "Research paper",
+      "tagline": "Did your own science or math research? Write it up. The top 300 get $2,000 each, and the 40 finalists get at least $25,000 and a week in Washington, DC.",
       "closes": "2026-11-05",
       "deadlineShort": "Nov 5",
-      "tagline": "Did your own science or math research? Write it up. The top 300 get $2,000 each, and the 40 finalists get at least $25,000 and a week in Washington, DC.",
       "name": "Regeneron Science Talent Search (STS)",
       "runBy": "Society for Science",
       "homepage": "https://www.societyforscience.org/regeneron-sts/",
@@ -633,9 +633,9 @@
     "hsf-scholar-program": {
       "prize": "$500 to $5,000",
       "task": "Application",
+      "tagline": "For students of Hispanic heritage with a 3.0 GPA or higher. 10,000 are picked each year for mentoring and career support, and some also get a scholarship.",
       "closes": "2026-02-15",
       "deadlineShort": "Feb 15",
-      "tagline": "For students of Hispanic heritage with a 3.0 GPA or higher. 10,000 are picked each year for mentoring and career support, and some also get a scholarship.",
       "name": "HSF Scholar Program (high school applicants)",
       "runBy": "Hispanic Scholarship Fund",
       "homepage": "https://www.hsf.net/scholarship",
@@ -695,9 +695,9 @@
     "horatio-alger-national-scholarship": {
       "prize": "$25,000",
       "task": "Essays",
+      "tagline": "For juniors who have pushed through hard times. You tell your story. 105 students win, and it's free to apply.",
       "closes": null,
       "deadlineShort": "March 1",
-      "tagline": "For juniors who have pushed through hard times. You tell your story. 105 students win, and it's free to apply.",
       "name": "Horatio Alger National Scholarship",
       "runBy": "Horatio Alger Association of Distinguished Americans",
       "homepage": "https://horatioalger.org/scholarships-and-services/undergraduate-scholarships/",
@@ -803,9 +803,9 @@
     "vfw-voice-of-democracy": {
       "prize": "Up to $35,000",
       "task": "Audio essay",
+      "tagline": "Record an audio essay and hand it in at your local VFW post. This year's theme: “What a Veteran Taught Me About America.”",
       "closes": "2026-10-31",
       "deadlineShort": "Oct 31",
-      "tagline": "Record an audio essay and hand it in at your local VFW post. This year's theme: “What a Veteran Taught Me About America.”",
       "name": "Voice of Democracy",
       "runBy": "Veterans of Foreign Wars (VFW)",
       "homepage": "https://www.vfw.org/community/youth-and-education/youth-scholarships",
@@ -861,9 +861,9 @@
     "american-legion-oratorical-contest": {
       "prize": "Up to $25,000",
       "task": "Speech",
+      "tagline": "Give an 8 to 10 minute speech about the U.S. Constitution. You start at a local American Legion contest and can work up to nationals.",
       "closes": null,
       "deadlineShort": "Set by your state",
-      "tagline": "Give an 8 to 10 minute speech about the U.S. Constitution. You start at a local American Legion contest and can work up to nationals.",
       "name": "American Legion National Oratorical Contest",
       "runBy": "The American Legion",
       "homepage": "https://www.legion.org/oratorical",
@@ -975,9 +975,9 @@
     "regeneron-isef": {
       "prize": "Up to $100,000",
       "task": "Science project",
+      "tagline": "Take a research project to a local science fair. Win there and you can qualify for ISEF in Los Angeles in May.",
       "closes": null,
       "deadlineShort": "Set by your local fair",
-      "tagline": "Take a research project to a local science fair. Win there and you can qualify for ISEF in Los Angeles in May.",
       "name": "Regeneron International Science and Engineering Fair (ISEF)",
       "runBy": "Society for Science",
       "homepage": "https://www.societyforscience.org/isef/",
@@ -1080,9 +1080,9 @@
     "breakthrough-junior-challenge": {
       "prize": "$250,000",
       "task": "2-minute video",
+      "tagline": "Make a video, two minutes or less, that explains a big idea in physics, life sciences or math. If you win, your teacher gets $50,000 and your school gets a science lab.",
       "closes": "2026-09-15",
       "deadlineShort": "Sep 15",
-      "tagline": "Make a video, two minutes or less, that explains a big idea in physics, life sciences or math. If you win, your teacher gets $50,000 and your school gets a science lab.",
       "name": "Breakthrough Junior Challenge",
       "runBy": "Breakthrough Prize Foundation (founded by Julia and Yuri Milner)",
       "homepage": "https://breakthroughjuniorchallenge.org/",
@@ -1212,9 +1212,9 @@
     "davidson-fellows-scholarship": {
       "prize": "Up to $100,000",
       "task": "Major project",
+      "tagline": "Built, written or discovered something serious? This is for students 18 or younger with a finished project at close to college-graduate level.",
       "closes": null,
       "deadlineShort": "Not posted yet",
-      "tagline": "Built, written or discovered something serious? This is for students 18 or younger with a finished project at close to college-graduate level.",
       "name": "Davidson Fellows Scholarship",
       "runBy": "Davidson Institute",
       "homepage": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/",
@@ -1336,9 +1336,9 @@
     "gloria-barron-prize-for-young-heroes": {
       "prize": "$10,000",
       "task": "Service project",
+      "tagline": "Started a project that helps people or the planet? 25 young leaders win each year. It has to be your idea, not a school assignment.",
       "closes": null,
       "deadlineShort": "March 15 (first step)",
-      "tagline": "Started a project that helps people or the planet? 25 young leaders win each year. It has to be your idea, not a school assignment.",
       "name": "Gloria Barron Prize for Young Heroes",
       "runBy": "Young Heroes Project",
       "homepage": "https://barronprize.org/",
@@ -1433,9 +1433,9 @@
     "ayn-rand-institute-essay-contests": {
       "prize": "Up to $25,000",
       "task": "Essay",
+      "tagline": "Read one of Ayn Rand's novels and write an essay about it.",
       "closes": null,
       "deadlineShort": "Not posted yet",
-      "tagline": "Read one of Ayn Rand's novels and write an essay about it.",
       "name": "Ayn Rand Institute Essay Contests (Anthem, The Fountainhead, Atlas Shrugged)",
       "runBy": "Ayn Rand Institute",
       "homepage": "https://aynrand.org/students/essay-contests/",
@@ -1493,9 +1493,9 @@
     "scholastic-art-and-writing-awards": {
       "prize": "Up to $12,500",
       "task": "Art or writing",
+      "tagline": "Send in art or writing you've made, in any of 20+ categories, with no set prompt. It costs $15 an entry, or nothing if you can't afford it.",
       "closes": null,
       "deadlineShort": "Dec 1 to Jan 4, by region",
-      "tagline": "Send in art or writing you've made, in any of 20+ categories, with no set prompt. It costs $15 an entry, or nothing if you can't afford it.",
       "name": "Scholastic Art & Writing Awards",
       "runBy": "Alliance for Young Artists & Writers",
       "homepage": "https://www.artandwriting.org/",
@@ -1624,9 +1624,9 @@
     "united-states-senate-youth-program": {
       "prize": "$12,500",
       "task": "State application",
+      "tagline": "Hold an elected or appointed leadership role at school? 104 students win a scholarship and a paid-for week in Washington, D.C.",
       "closes": null,
       "deadlineShort": "Set by your state",
-      "tagline": "Hold an elected or appointed leadership role at school? 104 students win a scholarship and a paid-for week in Washington, D.C.",
       "name": "United States Senate Youth Program (USSYP)",
       "runBy": "United States Senate; funded by The Hearst Foundations",
       "homepage": "https://ussenateyouth.org/",
@@ -1746,9 +1746,9 @@
     "coolidge-scholarship": {
       "prize": "Full ride",
       "task": "Essays",
+      "tagline": "Tuition, room and board at any accredited U.S. college, for juniors. The essays include questions about Calvin Coolidge's autobiography.",
       "closes": "2026-12-01",
       "deadlineShort": "Dec 1",
-      "tagline": "Tuition, room and board at any accredited U.S. college, for juniors. The essays include questions about Calvin Coolidge's autobiography.",
       "name": "Coolidge Scholarship",
       "runBy": "Calvin Coolidge Presidential Fund (supporting organization of the Calvin Coolidge Presidential Foundation)",
       "homepage": "https://coolidgescholars.org/",
@@ -1867,9 +1867,9 @@
     },
     "national-merit-scholarship-program": {
       "task": "PSAT test",
+      "tagline": "You enter just by taking the PSAT/NMSQT, the October test most students take in 11th grade. There's no application to start. Ask your counselor in September how to sign up.",
       "closes": null,
       "deadlineShort": "PSAT in October",
-      "tagline": "You enter just by taking the PSAT/NMSQT, the October test most students take in 11th grade. There's no application to start. Ask your counselor in September how to sign up.",
       "name": "National Merit Scholarship Program",
       "runBy": "National Merit Scholarship Corporation (NMSC); the qualifying test, the PSAT/NMSQT, is cosponsored by College Board",
       "homepage": "https://www.nationalmerit.org",
@@ -1940,9 +1940,9 @@
     "questbridge-college-prep-scholars": {
       "prize": "College prep + awards",
       "task": "Application",
+      "tagline": "QuestBridge's free program for juniors. You get college application guidance and a conference invite, and can be picked for a $1,000 award or a summer program scholarship.",
       "closes": null,
       "deadlineShort": "Late March (2027 date not posted)",
-      "tagline": "QuestBridge's free program for juniors. You get college application guidance and a conference invite, and can be picked for a $1,000 award or a summer program scholarship.",
       "name": "QuestBridge College Prep Scholars Program",
       "runBy": "QuestBridge",
       "homepage": "https://www.questbridge.org/apply-to-college/programs/college-prep-scholars-program",
@@ -2049,9 +2049,9 @@
     },
     "ncwit-aspirations-in-computing-high-school-award": {
       "task": "Application",
+      "tagline": "For 9th to 12th graders who are into tech and computing. You apply online about your computing experience and leadership.",
       "closes": "2026-10-27",
       "deadlineShort": "Oct 27",
-      "tagline": "For 9th to 12th graders who are into tech and computing. You apply online about your computing experience and leadership.",
       "name": "NCWIT Aspirations in Computing (AiC) High School Award",
       "runBy": "National Center for Women & Information Technology (NCWIT)",
       "homepage": "https://www.aspirations.org/award-programs/aic-high-school-award",
@@ -2133,9 +2133,9 @@
     "cameron-impact-scholarship": {
       "prize": "Full tuition",
       "task": "Application",
+      "tagline": "Four years of full tuition, fees and books at any accredited U.S. college. You apply in 11th grade, and it closes early once 3,000 applications are in. Needs a 3.7 unweighted GPA.",
       "closes": "2027-05-01",
       "deadlineShort": "May 1",
-      "tagline": "Four years of full tuition, fees and books at any accredited U.S. college. You apply in 11th grade, and it closes early once 3,000 applications are in. Needs a 3.7 unweighted GPA.",
       "name": "Cameron Impact Scholarship",
       "runBy": "Bryan Cameron Education Foundation",
       "homepage": "https://www.bryancameroneducationfoundation.org/scholarship",
@@ -2222,9 +2222,9 @@
     "afsa-national-high-school-essay-contest": {
       "prize": "$2,500 + trips",
       "task": "Essay",
+      "tagline": "Write a 1,000 to 1,500 word essay on the year's topic. The winner also gets a trip to Washington, D.C. and a Semester at Sea voyage.",
       "closes": null,
       "deadlineShort": "March 1 (last posted)",
-      "tagline": "Write a 1,000 to 1,500 word essay on the year's topic. The winner also gets a trip to Washington, D.C. and a Semester at Sea voyage.",
       "name": "AFSA National High School Essay Contest",
       "runBy": "American Foreign Service Association (AFSA)",
       "homepage": "https://afsa.org/essay-contest",
@@ -2308,9 +2308,9 @@
     "junior-science-and-humanities-symposium": {
       "prize": "Up to $12,000",
       "task": "Research presentation",
+      "tagline": "Present your own STEM research at a regional symposium. Top finishers win tuition scholarships and a paid trip to nationals. It costs you nothing to register.",
       "closes": null,
       "deadlineShort": "Set by your region",
-      "tagline": "Present your own STEM research at a regional symposium. Top finishers win tuition scholarships and a paid trip to nationals. It costs you nothing to register.",
       "name": "Junior Science and Humanities Symposium (JSHS)",
       "runBy": "U.S. Department of War (Office of the Secretary and the Departments of the Army, Navy and Air Force), administered by the National Science Teaching Association (NSTA)",
       "homepage": "https://www.jshs.org/",
@@ -2405,9 +2405,9 @@
     "optimist-international-oratorical-contest": {
       "prize": "Up to $2,500",
       "task": "Speech",
+      "tagline": "Give a speech on this year's topic through a local Optimist Club. District winners get scholarships and can move on to regionals.",
       "closes": null,
       "deadlineShort": "Set by your local club",
-      "tagline": "Give a speech on this year's topic through a local Optimist Club. District winners get scholarships and can move on to regionals.",
       "name": "Optimist International Oratorical Contest",
       "runBy": "Optimist International (scholarships funded by the Optimist International Foundations)",
       "homepage": "https://www.optimist.org/member/scholarships4.cfm",
@@ -2470,9 +2470,9 @@
     "youngarts-national-arts-competition": {
       "prize": "Up to $10,000",
       "task": "Portfolio or audition",
+      "tagline": "For artists in grades 10 to 12, in ten disciplines from dance and film to jazz and photography. It costs $35 to apply, with a waiver if you need one.",
       "closes": "2026-10-06",
       "deadlineShort": "Oct 6",
-      "tagline": "For artists in grades 10 to 12, in ten disciplines from dance and film to jazz and photography. It costs $35 to apply, with a waiver if you need one.",
       "name": "YoungArts National Arts Competition",
       "runBy": "YoungArts (National YoungArts Foundation)",
       "homepage": "https://youngarts.org/apply/",
@@ -2550,9 +2550,9 @@
     "bri-community-impact-contest": {
       "prize": "Up to $10,000",
       "task": "Community project",
+      "tagline": "Run a service, volunteer or business project that fixes something in your community, then send in a pitch video and a summary of what it did.",
       "closes": "2027-04-19",
       "deadlineShort": "Apr 19",
-      "tagline": "Run a service, volunteer or business project that fixes something in your community, then send in a pitch video and a summary of what it did.",
       "name": "BRI Community Impact Contest (MyImpact Challenge)",
       "runBy": "Bill of Rights Institute",
       "homepage": "https://billofrightsinstitute.org/myimpact-challenge",
@@ -2624,9 +2624,9 @@
     "us-stockholm-junior-water-prize": {
       "prize": "$10,000",
       "task": "Science project",
+      "tagline": "Did a science project about water? Enter your state competition. The national winner also gets a trip to Stockholm, Sweden. You need to be 15 by August 1.",
       "closes": null,
       "deadlineShort": "April 15 (last posted)",
-      "tagline": "Did a science project about water? Enter your state competition. The national winner also gets a trip to Stockholm, Sweden. You need to be 15 by August 1.",
       "name": "U.S. Stockholm Junior Water Prize (SJWP)",
       "runBy": "Water Environment Federation (WEF), with its Member Associations; international competition run by the Stockholm International Water Institute",
       "homepage": "https://www.wef.org/sjwp",
@@ -2714,9 +2714,9 @@
     "math-prize-for-girls": {
       "prize": "Up to $50,000",
       "task": "Math contest",
+      "tagline": "A math contest for girls in 11th grade or below. You apply with your AMC 10 or AMC 12 score, so you need to take that exam first. No fee.",
       "closes": null,
       "deadlineShort": "May 31 (last posted)",
-      "tagline": "A math contest for girls in 11th grade or below. You apply with your AMC 10 or AMC 12 score, so you need to take that exam first. No fee.",
       "name": "Advantage Testing Foundation/Jane Street Math Prize for Girls",
       "runBy": "Advantage Testing Foundation (with Jane Street)",
       "homepage": "https://mathprize.atfoundation.org/",
@@ -2813,9 +2813,9 @@
     "poetry-out-loud": {
       "prize": "Up to $20,000",
       "task": "Poetry recitation",
+      "tagline": "Memorize and perform poems. You start at your own school and can go on to state and national finals. Your school has to be registered for it.",
       "closes": null,
       "deadlineShort": "Set by your school",
-      "tagline": "Memorize and perform poems. You start at your own school and can go on to state and national finals. Your school has to be registered for it.",
       "name": "Poetry Out Loud National Recitation Contest",
       "runBy": "National Endowment for the Arts, with state and jurisdictional arts agencies; prizes administered by Mid Atlantic Arts",
       "homepage": "https://poetryoutloud.org/",
@@ -2891,6 +2891,2208 @@
             "States hold their competitions by mid-March.",
             "the national finals are planned to be held in Washington, DC, from April 26-28, 2027",
             "A partnership with the National Endowment for the Arts and participating state and jurisdictional arts agencies"
+          ]
+        }
+      ]
+    },
+    "optimist-essay-contest": {
+      "prize": "Up to $2,500",
+      "task": "Essay",
+      "tagline": "Write an essay on this year's topic, “Finding My Voice in a World Full of Noise,” and enter through a local Optimist Club. Club winners go on to compete for a $2,500 scholarship.",
+      "closes": null,
+      "deadlineShort": "Set by your local club",
+      "name": "Optimist International Essay Contest",
+      "runBy": "Optimist International, through local Optimist Clubs and Districts; District scholarships are funded by the Optimist International Foundations",
+      "homepage": "https://www.optimist.org/member/scholarships3.cfm",
+      "kind": "competition",
+      "local": true,
+      "findLocal": "https://www.optimist.org/member/clubdirectory/country.cfm",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "Club-level winners advance to the District contest, where they compete for a $2,500 college scholarship. Club-level prizes: Not confirmed.",
+      "eligibility": [
+        "Be under the age of 19 on October 1 of the current Optimist International contest year (October 1 - September 30)",
+        "Not have completed high school or its equivalent",
+        "There is no minimum age",
+        "Enter through the District in which you live (U.S. students at schools on military installations abroad may enter through the District of their last permanent U.S. home of record)"
+      ],
+      "whatYouSubmit": [
+        "An essay on the assigned topic; the 2026-2027 topic is \"Finding My Voice in a World Full of Noise\"",
+        "Essay length and the entry form details: Not confirmed (they are in the Essay Contest Application, which is not an HTML page)"
+      ],
+      "howToApply": [
+        "Find your nearest Optimist Club: email the Programs Department at programs@optimist.org (they cannot connect contestants with a Club until October 1), or look in Optimist International's club directory",
+        "Submit your essay on the assigned topic through that local Optimist Club",
+        "Club-level winners advance to the District contest"
+      ],
+      "prepare": [
+        "Write on the assigned 2026-2027 topic",
+        "Ask your local Club for its entry deadline early - Club contests are all held by early February and late entries are not accepted"
+      ],
+      "opens": "October 1 (start of the Optimist contest year; Optimist International cannot connect students with a Club before then)",
+      "deadline": "Set by the sponsoring Optimist Club and varies by area; all Club-level contests are held by early February",
+      "cycle": "2026-27",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The page gives no essay word count or Club-level prize; those are in the application/contest materials, which were not readable as HTML. The page tells students to email programs@optimist.org to be connected with a Club; the club directory on the same site lists clubs by country, district and region.",
+      "sources": [
+        {
+          "label": "Optimist International Essay Contest",
+          "url": "https://www.optimist.org/member/scholarships3.cfm",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Winners at the Club level advance to the District Contest, where they compete for a $2,500 college scholarship.",
+            "Be under the age of 19 on October 1 of the current Optimist International contest year",
+            "not have completed high school or its equivalent",
+            "There is no minimum age requirement.",
+            "Students must submit their entries through the District in which they reside.",
+            "Students interested in participating should submit an essay on the assigned topic through their local Optimist Club.",
+            "To find the Optimist Club nearest you or obtain local contact information, email the Programs Department at programs@optimist.org",
+            "We are unable to connect contestants with their local Optimist Club until October 1, the official start of the new Optimist International contest year.",
+            "The deadline to enter is determined by the sponsoring Optimist Club and varies by area.",
+            "All Club-level contests are held by early February of each year.",
+            "Submissions will not be accepted after Club-level contests have closed."
+          ]
+        }
+      ]
+    },
+    "optimist-ccdhh": {
+      "prize": "$2,500",
+      "task": "Presentation",
+      "only": "Students with a hearing loss of 40 decibels or more",
+      "tagline": "A speaking or signing contest for students who are deaf or hard of hearing, entered through a local Optimist Club.",
+      "closes": null,
+      "deadlineShort": "Set by your local club",
+      "name": "Optimist International Communication Contest for the Deaf and Hard of Hearing (CCDHH)",
+      "runBy": "Optimist International, through local Optimist Clubs and Districts; scholarships are provided by the Optimist International Foundation",
+      "homepage": "https://www.optimist.org/member/scholarships2.cfm",
+      "kind": "competition",
+      "local": true,
+      "findLocal": "https://www.optimist.org/member/clubdirectory/country.cfm",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "The Optimist International Foundation provides a $2,500 scholarship to every qualifying District that meets the minimum participation requirements. Club-level prizes: Not confirmed.",
+      "eligibility": [
+        "Be enrolled in and attending school in the United States, Canada, or the Caribbean",
+        "Be in Grade 12 or below (U.S. and Canada)",
+        "Have an uncorrected hearing loss of at least 40 decibels, verified by an audiogram",
+        "Students whose hearing loss is permanently corrected should enter the Optimist Oratorical Contest instead"
+      ],
+      "whatYouSubmit": [
+        "An audiogram conducted by a qualified audiologist within 24 months of the contest date, verifying an uncorrected hearing loss of at least 40 decibels",
+        "A presentation, spoken or in sign language, on the 2026-2027 topic \"How My Actions Strengthen Those Around Me\"",
+        "Presentation length and entry form details: Not confirmed (they are in the CCDHH Contest Application, which is not an HTML page)"
+      ],
+      "howToApply": [
+        "Find your nearest Optimist Club: email the Programs Department at programs@optimist.org (they cannot connect contestants with a Club until October 1), or look in Optimist International's club directory",
+        "Enter through that local Optimist Club",
+        "Students begin at the Club level; top participants advance through Zone competitions (where applicable) to the District level"
+      ],
+      "prepare": [
+        "Get an audiogram from a qualified audiologist dated within 24 months of the contest date",
+        "Prepare a spoken or signed presentation on the 2026-2027 topic"
+      ],
+      "opens": "October 1 (start of the Optimist contest year; Optimist International cannot connect students with a Club before then)",
+      "deadline": "Set by the sponsoring Optimist Club and varies by area",
+      "cycle": "2026-27",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The $2,500 scholarship is per qualifying District and depends on the District meeting minimum participation requirements, which the page does not spell out. The page states a grade ceiling (Grade 12 or below) and no minimum grade. Speech length is not on the HTML page.",
+      "sources": [
+        {
+          "label": "Communication Contest for the Deaf and Hard of Hearing",
+          "url": "https://www.optimist.org/member/scholarships2.cfm",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "this unique program gives hearing-impaired youth the opportunity to compete through either spoken presentations or sign language",
+            "the Optimist International Foundation providing a $2,500 scholarship to all qualifying Districts that meet the minimum participation requirements",
+            "Be enrolled in and attending school in the United States, Canada, or the Caribbean, and be in Grade 12 or below (U.S. and Canada)",
+            "All contestants must submit an audiogram conducted by a qualified audiologist within 24 months of the contest date.",
+            "The audiogram must verify an uncorrected hearing loss of at least 40 decibels.",
+            "Students whose hearing loss is permanently corrected should participate in the Optimist International Oratorical Contest instead.",
+            "Students interested in participating should submit through their local Optimist Club.",
+            "The deadline to enter is determined by the sponsoring Optimist Club and varies by area."
+          ]
+        },
+        {
+          "label": "Optimist International Scholarship Contests overview",
+          "url": "https://www.optimist.org/member/scholarships1.cfm",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Students begin competing at the Club level, with top participants advancing through Zone competitions (where applicable) and ultimately to the District level.",
+            "Scholarships awarded at the District level are funded by the Optimist International Foundations and presented by Optimist International."
+          ]
+        }
+      ]
+    },
+    "elks-legacy-awards": {
+      "prize": "$6,000",
+      "task": "Application",
+      "only": "Children and grandchildren of Elks members",
+      "tagline": "Is your parent or grandparent an Elk? 400 seniors get $1,500 a year for four years. You'll need their lodge and membership numbers.",
+      "closes": "2027-02-01",
+      "deadlineShort": "Feb 1",
+      "name": "Elks National Foundation Legacy Awards",
+      "runBy": "Elks National Foundation (Benevolent and Protective Order of Elks)",
+      "homepage": "https://www.elks.org/scholars/scholarships/Legacy.cfm",
+      "kind": "scholarship",
+      "local": false,
+      "findLocal": "https://www.elks.org/lodges",
+      "grades": [
+        12
+      ],
+      "award": "$6,000 scholarship ($1,500 per year for four years), paid directly to the school; 400 awards offered in the 2027 contest",
+      "eligibility": [
+        "Be a child or grandchild (or step-child, step-grandchild, or legal ward) of a living Elk who joined the Order on or before April 1, 2024, or of a charter member of a Lodge instituted on or after April 1, 2024",
+        "The Elk must be a continuous dues-paying member through March 31, 2027",
+        "Great-grandchildren are not eligible",
+        "Be a high school senior",
+        "The award may only be used at accredited U.S. schools, colleges or universities",
+        "Winners must complete an act of service with a Lodge at least three times during college"
+      ],
+      "whatYouSubmit": [
+        "The online application (online only)",
+        "Your Elk sponsor's name, Lodge number, membership number, and a phone number or email address",
+        "A transcript showing freshman through junior year (uploaded as PDF, JPEG or TIFF; an unofficial transcript is accepted if the school will not issue an official one to you)",
+        "Essays, each with a word limit (topics and limits: Not confirmed - they are inside the application)",
+        "No ACT or SAT scores - the test requirement is waived for the 2027 contest"
+      ],
+      "howToApply": [
+        "Get your Elk parent's or grandparent's Lodge number and membership number (if both a parent and a grandparent are Elks, use the parent's Lodge)",
+        "Register and complete the online application; the applicant and the Lodge Secretary are both notified by email when you register",
+        "The Elk sponsor's membership is verified through BPOE Grand Lodge headquarters",
+        "A Selection Committee appointed by the ENF Board of Trustees picks the winners; children and grandchildren compete separately within their state",
+        "Winners are announced in late April 2027"
+      ],
+      "prepare": [
+        "Ask your Elk sponsor for the membership number on their membership card and their Lodge number",
+        "Get a transcript covering freshman through junior year in PDF, JPEG or TIFF",
+        "Submit early - the deadline is 11:59 a.m. (noon) Pacific Time, not midnight"
+      ],
+      "opens": "September 1, 2026",
+      "deadline": "February 1, 2027, 11:59 a.m. Pacific Time (noon)",
+      "cycle": "2026-27 (the 2027 contest)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Requires family membership: only children and grandchildren of Elks members can apply. Applications go online to the national foundation, not through the lodge, but the lodge secretary is notified. The Legacy page says students can also accept local and state Elks scholarships, which are separate from the national awards; the national site does not describe those local lodge scholarships, so no separate record was made. The Legacy page's state table totals 251 plus 149 at-large awards, matching the FAQ's 400. The Legacy page still carries leftover hidden text saying the 2027 application has closed; the visible text says it opened September 1, 2026.",
+      "sources": [
+        {
+          "label": "ENF Legacy Awards",
+          "url": "https://www.elks.org/scholars/scholarships/Legacy.cfm",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Legacy Awards are scholarships available to children and grandchildren of Elks members.",
+            "any child or grandchild (or step-child, step-grandchild, or legal ward) of a living Elk who joined the Order on or before April 1, 2024",
+            "The Elk must be a contiguous, dues paying Elk through March 31, 2027.",
+            "Great-grandchildren are not eligible.",
+            "The applicant must be a high school senior.",
+            "The applicant must apply online only.",
+            "If the applicant's parent and grandparent are both Elk members, the applicant must select the parent's Elks Lodge on the application.",
+            "We have waived the standardized test requirement for the 2027 Legacy contest.",
+            "Legacy Awards may only be applied to accredited US American schools, colleges or universities.",
+            "you must complete an act of service with a Lodge at least three times during your collegiate career",
+            "The 2027 Legacy Awards application opens on September 1, 2026 and the deadline is February 1, 2027 at 11:59 a.m. Pacific Time.",
+            "When a student registers to complete the online application, both the applicant and Lodge Secretary will be notified by email.",
+            "Winners will be announced in late April 2027.",
+            "Students can also accept local and state scholarships, which are separate from the awards at the national level."
+          ]
+        },
+        {
+          "label": "Legacy Awards FAQ",
+          "url": "https://www.elks.org/scholarWeb/resources/legacyFAQ.cfm",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Legacy Awards are $6,000 scholarships ($1,500 per year for four years).",
+            "The Foundation will offer a total of 400 awards in the 2027 contest.",
+            "Children and grandchildren will compete separately against other children and grandchildren in their state.",
+            "The Selection Committee is appointed by the ENF Board of Trustees, and consists of professionals.",
+            "All checks are paid directly to the school; under no circumstance can we make payment directly to the student.",
+            "Please include a transcript that shows your freshman through junior year information.",
+            "Your transcript must be in PDF, JPEG, or TIFF format in order to be uploaded.",
+            "Yes, each essay has a word limit.",
+            "You will need to provide his or her name, Lodge number, membership number, and a phone number or email address."
+          ]
+        }
+      ]
+    },
+    "american-legion-boys-state-boys-nation": {
+      "prize": "Boys State",
+      "task": "School nomination",
+      "tagline": "Juniors spend a week running a mock state government. Your school usually recommends you to the local American Legion post, which normally covers the cost. Going also makes you eligible for the Samsung scholarship.",
+      "closes": null,
+      "deadlineShort": "Set by your state",
+      "name": "American Legion Boys State and Boys Nation",
+      "runBy": "The American Legion, through its state departments and local posts",
+      "homepage": "https://www.legion.org/get-involved/youth-programs/boys-state-boys-nation",
+      "kind": "program",
+      "local": true,
+      "findLocal": "https://mylegion.org/PersonifyEbusiness/Find-a-Post",
+      "grades": [
+        11
+      ],
+      "award": "A place at your state's Boys State, a hands-on program in which students run mock city, county and state governments; two delegates from each Boys State are selected for Boys Nation in Washington, D.C. Attending also makes eligible students able to apply for the Samsung American Legion Scholarship.",
+      "eligibility": [
+        "Be a high school junior (Legion posts select high school juniors to attend)",
+        "Not have attended the program before",
+        "Show leadership, character, academic excellence, and commitment to school and community",
+        "Selection is based on merit and may vary slightly from state to state",
+        "You must take part in Boys State to be eligible for Boys Nation",
+        "Boys State programs exist in every Legion department in the United States except Hawaii"
+      ],
+      "whatYouSubmit": [
+        "Most programs require a consent form signed by a parent or guardian and a licensed physician",
+        "Application materials are set by each state program: Not confirmed"
+      ],
+      "howToApply": [
+        "In most cases your school recommends students to the local American Legion post - ask your school, or contact your local post or your state's Boys State program",
+        "The post interviews and selects the delegates who will attend",
+        "At Boys State, two delegates are selected for Boys Nation"
+      ],
+      "prepare": [
+        "Tell your school you are interested during junior year, since schools usually make the recommendation to the post",
+        "Be ready for an interview with the local post"
+      ],
+      "opens": "Not confirmed (set by each state program)",
+      "deadline": "Not confirmed (set by each state program and local post)",
+      "cycle": "2026-27 (the 81st Boys Nation session is in summer 2027)",
+      "fee": "In most cases, individual expenses are paid by a sponsoring post, a local business or another community-based organization",
+      "notes": "State-by-state dates, deadlines and contacts are on register.legion.org/boysnation/stateeligibility, which loads its content with JavaScript and could not be read. The national pages do not say whether a student pays anything when no sponsor is found.",
+      "sources": [
+        {
+          "label": "Boys State & Boys Nation",
+          "url": "https://www.legion.org/get-involved/youth-programs/boys-state-boys-nation",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The 81st Session of American Legion Boys Nation will take place in Summer 2027.",
+            "American Legion Boys State and Boys Nation have offered top high school juniors a unique, hands-on experience in how government works",
+            "Two delegates from each Boys State program are selected for Boys Nation in Washington, D.C.",
+            "High school students who haven't attended the program before are eligible to apply for Boys State, and must participate in Boys State to be eligible for Boys Nation.",
+            "Selection is based on merit and may vary slightly from state to state.",
+            "most require a consent form signed by a parent or guardian and a licensed physician",
+            "In most cases, schools recommend students to their local American Legion post, which then interviews and selects the delegates who will attend."
+          ]
+        },
+        {
+          "label": "About Boys State & Boys Nation",
+          "url": "https://www.legion.org/get-involved/youth-programs/boys-state-boys-nation/about-boys-state-boys-nation",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Legion posts select high school juniors to attend the program.",
+            "In most cases, individual expenses are paid by a sponsoring post, a local business or another community-based organization.",
+            "Boys State programs currently exist in all Legion departments in the United States except Hawaii."
+          ]
+        }
+      ]
+    },
+    "ala-girls-state-girls-nation": {
+      "prize": "Girls State",
+      "task": "Local nomination",
+      "tagline": "Juniors spend a week running a mock state government, sponsored by a local American Legion Auxiliary unit. Ask your school counselor how to be considered.",
+      "closes": null,
+      "deadlineShort": "Set by your state",
+      "name": "American Legion Auxiliary Girls State and Girls Nation",
+      "runBy": "American Legion Auxiliary, through its state departments and local units",
+      "homepage": "https://www.legion-aux.org/ala-girls-state",
+      "kind": "program",
+      "local": true,
+      "findLocal": "https://www.legion-aux.org/about/units",
+      "grades": [
+        11
+      ],
+      "award": "A sponsored place at your state's ALA Girls State, a week of running a mock state government; two students from each ALA Girls State are chosen for ALA Girls Nation, a week in Washington, D.C. Attending also makes eligible students able to apply for the Samsung American Legion Scholarship.",
+      "eligibility": [
+        "Apply as a high school junior; the program is for students who have completed their junior year",
+        "Be keenly interested in government and current events and show strong leadership abilities",
+        "Be recommended and selected by a sponsoring American Legion Auxiliary unit",
+        "Each ALA Girls State program and/or unit sets its own selection process"
+      ],
+      "whatYouSubmit": [
+        "Set by each state program or local unit: Not confirmed"
+      ],
+      "howToApply": [
+        "Contact your school counselor or your local American Legion Auxiliary unit about the application process and deadline (to find a unit, contact the Auxiliary's state-level department), or visit your state's ALA Girls State website",
+        "Auxiliary units work with local high school educators to identify candidates, then recommend and select them",
+        "At ALA Girls State, two students are chosen for ALA Girls Nation"
+      ],
+      "prepare": [
+        "Ask your school counselor during junior year, since units work with high school educators to identify candidates"
+      ],
+      "opens": "Not confirmed (set by each state program and local unit)",
+      "deadline": "Not confirmed (set by each state program and local unit)",
+      "cycle": "Not confirmed (the page lists 2026 session dates; 2027 dates were not posted)",
+      "fee": "Registration fees are paid by the sponsoring local Auxiliary unit; participants may incur nominal expenses for transportation, site-specific fees, or an optional service project",
+      "notes": "The Auxiliary has no unit locator; its units page says to contact a state-level department to find a local unit. State program websites and 2026 dates are listed at legion-aux.org/ala-girls-state-locations.",
+      "sources": [
+        {
+          "label": "ALA Girls State",
+          "url": "https://www.legion-aux.org/ala-girls-state",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "High school students who have completed their junior year are competitively selected and sponsored by American Legion Auxiliary units for this program",
+            "Candidates should be keenly interested in government and current events, and show strong leadership abilities.",
+            "High school juniors interested in applying to attend ALA Girls State are encouraged to contact their school counselor or their local American Legion Auxiliary units regarding the application process and deadline.",
+            "American Legion Auxiliary units work with local high school educators to identify girls who have demonstrated leadership qualities.",
+            "Eligible female students are then recommended and selected by sponsoring American Legion Auxiliary units.",
+            "Each ALA Girls State program and/or ALA unit determines the process they will use to select the delegates for their state.",
+            "ALA Girls State delegates' registration fees are paid for by the sponsoring local American Legion Auxiliary unit",
+            "Participating young women may incur nominal expenses for transportation, site-specific fees, or contribution to an optional service project."
+          ]
+        },
+        {
+          "label": "ALA Girls Nation",
+          "url": "https://www.legion-aux.org/ala-girls-nation",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "American Legion Auxiliary Girls Nation is a once-in-a-lifetime opportunity for students entering their senior year of high school.",
+            "Two students are chosen from each ALA Girls State program."
+          ]
+        },
+        {
+          "label": "ALA units",
+          "url": "https://www.legion-aux.org/about/units",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Contact a state level department to find a local unit in your area."
+          ]
+        }
+      ]
+    },
+    "samsung-american-legion-scholarship": {
+      "prize": "Up to $10,000",
+      "task": "Application",
+      "only": "Descendants of wartime veterans who attend Boys State or Girls State",
+      "tagline": "You can only apply if you go to Boys State or Girls State the summer after junior year, and the deadline is the first day of your program.",
+      "closes": null,
+      "deadlineShort": "Day 1 of your Boys or Girls State",
+      "name": "Samsung American Legion Scholarship",
+      "runBy": "The American Legion (endowed by Samsung); open to American Legion Boys State and American Legion Auxiliary Girls State participants",
+      "homepage": "https://www.legion.org/get-involved/youth-programs/scholarships/samsung-american-legion-scholarship",
+      "kind": "scholarship",
+      "local": false,
+      "findLocal": "",
+      "grades": [
+        11
+      ],
+      "award": "Ten National Scholars receive $10,000 each; ten National Runners-Up receive $5,000 each; remaining Department Finalists receive $1,250 each. For undergraduate study: tuition, books, fees, and room and board.",
+      "eligibility": [
+        "Be between your junior and senior years of high school",
+        "Attend the current session of an American Legion Boys State or American Legion Auxiliary Girls State program",
+        "Be a direct descendant (child, grandchild, great-grandchild, or legally adopted child) of a wartime U.S. military veteran who served on active duty during a period of war designated as an eligibility date for American Legion membership",
+        "Direct descendants of Korean War era veterans receive three bonus points"
+      ],
+      "whatYouSubmit": [
+        "The online application",
+        "Proof of the veteran's service, such as Form DD214, an official Honorable Discharge certificate, or Form DD1300; obituaries, photos of headstones or of service members in uniform, and veterans organization membership cards are not accepted",
+        "Other application contents: Not confirmed (inside the online application)"
+      ],
+      "howToApply": [
+        "First be selected for Boys State or Girls State through your local American Legion post or Auxiliary unit",
+        "Complete the online application, which opens January 1 each year",
+        "Submit it before 11:59 PM local time on Day 1 of your Boys State or Girls State program",
+        "Check with your program coordinator whether to bring a hard copy of the submitted application",
+        "Winners are selected on academic record, involvement in school and community activities, community service, and financial need"
+      ],
+      "prepare": [
+        "Get selected for Boys State or Girls State first - only current-session participants can apply",
+        "Locate an accepted military service document for your veteran relative well before the program starts",
+        "Finish the application before you arrive; it cannot be changed or extended after the due date"
+      ],
+      "opens": "January 1 each year",
+      "deadline": "11:59 PM local time on Day 1 of your own Boys State or Girls State program",
+      "cycle": "Not confirmed (annual; the page gives no cycle year)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Required prior step: attending Boys State or Girls State, which are entered locally. Requires veteran ancestry, not Legion membership. The American Legion page says the fund was endowed in 1996; the Auxiliary's page says 1966. The Auxiliary's page says applicants with Auxiliary or Sons of the American Legion membership (or a parent's membership card) get one bonus point; the Legion's page does not mention that.",
+      "sources": [
+        {
+          "label": "Samsung American Legion Scholarship (American Legion)",
+          "url": "https://www.legion.org/get-involved/youth-programs/scholarships/samsung-american-legion-scholarship",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The Samsung American Legion Scholarship online application process opens annually on January 1.",
+            "Scholarship applications are limited to students between their junior and senior years of high school who attend the current session of either an American Legion Boys State or American Legion Auxiliary Girls State program",
+            "Applicants who are direct descendants of Korean War Era veterans will receive three bonus points.",
+            "Ten National Scholars receive $10,000 each (two from each region)",
+            "Ten National Runners-Up receive $5,000 each (two from each region)",
+            "Remaining Department Finalists receive $1,250 each guaranteed",
+            "Samsung scholarships may be used for undergraduate studies and applied toward tuition, books, fees, and room and board.",
+            "Scholarship applicants must complete and submit their online application prior to 11:59 PM (local time) of Day 1 of their respective American Legion Boys State or American Legion Auxiliary Girls State program.",
+            "All applications must be submitted using the online application system and may not be modified after the due date or given a deadline extension under any circumstance."
+          ]
+        },
+        {
+          "label": "Samsung American Legion Scholarship (American Legion Auxiliary)",
+          "url": "https://www.legion-aux.org/scholarships/samsung-american-legion",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Applicants must be high school juniors who attend either American Legion Auxiliary Girls State or American Legion Boys State.",
+            "Scholarship winners are selected based on academic record, involvement in school and community activities, community service, and financial need.",
+            "Applicants with membership to the American Legion Auxiliary or Sons of the American Legion will receive a bonus point."
+          ]
+        }
+      ]
+    },
+    "american-legion-legacy-scholarship": {
+      "prize": "Up to $20,000",
+      "task": "Application",
+      "only": "Children of service members who died or were disabled on duty since 9/11",
+      "tagline": "For seniors whose parent died on active duty or has a service-related disability rating. Based on financial need, and you can reapply in later years.",
+      "closes": null,
+      "deadlineShort": "Late March (2027 date not posted)",
+      "name": "The American Legion Legacy Scholarship",
+      "runBy": "The American Legion",
+      "homepage": "https://www.legion.org/get-involved/youth-programs/scholarships/the-american-legion-legacy-scholarship",
+      "kind": "scholarship",
+      "local": false,
+      "findLocal": "",
+      "grades": [
+        12
+      ],
+      "award": "Needs-based: up to $20,000 for children of the fallen and up to $5,000 for children of disabled veterans, for undergraduate or post-graduate college; recipients may reapply up to six times",
+      "eligibility": [
+        "Be a child, adopted child or stepchild of a U.S. military member who died while on active duty on or after September 11, 2001, OR of a post-9/11 veteran with a combined VA disability rating of 50 percent or greater",
+        "Be a high school senior or high school graduate currently accepted at or attending an accredited institution of higher education in the United States",
+        "Have financial need remaining after federal and state educational grants and scholarships have been used",
+        "The school must not be for-profit and/or only nationally accredited"
+      ],
+      "whatYouSubmit": [
+        "Online application (there is no paper application)",
+        "Official military death certificate (Form DD1300), or official disability rating paperwork from the VA plus DD214 and/or NGB Form 22",
+        "FAFSA Summary showing Student Aid Index (SAI)",
+        "Financial Aid Package notification from your prospective or current college for the upcoming school year",
+        "Breakdown of all education-related expenses (tuition, fees, books, program costs, meal plan, housing, transportation)",
+        "Any award notifications from federal or state veteran benefits programs, if applicable"
+      ],
+      "howToApply": [
+        "Create a user account on legion.org and complete the online Legacy Scholarship application (you can return to it at any time)",
+        "After entering your financial information you see immediately whether you are eligible for the need-based award",
+        "A staff member reviews qualifying applications; recipients are notified by email in May"
+      ],
+      "prepare": [
+        "File the FAFSA so you have a FAFSA Summary showing your Student Aid Index",
+        "Get the veteran's official documents (DD1300, or VA disability rating paperwork and DD214/NGB Form 22)",
+        "Get your college's financial aid package notification and a breakdown of your education expenses"
+      ],
+      "opens": "Not confirmed (the FAQ says to apply every January)",
+      "deadline": "March 25, 2026 was the most recent deadline posted; the 2027 deadline is Not confirmed",
+      "cycle": "2026 cycle shown on the page (awards to be used before August 1, 2027); 2027 dates not yet posted",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "National online application, not entered through a local post. No Legion membership requirement; eligibility depends on a parent's post-9/11 military death or 50 percent or higher VA disability rating. The page still shows the 2026 deadline, which has passed.",
+      "sources": [
+        {
+          "label": "The American Legion Legacy Scholarship",
+          "url": "https://www.legion.org/get-involved/youth-programs/scholarships/the-american-legion-legacy-scholarship",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The American Legion Legacy Scholarship is a needs-based scholarship designed to fulfill a financial gap remaining after all federal and state educational grants/scholarships available to an eligible applicant have been utilized.",
+            "adopted child or stepchild of U.S. military members who died while on active duty on or after Sept. 11, 2001.",
+            "adopted child or stepchild of post-9/11 veterans having been assigned a combined disability rating of 50 percent or greater by the Department of Veterans Affairs also qualify.",
+            "Recipients may reapply for additional annual awards up to six times.",
+            "High school senior or high school graduate currently accepted or attending an accredited institution of higher education within the United States",
+            "Official (Form DD1300) military death certificate",
+            "Official disability rating paperwork from VA",
+            "FAFSA Summary showing Student Aid Index (SAI).",
+            "Financial Aid Package notification from their prospective/current institution of higher education for the upcoming school year",
+            "The application deadline is NO LATER THAN Wednesday, March 25, 2026.",
+            "Scholarship awards must be used before August 1, 2027."
+          ]
+        },
+        {
+          "label": "Legacy Scholarship Frequently Asked Questions",
+          "url": "https://www.legion.org/get-involved/scholarships/the-american-legion-legacy-scholarship/legacy-scholarship-faq",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "These expenses may include tuition, fees, books, program costs, meal plans and housing, up to $5,000 for disabled and $20,000 for Fallen Heroes.",
+            "Applicants will create user accounts and passwords on legion.org, which will allow them to return to the application at any time.",
+            "When you finish entering all of your information into the Legacy portal application, you will immediately see if you are eligible for the need-based scholarship.",
+            "We encourage you to apply every January for the Legacy Scholarship if you are enrolled in a college, university (for undergraduate or graduate) or trade school.",
+            "The only restriction on post-secondary institutions is that they not be for-profit and/or only nationally accredited."
+          ]
+        }
+      ]
+    },
+    "ala-children-of-warriors-scholarship": {
+      "prize": "$5,000",
+      "task": "Application with essays",
+      "only": "Descendants of U.S. military veterans",
+      "tagline": "Fifteen seniors each get $5,000. You need proof of a family member's military service, and you don't have to be an American Legion member.",
+      "closes": null,
+      "deadlineShort": "March 1",
+      "name": "Children of Warriors National Presidents' Scholarship",
+      "runBy": "American Legion Auxiliary",
+      "homepage": "https://www.legion-aux.org/scholarships/children-of-warriors",
+      "kind": "scholarship",
+      "local": false,
+      "findLocal": "https://www.legion-aux.org/about/units",
+      "grades": [
+        12
+      ],
+      "award": "Fifteen scholarships of $5,000 each (three in each of the Auxiliary's five divisions), paid directly to the school",
+      "eligibility": [
+        "Be a direct descendant of a veteran who served in the U.S. Armed Forces during the eligibility dates for American Legion membership (April 6, 1917 to November 11, 1918; and any time after December 7, 1941)",
+        "Membership in The American Legion Family is not required",
+        "Be in your senior year of high school (homeschooled students may apply if they are the equivalent of a high school senior)",
+        "Complete 50 hours of volunteer service in the community during your high school years, verified in writing by the recipient organization(s)"
+      ],
+      "whatYouSubmit": [
+        "Online application with essay answers of at least 600 characters (the 2026 question asked what lessons you learned from your family's military service)",
+        "Veteran proof of service - a copy of the veteran's discharge papers, or of an active-duty service member's most recent set of orders",
+        "Transcript (or photocopy) of your most recent high school grades",
+        "Verified documentation of 50 hours of voluntary service during high school; screenshots, lists, or summaries are not acceptable",
+        "Two letters of recommendation: one from an educator or spiritual advisor, one from a person of your choosing; none from family members"
+      ],
+      "howToApply": [
+        "Complete the online application; applications are submitted online to National Headquarters and no further action is needed",
+        "National Headquarters sends entries to the applicant's state department for the first round of judging; state selections are judged again at the division level",
+        "Judging: 30% character/leadership, 30% essay/application, 40% academic achievement",
+        "Recipients are informed in late spring"
+      ],
+      "prepare": [
+        "Log 50 volunteer hours across high school and get a written verification letter from each organization (or one letter from the school counselor if the school arranged them)",
+        "Get a copy of your veteran relative's discharge papers",
+        "Write the essays yourself - essays are checked with AI-detection tools and applicants who rely heavily on AI are disqualified"
+      ],
+      "opens": "Applications for the 2027 scholarships are to be posted in early October (the Auxiliary's scholarships page says national applications open every year in September)",
+      "deadline": "March 1 at 11:59 pm Eastern each year",
+      "cycle": "2026-27 (2027 scholarships); the detailed rules on the page are still the 2026 ones",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Applied for online at national level, not through a local unit; a unit president or post commander can sign off volunteer hours served with the Legion Family. The pages disagree on when applications open (September on the scholarships page; early October on the scholarship's own page). The essay question shown is for the 2026 application.",
+      "sources": [
+        {
+          "label": "Children of Warriors National Presidents' Scholarship",
+          "url": "https://www.legion-aux.org/scholarships/children-of-warriors",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Applications for the 2027 scholarships will be posted in early October.",
+            "Fifteen scholarships, in the amount of $5,000 each, will be awarded for 2026.",
+            "Three scholarships will be awarded in each of the five divisions of the American Legion Auxiliary.",
+            "Membership in The American Legion Family is not required for this scholarship.",
+            "Applicants must be in their senior year of high school.",
+            "Applicants must complete 50 hours of volunteer service within the community during their high school years.",
+            "Essay answers must have a minimum of 600 characters in length.",
+            "Applicants that rely heavily on AI will be disqualified.",
+            "Transcripts, or photocopy of the transcripts, of the applicant's most recent high school grades.",
+            "Screenshots, lists, or summaries are not acceptable.",
+            "Letters of recommendation from family members will not be accepted.",
+            "The application deadline for this scholarship is March 1 at 11:59pm Eastern of each year.",
+            "Recipients are informed in late spring."
+          ]
+        },
+        {
+          "label": "ALA Scholarship FAQ",
+          "url": "https://www.legion-aux.org/scholarships/faq",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Applications are submitted online to National Headquarters.",
+            "Scholarship entries are distributed to the department (state) in which the applicant resides for the first round of judging.",
+            "Homeschooled students may apply providing they are the equivalent of a high school senior.",
+            "For documentation purposes the unit president or post commander should sign off on the hours by writing a letter."
+          ]
+        },
+        {
+          "label": "ALA Scholarships overview",
+          "url": "https://www.legion-aux.org/scholarships",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Please note that applications for all ALA National scholarships open every year in September and close on March 1st every year."
+          ]
+        }
+      ]
+    },
+    "ala-spirit-of-youth-scholarship": {
+      "prize": "$1,000 to $5,000",
+      "task": "Application with essays",
+      "only": "American Legion Auxiliary Junior members for 3 years",
+      "tagline": "For seniors who have been Junior members of the American Legion Auxiliary for the past three years. You can't join senior year and apply.",
+      "closes": null,
+      "deadlineShort": "March 1",
+      "name": "American Legion Auxiliary Spirit of Youth Scholarship (Junior members)",
+      "runBy": "American Legion Auxiliary",
+      "homepage": "https://www.legion-aux.org/scholarships/spirit-of-youth",
+      "kind": "scholarship",
+      "local": false,
+      "findLocal": "https://www.legion-aux.org/about/units",
+      "grades": [
+        12
+      ],
+      "award": "$1,000 scholarship to one recipient in each department (state); from those, five recipients (one per division) receive a $5,000 scholarship instead",
+      "eligibility": [
+        "Be or have been a Junior member of the American Legion Auxiliary, with membership for the past three consecutive years and paid membership for the current year",
+        "Continue Auxiliary membership during the scholarship period",
+        "Taking part in ALA Girls State does not make you a member or eligible",
+        "Be in your senior year of high school or a senior equivalent",
+        "Have at least a 3.0 GPA on a 4.0 scale"
+      ],
+      "whatYouSubmit": [
+        "Online application with essay answers of at least 600 characters",
+        "Transcript (or photocopy) of your most recent high school grades",
+        "Two letters of recommendation: one from an educator or spiritual advisor, one from a person of your choosing; none from family members"
+      ],
+      "howToApply": [
+        "Hold Junior membership in an American Legion Auxiliary unit for three consecutive years before applying",
+        "Complete the online application by March 1",
+        "Judging: 30% character/leadership, 30% essay/application, 40% academic achievement",
+        "Recipients are informed in late spring"
+      ],
+      "prepare": [
+        "Keep your Auxiliary Junior membership paid every year - three consecutive prior years plus the current year are required",
+        "Keep a GPA of at least 3.0"
+      ],
+      "opens": "Applications for the 2027 scholarships are to be posted in early October",
+      "deadline": "March 1 at 11:59 pm Eastern each year",
+      "cycle": "2026-27 (2027 scholarships); the detailed rules on the page are still the 2026 ones",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Membership requirement: open only to Auxiliary Junior members with three consecutive years of membership, so a student cannot join in senior year and apply. Paid membership is required; the dues amount is not on these pages. The membership years named on the page (2023, 2024, 2025, and 2026 current) belong to the 2026 application.",
+      "sources": [
+        {
+          "label": "Spirit of Youth Scholarship",
+          "url": "https://www.legion-aux.org/scholarships/spirit-of-youth",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Applications for the 2027 scholarships will be posted in early October.",
+            "National Headquarters will award each department/state one recipient a scholarship of $1,000.",
+            "the National Education Committee will select five recipients (one per division) who will receive a $5,000 scholarship in lieu of the $1000 department/state scholarship",
+            "have held membership in the American Legion Auxiliary for the past three consecutive years (2023, 2024, and 2025), and must be a paid member for the current (2026) membership year",
+            "Applicant must continue their membership in the American Legion Auxiliary during the scholarship period.",
+            "Participation in an ALA Girls State program does not make you a member of the American Legion Auxiliary or eligible for the Spirit of Youth Scholarship.",
+            "Applicants must be in their senior year of high school or be a senior equivalent.",
+            "Applicants must have at least a 3.0 GPA using a 4.0 scale.",
+            "Essay answers must have a minimum of 600 characters in length.",
+            "Letters of recommendation from family members will not be accepted.",
+            "The application deadline for this scholarship is March 1 at 11:59pm Eastern of each year.",
+            "Recipients are informed in late spring."
+          ]
+        }
+      ]
+    },
+    "dar-good-citizens": {
+      "prize": "DAR Good Citizens",
+      "task": "School selection + essay",
+      "tagline": "Your school picks one senior as its DAR Good Citizen. If that's you, you can enter the scholarship contest with a personal statement and an essay. Ask your school about it early senior year.",
+      "closes": null,
+      "deadlineShort": "Set by your local chapter",
+      "name": "DAR Good Citizens Award and Scholarship Contest",
+      "runBy": "National Society Daughters of the American Revolution (NSDAR), through local DAR chapters and high schools",
+      "homepage": "https://www.dar.org/national-society/scholarships/dar-related",
+      "kind": "competition",
+      "local": true,
+      "findLocal": "https://www.dar.org/national-society/become-member/chapter-locations",
+      "grades": [
+        12
+      ],
+      "award": "Recognition as the school's DAR Good Citizen; scholarships are awarded to essay winners at the chapter, state, division and national levels. Amounts: Not confirmed.",
+      "eligibility": [
+        "Be a high school senior",
+        "Attend a school that is accredited and in good standing with its state board of education",
+        "Be selected by your teachers and peers for dependability, service, leadership, and patriotism",
+        "Only one student per school per year may be honored as the school's DAR Good Citizen",
+        "United States citizenship is not required"
+      ],
+      "whatYouSubmit": [
+        "For the optional scholarship portion: a personal statement and an essay",
+        "Essay topic, length and conditions: Not confirmed (they are in a PDF handout and in rules available from the local DAR chapter)"
+      ],
+      "howToApply": [
+        "Students and parents: ask your school for information - the school chooses its DAR Good Citizen (educators contact the local DAR chapter)",
+        "Be chosen as your school's DAR Good Citizen",
+        "You are then invited to take part in the optional scholarship portion (personal statement and essay)",
+        "Essay winners are chosen at chapter, state, division and national levels"
+      ],
+      "prepare": [
+        "Ask your school early in senior year whether it takes part and how its DAR Good Citizen is chosen; if it does not, a local DAR chapter can give the school the rules"
+      ],
+      "opens": "Not confirmed",
+      "deadline": "Not confirmed (additional rules and guidelines come from the local DAR chapter)",
+      "cycle": "Not confirmed",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "A student cannot enter directly: the school picks one senior. Scholarship amounts and dates are not on DAR's HTML pages (only in a PDF handout, form DGC-1007). DAR's two pages word the school requirement differently; the youth programs page says the school must be accredited such that a GED test is not required for a diploma. This program does not use DAR's national scholarship portal.",
+      "sources": [
+        {
+          "label": "DAR Good Citizen (scholarships section)",
+          "url": "https://www.dar.org/national-society/scholarships/dar-related",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "This award recognizes and rewards high school seniors who possess the qualities of dependability, service, leadership, and patriotism in their homes, schools, and communities.",
+            "These students are selected by their teachers and peers because they demonstrate these qualities to an outstanding degree.",
+            "This program is only open to students whose schools are accredited and in good standing with their state board of education.",
+            "Only one student per year may be honored as a school's DAR Good Citizen.",
+            "United States citizenship is not required.",
+            "Additional rules and guidelines can be obtained by contacting your local DAR chapter.",
+            "This consists of a personal statement and an essay.",
+            "Student participation in the scholarship portion of the program is optional.",
+            "If you are a parent or student, please contact your school for information."
+          ]
+        },
+        {
+          "label": "DAR Youth Programs",
+          "url": "https://www.dar.org/outreach/education/youth-programs",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Once a student is chosen as the DAR Good Citizen the student is invited to participate in the scholarship portion of the program.",
+            "If you are an educator, please contact your local DAR chapter for additional information about DAR Good Citizens Award."
+          ]
+        },
+        {
+          "label": "DAR Chapter Locator",
+          "url": "https://www.dar.org/national-society/become-member/chapter-locations",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Use the Chapter Locator to find a DAR group in your area."
+          ]
+        }
+      ]
+    },
+    "dar-scholarships-high-school-seniors": {
+      "prize": "Up to $5,000 a year",
+      "task": "Application",
+      "tagline": "Three national scholarships for seniors from the Daughters of the American Revolution. You don't need to be sponsored by a chapter.",
+      "closes": null,
+      "deadlineShort": "January 31",
+      "name": "DAR national scholarships for graduating high school seniors (Dean, Pittenger, Findley)",
+      "runBy": "National Society Daughters of the American Revolution (NSDAR), DAR Scholarship Committee",
+      "homepage": "https://www.dar.org/national-society/scholarships",
+      "kind": "scholarship",
+      "local": false,
+      "findLocal": "https://www.dar.org/national-society/become-member/chapter-locations",
+      "grades": [
+        12
+      ],
+      "award": "Richard and Elizabeth Dean Scholarship: two awards, preferred amount $5,000 a year for up to four consecutive years. Dr. Aura-Lee A. and James Hobbs Pittenger American History Scholarship: $2,000 a year for up to four years. Lucinda Beneventi Findley History Scholarship: one-time $2,000 to two students.",
+      "eligibility": [
+        "Be a citizen of the United States",
+        "Attend or plan to attend an accredited college or university in the United States",
+        "DAR chapter sponsorship is not required",
+        "Dean: graduating high school student who will pursue an undergraduate degree in American Studies; initial minimum GPA of 4.0 on a 4.0 scale",
+        "Pittenger: graduating high school student who will pursue an undergraduate degree with at least 24 credit hours in American History and American Government",
+        "Findley: graduating high school senior planning to major in or study history full-time; GPA of 3.25"
+      ],
+      "whatYouSubmit": [
+        "Online application through the DAR Scholarship Committee's portal; everything typed, no handwriting and no personal photographs (either one disqualifies)",
+        "Statement of 1,000 words or less setting forth your career objectives",
+        "Most recent high school transcript (may be unofficial at application; homeschooled students include grade nine through the current year)",
+        "At least two but not more than four letters of recommendation",
+        "A one-page list of extra-curricular activities, honors received, and scholastic achievements",
+        "Proof of United States citizenship (birth certificate, naturalization papers, or passport information page) with the photograph covered"
+      ],
+      "howToApply": [
+        "Optional: reach out to a DAR chapter in your area for help with the application (not required)",
+        "Check the listing for the specific scholarship's special requirements",
+        "Submit the online application between November 1 and January 31"
+      ],
+      "prepare": [
+        "Line up two to four recommenders who can speak to your ability, work habits, integrity, character, potential, and volunteer activities",
+        "Cover your photograph and black out any social security number on the citizenship document",
+        "Type everything - handwriting anywhere in the application disqualifies it"
+      ],
+      "opens": "November 1",
+      "deadline": "January 31 at 11:59 pm Hawaii Time",
+      "cycle": "Not confirmed (the pages give the annual window without a year)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "These are national online applications, not chapter awards; the DAR portal is not used for state or chapter-level scholarships, which the national site does not describe. DAR also lists the Lillian and Arthur Dunn Scholarship ($2,500 for up to four years) for children or step children of dues-paying DAR members, but the page does not state the grade at which a student applies. Most other DAR scholarships are for college or graduate students.",
+      "sources": [
+        {
+          "label": "General Scholarship Information and Application Checklist",
+          "url": "https://www.dar.org/national-society/scholarships/general-info",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Applicants must be citizens of the United States to apply for one of the national scholarships offered by the DAR Scholarship Committee.",
+            "Applicants must also attend or plan to attend an accredited college or university in the United States.",
+            "DAR chapter sponsorship is not required, however, applicants may want to reach out to a DAR chapter in their area for help with their applications.",
+            "Applicants should submit their scholarship applications using the DAR's online process from November 1 through January 31 at 11:59 pm (Hawaii Time).",
+            "The scholarship application portal is not to be used when applying for the the DAR Good Citizens Award and Scholarship Contests or state or chapter level scholarships.",
+            "Inclusion of an applicant's photograph in any section of the application will result in disqualification.",
+            "Inclusion of handwriting in any section of the application will result in disqualification.",
+            "Applicants should obtain letters of recommendation from at least two people, but not more than four.",
+            "At the time of application the transcript may be an unofficial copy.",
+            "Statement of 1,000 words or less setting forth your career objectives.",
+            "Home schooled students must include transcripts for grade nine through current year.",
+            "Photocopy of your United States citizenship: birth certificate, naturalization papers, or information page of United States Passport."
+          ]
+        },
+        {
+          "label": "General Scholarship (Richard and Elizabeth Dean Scholarship)",
+          "url": "https://www.dar.org/national-society/scholarships/merit-scholarship",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The Richard and Elizabeth Dean Scholarship awards two scholarships in the preferred amount of $5,000 each year for up to four consecutive years to graduating high school students.",
+            "Scholarship recipients will pursue an undergraduate degree in American Studies at an accredited institution in the United States.",
+            "The selection process shall be based on academic merit with an initial minimum GPA of 4.0 on a 4.0 scale"
+          ]
+        },
+        {
+          "label": "History, Economics, Government & Political Science Scholarships",
+          "url": "https://www.dar.org/national-society/scholarships/history-etc",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "is awarded to graduating high school students who will pursue an undergraduate degree with a concentrated study of a minimum of 24 credit hours in American History and American Government",
+            "is an award of $2,000 each year for up to four years with annual transcript review by the National Chairman required for renewal",
+            "A one-time $2,000 scholarship awarded to two graduating high school seniors that have demonstrated advance interest in history",
+            "The applicant must have a GPA of 3.25."
+          ]
+        }
+      ]
+    },
+    "exchange-club-youth-scholarships": {
+      "prize": "Up to $15,000",
+      "task": "School nomination",
+      "tagline": "Local Exchange Clubs work with high schools to pick students, including an award for students who have overcome adversity. Local winners move up to district and national scholarships.",
+      "closes": null,
+      "deadlineShort": "Set by your local club",
+      "name": "National Exchange Club student scholarships: Youth of the Year, A.C.E. (Accepting the Challenge of Excellence) and Legacy of the Year",
+      "runBy": "The National Exchange Club, through local Exchange Clubs and districts",
+      "homepage": "https://www.nationalexchangeclub.org/about/recognition/",
+      "kind": "scholarship",
+      "local": true,
+      "findLocal": "https://member.nationalexchangeclub.org/club-locator/",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "Local-level scholarships from Exchange Clubs (amounts set locally: Not confirmed); local recipients automatically qualify for district scholarships; the National level awards a $15,000 scholarship to the winner of each of the three awards",
+      "eligibility": [
+        "Be a high school student identified through your high school by a local Exchange Club",
+        "Youth of the Year: outstanding students who have shown excellence in academics and leadership",
+        "A.C.E.: students who have overcome adversity to graduate high school and move their lives in positive directions",
+        "Legacy of the Year: outstanding high school students who are children, grandchildren, or great grandchildren of Exchange Club members",
+        "Exact grade level and other requirements: Not confirmed (not stated on the national pages)"
+      ],
+      "whatYouSubmit": [
+        "Not confirmed (not stated on the national pages; ask the local Exchange Club)"
+      ],
+      "howToApply": [
+        "Find a local Exchange Club with the national club locator, or ask your high school - clubs work with high schools in their regions to identify recipients",
+        "Receive a local-level scholarship from the club",
+        "Local recipients automatically qualify for the district scholarships",
+        "District winners are eligible to be recognized at the National level"
+      ],
+      "prepare": [
+        "Ask your school counselor whether a local Exchange Club names a Youth of the Year or A.C.E. recipient at your school"
+      ],
+      "opens": "Not confirmed (set by the local club)",
+      "deadline": "Not confirmed (set by the local club)",
+      "cycle": "Not confirmed",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The national site gives only one paragraph on these awards: no grade level, application contents or dates. The page says only 'high school students', so all four grades are listed; A.C.E. is described as for students graduating high school, and third-party copies of the forms describe both awards as for seniors, but that is not on the sponsor's pages. Legacy of the Year requires a family member in an Exchange Club. Not every club awards scholarships; the page offers a contact link to ask about scholarship-awarding clubs in your area.",
+      "sources": [
+        {
+          "label": "National Exchange Club - Recognition (Student Scholarships)",
+          "url": "https://www.nationalexchangeclub.org/about/recognition/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Exchange Clubs throughout the United States work with high schools in their regions to identify Youth of the Year and Accepting the Challenge of Excellence (A.C.E.) scholarship recipients.",
+            "Youth of the Year scholarships honor outstanding students who have exhibited excellence in academics and leadership.",
+            "Accepting the Challenge of Excellence (A.C.E.) award honors students who have overcome adversity to graduate high school and move their lives in positive directions.",
+            "Legacy of the Year honorees are outstanding high school students who are children, grandchildren, and great grandchildren of Exchange Club members",
+            "Students receiving a local-level scholarship automatically qualify for Exchange District Exchange Clubs scholarships.",
+            "which awards a $15,000 scholarship to each student winning one the three awards",
+            "Request information about scholarship-awarding Exchange Clubs in your area"
+          ]
+        },
+        {
+          "label": "National Exchange Club - Youth Programs",
+          "url": "https://www.nationalexchangeclub.org/areas-of-impact/youth-programs/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Through college scholarships at the community and national levels, mentoring, guidance and service recognition, Exchange is making a difference for America's youngest generations."
+          ]
+        }
+      ]
+    },
+    "kofc-us-undergraduate-scholarships": {
+      "prize": "Up to $1,500 a year",
+      "task": "Application",
+      "only": "Knights of Columbus families going to a Catholic college",
+      "tagline": "For seniors who are members, or children of members, of the Knights of Columbus and are heading to a Catholic college. Renewable for four years.",
+      "closes": null,
+      "deadlineShort": "April 22",
+      "name": "Knights of Columbus U.S. Undergraduate Scholarships (Fourth Degree Pro Deo and Pro Patria, John W. McDevitt and other endowed scholarships)",
+      "runBy": "Knights of Columbus Supreme Council",
+      "homepage": "https://www.kofc.org/resources/scholarships/us-undergraduate-scholarships/",
+      "kind": "scholarship",
+      "local": false,
+      "findLocal": "",
+      "grades": [
+        12
+      ],
+      "award": "Maximum $1,500 per year, renewable each year of undergraduate study to a total of four years; the number of scholarships depends on the earnings of the scholarship trust",
+      "eligibility": [
+        "Be entering freshman year of a four-year undergraduate bachelor's degree program at a Catholic college or Catholic university in the United States",
+        "Be a Knights of Columbus member in good standing, a son or daughter of such a member or of a deceased member who was in good standing at death, or a Columbian Squire in good standing (not limited to Fourth Degree members)",
+        "Two of the endowed scholarships (Percy J. Johnson and Frank L. Goularte) are need-based and require FAFSA SAR reporting; the Johnson scholarships are for young men"
+      ],
+      "whatYouSubmit": [
+        "Online application through the ISTS portal with required documents and supplements",
+        "FAFSA SAR for the need-based scholarships",
+        "Full list of required documents: Not confirmed (inside the application)"
+      ],
+      "howToApply": [
+        "Go to the ISTS application site, log in or register (use an email you check regularly, not a school email), and enter the program key KofC if asked",
+        "Complete all required fields, upload the required documents, request the required supplements and click Submit",
+        "Check your ISTS home page until the application status shows Complete",
+        "Winners' names are published in the September issue of Columbia magazine"
+      ],
+      "prepare": [
+        "Confirm your father's (or your own) Knights of Columbus membership is in good standing",
+        "Apply to a Catholic college or university - the scholarship can only be used there",
+        "File the FAFSA if you want to be considered for the need-based scholarships"
+      ],
+      "opens": "March 5",
+      "deadline": "April 22",
+      "cycle": "Not confirmed (the page gives the dates without a year)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Family-membership requirement and restricted to Catholic colleges. National online application, not through a local council. The Knights of Columbus scholarships page also says some state councils offer their own scholarships and tells students to contact their State Council Representative; those programs are not described on the national site.",
+      "sources": [
+        {
+          "label": "U.S. Undergraduate Scholarships",
+          "url": "https://www.kofc.org/resources/scholarships/us-undergraduate-scholarships/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The number of scholarships awarded is determined by the earnings of the scholarship trust.",
+            "Entering freshman year, of a four-year, undergraduate program, leading to a bachelor's degree, at a Catholic college or Catholic university, in the United States.",
+            "or a Columbian Squire in good standing.",
+            "Mr. Johnson stipulated that scholarships be awarded to young men who demonstrate financial need.",
+            "This needs-based scholarship requires FAFSA SAR reporting in the application process.",
+            "Be sure to use an email address that you check regularly; do not use a school email address as these expire after graduation",
+            "Your application status must update to Complete to be considered for the scholarship program.",
+            "Names of winners will be published in the September issue of COLUMBIA magazine.",
+            "The maximum scholarship is $1,500 per year, renewable each year of undergraduate study to a total of four years"
+          ]
+        },
+        {
+          "label": "Knights of Columbus Scholarships",
+          "url": "https://www.kofc.org/en/what-we-do/scholarships/index.html",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Scholarship Applications Available Online March 5th - April 22nd",
+            "An eligible candidate for these scholarships is a K of C member in good standing, a child of the member or of deceased member who was in good standing.",
+            "Some state councils provide educational funding programs in addition to what the Home Office provides",
+            "Please contact your State Council Representative for details on what is offered in these participating states"
+          ]
+        }
+      ]
+    },
+    "rotary-club-scholarships": {
+      "prize": "Set by your local club",
+      "task": "Ask your local club",
+      "tagline": "Many Rotary clubs give scholarships to students in their own town. There's no national list, so you find your club and ask what it offers and when.",
+      "closes": null,
+      "deadlineShort": "Set by your local club",
+      "name": "Rotary club and district scholarships",
+      "runBy": "Rotary International (awarded by local Rotary clubs and districts)",
+      "homepage": "https://www.rotary.org/get-involved/rotary-scholarships",
+      "kind": "scholarship",
+      "local": true,
+      "findLocal": "https://my.rotary.org/en/domui/club-search",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "Set by each club or district. Rotary's site says clubs and districts offer scholarships for secondary, undergraduate or graduate study, and gives no amounts.",
+      "eligibility": [
+        "Set by each local club: Rotary's site tells students to contact their local club for eligibility requirements"
+      ],
+      "whatYouSubmit": [
+        "Not confirmed (set by each local club)"
+      ],
+      "howToApply": [
+        "Find your local Rotary club with Rotary's club search",
+        "Contact the club and ask what scholarships it offers high school students, who can apply, and when"
+      ],
+      "prepare": [
+        "Contact your local club early: each club sets its own application and dates"
+      ],
+      "opens": "Not confirmed (set by each local club)",
+      "deadline": "Not confirmed (set by each local club)",
+      "cycle": "Not confirmed",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Rotary's national site describes these in two sentences and leaves every detail to the local club, so which grades can apply is not stated either. Rotary's site blocks automated reading; this was read in a browser. Rotary Youth Exchange (ages 15-19) and Rotary Youth Leadership Awards (ages 14-30) are also run through local clubs, but they are an exchange and a leadership event, not scholarships.",
+      "sources": [
+        {
+          "label": "Rotary Scholarships",
+          "url": "https://www.rotary.org/get-involved/rotary-scholarships",
+          "accessed": "2026-10-13",
+          "manual": true,
+          "evidence": [
+            "Clubs and districts offer scholarships for secondary, undergraduate, or graduate study.",
+            "Contact your local club for application information and eligibility requirements."
+          ]
+        }
+      ]
+    },
+    "nesa-eagle-scout-scholarships": {
+      "prize": "Up to $50,000",
+      "task": "Application",
+      "only": "Eagle Scouts who are NESA members",
+      "tagline": "If you've earned Eagle, one application puts you in for scholarships from $6,000 to $50,000. You have to join the National Eagle Scout Association first.",
+      "closes": "2027-02-01",
+      "deadlineShort": "Feb 1",
+      "name": "National Eagle Scout Association (NESA) Scholarships",
+      "runBy": "National Eagle Scout Association (Scouting America)",
+      "homepage": "https://nesa.org/scholarships/",
+      "kind": "scholarship",
+      "local": false,
+      "findLocal": "",
+      "grades": [
+        12
+      ],
+      "award": "One four-year $50,000 Cooke Scholarship (up to $12,500 a year), four four-year $30,000 Cooke Scholarships (up to $7,500 a year), and one-year awards of $10,000, $8,000 and $6,000 given one per Council Service Territory (14 of each), plus a $5,000 Tappan Scholarship and a $4,000 Ross Hutchinson NESA Scholarship. A recipient can receive a NESA scholarship only once.",
+      "eligibility": [
+        "Must be an Eagle Scout",
+        "Must be a member of the National Eagle Scout Association (NESA) to apply",
+        "May apply beginning in the senior year of high school (through the junior year of an undergraduate program)",
+        "Eagle Board of Review date must be on or before January 24, 2027",
+        "Currently enrolled in or accepted by an accredited institution as a full-time student (at least 12 credit hours) in a degree or skilled trade program",
+        "Not available to students attending a U.S. military academy",
+        "Can be received one time only"
+      ],
+      "whatYouSubmit": [
+        "Online application in the NESA scholarship portal (the public page does not list the essay or document requirements)"
+      ],
+      "howToApply": [
+        "Earn the Eagle Scout rank (board of review on or before January 24, 2027) and become a NESA member",
+        "Apply in the NESA portal between December 1, 2026 and February 1, 2027",
+        "Submit by 11:59 p.m. CST on February 1, 2027",
+        "Awards are announced June 10, 2027"
+      ],
+      "prepare": [
+        "Selection looks at active participation in school, Scouting activities and community service, so keep a record of each",
+        "If you have financial need, be ready to explain what distinguishes it"
+      ],
+      "opens": "December 1, 2026",
+      "deadline": "February 1, 2027, 11:59 p.m. CST",
+      "cycle": "2026-27",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "NESA membership is required to apply; the scholarships page does not state what NESA membership costs. The page does not list the application's essay or document requirements. Scholarships cannot be deferred and are paid to the college or trade program. nesa.org refuses some automated requests (curl returned 403; Node fetch loaded it).",
+      "sources": [
+        {
+          "label": "NESA Scholarships",
+          "url": "https://nesa.org/scholarships/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Eagle Scouts must be a member of the National Eagle Scout Association (NESA) to apply.",
+            "Eagle Scouts may apply for NESA scholarships beginning in their senior year of high school through their junior year in an undergraduate program",
+            "Recipients may receive a NESA scholarship one time only.",
+            "NESA scholarships are available to Eagle Scouts currently enrolled in or accepted by an accredited educational institution as a full-time student (at least 12 credit hours)",
+            "NESA scholarships are not available to students attending any of the U.S. military academies.",
+            "Must be on or before January 24, 2027.",
+            "December 1, 2026, through February 1, 2027.",
+            "By 11:59 p.m. CST on February 1, 2027.",
+            "Scholarships are awarded to Eagle Scouts who have shown active participation in school, Scouting activities, and community service",
+            "One recipient will be selected for a four-year $50,000 Lawrence S. and Mabel Cooke Scholarship (up to $12,500 per year for four years).",
+            "Four recipients will be selected for a four-year $30,000 Lawrence S. and Mabel Cooke Scholarship (up to $7,500 per year for four years).",
+            "One recipient will be selected from each CST for a one-year $10,000 Lawrence S. and Mabel Cooke Scholarship (14 scholarships total).",
+            "One recipient will be selected from each CST for a one-year $8,000 Hansen & Mary Hall Scholarship (14 scholarships total).",
+            "One recipient will be selected from each CST for a one-year $6,000 National Eagle Scout Association Scholarship Endowment (14 scholarships total).",
+            "One recipient will be selected for a $5,000 Tappan Scholarship.",
+            "One recipient will be selected for a $4,000 Ross Hutchinson NESA Scholarship",
+            "Scholarships may not be deferred."
+          ]
+        }
+      ]
+    },
+    "girl-scouts-gold-award-scholarship": {
+      "prize": "$5,000",
+      "task": "Video or written answers",
+      "only": "Girl Scouts who earned the Gold Award",
+      "tagline": "One Gold Award Girl Scout in each council wins $5,000. You answer four questions about your Gold Award project, on video or in writing.",
+      "closes": null,
+      "deadlineShort": "Mid April (2027 date not posted)",
+      "name": "GSUSA Gold Award Scholarship",
+      "runBy": "Girl Scouts of the USA",
+      "homepage": "https://www.girlscouts.org/en/members/for-girl-scouts/badges-awards/highest-awards/gold-award/gold-award-scholarship.html",
+      "kind": "scholarship",
+      "local": false,
+      "findLocal": "https://www.girlscouts.org/en/council-finder.html",
+      "grades": [
+        12
+      ],
+      "award": "$5,000 scholarship to one Gold Award Girl Scout per council and one from USA Girl Scouts Overseas (up to 112 in total)",
+      "eligibility": [
+        "Must have earned the Girl Scout Gold Award",
+        "High school senior or recent high school graduate (2026 program: seniors who earned the award before April 1, 2026)",
+        "Gold Award final report must be approved in the GoGold web app within the eligibility dates",
+        "Girl Scouts who applied in a previous year cannot re-apply",
+        "Girl Scouts not yet in 12th grade apply in their senior year"
+      ],
+      "whatYouSubmit": [
+        "Demographic information, a headshot with photo release, and confirmation of Gold Award status",
+        "Answers to four questions about your Gold Award, each in video (3 minutes or less) or written (500 words or fewer) format"
+      ],
+      "howToApply": [
+        "Earn the Gold Award and have the final report approved by your council in GoGold",
+        "Apply during the national window (2026 program: March 13 - April 14, 2026)",
+        "An independent selection committee narrows each council's applicants to up to three finalists; each council then nominates its finalist to GSUSA",
+        "Applicants get status updates in June"
+      ],
+      "prepare": [
+        "Confirm your Gold Award approval date with your council",
+        "Applications are scored on the project's root cause and plan, measurable and sustainable impact, a link to a national or global issue, leadership of a team, and your reflection"
+      ],
+      "opens": "March 13, 2026 (2026 program; 2027 dates not yet posted)",
+      "deadline": "April 14, 2026 (2026 program; 2027 dates not yet posted)",
+      "cycle": "2026 (closed); the page says to check back in 2027",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The page describes the 2026 program, which has closed; 2027 details are not posted. Funds cannot be applied to room and board.",
+      "sources": [
+        {
+          "label": "Gold Award Scholarship",
+          "url": "https://www.girlscouts.org/en/members/for-girl-scouts/badges-awards/highest-awards/gold-award/gold-award-scholarship.html",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Gold Award Girl Scouts can earn a $5,000 scholarship.",
+            "The 2026 scholarship program has closed. Check back in 2027 for updated program details.",
+            "Gold Award Girl Scouts who are high school seniors or recent high school graduates can apply for the 2026 program.",
+            "current high school seniors who earned or will earn anytime before April 1, 2026",
+            "Girl Scouts who applied in a previous year are not eligible to re-apply.",
+            "To be eligible, all Gold Award Girl Scouts must have their final report approved in the GoGold web app within the eligibility date range.",
+            "Gold Award Girl Scouts who are not yet in 12th grade will have the opportunity to apply in their senior year.",
+            "Apply between March 13 - April 14, 2026.",
+            "each applicant will answer four questions in either video or written format about their Gold Award.",
+            "In either video (3 minutes or less) or written (500 words or fewer) format, answer four questions about your Gold Award separately:",
+            "An independent selection committee will narrow down each council's applicants to up to three finalists, then each council will nominate their finalist to Girl Scouts of the USA for approval.",
+            "One Gold Award Girl Scout per council and from USA Girl Scouts Overseas (up to 112 total) will receive a $5,000 scholarship.",
+            "To confirm your eligibility (Gold Award approval date), please contact your council.",
+            "Had measurable and sustainable impact and a connection to a larger national or global issue."
+          ]
+        }
+      ]
+    },
+    "national-ffa-scholarships": {
+      "prize": "One application, many scholarships",
+      "task": "Application",
+      "only": "FFA members",
+      "tagline": "Senior FFA members fill in one application and get matched to scholarships worth nearly $2.5 million in total. It covers trade school and two-year programs too, not only four-year college.",
+      "closes": "2027-01-14",
+      "deadlineShort": "Jan 14",
+      "name": "National FFA Scholarships",
+      "runBy": "National FFA Organization",
+      "homepage": "https://www.ffa.org/participate/scholarships/",
+      "kind": "scholarship",
+      "local": false,
+      "findLocal": "https://www.ffa.org/chapter-locator/",
+      "grades": [
+        12
+      ],
+      "award": "Multiple scholarships totaling nearly $2.5 million, reached through one application; individual amounts are not listed on the page",
+      "eligibility": [
+        "Senior FFA member in high school (FFA Alumni in college can also apply)",
+        "For trade school, vocational certificate, two-year or four-year degree plans"
+      ],
+      "whatYouSubmit": [
+        "One online application (the public page does not list its parts)"
+      ],
+      "howToApply": [
+        "Complete the single National FFA Scholarship application online (run with scholarship partner Kaleidoscope)",
+        "Application goes live November 1, 2026; deadline January 14, 2027",
+        "Winner and non-winner notifications are sent April 22, 2027; acceptance deadline May 28, 2027"
+      ],
+      "prepare": [
+        "Be an FFA member through your school's chapter before applying"
+      ],
+      "opens": "November 1, 2026",
+      "deadline": "January 14, 2027",
+      "cycle": "2026-27",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The page contradicts itself: one sentence still says the 2025-26 application is open through January 15, while the timeline lists a January 14, 2027 deadline. Individual scholarship amounts, GPA rules and required documents are not on the public page.",
+      "sources": [
+        {
+          "label": "National FFA Scholarships",
+          "url": "https://www.ffa.org/participate/scholarships/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "If you are a senior FFA member in high school or FFA Alumni in college, just one application is required for multiple scholarship opportunities totaling nearly $2.5 million.",
+            "Whether you are pursuing a trade school, vocational certificate or a two-year or four-year degree",
+            "Member Application Live: Nov. 1, 2026",
+            "Member Application Deadline: Jan. 14 2027",
+            "Winner/Non-Winner Notification Sent: April 22, 2027",
+            "Acceptance Deadline: May 28, 2027",
+            "The 2025-26 National FFA Scholarship application is now open through January 15.",
+            "our scholarship partner, Kaleidoscope, will continue to work with those students"
+          ]
+        }
+      ]
+    },
+    "nhs-scholarship": {
+      "prize": "Up to $25,000",
+      "task": "Application + essay",
+      "only": "National Honor Society members",
+      "tagline": "600 seniors in the National Honor Society win at least $3,200 each. Your chapter adviser has to verify your account before you can apply.",
+      "closes": "2026-11-20",
+      "deadlineShort": "Nov 20",
+      "name": "NHS Scholarship",
+      "runBy": "National Honor Society (National Principals Association, formerly NASSP)",
+      "homepage": "https://www.nationalhonorsociety.org/students/the-nhs-scholarship/",
+      "kind": "scholarship",
+      "local": false,
+      "findLocal": "https://www.nationalhonorsociety.org/chapter-finder/",
+      "grades": [
+        12
+      ],
+      "award": "$2 million to 600 students: 575 National Semifinalists receive $3,200; 24 National Finalists receive $5,625; one National Finalist receives $25,000. Finalists also get an all-expense paid trip to Washington, DC. Not renewable.",
+      "eligibility": [
+        "High school senior, or expecting to receive a high school diploma during the current academic year",
+        "Active member in good standing of a National Honor Society chapter",
+        "NHS student account holder, verified by the NHS chapter adviser",
+        "Planning to pursue a degree at an accredited U.S. college or university, military institute, or trade school",
+        "International students may apply, but funds must be used at a U.S. college or university"
+      ],
+      "whatYouSubmit": [
+        "Detailed information about activities and experiences related to scholarship, service, leadership and character",
+        "An essay (the FAQ gives essay advice; the prompt is inside the application)",
+        "Adviser Certification requested from your NHS adviser inside the application portal",
+        "One recommendation from a non-adviser, non-family adult, completed in the portal"
+      ],
+      "howToApply": [
+        "Create a student account on the NHS website and have your chapter adviser verify it",
+        "Log in and complete the online application (opened September 3, 2026)",
+        "Request the Adviser Certification and the recommendation through the portal",
+        "Submit by November 20, 2026 at 5:00 p.m. ET",
+        "Applicants are notified in mid-January 2027; the top 25 finalists travel to DC in late February 2027"
+      ],
+      "prepare": [
+        "Get your account verified early: unverified students cannot open the application",
+        "Your recommender cannot be your NHS adviser",
+        "Check with your adviser that you are in good standing under your chapter's bylaws"
+      ],
+      "opens": "September 3, 2026",
+      "deadline": "November 20, 2026, 5:00 p.m. ET",
+      "cycle": "2026-27",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "There is no limit on the number of applicants per chapter. The sponsor now calls itself the National Principals Association on these pages.",
+      "sources": [
+        {
+          "label": "The NHS Scholarship",
+          "url": "https://www.nationalhonorsociety.org/students/the-nhs-scholarship/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "This year, we are awarding $2 million in scholarships to 600 students.",
+            "September 3, 2026: Application opens",
+            "November 20, 2026 at 5:00 p.m. (ET): Submission deadline",
+            "Mid-January 2027: Applicants receive notifications",
+            "Late February 2027: All-expense paid trip to DC for top 25 scholarship finalists and their advisers",
+            "A high school senior and/or expecting to receive a high school diploma during the current academic year.",
+            "An active member in good standing of a National Honor Society chapter, meeting all membership requirements and obligations of the local chapter.",
+            "An NHS student account holder, verified by the NHS chapter adviser.",
+            "Planning to pursue a degree at an accredited U.S. college or university, military institute, or trade school.",
+            "There are no limits to the number of applicants per chapter."
+          ]
+        },
+        {
+          "label": "NHS Scholarship FAQs",
+          "url": "https://www.nationalhonorsociety.org/the-nhs-scholarship/scholarship-faq/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "575 National Semifinalists will receive $3,200.",
+            "24 National Finalists will receive $5,625 and an all-expense paid trip to DC for NELA.",
+            "1 National Finalist will receive $25,000 and an all-expense paid trip to DC for NELA.",
+            "Unverified students will not have access to the NHS Scholarship application.",
+            "Students should refer to their NHS chapter's bylaws for what constitutes",
+            "Provide detailed information about activities and experiences related to scholarship, service, leadership, and character.",
+            "The adviser certification must be completed in the application portal and no external documents or communications will be accepted.",
+            "Request a Recommendation from one non-adviser, non-family member adult who can speak to the applicant's commitment to the pillars of NHS.",
+            "How do I write a strong essay?",
+            "Your recommender cannot be your NHS adviser!",
+            "The NHS Scholarship is a non-renewable award for undergraduate educational expenses.",
+            "Yes, international students may apply for the scholarship, but scholarship funds must be used at a U.S. college or university."
+          ]
+        }
+      ]
+    },
+    "deca-scholarships": {
+      "prize": "$1,000 to $2,500",
+      "task": "Application",
+      "only": "DECA members",
+      "tagline": "Open to DECA members in any grade, 9th to 12th. You'll need a transcript and three recommendation letters.",
+      "closes": "2027-01-11",
+      "deadlineShort": "Jan 11",
+      "name": "DECA Student Scholarships",
+      "runBy": "DECA Inc.",
+      "homepage": "https://www.deca.org/scholarships",
+      "kind": "scholarship",
+      "local": false,
+      "findLocal": "https://www.deca.org/associations",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "Over $200,000 a year across partner-funded scholarships, most $1,000 to $2,500 each (for example five $2,000 DECA Inc. scholarships and five $1,000 Hilton scholarships)",
+      "eligibility": [
+        "Must be a current DECA member (join through your school's DECA chapter)",
+        "All grade levels may apply unless a specific scholarship names a grade (for example the NRF Foundation RISE Up scholarships are for juniors or seniors)",
+        "Each scholarship has its own criteria, such as an intended field of study or working in the chapter's school-based enterprise",
+        "Scholarships are merit-based",
+        "Must enroll as a full-time college student to use the award"
+      ],
+      "whatYouSubmit": [
+        "Transcript (unofficial accepted)",
+        "Three letters of recommendation",
+        "Any extra item a specific scholarship asks for, such as an essay or a video"
+      ],
+      "howToApply": [
+        "Create an account on DECA's scholarship application site",
+        "Choose the scholarships whose criteria you meet; you may apply for more than one",
+        "Upload all required items by January 11, 2027 (there is no preliminary round this cycle)",
+        "Scholarships are presented at the International Career Development Conference; attendance is not required"
+      ],
+      "prepare": [
+        "Line up three recommenders early",
+        "A scholarship can be deferred up to three years"
+      ],
+      "opens": "Not confirmed",
+      "deadline": "January 11, 2027",
+      "cycle": "2026-27",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "DECA membership is required; the scholarships page does not state membership dues. The opening date is not given.",
+      "sources": [
+        {
+          "label": "DECA Student Scholarships",
+          "url": "https://www.deca.org/scholarships",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "DECA's scholarship program provides over $200,000 in scholarships to high school and college DECA members at the International Career Development Conference (ICDC) each year.",
+            "DECA scholarships are strictly merit-based.",
+            "Student members will need to create an account on the page.",
+            "Applications will close on January 11, 2027.",
+            "Applicants will be required to upload a transcript and get three letters of recommendation in addition to any specific requirements for each scholarship.",
+            "The 2026-2027 scholarship window will not have a preliminary round",
+            "DECA Inc. provides five (5) $2,000 scholarships to DECA members (high school or collegiate) who intend to pursue a course of study in entrepreneurship, finance, hospitality, management or marketing.",
+            "Hilton provides five (5) $1,000 scholarships to DECA members who have an interest in hospitality.",
+            "provides five (5) $2,000 scholarships to DECA juniors or seniors who have earned (or are earning) a RISE Up credential.",
+            "Applicants will be required to upload an essay.",
+            "Yes, you may upload unofficial transcripts.",
+            "Yes, you may apply for more than one scholarship providing you meet the criteria of each scholarship.",
+            "No, you must be enrolled as a full-time student at a college/university.",
+            "Yes, your scholarship can be deferred up to three (3) years.",
+            "No, you do not need to attend DECA ICDC in order to receive your scholarship.",
+            "Yes, you must be a current DECA member to be eligible for DECA scholarships.",
+            "No, all grade levels (from high school freshmen to Collegiate DECA members) are welcome to apply."
+          ]
+        }
+      ]
+    },
+    "fbla-distinguished-business-leader-scholarship": {
+      "prize": "$500",
+      "task": "Application + cover letter",
+      "only": "FBLA members",
+      "tagline": "For graduating FBLA members who plan to keep going with FBLA in college. Your dues need to be paid by March 1.",
+      "closes": null,
+      "deadlineShort": "April 15",
+      "name": "FBLA Distinguished Business Leader Scholarship (High School)",
+      "runBy": "Future Business Leaders of America (FBLA)",
+      "homepage": "https://www.fbla.org/high-school/hs-scholarships-aid/",
+      "kind": "scholarship",
+      "local": false,
+      "findLocal": "",
+      "grades": [
+        12
+      ],
+      "award": "$500; the number of scholarships depends on yearly contributions to the fund",
+      "eligibility": [
+        "Graduating FBLA High School member; must be a high school senior",
+        "Plans to pursue post-secondary education and become actively involved in FBLA Collegiate",
+        "Dues-paid FBLA member by March 1",
+        "Has achieved the Advocate or Capstone level of the Business Achievement Awards (BAA) program"
+      ],
+      "whatYouSubmit": [
+        "Completed Distinguished Business Leader Scholarship application form",
+        "One-page cover letter summarizing FBLA, business, leadership and community activities",
+        "Resume outlining FBLA activities and educational achievements",
+        "One letter of recommendation from a chapter adviser, a teacher, or a business/community leader"
+      ],
+      "howToApply": [
+        "Join FBLA through your school chapter and pay dues by March 1",
+        "Complete the Advocate or Capstone level of the Business Achievement Awards",
+        "Submit the scholarship form with the cover letter, resume and recommendation by April 15 at 5:00 PM ET"
+      ],
+      "prepare": [
+        "The Business Achievement Awards level must be finished before you apply, so start it early in the year"
+      ],
+      "opens": "Not confirmed",
+      "deadline": "April 15, 5:00 PM ET (the page gives no year)",
+      "cycle": "2026-27 (the page gives the deadline without a year)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "FBLA membership with paid dues is required; the dues amount is not on this page. The same page lists the FBLA x Futures (Pearson) Scholarship, three $2,000 awards open to high school juniors or seniors, but shows no application deadline for it in the page text.",
+      "sources": [
+        {
+          "label": "FBLA High School Scholarships & Financial Aid",
+          "url": "https://www.fbla.org/high-school/hs-scholarships-aid/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The number of scholarships given depends on yearly contributions to the FBLA Distinguished Business Leader Scholarship fund.",
+            "Amount: $500",
+            "Open to graduating FBLA High School members who plan to pursue a post-secondary education and become actively involved in FBLA Collegiate at the post-secondary level.",
+            "Must be a high school senior to apply.",
+            "Must be dues-paid members of FBLA by March 1",
+            "Successful achievement of either the Advocate or Capstone level of the Business Achievement Awards (BAA) program.",
+            "The completed application form.",
+            "A one-page cover letter summarizing FBLA, business, leadership, and community activities.",
+            "A resume outlining FBLA activities and educational achievements.",
+            "One letter of recommendation from a chapter adviser, a teacher, or a business/community leader.",
+            "Deadline is April 15 at 5:00 PM ET",
+            "three $2,000 Pearson Futures Scholarships for high school juniors or seniors and college or university undergraduates who plan to continue their postsecondary education."
+          ]
+        }
+      ]
+    },
+    "bgca-youth-of-the-year": {
+      "prize": "Up to $50,000",
+      "task": "Club nomination",
+      "only": "Boys & Girls Club members",
+      "tagline": "Boys & Girls Club members compete from their own Club up to state ($2,500), regional ($20,000) and national ($50,000).",
+      "closes": null,
+      "deadlineShort": "Ask your Club",
+      "name": "Boys & Girls Clubs of America Youth of the Year",
+      "runBy": "Boys & Girls Clubs of America",
+      "homepage": "https://www.bgca.org/programs/youth-of-the-year/",
+      "kind": "competition",
+      "local": true,
+      "findLocal": "https://www.bgca.org/get-involved/find-a-club/",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "State Youth of the Year winners receive $2,500; regional winners receive $20,000; the National Youth of the Year receives $50,000. About 94 participants a year share more than $500,000.",
+      "eligibility": [
+        "Must be a Boys & Girls Club member (the pages describe participants as Club teens)",
+        "Recognizes leadership, service, academic excellence and dedication to living a healthy lifestyle"
+      ],
+      "whatYouSubmit": [
+        "Not confirmed (the national pages do not list application materials)"
+      ],
+      "howToApply": [
+        "Take part through your local Boys & Girls Club",
+        "Advance through local, state and regional Youth of the Year events",
+        "Five regional winners and a national military youth winner advance to the National Youth of the Year Celebration, where one is named National Youth of the Year"
+      ],
+      "prepare": [
+        "Ask your local Club how and when it selects its Youth of the Year"
+      ],
+      "opens": "Not confirmed",
+      "deadline": "Not confirmed",
+      "cycle": "Not confirmed",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The national pages say only 'Club teens' and 'Club member'; they give no age or grade limits, no application materials and no dates, so the grades listed here are an assumption (all high school grades) rather than a quoted rule. Local Clubs run the first stage.",
+      "sources": [
+        {
+          "label": "Youth of the Year: Scholarships",
+          "url": "https://www.bgca.org/programs/youth-of-the-year/scholarships/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Every year, approximately 94 participants from across the country and military bases worldwide are awarded more than $500,000 in scholarships as state, regional and National Youth of the Year finalists.",
+            "State Youth of the Year winners receive $2,500",
+            "Regional Youth of the Year winners receive $20,000",
+            "The National Youth of the Year receives $50,000"
+          ]
+        },
+        {
+          "label": "Youth of the Year: The Program",
+          "url": "https://www.bgca.org/programs/youth-of-the-year/the-program/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Stories of outstanding leadership, service, academic excellence and dedication to living a healthy lifestyle have made Youth of the Year America's premier leadership and recognition program for teens.",
+            "Each year, one exceptional Club member is selected to be the National Youth of the Year",
+            "Each year, thousands of Club teens participate in local, state and regional Youth of the Year events.",
+            "Six teens, including five regional winners and a national military youth winner, advance to the National Youth of the Year Celebration"
+          ]
+        }
+      ]
+    },
+    "csf-seymour-memorial-award": {
+      "prize": "$2,000 to $5,000",
+      "task": "Adviser nomination",
+      "only": "CSF Sealbearers nominated by their adviser",
+      "area": "California",
+      "tagline": "You can't apply on your own: your school's California Scholarship Federation adviser nominates one or two seniors. 50 finalists get $2,000, and five get $3,000 more.",
+      "closes": null,
+      "deadlineShort": "Feb 18",
+      "name": "CSF Seymour Memorial Awards",
+      "runBy": "California Scholarship Federation (CSF)",
+      "homepage": "https://csf-cjsf.org/csf-awards/",
+      "kind": "scholarship",
+      "local": true,
+      "findLocal": "https://csf-cjsf-hub.org/",
+      "state": "CA",
+      "grades": [
+        12
+      ],
+      "award": "50 finalists each receive $2,000; five of them (one per CSF region) receive an additional $3,000 as the regional award recipient",
+      "eligibility": [
+        "Senior who has earned CSF Sealbearer (Life Member) status by the end of the first semester of senior year",
+        "Must be nominated by the school's CSF adviser; students cannot apply on their own",
+        "Each active chapter in good standing may nominate one or two seniors",
+        "The chapter's state dues and CSF course lists must be current before the nomination is submitted",
+        "Finalists must attend the Seymour Finalists Interviews at their region's spring conference or forfeit the award"
+      ],
+      "whatYouSubmit": [
+        "High school transcript (PDF) that includes first semester senior grades",
+        "List of activities in a set order (CSF membership, offices and activities; non-CSF activities; awards; employment)",
+        "Personal statement, limited to 2 double-spaced pages",
+        "Two recommendation letters, each limited to 2 double-spaced pages: one from the CSF adviser and one from a community member outside school who is not a relative",
+        "Signed Publicity Release form"
+      ],
+      "howToApply": [
+        "Ask your CSF adviser to nominate you; nominations open January 1",
+        "The adviser submits the nomination and all files online by February 18 at 6pm",
+        "In early March, ten nominees from each of CSF's five regions are named finalists",
+        "In March/April, finalists are interviewed at their regional conference and one recipient per region is chosen"
+      ],
+      "prepare": [
+        "Earn CSF membership in enough semesters to reach Sealbearer status by the end of first semester senior year",
+        "Selection is based on character, leadership and service, so document service through your CSF chapter and community",
+        "Confirm you can attend the in-person regional interview before being nominated"
+      ],
+      "opens": "January 1 (nominations; each year)",
+      "deadline": "February 18 at 6pm (each year)",
+      "cycle": "2026-27 (the page gives the same dates every year)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Nomination only, through the school's CSF chapter adviser; the school must have an active CSF chapter that has paid state dues. The same page describes the Michelson Memorial Award essay contest for junior and senior CSF members (submissions November 1 to December 22).",
+      "sources": [
+        {
+          "label": "CSF Awards",
+          "url": "https://csf-cjsf.org/csf-awards/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Students must be nominated by their CSF Adviser.",
+            "Nominees must have earned Sealbearer status by the end of the first semester of their Senior year.",
+            "Nominations open: January 1st.",
+            "Nomination deadline: February 18th at 6pm, every year",
+            "State dues must be received for the current school year prior to submission of the Seymour application.",
+            "Must include first semester senior grades.",
+            "CSF membership by grade level and semester",
+            "Limit to 2 double-spaced pages. Parts of this statement may be quoted at the spring conference.",
+            "Limit each to 2 double-spaced pages. Parts may be quoted at the spring conference.",
+            "outside of school, not from a relative.",
+            "Publicity Release form MUST be completed and uploaded with the nomination form.",
+            "Advisers of active CSF chapters in good standing* are eligible to nominate one or two Senior students each year.",
+            "Each year, 50 finalists receive awards of $2,000 each, and five of these (one per region) each receive an additional $3,000 as the regional award recipient.",
+            "Ten nominees from each of CSF's 5 regions will be selected as finalists.",
+            "At each regional conference, the region's ten finalists will be interviewed to select the recipient for the region.",
+            "Finalists who are not able to attend the conference to participate in the interview process will forfeit their award.",
+            "The selection is made on the basis of character, leadership, and service.",
+            "All Junior and Senior CSF members may apply."
+          ]
+        }
+      ]
+    },
+    "california-state-pta-graduating-senior-scholarships": {
+      "prize": "PTA senior scholarship",
+      "task": "Essay",
+      "only": "PTA members",
+      "area": "California",
+      "tagline": "For seniors at California high schools who are PTA members and volunteer in their school or community. You'll need proof of your PTA membership.",
+      "closes": "2027-02-01",
+      "deadlineShort": "Feb 1",
+      "name": "California State PTA Graduating High School Senior Scholarships",
+      "runBy": "California State PTA",
+      "homepage": "https://capta.org/programs-events/scholarships/graduating-high-school-seniors/",
+      "kind": "scholarship",
+      "local": true,
+      "findLocal": "",
+      "state": "CA",
+      "grades": [
+        12
+      ],
+      "award": "Volunteer Service Scholarship (amount not stated on the page), plus the $500 Dr. Ralph E. White Graduating Senior Scholarship for two Volunteer Service applicants who intend a career in the medical field",
+      "eligibility": [
+        "PTA member (all California State PTA scholarships require current membership at a PTA in good standing)",
+        "Graduating from a California high school between January 1 and June 30 of the current academic year",
+        "Recognizes volunteer service in schools and communities"
+      ],
+      "whatYouSubmit": [
+        "Proof of your PTA membership",
+        "Descriptive essay answering the application's questions on your PTA experience and service, service to other organizations, career plans and job experience",
+        "Two completed reference forms and letters written for this application: one from a community volunteer leader unrelated to you with whom you volunteered, one from a member of the high-school faculty"
+      ],
+      "howToApply": [
+        "Join your local PTA if you are not a member",
+        "Apply online once the 2027 application opens in November 2026",
+        "Submit by February 1, 2027 at 11:59pm",
+        "Applicants are notified in March or early April"
+      ],
+      "prepare": [
+        "Keep proof of PTA membership",
+        "Ask a volunteer leader you served with and a high school faculty member for references written specifically for this application"
+      ],
+      "opens": "November 2026",
+      "deadline": "February 1, 2027, 11:59pm",
+      "cycle": "2026-27 (2027 graduating seniors)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "PTA membership is required and local PTAs charge dues; the amount is not on these pages. The dollar amount of the Volunteer Service Scholarship itself is not stated.",
+      "sources": [
+        {
+          "label": "Graduating High School Seniors",
+          "url": "https://capta.org/programs-events/scholarships/graduating-high-school-seniors/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The 2027 Graduating High School Senior Scholarship application will open in November 2026.",
+            "The deadline to apply will be February 1, 2027 at 11:59pm.",
+            "This scholarship recognizes graduating seniors for their volunteer service in schools and communities",
+            "Applicants must be PTA members graduating from a California high school between January 1 and June 30 of the current academic year.",
+            "this additional scholarship provides $500 each to two successful applicants of the Volunteer Service Scholarship who intend to pursue a career in the medical field.",
+            "All applicants should be be notified of their status in March or early April.",
+            "Proof of your PTA membership",
+            "Descriptive essay fully answering the questions asked regarding your PTA experience and service",
+            "Two completed reference forms and letters, written specifically for this application",
+            "first reference written by a community volunteer leader unrelated to you and with whom you volunteered",
+            "second reference written by a member of the high-school faculty"
+          ]
+        },
+        {
+          "label": "Scholarships and Grants",
+          "url": "https://capta.org/programs-events/scholarships/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "All scholarships require current membership at PTAs in good standing",
+            "Eligible graduating high school seniors may apply for the Volunteer Service Scholarship and the $500 Dr. Ralph E. White Scholarship for medical-field education."
+          ]
+        }
+      ]
+    },
+    "cta-scholarship-for-dependent-children": {
+      "prize": "Up to $5,000",
+      "task": "Application",
+      "only": "Children of California Teachers Association members",
+      "area": "California",
+      "tagline": "Is your parent a California teacher in the CTA? Up to 56 students get up to $5,000 each. The application posts October 22.",
+      "closes": "2027-02-05",
+      "deadlineShort": "Feb 5",
+      "name": "CTA Scholarship for Dependent Children",
+      "runBy": "California Teachers Association (CTA)",
+      "homepage": "https://www.cta.org/for-educators/scholarships-awards/cta-scholarships",
+      "kind": "scholarship",
+      "local": true,
+      "findLocal": "",
+      "state": "CA",
+      "grades": [
+        12
+      ],
+      "award": "A maximum of 56 scholarships of up to $5,000 each",
+      "eligibility": [
+        "Dependent child of an active CTA member, a CTA/NEA-Retired member or a deceased CTA member, claimed as a dependent on the member's current year IRS form",
+        "At least a graduating high school senior",
+        "High school grade point average should reflect a high unweighted average"
+      ],
+      "whatYouSubmit": [
+        "Online application",
+        "Two recommendation forms",
+        "Unofficial transcripts; for high school seniors they must include the first grading period of 12th grade"
+      ],
+      "howToApply": [
+        "The 2026-2027 application is posted online on Thursday, October 22, 2026",
+        "Submit the online application, two recommendation forms and unofficial transcripts",
+        "Deadline: Friday, February 5, 2027"
+      ],
+      "prepare": [
+        "Confirm the parent's CTA membership status",
+        "Wait for first grading period 12th-grade marks to appear on the transcript before sending it"
+      ],
+      "opens": "October 22, 2026",
+      "deadline": "February 5, 2027",
+      "cycle": "2026-27",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Open only to dependents of CTA members (California public school educators). A separate award in honor of Del A. Weber gives one scholarship of up to $5,000 to a member's dependent attending a continuation high school or alternative education program.",
+      "sources": [
+        {
+          "label": "CTA Scholarships",
+          "url": "https://www.cta.org/for-educators/scholarships-awards/cta-scholarships",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "A complete application consists of the online application, two recommendation forms, and unofficial transcripts.",
+            "For high school seniors, transcripts must include the first grading period of 12th grade.",
+            "The 2026-2027 CTA Scholarship application will be posted online on Thursday, October 22, 2026.",
+            "Deadline: Friday, February 5, 2027.",
+            "A maximum of 56 scholarships of up to $5,000 are awarded.",
+            "Applicant must be the dependent child of an active member of CTA, CTA/NEA-Retired or deceased CTA member and be claimed as a dependent on the member's current year's IRS form.",
+            "Applicant must be at least a graduating high school senior.",
+            "High school grade point average should reflect a high unweighted average.",
+            "(Dependent Children Attending Continuation High School/Alternative Education Programs)",
+            "A maximum of one scholarship of up to $5,000 is awarded."
+          ]
+        }
+      ]
+    },
+    "california-table-grape-scholarships": {
+      "prize": "Up to $25,000",
+      "task": "Application",
+      "only": "Table grape field worker families, and students from the Coachella and San Joaquin valleys",
+      "area": "Coachella and San Joaquin valleys",
+      "tagline": "If you or a parent worked in the California table grape harvest, there's $25,000 for a four-year California university, or $14,500 if you start at community college.",
+      "closes": null,
+      "deadlineShort": "Not posted yet",
+      "name": "California Table Grape Scholarships (Field Worker and Agricultural)",
+      "runBy": "California Table Grape Commission",
+      "homepage": "https://www.grapesfromcalifornia.com/california-table-grape-scholarships/",
+      "kind": "scholarship",
+      "local": true,
+      "findLocal": "",
+      "state": "CA",
+      "region": "California table grape growing regions: Coachella and San Joaquin valleys",
+      "grades": [
+        12
+      ],
+      "award": "Field Worker scholarships: $25,000 for students who will attend a four-year California university, or a $14,500 Bridge Scholarship for two years at a community college followed by transfer. Agricultural Scholarship: $25,000.",
+      "eligibility": [
+        "Field Worker scholarships: the applicant, or a parent or legal guardian, was employed as a field worker in a California table grape harvest during the 2026 season or plans to be during the 2027 harvest",
+        "Agricultural Scholarship: resident of a California table grape growing region (Coachella or San Joaquin valleys)",
+        "Agricultural Scholarship: must enroll full time in a four-year California university with a fall 2027 enrollment date and a declared major tied to the California table grape industry",
+        "Further eligibility criteria are in the application PDFs"
+      ],
+      "whatYouSubmit": [
+        "Not confirmed (the required materials are listed only in the downloadable application PDFs)"
+      ],
+      "howToApply": [
+        "Download the 2027 Field Worker or Agricultural scholarship application from the Commission's page",
+        "Follow the eligibility criteria and required materials in the application"
+      ],
+      "prepare": [
+        "Field Worker applicants need to show the 2026-season (or planned 2027) table grape harvest employment of the student or a parent or guardian"
+      ],
+      "opens": "Not confirmed",
+      "deadline": "Not confirmed",
+      "cycle": "2027 (fall 2027 enrollment)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The page does not name a grade; it describes students who will start college in fall 2027, so grade 12 is inferred. The deadline, GPA rules and required documents are only in the application PDFs, which could not be read as text.",
+      "sources": [
+        {
+          "label": "California Table Grape Scholarships",
+          "url": "https://www.grapesfromcalifornia.com/california-table-grape-scholarships/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Below are the applications for the 2027 Agricultural and Field Worker scholarships.",
+            "The $25,000 Agricultural Scholarship is available to those interested in studying agriculture and building a career in the table grape industry.",
+            "Applicants must be a resident of a California table grape growing region (Coachella or San Joaquin valleys), and must enroll full time in a four-year California university with a fall 2027 enrollment date",
+            "the first, called the Bridge Scholarship, is a $14,500 scholarship for students who will attend two years at a community college and transfer to a four-year California university.",
+            "The second is a $25,000 scholarship for students who will attend a four-year California university.",
+            "To be eligible, the applicant or their parent or legal guardian must have been employed as a field worker in a California table grape harvest during the 2026 season or plan to be so employed during the 2027 harvest.",
+            "Download the application for more information on eligibility criteria and required application materials."
+          ]
+        }
+      ]
+    },
+    "svcf-managed-scholarships": {
+      "prize": "One application, many scholarships",
+      "task": "Application",
+      "area": "Bay Area",
+      "tagline": "One application matches you to the Silicon Valley Community Foundation's scholarships. Many are for seniors from a particular city, county or high school in the Bay Area.",
+      "closes": null,
+      "deadlineShort": "Late February (next date not posted)",
+      "name": "Silicon Valley Community Foundation: SVCF-Managed Scholarships",
+      "runBy": "Silicon Valley Community Foundation",
+      "homepage": "https://www.svcf.org/scholarships",
+      "kind": "scholarship",
+      "local": true,
+      "findLocal": "",
+      "state": "CA",
+      "region": "Varies by fund; the application's geographic filters are California, the Greater Bay Area, San Francisco County and Santa Clara County",
+      "grades": [
+        12
+      ],
+      "award": "Close to 700 scholarships a year totaling more than $4.5 million across all SVCF programs; amounts are set per fund and a student can receive only one scholarship per year",
+      "eligibility": [
+        "Graduating high school seniors are eligible for many funds (others are for undergraduates, re-entry and graduate students)",
+        "Each fund sets its own criteria, such as residence in a city or county, a high school or district, or a field of study",
+        "All scholarships consider academic achievement, personal attributes, school and community involvement, and financial need per the FAFSA",
+        "Limited to one scholarship per student per year"
+      ],
+      "whatYouSubmit": [
+        "One online application for all SVCF-managed scholarships; funds you match appear with their additional requirements inside the application"
+      ],
+      "howToApply": [
+        "Review the SVCF-managed scholarship list and each fund's eligibility",
+        "Begin the application process in December; the application is open in January",
+        "Submit the single application by the one deadline (2026-27 cycle: February 27, 2026 at noon PST)",
+        "Screening and review run March to April; award notifications come May to June",
+        "Awards are paid to the college financial aid office, not to the student"
+      ],
+      "prepare": [
+        "File the FAFSA, since financial need is assessed from it",
+        "Read each fund's description: several SVCF-managed funds are limited to particular districts or cities"
+      ],
+      "opens": "January (2026-27 cycle; the next cycle's dates are not posted)",
+      "deadline": "February 27, 2026, 12 noon PST (2026-27 cycle, now closed)",
+      "cycle": "2026-27 (closed); next cycle not yet posted",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The posted timeline is for the cycle that closed in February 2026. The timeline's month labels (December, January, February) sit in separate page elements from their text, so the months are read from the layout rather than quoted in one line. Donor-managed scholarships are separate, with their own applications and deadlines. The page does not give per-award amounts.",
+      "sources": [
+        {
+          "label": "SVCF Scholarships",
+          "url": "https://www.svcf.org/scholarships",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The SVCF-Managed scholarships application is now closed.",
+            "Annually, we award close to 700 scholarships, totaling more than $4.5 million.",
+            "Silicon Valley Community Foundation offers scholarships to graduating high school seniors, currently enrolled undergraduates, re-entry students and graduate students.",
+            "Apply to scholarships managed by SVCF through one application with one deadline.",
+            "Begin the application process to be considered for SVCF-Managed Scholarships.",
+            "Application open. Apply early.",
+            "Application Deadline February 27, 2026, @ 12 (Noon) PST"
+          ]
+        },
+        {
+          "label": "SVCF-Managed Scholarships",
+          "url": "https://www.svcf.org/scholarships/find-scholarships/svcf-managed-scholarships",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "SVCF administers scholarship programs for high school seniors, college and graduate students, re-entry students, and vocational and technical school students.",
+            "Students from or studying in California",
+            "Students from or studying in the Greater Bay Area",
+            "Students from or studying in Santa Clara County",
+            "Students from or studying in San Francisco County",
+            "For graduating high school seniors from East Side Union High School District"
+          ]
+        },
+        {
+          "label": "SVCF Scholarship FAQ",
+          "url": "https://www.svcf.org/scholarships/scholarship-faq",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "In our efforts to reach as many students as possible with limited resources, students are limited to one scholarship per year.",
+            "Some scholarship funds support residents of a city or county; others are directed to students interested in a specific field of study.",
+            "All scholarships are based on academic achievement, personal attributes, school and community involvement, and financial need per the Free Application for Federal Student Aid.",
+            "You will be matched under the scholarship eligibility section of your application based on these criteria",
+            "Most notifications will be emailed between May and June.",
+            "No, it is against SVCF's policies to pay scholarships directly to students."
+          ]
+        }
+      ]
+    },
+    "san-diego-foundation-common-scholarship-application": {
+      "prize": "$1,000 to $10,000",
+      "task": "Application",
+      "area": "San Diego County",
+      "tagline": "Live in San Diego County? One application puts you in for more than 150 scholarships. You need a 2.0 GPA and a year of living in the county.",
+      "closes": null,
+      "deadlineShort": "Early March (next date not posted)",
+      "name": "San Diego Foundation Common Scholarship Application",
+      "runBy": "San Diego Foundation",
+      "homepage": "https://www.sdfoundation.org/students/common-scholarship-application/",
+      "kind": "scholarship",
+      "local": true,
+      "findLocal": "",
+      "state": "CA",
+      "region": "San Diego County",
+      "grades": [
+        12
+      ],
+      "award": "More than 150 scholarships through one application; awards range from $1,000 to about $10,000, with an average of $3,000. Nearly 40% are renewable for two or four years.",
+      "eligibility": [
+        "Graduating high school seniors (also current college students and adult re-entry students)",
+        "Current residence in San Diego County for at least one year; most awards require county residency",
+        "Minimum GPA of 2.0",
+        "Need of help to pay for school, including middle-income families",
+        "FAFSA or CA Dream Act application required to apply",
+        "Each scholarship has its own additional criteria"
+      ],
+      "whatYouSubmit": [
+        "One Common Scholarship Application, matched automatically to every scholarship you qualify for",
+        "FAFSA or CA Dream Act information (or the Federal Student Aid Estimator result if you cannot complete either)",
+        "Short essay answer; some scholarships add supplemental essays, letters of recommendation or file uploads"
+      ],
+      "howToApply": [
+        "Complete the FAFSA or CA Dream Act Application",
+        "Fill in the single Common Scholarship Application in the scholarship portal; allow up to five hours",
+        "Request any required letters of recommendation through the application platform; they are due with the application",
+        "Submit by the deadline (2026-27 cycle: Wednesday, March 4, 2026, 2:00 p.m. PST); late materials are not accepted",
+        "Some scholarships require a 20-minute interview scheduled in April; awards are notified by June"
+      ],
+      "prepare": [
+        "Review the criteria for each scholarship before starting",
+        "Do not leave supplemental sections blank: that forfeits the matching scholarship"
+      ],
+      "opens": "Not confirmed",
+      "deadline": "March 4, 2026, 2:00 p.m. PST (2026-27 cycle, now closed)",
+      "cycle": "2026-27 (closed); next cycle not yet posted",
+      "fee": "Free: the foundation states that applying is completely cost-free",
+      "notes": "Dates shown are for the cycle that closed in March 2026; the opening date and the next cycle's deadline are not on the pages. The two pages give different top-of-range figures ('more than $5,000' on one, 'about $10,000' in the FAQ).",
+      "sources": [
+        {
+          "label": "Common Scholarship Application",
+          "url": "https://www.sdfoundation.org/students/common-scholarship-application/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "In just one application, our Common Scholarship Application provides students access to more than 150 scholarship opportunities with awards ranging from $1,000 to more than $5,000.",
+            "The 2026-2027 Common Scholarship Application deadline has passed.",
+            "Graduating high school seniors",
+            "Minimum GPA of 2.0",
+            "Current residence in San Diego County (for at least one year)",
+            "Need of help to pay for school (including middle-income families)",
+            "Free Application for Federal Student Aid (FAFSA) or CA Dream Act are required to apply.",
+            "If students can't complete either, they must use the Federal Student Aid Estimator Tool"
+          ]
+        },
+        {
+          "label": "Common Scholarship Application FAQs",
+          "url": "https://www.sdfoundation.org/students/common-scholarship-application/faqs/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Completing the Common Scholarship Application may take up to five hours as some scholarship opportunities require additional materials",
+            "Student should aim to submit prior to the Wednesday, March 4, 2026, 2:00 p.m. PST deadline due to these added materials.",
+            "Letters of recommendations are also due with the application on March 4, 2026 at 2:00 p.m. PST.",
+            "We will not accept late materials.",
+            "Most of our awards require San Diego County residency.",
+            "You only need to complete a single Common Scholarship Application.",
+            "Please note that some scholarships require supplemental information/essays and leaving these sections blank will forfeit the scholarship opportunity.",
+            "Awards for each scholarship vary, but they range from $1,000 to about $10,000, with an average award of $3,000.",
+            "Applying for our scholarships is completely cost-free.",
+            "don't forget to give your short essay prompt answer a thorough review.",
+            "We will email you in April to schedule a 20-minute interview, if necessary.",
+            "If you are awarded a scholarship, we will notify you by June and provide more details on your next steps.",
+            "Nearly 40% of our scholarships are renewable for either two or four years."
+          ]
+        }
+      ]
+    },
+    "sacramento-region-community-foundation-scholarships": {
+      "prize": "One application, many scholarships",
+      "task": "Application",
+      "area": "Sacramento region",
+      "tagline": "Dozens of scholarships for students in the Sacramento region, many for seniors from a named county or high school. You fill in one general application.",
+      "closes": null,
+      "deadlineShort": "March 12 (year not stated)",
+      "name": "Sacramento Region Community Foundation Scholarships",
+      "runBy": "Sacramento Region Community Foundation",
+      "homepage": "https://www.sacregcf.org/students/",
+      "kind": "scholarship",
+      "local": true,
+      "findLocal": "",
+      "state": "CA",
+      "region": "Sacramento region; each scholarship names its own area (for example Sacramento County or Yolo County)",
+      "grades": [
+        12
+      ],
+      "award": "Dozens of scholarships with amounts set per scholarship; the foundation says it awarded over $1,000,000 to 400 students last year",
+      "eligibility": [
+        "Criteria differ for each scholarship (financial need, area of study, career goals, life experiences)",
+        "Many are for high school seniors in a named county or school, for example a high school senior in Sacramento County or a graduating senior in Yolo County"
+      ],
+      "whatYouSubmit": [
+        "General application in the foundation's scholarship portal",
+        "Most recent transcript that includes your unweighted GPA",
+        "Depending on the scholarship: references, your FAFSA submission summary or CA Dream Act report, and a personal essay"
+      ],
+      "howToApply": [
+        "Review the scholarships grid for ones that fit",
+        "Create an account in the scholarship portal and complete the general application; the portal recommends scholarships",
+        "Submit a separate application for each scholarship by its deadline",
+        "Recipients are notified by email, typically by early June"
+      ],
+      "prepare": [
+        "Get a transcript showing unweighted GPA",
+        "Ask for current reference letters; the foundation advises against reusing old ones"
+      ],
+      "opens": "Monday, January 4 (the page gives no year; another line says most open in December)",
+      "deadline": "Friday, March 12 (the page gives no year)",
+      "cycle": "Not confirmed",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The page contradicts itself on the opening (one line says January 4, another says most scholarships open in December) and prints no year. January 4 falls on a Monday and March 12 on a Friday in both 2021 and 2027, so the line may be stale; confirm on the page before relying on it.",
+      "sources": [
+        {
+          "label": "Scholarships for Students",
+          "url": "https://www.sacregcf.org/students/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "We offer dozens of scholarships to assist you in reaching your educational goals",
+            "awarded over $1,000,000 to 400 students last year alone",
+            "Most scholarships open Monday, January 4, and close Friday, March 12.",
+            "Every available scholarship opportunity has unique criteria, such as financial need, area of study, career goals, or life experiences.",
+            "Most scholarships open in December and close in March.",
+            "complete the general application, and get personalized scholarship recommendations.",
+            "Submit separate applications for each scholarship by their deadlines.",
+            "Recipients of awards are notified via email, typically by early June.",
+            "To submit the applications, you'll need a copy of your most recent transcript that includes your unweighted GPA.",
+            "You may also need references; copy of your Free Application for Federal Student Aid (FAFSA) submission summary report or CA Dream Act report; and a personal essay.",
+            "High school senior in Sacramento County",
+            "Graduating high school senior in Yolo County",
+            "We do not recommend using an old reference letter."
+          ]
+        }
+      ]
+    },
+    "edison-scholars": {
+      "prize": "$50,000",
+      "task": "Application",
+      "area": "Southern California Edison area",
+      "tagline": "30 seniors in Southern California Edison's service area each get $50,000 to study a STEM field. You need a 3.0 GPA and financial need.",
+      "closes": null,
+      "deadlineShort": "Not posted yet",
+      "name": "Edison Scholars",
+      "runBy": "Edison International",
+      "homepage": "https://www.edison.com/community/edison-scholars",
+      "kind": "scholarship",
+      "local": true,
+      "findLocal": "",
+      "state": "CA",
+      "region": "Southern California Edison's service area",
+      "grades": [
+        12
+      ],
+      "award": "$50,000 college scholarships to 30 high school seniors each year",
+      "eligibility": [
+        "High school senior with a cumulative GPA of at least 3.0",
+        "Demonstrated need for financial assistance",
+        "Plans to attend a four-year accredited college or university and pursue a STEM program",
+        "Eligible majors include computer and information systems, engineering, engineering technology, management information systems, mathematics, natural resources and conservation, and physical sciences",
+        "Must live in Southern California Edison's service area",
+        "Dependents of Edison International and SCE employees and retirees are not eligible"
+      ],
+      "whatYouSubmit": [
+        "Application (parts not listed on the page)",
+        "Top 50 finalists: a short video on how they plan to make a difference in their communities with a STEM education"
+      ],
+      "howToApply": [
+        "Subscribe on the page for notice when the 2027 application period opens in the fall",
+        "Apply during the application period",
+        "The top 50 finalists submit a short video; 30 scholars are chosen"
+      ],
+      "prepare": [
+        "Check that your home address is in Southern California Edison's service area",
+        "Check your intended major against the eligible STEM list"
+      ],
+      "opens": "Fall 2026 (exact date not posted)",
+      "deadline": "Not confirmed",
+      "cycle": "2027 Edison Scholars",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The page had not yet posted the 2027 opening date or deadline on the day it was read.",
+      "sources": [
+        {
+          "label": "Edison Scholars",
+          "url": "https://www.edison.com/community/edison-scholars",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Edison International awards $50,000 college scholarships annually to 30 high school seniors",
+            "Must be a high school senior with a cumulative GPA of at least 3.0 and demonstrate a need for financial assistance.",
+            "Must plan to attend a four-year accredited college or university and pursue STEM programs.",
+            "Eligible STEM majors: computer and information systems, engineering, engineering technology, management information systems, mathematics, natural resources and conservation, and physical sciences.",
+            "Must live in Southern California Edison's",
+            "The top 50 finalists will be required to submit a short video explaining how they plan to make a difference in their communities with a STEM education.",
+            "Dependents of Edison International and SCE employees and retirees are not eligible.",
+            "to receive updates when the application period for the 2027 Edison Scholars program opens this fall."
+          ]
+        }
+      ]
+    },
+    "pge-better-together-stem-scholarships": {
+      "prize": "$1,000 to $10,000",
+      "task": "Application",
+      "area": "PG&E service area",
+      "tagline": "For seniors who live in PG&E's service area and plan to study a STEM field at a four-year college in California.",
+      "closes": null,
+      "deadlineShort": "Mid March (next date not posted)",
+      "name": "PG&E Better Together STEM Scholarships",
+      "runBy": "Pacific Gas and Electric Company (PG&E)",
+      "homepage": "https://www.pge.com/en/about/educational-resources/grants-and-scholarships.html",
+      "kind": "scholarship",
+      "local": true,
+      "findLocal": "",
+      "state": "CA",
+      "region": "PG&E's service territory",
+      "grades": [
+        12
+      ],
+      "award": "PG&E scholarships ranged from $1,000 to $10,000 in 2025, when nearly 150 were given across its STEM and employee-group programs",
+      "eligibility": [
+        "High school senior or graduate (GED earners, current undergraduates, and non-traditional students or veterans also qualify)",
+        "Reside in PG&E's service territory, or be a dependent of a resident there",
+        "Plan to enroll as an undergraduate at a four-year college or university in California or a Historically Black College or University in the U.S.",
+        "Pursuing a first undergraduate degree",
+        "Pursuing a degree in engineering, computer science/information systems, environmental and biological sciences, or math, statistics and physics"
+      ],
+      "whatYouSubmit": [
+        "Not confirmed (the PG&E page links to the application but does not list its parts)"
+      ],
+      "howToApply": [
+        "Use the 'Apply to the PG&E Better Together STEM Scholarship' link on PG&E's page during the application window",
+        "Last posted window: opens January 12, 2026; deadline March 12, 2026"
+      ],
+      "prepare": [
+        "Confirm your address is in PG&E's service territory",
+        "PG&E's separate ERG & ENG scholarships are also open to high school seniors in the territory and have an earlier deadline"
+      ],
+      "opens": "January 12, 2026 (last posted cycle)",
+      "deadline": "March 12, 2026 (last posted cycle)",
+      "cycle": "2026 (2027 dates not yet posted)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The page still shows 2026 dates. The dollar range quoted covers both the STEM program and the employee-group (ERG & ENG) scholarships together; the page does not give the STEM award amounts on their own.",
+      "sources": [
+        {
+          "label": "PG&E Grants & Scholarships",
+          "url": "https://www.pge.com/en/about/educational-resources/grants-and-scholarships.html",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "In 2025, PG&E gave out nearly 150 scholarships.",
+            "These STEM-focused or Employee Resource Group and Engineering Network Group-sponsored scholarships ranged from $1,000 to $10,000.",
+            "Opens: Jan. 12, 2026",
+            "Deadline: Mar. 12, 2026",
+            "High school senior or graduate",
+            "Be a dependent of a resident in PG&E's service territory",
+            "Plan to enroll as an undergraduate at a four-year college or university in California or a Historical Black College or University (HBCU) in the U.S.",
+            "Be pursuing their first undergraduate degree",
+            "Engineering (e.g. electrical, mechanical, industrial, environmental construction, power and/or energy)",
+            "Computer Science/Information Systems",
+            "Environmental and Biological Sciences",
+            "Math, Statistics, and Physics",
+            "Apply to the PG&E Better Together STEM Scholarship",
+            "Deadline: Feb. 28, 2026"
+          ]
+        }
+      ]
+    },
+    "cif-scholar-athlete-of-the-year": {
+      "prize": "Up to $10,000",
+      "area": "California",
+      "tagline": "For college-bound senior athletes in California with strong grades. Two state winners get $10,000 and 20 section winners get $1,500.",
+      "closes": null,
+      "deadlineShort": "Not posted yet",
+      "name": "CIF Scholar-Athlete of the Year",
+      "runBy": "California Interscholastic Federation (CIF)",
+      "homepage": "https://cifstate.org/parents-students/awards_and_scholarships/scholar-athlete",
+      "kind": "scholarship",
+      "local": true,
+      "findLocal": "",
+      "state": "CA",
+      "grades": [
+        12
+      ],
+      "award": "Two State winners (one male, one female) each receive a $10,000 scholarship; 20 Section winners (one male and one female per CIF Section) each receive $1,500",
+      "eligibility": [
+        "College-bound high school senior",
+        "Exemplary academic and athletic career, and personal standards that are a positive model for others"
+      ],
+      "whatYouSubmit": [
+        "Not confirmed (the CIF page does not list application materials)"
+      ],
+      "howToApply": [
+        "Not confirmed (the CIF page describes the award and winners but not the application steps)"
+      ],
+      "prepare": [
+        "Ask your school's athletic director how the school handles the CIF application"
+      ],
+      "opens": "Not confirmed",
+      "deadline": "Not confirmed",
+      "cycle": "Not confirmed",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Thin page: it states who is honored and the awards, but not the GPA or varsity requirements, materials or dates. Those sit on an outside application platform, which is not a CIF page.",
+      "sources": [
+        {
+          "label": "CIF Scholar-Athlete of the Year",
+          "url": "https://cifstate.org/parents-students/awards_and_scholarships/scholar-athlete",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "recognizes college-bound high school seniors whose academic and athletic careers have been truly exemplary",
+            "Two State winners (1 male and 1 female) will each receive a $10,000 scholarship.",
+            "Additionally, 20 Section winners (one male and one female student-athlete in each Section) will be awarded a $1,500 scholarship."
           ]
         }
       ]

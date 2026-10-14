@@ -25,7 +25,7 @@ export function normalize(text) {
 
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36";
 
-async function download(url) {
+async function downloadOnce(url) {
   try {
     const res = await fetch(url, { headers: { "user-agent": UA } });
     if (res.ok) return await res.text();
@@ -37,6 +37,16 @@ async function download(url) {
   } catch {
     return null;
   }
+}
+
+// Help-centre hosts and a few others refuse a request when several arrive
+// close together, then answer normally seconds later. One spaced retry turns
+// most "could not load" reports back into real results.
+async function download(url) {
+  const first = await downloadOnce(url);
+  if (first !== null) return first;
+  await new Promise((resolve) => setTimeout(resolve, 8000));
+  return downloadOnce(url);
 }
 
 /** entries: { id: { url, evidence: string[], manual?: boolean } }. Returns the exit code. */
