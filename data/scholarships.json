@@ -5183,6 +5183,138 @@
         }
       ],
       "statewide": true
+    },
+    "jfk-profile-in-courage-essay-contest": {
+      "prize": "Up to $10,000",
+      "task": "Essay",
+      "tagline": "Write 700 to 1,000 words about a U.S. elected official who took a political risk to do the right thing. You need a teacher from your school to sign on as your nominating teacher.",
+      "closes": "2027-01-11",
+      "deadlineShort": "Jan 11",
+      "name": "Profile in Courage Essay Contest",
+      "runBy": "John F. Kennedy Library Foundation",
+      "homepage": "https://www.jfklibrary.org/learn/education/profile-in-courage-essay-contest",
+      "kind": "competition",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "First place $10,000 cash, plus a trip to Boston for the winner and up to two guests if the May 2027 award event is held in person. Second place $3,000; three finalists $1,000 each; fifteen honorable mentions.",
+      "eligibility": [
+        "U.S. high school students in grades nine through twelve at public, private, parochial or home schools",
+        "U.S. students under 20 in a high school correspondence or GED program in the 50 states, D.C. or U.S. territories",
+        "U.S. citizens attending schools overseas",
+        "Past winners and finalists cannot enter"
+      ],
+      "whatYouSubmit": [
+        "An original essay of 700 to 1,000 words (citations and bibliography not counted) about an act of political courage by a U.S. elected official who served during or after 1917; the act must also have happened during or after 1917",
+        "At least five sources, cited in parentheses in the essay, and a bibliography in APA, MLA or Turabian style",
+        "The name of your nominating teacher",
+        "No name or identifying information in the essay file"
+      ],
+      "howToApply": [
+        "Ask a teacher at your high school (usually English or history) to be your nominating teacher; they advise you and read your draft",
+        "Pick an official who isn't ruled out: not John, Robert or Edward Kennedy, not the senators in Profiles in Courage, and not a past Profile in Courage Award winner for the act they were honored for",
+        "Write and submit the essay by the deadline"
+      ],
+      "prepare": [
+        "Line up a nominating teacher early: every entry needs one",
+        "Pick a less common subject: the rules say common subjects and subjects of past winning essays score lower",
+        "Write it yourself: essays are checked for AI and disqualified if any is found"
+      ],
+      "opens": "September 1, 2026",
+      "deadline": "January 11, 2027, 11:59 PM Eastern",
+      "cycle": "2026-27 (2027 Profile in Courage Award)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "jfklibrary.org blocks automated reading, so these pages were read in a browser on the checked date and the weekly check cannot re-read them.",
+      "sources": [
+        {
+          "label": "Profile in Courage Essay Contest: topic, eligibility, awards and dates",
+          "url": "https://www.jfklibrary.org/learn/education/profile-in-courage-essay-contest",
+          "accessed": "2026-10-13",
+          "manual": true,
+          "evidence": [
+            "United States high school students in grades nine through twelve attending public, private, parochial, or home schools",
+            "The first-place winner receives a $10,000 cash award.",
+            "The second-place winner receives $3,000 and three finalists receive $1,000 each.",
+            "September 1, 2026: Essay Contest opens",
+            "January 11, 2027 11:59 PM Eastern Standard Time: Deadline for submissions"
+          ]
+        },
+        {
+          "label": "Profile in Courage Essay Contest: eligibility and requirements",
+          "url": "https://www.jfklibrary.org/learn/education/profile-in-courage-essay-contest/for-student-participants/eligibility-and-requirements",
+          "accessed": "2026-10-13",
+          "manual": true,
+          "evidence": [
+            "Past winners and finalists are not eligible to participate.",
+            "The maximum word count is 1,000 with a minimum of 700.",
+            "Essays will be reviewed for AI assistance and are disqualified if AI is detected at any point in the essay or bibliography.",
+            "Essays must have a minimum of five sources.",
+            "Essays must describe an act of political courage by a U.S. elected official who served during or after 1917",
+            "All students must list the name of their nominating teacher when submitting their essay.",
+            "Since originality is one of the criteria for judging, writing about any of these common essay subjects will lower your score."
+          ]
+        }
+      ]
+    },
+    "carson-scholars": {
+      "prize": "$1,000",
+      "task": "School nomination + essay",
+      "only": "Students with a 3.75 GPA nominated by their school",
+      "tagline": "For students with top grades who also do community service. Each school can nominate one student, so ask a teacher or counselor about it this fall.",
+      "closes": "2026-12-16",
+      "deadlineShort": "School nominates by Dec 16",
+      "name": "Carson Scholars Program",
+      "runBy": "Carson Scholars Fund",
+      "homepage": "https://carsonscholars.org/programs/scholarship-program/",
+      "kind": "scholarship",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "award": "A $1,000 college scholarship, invested to earn interest until high school graduation and then paid to your college, plus a medal, a certificate, a trophy for your school and an invitation to a regional awards banquet.",
+      "eligibility": [
+        "Students in grades 4-11 at accredited K-12 schools in the U.S.",
+        "A minimum 3.75 GPA on a 4.0 scale",
+        "Strong humanitarian qualities shown through community service",
+        "Nominated by an educator at your school (one student per school); nomination forms go to educators at participating schools"
+      ],
+      "whatYouSubmit": [
+        "After you are nominated: the full application, including an essay, your report card and letters of recommendation",
+        "Teacher and counselor recommendation letters"
+      ],
+      "howToApply": [
+        "An educator at your school nominates one student by the school nomination deadline",
+        "The nominated student submits the full application",
+        "Winners are named Carson Scholars and notified by email in the first week of March"
+      ],
+      "prepare": [
+        "Ask a teacher or counselor in the fall whether your school takes part and how it chooses its nominee: the school's nomination is due December 16"
+      ],
+      "opens": "Nominations open October 19",
+      "deadline": "School nomination December 16, 11:59 PM EST; student application and recommendations January 13, 11:59 PM EST",
+      "cycle": "2026-27 (notifications March 2027)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Only one student per school can be nominated, so ask early. carsonscholars.org blocks automated reading after a few requests, so this page was read in a browser on the checked date and the weekly check cannot re-read it. Winners can be recognized again in later years through the Carson Scholars Recognition Program.",
+      "sources": [
+        {
+          "label": "Carson Scholars Fund: Scholarship Program",
+          "url": "https://carsonscholars.org/programs/scholarship-program/",
+          "accessed": "2026-10-13",
+          "manual": true,
+          "evidence": [
+            "The Carson Scholars Fund awards $1,000 college scholarships to students in grades 4–11 who excel academically and are dedicated to serving their communities.",
+            "Nominees who maintain a minimum 3.75 GPA (on a 4.0 scale).",
+            "An educator nominates one student from their school.",
+            "A $1,000 college scholarship award invested on their behalf to earn interest until high school graduation.",
+            "Schools must submit the nomination form to the Carson Scholars Fund by 11:59 PM EST.",
+            "Complete and submit the full application, including essay, report card and letter(s) of recommendation, by 11:59 PM EST."
+          ]
+        }
+      ]
     }
   },
   "changed": {
