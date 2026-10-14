@@ -1864,6 +1864,1036 @@
           ]
         }
       ]
+    },
+    "national-merit-scholarship-program": {
+      "task": "PSAT test",
+      "closes": null,
+      "deadlineShort": "PSAT in October",
+      "tagline": "You enter just by taking the PSAT/NMSQT, the October test most students take in 11th grade. There's no application to start. Ask your counselor in September how to sign up.",
+      "name": "National Merit Scholarship Program",
+      "runBy": "National Merit Scholarship Corporation (NMSC); the qualifying test, the PSAT/NMSQT, is cosponsored by College Board",
+      "homepage": "https://www.nationalmerit.org",
+      "kind": "scholarship",
+      "grades": [
+        11
+      ],
+      "award": "Recognition and college scholarships. Amounts and numbers of awards: Not confirmed (stated only on nationalmerit.org, which could not be downloaded).",
+      "eligibility": [
+        "Be a United States high school student",
+        "Take the PSAT/NMSQT (scores from the PSAT 10 or PSAT 8/9 are not considered)",
+        "Meet NMSC's published program entry and participation requirements (the requirements themselves, including the grade in which the test must be taken, are Not confirmed - they are in the PSAT/NMSQT Student Guide and on nationalmerit.org)"
+      ],
+      "whatYouSubmit": [
+        "PSAT/NMSQT scores - College Board sends them to NMSC automatically; a student cannot opt out of that",
+        "Later-stage materials (for example a Semifinalist's scholarship application): Not confirmed"
+      ],
+      "howToApply": [
+        "Sign up for the PSAT/NMSQT at your high school (not through College Board); ask the school counselor in September",
+        "Take the PSAT/NMSQT in October; it is the initial screen of more than 1.3 million entrants each year",
+        "Later selection stages: Not confirmed"
+      ],
+      "prepare": [
+        "Take the PSAT/NMSQT itself - the PSAT 10 and PSAT 8/9 do not count for National Merit",
+        "College Board says 11th graders (and some 10th graders) take the PSAT/NMSQT in October; ask NMSC about eligibility if testing in another grade",
+        "Talk to the school counselor in September about the school's PSAT/NMSQT registration"
+      ],
+      "opens": "Sign-up is through the student's high school; College Board says to ask the counselor in September",
+      "deadline": "PSAT/NMSQT is given in October; exact test dates Not confirmed",
+      "cycle": "Not confirmed",
+      "fee": "No separate program fee is stated. The PSAT/NMSQT itself is not free, but College Board says many students do not pay because some schools cover all or part of the cost; amount Not confirmed.",
+      "notes": "nationalmerit.org could not be downloaded (it redirects in a loop unless the browser accepts a session cookie), so every fact here comes from College Board's own PSAT/NMSQT pages, which describe only how entry works. College Board's pages do not state outright that the test must be taken in 11th grade to enter; they say 11th graders (and some 10th graders) take it and refer eligibility questions to NMSC. A person should read in a browser: nationalmerit.org 'Entering the Competition' / 'How to Enter' and the PSAT/NMSQT Student Guide (PDF) for the grade rule, citizenship rule, Semifinalist/Finalist steps, and scholarship amounts.",
+      "sources": [
+        {
+          "label": "College Board - Parents FAQs: PSAT/NMSQT",
+          "url": "https://satsuite.collegeboard.org/sat-suite-benefits-students-parents/faq/psat-nmsqt",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The National Merit Scholarship Program is an annual academic competition among high school students for recognition and college scholarships.",
+            "11th graders (and some 10th graders) take the PSAT/NMSQT in October.",
+            "National Merit Scholarship Corporation will not consider scores from the PSAT 10 or PSAT 8/9.",
+            "Students sign up at their high school, not through the College Board.",
+            "Your child should talk to their school counselor in September to learn about their school's PSAT/NMSQT registration process.",
+            "No, but many students don't have to pay.",
+            "Contact National Merit Scholarship Corporation with any questions about eligibility for the National Merit Scholarship Program."
+          ]
+        },
+        {
+          "label": "College Board - How does a student qualify for the National Merit Scholarship Program?",
+          "url": "https://satsuite.collegeboard.org/help-center/how-does-student-qualify-national-merit-scholarship-program",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The program is conducted by National Merit Scholarship Corporation (NMSC).",
+            "which serves as an initial screen of over 1.3 million entrants each year, and by meeting published program entry and participation requirements"
+          ]
+        },
+        {
+          "label": "College Board - National Merit Scholarship Program",
+          "url": "https://satsuite.collegeboard.org/in-school-assessments/scholarships-recognition/national-merit-scholarship-program",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "You cannot opt out of sending your scores to NMSC.",
+            "If you do not wish to be considered in the National Merit"
+          ]
+        }
+      ]
+    },
+    "questbridge-college-prep-scholars": {
+      "prize": "College prep + awards",
+      "task": "Application",
+      "closes": null,
+      "deadlineShort": "Late March (2027 date not posted)",
+      "tagline": "QuestBridge's free program for juniors. You get college application guidance and a conference invite, and can be picked for a $1,000 award or a summer program scholarship.",
+      "name": "QuestBridge College Prep Scholars Program",
+      "runBy": "QuestBridge",
+      "homepage": "https://www.questbridge.org/apply-to-college/programs/college-prep-scholars-program",
+      "kind": "program",
+      "grades": [
+        11
+      ],
+      "award": "All College Prep Scholars get an invitation to a QuestBridge National College Admissions Conference, college application guidance and an online peer community. Through the optional Awards form they can also be chosen for: a $1,000 Quest for Excellence Award (laptop, travel to college partners, application resources); a full scholarship to a college summer program (travel, tuition, housing and food); personalized support with essays, tests and applications.",
+      "eligibility": [
+        "Be a high school junior currently attending high school in the U.S., or a U.S. citizen or permanent resident living abroad",
+        "International students living outside the U.S. are not eligible",
+        "Typical (not absolute) profile: primarily A's in the most challenging courses available; top 5-10% of class",
+        "Typical (not absolute) profile: household earning less than $65,000 a year for a household of four, with minimal assets",
+        "There are no absolute cut-offs for GPA, test scores or income; applications are reviewed holistically",
+        "Test scores are not required"
+      ],
+      "whatYouSubmit": [
+        "Information on your academics, activities, household and financial background",
+        "Writing section",
+        "One teacher reference, from a high school teacher who recently taught you in a core academic class (English, History/Social Studies, Math, Science, Foreign Language) - you give the teacher's contact details; do not send recommendation letters",
+        "Current high school transcript (unofficial accepted)",
+        "Any standardized test score reports to date, if taken (PSAT, PreACT, SAT, ACT or AP; unofficial accepted)",
+        "School Profile (strongly recommended if available)",
+        "Optional Awards form with short essays, needed for summer program scholarships, Quest for Excellence Awards and personalized support"
+      ],
+      "howToApply": [
+        "Create a QuestBridge account and start the free application; gather financial documents, transcript, test scores (if taken) and a School Profile (if available); ask a core subject teacher to be your reference",
+        "Submit the application by the deadline (a green check mark on your Manage page confirms it)",
+        "Complete the Awards form to be considered for summer programs, Quest for Excellence Awards and more",
+        "All applicants are notified of their status by late April; Quest for Excellence Award recipients are notified in late June"
+      ],
+      "prepare": [
+        "Have the previous year's tax returns, W-2s or other financial documents to hand (QuestBridge calls this highly recommended)",
+        "Ask a core academic subject teacher to be your reference",
+        "Get a current transcript and, if available, your school's School Profile"
+      ],
+      "opens": "Not confirmed for the 2027 cycle",
+      "deadline": "Last posted (2026 cycle): March 24 at 11:59 p.m. Pacific Time; Awards form March 26, 2026. 2027 dates Not confirmed.",
+      "cycle": "2026 cycle is the latest posted; the next one is for juniors in 2026-27",
+      "fee": "Free - the sponsor calls it a 'free application'",
+      "notes": "The deadline article does not print the year next to March 24 (it was last updated December 18, 2025, so it refers to the 2026 cycle); the Awards form date does carry the year 2026. Dates for the 2027 cycle (current juniors) were not posted when checked. The $65,000 income figure and the grade profile are described as typical, not as hard limits.",
+      "sources": [
+        {
+          "label": "QuestBridge - Apply to the College Prep Scholars Program",
+          "url": "https://www.questbridge.org/apply-to-college/programs/college-prep-scholars-program/apply",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The College Prep Scholars Program is open to any high school junior currently attending high school in the U.S. and U.S. Citizens and Permanent Residents living abroad.",
+            "International students living outside the U.S. are not eligible.",
+            "we do not have absolute criteria or cut-offs for GPA, standardized test scores, income, or other factors",
+            "Rank in the top 5-10% of their class.",
+            "Come from households earning less than $65,000 annually (for a household of four) and have minimal assets.",
+            "Note: Test scores are not required to apply.",
+            "Information on your academics, activities, household, and financial background",
+            "A teacher reference from a core academic subject",
+            "Current high school transcript (unofficial transcripts are accepted)",
+            "We accept PSAT, PreACT, SAT, ACT, or AP test scores (unofficial test score reports are accepted)",
+            "School Profile (strongly recommended if available)",
+            "Start your free application",
+            "Ask a core subject teacher to be your reference.",
+            "Complete the Awards form to be eligible for summer programs, Quest for Excellence Awards, and more, plus other optional forms, if applicable.",
+            "All applicants will be notified of their College Prep Scholars Program status by late April.",
+            "Access to the previous year's tax returns, W-2(s), or other financial documents is highly recommended to complete the application accurately."
+          ]
+        },
+        {
+          "label": "QuestBridge - Quest for Excellence Awards",
+          "url": "https://www.questbridge.org/apply-to-college/programs/college-prep-scholars-program/scholarships-and-awards/quest-for-excellence-awards",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Quest for Excellence Award Recipients receive $1,000 for:",
+            "those selected as Quest for Excellence Award Recipients will be notified in late June",
+            "On the Awards form, select the categories that you are eligible for and interested in, and complete the corresponding short essays."
+          ]
+        },
+        {
+          "label": "QuestBridge help - What awards are available through the College Prep Scholars Program?",
+          "url": "https://questbridge.zendesk.com/hc/en-us/articles/218778197-What-awards-are-available-through-the-College-Prep-Scholars-Program",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "An invitation to a QuestBridge National College Admissions Conference",
+            "Scholarships cover travel, tuition, and housing & food",
+            "This form is due on March 26, 2026, at 11:59 p.m. Pacific Time."
+          ]
+        },
+        {
+          "label": "QuestBridge help - When is the College Prep Scholars Program application due?",
+          "url": "https://questbridge.zendesk.com/hc/en-us/articles/218778667-When-is-the-College-Prep-Scholars-Program-application-due",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "College Prep Scholars Program applications must be submitted online by March 24 at 11:59 p.m. Pacific Time"
+          ]
+        },
+        {
+          "label": "QuestBridge help - Can my teacher submit a recommendation letter?",
+          "url": "https://questbridge.zendesk.com/hc/en-us/articles/218778217-Can-my-teacher-submit-a-recommendation-letter",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "QuestBridge will only accept contact information for one teacher reference for the College Prep Scholars Program application.",
+            "Please do not submit letters of recommendation or additional materials with your College Prep Scholars application."
+          ]
+        }
+      ]
+    },
+    "ncwit-aspirations-in-computing-high-school-award": {
+      "task": "Application",
+      "closes": "2026-10-27",
+      "deadlineShort": "Oct 27",
+      "tagline": "For 9th to 12th graders who are into tech and computing. You apply online about your computing experience and leadership.",
+      "name": "NCWIT Aspirations in Computing (AiC) High School Award",
+      "runBy": "National Center for Women & Information Technology (NCWIT)",
+      "homepage": "https://www.aspirations.org/award-programs/aic-high-school-award",
+      "kind": "competition",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "Winner, Honorable Mention and Rising Star designations at National and Regional Affiliate levels. Prize amounts: Not confirmed (the page shows them only in an image).",
+      "eligibility": [
+        "Be a student in grades 9 through 12 involved in technology",
+        "Be 13 or older when creating an aspirations.org account",
+        "Have parent/guardian approval by the approval deadline, unless 18 or older",
+        "Be a member of the (free) AiC Community",
+        "Attend a school in the U.S., Puerto Rico, Guam, the U.S. Virgin Islands, or on a U.S. overseas military base",
+        "Not be an NCWIT employee or an immediate family member of NCWIT staff, contractors or board members",
+        "For a National Award only: be a U.S. citizen, permanent resident, or meet the substantial presence test, and have a U.S. Tax Identification or Social Security Number",
+        "Past National Award Winners cannot win the national award again; others may reapply each year"
+      ],
+      "whatYouSubmit": [
+        "Online application covering computing experience, computing-related activities, leadership experience, persistence and future plans (question wording and lengths Not confirmed)",
+        "Optional educator endorsement (a few multiple choice questions and a one-paragraph response, completed by one educator after you submit) - not required, but strongly recommended for national consideration"
+      ],
+      "howToApply": [
+        "Join the AiC Community at aspirations.org (get parent/guardian approval if under 18)",
+        "Complete and submit the online application from your dashboard; it cannot be edited after submission",
+        "From the dashboard, request an endorsement from one educator",
+        "Applications are reviewed anonymously; every applicant is considered for both National and Regional Affiliate awards"
+      ],
+      "prepare": [
+        "Join the AiC Community first - it is required before you can apply",
+        "If under 18, get parent/guardian approval by the approval deadline",
+        "Tell an educator in advance that they will be asked for an endorsement; the sponsor suggests giving a non-school email address for them because school spam filters often block the request"
+      ],
+      "opens": "September 1, 2026",
+      "deadline": "October 27, 2026, 10:00 p.m. ET (educator endorsements due November 5, 2026, 10:00 p.m. ET)",
+      "cycle": "2026-27",
+      "fee": "The sponsor describes the AiC Community, which applicants must join, as free; no application fee is mentioned",
+      "notes": "The old URL (/award-programs/award-aspirations-computing) now returns Page Not Found; the current page is /award-programs/aic-high-school-award. Prize amounts appear only in an image ('2026 AiC HSA Prize Chart'), so no cash figure could be quoted - a person should read that chart in a browser. Despite the sponsor's name, the eligibility text on the page does not restrict by gender; it says 'Students in grades 9 through 12 involved in technology are welcome'. The 2026-27 deadline is two weeks after the check date.",
+      "sources": [
+        {
+          "label": "NCWIT Aspirations in Computing High School Award",
+          "url": "https://www.aspirations.org/award-programs/aic-high-school-award",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Students in grades 9 through 12 involved in technology are welcome to join the free AiC Community and apply.",
+            "They are 13 years of age or older at the time of creating an",
+            "They attend a school in the U.S., Puerto Rico, Guam, the U.S. Virgin Islands, or on a U.S. overseas military base.",
+            "They are not an NCWIT employee and have no immediate family relationship with employees, extended staff, contractors, or board members of NCWIT",
+            "They have a U.S. Tax Identification or Social Security Number.",
+            "Applicants may reapply each year; however, National Award Winners are not eligible to win again.",
+            "as demonstrated by their computing experience, computing-related activities, leadership experience, persistence, and future plans",
+            "The multi-tiered award structure includes Winner, Honorable Mention, and Rising Star designations at National and Regional Affiliate levels",
+            "Then, students can apply online, beginning September 1, 2026.",
+            "applicants must submit a completed application by the final deadline at 10:00 p.m. ET on October 27, 2026",
+            "The endorsement includes a few multiple choice questions and a one-paragraph open response.",
+            "Educator Endorsements are due on November 5, 2026 at 10:00 p.m. ET.",
+            "An endorsement is not required; however, it is strongly recommended if you wish to be considered for a national award designation.",
+            "Applications are reviewed anonymously by technology academics and industry professionals.",
+            "Applicants must first join the AiC Community before applying for an AiC Award."
+          ]
+        },
+        {
+          "label": "NCWIT AiC - Application Step-by-Step Guide",
+          "url": "https://www.aspirations.org/award-programs/aspirations-in-computing-application-stepbystep-guide",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Follow the steps to gain Parental/Guardian approval if you are under the age of 18.",
+            "Please note: you will not be able to edit your application after you have clicked \"Submit Completed Application\".",
+            "You can only request an endorsement from ONE educator.",
+            "It is highly recommended that you personally notify your educator before then so they know that they will need to submit an endorsement.",
+            "It will be better to use a different email address for your educator if possible."
+          ]
+        }
+      ]
+    },
+    "cameron-impact-scholarship": {
+      "prize": "Full tuition",
+      "task": "Application",
+      "closes": "2027-05-01",
+      "deadlineShort": "May 1",
+      "tagline": "Four years of full tuition, fees and books at any accredited U.S. college. You apply in 11th grade, and it closes early once 3,000 applications are in. Needs a 3.7 unweighted GPA.",
+      "name": "Cameron Impact Scholarship",
+      "runBy": "Bryan Cameron Education Foundation",
+      "homepage": "https://www.bryancameroneducationfoundation.org/scholarship",
+      "kind": "scholarship",
+      "grades": [
+        11
+      ],
+      "award": "Four-year, full-tuition scholarship covering full tuition, fees and books at any accredited U.S. college or university; it does not cover room and board. 15 awarded each year.",
+      "eligibility": [
+        "Be in the high school graduating Class of 2028 (students on a gap year who will start university with the Class of 2028 may also apply)",
+        "Minimum cumulative unweighted GPA of 3.7 on a 4.0 scale or equivalent",
+        "Be a full citizen of the United States",
+        "Plan to enroll full-time at an accredited four-year U.S. college or university for the academic year after high school graduation",
+        "Show excellence in extracurricular activities, leadership, and community service or civic involvement",
+        "Not be related to, or have a pre-existing relationship with, Foundation staff, board or Selection Committee members",
+        "Merit-based: financial need is not considered"
+      ],
+      "whatYouSubmit": [
+        "Online application, with essay prompts (word limits are shown in the application; prompts Not confirmed)",
+        "Two letters of recommendation - one from school-affiliated personnel (teacher, administrator, counselor, coach), one from someone who has made a significant impact on your life; not from a parent or legal guardian; no more than two",
+        "Transcript (unofficial copy accepted)"
+      ],
+      "howToApply": [
+        "Apply online once the application opens; the application cannot be saved and resumed, so draft answers elsewhere first",
+        "Make sure both recommendations and the transcript arrive by the deadline (uploaded in the application or emailed to the Foundation); incomplete applications are not reviewed",
+        "Applications are reviewed on a rolling basis and the application closes at 3,000 completed, eligible applications or on the deadline, whichever comes first",
+        "All applicants are notified of their status by September 15",
+        "About 100 Finalists get face-to-face interviews in the Fall of 2027, typically at the applicant's high school",
+        "Recipients are announced in December 2027"
+      ],
+      "prepare": [
+        "Apply early: the application closes as soon as 3,000 complete, eligible applications are received",
+        "Draft responses in a separate document - the system cannot save an application in progress",
+        "Give two recommenders plenty of time; no extensions are offered and late transcripts or recommendations are not accepted",
+        "If your school does not use a 4.0 scale, convert your GPA with the scale in the Foundation's FAQ"
+      ],
+      "opens": "February 1, 2027 (for the high school Class of 2028)",
+      "deadline": "May 1, 2027, or when 3,000 completed and eligible applications are received, whichever occurs first",
+      "cycle": "2027 application, for the high school Class of 2028 (students who are juniors in 2026-27)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Although it is a college scholarship, students apply in the spring of 11th grade and are interviewed in the fall of 12th grade. One FAQ answer about gap years mentions applying 'by May or September', which looks like a leftover from an earlier two-deadline schedule; the current pages give a single May 1, 2027 deadline. The application form itself (/application) needs JavaScript and did not download, so the essay prompts are not confirmed.",
+      "sources": [
+        {
+          "label": "Bryan Cameron Education Foundation - Scholarship",
+          "url": "https://www.bryancameroneducationfoundation.org/scholarship",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The Cameron Impact Scholarship covers the full tuition, fees, and books at any accredited U.S. based college or university that the recipient chooses to attend.",
+            "APPLICATIONS WILL OPEN FOR THE CLASS OF 2028 ON FEBRUARY 1, 2027",
+            "will close the application when we reach 3,000 OR on May 1, 2027 - whichever occurs first",
+            "Maintain a minimum, cumulative, unweighted GPA of a 3.7/4.0 scale or equivalent in their high school studies;",
+            "Be a full citizen of the United States of America;",
+            "Be in the high school graduating Class of 2028, planning to enroll in a full-time course of study towards a degree at an accredited four-year U.S. college or university",
+            "demonstrate active participation in community service and/or civic minded arenas",
+            "Two required Letters of Recommendation (one must come from current school affiliated personnel); and",
+            "Transcript certifying academic performance - unofficial copy is acceptable.",
+            "The Selection Committee will select approximately 100 Finalists to receive face-to-face interviews in the Fall of 2027",
+            "Recipients of the Cameron Impact Scholarship will be announced in December 2027.",
+            "PLEASE NOTE THAT INCOMPLETE APPLICATIONS WILL NOT BE REVIEWED OR CONSIDERED.",
+            "Applicants may not be related to, or have pre-existing relationships to any members of the Bryan Cameron Education Foundation staff, Board of Directors, or Selection Committee."
+          ]
+        },
+        {
+          "label": "Bryan Cameron Education Foundation - FAQ",
+          "url": "https://www.bryancameroneducationfoundation.org/faq",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Students who are currently on a gap year and intend to begin university with the high school graduating Class of 2028 are also eligible to apply.",
+            "The Cameron Impact Scholarship does not cover Room and Board.",
+            "15 Cameron Impact Scholarships are awarded each year.",
+            "We notify all Applicants by September 15th.",
+            "Unfortunately, our system does not allow you to save an application and return to edit it at a later time.",
+            "All word limits are clearly noted in the Application.",
+            "One must be from a school affiliated personnel (teacher, administrator, counselor, coach, etc), and",
+            "Please do not include a recommendation from a parent or legal guardian",
+            "If we receive more than two recommendations, we will only review the first two in the order that they are received.",
+            "We do not accept any late Transcripts or Recommendations.",
+            "Financial need is not taken into consideration in our evaluation process.",
+            "If your school does not calculate on a 4.0 scale - you may convert your GPA according to the following scale:"
+          ]
+        }
+      ]
+    },
+    "afsa-national-high-school-essay-contest": {
+      "prize": "$2,500 + trips",
+      "task": "Essay",
+      "closes": null,
+      "deadlineShort": "March 1 (last posted)",
+      "tagline": "Write a 1,000 to 1,500 word essay on the year's topic. The winner also gets a trip to Washington, D.C. and a Semester at Sea voyage.",
+      "name": "AFSA National High School Essay Contest",
+      "runBy": "American Foreign Service Association (AFSA)",
+      "homepage": "https://afsa.org/essay-contest",
+      "kind": "competition",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "Winner: $2,500, a trip to Washington, D.C. (airfare and hotel for the student, one parent and the teacher) and a fully funded Semester at Sea educational voyage. Runner-up: $1,250 and a full scholarship to the National Student Leadership Conference's International Diplomacy summer program.",
+      "eligibility": [
+        "Be a high school student in grades 9-12",
+        "Attend school in any of the 50 states, the District of Columbia or U.S. territories, or be a U.S. citizen/lawful permanent resident attending high school overseas",
+        "Public, private, parochial and home-schooled students may enter",
+        "Students whose parents are in the Foreign Service are not eligible",
+        "Previous first-place winners and immediate family of AFSA, Semester at Sea and National Student Leadership Conference directors or staff are not eligible (past honorable mentions and runners-up may enter)"
+      ],
+      "whatYouSubmit": [
+        "An essay of 1,000 to 1,500 words on the year's topic (2025-2026 topic: 'The Fragile Front Line: U.S. Diplomacy and the Future of Soft Power'); word count excludes the source list",
+        "Format: typed, double-spaced, 12-point font, one-inch margins, MLA style, uploaded as a Microsoft Word file with a title; no last name or school name on the essay pages",
+        "A bibliography/list of sources, including at least three primary sources; general encyclopedias such as Wikipedia are not acceptable",
+        "The online registration form, including the name of a teacher or sponsor and the essay's word count",
+        "An on-camera video of 30 seconds to 1 minute answering set questions about the essay, shared by link"
+      ],
+      "howToApply": [
+        "Write the essay to the rules and record the short video",
+        "Fill out the online registration form and upload the essay and source list",
+        "Qualifying essays go through several rounds of blind judging",
+        "Winner, runner-up and honorable mentions are notified in June"
+      ],
+      "prepare": [
+        "Read AFSA's Essay Contest Study Guide for background on the U.S. Foreign Service",
+        "Ask a teacher or sponsor to be named on the registration form and to review the essay",
+        "Use a variety of sources with at least three primary sources; websites should not be the only sources"
+      ],
+      "opens": "Not confirmed for 2026-27 (the page says the submission window for the current cycle is closed)",
+      "deadline": "March 1, 11:59 p.m. EDT (per the posted rules, headed 2025; year for the next cycle Not confirmed)",
+      "cycle": "2025-2026 is the latest posted cycle; 2026-27 not yet announced when checked",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The two AFSA pages differ slightly: the contest page says overseas entrants must be 'U.S. citizens attending high school overseas' and describes the D.C. trip as for 'the winner and his or her parents'; the rules page says 'U.S. citizen/lawful permanent resident' and 'student, one parent, and his/her teacher'. The rules page is still headed 'Essay Contest Rules 2025' and mentions June 2025 notification, while the contest page shows the 2025-2026 topic. The 2026-27 topic and dates were not posted.",
+      "sources": [
+        {
+          "label": "AFSA - Essay Contest Rules and Guidelines",
+          "url": "https://afsa.org/rules-and-guidelines",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "This contest is open to high school students in grades 9-12 who meet the following criteria:",
+            "You must be attending school in any of the 50 states, the District of Columbia, U.S. territories, or be a U.S. citizen/lawful permanent resident attending high school overseas.",
+            "Home-schooled students are also welcome to participate.",
+            "Keep in mind that only those students whose parents are not in the Foreign Service are eligible to submit.",
+            "Previous first-place winners and immediate family members of AFSA, Semester at Sea, and National Student Leadership Conference directors or staff are not eligible.",
+            "Your essay must be between 1,000 and 1,500 words.",
+            "March 1 by 11:59 p.m. EDT.",
+            "Entries must be typed, double-spaced, in 12-point font with a one-inch margin on all sides of the page.",
+            "Make sure at least three of your sources are primary",
+            "General encyclopedias (like Wikipedia) are not acceptable sources.",
+            "Registration forms must have a teacher or sponsor name.",
+            "Do not place your last name or your school's name on any of the pages of the essay.",
+            "Videos must be no shorter than 30 seconds and no longer than 1 minute.",
+            "All qualifying essays will go through several rounds of blind judging, meaning the judges won't know the identity of the writers.",
+            "a fully funded educational voyage with Semester at Sea",
+            "Runner-up: The runner-up receives $1,250 and a full scholarship to attend the National Student Leadership Conference's International Diplomacy program during a summer session."
+          ]
+        },
+        {
+          "label": "AFSA - National High School Essay Contest",
+          "url": "https://afsa.org/essay-contest",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The submission window for the current year's cycle is now closed.",
+            "AFSA National High School Essay Contest 2025-2026:",
+            "The Fragile Front Line: U.S. Diplomacy and the Future of Soft Power",
+            "$2,500 to the writer of the winning essay",
+            "if they are in grades nine through twelve in any of the fifty states, the District of Columbia, the U.S. territories, or if they are U.S. citizens attending high school overseas",
+            "For background information on the U.S. Foreign Service and additional educational resources, read our"
+          ]
+        }
+      ]
+    },
+    "junior-science-and-humanities-symposium": {
+      "prize": "Up to $12,000",
+      "task": "Research presentation",
+      "closes": null,
+      "deadlineShort": "Set by your region",
+      "tagline": "Present your own STEM research at a regional symposium. Top finishers win tuition scholarships and a paid trip to nationals. It costs you nothing to register.",
+      "name": "Junior Science and Humanities Symposium (JSHS)",
+      "runBy": "U.S. Department of War (Office of the Secretary and the Departments of the Army, Navy and Air Force), administered by the National Science Teaching Association (NSTA)",
+      "homepage": "https://www.jshs.org/",
+      "kind": "competition",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "Regional: undergraduate tuition scholarships of $2,000 (1st), $1,500 (2nd) and $1,000 (3rd), and an expenses-paid invitation to the National Symposium for the top five. National oral competition, in each of eight categories: $12,000 (1st), $8,000 (2nd), $4,000 (3rd) tuition scholarships. National poster competition: cash awards of $550, $450 and $350. Total capped at $30,000 per student.",
+      "eligibility": [
+        "Be a high school student who has done original STEM research (the exact grade rule is in the Rules of Competition PDF - Not confirmed)",
+        "To receive the scholarships and cash awards: be a citizen or Lawful Permanent Resident of the United States",
+        "Compete first in your regional symposium; national presenters are selected there"
+      ],
+      "whatYouSubmit": [
+        "Original STEM research, presented as a research paper with an oral or poster presentation, with an abstract naming the major discipline",
+        "Exact paper, abstract and form requirements: Not confirmed (they are in the 2026-27 Core Rules of Competition PDF and the Statement of Outside Assistance)"
+      ],
+      "howToApply": [
+        "Find your Regional JSHS Symposium and register with it (no cost to the student)",
+        "Present your research at the regional symposium",
+        "The top five regional finalists are invited to the National Symposium, expenses paid: 1st and 2nd place present in the oral competition for scholarships, 3rd-5th in the poster competition for cash awards"
+      ],
+      "prepare": [
+        "Carry out an original research project in science, technology, engineering or mathematics before your region's deadline",
+        "Read the Rules of Competition (the sponsor's stated next step after finding your region)"
+      ],
+      "opens": "Not confirmed (set by each regional symposium)",
+      "deadline": "Not confirmed (set by each regional symposium; schedules and deadlines are in the Core Rules of Competition PDF)",
+      "cycle": "2026-27 (2027 National Symposium)",
+      "fee": "No cost to the student to register",
+      "notes": "The site's HTML pages only say 'high school students'; the grade wording, paper format and deadlines are in PDFs (2026-27 Core Rules of Competition, 2027 Rules of Competition), which could not be read as text. Grades 9-12 is entered on the strength of 'high school students'. Scholarships are paid to the college, not the student, and multi-year national awards require a 3.0 GPA and a STEM-related major. The site now refers to the sponsor as the 'Department of War'.",
+      "sources": [
+        {
+          "label": "JSHS - Awards",
+          "url": "https://www.jshs.org/students/awards/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "JSHS recognizes outstanding research presented by high school students at Regional and National Symposia.",
+            "A total of $4,500 in undergraduate tuition scholarships is disbursed by each region.",
+            "1st Place receives $2,000",
+            "2nd Place receives $1,500",
+            "3rd Place receives $1,000",
+            "invite the top five finalists from each Regional Symposium to the National JSHS Symposium to present their original research; expenses paid",
+            "The 1st and 2nd place regional finalists will present their research in the oral competition to compete for National JSHS scholarships",
+            "The 3rd, 4th and 5th place regional finalists will present their research in the poster competition to compete for cash awards",
+            "Each of the 1st Place finalists receives $12,000",
+            "Each of the 2nd Place finalists receives $8,000",
+            "Each of the 3rd Place finalists receives $4,000",
+            "Each of the 1st Place finalists receives a cash award of $550",
+            "Each of the 2nd Place finalists receives a cash award of $450",
+            "Each of the 3rd Place finalists receives a cash award of $350",
+            "Total scholarship awards available through JSHS are capped at a maximum of $30,000 per individual student winner.",
+            "Qualifying students must be a citizen or Lawful Permanent Resident (LPR) of the United States and be enrolled full-time in an accredited institution.",
+            "students must maintain a Cumulative GPA of 3.0 or above and declare a major in science, technology, engineering, mathematics or a related field",
+            "Payments must be made directly to the college and may not be paid to the students."
+          ]
+        },
+        {
+          "label": "JSHS - Who Is JSHS?",
+          "url": "https://www.jshs.org/about-jshs/who-we-are/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "encourages high school students to conduct original research in the fields of science, technology, engineering, and mathematics (STEM)",
+            "Students must first participate in their regional symposium where they compete for selection to present at the national symposium each year.",
+            "Registering to participate in a regional JSHS event is of no cost to the student.",
+            "To get started, find your regional competition."
+          ]
+        },
+        {
+          "label": "JSHS - National Symposium Rules & Categories",
+          "url": "https://www.jshs.org/national-symposium/rules-categories/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Student presenters must state in the abstract the major discipline of their research.",
+            "Download 2027 Rules of Competition",
+            "Requirements for the oral presentations"
+          ]
+        },
+        {
+          "label": "JSHS - home page",
+          "url": "https://www.jshs.org/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "administered by the National Science Teaching Association (NSTA)"
+          ]
+        }
+      ]
+    },
+    "optimist-international-oratorical-contest": {
+      "prize": "Up to $2,500",
+      "task": "Speech",
+      "closes": null,
+      "deadlineShort": "Set by your local club",
+      "tagline": "Give a speech on this year's topic through a local Optimist Club. District winners get scholarships and can move on to regionals.",
+      "name": "Optimist International Oratorical Contest",
+      "runBy": "Optimist International (scholarships funded by the Optimist International Foundations)",
+      "homepage": "https://www.optimist.org/member/scholarships4.cfm",
+      "kind": "competition",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "District level: $2,500 (1st), $1,500 (2nd) and $1,000 (3rd) scholarships, at the District's discretion and may vary. District winners advance to Regional Championships and can qualify for the World Championship; 2026 results listed regional winners at $5,000 and the World Champion at $15,000.",
+      "eligibility": [
+        "Be under the age of 19 on October 1 of the current Optimist International contest year (October 1 - September 30); there is no minimum age",
+        "Not have completed high school or its equivalent"
+      ],
+      "whatYouSubmit": [
+        "A speech on the assigned topic, entered through a local Optimist Club. 2026-2027 topic: 'How My Actions Strengthen Those Around Me'",
+        "Speech length and scoring rules: Not confirmed (they are in the participant guidelines document)"
+      ],
+      "howToApply": [
+        "Find your local Optimist Club (email programs@optimist.org; clubs cannot be matched until October 1) and enter its contest",
+        "Compete at the Club level - most Club-level contests are completed by late March",
+        "Advance to the District contest, where scholarships are awarded",
+        "District winners advance to the Oratorical Regional Championships and may qualify for the Oratorical World Championship"
+      ],
+      "prepare": [
+        "Contact the nearest Optimist Club for its entry deadline - deadlines vary by area",
+        "Prepare a speech on the year's assigned topic"
+      ],
+      "opens": "October 1, 2026 (start of the Optimist International contest year; the sponsor cannot connect contestants to clubs before then)",
+      "deadline": "Set by the sponsoring Optimist Club and varies by area; most Club-level contests are completed by late March",
+      "cycle": "2026-27",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "Eligibility is by age, not grade (under 19 and not finished high school; no minimum age), so it covers all high school grades and younger students too. The regional and world championship amounts are quoted from the list of 2026 winners, not from a rules statement for 2026-27. The participant guidelines (speech length, timing penalties) are a linked document that was not read.",
+      "sources": [
+        {
+          "label": "Optimist International - Oratorical Contest",
+          "url": "https://www.optimist.org/member/scholarships4.cfm",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Through this program, the Optimist International Foundations award more than $150,000 in college scholarships annually.",
+            "Be under the age of 19 on October 1 of the current Optimist International contest year",
+            "and not have completed high school or its equivalent",
+            "There is no minimum age requirement.",
+            "Students interested in participating should submit a speech on the assigned topic through their local Optimist Club.",
+            "How My Actions Strengthen Those Around Me",
+            "We are unable to connect contestants with their local Optimist Club until October 1, the official start of the new Optimist International contest year.",
+            "1st Place: $2,500 scholarship",
+            "2nd Place: $1,500 scholarship",
+            "3rd Place: $1,000 scholarship",
+            "(Scholarships are provided at the District's discretion and may vary)",
+            "District winners advance to the Oratorical Regional Championships, where they compete for a chance to qualify for the prestigious Oratorical World Championship.",
+            "The deadline to enter is determined by the sponsoring Optimist Club and varies by area.",
+            "Most Club-level contests are completed by late March each year.",
+            "Great Plains Regional Winner ($5,000) & World Champion ($15,000)"
+          ]
+        }
+      ]
+    },
+    "youngarts-national-arts-competition": {
+      "prize": "Up to $10,000",
+      "task": "Portfolio or audition",
+      "closes": "2026-10-06",
+      "deadlineShort": "Oct 6",
+      "tagline": "For artists in grades 10 to 12, in ten disciplines from dance and film to jazz and photography. It costs $35 to apply, with a waiver if you need one.",
+      "name": "YoungArts National Arts Competition",
+      "runBy": "YoungArts (National YoungArts Foundation)",
+      "homepage": "https://youngarts.org/apply/",
+      "kind": "competition",
+      "grades": [
+        10,
+        11,
+        12
+      ],
+      "award": "All YoungArts award winners receive cash prizes between $250 and $10,000, plus mentorship and ongoing artist support.",
+      "eligibility": [
+        "Be in grades 10-12, or ages 15-18, as of December 1 of the application year (December 1, 2026 for the 2027 competition)",
+        "Be a U.S. citizen, a permanent resident, or legally able to receive taxable income in the U.S. (for example have a Social Security number or ITIN) at the time of applying",
+        "If selected as an award winner with distinction, it must be your first time attending National YoungArts Week"
+      ],
+      "whatYouSubmit": [
+        "An online application in one of ten disciplines: Classical Music, Dance, Design, Film, Jazz, Photography, Theater, Visual Arts, Voice or Writing",
+        "Portfolio or audition materials as that discipline requires - video recordings, audio recordings, documents or images",
+        "The $35 application fee per application, or a fee waiver letter"
+      ],
+      "howToApply": [
+        "Check eligibility and choose a discipline and category; review its requirements",
+        "Complete the online application, upload all materials, and pay the fee or upload the fee waiver letter before the deadline",
+        "Applications go through multiple rounds of review by discipline-specific panels of artists",
+        "All applicants are notified of the decision by email"
+      ],
+      "prepare": [
+        "Review the discipline and category guidelines before preparing materials",
+        "Do not wait until deadline day - uploads can be slow, and payment or the waiver must be processed before the deadline",
+        "If the fee is a problem, get a short fee waiver letter (PDF) from a parent, guardian, teacher, counselor or principal"
+      ],
+      "opens": "2027 competition: opened Tuesday, July 21, 2026. The 2028 application opens Summer 2027.",
+      "deadline": "2027 competition: Tuesday, October 6, 2026, 8 PM ET / 5 PM PT (already passed when checked). 2028 deadline Not confirmed.",
+      "cycle": "2027 competition (applied for in 2026); next is the 2028 competition, opening Summer 2027",
+      "fee": "$35 per submitted application. Waivers are available: upload a letter from a parent, guardian, teacher, counselor or principal stating the applicant needs the fee waived; no reason is required.",
+      "notes": "9th graders can enter only if they are already 15 by December 1 - the rule is grades 10-12 OR ages 15-18. The 2027 deadline passed one week before the check date, so current students are looking at the 2028 competition, which opens Summer 2027. Per-discipline portfolio requirements are on separate pages and were not documented.",
+      "sources": [
+        {
+          "label": "YoungArts - Apply to the National Arts Competition",
+          "url": "https://youngarts.org/apply/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "You must be either (1) in grades 10-12, or (2) ages 15-18 as of December 1, 2026.",
+            "You must be a citizen of the United States, a permanent resident or legally able to receive taxable income in the U.S. (i.e., have a social security number, ITIN, etc.) at the time of applying.",
+            "If you are selected as an award winner with distinction, this must be your first time attending National YoungArts Week.",
+            "All YoungArts award winners receive cash prizes between $250 and $10,000.",
+            "The 2028 YoungArts application opens Summer 2027."
+          ]
+        },
+        {
+          "label": "YoungArts - FAQ",
+          "url": "https://youngarts.org/faq/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The 2027 national arts competition application opens on Tuesday, July 21, 2026 and closes on Tuesday, October 6, 2026 at 8 PM ET/5 PM PT.",
+            "Eligible artists apply to the YoungArts competition through an online application that requires video recordings, audio recordings, documents or images in a portfolio, and payment of an application fee or fee waiver documentation.",
+            "They are Classical Music, Dance, Design, Film, Jazz, Photography, Theater, Visual Arts, Voice and Writing.",
+            "The fee for applying to the YoungArts competition is $35 per submitted application.",
+            "Waivers are available to applicants to cover the $35 application fee.",
+            "To have your fee waived, a letter from a parent, guardian, teacher, counselor, or principal must be uploaded into the application.",
+            "The letter does not need to be on letterhead and does not need to include a reason why.",
+            "All applicants will be notified of their application decision via email."
+          ]
+        },
+        {
+          "label": "YoungArts - National Arts Competition",
+          "url": "https://youngarts.org/competition/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "All applications are evaluated by esteemed discipline-specific panels of artists through an adjudication process that includes multiple rounds of review."
+          ]
+        }
+      ]
+    },
+    "bri-community-impact-contest": {
+      "prize": "Up to $10,000",
+      "task": "Community project",
+      "closes": "2027-04-19",
+      "deadlineShort": "Apr 19",
+      "tagline": "Run a service, volunteer or business project that fixes something in your community, then send in a pitch video and a summary of what it did.",
+      "name": "BRI Community Impact Contest (MyImpact Challenge)",
+      "runBy": "Bill of Rights Institute",
+      "homepage": "https://billofrightsinstitute.org/myimpact-challenge",
+      "kind": "competition",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "Cash prizes: Grand Prize $10,000; Second Place $5,000; Third Place $2,500; up to 9 Honorable Mention awards of $500. Prizes for group entries are split evenly.",
+      "eligibility": [
+        "Be a US citizen or US-based young person between the ages of 13 and 19",
+        "Be enrolled in middle or high school on January 1, 2027",
+        "Open to students in all U.S. states, territories and Armed Forces Schools Abroad",
+        "Past winners of the Grand, First, Second or Third Prize are not eligible",
+        "One student per entry by design, but groups of up to five may submit a single group entry"
+      ],
+      "whatYouSubmit": [
+        "A service, volunteer or entrepreneurial project that addresses a challenge in your community",
+        "A pitch video",
+        "An impact summary",
+        "A reflection essay connecting the project to founding principles and virtues (length Not confirmed)",
+        "Project visuals"
+      ],
+      "howToApply": [
+        "Identify a challenge in your community and carry out a project to address it",
+        "Submit the project through the online portal (only portal submissions are accepted)",
+        "Winners receive a cash prize and recognition in the Community Impact showcase"
+      ],
+      "prepare": [
+        "Run the community project itself before the April deadline - the entry reports on a project you have led",
+        "Keep visuals and results from the project for the impact summary, video and project visuals"
+      ],
+      "opens": "September 11, 2026",
+      "deadline": "Monday, April 19, 2027, 11:59 p.m. PT",
+      "cycle": "2026-27 (2027 contest)",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "This replaces the Institute's former 'We the Students' essay contest URL, which now shows only a generic student-programs page. The contest is being renamed: the page uses both 'Community Impact Contest' and 'MyImpact Challenge'. Eligibility is by age (13-19) and school enrolment, so it covers every high school grade plus middle school. Prize amounts sit in separate page elements from their labels, so the prize evidence lines join two elements. Prizes are subject to contest terms and conditions (a separate document, not read).",
+      "sources": [
+        {
+          "label": "Bill of Rights Institute - Community Impact Contest",
+          "url": "https://billofrightsinstitute.org/myimpact-challenge",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The contest opens Sept. 11, 2026 and closes April 19, 2027.",
+            "Submission is open to students ages 13-19 in all U.S. states, territories, and Armed Forces Schools Abroad.",
+            "Submission is open to US citizens and US-based young people who are between the ages of 13 and 19 and enrolled in middle or high school on January 1, 2027.",
+            "Past winners of the MyImpact Challenge Grand Prize, First Prize, Second Prize, or Third Prize are not eligible to enter.",
+            "A project submission must include a written essay to connect your project to our founding principles and virtues and a project video.",
+            "To submit a project, students must submit:",
+            "Submission must be received by 11:59 p.m. PT on Monday, April 19, 2027.",
+            "Only submissions entered through the online portal will be accepted for the contest.",
+            "groups of up to five students may submit as a single group entry",
+            "Prizes awarded to group entries will be split evenly between entrants.",
+            "Student winners receive a cash prize and national recognition in the Community Impact showcase.",
+            "Civic engagement is leading a service, volunteer, or entrepreneurial projects that address local challenges.",
+            "Grand Prize $10,000!",
+            "Second Place $5,000",
+            "Third Place $2,500",
+            "Honorable Mention $500",
+            "Up to 9 awards.",
+            "an impact summary",
+            "a reflection essay"
+          ]
+        }
+      ]
+    },
+    "us-stockholm-junior-water-prize": {
+      "prize": "$10,000",
+      "task": "Science project",
+      "closes": null,
+      "deadlineShort": "April 15 (last posted)",
+      "tagline": "Did a science project about water? Enter your state competition. The national winner also gets a trip to Stockholm, Sweden. You need to be 15 by August 1.",
+      "name": "U.S. Stockholm Junior Water Prize (SJWP)",
+      "runBy": "Water Environment Federation (WEF), with its Member Associations; international competition run by the Stockholm International Water Institute",
+      "homepage": "https://www.wef.org/sjwp",
+      "kind": "competition",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "U.S. national winner: $10,000 scholarship, a national trophy and an all-expenses-paid trip to Stockholm, Sweden, for the international competition. State winners: a U.S. SJWP medal and an invitation to the national competition. International winner: $15,000 USD (subject to change).",
+      "eligibility": [
+        "Be a high school student in grades 9 through 12 (public, private or independent)",
+        "Have reached the age of 15 by August 1 of the competition year",
+        "Have conducted a water-related science project",
+        "Be a resident of the 50 United States, the District of Columbia or Puerto Rico",
+        "Enter alone or as a team of up to two students",
+        "No science fair entry is needed - students may self-nominate"
+      ],
+      "whatYouSubmit": [
+        "The online state competition entry form",
+        "A research paper on a water-related science project, submitted electronically (no specific paper guidelines at state level; file no larger than 2MB)",
+        "State winners: a paper meeting the National Paper Guidelines, a second online entry, and a presentation in the virtual national round"
+      ],
+      "howToApply": [
+        "Do a water-related research project using accepted scientific methods (regional certificates are given at science fairs, but any qualifying student may self-nominate)",
+        "Enter the State Competition online by the deadline; a panel of water professionals picks one winning project per state",
+        "State winners are announced online in May and compete in a virtual national judging round; the top 20 go to an in-person final",
+        "The national winner represents the U.S. at the international competition in Stockholm during World Water Week in August"
+      ],
+      "prepare": [
+        "Check the age rule: 9th and 10th graders must have turned 15 by August 1 of the competition year",
+        "Put the effort into the research paper - the sponsor says the paper is weighted much more heavily than the poster",
+        "The sponsor encourages using the ISEF Rules Wizard to check safe handling processes"
+      ],
+      "opens": "Not confirmed for 2027 (the 2026 state submission portal was shown as open)",
+      "deadline": "Last posted: State Competition entry by April 15, 2026. 2027 date Not confirmed.",
+      "cycle": "2026 is the latest posted cycle; 2027 dates not posted when checked",
+      "fee": "Not stated on the sponsor's pages",
+      "notes": "The age floor (15 by August 1) excludes most 9th graders and some 10th graders even though grades 9-12 are named. WEF's pages describe the national prize both as a '$10,000 scholarship' (About page) and as a 'cash prize of $10,000' (main page). All dates on the pages are still for the 2026 competition.",
+      "sources": [
+        {
+          "label": "WEF - SJWP Eligibility and Entry Requirements",
+          "url": "https://www.wef.org/community/sjwp-eligibility-and-entry-requirements/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The competition is open to any high school student in grades 9 through 12, who has conducted a water-related science project and reached the age of 15 by August 1 of the competition year.",
+            "Teams of up to two students may enter.",
+            "Open only to residents of the 50 United States, the District of Columbia and Puerto Rico.",
+            "Regional winners and self-nominated students must enter the State Competition by April 15, 2026.",
+            "The 2026 State Competition submission portal is now OPEN!",
+            "At state competitions, there are no specific paper guidelines. The file cannot be larger than 2MB.",
+            "a panel of water professionals will identify the best water-related science project from each state",
+            "Papers must meet the National Paper Guidelines to be eligible.",
+            "this competition weighs the quality of the scientific research paper much more heavily than the poster presentation",
+            "Students are also encouraged to use the ISEF Rules Wizard to ensure they are following safe handling processes.",
+            "The top 20 finalists will move on to an in-person finals competition to take place on June 8-10th in Chicago, IL."
+          ]
+        },
+        {
+          "label": "WEF - About the Stockholm Junior Water Prize",
+          "url": "https://www.wef.org/community/about-the-stockholm-junior-water-prize/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The competition is open to public, private, or independent high school students in grades 9-12 who will have reached age 15 by Aug. 1 of the competition year and who have conducted water-related science projects.",
+            "It is not necessary for a student to have had a project in a science fair to enter.",
+            "Students may self-nominate.",
+            "The U.S. SJWP National winner(s) receives a $10,000 scholarship and a national trophy (per project)",
+            "an all-expenses-paid trip to Stockholm, Sweden, to compete in the International Competition during World Water Week at the end of August",
+            "The International SJWP winner will receive $15,000 USD, the international crystal trophy, and a $5,000 USD award given to the winning student's school.",
+            "State winners are announced online each year the first week of May.",
+            "The Water Environment Federation (WEF) has coordinated the U.S. SJWP competition since its inception in 1997."
+          ]
+        },
+        {
+          "label": "WEF - U.S. Stockholm Junior Water Prize",
+          "url": "https://www.wef.org/sjwp",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The U.S. SJWP winner receives a cash prize of $10,000, a crystal trophy, and represents the U.S. at the international competition held each August at World Water Week in Stockholm, Sweden."
+          ]
+        }
+      ]
+    },
+    "math-prize-for-girls": {
+      "prize": "Up to $50,000",
+      "task": "Math contest",
+      "closes": null,
+      "deadlineShort": "May 31 (last posted)",
+      "tagline": "A math contest for girls in 11th grade or below. You apply with your AMC 10 or AMC 12 score, so you need to take that exam first. No fee.",
+      "name": "Advantage Testing Foundation/Jane Street Math Prize for Girls",
+      "runBy": "Advantage Testing Foundation (with Jane Street)",
+      "homepage": "https://mathprize.atfoundation.org/",
+      "kind": "competition",
+      "grades": [
+        9,
+        10,
+        11
+      ],
+      "award": "$100,000 in cash prizes in total: $50,000 for first place, then $20,000, $10,000, $4,000, $2,000 and smaller amounts through tenth place; a $2,000 Youth Prize for the top performer in 9th grade or below. Prizes are paid as checks made out to the winning students.",
+      "eligibility": [
+        "Be female in gender identity",
+        "Be in 11th grade or below as of March 1 of the contest year (March 1, 2026 for Math Prize 2026), and not be due to graduate high school or start full-time college before the contest",
+        "Live in the United States or Canada (U.S. or Canadian citizens or permanent residents living elsewhere may apply)",
+        "Have taken an official AMC 10 or AMC 12 exam the previous November (November 2025 for Math Prize 2026)",
+        "No student may win more than $100,000 over multiple years"
+      ],
+      "whatYouSubmit": [
+        "The online application, giving your official scores on the AMC 10/12 exam(s) you took (and your AIME score if you took it); scores are verified with the MAA",
+        "No essay, transcript or recommendation is listed"
+      ],
+      "howToApply": [
+        "Take an official AMC 10 or AMC 12 exam in November",
+        "Submit the online application with your AMC scores by the deadline (May 31 for the 2026 contest)",
+        "By July 1 applicants are told whether they are invited; the top 300 applicants by score are invited",
+        "Sit the Math Prize exam in the fall at MIT in Cambridge, Massachusetts (Sunday, October 11, 2026 for the 2026 contest)"
+      ],
+      "prepare": [
+        "Take the AMC 10 or AMC 12 in November of the school year before the contest - it is required to apply (arranged through an AMC contest manager, usually a math teacher at your school)",
+        "Keep your official AMC score(s) for the application",
+        "The sponsor posts its tests from previous years"
+      ],
+      "opens": "Not confirmed for 2027",
+      "deadline": "Last posted: May 31, 2026 (for Math Prize 2026, held October 11, 2026). 2027 date Not confirmed.",
+      "cycle": "2026 is the latest posted contest; 2027 details not posted when checked",
+      "fee": "None - 'There is no fee to apply or to participate.'",
+      "notes": "12th graders cannot enter. The qualifying step happens early: a student wanting to compete in fall 2027 must sit the AMC 10/12 in November 2026, i.e. within weeks of the check date. The site still shows the 2026 contest (held two days before the check date); 2027 dates were not posted. AMC exams are run by the Mathematical Association of America and may carry their own school-level registration cost, which this site does not address. Whether travel to MIT is paid was not checked.",
+      "sources": [
+        {
+          "label": "Math Prize for Girls - How to Apply",
+          "url": "https://mathprize.atfoundation.org/apply",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Be female in gender identity.",
+            "(and not be slated to graduate from high school or to start full-time college before the contest)",
+            "Live in the United States or Canada.",
+            "have taken an official administration of the AMC 10 or AMC 12 exam for the 2025 - 2026 competition cycle",
+            "We ask for your scores on the one or two AMC exams that you took.",
+            "please check with your AMC contest manager, usually a math teacher at your school",
+            "All scores are verified with the MAA.",
+            "We will invite the top 300 of our applicants.",
+            "Selection will be based on official AMC and other scores."
+          ]
+        },
+        {
+          "label": "Math Prize for Girls - Prizes",
+          "url": "https://mathprize.atfoundation.org/experience/prizes",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "We will award a total of $100,000 in cash prizes.",
+            "\"Youth Prize\" to the top performer in 9th grade or below.",
+            "No student may win more than $100,000 at the Math Prize over multiple years."
+          ]
+        },
+        {
+          "label": "Math Prize for Girls - FAQ",
+          "url": "https://mathprize.atfoundation.org/experience/faq",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Nothing! There is no fee to apply or to participate.",
+            "We will issue the prize money as checks made out to the winning students."
+          ]
+        },
+        {
+          "label": "Math Prize for Girls - home page",
+          "url": "https://mathprize.atfoundation.org/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "The Math Prize for Girls awards $100,000 in monetary prizes, including a $50,000 prize for first place.",
+            "Math Prize for Girls 2026 will take place on Sunday, October 11, 2026, at MIT in Cambridge, Massachusetts.",
+            "Read about our prior contest winners and see our tests from previous years."
+          ]
+        },
+        {
+          "label": "Math Prize for Girls - AMC Exams",
+          "url": "https://mathprize.atfoundation.org/apply/amc_exams",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "To qualify for Math Prize 2026, you must first have taken one of the exams administered by the American Math Competitions (AMC) in November 2025."
+          ]
+        }
+      ]
+    },
+    "poetry-out-loud": {
+      "prize": "Up to $20,000",
+      "task": "Poetry recitation",
+      "closes": null,
+      "deadlineShort": "Set by your school",
+      "tagline": "Memorize and perform poems. You start at your own school and can go on to state and national finals. Your school has to be registered for it.",
+      "name": "Poetry Out Loud National Recitation Contest",
+      "runBy": "National Endowment for the Arts, with state and jurisdictional arts agencies; prizes administered by Mid Atlantic Arts",
+      "homepage": "https://poetryoutloud.org/",
+      "kind": "competition",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "award": "State winner: $200 and an all-expenses-paid trip (with an adult chaperone) to Washington, DC for the National Finals; state runner-up: $100. National Finals: $20,000 for the National Champion, $10,000 for 2nd place, $5,000 for 3rd place and $1,000 for 4th-12th places. Schools/organizations also receive stipends for poetry materials.",
+      "eligibility": [
+        "Be a currently enrolled student in grades 9-12 (8th graders in a 9th-12th grade class are an exception)",
+        "Compete through a school or organization registered with the state Poetry Out Loud coordinator",
+        "Homeschooled students may compete at a local school (at the school's discretion) or with other local homeschooled students",
+        "Past National Champions may not compete again",
+        "To receive prize money, state champions and runners-up must submit an IRS Form W-9 or W-8BEN"
+      ],
+      "whatYouSubmit": [
+        "Nothing written - students recite poems from memory",
+        "Poems must come from the official Poetry Out Loud Online Anthology",
+        "For state and national finals: 3 poems prepared, one of 25 lines or fewer and one published before 1930 (one poem may meet both)"
+      ],
+      "howToApply": [
+        "Take part in a classroom/school contest, or a local organization's contest, registered with your state arts agency",
+        "Winners advance to a regional and/or state competition; states hold theirs by mid-March",
+        "State champions go to the National Finals in Washington, DC (planned for April 26-28, 2027)",
+        "If your school is not participating, contact your state Poetry Out Loud coordinator about other ways into the state's official competition"
+      ],
+      "prepare": [
+        "Ask a teacher whether your school is registered with the state Poetry Out Loud coordinator; if not, contact the state coordinator",
+        "Choose poems only from the current official Online Anthology (posted after September 1, 2026)",
+        "Memorize the poems - props and costumes are not allowed",
+        "For state level and beyond, prepare three poems meeting the length and pre-1930 criteria"
+      ],
+      "opens": "Schools and organizations register with their state arts agency; materials are sent on a rolling basis beginning in August",
+      "deadline": "No single national entry deadline: school and local contests feed state competitions, which are held by mid-March 2027. School-level dates Not confirmed (set locally).",
+      "cycle": "2026-27",
+      "fee": "Not stated on the sponsor's pages (curriculum materials are described as free)",
+      "notes": "A student cannot enter directly: entry is through a registered school or local organization, and a student may not reach the state finals without competing at a lower level. Prize money is modest below the national finals. Individual states set their own school registration deadlines.",
+      "sources": [
+        {
+          "label": "Poetry Out Loud - Rules & Eligibility",
+          "url": "https://poetryoutloud.org/rules-eligibility/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Only currently enrolled students in grades 9-12 are eligible, with an exception made for 8th-grade students participating in a 9th- through 12th-grade class.",
+            "Only schools and organizations registered with their state Poetry Out Loud coordinator are eligible for the official competition.",
+            "A student may not advance to the state finals without competing in a lower-level competition.",
+            "Homeschooled students may participate by competing in a competition at a local school (at the school's discretion) or with other local homeschooled students.",
+            "Students unable to participate at a local school should contact their state Poetry Out Loud coordinator to discuss other opportunities for inclusion in the state's official competition.",
+            "Only National Champions are not eligible to compete in subsequent years.",
+            "State champions and runners-up must submit a properly-completed IRS Form W-9 or Form W-8BEN in order to be eligible to receive the prize money.",
+            "All poems must be selected from the Poetry Out Loud Online Anthology",
+            "Check the website after September 1, 2026 to view the official POL anthology for the current school year.",
+            "At the state and national finals, students must have 3 poems prepared.",
+            "One must be 25 lines or fewer, and one must be published before 1930.",
+            "Students must recite their poem from memory.",
+            "Students may not use props, wear costumes, remove a microphone from its stand, or walk around the stage during their recitation."
+          ]
+        },
+        {
+          "label": "Poetry Out Loud - About",
+          "url": "https://poetryoutloud.org/about-poetry-out-loud/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Each winner at the state level receives $200 and an all-expenses-paid trip (with an adult chaperone) to Washington, DC, to compete at the National Finals.",
+            "The first runner-up in each state receives $100, with $200 for their school/organization.",
+            "including a $20,000 award for the National Champion, $10,000 for 2nd place, $5,000 for 3rd place, and $1,000 for 4th-12th places",
+            "The program starts at the classroom/school or at the local level with an area organization.",
+            "Winners then may advance to a regional and/or state competition, and ultimately to the national finals.",
+            "After schools or organizations register with their state arts agency, materials are sent on a rolling basis beginning in August.",
+            "States hold their competitions by mid-March.",
+            "the national finals are planned to be held in Washington, DC, from April 26-28, 2027",
+            "A partnership with the National Endowment for the Arts and participating state and jurisdictional arts agencies"
+          ]
+        }
+      ]
     }
   }
 }
