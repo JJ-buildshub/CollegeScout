@@ -19,6 +19,8 @@ export interface ScholarshipSource {
   /** ISO date the page was read. */
   accessed: string;
   evidence: string[];
+  /** Read in a browser because the site refuses automated requests; the checker skips it. */
+  manual?: boolean;
 }
 
 export interface Scholarship {
@@ -38,6 +40,24 @@ export interface Scholarship {
   /** This cycle's deadline as an ISO date, when there is a single national one. */
   closes?: string | null;
   deadlineShort?: string;
+  /** A gate most students will not pass, such as a family membership. Shown on the collapsed card. */
+  only?: string;
+  /** True when a student enters through a local club, chapter, post or lodge, or the program serves one region. */
+  local?: boolean;
+  /** The organization's own club or chapter finder. */
+  findLocal?: string;
+  /** Short label for where a regional program applies: "San Diego County". */
+  area?: string;
+  /** Two-letter state, for a program open only to that state's students. */
+  state?: string;
+  /** Counties or area served, when the sponsor states it. */
+  region?: string;
+  /** Counties the program serves, as named on its own pages. */
+  counties?: string[];
+  /** Covers part of its state, but the pages do not name the counties. */
+  areaCheck?: boolean;
+  /** Open across its whole state. */
+  statewide?: boolean;
   /** Grades in which a student applies or enters. */
   grades: ScholarshipGrade[];
   award: string;

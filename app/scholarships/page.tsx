@@ -3,7 +3,8 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
-import { ExternalLink, Search } from "lucide-react";
+import { ExternalLink, MapPin, Search } from "lucide-react";
+import { areaMatch, lookupZip, type AreaMatch, type ZipLookup } from "@/lib/zipCounties";
 import {
   FEE_NOT_STATED,
   SCHOLARSHIP_GRADES,
@@ -100,15 +101,61 @@ function Detail({ title, items, ordered }: { title: string; items: string[]; ord
   );
 }
 
-function ScholarshipCard({ program, today }: { program: Scholarship; today: Date | null }) {
+const ZIP_KEY = "collegescout.scholarships.zip";
+
+/** The ZIP is a convenience kept in this browser only; the page works without storage. */
+function useSavedZip() {
+  const [zip, setZip] = useState("");
+  useEffect(() => {
+    try {
+      setZip(window.localStorage.getItem(ZIP_KEY) ?? "");
+    } catch {
+      // storage blocked: start empty
+    }
+  }, []);
+  const update = (value: string) => {
+    const digits = value.replace(/\D/g, "").slice(0, 5);
+    setZip(digits);
+    try {
+      if (digits) window.localStorage.setItem(ZIP_KEY, digits);
+      else window.localStorage.removeItem(ZIP_KEY);
+    } catch {
+      // storage blocked: keep it for this visit only
+    }
+  };
+  return [zip, update] as const;
+}
+
+function placeLabel(place: ZipLookup) {
+  if (place.status !== "found") return "";
+  const [first, ...rest] = place.counties;
+  return rest.length ? `${first} County (and part of ${rest.join(", ")})` : `${first} County`;
+}
+
+function ScholarshipCard({
+  program,
+  today,
+  match,
+}: {
+  program: Scholarship;
+  today: Date | null;
+  match: AreaMatch;
+}) {
   const when = timing(program, today);
   return (
     <details className="group rounded-2xl border border-slate-200 bg-white shadow-card open:border-navy-900">
       <summary className="cursor-pointer list-none p-5">
         <div className="flex flex-wrap items-start justify-between gap-x-6 gap-y-2">
-          <p className="min-w-0 flex-1 font-display text-2xl font-extrabold leading-tight text-navy-900 sm:text-3xl">
-            {program.prize ?? program.name}
-          </p>
+          {/* Without a prize line, the name takes the big slot and is the card's heading. */}
+          {program.prize ? (
+            <p className="min-w-0 flex-1 font-display text-2xl font-extrabold leading-tight text-navy-900 sm:text-3xl">
+              {program.prize}
+            </p>
+          ) : (
+            <h2 className="min-w-0 flex-1 font-display text-2xl font-extrabold leading-tight text-navy-900 sm:text-3xl">
+              {program.name}
+            </h2>
+          )}
           <span
             className="mt-1 text-sm font-semibold text-slate-500 group-open:hidden"
             aria-hidden="true"
@@ -128,6 +175,10 @@ function ScholarshipCard({ program, today }: { program: Scholarship; today: Date
           <Chip tone={when.tone}>{when.label}</Chip>
           {program.task && <Chip>You make: {program.task}</Chip>}
           {isFree(program) && <Chip>Free to enter</Chip>}
+          {match === "covers" && <Chip tone="open">Covers where you live</Chip>}
+          {match === "maybe" && <Chip>May cover where you live: check with them</Chip>}
+          {program.local && <Chip>{program.area ?? "Through a local club"}</Chip>}
+          {program.only && <Chip tone="closed">Only for: {program.only}</Chip>}
           <Chip tone="gold">
             {program.grades.length === 4 ? "Any grade, 9th to 12th" : `${program.grades.map(ordinal).join(" and ")} grade`}
           </Chip>
@@ -183,15 +234,28 @@ function ScholarshipCard({ program, today }: { program: Scholarship; today: Date
             ))}{" "}
             &middot; we checked on {formatDate(scholarshipsChecked)}
           </p>
-          <a
-            href={program.homepage}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-full bg-navy-900 px-5 py-2.5 text-sm font-bold text-white hover:bg-navy-800"
-          >
-            Go to the official page
-            <ExternalLink className="h-4 w-4" aria-hidden="true" />
-          </a>
+          <div className="flex flex-wrap gap-2">
+            {program.findLocal && (
+              <a
+                href={program.findLocal}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-full px-5 py-2.5 text-sm font-bold text-navy-900 ring-1 ring-navy-900 hover:bg-sand-50"
+              >
+                <MapPin className="h-4 w-4" aria-hidden="true" />
+                Find one near you
+              </a>
+            )}
+            <a
+              href={program.homepage}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-full bg-navy-900 px-5 py-2.5 text-sm font-bold text-white hover:bg-navy-800"
+            >
+              Go to the official page
+              <ExternalLink className="h-4 w-4" aria-hidden="true" />
+            </a>
+          </div>
         </div>
       </div>
     </details>
@@ -203,6 +267,9 @@ export default function ScholarshipsPage() {
   const [grade, setGrade] = useState<ScholarshipGrade | null>(null);
   const [openOnly, setOpenOnly] = useState(false);
   const [query, setQuery] = useState("");
+  const [where, setWhere] = useState<"all" | "national" | "local">("all");
+  const [zip, setZip] = useSavedZip();
+  const place = useMemo(() => lookupZip(zip), [zip]);
 
   const shown = useMemo(() => {
     // Soonest deadline first, then programs with no single date, then ones already closed.
@@ -219,9 +286,13 @@ export default function ScholarshipsPage() {
     return scholarships
       .filter(matches)
       .filter((program) => grade === null || program.grades.includes(grade))
+      // A statewide program (CalKIDS) is open to every student in its state, so it belongs in every list;
+      // the ZIP code filter below is what hides it for students elsewhere.
+      .filter((program) => where === "all" || program.statewide || (where === "local") === Boolean(program.local))
+      .filter((program) => areaMatch(program, place) !== "no")
       .filter((program) => !openOnly || !today || (daysLeft(program, today) ?? 0) >= 0)
       .sort((a, b) => rank(a) - rank(b) || a.name.localeCompare(b.name));
-  }, [grade, openOnly, query, today]);
+  }, [grade, openOnly, place, query, today, where]);
 
   const needle = query.trim().toLowerCase();
   const changedShown = changedPrograms.filter((program) =>
@@ -262,10 +333,80 @@ export default function ScholarshipsPage() {
                   : "bg-white text-slate-600 ring-1 ring-slate-200 hover:bg-slate-100 hover:text-navy-900"
               )}
             >
-              {option === null ? "Show me everything" : ordinal(option)}
+              {option === null ? "All grades" : ordinal(option)}
             </button>
           ))}
         </div>
+        <p className="pt-2 text-sm font-extrabold text-navy-900">Where?</p>
+        <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Filter by where it is run">
+          {(
+            [
+              ["all", "Anywhere"],
+              ["national", "National only"],
+              ["local", "Near you"],
+            ] as const
+          ).map(([value, label]) => (
+            <button
+              key={value}
+              type="button"
+              aria-pressed={where === value}
+              onClick={() => setWhere(value)}
+              className={clsx(
+                "rounded-full px-4 py-2 text-sm font-semibold transition-colors",
+                where === value
+                  ? "bg-gold-400 text-navy-950"
+                  : "bg-white text-slate-600 ring-1 ring-slate-200 hover:bg-slate-100 hover:text-navy-900"
+              )}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+        <div className="flex flex-wrap items-center gap-3">
+          <label htmlFor="zip" className="text-sm font-semibold text-slate-600">
+            Your ZIP code
+          </label>
+          <input
+            id="zip"
+            inputMode="numeric"
+            autoComplete="postal-code"
+            value={zip}
+            onChange={(event) => setZip(event.target.value)}
+            placeholder="92101"
+            className="w-28 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-navy-900 placeholder:text-slate-400 focus:border-navy-900 focus:outline-none focus:ring-2 focus:ring-gold-400"
+          />
+          {zip && (
+            <button
+              type="button"
+              onClick={() => setZip("")}
+              className="text-xs font-semibold text-slate-500 underline underline-offset-2 hover:text-navy-900"
+            >
+              Clear
+            </button>
+          )}
+        </div>
+        <p className="max-w-2xl text-xs leading-relaxed text-slate-500" aria-live="polite">
+          {place.status === "empty" &&
+            "Optional. Add it to hide regional programs that don't cover where you live. It stays in this browser and isn't sent anywhere."}
+          {place.status === "incomplete" && "Keep going: a ZIP code has 5 digits."}
+          {place.status === "found" && (
+            <>
+              <span className="font-bold text-navy-900">{placeLabel(place)}.</span> Regional programs that don&apos;t
+              cover it are hidden. Local clubs and national programs still show, since they&apos;re open almost
+              everywhere.
+            </>
+          )}
+          {place.status === "unknown-ca" &&
+            "That looks like a California ZIP we can't place in a county. PO box ZIPs aren't in our list, so try your home ZIP. Statewide programs still show."}
+          {place.status === "other-state" &&
+            "We only know California ZIP codes so far, so California programs are hidden. Local clubs and national programs still show."}
+        </p>
+        {where === "local" && (
+          <p className="max-w-2xl text-sm leading-relaxed text-slate-600">
+            These are handed out by a club, post or chapter in your own area, so you&apos;re only up against
+            students near you. Each one sets its own amount and deadline. You have to ask.
+          </p>
+        )}
         <div className="relative max-w-md">
           <Search
             className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
@@ -314,7 +455,7 @@ export default function ScholarshipsPage() {
       ) : (
         <div className="space-y-4">
           {shown.map((program) => (
-            <ScholarshipCard key={program.id} program={program} today={today} />
+            <ScholarshipCard key={program.id} program={program} today={today} match={areaMatch(program, place)} />
           ))}
         </div>
       )}
