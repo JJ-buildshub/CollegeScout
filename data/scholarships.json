@@ -1,5 +1,5 @@
 {
-  "note": "Scholarships and competitions a student can apply for while in high school, quoted from the sponsoring organization's own pages. Each evidence line is the page's exact wording; scripts/check-scholarships.mjs verifies them against the live pages. Fields other than evidence are our summary and say nothing the pages do not. 'Not confirmed' means we could not source it. prize, task, tagline, closes and deadlineShort are our own short wording of the sourced fields below them; closes is this cycle's deadline as an ISO date when there is a single one.",
+  "note": "Scholarships and competitions a student can apply for while in high school, quoted from the sponsoring organization's own pages. Each evidence line is the page's exact wording; scripts/check-scholarships.mjs verifies them against the live pages. Fields other than evidence are our summary and say nothing the pages do not. 'Not confirmed' means we could not source it. prize, task, tagline, closes and deadlineShort are our own short wording of the sourced fields below them; closes is this cycle's deadline as an ISO date when there is a single one. changed lists well-known programs whose rules no longer match what students are commonly told; heard is our wording of the common belief and is not sourced, now is our summary of the quoted lines.",
   "checked": "2026-10-13",
   "programs": {
     "questbridge-national-college-match": {
@@ -2891,6 +2891,45 @@
             "States hold their competitions by mid-March.",
             "the national finals are planned to be held in Washington, DC, from April 26-28, 2027",
             "A partnership with the National Endowment for the Arts and participating state and jurisdictional arts agencies"
+          ]
+        }
+      ]
+    }
+  },
+  "changed": {
+    "bank-of-america-student-leaders": {
+      "name": "Bank of America Student Leaders",
+      "runBy": "Bank of America",
+      "homepage": "https://about.bankofamerica.com/en/making-an-impact/student-leaders",
+      "heard": "A paid summer internship for high school juniors and seniors.",
+      "now": "It is for college students now. You have to be at least 18, have finished high school in the last 24 months, and be heading into your second year of college.",
+      "sources": [
+        {
+          "label": "Student Leaders eligibility requirements",
+          "url": "https://about.bankofamerica.com/en/making-an-impact/student-leaders",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Be at least 18 years of age at the time of application.",
+            "Have achieved your high school diploma or equivalent within the last 24 months at the time of application.",
+            "Be a full-time college student entering your second year of undergraduate college study"
+          ]
+        }
+      ]
+    },
+    "dell-scholars": {
+      "name": "Dell Scholars",
+      "runBy": "Michael & Susan Dell Foundation",
+      "homepage": "https://www.dellscholars.org/scholarship/",
+      "heard": "A national scholarship any low-income senior can apply for.",
+      "now": "It is Texas only for the 2027 cycle. You have to be graduating from a Texas high school and planning to go to a four-year public college in Texas.",
+      "sources": [
+        {
+          "label": "Dell Scholars: who can apply",
+          "url": "https://www.dellscholars.org/scholarship/",
+          "accessed": "2026-10-13",
+          "evidence": [
+            "Be a high school senior graduating from a Texas high school",
+            "Plan to enroll in an accredited four-year public college or university in Texas"
           ]
         }
       ]

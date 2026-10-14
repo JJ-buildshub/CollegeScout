@@ -21,7 +21,8 @@ const file = process.argv[2] ?? join(root, "data", "scholarships.json");
 const data = JSON.parse(readFileSync(file, "utf8"));
 
 const entries = {};
-for (const [id, program] of Object.entries(data.programs)) {
+// `changed` holds programs we list only to say their rules changed; same source shape.
+for (const [id, program] of Object.entries({ ...data.programs, ...(data.changed ?? {}) })) {
   program.sources.forEach((source, i) => {
     entries[program.sources.length > 1 ? `${id} #${i + 1}` : id] = source;
   });
