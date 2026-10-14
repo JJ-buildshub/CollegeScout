@@ -146,9 +146,16 @@ function ScholarshipCard({
     <details className="group rounded-2xl border border-slate-200 bg-white shadow-card open:border-navy-900">
       <summary className="cursor-pointer list-none p-5">
         <div className="flex flex-wrap items-start justify-between gap-x-6 gap-y-2">
-          <p className="min-w-0 flex-1 font-display text-2xl font-extrabold leading-tight text-navy-900 sm:text-3xl">
-            {program.prize ?? program.name}
-          </p>
+          {/* Without a prize line, the name takes the big slot and is the card's heading. */}
+          {program.prize ? (
+            <p className="min-w-0 flex-1 font-display text-2xl font-extrabold leading-tight text-navy-900 sm:text-3xl">
+              {program.prize}
+            </p>
+          ) : (
+            <h2 className="min-w-0 flex-1 font-display text-2xl font-extrabold leading-tight text-navy-900 sm:text-3xl">
+              {program.name}
+            </h2>
+          )}
           <span
             className="mt-1 text-sm font-semibold text-slate-500 group-open:hidden"
             aria-hidden="true"
@@ -279,7 +286,9 @@ export default function ScholarshipsPage() {
     return scholarships
       .filter(matches)
       .filter((program) => grade === null || program.grades.includes(grade))
-      .filter((program) => where === "all" || (where === "local") === Boolean(program.local))
+      // A statewide program (CalKIDS) is open to every student in its state, so it belongs in every list;
+      // the ZIP code filter below is what hides it for students elsewhere.
+      .filter((program) => where === "all" || program.statewide || (where === "local") === Boolean(program.local))
       .filter((program) => areaMatch(program, place) !== "no")
       .filter((program) => !openOnly || !today || (daysLeft(program, today) ?? 0) >= 0)
       .sort((a, b) => rank(a) - rank(b) || a.name.localeCompare(b.name));
