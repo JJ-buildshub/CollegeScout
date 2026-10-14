@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Compass, ListChecks, SlidersHorizontal } from "lucide-react";
+import { Award, Compass, ListChecks, SlidersHorizontal } from "lucide-react";
 import { colleges, getCollegeById } from "@/lib/colleges";
 import { evaluateCollegeFit } from "@/lib/gpa";
 import { computeGpaSummary, useProfile } from "@/lib/profile";
@@ -92,13 +92,21 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
       detail: mounted ? `${planCount} task${planCount === 1 ? "" : "s"} remaining` : "Runway milestones",
       href: "/checklist",
     },
+    {
+      icon: Award,
+      title: "Scholarships",
+      hook: "Scholarships and awards you can earn in high school.",
+      body: "Filter by grade and ZIP code. Every rule and deadline is checked on the organization's own site.",
+      detail: "Starting in 9th grade",
+      href: "/scholarships",
+    },
   ];
 
   if (compact) {
     return (
       <section className="py-2">
         <h2 className="text-xs font-bold tracking-wide text-slate-500">How CollegeScout Works</h2>
-        <div className="mt-3 grid gap-3 sm:grid-cols-3">
+        <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, i) => (
             <Link
               key={step.title}
@@ -127,10 +135,10 @@ export default function JourneySteps({ compact = false }: { compact?: boolean })
           Start anywhere.
         </h2>
         <p className="mt-3 text-sm text-slate-600 sm:text-base">
-          Three places to work, in whatever order suits you.
+          Four places to work, in whatever order suits you.
         </p>
       </div>
-      <div className="mt-7 grid gap-4 sm:grid-cols-3">
+      <div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {steps.map((step, i) => (
           <Link
             key={step.title}

@@ -304,7 +304,7 @@ export default function ScholarshipsPage() {
       <div className="rounded-3xl bg-navy-900 p-6 text-white sm:p-8">
         <p className="text-xs font-bold uppercase tracking-widest text-gold-400">Scholarships</p>
         <h1 className="mt-2 font-display text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
-          Money for college you can win <span className="text-gold-400">before you graduate</span>.
+          Scholarships and awards you can earn <span className="text-gold-400">in high school</span>.
         </h1>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/80">
           Some of these start in 9th grade. Most people find out senior year, when the biggest deadlines are already
