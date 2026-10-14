@@ -23,7 +23,7 @@ import AccessMission from "@/components/AccessMission";
  *   4 what are you interested in                         white <- try it
  *   5 which of these schools make sense for you          slate <- personalise
  *   6 what actually makes a college right for you              <- the system, once it means something
- *   7 explore / my fit / my plan                               <- the three parts
+ *   7 explore / my fit / my plan / scholarships                <- the four parts
  *   8 where the numbers come from                        light
  *
  * The dimensions list sits AFTER the tool on purpose. Placed before it, a
