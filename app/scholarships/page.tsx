@@ -3,10 +3,11 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Search } from "lucide-react";
 import {
   FEE_NOT_STATED,
   SCHOLARSHIP_GRADES,
+  changedPrograms,
   confirmedItems,
   daysLeft,
   isConfirmed,
@@ -201,6 +202,7 @@ export default function ScholarshipsPage() {
   const today = useToday();
   const [grade, setGrade] = useState<ScholarshipGrade | null>(null);
   const [openOnly, setOpenOnly] = useState(false);
+  const [query, setQuery] = useState("");
 
   const shown = useMemo(() => {
     // Soonest deadline first, then programs with no single date, then ones already closed.
@@ -209,11 +211,22 @@ export default function ScholarshipsPage() {
       if (days === null) return 10_000;
       return days < 0 ? 20_000 - days : days;
     };
+    const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+    const matches = (program: Scholarship) => {
+      const text = [program.name, program.runBy, program.task, program.tagline, program.prize].join(" ").toLowerCase();
+      return words.every((word) => text.includes(word));
+    };
     return scholarships
+      .filter(matches)
       .filter((program) => grade === null || program.grades.includes(grade))
       .filter((program) => !openOnly || !today || (daysLeft(program, today) ?? 0) >= 0)
       .sort((a, b) => rank(a) - rank(b) || a.name.localeCompare(b.name));
-  }, [grade, openOnly, today]);
+  }, [grade, openOnly, query, today]);
+
+  const needle = query.trim().toLowerCase();
+  const changedShown = changedPrograms.filter((program) =>
+    `${program.name} ${program.runBy}`.toLowerCase().includes(needle)
+  );
 
   return (
     <div className="mx-auto max-w-4xl space-y-6 py-4">
@@ -253,6 +266,20 @@ export default function ScholarshipsPage() {
             </button>
           ))}
         </div>
+        <div className="relative max-w-md">
+          <Search
+            className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
+            aria-hidden="true"
+          />
+          <input
+            type="search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Coca-Cola, essay, science, speech"
+            aria-label="Search scholarships by name or type"
+            className="w-full rounded-full border border-slate-200 bg-white py-2.5 pl-10 pr-4 text-sm text-navy-900 placeholder:text-slate-400 focus:border-navy-900 focus:outline-none focus:ring-2 focus:ring-gold-400"
+          />
+        </div>
         <label className="flex w-fit cursor-pointer items-center gap-2 text-sm font-medium text-slate-600">
           <input
             type="checkbox"
@@ -266,16 +293,23 @@ export default function ScholarshipsPage() {
 
       <p className="text-sm font-semibold text-slate-600" aria-live="polite">
         {shown.length === 0
-          ? "Nothing matches yet."
+          ? changedShown.length > 0 && needle
+            ? "That one changed its rules. See below."
+            : "Nothing matches yet."
           : `${shown.length} ${shown.length === 1 ? "thing" : "things"} you can go for${
               grade !== null ? ` in ${ordinal(grade)} grade` : ""
             }. Tap one to see how.`}
       </p>
 
       {shown.length === 0 ? (
-        <div className="rounded-2xl border border-slate-200 bg-white p-6 text-sm text-slate-600 shadow-card">
-          We haven&apos;t confirmed anything for this yet. Try another grade, or show the ones that closed so you
-          know what&apos;s coming next year.
+        <div
+          className={clsx(
+            "rounded-2xl border border-slate-200 bg-white p-6 text-sm text-slate-600 shadow-card",
+            changedShown.length > 0 && needle && "hidden"
+          )}
+        >
+          We haven&apos;t confirmed anything that matches. Check the spelling, try another grade, or show the
+          ones that closed so you know what&apos;s coming next year.
         </div>
       ) : (
         <div className="space-y-4">
@@ -283,6 +317,41 @@ export default function ScholarshipsPage() {
             <ScholarshipCard key={program.id} program={program} today={today} />
           ))}
         </div>
+      )}
+
+      {changedShown.length > 0 && (
+        <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
+          <h2 className="text-base font-extrabold text-navy-900">Heard about these? The rules changed</h2>
+          <p className="mt-1 text-sm text-slate-600">
+            Old posts and videos still share these the way they used to work. Here&apos;s what their own sites say now.
+          </p>
+          <div className="mt-4 divide-y divide-slate-100">
+            {changedShown.map((program) => (
+              <div key={program.id} className="py-4 first:pt-0 last:pb-0">
+                <h3 className="text-sm font-bold text-navy-900">
+                  {program.name} <span className="font-medium text-slate-500">from {program.runBy}</span>
+                </h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-slate-500">
+                  <span className="font-bold">What you may have heard: </span>
+                  {program.heard}
+                </p>
+                <p className="mt-1 text-sm leading-relaxed text-slate-700">
+                  <span className="font-bold text-navy-900">What it says now: </span>
+                  {program.now}
+                </p>
+                <a
+                  href={program.homepage}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1.5 inline-flex items-center gap-1 text-xs font-semibold text-navy-900 underline underline-offset-2"
+                >
+                  Straight from {hostname(program.homepage)}
+                  <ExternalLink className="h-3 w-3" aria-hidden="true" />
+                </a>
+              </div>
+            ))}
+          </div>
+        </section>
       )}
 
       <p className="text-xs leading-relaxed text-slate-500">

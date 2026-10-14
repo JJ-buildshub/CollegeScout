@@ -53,7 +53,29 @@ export interface Scholarship {
   sources: ScholarshipSource[];
 }
 
-const data = raw as unknown as { checked: string; programs: Record<string, Omit<Scholarship, "id">> };
+/** A well-known program whose rules no longer match what students are commonly told. */
+export interface ChangedProgram {
+  id: string;
+  name: string;
+  runBy: string;
+  homepage: string;
+  /** The common belief, in our words. Not sourced. */
+  heard: string;
+  /** What the sponsor's page says now, summarizing the quoted lines. */
+  now: string;
+  sources: ScholarshipSource[];
+}
+
+const data = raw as unknown as {
+  checked: string;
+  programs: Record<string, Omit<Scholarship, "id">>;
+  changed?: Record<string, Omit<ChangedProgram, "id">>;
+};
+
+export const changedPrograms: ChangedProgram[] = Object.entries(data.changed ?? {}).map(([id, program]) => ({
+  id,
+  ...program,
+}));
 
 /** ISO date the file was last checked against the live pages. */
 export const scholarshipsChecked = data.checked;
