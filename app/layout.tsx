@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import NavBar from "@/components/NavBar";
 import DataHealthBanner from "@/components/DataHealthBanner";
 import ResetDataButton from "@/components/ResetDataButton";
+import ScoutChat from "@/components/ScoutChat";
 import { CONTACT_EMAIL, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
@@ -78,6 +79,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </a>
           </p>
         </footer>
+        {/* Off until the Anthropic key is set on Vercel; see app/api/scout/route.ts. */}
+        {process.env.NEXT_PUBLIC_SCOUT_ENABLED === "1" && <ScoutChat />}
         <Analytics />
       </body>
     </html>
