@@ -13,6 +13,8 @@ import WhyCollegeScout from "@/components/WhyCollegeScout";
 import FindMyFit from "@/components/FindMyFit";
 import AccessMissionStatement from "@/components/AccessMissionStatement";
 import AccessMission from "@/components/AccessMission";
+import ScholarshipsBand from "@/components/ScholarshipsBand";
+import { scholarships } from "@/lib/scholarships";
 
 /**
  * The first five minutes of using CollegeScout, not a description of it:
@@ -22,6 +24,7 @@ import AccessMission from "@/components/AccessMission";
  *   3 same interest, different odds, different price     slate <- proof
  *   4 what are you interested in                         white <- try it
  *   5 which of these schools make sense for you          slate <- personalise
+ *   5b scholarships most students hear about too late    navy  <- the other half of paying for it
  *   6 what actually makes a college right for you              <- the system, once it means something
  *   7 explore / my fit / my plan / scholarships                <- the four parts
  *   8 where the numbers come from                        light
@@ -49,6 +52,10 @@ export default function HomePage() {
       </div>
       <div className="mt-10 sm:mt-16">
         <FindMyFit />
+      </div>
+      <div className="mt-10 sm:mt-16">
+        {/* Only the deadlines cross to the client; the records stay on the server. */}
+        <ScholarshipsBand total={scholarships.length} closes={scholarships.map((s) => s.closes ?? null)} />
       </div>
       <div className="mt-10 sm:mt-12">
         <WhyCollegeScout />
