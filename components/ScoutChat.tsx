@@ -46,17 +46,41 @@ function recognitionConstructor(): RecognitionConstructor | null {
   return w.SpeechRecognition ?? w.webkitSpeechRecognition ?? null;
 }
 
-/** A brighter, slightly quicker take on the device's best English voice. Browser voices are adult voices; this is as young as they go without sounding sped up. */
+// The brightest, most natural-sounding young voices each platform ships, best
+// first: Edge's online "Natural" voices, then Chrome's, then Apple's. Browser
+// voices are adult voices; these are the youngest-sounding of them.
+const VOICE_PREFERENCE = [
+  /Ava.*Natural/i, // Edge
+  /Emma.*Natural/i, // Edge
+  /Jenny.*Natural/i, // Edge
+  /Aria.*Natural/i, // Edge
+  /Google US English/i, // Chrome
+  /Samantha/i, // Safari, iPhone and Mac
+  /Zira/i, // Windows offline
+];
+
+function pickVoice(): SpeechSynthesisVoice | undefined {
+  const voices = window.speechSynthesis.getVoices().filter((voice) => voice.lang.startsWith("en"));
+  for (const pattern of VOICE_PREFERENCE) {
+    const match = voices.find((voice) => pattern.test(voice.name));
+    if (match) return match;
+  }
+  return voices.find((voice) => voice.lang === "en-US") ?? voices[0];
+}
+
+/**
+ * Scout's voice: a natural voice, lifted a little and a touch quick so it
+ * sounds young and upbeat. Natural voices distort if pushed much further than
+ * this, so the excitement mostly comes from Scout's wording.
+ */
 function makeUtterance(text: string): SpeechSynthesisUtterance {
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = "en-US";
-  const voices = window.speechSynthesis.getVoices();
-  const preferred =
-    voices.find((voice) => voice.lang.startsWith("en") && /natural|neural|samantha|aria|jenny|google us/i.test(voice.name)) ??
-    voices.find((voice) => voice.lang.startsWith("en-US"));
-  if (preferred) utterance.voice = preferred;
-  utterance.pitch = 1.15;
-  utterance.rate = 1.08;
+  const voice = pickVoice();
+  if (voice) utterance.voice = voice;
+  const natural = Boolean(voice && /natural|google/i.test(voice.name));
+  utterance.pitch = natural ? 1.1 : 1.2;
+  utterance.rate = 1.06;
   return utterance;
 }
 
@@ -72,6 +96,8 @@ export default function ScoutChat() {
   const transcript = useRef("");
 
   useEffect(() => {
+    // Chrome loads its voice list after the page; asking once warms it up.
+    window.speechSynthesis?.getVoices();
     try {
       setVoiceOn(window.localStorage.getItem(VOICE_KEY) !== "off");
     } catch {
