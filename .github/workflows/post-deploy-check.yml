@@ -20,7 +20,9 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Wait for Vercel, then check what the site really serves
+      - name: Wait for this commit to go live, then check what the site serves
+        env:
+          EXPECTED_SHA: ${{ github.sha }}
         run: |
           node --input-type=module -e '
           const ROUTES = [
@@ -40,17 +42,32 @@ jobs:
             return { status: r.status, body: await r.text(), url: r.url };
           };
 
-          // Vercel takes a minute or two to build. Poll the homepage until it
-          // answers properly rather than guessing at a fixed sleep.
-          let ready = false;
-          for (let i = 0; i < 20 && !ready; i++) {
+          // The old deployment keeps serving a healthy homepage until the new
+          // one takes over, so "returns 200" proves nothing about this push. On
+          // 2026-10-19 the run for dc906ff went green while the live pages still
+          // showed old data. Instead, wait until the page names this commit in
+          // its build-sha tag (set from VERCEL_GIT_COMMIT_SHA in app/layout.tsx).
+          const expected = process.env.EXPECTED_SHA;
+          const shaOf = (html) => {
+            const m = html.match(/<meta[^>]*name="build-sha"[^>]*content="([0-9a-f]+)"/i);
+            return m ? m[1] : null;
+          };
+          let live = null;
+          for (let i = 0; i < 40 && live !== expected; i++) {
             try {
-              const r = await get(ROUTES[0][1]);
-              ready = r.status === 200 && r.body.includes("CollegeScout");
+              const r = await get(ROUTES[0][1] + "?deploy-check=" + Date.now());
+              if (r.status === 200) live = shaOf(r.body);
             } catch {}
-            if (!ready) await new Promise((r) => setTimeout(r, 15000));
+            if (live !== expected) await new Promise((r) => setTimeout(r, 15000));
           }
-          if (!ready) { console.error("homepage never came back healthy after 5 minutes"); process.exit(1); }
+          if (live !== expected) {
+            console.error(`After 10 minutes the live site is still not running commit ${expected}.`);
+            console.error(live
+              ? `It is serving ${live}. Either Vercel has not finished (or failed) this build, or a later push replaced it.`
+              : "The homepage carries no build-sha tag, so there is no way to tell which build is live. Check the Vercel dashboard.");
+            process.exit(1);
+          }
+          console.log(`Commit ${expected} is live. Checking routes.`);
 
           const problems = [];
           for (const [name, url, minChars] of ROUTES) {

@@ -45,6 +45,11 @@ export const metadata: Metadata = {
     title: "Find colleges you didn't know to look for",
     description: DESCRIPTION,
   },
+  // The commit this build came from, as <meta name="build-sha">. The
+  // post-deploy check waits for it to match the pushed commit, because the old
+  // deployment answers 200 too and would otherwise pass for the new one.
+  // Vercel sets the variable at build time; local builds leave the tag out.
+  ...(process.env.VERCEL_GIT_COMMIT_SHA && { other: { "build-sha": process.env.VERCEL_GIT_COMMIT_SHA } }),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
