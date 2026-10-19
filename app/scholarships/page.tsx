@@ -267,6 +267,11 @@ export default function ScholarshipsPage() {
   const [grade, setGrade] = useState<ScholarshipGrade | null>(null);
   const [openOnly, setOpenOnly] = useState(false);
   const [query, setQuery] = useState("");
+  // Scout links to a program as /scholarships?q=<name>.
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search).get("q");
+    if (q) setQuery(q);
+  }, []);
   const [where, setWhere] = useState<"all" | "national" | "local">("all");
   const [zip, setZip] = useSavedZip();
   const place = useMemo(() => lookupZip(zip), [zip]);

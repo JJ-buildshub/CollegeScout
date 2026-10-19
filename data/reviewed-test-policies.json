@@ -325,7 +325,7 @@
    "label": "Cornell admissions",
    "url": "https://admissions.cornell.edu/policies/standardized-testing-policy",
    "evidence": [
-    "First-year applicants are required to submit the SAT or ACT scores when applying to Cornell."
+    "First-year applicants are required to submit SAT or ACT scores when applying to Cornell."
    ],
    "provenanceNote": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
   },
@@ -2269,11 +2269,13 @@
    "policy": "Test-Optional",
    "label": "Harvey Mudd admission",
    "url": "https://www.hmc.edu/admission/apply/",
-   "accessed": "2026-09-28",
+   "accessed": "2026-10-18",
    "evidence": [
-    "HMC extends its ACT/SAT optional pilot for another year, through 2027."
+    "We are test-optional for students applying for Fall 2027.",
+    "We will return to requiring standardized testing for all students for the Fall 2028 application cycle."
    ],
-   "manual": false
+   "manual": false,
+   "note": "Harvey Mudd will require SAT or ACT scores starting with the Fall 2028 application cycle."
   },
   "occidental-college": {
    "policy": "Test-Optional",
@@ -2819,10 +2821,10 @@
   "azusa-pacific-university": {
    "policy": "Test-Optional",
    "label": "Azusa Pacific admissions",
-   "url": "https://www.apu.edu/undergraduate-admissions/requirements/",
-   "accessed": "2026-09-29",
+   "url": "https://www.apu.edu/undergraduate-admissions/",
+   "accessed": "2026-10-18",
    "evidence": [
-    "SAT and ACT test scores are not required for admission."
+    "SAT and ACT scores are not required for admission, but we encourage you to submit your scores for consideration for additional academic scholarship awards."
    ],
    "manual": false,
    "note": "Scores are encouraged because they may be used to determine additional academic scholarship awards, though not for admission."

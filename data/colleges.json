@@ -9967,13 +9967,14 @@
     "testingPolicyProvenance": {
       "source": "Harvey Mudd admission (https://www.hmc.edu/admission/apply/)",
       "year": "2026-27",
-      "accessed": "2026-09-28"
+      "accessed": "2026-10-18"
     },
     "costProvenance": {
       "source": "College Scorecard (latest.cost.attendance.academic_year)",
       "year": "2024",
       "note": "Cost of attendance from College Scorecard (academic-year cost)."
-    }
+    },
+    "testingPolicyNote": "Harvey Mudd will require SAT or ACT scores starting with the Fall 2028 application cycle."
   },
   {
     "id": "scripps-college",
@@ -25239,9 +25240,9 @@
     "admitRateOverallSuperseded": true,
     "testingPolicyNote": "Scores are encouraged because they may be used to determine additional academic scholarship awards, though not for admission.",
     "testingPolicyProvenance": {
-      "source": "Azusa Pacific admissions (https://www.apu.edu/undergraduate-admissions/requirements/)",
+      "source": "Azusa Pacific admissions (https://www.apu.edu/undergraduate-admissions/)",
       "year": "2026-27",
-      "accessed": "2026-09-29"
+      "accessed": "2026-10-18"
     },
     "applicationPlansProvenance": {
       "source": "Azusa Pacific freshman admissions (https://www.apu.edu/undergraduate-admissions/freshman/)",
@@ -27265,9 +27266,19 @@
     },
     "applicationPlans": [
       {
+        "type": "EA",
+        "binding": false,
+        "deadline": "November 2"
+      },
+      {
         "type": "RD",
         "binding": false,
-        "deadline": "February 1"
+        "deadline": "April 15"
+      },
+      {
+        "type": "Rolling",
+        "binding": false,
+        "deadline": "August 1"
       }
     ],
     "financials": {
@@ -27375,7 +27386,7 @@
     "applicationPlansProvenance": {
       "source": "Delaware State University admissions (https://www.desu.edu/admissions/undergraduate-students)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-18"
     },
     "testingPolicyProvenance": {
       "source": "Delaware State University admissions (https://www.desu.edu/admissions/undergraduate-students)",
@@ -43118,7 +43129,7 @@
     "system": "Public",
     "location": "Brooklyn, NY",
     "state": "NY",
-    "website": "https://www.brooklyn.cuny.edu",
+    "website": "https://www.brooklyn.edu",
     "admitRateOverall": 0.5836,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
@@ -43250,7 +43261,7 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Brooklyn College (CUNY) admissions (https://www.brooklyn.cuny.edu/web/admissions/freshmen/apply/deadlines.php)",
+      "source": "Brooklyn College (CUNY) admissions (https://www.brooklyn.edu/admissions-aid/first-year/how-to-apply/requirements-and-deadlines/)",
       "year": "2026-27",
       "accessed": "2026-09-20"
     },
@@ -49136,7 +49147,7 @@
     "system": "Public",
     "location": "Charleston, SC",
     "state": "SC",
-    "website": "https://www.cofc.edu",
+    "website": "https://charleston.edu",
     "admitRateOverall": 0.6003,
     "inStateAdmitRate": null,
     "outOfStateAdmitRate": null,
@@ -54188,9 +54199,9 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "MIAD apply now (https://www.miad.edu/apply-now)",
+      "source": "MIAD admissions (Spanish-language page) (https://www.miad.edu/es/admisiones)",
       "year": "2026-27",
-      "accessed": "2026-09-29"
+      "accessed": "2026-10-18"
     },
     "testingPolicyNote": "MIAD's English admissions pages never state a testing policy; they list the SAT and ACT only as score-report codes. The only statement on its own site is on the Spanish-language admissions page, which reads \"ACT / SAT scores (recommended but not required)\".",
     "testingPolicyProvenance": {

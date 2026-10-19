@@ -2219,92 +2219,6 @@
         }
       ]
     },
-    "afsa-national-high-school-essay-contest": {
-      "prize": "$2,500 + trips",
-      "task": "Essay",
-      "tagline": "Write a 1,000 to 1,500 word essay on the year's topic. The winner also gets a trip to Washington, D.C. and a Semester at Sea voyage.",
-      "closes": null,
-      "deadlineShort": "March 1 (last posted)",
-      "name": "AFSA National High School Essay Contest",
-      "runBy": "American Foreign Service Association (AFSA)",
-      "homepage": "https://afsa.org/essay-contest",
-      "kind": "competition",
-      "grades": [
-        9,
-        10,
-        11,
-        12
-      ],
-      "award": "Winner: $2,500, a trip to Washington, D.C. (airfare and hotel for the student, one parent and the teacher) and a fully funded Semester at Sea educational voyage. Runner-up: $1,250 and a full scholarship to the National Student Leadership Conference's International Diplomacy summer program.",
-      "eligibility": [
-        "Be a high school student in grades 9-12",
-        "Attend school in any of the 50 states, the District of Columbia or U.S. territories, or be a U.S. citizen/lawful permanent resident attending high school overseas",
-        "Public, private, parochial and home-schooled students may enter",
-        "Students whose parents are in the Foreign Service are not eligible",
-        "Previous first-place winners and immediate family of AFSA, Semester at Sea and National Student Leadership Conference directors or staff are not eligible (past honorable mentions and runners-up may enter)"
-      ],
-      "whatYouSubmit": [
-        "An essay of 1,000 to 1,500 words on the year's topic (2025-2026 topic: 'The Fragile Front Line: U.S. Diplomacy and the Future of Soft Power'); word count excludes the source list",
-        "Format: typed, double-spaced, 12-point font, one-inch margins, MLA style, uploaded as a Microsoft Word file with a title; no last name or school name on the essay pages",
-        "A bibliography/list of sources, including at least three primary sources; general encyclopedias such as Wikipedia are not acceptable",
-        "The online registration form, including the name of a teacher or sponsor and the essay's word count",
-        "An on-camera video of 30 seconds to 1 minute answering set questions about the essay, shared by link"
-      ],
-      "howToApply": [
-        "Write the essay to the rules and record the short video",
-        "Fill out the online registration form and upload the essay and source list",
-        "Qualifying essays go through several rounds of blind judging",
-        "Winner, runner-up and honorable mentions are notified in June"
-      ],
-      "prepare": [
-        "Read AFSA's Essay Contest Study Guide for background on the U.S. Foreign Service",
-        "Ask a teacher or sponsor to be named on the registration form and to review the essay",
-        "Use a variety of sources with at least three primary sources; websites should not be the only sources"
-      ],
-      "opens": "Not confirmed for 2026-27 (the page says the submission window for the current cycle is closed)",
-      "deadline": "March 1, 11:59 p.m. EDT (per the posted rules, headed 2025; year for the next cycle Not confirmed)",
-      "cycle": "2025-2026 is the latest posted cycle; 2026-27 not yet announced when checked",
-      "fee": "Not stated on the sponsor's pages",
-      "notes": "The two AFSA pages differ slightly: the contest page says overseas entrants must be 'U.S. citizens attending high school overseas' and describes the D.C. trip as for 'the winner and his or her parents'; the rules page says 'U.S. citizen/lawful permanent resident' and 'student, one parent, and his/her teacher'. The rules page is still headed 'Essay Contest Rules 2025' and mentions June 2025 notification, while the contest page shows the 2025-2026 topic. The 2026-27 topic and dates were not posted.",
-      "sources": [
-        {
-          "label": "AFSA - Essay Contest Rules and Guidelines",
-          "url": "https://afsa.org/rules-and-guidelines",
-          "accessed": "2026-10-13",
-          "evidence": [
-            "This contest is open to high school students in grades 9-12 who meet the following criteria:",
-            "You must be attending school in any of the 50 states, the District of Columbia, U.S. territories, or be a U.S. citizen/lawful permanent resident attending high school overseas.",
-            "Home-schooled students are also welcome to participate.",
-            "Keep in mind that only those students whose parents are not in the Foreign Service are eligible to submit.",
-            "Previous first-place winners and immediate family members of AFSA, Semester at Sea, and National Student Leadership Conference directors or staff are not eligible.",
-            "Your essay must be between 1,000 and 1,500 words.",
-            "March 1 by 11:59 p.m. EDT.",
-            "Entries must be typed, double-spaced, in 12-point font with a one-inch margin on all sides of the page.",
-            "Make sure at least three of your sources are primary",
-            "General encyclopedias (like Wikipedia) are not acceptable sources.",
-            "Registration forms must have a teacher or sponsor name.",
-            "Do not place your last name or your school's name on any of the pages of the essay.",
-            "Videos must be no shorter than 30 seconds and no longer than 1 minute.",
-            "All qualifying essays will go through several rounds of blind judging, meaning the judges won't know the identity of the writers.",
-            "a fully funded educational voyage with Semester at Sea",
-            "Runner-up: The runner-up receives $1,250 and a full scholarship to attend the National Student Leadership Conference's International Diplomacy program during a summer session."
-          ]
-        },
-        {
-          "label": "AFSA - National High School Essay Contest",
-          "url": "https://afsa.org/essay-contest",
-          "accessed": "2026-10-13",
-          "evidence": [
-            "The submission window for the current year's cycle is now closed.",
-            "AFSA National High School Essay Contest 2025-2026:",
-            "The Fragile Front Line: U.S. Diplomacy and the Future of Soft Power",
-            "$2,500 to the writer of the winning essay",
-            "if they are in grades nine through twelve in any of the fifty states, the District of Columbia, the U.S. territories, or if they are U.S. citizens attending high school overseas",
-            "For background information on the U.S. Foreign Service and additional educational resources, read our"
-          ]
-        }
-      ]
-    },
     "junior-science-and-humanities-symposium": {
       "prize": "Up to $12,000",
       "task": "Research presentation",
@@ -3488,7 +3402,7 @@
           "accessed": "2026-10-13",
           "evidence": [
             "Applications are submitted online to National Headquarters.",
-            "Scholarship entries are distributed to the department (state) in which the applicant resides for the first round of judging.",
+            "Scholarship applications are distributed to the department (state) in which the applicant resides for the first round of judging.",
             "Homeschooled students may apply providing they are the equivalent of a high school senior.",
             "For documentation purposes the unit president or post commander should sign off on the hours by writing a letter."
           ]
@@ -3544,19 +3458,19 @@
       ],
       "opens": "Applications for the 2027 scholarships are to be posted in early October",
       "deadline": "March 1 at 11:59 pm Eastern each year",
-      "cycle": "2026-27 (2027 scholarships); the detailed rules on the page are still the 2026 ones",
+      "cycle": "2026-27 (2027 scholarships); the membership years on the page are for the 2027 application",
       "fee": "Not stated on the sponsor's pages",
-      "notes": "Membership requirement: open only to Auxiliary Junior members with three consecutive years of membership, so a student cannot join in senior year and apply. Paid membership is required; the dues amount is not on these pages. The membership years named on the page (2023, 2024, 2025, and 2026 current) belong to the 2026 application.",
+      "notes": "Membership requirement: open only to Auxiliary Junior members with three consecutive years of membership, so a student cannot join in senior year and apply. Paid membership is required; the dues amount is not on these pages. For the 2027 scholarships the page names 2024, 2025 and 2026 as the three prior years and 2027 as the current paid year.",
       "sources": [
         {
           "label": "Spirit of Youth Scholarship",
           "url": "https://www.legion-aux.org/scholarships/spirit-of-youth",
-          "accessed": "2026-10-13",
+          "accessed": "2026-10-18",
           "evidence": [
             "Applications for the 2027 scholarships will be posted in early October.",
             "National Headquarters will award each department/state one recipient a scholarship of $1,000.",
             "the National Education Committee will select five recipients (one per division) who will receive a $5,000 scholarship in lieu of the $1000 department/state scholarship",
-            "have held membership in the American Legion Auxiliary for the past three consecutive years (2023, 2024, and 2025), and must be a paid member for the current (2026) membership year",
+            "have held membership in the American Legion Auxiliary for the past three consecutive years (2024, 2025, and 2026) and must be a paid member for the current (2027) membership year",
             "Applicant must continue their membership in the American Legion Auxiliary during the scholarship period.",
             "Participation in an ALA Girls State program does not make you a member of the American Legion Auxiliary or eligible for the Spirit of Youth Scholarship.",
             "Applicants must be in their senior year of high school or be a senior equivalent.",
@@ -5351,6 +5265,23 @@
           "evidence": [
             "Be a high school senior graduating from a Texas high school",
             "Plan to enroll in an accredited four-year public college or university in Texas"
+          ]
+        }
+      ]
+    },
+    "afsa-national-high-school-essay-contest": {
+      "name": "AFSA National High School Essay Contest",
+      "runBy": "American Foreign Service Association (AFSA)",
+      "homepage": "https://afsa.org/essay-contest",
+      "heard": "A national essay contest on U.S. diplomacy for students in grades 9 to 12, with a $2,500 first prize.",
+      "now": "It is not running in 2026-27. AFSA has paused the contest for the year while it reviews its student outreach programs.",
+      "sources": [
+        {
+          "label": "AFSA - National High School Essay Contest",
+          "url": "https://afsa.org/essay-contest",
+          "accessed": "2026-10-18",
+          "evidence": [
+            "Our National High School Essay Contest will be on hiatus for the 2026–2027 academic year while we review and strengthen our student outreach programs."
           ]
         }
       ]
