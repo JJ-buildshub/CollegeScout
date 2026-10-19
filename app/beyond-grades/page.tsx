@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Music, Trophy, Award, Sparkles } from "lucide-react";
+import { Music, Trophy, Sparkles } from "lucide-react";
 import { livePathwaySlugs, pathwayCards, pathwayCategories, type PathwayCategoryId } from "@/lib/pathways";
 import PathwayExplorer from "@/components/PathwayExplorer";
 
@@ -16,7 +16,6 @@ export const metadata: Metadata = {
 const CATEGORY_ICON: Record<PathwayCategoryId, typeof Music> = {
   music: Music,
   sports: Trophy,
-  "activity-scholarships": Award,
   "activities-valued": Sparkles,
 };
 
@@ -38,14 +37,14 @@ export default function PathwaysPage() {
       <section className="rounded-2xl border-l-4 border-gold-500 bg-white p-5 shadow-card sm:p-6">
         <h2 className="text-base font-extrabold text-navy-900">Not a shortcut</h2>
         <p className="mt-1 max-w-3xl text-sm leading-relaxed text-slate-600">
-          You still apply to each college the regular way. These paths add a second piece on top: an audition, a coach&apos;s
-          support, a portfolio or a scholarship application.
+          You still apply to each college the regular way. These paths add a second piece on top: an audition, a recording, a
+          coach&apos;s support or an arts supplement.
         </p>
       </section>
 
       <section>
-        <h2 className="font-display text-2xl font-extrabold tracking-tight text-navy-900 sm:text-[28px]">Four kinds of pathways</h2>
-        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <h2 className="font-display text-2xl font-extrabold tracking-tight text-navy-900 sm:text-[28px]">Three kinds of pathways</h2>
+        <div className="mt-4 grid gap-4 sm:grid-cols-3">
           {pathwayCategories.map((category) => {
             const Icon = CATEGORY_ICON[category.id];
             return (

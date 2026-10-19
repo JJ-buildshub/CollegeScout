@@ -9,7 +9,6 @@ import type { PathwayCard, PathwayCategory, PathwayCategoryId } from "@/lib/path
 const BADGE_STYLE: Record<PathwayCard["badge"], string> = {
   Mainstream: "bg-slate-100 text-slate-600",
   Niche: "bg-gold-100 text-gold-700",
-  Scholarships: "bg-navy-900 text-gold-400",
   "Counts in your app": "border border-slate-200 bg-white text-slate-600",
 };
 

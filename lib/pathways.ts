@@ -5,8 +5,8 @@ import rawPathways from "@/data/pathways.json";
  * only when that file has a page for its slug; every other card is shown as
  * coming soon, so adding a pathway is a data edit, never a code change.
  */
-export type PathwayCategoryId = "music" | "sports" | "activity-scholarships" | "activities-valued";
-export type PathwayBadge = "Mainstream" | "Niche" | "Scholarships" | "Counts in your app";
+export type PathwayCategoryId = "music" | "sports" | "activities-valued";
+export type PathwayBadge = "Mainstream" | "Niche" | "Counts in your app";
 
 export interface PathwayCategory {
   id: PathwayCategoryId;

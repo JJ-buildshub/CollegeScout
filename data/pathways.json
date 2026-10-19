@@ -15,12 +15,6 @@
       "summary": "Coaches can support your admission, and NCAA rules set when they can contact you."
     },
     {
-      "id": "activity-scholarships",
-      "label": "Activities with scholarships",
-      "title": "Activities with scholarships",
-      "summary": "No separate admission track, but some colleges offer money to join their band, debate or robotics teams."
-    },
-    {
       "id": "activities-valued",
       "label": "Activities colleges value",
       "title": "Activities colleges value",
@@ -29,13 +23,8 @@
   ],
   "cards": [
     { "slug": "oboe", "category": "music", "badge": "Niche", "title": "Oboe", "summary": "Major in music, double-degree, or keep playing alongside another major.", "starts": "9th–10th grade" },
-    { "slug": "violin", "category": "music", "badge": "Mainstream", "title": "Violin", "summary": "Auditions for music schools, or an arts supplement alongside another major.", "starts": "9th–10th grade" },
-    { "slug": "piano", "category": "music", "badge": "Mainstream", "title": "Piano", "summary": "Auditions for music schools, or an arts supplement alongside another major.", "starts": "9th–10th grade" },
+    { "slug": "instruments", "category": "music", "badge": "Mainstream", "title": "Popular instruments", "summary": "Violin, piano, cello, flute, trumpet, guitar and more: audition for a music school, or send an arts supplement alongside another major.", "starts": "9th–10th grade" },
     { "slug": "voice", "category": "music", "badge": "Mainstream", "title": "Voice", "summary": "Classical, jazz and musical theater auditions each follow their own calendar.", "starts": "9th–10th grade" },
-    { "slug": "cello", "category": "music", "badge": "Mainstream", "title": "Cello", "summary": "Auditions for music schools, or an arts supplement alongside another major.", "starts": "9th–10th grade" },
-    { "slug": "flute", "category": "music", "badge": "Mainstream", "title": "Flute", "summary": "Auditions for music schools, or an arts supplement alongside another major.", "starts": "9th–10th grade" },
-    { "slug": "trumpet", "category": "music", "badge": "Mainstream", "title": "Trumpet", "summary": "Classical and jazz programs, or an arts supplement alongside another major.", "starts": "9th–10th grade" },
-    { "slug": "guitar", "category": "music", "badge": "Mainstream", "title": "Guitar", "summary": "Classical and jazz programs, or an arts supplement alongside another major.", "starts": "9th–10th grade" },
     { "slug": "basketball", "category": "sports", "badge": "Mainstream", "title": "Basketball", "summary": "Coach contact, visits and roster spots run on NCAA rules for each division.", "starts": "Summer after 10th grade" },
     { "slug": "soccer", "category": "sports", "badge": "Mainstream", "title": "Soccer", "summary": "Coach contact, visits and roster spots run on NCAA rules for each division.", "starts": "Summer after 10th grade" },
     { "slug": "football", "category": "sports", "badge": "Mainstream", "title": "Football", "summary": "Football has its own contact dates and signing period.", "starts": "Summer after 10th grade" },
@@ -44,9 +33,6 @@
     { "slug": "lacrosse", "category": "sports", "badge": "Mainstream", "title": "Lacrosse", "summary": "Men's and women's lacrosse now open coach contact on different dates.", "starts": "Summer after 10th grade" },
     { "slug": "hockey", "category": "sports", "badge": "Mainstream", "title": "Hockey", "summary": "College teams, coach support and how the recruiting calendar works.", "starts": "Summer after 10th grade" },
     { "slug": "fencing", "category": "sports", "badge": "Niche", "title": "Fencing", "summary": "College teams, coach support and how the recruiting calendar works.", "starts": "Summer after 10th grade" },
-    { "slug": "marching-band", "category": "activity-scholarships", "badge": "Scholarships", "title": "Marching band", "summary": "Some colleges offer awards for joining their band.", "starts": "9th grade" },
-    { "slug": "speech-debate", "category": "activity-scholarships", "badge": "Scholarships", "title": "Speech & debate", "summary": "Some colleges offer awards for joining their debate team.", "starts": "9th grade" },
-    { "slug": "robotics", "category": "activity-scholarships", "badge": "Scholarships", "title": "Robotics", "summary": "Some colleges offer awards for joining their robotics team.", "starts": "9th grade" },
     { "slug": "research", "category": "activities-valued", "badge": "Counts in your app", "title": "Research", "summary": "Shows up in your activities, and some colleges accept a research supplement.", "starts": "10th–11th grade" },
     { "slug": "academic-competitions", "category": "activities-valued", "badge": "Counts in your app", "title": "Academic competitions", "summary": "Math, science and other contests listed as activities and awards.", "starts": "9th grade" },
     { "slug": "jobs-family", "category": "activities-valued", "badge": "Counts in your app", "title": "Jobs & family responsibilities", "summary": "A job or caring for family counts as an activity.", "starts": "Any grade" }
