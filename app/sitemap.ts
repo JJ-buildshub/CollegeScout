@@ -4,12 +4,12 @@ import { livePathwaySlugs } from "@/lib/pathways";
 import { SITE_URL } from "@/lib/site";
 
 /**
- * 336 college profiles, the seven static routes and each Talent Pathways page. Without this, the profiles
+ * 336 college profiles, the seven static routes and each Beyond Grades page. Without this, the profiles
  * are only reachable by crawling the directory's client-filtered grid, which is
  * the bulk of what the site has to offer.
  */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/directory", "/matcher", "/checklist", "/scholarships", "/pathways", "/about-data"].map((path) => ({
+  const staticRoutes = ["", "/directory", "/matcher", "/checklist", "/scholarships", "/beyond-grades", "/about-data"].map((path) => ({
     url: `${SITE_URL}${path}`,
     changeFrequency: "weekly" as const,
     priority: path === "" ? 1 : 0.8,
@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const pathways = livePathwaySlugs().map((slug) => ({
-    url: `${SITE_URL}/pathways/${slug}`,
+    url: `${SITE_URL}/beyond-grades/${slug}`,
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));

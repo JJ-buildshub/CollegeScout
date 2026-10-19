@@ -1,5 +1,5 @@
 {
-  "note": "Talent Pathways: hub cards and one content block per pathway page. A pathway gets a page when it has an entry under `pages`; every other card shows as coming soon. Each source's evidence lines are that page's exact wording; scripts/check-pathways.mjs confirms they are still there. `manual: true` marks a page that refuses automated requests and was read in a browser on `accessed`.",
+  "note": "Beyond Grades (the /beyond-grades section): hub cards and one content block per pathway page. A pathway gets a page when it has an entry under `pages`; every other card shows as coming soon. Each source's evidence lines are that page's exact wording; scripts/check-pathways.mjs confirms they are still there. `manual: true` marks a page that refuses automated requests and was read in a browser on `accessed`.",
   "checked": "2026-10-19",
   "categories": [
     {

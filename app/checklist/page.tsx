@@ -207,7 +207,7 @@ export default function ChecklistPage() {
 
       {pathwayCategories.length > 0 && (
         <section>
-          <h2 className="text-lg font-bold text-navy-900">Your Talent Pathways</h2>
+          <h2 className="text-lg font-bold text-navy-900">Beyond Grades</h2>
           <div className="mt-4 grid gap-5 lg:grid-cols-2">
             {pathwayCategories.map((category) => {
               const catDone = category.tasks.filter((t) => done[t.id]).length;
@@ -220,7 +220,7 @@ export default function ChecklistPage() {
                       <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-navy-900/5 text-navy-900">
                         <ChecklistIcon name={category.icon} className="h-4 w-4" />
                       </span>
-                      <Link href={category.href ?? "/pathways"} className="text-sm font-bold text-navy-900 hover:text-gold-600">
+                      <Link href={category.href ?? "/beyond-grades"} className="text-sm font-bold text-navy-900 hover:text-gold-600">
                         {category.title}
                       </Link>
                     </div>

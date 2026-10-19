@@ -1,7 +1,7 @@
 import rawPathways from "@/data/pathways.json";
 
 /**
- * Talent Pathways content, from data/pathways.json. A card links to a page
+ * Beyond Grades content, from data/pathways.json. A card links to a page
  * only when that file has a page for its slug; every other card is shown as
  * coming soon, so adding a pathway is a data edit, never a code change.
  */

@@ -78,7 +78,7 @@ export default function PathwayExplorer({
           return live ? (
             <Link
               key={card.slug}
-              href={`/pathways/${card.slug}`}
+              href={`/beyond-grades/${card.slug}`}
               className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-card transition-all hover:-translate-y-0.5 hover:shadow-cardHover"
             >
               <CardBody card={card} categoryLabel={categoryLabel} live />

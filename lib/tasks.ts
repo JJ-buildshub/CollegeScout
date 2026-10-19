@@ -20,7 +20,7 @@ export interface PlanCategory {
   title: string;
   icon: string;
   tasks: PlanTask[];
-  /** Set for a Talent Pathways category: the pathway page its tasks come from. */
+  /** Set for a Beyond Grades category: the pathway page its tasks come from. */
   href?: string;
 }
 
@@ -254,7 +254,7 @@ export function removeCustomTask(rawId: string, collegeId?: string) {
   });
 }
 
-// --- Talent Pathways the student added to My Plan. Only the slugs are stored; each pathway's tasks
+// --- Beyond Grades pathways the student added to My Plan. Only the slugs are stored; each pathway's tasks
 // are read from data/pathways.json every time, so editing a pathway's checklist updates My Plan
 // without a migration, and a task's id (`pathway:<slug>:<needId>`) keeps its checked-off state.
 interface PathwayPlanState {
@@ -298,7 +298,7 @@ export function buildPathwayCategories(slugs: string[]): PlanCategory[] {
         id: `pathway:${slug}`,
         title: `${page.title} pathway`,
         icon: "sparkles",
-        href: `/pathways/${slug}`,
+        href: `/beyond-grades/${slug}`,
         tasks: page.needs.map((need) => ({ id: `pathway:${slug}:${need.id}`, label: need.label })),
       },
     ];

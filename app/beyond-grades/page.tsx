@@ -7,10 +7,10 @@ const description =
   "How music, sports and activities can add a second piece to a college application: what each path requires and when it happens.";
 
 export const metadata: Metadata = {
-  title: "Talent Pathways",
+  title: "Beyond Grades",
   description,
-  alternates: { canonical: "/pathways" },
-  openGraph: { title: "Talent Pathways | CollegeScout", description, url: "/pathways" },
+  alternates: { canonical: "/beyond-grades" },
+  openGraph: { title: "Beyond Grades | CollegeScout", description, url: "/beyond-grades" },
 };
 
 const CATEGORY_ICON: Record<PathwayCategoryId, typeof Music> = {

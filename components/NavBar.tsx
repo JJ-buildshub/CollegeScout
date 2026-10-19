@@ -60,7 +60,7 @@ export default function NavBar() {
       live: planCount > 0,
     },
     { href: "/scholarships", label: "Scholarships", icon: Award, counter: null as string | null, live: false },
-    { href: "/pathways", label: "Talent Pathways", icon: Sparkles, counter: null as string | null, live: false },
+    { href: "/beyond-grades", label: "Beyond Grades", icon: Sparkles, counter: null as string | null, live: false },
   ];
 
   return (

@@ -15,12 +15,12 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const page = getPathwayPage(params.slug);
   if (!page) return {};
-  const path = `/pathways/${params.slug}`;
+  const path = `/beyond-grades/${params.slug}`;
   return {
-    title: `${page.title} | Talent Pathways`,
+    title: `${page.title} | Beyond Grades`,
     description: page.intro,
     alternates: { canonical: path },
-    openGraph: { title: `${page.title} | Talent Pathways | CollegeScout`, description: page.intro, url: path },
+    openGraph: { title: `${page.title} | Beyond Grades | CollegeScout`, description: page.intro, url: path },
   };
 }
 
@@ -38,8 +38,8 @@ export default function PathwayPage({ params }: { params: { slug: string } }) {
     <article className="space-y-10">
       <header>
         <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1 text-xs font-semibold text-slate-500">
-          <Link href="/pathways" className="hover:text-navy-900">
-            Talent Pathways
+          <Link href="/beyond-grades" className="hover:text-navy-900">
+            Beyond Grades
           </Link>
           {category && (
             <>
