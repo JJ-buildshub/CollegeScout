@@ -675,7 +675,7 @@
    "url": "https://undergrad.admissions.columbia.edu/apply/first-year",
    "accessed": "2026-09-20",
    "evidence": [
-    "First-year applications for Fall 2027 are now available.",
+    "Students applying to enter Columbia in Fall 2027 (ie. applicants in the 2026-2027 admissions cycle)",
     "November 1 Early Decision and QuestBridge National College Match application deadline",
     "January 1 Regular Decision application deadline"
    ],
@@ -799,7 +799,7 @@
   },
   "cuny-brooklyn-college": {
    "label": "Brooklyn College (CUNY) admissions",
-   "url": "https://www.brooklyn.cuny.edu/web/admissions/freshmen/apply/deadlines.php",
+   "url": "https://www.brooklyn.edu/admissions-aid/first-year/how-to-apply/requirements-and-deadlines/",
    "accessed": "2026-09-20",
    "evidence": [
     "Fall Semester Priority Deadline: February 1",
@@ -915,19 +915,29 @@
   "delaware-state-university": {
    "label": "Delaware State University admissions",
    "url": "https://www.desu.edu/admissions/undergraduate-students",
-   "accessed": "2026-09-22",
+   "accessed": "2026-10-18",
    "evidence": [
-    "February 1 Apply for Fall admission"
+    "Fall 2027 Freshman and Transfer Applicants Early Action: November 2 Regular Decision: April 15 Rolling Enrollment: August 1"
    ],
    "plans": [
     {
+     "type": "EA",
+     "binding": false,
+     "deadline": "November 2"
+    },
+    {
      "type": "RD",
      "binding": false,
-     "deadline": "February 1"
+     "deadline": "April 15"
+    },
+    {
+     "type": "Rolling",
+     "binding": false,
+     "deadline": "August 1"
     }
    ],
    "manual": false,
-   "note": "No ED/EA distinction; a simple semester application deadline."
+   "note": "Replaced the single February 1 fall deadline recorded on 2026-09-22; the page now lists non-binding Early Action, Regular Decision and a final rolling date for Fall 2027."
   },
   "denison-university": {
    "label": "Denison University admissions",
@@ -5511,12 +5521,12 @@
    "note": "Cornish applicants apply through Seattle University, whose own first-year page gives the same two dates. After January 15 applications continue to be considered as space allows. The audition or portfolio is due with the application rather than separately."
   },
   "milwaukee-institute-of-art-and-design": {
-   "label": "MIAD apply now",
-   "url": "https://www.miad.edu/apply-now",
-   "accessed": "2026-09-29",
+   "label": "MIAD admissions (Spanish-language page)",
+   "url": "https://www.miad.edu/es/admisiones",
+   "accessed": "2026-10-18",
    "evidence": [
-    "MIAD’s Application & Merit Scholarship Priority Deadline is February 15.",
-    "December 1, 2026 Early Application Date"
+    "1 DE DICIEMBRE: Fecha de solicitud anticipada",
+    "15 DE FEBRERO: Fecha límite de prioridad de solicitud y becas"
    ],
    "plans": [
     {
@@ -5531,7 +5541,7 @@
     }
    ],
    "manual": false,
-   "note": "February 15 governs applications as well as merit aid, in MIAD's own wording. December 1 is MIAD's early application date rather than a named early action round. MIAD's Spanish-language page carries a further August 1 final fall deadline that appears nowhere in English, so its true final cutoff is later than its English pages show."
+   "note": "MIAD's English apply-now page was removed (404 on 2026-10-18); its English admissions page now lists only the December 1 early application date, so both dates are quoted from the Spanish-language page. February 15 governs applications as well as merit aid, in MIAD's own wording. December 1 is MIAD's early application date rather than a named early action round. The Spanish-language page also carries an August 1 final fall deadline that appears nowhere in English, so its true final cutoff is later than its English pages show."
   },
   "fairmont-state-university": {
    "label": "Fairmont State University 2026-27 catalog",
