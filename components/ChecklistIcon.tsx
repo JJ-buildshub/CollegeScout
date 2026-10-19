@@ -1,4 +1,4 @@
-import { BookOpen, Compass, PencilLine, PiggyBank, Users, CircleHelp } from "lucide-react";
+import { BookOpen, Compass, PencilLine, PiggyBank, Sparkles, Users, CircleHelp } from "lucide-react";
 
 const ICONS: Record<string, typeof BookOpen> = {
   "book-open": BookOpen,
@@ -6,6 +6,7 @@ const ICONS: Record<string, typeof BookOpen> = {
   users: Users,
   compass: Compass,
   "piggy-bank": PiggyBank,
+  sparkles: Sparkles,
 };
 
 export default function ChecklistIcon({ name, className }: { name: string; className?: string }) {

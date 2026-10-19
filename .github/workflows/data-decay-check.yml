@@ -64,6 +64,11 @@ jobs:
         continue-on-error: true
         run: node scripts/check-state-aid.mjs 2>&1 | tee stateaid.txt
 
+      - name: Re-check every quoted talent pathway source
+        id: pathways
+        continue-on-error: true
+        run: node scripts/check-pathways.mjs 2>&1 | tee pathways.txt
+
       # Many schools refuse automated requests outright: about twenty answer
       # 403 or 429 on any given run, and Princeton's site is not down. Only two
       # results say the stored link itself is wrong: the page is gone, or the
@@ -85,6 +90,7 @@ jobs:
           steps.policies.outcome == 'failure' || steps.deadlines.outcome == 'failure' ||
           steps.applications.outcome == 'failure' || steps.systems.outcome == 'failure' ||
           steps.scholarships.outcome == 'failure' || steps.stateaid.outcome == 'failure' ||
+          steps.pathways.outcome == 'failure' ||
           steps.websites.outcome == 'failure'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -127,6 +133,11 @@ jobs:
             grep -E "NOT FOUND|could not load|matched their school page" stateaid.txt || echo "(no output)"
             echo '```'
             echo
+            echo "### Talent pathways"
+            echo '```'
+            grep -E "NOT FOUND|could not load|matched their school page" pathways.txt || echo "(no output)"
+            echo '```'
+            echo
             echo "### School website links that are gone or have moved domain"
             echo '```'
             grep . websites.txt || echo "(none)"
@@ -136,7 +147,7 @@ jobs:
             echo "re-running the checker, then \`python scripts/apply-reviewed-*.py --apply\`."
             echo "Essay prompts, system rules and website links are edited directly in"
             echo "\`data/applications.json\`, \`data/system-requirements.json\`,"
-            echo "\`data/scholarships.json\`, \`data/state-aid.json\` and \`data/colleges.json\`."
+            echo "\`data/scholarships.json\`, \`data/state-aid.json\`, \`data/pathways.json\` and \`data/colleges.json\`."
           } > body.md
           gh issue create \
             --title "Data decay: a college changed a page we quote ($(date -u +%Y-%m-%d))" \

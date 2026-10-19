@@ -3,12 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Award, Compass, GraduationCap, LayoutList, Menu, ScanSearch, X } from "lucide-react";
+import { Award, Compass, GraduationCap, LayoutList, Menu, ScanSearch, Sparkles, X } from "lucide-react";
 import clsx from "clsx";
 import { getCollegeById } from "@/lib/colleges";
 import { useProfile } from "@/lib/profile";
 import { entriesWithStatusAtLeast, listEntries, useCollegeList } from "@/lib/collegeList";
-import { buildApplicationTasks, buildPlanCategories, countOpenTasks, useCustomTasks, useTaskProgress, type ApplicationTaskGroup } from "@/lib/tasks";
+import { buildApplicationTasks, buildPathwayCategories, buildPlanCategories, countOpenTasks, useCustomTasks, usePathwayPlan, useTaskProgress, type ApplicationTaskGroup } from "@/lib/tasks";
 
 /** "My Fit · N schools" / "My Plan · N tasks" — live because every hook here is one of the shared stores. */
 function useNavCounts() {
@@ -16,10 +16,13 @@ function useNavCounts() {
   const { state } = useCollegeList();
   const { done } = useTaskProgress();
   useCustomTasks(); // subscribe so a custom add/remove updates the My Plan count too
+  const { slugs: pathwaySlugs } = usePathwayPlan();
 
   const fitCount = listEntries(state).length;
 
-  let planCount = 0;
+  // Pathway tasks don't depend on a grade, so they count even before one is set.
+  const pathwayCategories = buildPathwayCategories(pathwaySlugs);
+  let planCount = countOpenTasks(pathwayCategories, [], done);
   if (profile.grade) {
     const interestIds = profile.undecided ? [] : profile.interests.map((i) => i.fieldId);
     const planCategories = buildPlanCategories(profile.grade, interestIds);
@@ -29,7 +32,7 @@ function useNavCounts() {
         return college ? buildApplicationTasks(college, entry) : null;
       })
       .filter((g): g is ApplicationTaskGroup => g !== null);
-    planCount = countOpenTasks(planCategories, groups, done);
+    planCount += countOpenTasks(planCategories, groups, done);
   }
 
   return { fitCount, planCount };
@@ -57,6 +60,7 @@ export default function NavBar() {
       live: planCount > 0,
     },
     { href: "/scholarships", label: "Scholarships", icon: Award, counter: null as string | null, live: false },
+    { href: "/pathways", label: "Talent Pathways", icon: Sparkles, counter: null as string | null, live: false },
   ];
 
   return (
@@ -75,7 +79,7 @@ export default function NavBar() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden items-center gap-1 lg:flex">
           {NAV_LINKS.map(({ href, label, icon: Icon, counter, live }) => {
             const active = pathname === href || pathname?.startsWith(href + "/");
             return (
@@ -83,7 +87,7 @@ export default function NavBar() {
                 key={href}
                 href={href}
                 className={clsx(
-                  "flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition-colors",
+                  "flex items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium transition-colors xl:px-4",
                   active
                     ? "bg-navy-900 text-white"
                     : "text-slate-600 hover:bg-slate-100 hover:text-navy-900"
@@ -114,7 +118,7 @@ export default function NavBar() {
         <button
           type="button"
           aria-label="Toggle navigation menu"
-          className="flex h-9 w-9 items-center justify-center rounded-lg text-navy-900 hover:bg-slate-100 md:hidden"
+          className="flex h-9 w-9 items-center justify-center rounded-lg text-navy-900 hover:bg-slate-100 lg:hidden"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -122,7 +126,7 @@ export default function NavBar() {
       </div>
 
       {open && (
-        <nav className="border-t border-slate-200 bg-white px-4 pb-3 pt-2 md:hidden">
+        <nav className="border-t border-slate-200 bg-white px-4 pb-3 pt-2 lg:hidden">
           <div className="flex flex-col gap-1">
             {NAV_LINKS.map(({ href, label, icon: Icon, counter, live }) => {
               const active = pathname === href || pathname?.startsWith(href + "/");

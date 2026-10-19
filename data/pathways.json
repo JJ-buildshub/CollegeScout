@@ -1,0 +1,208 @@
+{
+  "note": "Talent Pathways: hub cards and one content block per pathway page. A pathway gets a page when it has an entry under `pages`; every other card shows as coming soon. Each source's evidence lines are that page's exact wording; scripts/check-pathways.mjs confirms they are still there. `manual: true` marks a page that refuses automated requests and was read in a browser on `accessed`.",
+  "checked": "2026-10-19",
+  "categories": [
+    {
+      "id": "music",
+      "label": "Music",
+      "title": "Music",
+      "summary": "Two gates: the regular application plus an audition or recording."
+    },
+    {
+      "id": "sports",
+      "label": "Sports",
+      "title": "Sports",
+      "summary": "Coaches can support your admission, and NCAA rules set when they can contact you."
+    },
+    {
+      "id": "activity-scholarships",
+      "label": "Activities with scholarships",
+      "title": "Activities with scholarships",
+      "summary": "No separate admission track, but some colleges offer money to join their band, debate or robotics teams."
+    },
+    {
+      "id": "activities-valued",
+      "label": "Activities colleges value",
+      "title": "Activities colleges value",
+      "summary": "Counts inside your application. Depth and impact matter more than the number of activities."
+    }
+  ],
+  "cards": [
+    { "slug": "oboe", "category": "music", "badge": "Niche", "title": "Oboe", "summary": "Major in music, double-degree, or keep playing alongside another major.", "starts": "9th–10th grade" },
+    { "slug": "violin", "category": "music", "badge": "Mainstream", "title": "Violin", "summary": "Auditions for music schools, or an arts supplement alongside another major.", "starts": "9th–10th grade" },
+    { "slug": "piano", "category": "music", "badge": "Mainstream", "title": "Piano", "summary": "Auditions for music schools, or an arts supplement alongside another major.", "starts": "9th–10th grade" },
+    { "slug": "voice", "category": "music", "badge": "Mainstream", "title": "Voice", "summary": "Classical, jazz and musical theater auditions each follow their own calendar.", "starts": "9th–10th grade" },
+    { "slug": "cello", "category": "music", "badge": "Mainstream", "title": "Cello", "summary": "Auditions for music schools, or an arts supplement alongside another major.", "starts": "9th–10th grade" },
+    { "slug": "flute", "category": "music", "badge": "Mainstream", "title": "Flute", "summary": "Auditions for music schools, or an arts supplement alongside another major.", "starts": "9th–10th grade" },
+    { "slug": "trumpet", "category": "music", "badge": "Mainstream", "title": "Trumpet", "summary": "Classical and jazz programs, or an arts supplement alongside another major.", "starts": "9th–10th grade" },
+    { "slug": "guitar", "category": "music", "badge": "Mainstream", "title": "Guitar", "summary": "Classical and jazz programs, or an arts supplement alongside another major.", "starts": "9th–10th grade" },
+    { "slug": "basketball", "category": "sports", "badge": "Mainstream", "title": "Basketball", "summary": "Coach contact, visits and roster spots run on NCAA rules for each division.", "starts": "Summer after 10th grade" },
+    { "slug": "soccer", "category": "sports", "badge": "Mainstream", "title": "Soccer", "summary": "Coach contact, visits and roster spots run on NCAA rules for each division.", "starts": "Summer after 10th grade" },
+    { "slug": "football", "category": "sports", "badge": "Mainstream", "title": "Football", "summary": "Football has its own contact dates and signing period.", "starts": "Summer after 10th grade" },
+    { "slug": "baseball-softball", "category": "sports", "badge": "Mainstream", "title": "Baseball & softball", "summary": "Coach contact, visits and roster spots run on NCAA rules for each division.", "starts": "Summer after 10th grade" },
+    { "slug": "volleyball", "category": "sports", "badge": "Mainstream", "title": "Volleyball", "summary": "Coach contact, visits and roster spots run on NCAA rules for each division.", "starts": "Summer after 10th grade" },
+    { "slug": "lacrosse", "category": "sports", "badge": "Mainstream", "title": "Lacrosse", "summary": "Men's and women's lacrosse now open coach contact on different dates.", "starts": "Summer after 10th grade" },
+    { "slug": "hockey", "category": "sports", "badge": "Mainstream", "title": "Hockey", "summary": "College teams, coach support and how the recruiting calendar works.", "starts": "Summer after 10th grade" },
+    { "slug": "fencing", "category": "sports", "badge": "Niche", "title": "Fencing", "summary": "College teams, coach support and how the recruiting calendar works.", "starts": "Summer after 10th grade" },
+    { "slug": "marching-band", "category": "activity-scholarships", "badge": "Scholarships", "title": "Marching band", "summary": "Some colleges offer awards for joining their band.", "starts": "9th grade" },
+    { "slug": "speech-debate", "category": "activity-scholarships", "badge": "Scholarships", "title": "Speech & debate", "summary": "Some colleges offer awards for joining their debate team.", "starts": "9th grade" },
+    { "slug": "robotics", "category": "activity-scholarships", "badge": "Scholarships", "title": "Robotics", "summary": "Some colleges offer awards for joining their robotics team.", "starts": "9th grade" },
+    { "slug": "research", "category": "activities-valued", "badge": "Counts in your app", "title": "Research", "summary": "Shows up in your activities, and some colleges accept a research supplement.", "starts": "10th–11th grade" },
+    { "slug": "academic-competitions", "category": "activities-valued", "badge": "Counts in your app", "title": "Academic competitions", "summary": "Math, science and other contests listed as activities and awards.", "starts": "9th grade" },
+    { "slug": "jobs-family", "category": "activities-valued", "badge": "Counts in your app", "title": "Jobs & family responsibilities", "summary": "A job or caring for family counts as an activity.", "starts": "Any grade" }
+  ],
+  "pages": {
+    "oboe": {
+      "badges": ["Music", "Niche instrument"],
+      "title": "Oboe",
+      "intro": "If you play oboe seriously, it can be part of your college path even if you don't plan to major in music.",
+      "facts": [
+        { "label": "Paths available", "value": "3 ways to keep playing" },
+        { "label": "Extra step", "value": "Audition or recording" },
+        { "label": "Recordings due", "value": "Often around Dec 1 of senior year" },
+        { "label": "Scholarships", "value": "Merit awards at many music schools; need-based only at Ivies" }
+      ],
+      "options": [
+        {
+          "title": "Major in music",
+          "description": "Apply to the college and audition for its school of music, or apply to a conservatory. Your playing carries the most weight.",
+          "submit": ["Regular application", "Music supplement", "Prescreen video at some schools", "Live or recorded audition"],
+          "fitsIf": "You want music to be most of your day."
+        },
+        {
+          "title": "Double or dual degree",
+          "description": "A music degree plus a second degree, usually over five years. Some universities partner with conservatories, such as Harvard with NEC.",
+          "submit": ["Applications to both schools", "An audition", "Each school admits you separately"],
+          "fitsIf": "You're serious about both and ready for a heavy schedule."
+        },
+        {
+          "title": "Major in something else and keep playing",
+          "description": "Apply normally. Many selective colleges accept an optional arts supplement, though some review it only when the rest of your application is already strong. Once you enroll, many schools offer lessons and ensembles to non-majors.",
+          "submit": ["Regular application", "Arts supplement where accepted"],
+          "fitsIf": "Music is a big part of you but not your career plan."
+        }
+      ],
+      "timeline": [
+        { "stage": "9th–10th", "text": "Private lessons; youth orchestra, honor band or all-state; start standard repertoire." },
+        { "stage": "11th", "text": "Research schools by their oboe teacher; summer music program; practice recording." },
+        { "stage": "12th fall", "text": "Regular application plus music supplement; prescreens and arts supplements often due around Dec 1, some earlier." },
+        { "stage": "12th winter", "text": "Live or recorded auditions, usually Jan–Feb; some schools add sight-reading." },
+        { "stage": "12th spring", "text": "Decisions by about April 1; compare music awards with financial aid; deposit by May 1." }
+      ],
+      "needs": [
+        { "id": "teacher", "label": "A private teacher who knows college audition repertoire" },
+        { "id": "ensemble", "label": "Ensemble experience" },
+        { "id": "repertoire", "label": "Prepared pieces: a concerto or sonata, etudes, orchestral excerpts" },
+        { "id": "recording", "label": "A clean video recording" },
+        { "id": "grades", "label": "Strong grades, since music adds to the application but doesn't replace academics" }
+      ],
+      "callout": {
+        "title": "Start with your music teacher",
+        "body": "Your teacher hears you play every week and knows the audition repertoire. Ask which programs fit your level before you build a list."
+      },
+      "myths": [
+        {
+          "myth": "Every music school wants an oboe prescreen by Dec 1.",
+          "truth": "It differs by school and instrument. Some don't require one for undergraduate oboe."
+        },
+        {
+          "myth": "Oboe can get me a scholarship at an Ivy.",
+          "truth": "Ivies give no music or merit scholarships. Aid is need-based only."
+        },
+        {
+          "myth": "A music scholarship means a full ride.",
+          "truth": "Award sizes vary by school. A few conservatories, such as Curtis, give every student full tuition."
+        },
+        {
+          "myth": "If I'm not a music major I'll have to stop playing.",
+          "truth": "Many colleges offer lessons and ensembles to students in any major."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Eastman Oboe",
+          "url": "https://www.esm.rochester.edu/portfolio/oboe/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "There is no pre-screening recording required for BM oboe.",
+            "Orchestral excerpts as appropriate to training and experience",
+            "these applicants will subsequently be scheduled for an online evaluation of sight-reading and other skills with faculty"
+          ]
+        },
+        {
+          "label": "NEC Oboe",
+          "url": "https://necmusic.edu/auditions/oboe/",
+          "accessed": "2026-10-19",
+          "manual": true,
+          "evidence": [
+            "Two (2) contrasting orchestral excerpts.",
+            "Applicants invited for a live audition should expect to sight-read as part of the audition.",
+            "All of your orchestral excerpts should be recorded in one take without edits."
+          ]
+        },
+        {
+          "label": "Indiana Jacobs Auditions",
+          "url": "https://music.indiana.edu/admissions/auditions/index.html",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "Most are due on December 1, 2026, and must be uploaded and submitted to your Jacobs School of Music supplemental application.",
+            "all students admitted to the Jacobs School of Music are automatically considered for artistic merit scholarships",
+            "All admission and scholarship decisions are sent via email by April 1",
+            "the undergraduate enrollment deadline is May 1"
+          ]
+        },
+        {
+          "label": "Harvard–NEC Dual Degree",
+          "url": "https://music.fas.harvard.edu/harvard-university-and-new-england-conservatory-music-dual-degree-program",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "is a 5-year program leading to a Bachelor of Arts (AB) or Bachelor of Science (SB) from Harvard University and a Master of Music (MM) from New England Conservatory of Music",
+            "must be accepted independently at each institution before they can be considered for the dual-degree program",
+            "Application and pre-screening materials are due by December 1."
+          ]
+        },
+        {
+          "label": "Yale Supplementary Materials",
+          "url": "https://admissions.yale.edu/supplementary",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "Most successful Yale applicants submit only the required application materials.",
+            "for applicants whose required application materials demonstrate they are strong candidates for admission"
+          ]
+        },
+        {
+          "label": "Indiana Jacobs: music for non-majors",
+          "url": "https://music.indiana.edu/degrees-programs/non-majors/index.html",
+          "accessed": "2026-10-19",
+          "evidence": ["You can also take a performance class or private lessons, or join an ensemble."]
+        },
+        {
+          "label": "Harvard: how aid works",
+          "url": "https://college.harvard.edu/financial-aid/how-aid-works",
+          "accessed": "2026-10-19",
+          "evidence": ["There are no merit-based awards"]
+        },
+        {
+          "label": "Yale financial aid",
+          "url": "https://finaid.yale.edu/",
+          "accessed": "2026-10-19",
+          "evidence": ["Yale awards financial aid in the form of need-based Yale scholarship grants."]
+        },
+        {
+          "label": "Curtis: financial aid & tuition",
+          "url": "https://www.curtis.edu/apply/",
+          "accessed": "2026-10-19",
+          "evidence": ["All Curtis students receive full-tuition scholarships, regardless of financial circumstances."]
+        }
+      ],
+      "directoryLinks": [
+        { "label": "Music & Performing Arts", "href": "/directory?interests=music-performing" },
+        { "label": "University of Rochester (Eastman)", "href": "/directory/university-of-rochester" },
+        { "label": "New England Conservatory", "href": "/directory/the-new-england-conservatory-of-music" },
+        { "label": "Indiana University Bloomington", "href": "/directory/indiana-university-bloomington" },
+        { "label": "Harvard University", "href": "/directory/harvard-university" },
+        { "label": "Yale University", "href": "/directory/yale-university" }
+      ]
+    }
+  }
+}

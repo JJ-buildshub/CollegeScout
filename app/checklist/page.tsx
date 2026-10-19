@@ -12,10 +12,13 @@ import {
   addCustomApplicationTask,
   addCustomPlanTask,
   buildApplicationTasks,
+  buildPathwayCategories,
   buildPlanCategories,
   removeCustomTask,
+  removePathwayFromPlan,
   toggleTaskDone,
   useCustomTasks,
+  usePathwayPlan,
   useTaskProgress,
   type ApplicationTaskGroup,
   type PlanTask,
@@ -93,6 +96,7 @@ export default function ChecklistPage() {
   const { state: collegeListState } = useCollegeList();
   const { done } = useTaskProgress();
   const customTasks = useCustomTasks();
+  const pathwayPlan = usePathwayPlan();
 
   const interestFieldIds = profile.undecided ? [] : profile.interests.map((i) => i.fieldId);
 
@@ -103,6 +107,8 @@ export default function ChecklistPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [profile.grade, JSON.stringify(interestFieldIds), customTasks]
   );
+
+  const pathwayCategories = useMemo(() => buildPathwayCategories(pathwayPlan.slugs), [pathwayPlan]);
 
   const applicationGroups: ApplicationTaskGroup[] = useMemo(() => {
     return entriesWithStatusAtLeast(collegeListState, "Applying")
@@ -198,6 +204,49 @@ export default function ChecklistPage() {
           </>
         )}
       </section>
+
+      {pathwayCategories.length > 0 && (
+        <section>
+          <h2 className="text-lg font-bold text-navy-900">Your Talent Pathways</h2>
+          <div className="mt-4 grid gap-5 lg:grid-cols-2">
+            {pathwayCategories.map((category) => {
+              const catDone = category.tasks.filter((t) => done[t.id]).length;
+              const pct = category.tasks.length > 0 ? (catDone / category.tasks.length) * 100 : 0;
+              const slug = category.id.replace(/^pathway:/, "");
+              return (
+                <div key={category.id} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
+                  <div className="flex items-center justify-between gap-2">
+                    <div className="flex items-center gap-2">
+                      <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-navy-900/5 text-navy-900">
+                        <ChecklistIcon name={category.icon} className="h-4 w-4" />
+                      </span>
+                      <Link href={category.href ?? "/pathways"} className="text-sm font-bold text-navy-900 hover:text-gold-600">
+                        {category.title}
+                      </Link>
+                    </div>
+                    <span className="text-xs font-semibold text-slate-500">
+                      {catDone}/{category.tasks.length}
+                    </span>
+                  </div>
+                  <ProgressBar percent={pct} className="mt-3" />
+                  <ul className="mt-4 space-y-2.5">
+                    {category.tasks.map((task) => (
+                      <TaskRow key={task.id} task={task} done={!!done[task.id]} onToggle={() => toggleTaskDone(task.id)} />
+                    ))}
+                  </ul>
+                  <button
+                    type="button"
+                    onClick={() => removePathwayFromPlan(slug)}
+                    className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-rose-600"
+                  >
+                    <Trash2 className="h-3 w-3" /> Remove this pathway
+                  </button>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
       {/* Section 2: Your applications */}
       <section>
