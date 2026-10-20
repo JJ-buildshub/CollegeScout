@@ -5091,13 +5091,13 @@
     "applicationPlansProvenance": {
       "source": "Dartmouth Admissions (https://admissions.dartmouth.edu/apply-dartmouth)",
       "year": "2026-27",
-      "accessed": "2026-09-23"
+      "accessed": "2026-10-20"
     },
     "testingPolicyNote": "manual: the site refuses automated requests. Dartmouth reinstated the requirement starting with the Class of 2029, so it is in force for this cycle. Applicants whose curriculum has not been delivered in English for at least two years must also submit an English proficiency exam.",
     "testingPolicyProvenance": {
       "source": "Dartmouth Admissions (https://admissions.dartmouth.edu/apply/testing-policy)",
       "year": "2026-27",
-      "accessed": "2026-09-23"
+      "accessed": "2026-10-20"
     },
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
@@ -5280,13 +5280,13 @@
     "applicationPlansProvenance": {
       "source": "Caltech Undergraduate Admissions (https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines)",
       "year": "2026-27",
-      "accessed": "2026-09-23"
+      "accessed": "2026-10-20"
     },
     "testingPolicyNote": "manual: JS-rendered page, which states \"Caltech Testing Deadlines for Fall 2027 Entry\" — the correct cycle. Caltech places scores into bands (\"Bucket A/B\") rather than always showing the exact score to the committee; the ACT writing and science subscores are not required.",
     "testingPolicyProvenance": {
       "source": "Caltech Undergraduate Admissions (https://www.admissions.caltech.edu/apply/first-year-applicants/standardized-tests)",
       "year": "2026-27",
-      "accessed": "2026-09-23"
+      "accessed": "2026-10-20"
     },
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
@@ -5479,7 +5479,7 @@
     "testingPolicyProvenance": {
       "source": "Purdue admissions (https://admissions.purdue.edu/become-student/guide/)",
       "year": "2026-27",
-      "accessed": "2026-10-07"
+      "accessed": "2026-10-20"
     },
     "costProvenance": {
       "source": "College Scorecard (latest.cost.attendance.academic_year)",
@@ -6036,13 +6036,13 @@
     "applicationPlansProvenance": {
       "source": "Michigan admissions (https://admissions.umich.edu/apply/first-year-applicants/first-year-application-plans)",
       "year": "2026-27",
-      "accessed": "2026-09-20",
+      "accessed": "2026-10-20",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     },
     "testingPolicyProvenance": {
       "source": "Michigan admissions (https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines)",
       "year": "2026-27",
-      "accessed": "2026-09-22",
+      "accessed": "2026-10-20",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     },
     "admissionsProvenance": {
@@ -7005,13 +7005,13 @@
     "applicationPlansProvenance": {
       "source": "Williams admission (https://admission.williams.edu/apply/)",
       "year": "2026-27",
-      "accessed": "2026-09-20",
+      "accessed": "2026-10-20",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     },
     "testingPolicyProvenance": {
       "source": "Williams admission (https://www.williams.edu/admission-aid/how-to-apply/)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     },
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
@@ -10920,7 +10920,7 @@
     "testingPolicyProvenance": {
       "source": "University of San Francisco admission (https://www.usfca.edu/admission/undergraduate/what-we-look-for)",
       "year": "2026-27",
-      "accessed": "2026-09-28"
+      "accessed": "2026-10-20"
     },
     "costProvenance": {
       "source": "College Scorecard (latest.cost.attendance.academic_year)",
@@ -11652,7 +11652,7 @@
     "testingPolicyProvenance": {
       "source": "University of Redlands admissions (https://www.redlands.edu/admissions-and-aid/first-year/how-to-apply)",
       "year": "2026-27",
-      "accessed": "2026-09-28"
+      "accessed": "2026-10-20"
     },
     "costProvenance": {
       "source": "College Scorecard (latest.cost.attendance.academic_year)",
@@ -13500,7 +13500,7 @@
     "testingPolicyProvenance": {
       "source": "Colby College admission (https://afa.colby.edu/apply/faq/)",
       "year": "2026-27",
-      "accessed": "2026-09-29"
+      "accessed": "2026-10-20"
     },
     "costProvenance": {
       "source": "College Scorecard (latest.cost.attendance.academic_year)",
@@ -14052,7 +14052,7 @@
     "testingPolicyProvenance": {
       "source": "UChicago college admissions (https://collegeadmissions.uchicago.edu/apply/application/required-materials/)",
       "year": "2026-27",
-      "accessed": "2026-09-28"
+      "accessed": "2026-10-20"
     },
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
@@ -16307,7 +16307,7 @@
     "testingPolicyProvenance": {
       "source": "UVA admission (https://admission.virginia.edu/admission/deadlines-instructions)",
       "year": "2026-27",
-      "accessed": "2026-09-28"
+      "accessed": "2026-10-20"
     },
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
@@ -21331,7 +21331,7 @@
     "testingPolicyProvenance": {
       "source": "NYU undergraduate admissions (https://www.nyu.edu/admissions/undergraduate-admissions/how-to-apply/standardized-tests.html)",
       "year": "2026-27",
-      "accessed": "2026-09-28"
+      "accessed": "2026-10-20"
     },
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
@@ -26943,12 +26943,12 @@
     "testingPolicyProvenance": {
       "source": "American University admissions (https://www.american.edu/admissions/first-year/decision-plans-and-deadlines.cfm)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     },
     "applicationPlansProvenance": {
       "source": "American University admissions (https://www.american.edu/admissions/first-year/decision-plans-and-deadlines.cfm)",
       "year": "2026-27",
-      "accessed": "2026-09-20"
+      "accessed": "2026-10-20"
     }
   },
   {
@@ -28965,12 +28965,12 @@
     "applicationPlansProvenance": {
       "source": "Savannah College of Art and Design (SCAD) admissions (https://www.scad.edu/admission/admission-information/frequently-asked-questions)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     },
     "testingPolicyProvenance": {
       "source": "Savannah College of Art and Design (SCAD) admissions (https://www.scad.edu/admission/admission-information/frequently-asked-questions)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     }
   },
   {
@@ -32384,12 +32384,12 @@
     "applicationPlansProvenance": {
       "source": "Wichita State University admissions (https://www.wichita.edu/admissions/undergraduate/faq.php)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     },
     "testingPolicyProvenance": {
       "source": "Wichita State University admissions (https://www.wichita.edu/admissions/undergraduate/faq.php)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     },
     "testingPolicyNote": "The admissions FAQ renders its answers with JavaScript, so the quote cannot be checked by fetching the HTML. Confirmed by reading the page in a browser."
   },
@@ -33895,12 +33895,12 @@
     "applicationPlansProvenance": {
       "source": "Brandeis University admissions (https://www.brandeis.edu/admissions/apply/application-process/index.html)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     },
     "testingPolicyProvenance": {
       "source": "Brandeis University admissions (https://www.brandeis.edu/admissions/apply/test-optional-policy.html)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     }
   },
   {
@@ -34057,12 +34057,12 @@
     "applicationPlansProvenance": {
       "source": "Emerson College admissions (https://emerson.edu/admission-aid/undergraduate-admission/undergraduate-application-process/)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     },
     "testingPolicyProvenance": {
       "source": "Emerson College admissions (https://emerson.edu/admission-aid/undergraduate-admission/undergraduate-application-process/)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     }
   },
   {
@@ -38688,14 +38688,14 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Davidson College admissions (https://www.davidson.edu/admission-and-financial-aid/apply/early-decision)",
+      "source": "Davidson College admissions (https://www.davidson.edu/admission-and-financial-aid/apply)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     },
     "testingPolicyProvenance": {
       "source": "Davidson College admissions (https://www.davidson.edu/admission-and-financial-aid/admission-process-help/testing-policy)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     }
   },
   {
@@ -39001,12 +39001,12 @@
     "applicationPlansProvenance": {
       "source": "High Point University admissions (https://www.highpoint.edu/admissions/apply/)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     },
     "testingPolicyProvenance": {
       "source": "High Point University admissions (https://www.highpoint.edu/admissions/apply/)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     }
   },
   {
@@ -42689,12 +42689,12 @@
     "testingPolicyProvenance": {
       "source": "AMDA admissions (https://www.amda.edu/admissions-aid/undergraduate/more-info/)",
       "year": "2026-27",
-      "accessed": "2026-09-29"
+      "accessed": "2026-10-20"
     },
     "applicationPlansProvenance": {
       "source": "AMDA consolidated catalog (https://amda.catalog.amda.edu/about-amda/admissions/undergraduate-admissions)",
       "year": "2026-27",
-      "accessed": "2026-09-29"
+      "accessed": "2026-10-20"
     }
   },
   {
@@ -44332,12 +44332,12 @@
     "applicationPlansProvenance": {
       "source": "SUNY Cortland admissions (https://www2.cortland.edu/admissions/undergraduate/freshmen-applicants/requirements.dot)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     },
     "testingPolicyProvenance": {
       "source": "SUNY Cortland admissions (https://www2.cortland.edu/admissions/undergraduate/freshmen-applicants/requirements.dot)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     }
   },
   {
@@ -44780,12 +44780,12 @@
     "testingPolicyProvenance": {
       "source": "The Juilliard School application requirements (https://www.juilliard.edu/arm/dance/college/dance/bachelor-fine-arts)",
       "year": "2026-27",
-      "accessed": "2026-09-29"
+      "accessed": "2026-10-20"
     },
     "applicationPlansProvenance": {
       "source": "The Juilliard School admissions (https://www.juilliard.edu/admissions)",
       "year": "2026-27",
-      "accessed": "2026-09-29"
+      "accessed": "2026-10-20"
     }
   },
   {
@@ -44939,7 +44939,7 @@
     "applicationPlansProvenance": {
       "source": "The New School dates and deadlines (https://www.newschool.edu/admission/prospective-undergraduate-students/dates-deadlines/)",
       "year": "2026-27",
-      "accessed": "2026-09-29"
+      "accessed": "2026-10-20"
     }
   },
   {
@@ -46137,12 +46137,12 @@
     "applicationPlansProvenance": {
       "source": "Oberlin College admissions (https://www.oberlin.edu/admissions-and-aid/arts-and-sciences)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     },
     "testingPolicyProvenance": {
       "source": "Oberlin College admissions (https://www.oberlin.edu/node/301611)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     }
   },
   {
@@ -46890,12 +46890,12 @@
     "applicationPlansProvenance": {
       "source": "Oklahoma State University admissions (https://go.okstate.edu/admissions/freshman/dates-deadlines)",
       "year": "2026-27",
-      "accessed": "2026-09-20"
+      "accessed": "2026-10-20"
     },
     "testingPolicyProvenance": {
       "source": "Oklahoma State University admissions (https://go.okstate.edu/admissions/freshman/admission-requirements)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     }
   },
   {
@@ -54821,12 +54821,12 @@
     "testingPolicyProvenance": {
       "source": "West Virginia State University admissions (https://wvstateu.edu/students/future-students/applying-to-wvsu/)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-10-20"
     },
     "applicationPlansProvenance": {
       "source": "West Virginia State University 2026-27 catalog (https://wvstateu.edu/wp-content/uploads/2026/09/WVSU-2026-2027-Academic-Catalog.pdf)",
       "year": "2026-27",
-      "accessed": "2026-09-29"
+      "accessed": "2026-10-20"
     }
   },
   {

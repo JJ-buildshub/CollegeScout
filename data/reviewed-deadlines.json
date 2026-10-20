@@ -6,7 +6,7 @@
   "american-university": {
    "label": "American University admissions",
    "url": "https://www.american.edu/admissions/first-year/decision-plans-and-deadlines.cfm",
-   "accessed": "2026-09-20",
+   "accessed": "2026-10-20",
    "evidence": [
     "Application Deadline: November 1 CSS Profile & FAFSA Deadline: November 15",
     "Application Deadline: January 15 CSS Profile & FAFSA Deadline: February 15 Notification: April 1"
@@ -208,10 +208,12 @@
   "brandeis-university": {
    "label": "Brandeis University admissions",
    "url": "https://www.brandeis.edu/admissions/apply/application-process/index.html",
-   "accessed": "2026-09-22",
+   "accessed": "2026-10-20",
    "evidence": [
-    "Early Decision I | Nov. 2",
-    "Early Decision II | Jan. 15"
+    "Early Decision I Nov. 2",
+    "Early Action Nov. 2",
+    "Early Decision II Jan. 15",
+    "Regular Decision Jan. 15"
    ],
    "plans": [
     {
@@ -405,7 +407,7 @@
   "california-institute-of-technology": {
    "label": "Caltech Undergraduate Admissions",
    "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines",
-   "accessed": "2026-09-23",
+   "accessed": "2026-10-20",
    "manual": true,
    "evidence": [
     "Caltech offers two decision plans: Restrictive Early Action and Regular Decision.",
@@ -865,7 +867,7 @@
   "dartmouth-college": {
    "label": "Dartmouth Admissions",
    "url": "https://admissions.dartmouth.edu/apply-dartmouth",
-   "accessed": "2026-09-23",
+   "accessed": "2026-10-20",
    "manual": true,
    "evidence": [
     "Early Decision (ED) is an early admission round in which students submit their application by November 1 and receive an admission decision by mid-December.",
@@ -887,11 +889,12 @@
   },
   "davidson-college": {
    "label": "Davidson College admissions",
-   "url": "https://www.davidson.edu/admission-and-financial-aid/apply/early-decision",
-   "accessed": "2026-09-22",
+   "url": "https://www.davidson.edu/admission-and-financial-aid/apply",
+   "accessed": "2026-10-20",
    "evidence": [
-    "Early Decision applications are binding and represent a serious commitment to Davidson.",
-    "January 11"
+    "Early Decision I Application Deadline: November 15",
+    "Early Decision II Application Deadline: January 4",
+    "Regular Decision Application Deadline: January 11"
    ],
    "plans": [
     {
@@ -1088,7 +1091,7 @@
   "emerson-college": {
    "label": "Emerson College admissions",
    "url": "https://emerson.edu/admission-aid/undergraduate-admission/undergraduate-application-process/",
-   "accessed": "2026-09-22",
+   "accessed": "2026-10-20",
    "evidence": [
     "Early Decision (ED) is binding, meaning that if you are admitted, you must commit to enrolling at Emerson.",
     "Early Action (EA) is a non-binding early deadline.",
@@ -1459,7 +1462,7 @@
   "high-point-university": {
    "label": "High Point University admissions",
    "url": "https://www.highpoint.edu/admissions/apply/",
-   "accessed": "2026-09-22",
+   "accessed": "2026-10-20",
    "evidence": [
     "Deadline November 1, 2026"
    ],
@@ -2176,13 +2179,12 @@
   "oberlin-college": {
    "label": "Oberlin College admissions",
    "url": "https://www.oberlin.edu/admissions-and-aid/arts-and-sciences",
-   "accessed": "2026-09-22",
+   "accessed": "2026-10-20",
    "evidence": [
     "Early Decision I: November 1",
     "Early Decision II: January 5",
     "Early Action: November 1",
-    "Regular Decision: January 15",
-    "Submitting an Early Decision application means that if admitted, you will definitely enroll at Oberlin."
+    "Regular Decision: January 15"
    ],
    "plans": [
     {
@@ -2252,7 +2254,7 @@
   "oklahoma-state-university": {
    "label": "Oklahoma State University admissions",
    "url": "https://go.okstate.edu/admissions/freshman/dates-deadlines",
-   "accessed": "2026-09-20",
+   "accessed": "2026-10-20",
    "evidence": [
     "At Oklahoma State, we accept applications on a rolling admission basis, so there's no application deadline."
    ],
@@ -2560,9 +2562,9 @@
   "savannah-college-of-art-and-design": {
    "label": "Savannah College of Art and Design (SCAD) admissions",
    "url": "https://www.scad.edu/admission/admission-information/frequently-asked-questions",
-   "accessed": "2026-09-22",
+   "accessed": "2026-10-20",
    "evidence": [
-    "SCAD offers rolling admission and accepts applications year-round."
+    "SCAD offers rolling admission and accepts applications year-round for all quarters, so there are no firm deadlines to apply."
    ],
    "plans": [
     {
@@ -2707,7 +2709,7 @@
   "state-university-of-new-york-at-cortland": {
    "label": "SUNY Cortland admissions",
    "url": "https://www2.cortland.edu/admissions/undergraduate/freshmen-applicants/requirements.dot",
-   "accessed": "2026-09-22",
+   "accessed": "2026-10-20",
    "evidence": [
     "there is no deadline for filing the application other than the Nov. 15 early action deadline"
    ],
@@ -3673,7 +3675,7 @@
   "university-of-michigan": {
    "label": "Michigan admissions",
    "url": "https://admissions.umich.edu/apply/first-year-applicants/first-year-application-plans",
-   "accessed": "2026-09-20",
+   "accessed": "2026-10-20",
    "evidence": [
     "The University of Michigan offers three application plans for first-year applicants: Early Decision, Early Action, and Regular Decision.",
     "Early Decision Application Deadline: Nov. 1",
@@ -4595,7 +4597,7 @@
   "wichita-state-university": {
    "label": "Wichita State University admissions",
    "url": "https://www.wichita.edu/admissions/undergraduate/faq.php",
-   "accessed": "2026-09-22",
+   "accessed": "2026-10-20",
    "evidence": [
     "Applications for the next academic year open July 1, and we recommend applying early before the semester you plan to start."
    ],
@@ -4639,7 +4641,7 @@
   "williams-college": {
    "label": "Williams admission",
    "url": "https://admission.williams.edu/apply/",
-   "accessed": "2026-09-20",
+   "accessed": "2026-10-20",
    "evidence": [
     "Admission Application Deadline November 15 January 4 March 3"
    ],
@@ -5111,7 +5113,7 @@
   "american-musical-and-dramatic-academy": {
    "label": "AMDA consolidated catalog",
    "url": "https://amda.catalog.amda.edu/about-amda/admissions/undergraduate-admissions",
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-20",
    "evidence": [
     "AMDA has a rolling admissions policy for the application and selection process of all programs.",
     "Applications and students are accepted throughout the year."
@@ -5187,7 +5189,7 @@
   "the-juilliard-school": {
    "label": "The Juilliard School admissions",
    "url": "https://www.juilliard.edu/admissions",
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-20",
    "evidence": [
     "Tue, Dec 1",
     "BFA in Dance",
@@ -5206,7 +5208,7 @@
   "the-new-school": {
    "label": "The New School dates and deadlines",
    "url": "https://www.newschool.edu/admission/prospective-undergraduate-students/dates-deadlines/",
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-20",
    "evidence": [
     "Fall Early Action or Early Decision: November 1",
     "Fall Regular Decision: January 15"
@@ -5563,7 +5565,7 @@
   "west-virginia-state-university": {
    "label": "West Virginia State University 2026-27 catalog",
    "url": "https://wvstateu.edu/wp-content/uploads/2026/09/WVSU-2026-2027-Academic-Catalog.pdf",
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-20",
    "evidence": [
     "Applications will be accepted at any time throughout the year."
    ],
