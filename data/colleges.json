@@ -94,7 +94,8 @@
       "sourcedFrom": [
         "Institutional Website"
       ],
-      "lastVerified": "2026-27 cycle"
+      "lastVerified": null,
+      "note": "2026-27 cycle"
     },
     "website": "https://www.berkeley.edu",
     "state": "CA",
@@ -282,7 +283,8 @@
         "Common Data Set (Institutional)",
         "Institutional Website"
       ],
-      "lastVerified": "2025-26 cycle (UCLA Common Data Set 2024-2025, published by UCLA Academic Planning & Budget); Greek life % from UCLA Fraternity & Sorority Life office (not reported in CDS)"
+      "lastVerified": null,
+      "note": "2025-26 cycle (UCLA Common Data Set 2024-2025, published by UCLA Academic Planning & Budget); Greek life % from UCLA Fraternity & Sorority Life office (not reported in CDS)"
     },
     "website": "https://www.ucla.edu",
     "state": "CA",
@@ -470,7 +472,8 @@
         "Common Data Set (Institutional)",
         "Institutional Website"
       ],
-      "lastVerified": "2025-26 cycle (UC San Diego Common Data Set 2024-2025, published by UCSD Institutional Research)"
+      "lastVerified": null,
+      "note": "2025-26 cycle (UC San Diego Common Data Set 2024-2025, published by UCSD Institutional Research)"
     },
     "website": "https://ucsd.edu",
     "state": "CA",
@@ -657,7 +660,8 @@
       "sourcedFrom": [
         "IPEDS"
       ],
-      "lastVerified": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
+      "lastVerified": null,
+      "note": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
     },
     "website": "https://www.ucdavis.edu",
     "state": "CA",
@@ -845,7 +849,8 @@
         "IPEDS",
         "Institutional Website"
       ],
-      "lastVerified": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
+      "lastVerified": null,
+      "note": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
     },
     "website": "https://uci.edu",
     "state": "CA",
@@ -1034,7 +1039,8 @@
         "IPEDS",
         "Institutional Website"
       ],
-      "lastVerified": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
+      "lastVerified": null,
+      "note": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
     },
     "website": "https://www.ucsb.edu",
     "state": "CA",
@@ -1223,7 +1229,8 @@
         "IPEDS",
         "Institutional Website"
       ],
-      "lastVerified": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
+      "lastVerified": null,
+      "note": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
     },
     "website": "https://www.ucsc.edu",
     "state": "CA",
@@ -1412,7 +1419,8 @@
         "IPEDS",
         "Institutional Website"
       ],
-      "lastVerified": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
+      "lastVerified": null,
+      "note": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
     },
     "website": "https://www.ucr.edu",
     "state": "CA",
@@ -1601,7 +1609,8 @@
         "IPEDS",
         "Institutional Website"
       ],
-      "lastVerified": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
+      "lastVerified": null,
+      "note": "IPEDS College Navigator, 2024-25 academic year data; percent living on campus and Greek life participation could not be verified from a CDS or IPEDS source and are omitted (null)"
     },
     "website": "https://www.ucmerced.edu",
     "state": "CA",
@@ -1787,7 +1796,8 @@
       "sourcedFrom": [
         "Institutional Website"
       ],
-      "lastVerified": "2026-27 cycle"
+      "lastVerified": null,
+      "note": "2026-27 cycle"
     },
     "website": "https://www.calpoly.edu",
     "state": "CA",
@@ -2728,7 +2738,8 @@
       "sourcedFrom": [
         "Institutional Website"
       ],
-      "lastVerified": "2026-27 cycle"
+      "lastVerified": null,
+      "note": "2026-27 cycle"
     },
     "website": "https://www.stanford.edu",
     "state": "CA",
@@ -5951,7 +5962,8 @@
       "sourcedFrom": [
         "Institutional Website"
       ],
-      "lastVerified": "2025-26 cycle"
+      "lastVerified": null,
+      "note": "2025-26 cycle"
     },
     "website": "https://umich.edu",
     "state": "MI",
@@ -6727,7 +6739,8 @@
         "Common Data Set (Institutional)",
         "Institutional Website"
       ],
-      "lastVerified": "2024-25 cycle"
+      "lastVerified": null,
+      "note": "2024-25 cycle"
     },
     "website": "https://www.pomona.edu",
     "state": "CA",
@@ -6918,7 +6931,8 @@
         "Common Data Set (Institutional)",
         "Institutional Website"
       ],
-      "lastVerified": "2024-25 cycle"
+      "lastVerified": null,
+      "note": "2024-25 cycle"
     },
     "website": "https://www.williams.edu",
     "state": "MA",
@@ -7115,7 +7129,8 @@
         "IPEDS",
         "Institutional Website"
       ],
-      "lastVerified": "2026 cycle (admit rate and SAT figures approximate — RPI's own CDS PDF could not be machine-verified; cross-checked via IPEDS-derived summaries and the school's admissions/financial-aid pages)"
+      "lastVerified": null,
+      "note": "2026 cycle (admit rate and SAT figures approximate — RPI's own CDS PDF could not be machine-verified; cross-checked via IPEDS-derived summaries and the school's admissions/financial-aid pages)"
     },
     "website": "https://www.rpi.edu",
     "state": "NY",
@@ -7298,7 +7313,8 @@
         "Common Data Set (Institutional)",
         "Institutional Website"
       ],
-      "lastVerified": "2024-25 cycle"
+      "lastVerified": null,
+      "note": "2024-25 cycle"
     },
     "website": "https://www.ua.edu",
     "state": "AL",
@@ -7480,7 +7496,8 @@
         "Common Data Set (Institutional)",
         "Institutional Website"
       ],
-      "lastVerified": "2024-25 cycle"
+      "lastVerified": null,
+      "note": "2024-25 cycle"
     },
     "website": "https://www.pitt.edu",
     "state": "PA",
@@ -7674,7 +7691,8 @@
         "Common Data Set (Institutional)",
         "Institutional Website"
       ],
-      "lastVerified": "2024-25 cycle"
+      "lastVerified": null,
+      "note": "2024-25 cycle"
     },
     "website": "https://www.tufts.edu",
     "state": "MA",
@@ -21235,7 +21253,8 @@
         "CDS",
         "Institutional Website"
       ],
-      "lastVerified": "September 2026; admit rate, SAT range, GPA, and enrollment cross-checked across NYU's published Common Data Set figures (via CDS-aggregator summaries) and NYU admissions pages; application plan types confirmed via nyu.edu admissions FAQ (deadlines not independently confirmed and left null); on-campus housing % and Greek life % not published/found and left null."
+      "lastVerified": null,
+      "note": "September 2026; admit rate, SAT range, GPA, and enrollment cross-checked across NYU's published Common Data Set figures (via CDS-aggregator summaries) and NYU admissions pages; application plan types confirmed via nyu.edu admissions FAQ (deadlines not independently confirmed and left null); on-campus housing % and Greek life % not published/found and left null."
     },
     "website": "https://www.nyu.edu",
     "state": "NY",
@@ -21425,7 +21444,8 @@
         "CDS",
         "Institutional Website"
       ],
-      "lastVerified": "September 2026; admit rate, SAT range, and enrollment via CDS-aggregator summary of Notre Dame's Common Data Set; application plan type and deadlines confirmed directly on admissions.nd.edu, which also confirms Notre Dame is reinstating a test-required policy starting with Fall 2028 applicants (current cycle remains Test-Optional); Greek life is structurally absent (no fraternities/sororities recognized) so 0 is a verified fact, not an estimate; GPA distribution and on-campus % not found in an available public source and left null."
+      "lastVerified": null,
+      "note": "September 2026; admit rate, SAT range, and enrollment via CDS-aggregator summary of Notre Dame's Common Data Set; application plan type and deadlines confirmed directly on admissions.nd.edu, which also confirms Notre Dame is reinstating a test-required policy starting with Fall 2028 applicants (current cycle remains Test-Optional); Greek life is structurally absent (no fraternities/sororities recognized) so 0 is a verified fact, not an estimate; GPA distribution and on-campus % not found in an available public source and left null."
     },
     "website": "https://www.nd.edu",
     "state": "IN",
@@ -21623,7 +21643,8 @@
         "CDS",
         "Institutional Website"
       ],
-      "lastVerified": "September 2026; admit rate and SAT range cross-validated across the Emory Common Data Set 2024-2025 (read directly, incl. GPA distribution and 23%/21% fraternity/sorority participation, averaged here to 22%) and independent CDS-aggregator summaries; application plan types and deadlines confirmed directly on apply.emory.edu; percent living on campus (57% of all undergraduates) from the same CDS; net price calculator URL could not be confirmed and is left null."
+      "lastVerified": null,
+      "note": "September 2026; admit rate and SAT range cross-validated across the Emory Common Data Set 2024-2025 (read directly, incl. GPA distribution and 23%/21% fraternity/sorority participation, averaged here to 22%) and independent CDS-aggregator summaries; application plan types and deadlines confirmed directly on apply.emory.edu; percent living on campus (57% of all undergraduates) from the same CDS; net price calculator URL could not be confirmed and is left null."
     },
     "website": "https://www.emory.edu",
     "state": "GA",
@@ -21820,7 +21841,8 @@
         "CDS",
         "Institutional Website"
       ],
-      "lastVerified": "September 2026; admit rate, GPA, and enrollment from WashU's Common Data Set 2024-2025 via CDS-aggregator summary; SAT range (1500-1570) reconstructed from published section-level 25th/75th EBRW and Math scores; application plan types and deadlines confirmed directly on admissions.washu.edu; net price calculator URL confirmed live on financialaid.washu.edu; Greek life % and on-campus % not found in an available public source and left null."
+      "lastVerified": null,
+      "note": "September 2026; admit rate, GPA, and enrollment from WashU's Common Data Set 2024-2025 via CDS-aggregator summary; SAT range (1500-1570) reconstructed from published section-level 25th/75th EBRW and Math scores; application plan types and deadlines confirmed directly on admissions.washu.edu; net price calculator URL confirmed live on financialaid.washu.edu; Greek life % and on-campus % not found in an available public source and left null."
     },
     "website": "https://washu.edu",
     "state": "MO",
@@ -22016,7 +22038,8 @@
         "CDS",
         "Institutional Website"
       ],
-      "lastVerified": "September 2026; admit rate, SAT range, GPA, and enrollment from BU's Common Data Set via CDS-aggregator summary; application plan types and deadlines confirmed directly on bu.edu/admissions deadline pages; testing policy (test-optional through Fall 2028/Spring 2029 applicants) confirmed on bu.edu; net price calculator URL, Greek life %, and on-campus % not found in an available public source and left null."
+      "lastVerified": null,
+      "note": "September 2026; admit rate, SAT range, GPA, and enrollment from BU's Common Data Set via CDS-aggregator summary; application plan types and deadlines confirmed directly on bu.edu/admissions deadline pages; testing policy (test-optional through Fall 2028/Spring 2029 applicants) confirmed on bu.edu; net price calculator URL, Greek life %, and on-campus % not found in an available public source and left null."
     },
     "website": "https://www.bu.edu",
     "state": "MA",
@@ -22213,7 +22236,8 @@
         "CDS",
         "Institutional Website"
       ],
-      "lastVerified": "September 2026; admit rate (overall 14.5%, ED admit rate 58.2% vs. 11.5% RD), GPA, class rank, and enrollment from Tulane's Common Data Set via CDS-aggregator summary; application plan types and exact deadlines confirmed directly on admission.tulane.edu; net price calculator URL, Greek life %, and undergraduate-wide on-campus % not found in an available public source and left null (a 97% first-year on-campus figure was found but is not the same metric as overall undergraduate housing %, so it was not substituted)."
+      "lastVerified": null,
+      "note": "September 2026; admit rate (overall 14.5%, ED admit rate 58.2% vs. 11.5% RD), GPA, class rank, and enrollment from Tulane's Common Data Set via CDS-aggregator summary; application plan types and exact deadlines confirmed directly on admission.tulane.edu; net price calculator URL, Greek life %, and undergraduate-wide on-campus % not found in an available public source and left null (a 97% first-year on-campus figure was found but is not the same metric as overall undergraduate housing %, so it was not substituted)."
     },
     "website": "https://tulane.edu",
     "state": "LA",
@@ -22409,7 +22433,8 @@
         "CDS",
         "Institutional Website"
       ],
-      "lastVerified": "September 2026; admit rate, SAT range, and enrollment from BC's Common Data Set via CDS-aggregator summary; application plan types and deadlines confirmed directly on bc.edu admission pages; testing policy confirmed on bc.edu; net price calculator URL, GPA average, Greek life %, and on-campus % not found in an available public source and left null."
+      "lastVerified": null,
+      "note": "September 2026; admit rate, SAT range, and enrollment from BC's Common Data Set via CDS-aggregator summary; application plan types and deadlines confirmed directly on bc.edu admission pages; testing policy confirmed on bc.edu; net price calculator URL, GPA average, Greek life %, and on-campus % not found in an available public source and left null."
     },
     "website": "https://www.bc.edu",
     "state": "MA",
@@ -22609,7 +22634,8 @@
         "CDS",
         "Institutional Website"
       ],
-      "lastVerified": "September 2026; admit rate, SAT range, GPA, and enrollment from UM's Common Data Set via CDS-aggregator summary; testing policy (test-required as of Fall 2026 applicants) and application plan types/deadlines confirmed directly on admissions.miami.edu; net price calculator URL, Greek life %, and on-campus % not found in an available public source and left null."
+      "lastVerified": null,
+      "note": "September 2026; admit rate, SAT range, GPA, and enrollment from UM's Common Data Set via CDS-aggregator summary; testing policy (test-required as of Fall 2026 applicants) and application plan types/deadlines confirmed directly on admissions.miami.edu; net price calculator URL, Greek life %, and on-campus % not found in an available public source and left null."
     },
     "website": "https://www.miami.edu",
     "state": "FL",
@@ -22802,7 +22828,8 @@
         "CDS",
         "Institutional Website"
       ],
-      "lastVerified": "September 2026; admit rate, SAT range, class-rank data, and financial aid figures from Wake Forest's own admissions pages, cross-checked against a CDS-aggregator summary; note that the fillable 2024-2025 CDS PDF located on WFU's institutional research site was a blank template and could not be used directly; application plan types and deadlines (including the first-generation-only Early Action option) confirmed directly on admissions.wfu.edu; net price calculator URL, Greek life %, and on-campus % not found in an available public source and left null."
+      "lastVerified": null,
+      "note": "September 2026; admit rate, SAT range, class-rank data, and financial aid figures from Wake Forest's own admissions pages, cross-checked against a CDS-aggregator summary; note that the fillable 2024-2025 CDS PDF located on WFU's institutional research site was a blank template and could not be used directly; application plan types and deadlines (including the first-generation-only Early Action option) confirmed directly on admissions.wfu.edu; net price calculator URL, Greek life %, and on-campus % not found in an available public source and left null."
     },
     "website": "https://www.wfu.edu",
     "state": "NC",
@@ -23003,7 +23030,8 @@
         "CDS",
         "Institutional Website"
       ],
-      "lastVerified": "September 2026; admit rate (overall 28.1%, ED admit rate ~59.8%, RD ~25.9%), GPA, class rank, and financial aid figures from Villanova's Common Data Set via CDS-aggregator summary; testing policy and plan types (ED, ED2, EA, RD) confirmed via institutional aggregator source, but exact application deadlines could not be confirmed on villanova.edu (which returned errors on repeated attempts) and are left null; net price calculator URL, Greek life %, and undergraduate-wide on-campus % not found in an available public source and left null (a 99% first-year on-campus figure was found but is not the same metric as overall undergraduate housing %, so it was not substituted)."
+      "lastVerified": null,
+      "note": "September 2026; admit rate (overall 28.1%, ED admit rate ~59.8%, RD ~25.9%), GPA, class rank, and financial aid figures from Villanova's Common Data Set via CDS-aggregator summary; testing policy and plan types (ED, ED2, EA, RD) confirmed via institutional aggregator source, but exact application deadlines could not be confirmed on villanova.edu (which returned errors on repeated attempts) and are left null; net price calculator URL, Greek life %, and undergraduate-wide on-campus % not found in an available public source and left null (a 99% first-year on-campus figure was found but is not the same metric as overall undergraduate housing %, so it was not substituted)."
     },
     "website": "https://www.villanova.edu",
     "state": "PA",
@@ -23195,7 +23223,8 @@
         "CDS",
         "Institutional Website"
       ],
-      "lastVerified": "September 2026; admit rate, SAT range, weighted GPA, and enrollment from UGA's Common Data Set via CDS-aggregator summary (in-state/out-of-state admit-rate split not separately reported and not substituted); testing policy (test-required, no test-optional pathway) and application plan types/deadlines confirmed directly on admissions.uga.edu; in-state/out-of-state cost of attendance from the same CDS source; net price calculator URL and Greek life/on-campus % not found in an available public source and left null."
+      "lastVerified": null,
+      "note": "September 2026; admit rate, SAT range, weighted GPA, and enrollment from UGA's Common Data Set via CDS-aggregator summary (in-state/out-of-state admit-rate split not separately reported and not substituted); testing policy (test-required, no test-optional pathway) and application plan types/deadlines confirmed directly on admissions.uga.edu; in-state/out-of-state cost of attendance from the same CDS source; net price calculator URL and Greek life/on-campus % not found in an available public source and left null."
     },
     "website": "https://www.uga.edu",
     "state": "GA",
@@ -23395,7 +23424,8 @@
         "CDS",
         "Institutional Website"
       ],
-      "lastVerified": "September 2026; admit rate, SAT range, GPA, and enrollment from Syracuse's Common Data Set via CDS-aggregator summary; testing policy and application plan types/deadlines confirmed directly on syracuse.edu admissions pages; net price calculator URL, Greek life %, and on-campus % not found in an available public source and left null."
+      "lastVerified": null,
+      "note": "September 2026; admit rate, SAT range, GPA, and enrollment from Syracuse's Common Data Set via CDS-aggregator summary; testing policy and application plan types/deadlines confirmed directly on syracuse.edu admissions pages; net price calculator URL, Greek life %, and on-campus % not found in an available public source and left null."
     },
     "website": "https://www.syracuse.edu",
     "state": "NY",

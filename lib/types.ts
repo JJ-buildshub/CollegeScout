@@ -97,7 +97,10 @@ export type DataSource =
 
 export interface DataProvenance {
   sourcedFrom: DataSource[];
+  /** ISO date the record was built or last reviewed as a whole; null when unknown. */
   lastVerified: string | null;
+  /** How the record was researched, for maintainers. Not shown to visitors. */
+  note?: string;
 }
 
 /**

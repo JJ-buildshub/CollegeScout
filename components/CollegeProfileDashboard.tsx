@@ -55,10 +55,13 @@ export default function CollegeProfileDashboard({
   college,
   majors,
   talent,
+  checkNote,
 }: {
   college: College;
   majors: SchoolMajors;
   talent: CollegeTalent | null;
+  /** What the last weekly check confirmed for this school (see lib/dataChecks.ts), or null. */
+  checkNote: string | null;
 }) {
   const router = useRouter();
   // Whether the full banner has scrolled out of view, which is when the compact
@@ -371,11 +374,10 @@ export default function CollegeProfileDashboard({
         </div>
         <p className="mt-3 text-xs text-slate-500">
           Data sourced from {college.dataProvenance.sourcedFrom.join(", ")}
-          {college.dataProvenance.lastVerified ? ` · Last verified ${college.dataProvenance.lastVerified}` : ""}.
-          This provenance applies to the record as a whole
+          , for the record as a whole
           {sourceNotes.length > 0 &&
             " — figures marked with a star are sourced separately, as noted at the bottom of the page"}
-          .
+          .{checkNote && ` ${checkNote}`}
         </p>
 
         {/* Sticky section bar */}
