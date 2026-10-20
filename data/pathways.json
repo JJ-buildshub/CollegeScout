@@ -22,65 +22,164 @@
     }
   ],
   "cards": [
-    { "slug": "oboe", "category": "music", "badge": "Niche", "title": "Oboe", "summary": "Major in music, double-degree, or keep playing alongside another major.", "starts": "9th–10th grade" },
-    { "slug": "instruments", "category": "music", "badge": "Mainstream", "title": "Popular instruments", "summary": "Violin, piano, cello, flute, trumpet, guitar and more: audition for a music school, or send an arts supplement alongside another major.", "starts": "9th–10th grade" },
-    { "slug": "voice", "category": "music", "badge": "Mainstream", "title": "Voice", "summary": "Classical, jazz and musical theater auditions each follow their own calendar.", "starts": "9th–10th grade" },
-    { "slug": "basketball", "category": "sports", "badge": "Mainstream", "title": "Basketball", "summary": "Coach contact, visits and roster spots run on NCAA rules for each division.", "starts": "Summer after 10th grade" },
-    { "slug": "soccer", "category": "sports", "badge": "Mainstream", "title": "Soccer", "summary": "Coach contact, visits and roster spots run on NCAA rules for each division.", "starts": "Summer after 10th grade" },
-    { "slug": "football", "category": "sports", "badge": "Mainstream", "title": "Football", "summary": "Football has its own contact dates and signing period.", "starts": "Summer after 10th grade" },
-    { "slug": "baseball-softball", "category": "sports", "badge": "Mainstream", "title": "Baseball & softball", "summary": "Coach contact, visits and roster spots run on NCAA rules for each division.", "starts": "Summer after 10th grade" },
-    { "slug": "volleyball", "category": "sports", "badge": "Mainstream", "title": "Volleyball", "summary": "Coach contact, visits and roster spots run on NCAA rules for each division.", "starts": "Summer after 10th grade" },
-    { "slug": "lacrosse", "category": "sports", "badge": "Mainstream", "title": "Lacrosse", "summary": "Men's and women's lacrosse now open coach contact on different dates.", "starts": "Summer after 10th grade" },
-    { "slug": "hockey", "category": "sports", "badge": "Mainstream", "title": "Hockey", "summary": "College teams, coach support and how the recruiting calendar works.", "starts": "Summer after 10th grade" },
-    { "slug": "fencing", "category": "sports", "badge": "Niche", "title": "Fencing", "summary": "College teams, coach support and how the recruiting calendar works.", "starts": "Summer after 10th grade" },
-    { "slug": "research", "category": "activities-valued", "badge": "Counts in your app", "title": "Research", "summary": "Shows up in your activities, and some colleges accept a research supplement.", "starts": "10th–11th grade" },
-    { "slug": "academic-competitions", "category": "activities-valued", "badge": "Counts in your app", "title": "Academic competitions", "summary": "Math, science and other contests listed as activities and awards.", "starts": "9th grade" },
-    { "slug": "jobs-family", "category": "activities-valued", "badge": "Counts in your app", "title": "Jobs & family responsibilities", "summary": "A job or caring for family counts as an activity.", "starts": "Any grade" }
+    {
+      "slug": "oboe",
+      "category": "music",
+      "badge": "Niche",
+      "title": "Oboe",
+      "summary": "Major in music, double-degree, or keep playing alongside another major.",
+      "starts": "9th–10th grade"
+    },
+    {
+      "slug": "instruments",
+      "category": "music",
+      "badge": "Mainstream",
+      "title": "Popular instruments",
+      "summary": "Violin, piano, cello, flute, trumpet, guitar and more: audition for a music school, or send an arts supplement alongside another major.",
+      "starts": "9th–10th grade"
+    },
+    {
+      "slug": "voice",
+      "category": "music",
+      "badge": "Mainstream",
+      "title": "Voice",
+      "summary": "Classical, jazz and musical theater auditions each follow their own calendar.",
+      "starts": "9th–10th grade"
+    },
+    {
+      "slug": "sports",
+      "category": "sports",
+      "badge": "Mainstream",
+      "title": "Popular sports",
+      "summary": "Basketball, soccer, football, baseball, softball, volleyball, lacrosse and more: what each level of college sports asks of you, and when.",
+      "starts": "Summer after 10th grade"
+    },
+    {
+      "slug": "research",
+      "category": "activities-valued",
+      "badge": "Counts in your app",
+      "title": "Research",
+      "summary": "Shows up in your activities, and some colleges accept a research supplement.",
+      "starts": "10th–11th grade"
+    },
+    {
+      "slug": "academic-competitions",
+      "category": "activities-valued",
+      "badge": "Counts in your app",
+      "title": "Academic competitions",
+      "summary": "Math, science and other contests listed as activities and awards.",
+      "starts": "9th grade"
+    },
+    {
+      "slug": "jobs-family",
+      "category": "activities-valued",
+      "badge": "Counts in your app",
+      "title": "Jobs & family responsibilities",
+      "summary": "A job or caring for family counts as an activity.",
+      "starts": "Any grade"
+    }
   ],
   "pages": {
     "oboe": {
-      "badges": ["Music", "Niche instrument"],
+      "badges": [
+        "Music",
+        "Niche instrument"
+      ],
       "title": "Oboe",
       "intro": "If you play oboe seriously, it can be part of your college path even if you don't plan to major in music.",
       "facts": [
-        { "label": "Paths available", "value": "3 ways to keep playing" },
-        { "label": "Extra step", "value": "Audition or recording" },
-        { "label": "Recordings due", "value": "Often around Dec 1 of senior year" },
-        { "label": "Scholarships", "value": "Merit awards at many music schools; need-based only at Ivies" }
+        {
+          "label": "Paths available",
+          "value": "3 ways to keep playing"
+        },
+        {
+          "label": "Extra step",
+          "value": "Audition or recording"
+        },
+        {
+          "label": "Recordings due",
+          "value": "Often around Dec 1 of senior year"
+        },
+        {
+          "label": "Scholarships",
+          "value": "Merit awards at many music schools; need-based only at Ivies"
+        }
       ],
       "options": [
         {
           "title": "Major in music",
           "description": "Apply to the college and audition for its school of music, or apply to a conservatory. Your playing carries the most weight.",
-          "submit": ["Regular application", "Music supplement", "Prescreen video at some schools", "Live or recorded audition"],
+          "submit": [
+            "Regular application",
+            "Music supplement",
+            "Prescreen video at some schools",
+            "Live or recorded audition"
+          ],
           "fitsIf": "You want music to be most of your day."
         },
         {
           "title": "Double or dual degree",
           "description": "A music degree plus a second degree, usually over five years. Some universities partner with conservatories, such as Harvard with NEC.",
-          "submit": ["Applications to both schools", "An audition", "Each school admits you separately"],
+          "submit": [
+            "Applications to both schools",
+            "An audition",
+            "Each school admits you separately"
+          ],
           "fitsIf": "You're serious about both and ready for a heavy schedule."
         },
         {
           "title": "Major in something else and keep playing",
           "description": "Apply normally. Many selective colleges accept an optional arts supplement, though some review it only when the rest of your application is already strong. Once you enroll, many schools offer lessons and ensembles to non-majors.",
-          "submit": ["Regular application", "Arts supplement where accepted"],
+          "submit": [
+            "Regular application",
+            "Arts supplement where accepted"
+          ],
           "fitsIf": "Music is a big part of you but not your career plan."
         }
       ],
       "timeline": [
-        { "stage": "9th–10th", "text": "Private lessons; youth orchestra, honor band or all-state; start standard repertoire." },
-        { "stage": "11th", "text": "Research schools by their oboe teacher; summer music program; practice recording." },
-        { "stage": "12th fall", "text": "Regular application plus music supplement; prescreens and arts supplements often due around Dec 1, some earlier." },
-        { "stage": "12th winter", "text": "Live or recorded auditions, usually Jan–Feb; some schools add sight-reading." },
-        { "stage": "12th spring", "text": "Decisions by about April 1; compare music awards with financial aid; deposit by May 1." }
+        {
+          "stage": "9th–10th",
+          "text": "Private lessons; youth orchestra, honor band or all-state; start standard repertoire."
+        },
+        {
+          "stage": "11th",
+          "text": "Research schools by their oboe teacher; summer music program; practice recording."
+        },
+        {
+          "stage": "12th fall",
+          "text": "Regular application plus music supplement; prescreens and arts supplements often due around Dec 1, some earlier."
+        },
+        {
+          "stage": "12th winter",
+          "text": "Live or recorded auditions, usually Jan–Feb; some schools add sight-reading."
+        },
+        {
+          "stage": "12th spring",
+          "text": "Decisions by about April 1; compare music awards with financial aid; deposit by May 1."
+        }
       ],
       "needs": [
-        { "id": "teacher", "label": "A private teacher who knows college audition repertoire" },
-        { "id": "ensemble", "label": "Ensemble experience" },
-        { "id": "repertoire", "label": "Prepared pieces: a concerto or sonata, etudes, orchestral excerpts" },
-        { "id": "recording", "label": "A clean video recording" },
-        { "id": "grades", "label": "Strong grades, since music adds to the application but doesn't replace academics" }
+        {
+          "id": "teacher",
+          "label": "A private teacher who knows college audition repertoire"
+        },
+        {
+          "id": "ensemble",
+          "label": "Ensemble experience"
+        },
+        {
+          "id": "repertoire",
+          "label": "Prepared pieces: a concerto or sonata, etudes, orchestral excerpts"
+        },
+        {
+          "id": "recording",
+          "label": "A clean video recording"
+        },
+        {
+          "id": "grades",
+          "label": "Strong grades, since music adds to the application but doesn't replace academics"
+        }
       ],
       "callout": {
         "title": "Start with your music teacher",
@@ -160,34 +259,916 @@
           "label": "Indiana Jacobs: music for non-majors",
           "url": "https://music.indiana.edu/degrees-programs/non-majors/index.html",
           "accessed": "2026-10-19",
-          "evidence": ["You can also take a performance class or private lessons, or join an ensemble."]
+          "evidence": [
+            "You can also take a performance class or private lessons, or join an ensemble."
+          ]
         },
         {
           "label": "Harvard: how aid works",
           "url": "https://college.harvard.edu/financial-aid/how-aid-works",
           "accessed": "2026-10-19",
-          "evidence": ["There are no merit-based awards"]
+          "evidence": [
+            "There are no merit-based awards"
+          ]
         },
         {
           "label": "Yale financial aid",
           "url": "https://finaid.yale.edu/",
           "accessed": "2026-10-19",
-          "evidence": ["Yale awards financial aid in the form of need-based Yale scholarship grants."]
+          "evidence": [
+            "Yale awards financial aid in the form of need-based Yale scholarship grants."
+          ]
         },
         {
           "label": "Curtis: financial aid & tuition",
           "url": "https://www.curtis.edu/apply/",
           "accessed": "2026-10-19",
-          "evidence": ["All Curtis students receive full-tuition scholarships, regardless of financial circumstances."]
+          "evidence": [
+            "All Curtis students receive full-tuition scholarships, regardless of financial circumstances."
+          ]
         }
       ],
       "directoryLinks": [
-        { "label": "Music & Performing Arts", "href": "/directory?interests=music-performing" },
-        { "label": "University of Rochester (Eastman)", "href": "/directory/university-of-rochester" },
-        { "label": "New England Conservatory", "href": "/directory/the-new-england-conservatory-of-music" },
-        { "label": "Indiana University Bloomington", "href": "/directory/indiana-university-bloomington" },
-        { "label": "Harvard University", "href": "/directory/harvard-university" },
-        { "label": "Yale University", "href": "/directory/yale-university" }
+        {
+          "label": "Music & Performing Arts",
+          "href": "/directory?interests=music-performing"
+        },
+        {
+          "label": "University of Rochester (Eastman)",
+          "href": "/directory/university-of-rochester"
+        },
+        {
+          "label": "New England Conservatory",
+          "href": "/directory/the-new-england-conservatory-of-music"
+        },
+        {
+          "label": "Indiana University Bloomington",
+          "href": "/directory/indiana-university-bloomington"
+        },
+        {
+          "label": "Harvard University",
+          "href": "/directory/harvard-university"
+        },
+        {
+          "label": "Yale University",
+          "href": "/directory/yale-university"
+        }
+      ]
+    },
+    "instruments": {
+      "badges": [
+        "Music",
+        "Popular instruments"
+      ],
+      "title": "Popular instruments",
+      "intro": "If you play violin, piano, cello, flute, trumpet or guitar seriously, it can be part of your college path even if you don't plan to major in music.",
+      "facts": [
+        {
+          "label": "Paths available",
+          "value": "3 ways to keep playing"
+        },
+        {
+          "label": "Extra step",
+          "value": "Audition, often with a prescreen video first"
+        },
+        {
+          "label": "Prescreens due",
+          "value": "Often Dec 1 of senior year"
+        },
+        {
+          "label": "Prescreen needed?",
+          "value": "Depends on the school and the instrument"
+        }
+      ],
+      "options": [
+        {
+          "title": "Major in music",
+          "description": "Apply to the college and audition for its school of music, or apply to a conservatory. Your playing carries the most weight.",
+          "submit": [
+            "Regular application",
+            "Music supplement",
+            "Prescreen video at some schools",
+            "Live or recorded audition"
+          ],
+          "fitsIf": "You want music to be most of your day."
+        },
+        {
+          "title": "Double or dual degree",
+          "description": "A music degree plus a second degree, usually over five years. Some universities partner with conservatories, such as Harvard with NEC.",
+          "submit": [
+            "Applications to both schools",
+            "An audition",
+            "Each school admits you separately"
+          ],
+          "fitsIf": "You're serious about both and ready for a heavy schedule."
+        },
+        {
+          "title": "Major in something else and keep playing",
+          "description": "Apply normally. Many selective colleges accept an optional arts supplement, though some review it only when the rest of your application is already strong. Once you enroll, many schools offer lessons and ensembles to non-majors.",
+          "submit": [
+            "Regular application",
+            "Arts supplement where accepted"
+          ],
+          "fitsIf": "Music is a big part of you but not your career plan."
+        }
+      ],
+      "timeline": [
+        {
+          "stage": "9th–10th",
+          "text": "Private lessons; an orchestra, band or other ensemble; start standard repertoire for your instrument."
+        },
+        {
+          "stage": "11th",
+          "text": "Research schools by their teacher for your instrument; summer music program; practice recording."
+        },
+        {
+          "stage": "12th fall",
+          "text": "Regular application plus the music school's own application; prescreens often due around Dec 1, some earlier."
+        },
+        {
+          "stage": "12th winter",
+          "text": "Live or recorded auditions, usually late Jan–Feb; some add sight-reading."
+        },
+        {
+          "stage": "12th spring",
+          "text": "Decisions by about April 1; compare music awards with financial aid; deposit by May 1."
+        }
+      ],
+      "comparison": {
+        "title": "Do you need a prescreen video?",
+        "note": "Undergraduate performance degree, Fall 2027 entry.",
+        "columns": [
+          "Eastman",
+          "NEC",
+          "Indiana"
+        ],
+        "rows": [
+          {
+            "label": "Violin",
+            "cells": [
+              "Yes, by Dec 1",
+              "Yes",
+              "Yes, by Dec 1"
+            ]
+          },
+          {
+            "label": "Piano",
+            "cells": [
+              "Yes, by Dec 1",
+              "Yes",
+              "Yes, by Dec 1"
+            ]
+          },
+          {
+            "label": "Cello",
+            "cells": [
+              "Yes, by Dec 1",
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Flute",
+            "cells": [
+              "Yes, by Dec 1",
+              "Yes",
+              "Yes, by Dec 1"
+            ]
+          },
+          {
+            "label": "Trumpet",
+            "cells": [
+              "Yes",
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Guitar",
+            "cells": [
+              "No",
+              "Yes",
+              "Yes, by Dec 1"
+            ]
+          }
+        ]
+      },
+      "needs": [
+        {
+          "id": "teacher",
+          "label": "A private teacher who knows college audition repertoire for your instrument"
+        },
+        {
+          "id": "repertoire",
+          "label": "Prepared pieces: usually a concerto or sonata, a Bach or other standard work, and etudes"
+        },
+        {
+          "id": "excerpts",
+          "label": "Orchestral excerpts if you play a wind or brass instrument"
+        },
+        {
+          "id": "memory",
+          "label": "Pieces memorized, which most string and piano auditions require"
+        },
+        {
+          "id": "scales",
+          "label": "Scales, which some auditions ask for"
+        },
+        {
+          "id": "recording",
+          "label": "Clean, unedited video recordings"
+        },
+        {
+          "id": "grades",
+          "label": "Strong grades, since music adds to the application but doesn't replace academics"
+        }
+      ],
+      "callout": {
+        "title": "Start with your music teacher",
+        "body": "Your teacher hears you play every week and knows the audition repertoire. Ask which programs fit your level before you build a list."
+      },
+      "myths": [
+        {
+          "myth": "Every music school wants a prescreen.",
+          "truth": "It depends on the school and the instrument. Indiana asks none from undergraduate cellists or trumpeters, and Eastman asks none from guitarists."
+        },
+        {
+          "myth": "I can play whatever pieces I like.",
+          "truth": "Most schools list required repertoire for each instrument, such as a concerto movement, Bach and an etude."
+        },
+        {
+          "myth": "An edited phone video is fine.",
+          "truth": "Schools ask for unedited takes. Indiana's piano page also rules out added echo or reverb."
+        },
+        {
+          "myth": "If I'm not a music major I'll have to stop playing.",
+          "truth": "Many colleges offer lessons and ensembles to students in any major."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Eastman Violin",
+          "url": "https://www.esm.rochester.edu/portfolio/violin/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "All undergraduate violin applicants must upload a preliminary audition video recording of the following repertoire before December 1st",
+            "This selection must be memorized.",
+            "Three-octave major and minor scales and arpeggios."
+          ]
+        },
+        {
+          "label": "Eastman Piano",
+          "url": "https://www.esm.rochester.edu/portfolio/piano/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "By December 1, all undergraduate piano performance applicants must upload a preliminary audition recording."
+          ]
+        },
+        {
+          "label": "Eastman Cello",
+          "url": "https://www.esm.rochester.edu/portfolio/violoncello/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "By December 1st, all applicants seeking a final audition must upload a preliminary video pre-screening recording."
+          ]
+        },
+        {
+          "label": "Eastman Flute",
+          "url": "https://www.esm.rochester.edu/portfolio/flute/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "By December 1st, all flute applicants must upload a pre-screen video."
+          ]
+        },
+        {
+          "label": "Eastman Trumpet",
+          "url": "https://www.esm.rochester.edu/portfolio/trumpet/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "One standard solo piece or one movement of a sonata or concerto three contrasting orchestral excerpts",
+            "possible sight reading"
+          ]
+        },
+        {
+          "label": "Eastman Guitar",
+          "url": "https://www.esm.rochester.edu/portfolio/guitar/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "There is no pre-screening recording required for undergraduate guitar."
+          ]
+        },
+        {
+          "label": "NEC Violin",
+          "url": "https://necmusic.edu/auditions/violin/",
+          "accessed": "2026-10-19",
+          "manual": true,
+          "evidence": [
+            "Each piece must be performed in a single, unedited take"
+          ]
+        },
+        {
+          "label": "NEC Piano",
+          "url": "https://necmusic.edu/auditions/piano/",
+          "accessed": "2026-10-19",
+          "manual": true,
+          "evidence": [
+            "All undergraduates applicants must submit the following prescreening repertoire:",
+            "All works must be performed by memory with the possible exception of challenging contemporary music."
+          ]
+        },
+        {
+          "label": "NEC Cello",
+          "url": "https://necmusic.edu/auditions/cello/",
+          "accessed": "2026-10-19",
+          "manual": true,
+          "evidence": [
+            "Two contrasting movements of a J.S. Bach Suite (memorized)."
+          ]
+        },
+        {
+          "label": "NEC Flute",
+          "url": "https://necmusic.edu/auditions/flute/",
+          "accessed": "2026-10-19",
+          "manual": true,
+          "evidence": [
+            "Orchestral Excerpts (3 total):"
+          ]
+        },
+        {
+          "label": "NEC Trumpet",
+          "url": "https://necmusic.edu/auditions/trumpet/",
+          "accessed": "2026-10-19",
+          "manual": true,
+          "evidence": [
+            "Please submit a video, recorded straight-through with no internal edits, of the following:"
+          ]
+        },
+        {
+          "label": "NEC Guitar",
+          "url": "https://necmusic.edu/auditions/guitar/",
+          "accessed": "2026-10-19",
+          "manual": true,
+          "evidence": [
+            "The NEC guitar department encourages candidates to play what they love and show some variety of style."
+          ]
+        },
+        {
+          "label": "Indiana Jacobs Strings",
+          "url": "https://music.indiana.edu/admissions/auditions/strings.html",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "All violin applicants must submit prescreen recordings via the JSOM supplemental application by December 1.",
+            "Cello prescreen is required for D.M. cello applicants only.",
+            "All pieces must be presented from memory."
+          ]
+        },
+        {
+          "label": "Indiana Jacobs Piano",
+          "url": "https://music.indiana.edu/admissions/auditions/piano.html",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "All undergraduate applicants must submit prescreen recordings via the JSOM supplemental application by December 1.",
+            "Video recordings must be unedited and produced without artificial enhancement such as echo or electronic reverb."
+          ]
+        },
+        {
+          "label": "Indiana Jacobs Woodwinds",
+          "url": "https://music.indiana.edu/admissions/auditions/woodwinds.html",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "All flute applicants must submit prescreening recordings via the JSOM supplemental application by December 1."
+          ]
+        },
+        {
+          "label": "Indiana Jacobs Brass",
+          "url": "https://music.indiana.edu/admissions/auditions/brass.html",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "There is no prescreening for trumpet applicants.",
+            "possible sight-reading"
+          ]
+        },
+        {
+          "label": "Indiana Jacobs Guitar",
+          "url": "https://music.indiana.edu/admissions/auditions/guitar.html",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "All guitar applicants must submit video prescreen recordings via the JSOM supplemental application by December 1."
+          ]
+        },
+        {
+          "label": "Indiana Jacobs Auditions",
+          "url": "https://music.indiana.edu/admissions/auditions/index.html",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "All admission and scholarship decisions are sent via email by April 1",
+            "the undergraduate enrollment deadline is May 1"
+          ]
+        },
+        {
+          "label": "Indiana Jacobs: music for non-majors",
+          "url": "https://music.indiana.edu/degrees-programs/non-majors/index.html",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "You can also take a performance class or private lessons, or join an ensemble."
+          ]
+        },
+        {
+          "label": "Harvard–NEC Dual Degree",
+          "url": "https://music.fas.harvard.edu/harvard-university-and-new-england-conservatory-music-dual-degree-program",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "is a 5-year program leading to a Bachelor of Arts (AB) or Bachelor of Science (SB) from Harvard University and a Master of Music (MM) from New England Conservatory of Music",
+            "must be accepted independently at each institution before they can be considered for the dual-degree program"
+          ]
+        },
+        {
+          "label": "Yale Supplementary Materials",
+          "url": "https://admissions.yale.edu/supplementary",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "for applicants whose required application materials demonstrate they are strong candidates for admission"
+          ]
+        }
+      ],
+      "directoryLinks": [
+        {
+          "label": "Music & Performing Arts",
+          "href": "/directory?interests=music-performing"
+        },
+        {
+          "label": "University of Rochester (Eastman)",
+          "href": "/directory/university-of-rochester"
+        },
+        {
+          "label": "New England Conservatory",
+          "href": "/directory/the-new-england-conservatory-of-music"
+        },
+        {
+          "label": "Indiana University Bloomington",
+          "href": "/directory/indiana-university-bloomington"
+        },
+        {
+          "label": "Juilliard",
+          "href": "/directory/the-juilliard-school"
+        },
+        {
+          "label": "Oberlin",
+          "href": "/directory/oberlin-college"
+        },
+        {
+          "label": "University of Michigan",
+          "href": "/directory/university-of-michigan"
+        },
+        {
+          "label": "Northwestern",
+          "href": "/directory/northwestern-university"
+        }
+      ]
+    },
+    "sports": {
+      "badges": [
+        "Sports",
+        "Popular sports"
+      ],
+      "title": "Popular sports",
+      "intro": "If you play basketball, soccer, football, baseball, softball, volleyball, lacrosse or another sport seriously, a college coach can become part of your path. You still apply to the college the regular way.",
+      "facts": [
+        {
+          "label": "Paths available",
+          "value": "Division I & II, Division III, Ivy League, NAIA"
+        },
+        {
+          "label": "Extra step",
+          "value": "Registering with an eligibility center"
+        },
+        {
+          "label": "Recruiting starts",
+          "value": "For most students, 11th grade"
+        },
+        {
+          "label": "Scholarships",
+          "value": "Mostly partial; none in Division III or the Ivies"
+        }
+      ],
+      "options": [
+        {
+          "title": "Division I or II",
+          "description": "Coaches recruit you and can offer athletic scholarships, which are mostly partial. You must meet NCAA academic standards: 16 core courses and a minimum core GPA.",
+          "submit": [
+            "Regular application",
+            "NCAA Eligibility Center certification account",
+            "Athletics aid agreement, if you're offered aid"
+          ],
+          "fitsIf": "You want to compete at a high level and can meet NCAA academic standards."
+        },
+        {
+          "title": "Division III or the Ivy League",
+          "description": "No athletic scholarships. You're admitted under the same standards as other students, and Ivy coaches can get early feedback on your application from admissions.",
+          "submit": [
+            "Regular application",
+            "NCAA Eligibility Center account",
+            "Financial aid forms"
+          ],
+          "fitsIf": "Academics come first and you want to keep competing seriously."
+        },
+        {
+          "title": "NAIA",
+          "description": "A separate association with its own eligibility rules, based on your high school grades. Schools may offer athletic and academic aid, and there are no recruiting calendar limits.",
+          "submit": [
+            "Regular application",
+            "PlayNAIA registration"
+          ],
+          "fitsIf": "You want a chance at athletic aid outside the NCAA."
+        }
+      ],
+      "timeline": [
+        {
+          "stage": "9th–10th",
+          "text": "Take NCAA-approved core courses. For Division I, 10 of the 16 must be done before senior year."
+        },
+        {
+          "stage": "11th",
+          "text": "Recruiting starts for most students. Division II coaches can contact you after June 15 before junior year. Register with the NCAA or PlayNAIA."
+        },
+        {
+          "stage": "Summer before 12th",
+          "text": "Ivy League coaches can get admissions feedback on your application from July 1."
+        },
+        {
+          "stage": "12th fall",
+          "text": "Official visits, one per school. Most Division I and II sports open signing on Nov 12, 2026. Ivy likely letters can arrive from Oct 1."
+        },
+        {
+          "stage": "12th winter–spring",
+          "text": "Signing dates vary by sport. Ivy likely letters can arrive until March 15."
+        }
+      ],
+      "comparison": {
+        "title": "How the paths compare",
+        "columns": [
+          "Scholarships",
+          "Academics",
+          "Register"
+        ],
+        "rows": [
+          {
+            "label": "Division I",
+            "cells": [
+              "Yes, up to full rides",
+              "16 core courses, 2.3 core GPA",
+              "NCAA Eligibility Center"
+            ]
+          },
+          {
+            "label": "Division II",
+            "cells": [
+              "Partial, split among players",
+              "16 core courses, 2.2 core GPA",
+              "NCAA Eligibility Center"
+            ]
+          },
+          {
+            "label": "Division III",
+            "cells": [
+              "No; merit or need aid",
+              "Each school's own standards",
+              "NCAA Eligibility Center (Profile Page)"
+            ]
+          },
+          {
+            "label": "Ivy League",
+            "cells": [
+              "No; need-based aid only",
+              "Division I rules",
+              "NCAA Eligibility Center"
+            ]
+          },
+          {
+            "label": "NAIA",
+            "cells": [
+              "Yes, athletic and academic",
+              "Based on high school grades",
+              "PlayNAIA"
+            ]
+          }
+        ]
+      },
+      "needs": [
+        {
+          "id": "core",
+          "label": "16 NCAA-approved core courses, if you're aiming for Division I or II"
+        },
+        {
+          "id": "gpa",
+          "label": "A core-course GPA of at least 2.3 for Division I or 2.2 for Division II"
+        },
+        {
+          "id": "register",
+          "label": "Registration with the NCAA Eligibility Center or PlayNAIA"
+        },
+        {
+          "id": "grades",
+          "label": "Strong grades, and test scores where a college wants them, since athletes still apply like everyone else"
+        },
+        {
+          "id": "aid",
+          "label": "Financial aid forms, since most athletic aid is partial"
+        }
+      ],
+      "callout": {
+        "title": "Start with your coach",
+        "body": "Your high school or club coach has watched you compete and knows which levels fit you. Ask them before you start contacting college coaches."
+      },
+      "myths": [
+        {
+          "myth": "A verbal commitment locks in my spot.",
+          "truth": "It isn't binding on you or the school. Signing an athletics aid agreement is the official commitment, and in the Ivy League only the admissions office can admit you."
+        },
+        {
+          "myth": "Athletes get full rides.",
+          "truth": "Most athletic scholarships are partial, and only about 2% of high school athletes are offered one."
+        },
+        {
+          "myth": "I need SAT or ACT scores to be NCAA eligible.",
+          "truth": "Not for Division I or II anymore, though a college may still want them for admission."
+        },
+        {
+          "myth": "Division III means I don't need to register.",
+          "truth": "Division III doesn't certify academics, but the NCAA says incoming athletes should register to get an NCAA ID."
+        },
+        {
+          "myth": "I'll sign a National Letter of Intent.",
+          "truth": "Division I dropped it in 2024. Scholarship athletes now sign a financial aid agreement."
+        }
+      ],
+      "sources": [
+        {
+          "label": "NCAA Eligibility Center registration",
+          "url": "https://www.ncaa.org/eligibility-center/register/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "Choose this account if you plan to compete at a Division I or Division II school.",
+            "being recruited by a Division I or II school",
+            "taking an official visit to a Division I or II school",
+            "Choose this account if you're still exploring your options or not ready for certification yet.",
+            "a domestic Division III prospective student-athlete, transfer or walk-on",
+            "not yet in high school",
+            "You can transition your Profile Page to a certification account by logging into your Profile Page",
+            "registration is complete once your fee is paid or your fee waiver is requested, if eligible.",
+            "All fees are nonrefundable after 30 days.",
+            "Walk-on and preferred walk-on recruits must register with the NCAA Eligibility Center and meet initial-eligibility standards."
+          ]
+        },
+        {
+          "label": "NCAA Guide for the College-Bound Student-Athlete 2026-27 (PDF)",
+          "url": "https://s3.amazonaws.com/fs.ncaa.org/Docs/eligibility_center/Student_Resources/CBSA.pdf",
+          "accessed": "2026-10-19",
+          "manual": true,
+          "evidence": [
+            "If you're being recruited by an NCAA Division I or II school, transition your Profile Page account to an Academic and Athletics Certification account.",
+            "In January 2023, NCAA Divisions I and II adopted legislation to remove standardized test scores from initial-eligibility requirements.",
+            "Check with the NCAA school you plan to attend regarding whether standardized test scores are necessary for admissions or scholarship requirements.",
+            "The recruiting process can begin as early as ninth grade (year nine of secondary school), although in most cases the recruiting process starts in 11th grade (summer after year 10).",
+            "Division I uses recruiting calendars while Division II follows recruiting reminders. Division III does not use recruiting calendars or reminders.",
+            "After the first permissible date in your division and sport, you may take official visits to as many different NCAA schools as you'd like. However, each NCAA school may extend only one official visit to you.",
+            "Upon entering this information, athletics staff at other NCAA schools that offer athletics scholarships must cease communication with the student",
+            "Students may not sign with more than one school.",
+            "Verbal Commitment: When you verbally agree to play sports for a college before you sign or are eligible to sign an athletics aid agreement. The commitment is not binding on you or the school.",
+            "Official Commitment: When you sign an athletics aid agreement for a scholarship with a Division I or II school.",
+            "Only about 2% of high school athletes are offered athletics scholarships"
+          ]
+        },
+        {
+          "label": "NCAA Eligibility Center: resources for high schools",
+          "url": "https://www.ncaa.org/eligibility-center/resources-for-high-schools/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "Students must select a certification account and complete registration (including payment or fee waiver) before they may be invited by Division I schools to go on official visits, sign for athletics aid or become eligible to compete at an NCAA Division I or II school in the initial year of enrollment."
+          ]
+        },
+        {
+          "label": "NCAA Division III initial eligibility requirements",
+          "url": "https://www.ncaa.org/eligibility-center/initial-eligibility-requirements/division-iii/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "All incoming Division III student-athletes should register with the NCAA Eligibility Center to obtain their NCAA ID number.",
+            "Domestic students should create a Profile Page if they do not already have an account.",
+            "International students will need their athletics eligibility certified by the Eligibility Center and should create an Athletics Certification account.",
+            "Division III schools do not offer athletics scholarships.",
+            "Many Division III student-athletes receive merit-based or need-based financial aid.",
+            "Division III student-athletes are generally held to the same admissions standards, academic standards, housing policies and support services as the general student body.",
+            "Division III schools set their own admissions and academic standards."
+          ]
+        },
+        {
+          "label": "NCAA Eligibility Center",
+          "url": "https://www.ncaa.org/eligibility-center/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "No academic certification required, but amateurism standards apply.",
+            "Profile Page (domestic) or Athletics Certification (international) account required."
+          ]
+        },
+        {
+          "label": "NCAA Division I initial eligibility requirements",
+          "url": "https://www.ncaa.org/eligibility-center/initial-eligibility-requirements/division-i/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "Earn 16 NCAA-approved core-course credits in required subject areas.",
+            "Ten of your core courses (7 in English, math, or science) must be completed before start of the seventh semester (senior year).",
+            "Earn a minimum 2.3 core course GPA",
+            "English or native language 4 years Math (Algebra I or higher) 3 years Science 2 years Additional English/native language, math or science 1 year Social science 2 years Additional core course units, which may include world language, comparative religion, or philosophy courses 4 years"
+          ]
+        },
+        {
+          "label": "NCAA Division II initial eligibility requirements",
+          "url": "https://www.ncaa.org/eligibility-center/initial-eligibility-requirements/division-ii/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "Earn 16 NCAA-approved core-course credits in required subject areas.",
+            "Earn a minimum 2.2 core course GPA",
+            "English or native language 3 years Math (Algebra I or higher) 2 years Science 2 years Additional English/native language, math or science 3 years Social science 2 years Additional core course units, which may include world language, comparative religion, or philosophy courses 4 years"
+          ]
+        },
+        {
+          "label": "NCAA initial eligibility requirements",
+          "url": "https://www.ncaa.org/eligibility-center/initial-eligibility-requirements/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "Your core-course GPA only includes those courses and may differ from your transcript GPA.",
+            "Division I requires a 2.3 core-course GPA, while Division II requires a 2.2."
+          ]
+        },
+        {
+          "label": "NCAA Division I and II age-based eligibility rules",
+          "url": "https://www.ncaa.org/eligibility-center/division-i-and-division-ii-age-based-eligibility-rules/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "student-athletes who meet all eligibility requirements and enter college no later than the academic year after their 19th birthday generally will have up to five years of eligibility.",
+            "Prospects who initially enroll full time at any college or university in fall 2027 or later. The age-based rule only.",
+            "Delaying college enrollment beyond age 19 may reduce the amount of eligibility available in Divisions I and II."
+          ]
+        },
+        {
+          "label": "NCAA Recruiting",
+          "url": "https://www.ncaa.org/eligibility-center/recruiting/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "Communication rules vary by division and grade level",
+            "These rules vary by sport and division"
+          ]
+        },
+        {
+          "label": "NCAA Division II Coaches Off-Campus Recruiting Guide 2026-27 (PDF)",
+          "url": "https://ncaaorg.s3.amazonaws.com/compliance/recruiting/calendar/2026-27/2026-27D2REC_RecGuide.pdf",
+          "accessed": "2026-10-19",
+          "manual": true,
+          "evidence": [
+            "Athletically related recruiting materials may be sent at anytime.",
+            "After June 15, immediately preceding a prospective student-athlete's junior year in high school."
+          ]
+        },
+        {
+          "label": "NAIA: high school students",
+          "url": "https://www.naia.org/student-athletes/prospective/high-school-students",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "No recruiting calendar restrictions of any kind",
+            "Ability to freely communicate with NAIA coaches directly",
+            "As an association, the NAIA does not have a letter of intent program",
+            "The NAIA Eligibility Center will determine your eligibility based on your high school grades (no core courses necessary!) and sometimes your SAT/ACT scores, class rank, and/or dual credit.",
+            "In the NAIA, a student-athlete can compete in four \"seasons of competition\" during their first 10 semesters (or equivalent) of college.",
+            "student-athletes must be enrolled in at least 12 hours every semester or quarter and be making normal progress toward a degree.",
+            "you must be admitted to the college or university under admission standards equal to or higher than those applied to the general student body.",
+            "NAIA member institutions have the authority to determine the financial aid packages they offer to student-athletes, including both athletic and academic aid"
+          ]
+        },
+        {
+          "label": "NCAA Scholarships & Financial Aid",
+          "url": "https://www.ncaa.org/student-athletes/scholarships-and-financial-aid/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "If you receive a Division I or II athletics scholarship, you will be asked to sign a financial aid agreement.",
+            "Division I eliminated the National Letter of Intent in 2024; Division II schools may still use it.",
+            "most student-athletes receive partial aid, not a full ride.",
+            "your coach decides who receives one, how much it is, and whether it will be renewed each year.",
+            "Scholarships are typically awarded year to year.",
+            "If a school plans to reduce or not renew your scholarship, they must notify you in writing by July 1."
+          ]
+        },
+        {
+          "label": "2026-27 NCAA Signing Dates (PDF)",
+          "url": "https://athleticsaid.s3.amazonaws.com/2026-27DI_SigningDates.pdf",
+          "accessed": "2026-10-19",
+          "manual": true,
+          "evidence": [
+            "All Other Division I and II Sports November 12, 2026",
+            "Division I Basketball (Early Period) INITIAL SIGNING DATE November 11, 2026"
+          ]
+        },
+        {
+          "label": "NCAA Division III Financial Aid Reporting Program",
+          "url": "https://www.ncaa.org/division-iii/governance/membership-and-institutional-resources/financial-aid-reporting-program/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "prohibits financial aid where athletics participation, leadership, performance and ability are considered, but also establishes the equitable treatment and consistent financial aid packaging of athletes and other students as an expectation."
+          ]
+        },
+        {
+          "label": "PlayNAIA (NAIA Eligibility Center)",
+          "url": "https://play.mynaia.org/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "PlayNAIA is also the official clearinghouse for NAIA eligibility.",
+            "Every student-athlete must register with the NAIA Eligibility Center to play sports at an NAIA college or university."
+          ]
+        },
+        {
+          "label": "Joint Ivy Statement",
+          "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "any financial aid for student-athletes will be awarded and renewed on the sole basis of economic need with no differentiation in amount or in kind (e.g., packaging) based on athletic ability or participation",
+            "Ivy League admissions offices will provide feedback to coaches on an individual student's application no earlier than July 1 following the junior year in high school.",
+            "From October 1 through March 15 of senior year, an admissions office may issue probabilistic communications, in writing, to recruited student-athlete applicants who have submitted all required application materials."
+          ]
+        },
+        {
+          "label": "Ivy League: prospective athlete information",
+          "url": "https://ivyleague.com/sports/2017/7/28/information-psa-index.aspx",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "Ivy League schools provide financial aid to students, including athletes, only on the basis of financial need as determined by each institution's financial aid office.",
+            "There are no academic or athletic scholarships in the Ivy League.",
+            "A \"verbal commitment\" by a coach is not an offer of admission, as only the admissions office has that authority."
+          ]
+        },
+        {
+          "label": "NCAA Division I",
+          "url": "https://www.ncaa.org/division-i/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "athletic scholarships up to and including full rides"
+          ]
+        },
+        {
+          "label": "NCAA Division II athletics scholarships",
+          "url": "https://www.ncaa.org/division-ii/governance/membership-and-institutional-resources/athletics-scholarships/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "Division II schools offer athletics scholarships through a partial-scholarship model, allowing coaches to divide scholarship funds among multiple student-athletes on a team.",
+            "In Division II, each sport has a maximum number of athletics scholarships that may be awarded across an entire team. These are called equivalency limits."
+          ]
+        },
+        {
+          "label": "NCAA news: DI Board adopts roster limits (June 23, 2025)",
+          "url": "https://www.ncaa.org/news/media-center-di-board-of-directors-formally-adopts-changes-to-roster-limits/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "Moving forward, NCAA rules for Division I programs will no longer include sport-specific scholarship limits.",
+            "schools in the defendant conferences and others that opt in to the settlement rules and associated benefits to student-athletes will have roster limits, and schools will have the option to offer scholarships to any and all of those student-athletes."
+          ]
+        },
+        {
+          "label": "NAIA: financial aid",
+          "url": "https://www.naia.org/student-athletes/current/financial-aid/",
+          "accessed": "2026-10-19",
+          "evidence": [
+            "Each sport has an overall limit on the amount of financial aid it can award to students who will compete in varsity contests in that sport.",
+            "Financial aid given to student-athletes is limited to the actual cost of tuition, mandatory fees, books and supplies required for courses in which the student-athlete is enrolled, and room and board."
+          ]
+        }
+      ],
+      "directoryLinks": [
+        {
+          "label": "Stanford (Division I)",
+          "href": "/directory/stanford-university"
+        },
+        {
+          "label": "University of Alabama (Division I)",
+          "href": "/directory/university-of-alabama"
+        },
+        {
+          "label": "Cal Poly Pomona (Division II)",
+          "href": "/directory/cal-poly-pomona"
+        },
+        {
+          "label": "Williams (Division III)",
+          "href": "/directory/williams-college"
+        },
+        {
+          "label": "Bowdoin (Division III)",
+          "href": "/directory/bowdoin-college"
+        },
+        {
+          "label": "Harvard (Ivy League)",
+          "href": "/directory/harvard-university"
+        },
+        {
+          "label": "Marian University (NAIA)",
+          "href": "/directory/marian-university"
+        }
       ]
     }
   }

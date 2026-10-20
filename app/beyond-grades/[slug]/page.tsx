@@ -118,6 +118,41 @@ export default function PathwayPage({ params }: { params: { slug: string } }) {
         </ol>
       </section>
 
+      {page.comparison && (
+        <section>
+          <SectionTitle>{page.comparison.title}</SectionTitle>
+          {page.comparison.note && <p className="mt-1 text-sm text-slate-500">{page.comparison.note}</p>}
+          <div className="mt-4 overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-card">
+            <table className="w-full text-left text-xs sm:text-sm">
+              <thead className="bg-sand-100 text-[11px] font-bold uppercase text-slate-500 sm:text-xs sm:tracking-wide">
+                <tr>
+                  <th className="px-2 py-2.5 sm:px-4" />
+                  {page.comparison.columns.map((column) => (
+                    <th key={column} className="px-2 py-2.5 sm:px-4">
+                      {column}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-200">
+                {page.comparison.rows.map((row) => (
+                  <tr key={row.label}>
+                    <th scope="row" className="px-2 py-2.5 font-bold text-navy-900 sm:px-4">
+                      {row.label}
+                    </th>
+                    {row.cells.map((cell, i) => (
+                      <td key={i} className={cell.startsWith("No") ? "px-2 py-2.5 text-slate-500 sm:px-4" : "px-2 py-2.5 text-slate-600 sm:px-4"}>
+                        {cell}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
+
       <section className="grid gap-4 lg:grid-cols-[3fr_2fr]">
         <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
           <SectionTitle>What you&apos;d need</SectionTitle>

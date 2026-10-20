@@ -40,6 +40,8 @@ export interface PathwayPage {
   facts: { label: string; value: string }[];
   options: { title: string; description: string; submit: string[]; fitsIf: string }[];
   timeline: { stage: string; text: string }[];
+  /** Optional table comparing schools or options, e.g. which schools want a prescreen for each instrument. */
+  comparison?: { title: string; note?: string; columns: string[]; rows: { label: string; cells: string[] }[] };
   needs: { id: string; label: string }[];
   callout: { title: string; body: string };
   myths: { myth: string; truth: string }[];
