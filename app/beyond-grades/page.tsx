@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Music, Trophy, Sparkles } from "lucide-react";
 import { livePathwaySlugs, pathwayCards, pathwayCategories, type PathwayCategoryId } from "@/lib/pathways";
 import PathwayExplorer from "@/components/PathwayExplorer";
+import SectionHeader from "@/components/SectionHeader";
 
 const description =
   "How music, sports and activities can add a second piece to a college application: what each path requires and when it happens.";
@@ -22,17 +23,12 @@ const CATEGORY_ICON: Record<PathwayCategoryId, typeof Music> = {
 export default function PathwaysPage() {
   return (
     <div className="space-y-10">
-      <section className="hero-surface overflow-hidden rounded-3xl border border-white/10 px-5 pb-7 pt-8 text-white shadow-card ring-1 ring-inset ring-white/5 sm:px-12 sm:pb-10 sm:pt-12">
-        <div className="max-w-3xl">
-          <h1 className="font-display text-balance text-[30px] font-extrabold leading-[1.08] tracking-tight sm:text-[48px] sm:leading-[1.04]">
-            Your talent can open a second track into college
-          </h1>
-          <p className="mt-3 max-w-2xl text-balance text-[15px] font-medium leading-snug hero-sub sm:mt-5 sm:text-xl">
-            Music, sports and the activities you care about can add a second piece to your application. Here&apos;s what each path
-            involves and when it happens.
-          </p>
-        </div>
-      </section>
+      <SectionHeader icon={Sparkles} label="Ways your talent counts" title="Beyond Grades">
+        <p>
+          Music, sports and the activities you care about can add a second piece to your application. Here&apos;s what each path
+          involves and when it happens.
+        </p>
+      </SectionHeader>
 
       <section className="rounded-2xl border-l-4 border-gold-500 bg-white p-5 shadow-card sm:p-6">
         <h2 className="text-base font-extrabold text-navy-900">Not a shortcut</h2>
