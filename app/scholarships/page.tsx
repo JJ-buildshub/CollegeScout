@@ -3,7 +3,8 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
-import { ExternalLink, MapPin, Search } from "lucide-react";
+import { Award, ExternalLink, MapPin, Search } from "lucide-react";
+import SectionHeader from "@/components/SectionHeader";
 import { areaMatch, lookupZip, type AreaMatch, type ZipLookup } from "@/lib/zipCounties";
 import {
   FEE_NOT_STATED,
@@ -305,22 +306,18 @@ export default function ScholarshipsPage() {
   );
 
   return (
-    <div className="mx-auto max-w-4xl space-y-6 py-4">
-      <div className="rounded-3xl bg-navy-900 p-6 text-white sm:p-8">
-        <p className="text-xs font-bold uppercase tracking-widest text-gold-400">Scholarships</p>
-        <h1 className="mt-2 font-display text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
-          Scholarships and awards you can earn <span className="text-gold-400">in high school</span>.
-        </h1>
-        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/80">
-          Some of these start in 9th grade. Most people find out senior year, when the biggest deadlines are already
-          gone. Pick your grade and see what you can start on today.
+    <div className="max-w-4xl space-y-6">
+      <SectionHeader icon={Award} label="Money for college" title="Scholarships">
+        <p>
+          Scholarships and awards you can earn in high school. Some of these start in 9th grade. Most people find out
+          senior year, when the biggest deadlines are already gone. Pick your grade and see what you can start on today.
         </p>
-        <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-1 text-xs font-semibold text-gold-400">
+        <ul className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-xs font-semibold text-gold-600">
           <li>No sign-up</li>
           <li>Nothing copied from a reel</li>
           <li>Verified, not viral</li>
         </ul>
-      </div>
+      </SectionHeader>
 
       <div className="space-y-3">
         <p className="text-sm font-extrabold text-navy-900">What grade are you in?</p>

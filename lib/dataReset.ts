@@ -12,14 +12,15 @@
  */
 import { profileWasCorrupted, resetProfile } from "./profile";
 import { collegeListWasCorrupted, resetCollegeList } from "./collegeList";
-import { resetCustomTasks, resetTaskProgress, taskProgressWasCorrupted } from "./tasks";
+import { resetCustomTasks, resetPathwayPlan, resetTaskProgress, taskProgressWasCorrupted } from "./tasks";
 
-/** Wipes the student profile, college list, and every generated/custom task's progress from this browser. Nothing else on the site is touched. */
+/** Wipes the student profile, college list, pathways added from Beyond Grades, and every generated/custom task's progress from this browser. Nothing else on the site is touched. */
 export function resetAllCollegeScoutData() {
   resetProfile();
   resetCollegeList();
   resetTaskProgress();
   resetCustomTasks();
+  resetPathwayPlan();
 }
 
 /** True if any shared store found unparseable JSON on load this session (see lib/store.ts). */

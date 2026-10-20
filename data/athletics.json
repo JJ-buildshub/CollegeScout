@@ -1,0 +1,5347 @@
+{
+ "source": "U.S. Department of Education, Equity in Athletics Data Analysis (EADA), EADA_2024-2025.zip (instLevel.xlsx, schools.xlsx), https://ope.ed.gov/athletics/#/datafile/list; association only, where EADA names none or lacks the school: IPEDS Institutional Characteristics survey, IC2024.csv, https://nces.ed.gov/ipeds/datacenter/data/IC2024.zip",
+ "year": "2024-25",
+ "byCollege": {
+  "american-university": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Basketball",
+    "Field hockey",
+    "Lacrosse",
+    "Soccer",
+    "Swimming and diving",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "amherst-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "arizona-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Ice hockey",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo",
+    "Wrestling"
+   ]
+  },
+  "arkansas-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Bowling",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "arkansas-tech-university": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "auburn-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Equestrian",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "azusa-pacific-university": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "babson-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Golf",
+    "Ice hockey",
+    "Lacrosse",
+    "Skiing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "ball-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "barnard-college": {
+   "association": "NCAA"
+  },
+  "bates-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Rowing",
+    "Skiing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "baylor-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Equestrian",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "binghamton-university": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "black-hills-state-university": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Rodeo",
+    "Soccer",
+    "Softball",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "boise-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "boston-college": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Lacrosse",
+    "Rowing",
+    "Sailing",
+    "Skiing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "boston-university": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Basketball",
+    "Field hockey",
+    "Golf",
+    "Ice hockey",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country"
+   ]
+  },
+  "bowdoin-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Lacrosse",
+    "Sailing",
+    "Skiing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "bowling-green-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Ice hockey",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "brandeis-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "brigham-young-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "brown-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Equestrian",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Gymnastics",
+    "Ice hockey",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Rowing",
+    "Sailing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball",
+    "Water polo",
+    "Wrestling"
+   ]
+  },
+  "cal-poly-humboldt": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Basketball",
+    "Cross country",
+    "Outdoor track and field",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "cal-poly-pomona": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Soccer",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "cal-poly-san-luis-obispo": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "cal-state-east-bay": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "cal-state-fullerton": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "cal-state-la": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Cross country",
+    "Golf",
+    "Indoor track and field",
+    "Outdoor track and field",
+    "Soccer",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "cal-state-northridge": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "california-institute-of-technology": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Outdoor track and field",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "california-state-university-san-bernardino": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Golf",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Volleyball"
+   ]
+  },
+  "campbell-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "carleton-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "carnegie-mellon-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "carroll-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Bowling",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "case-western-reserve-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Football",
+    "Indoor track and field",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "central-connecticut-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "central-michigan-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "chapman-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "chico-state": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Golf",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Volleyball"
+   ]
+  },
+  "claremont-mckenna-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "clemson-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "coastal-carolina-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "colby-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Rowing",
+    "Skiing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "colgate-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "college-of-charleston": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Cross country",
+    "Equestrian",
+    "Golf",
+    "Indoor track and field",
+    "Outdoor track and field",
+    "Sailing",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "colorado-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Basketball",
+    "Cross country",
+    "Ice hockey",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "colorado-state-university-fort-collins": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "columbia-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Archery",
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "connecticut-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Basketball",
+    "Cross country",
+    "Field hockey",
+    "Ice hockey",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Rowing",
+    "Sailing",
+    "Soccer",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "cornell-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Equestrian",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Ice hockey",
+    "Lacrosse",
+    "Rowing",
+    "Sailing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "creighton-university": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "csu-long-beach": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "cuny-bernard-m-baruch-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "cuny-brooklyn-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Basketball",
+    "Cross country",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "cuny-hunter-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Basketball",
+    "Fencing",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "cuny-lehman-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "dallas-baptist-university": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Soccer",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "dartmouth-college": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Equestrian",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Lacrosse",
+    "Rowing",
+    "Sailing",
+    "Skiing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "davidson-college": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "delaware-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Bowling",
+    "Equestrian",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "denison-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "drake-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "drexel-university": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Basketball",
+    "Field hockey",
+    "Golf",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming",
+    "Swimming and diving",
+    "Tennis",
+    "Wrestling"
+   ]
+  },
+  "duke-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "east-carolina-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "east-tennessee-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Indoor track and field",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "eastern-kentucky-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "elon-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "embry-riddle-aeronautical-university-prescott": {
+   "association": "NAIA",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "emerson-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "emory-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "emporia-state-university": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "fairfield-university": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Field hockey",
+    "Golf",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "fairmont-state-university": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "fashion-institute-of-technology": {
+   "association": "NJCAA",
+   "division": "Division III",
+   "sports": [
+    "Cross country",
+    "Outdoor track and field",
+    "Soccer",
+    "Swimming",
+    "Volleyball"
+   ]
+  },
+  "florida-agricultural-and-mechanical-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Bowling",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Indoor track and field",
+    "Outdoor track and field",
+    "Softball",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "florida-international-university": {
+   "association": "NCAA",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "florida-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "fresno-state": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Equestrian",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "george-mason-university": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "george-washington-university": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "georgetown-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Rowing",
+    "Sailing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "georgia-institute-of-technology": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "georgia-southern-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Rifle",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "georgia-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "grand-valley-state-university": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "grinnell-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Indoor track and field",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "hamilton-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "harvard-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Lacrosse",
+    "Rowing",
+    "Sailing",
+    "Skiing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo",
+    "Wrestling"
+   ]
+  },
+  "harvey-mudd-college": {
+   "association": "NCAA"
+  },
+  "hawaii-pacific-university": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Cross country",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "high-point-university": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "hillsdale-college": {
+   "association": "NCAA"
+  },
+  "howard-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Basketball",
+    "Bowling",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "illinois-institute-of-technology": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Soccer",
+    "Swimming",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "illinois-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "indiana-university-bloomington": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo",
+    "Wrestling"
+   ]
+  },
+  "indiana-university-indianapolis": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Basketball",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "iowa-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "johns-hopkins-university": {
+   "association": "NCAA",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Lacrosse",
+    "Soccer",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo",
+    "Wrestling"
+   ]
+  },
+  "kansas-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Rowing",
+    "Soccer",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "keene-state-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Golf",
+    "Ice hockey",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Swimming and diving",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "kennesaw-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "kent-state-university-at-kent": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "kenyon-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "lafayette-college": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "lawrence-technological-university": {
+   "association": "NAIA",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Bowling",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "lehigh-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "lewis-clark-state-college": {
+   "association": "NAIA",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Golf",
+    "Indoor track and field",
+    "Outdoor track and field",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "louisiana-state-university-and-agricultural-and-mechanical-college": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "loyola-marymount-university": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Cross country",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "macalester-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "marian-university": {
+   "association": "NAIA",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Bowling",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "marshall-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "marywood-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "massachusetts-institute-of-technology": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Rifle",
+    "Rowing",
+    "Sailing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "metropolitan-state-university-of-denver": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "miami-university-ohio": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "michigan-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Ice hockey",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "middle-tennessee-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "middlebury-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Skiing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "minnesota-state-university-mankato": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "mississippi-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "mississippi-university-for-women": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "missouri-state-university-springfield": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "montana-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Skiing",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "montclair-state-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Diving",
+    "Field hockey",
+    "Football",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Volleyball"
+   ]
+  },
+  "mount-holyoke-college": {
+   "association": "NCAA"
+  },
+  "muhlenberg-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "new-mexico-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "new-york-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Diving",
+    "Fencing",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "north-carolina-a-and-t-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Bowling",
+    "Football",
+    "Golf",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "north-carolina-state-university-at-raleigh": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "north-dakota-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "northeastern-state-university": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis"
+   ]
+  },
+  "northeastern-university": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Ice hockey",
+    "Rowing",
+    "Soccer",
+    "Swimming and diving",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "northern-arizona-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "northern-state-university": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "northwestern-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "northwood-university": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "oberlin-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Field hockey",
+    "Football",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "occidental-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "ohio-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Diving",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Ice hockey",
+    "Lacrosse",
+    "Rifle",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Synchronized swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "ohio-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "oklahoma-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Equestrian",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Wrestling"
+   ]
+  },
+  "oregon-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "pacific-northwest-college-of-art": {
+   "association": "NCAA"
+  },
+  "penn-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Ice hockey",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "pepperdine-university": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Cross country",
+    "Golf",
+    "Outdoor track and field",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "plymouth-state-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Ice hockey",
+    "Lacrosse",
+    "Skiing",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "pomona-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "portland-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Basketball",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Indoor track and field",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "pratt-institute-main": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Basketball",
+    "Equestrian",
+    "Soccer",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "princeton-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo",
+    "Wrestling"
+   ]
+  },
+  "purdue-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "rensselaer-polytechnic-institute": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country"
+   ]
+  },
+  "rhode-island-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Golf",
+    "Gymnastics",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "rice-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "rochester-institute-of-technology": {
+   "association": "NCAA",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Ice hockey",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "rowan-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "rutgers-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "sacramento-state": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "san-diego-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "san-francisco-state": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "san-jose-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "santa-clara-university": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Cross country",
+    "Golf",
+    "Indoor track and field",
+    "Outdoor track and field",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "savannah-college-of-art-and-design": {
+   "association": "NAIA",
+   "sports": [
+    "Bowling",
+    "Cross country",
+    "Equestrian",
+    "Fencing",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Swimming",
+    "Tennis"
+   ]
+  },
+  "scripps-college": {
+   "association": "NCAA"
+  },
+  "smith-college": {
+   "association": "NCAA"
+  },
+  "sonoma-state": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Golf",
+    "Indoor track and field",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Volleyball"
+   ]
+  },
+  "south-dakota-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Equestrian",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "southeastern-louisiana-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "southern-methodist-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Basketball",
+    "Equestrian",
+    "Football",
+    "Golf",
+    "Rowing",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "springfield-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "stanford-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Cross country",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Rowing",
+    "Sailing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Synchronized swimming",
+    "Tennis",
+    "Volleyball",
+    "Water polo",
+    "Wrestling"
+   ]
+  },
+  "state-university-of-new-york-at-cortland": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Ice hockey",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "state-university-of-new-york-at-new-paltz": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Field hockey",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "stevens-institute-of-technology": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Field hockey",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "stony-brook-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "suffolk-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Ice hockey",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "suny-at-purchase-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "swarthmore-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Badminton",
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "syracuse-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Ice hockey",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "temple-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Basketball",
+    "Cross country",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "texas-am-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Equestrian",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "texas-christian-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Equestrian",
+    "Football",
+    "Golf",
+    "Rifle",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "texas-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "texas-tech-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "the-college-of-new-jersey": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Wrestling"
+   ]
+  },
+  "the-university-of-montana": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "the-university-of-tampa": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Golf",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "the-university-of-tennessee-chattanooga": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Basketball",
+    "Beach volleyball",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "the-university-of-tennessee-knoxville": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "the-university-of-texas-at-arlington": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "the-university-of-texas-at-dallas": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Golf",
+    "Indoor track and field",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "the-university-of-texas-at-san-antonio": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "towson-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "troy-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "tufts-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Lacrosse",
+    "Rowing",
+    "Sailing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "tulane-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Bowling",
+    "Football",
+    "Golf",
+    "Sailing",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "uc-berkeley": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "uc-davis": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Equestrian",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "uc-irvine": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Golf",
+    "Indoor track and field",
+    "Outdoor track and field",
+    "Soccer",
+    "Tennis",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "uc-merced": {
+   "association": "NAIA",
+   "sports": [
+    "Basketball",
+    "Cross country",
+    "Outdoor track and field",
+    "Soccer",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "uc-riverside": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "uc-san-diego": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Golf",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "uc-santa-barbara": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Golf",
+    "Indoor track and field",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "uc-santa-cruz": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Basketball",
+    "Golf",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "ucla": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "united-states-military-academy": {
+   "association": "NCAA"
+  },
+  "university-at-buffalo": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-alabama": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-alabama-at-birmingham": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Bowling",
+    "Football",
+    "Golf",
+    "Rifle",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-alaska-anchorage": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Basketball",
+    "Cross country",
+    "Gymnastics",
+    "Ice hockey",
+    "Indoor track and field",
+    "Outdoor track and field",
+    "Skiing",
+    "Volleyball"
+   ]
+  },
+  "university-of-arizona": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-arkansas": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-central-arkansas": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-central-florida": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-central-oklahoma": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-chicago": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-cincinnati": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-colorado-boulder": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Skiing",
+    "Soccer",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-connecticut": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-dayton": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-delaware": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "university-of-denver": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Basketball",
+    "Golf",
+    "Gymnastics",
+    "Ice hockey",
+    "Lacrosse",
+    "Skiing",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "university-of-florida": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-georgia": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Equestrian",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-hawaii-at-hilo": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "university-of-hawaii-at-manoa": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Sailing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "university-of-houston": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-idaho": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-illinois-chicago": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-illinois-urbana-champaign": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-iowa": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-kansas": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-kentucky": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Rifle",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-louisiana-at-lafayette": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-louisville": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-maine": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Ice hockey",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Track and field and cross country"
+   ]
+  },
+  "university-of-mary": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-maryland": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-maryland-baltimore-county": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-massachusetts-amherst": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Ice hockey",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country"
+   ]
+  },
+  "university-of-memphis": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Rifle",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-miami": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Diving",
+    "Football",
+    "Golf",
+    "Rowing",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-michigan": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Ice hockey",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo",
+    "Wrestling"
+   ]
+  },
+  "university-of-minnesota-twin-cities": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Ice hockey",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-mississippi": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Rifle",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-missouri-columbia": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-nebraska-at-kearney": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-nebraska-at-omaha": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Golf",
+    "Ice hockey",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-nebraska-lincoln": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Bowling",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Rifle",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-nevada-las-vegas": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-nevada-reno": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Skiing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-new-hampshire": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Gymnastics",
+    "Ice hockey",
+    "Lacrosse",
+    "Skiing",
+    "Soccer",
+    "Swimming and diving",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-new-mexico": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-north-carolina-at-charlotte": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-north-carolina-chapel-hill": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-north-carolina-wilmington": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-north-dakota": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-north-texas": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-northern-iowa": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-notre-dame": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-oklahoma-norman-campus": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-oregon": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-pennsylvania": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-pittsburgh": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Gymnastics",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-redlands": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "university-of-rhode-island": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-richmond": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country"
+   ]
+  },
+  "university-of-rochester": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-san-diego": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-san-francisco": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Cross country",
+    "Golf",
+    "Outdoor track and field",
+    "Soccer",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-south-carolina-columbia": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Equestrian",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-south-dakota": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-south-florida": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Sailing",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-southern-california": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "university-of-southern-mississippi": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Indoor track and field",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-st-thomas": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-texas-at-austin": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-the-pacific": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Cross country",
+    "Golf",
+    "Outdoor track and field",
+    "Soccer",
+    "Softball",
+    "Swimming",
+    "Tennis",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "university-of-utah": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Skiing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-vermont": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Basketball",
+    "Field hockey",
+    "Ice hockey",
+    "Lacrosse",
+    "Skiing",
+    "Soccer",
+    "Swimming and diving",
+    "Track and field and cross country"
+   ]
+  },
+  "university-of-virginia": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-washington": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Beach volleyball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-west-georgia": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-wisconsin-madison": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "university-of-wisconsin-milwaukee": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "university-of-wyoming": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "valley-city-state-university": {
+   "association": "NAIA",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Softball",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "vanderbilt-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Bowling",
+    "Cross country",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country"
+   ]
+  },
+  "vassar-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Fencing",
+    "Field hockey",
+    "Golf",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Soccer",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "villanova-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Water polo"
+   ]
+  },
+  "virginia-commonwealth-university": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "virginia-polytechnic-institute-and-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Lacrosse",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "wake-forest-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "washington-and-lee-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Equestrian",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Soccer",
+    "Swimming",
+    "Tennis",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "washington-state-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Rowing",
+    "Soccer",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "washington-university-in-st-louis": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "wayne-state-university": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Fencing",
+    "Football",
+    "Golf",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "wellesley-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Basketball",
+    "Cross country",
+    "Fencing",
+    "Field hockey",
+    "Golf",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball"
+   ]
+  },
+  "wesleyan-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Lacrosse",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "west-virginia-state-university": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "west-virginia-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Rifle",
+    "Rowing",
+    "Soccer",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "western-kentucky-university": {
+   "association": "NCAA",
+   "division": "Division I (FBS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Football",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "western-washington-university": {
+   "association": "NCAA",
+   "division": "Division II",
+   "sports": [
+    "Basketball",
+    "Golf",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "wichita-state-university": {
+   "association": "NCAA",
+   "division": "Division I",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Bowling",
+    "Golf",
+    "Softball",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "william-and-mary": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Lacrosse",
+    "Soccer",
+    "Swimming",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "williams-college": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Ice hockey",
+    "Indoor track and field",
+    "Lacrosse",
+    "Outdoor track and field",
+    "Rowing",
+    "Skiing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "worcester-polytechnic-institute": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Field hockey",
+    "Football",
+    "Rowing",
+    "Soccer",
+    "Softball",
+    "Swimming and diving",
+    "Track and field and cross country",
+    "Volleyball",
+    "Wrestling"
+   ]
+  },
+  "yale-university": {
+   "association": "NCAA",
+   "division": "Division I (FCS)",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Fencing",
+    "Field hockey",
+    "Football",
+    "Golf",
+    "Gymnastics",
+    "Ice hockey",
+    "Lacrosse",
+    "Rowing",
+    "Sailing",
+    "Soccer",
+    "Softball",
+    "Squash",
+    "Swimming and diving",
+    "Tennis",
+    "Track and field and cross country",
+    "Volleyball"
+   ]
+  },
+  "yeshiva-university": {
+   "association": "NCAA",
+   "division": "Division III",
+   "sports": [
+    "Baseball",
+    "Basketball",
+    "Cross country",
+    "Fencing",
+    "Golf",
+    "Soccer",
+    "Softball",
+    "Tennis",
+    "Volleyball"
+   ]
+  }
+ }
+}

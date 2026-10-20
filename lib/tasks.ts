@@ -5,6 +5,7 @@ import { CURRENT_ESSAY_CYCLE, getApplicationInfo } from "./applications";
 import type { ApplicationRound, CollegeListEntry } from "./collegeList";
 import { ROUND_LABELS } from "./collegeList";
 import { createLocalStore } from "./store";
+import { getPathwayPage } from "./pathways";
 
 export interface PlanTask {
   id: string;
@@ -19,6 +20,8 @@ export interface PlanCategory {
   title: string;
   icon: string;
   tasks: PlanTask[];
+  /** Set for a Beyond Grades category: the pathway page its tasks come from. */
+  href?: string;
 }
 
 export interface ApplicationTaskGroup {
@@ -251,6 +254,57 @@ export function removeCustomTask(rawId: string, collegeId?: string) {
   });
 }
 
+// --- Beyond Grades pathways the student added to My Plan. Only the slugs are stored; each pathway's tasks
+// are read from data/pathways.json every time, so editing a pathway's checklist updates My Plan
+// without a migration, and a task's id (`pathway:<slug>:<needId>`) keeps its checked-off state.
+interface PathwayPlanState {
+  slugs: string[];
+}
+
+const pathwayPlanStore = createLocalStore<PathwayPlanState>("collegescout:pathway-plan", { slugs: [] }, 1, (raw) => {
+  const parsed = raw as Partial<PathwayPlanState> | undefined;
+  return { slugs: Array.isArray(parsed?.slugs) ? parsed.slugs.filter((s): s is string => typeof s === "string") : [] };
+});
+
+export function usePathwayPlan() {
+  const [state] = pathwayPlanStore.useStore();
+  return state;
+}
+
+export function addPathwayToPlan(slug: string) {
+  pathwayPlanStore.set((prev) => (prev.slugs.includes(slug) ? prev : { slugs: [...prev.slugs, slug] }));
+}
+
+export function removePathwayFromPlan(slug: string) {
+  pathwayPlanStore.set((prev) => ({ slugs: prev.slugs.filter((s) => s !== slug) }));
+}
+
+/** Wipes the added pathways, in this browser only. Part of "Reset my data." */
+export function resetPathwayPlan() {
+  pathwayPlanStore.reset();
+}
+
+/**
+ * One category per added pathway. Not tied to a grade, so My Plan shows these even before one is set.
+ * A slug whose page no longer exists is skipped. Takes the slugs from usePathwayPlan() rather than
+ * reading the store itself, so the first client render matches the server's (empty) one.
+ */
+export function buildPathwayCategories(slugs: string[]): PlanCategory[] {
+  return slugs.flatMap((slug) => {
+    const page = getPathwayPage(slug);
+    if (!page) return [];
+    return [
+      {
+        id: `pathway:${slug}`,
+        title: `${page.title} pathway`,
+        icon: "sparkles",
+        href: `/beyond-grades/${slug}`,
+        tasks: page.needs.map((need) => ({ id: `pathway:${slug}:${need.id}`, label: need.label })),
+      },
+    ];
+  });
+}
+
 // --- Task completion, the third shared record. The task list itself is always recomputed live
 // from the profile + college list + college data above; only which task ids are checked off is
 // persisted, the same pattern the old checklist used (see app/checklist/page.tsx history).
@@ -304,7 +358,7 @@ export function resetCustomTasks() {
 }
 
 export function taskProgressWasCorrupted(): boolean {
-  return taskProgressStore.wasCorrupted() || customTasksStore.wasCorrupted();
+  return taskProgressStore.wasCorrupted() || customTasksStore.wasCorrupted() || pathwayPlanStore.wasCorrupted();
 }
 
 /** Total not-yet-checked-off tasks across both My Plan sections — what the nav "My Plan · N tasks" counter shows. */

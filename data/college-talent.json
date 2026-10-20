@@ -1,0 +1,1088 @@
+{
+  "note": "Music and sports facts for individual colleges, shown in the Beyond Grades section of a college's profile. Each fact is the site's own wording of what its sources say; each source's evidence lines are that page's exact wording, and scripts/check-pathways.mjs confirms they are still there. `manual: true` marks a page that refuses automated requests and was read in a browser on `accessed`. A college with no entry gets no section.",
+  "checked": "2026-10-19",
+  "colleges": {
+    "university-of-rochester": {
+      "music": [
+        {
+          "text": "Eastman wants a prescreen video by Dec 1 from violin, piano, cello and flute applicants.",
+          "sources": [
+            {
+              "label": "Eastman Violin",
+              "url": "https://www.esm.rochester.edu/portfolio/violin/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "All undergraduate violin applicants must upload a preliminary audition video recording of the following repertoire before December 1st"
+              ]
+            },
+            {
+              "label": "Eastman Piano",
+              "url": "https://www.esm.rochester.edu/portfolio/piano/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "By December 1, all undergraduate piano performance applicants must upload a preliminary audition recording."
+              ]
+            },
+            {
+              "label": "Eastman Cello",
+              "url": "https://www.esm.rochester.edu/portfolio/violoncello/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "By December 1st, all applicants seeking a final audition must upload a preliminary video pre-screening recording."
+              ]
+            },
+            {
+              "label": "Eastman Flute",
+              "url": "https://www.esm.rochester.edu/portfolio/flute/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "By December 1st, all flute applicants must upload a pre-screen video."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Undergraduate oboe and guitar applicants don't need a prescreen recording.",
+          "sources": [
+            {
+              "label": "Eastman Oboe",
+              "url": "https://www.esm.rochester.edu/portfolio/oboe/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "There is no pre-screening recording required for BM oboe."
+              ]
+            },
+            {
+              "label": "Eastman Guitar",
+              "url": "https://www.esm.rochester.edu/portfolio/guitar/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "There is no pre-screening recording required for undergraduate guitar."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Audition dates differ by instrument. Oboe auditions, for example, run on Fridays from Jan 29 to Feb 26, 2027, or by video by Feb 1.",
+          "sources": [
+            {
+              "label": "Eastman Oboe",
+              "url": "https://www.esm.rochester.edu/portfolio/oboe/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "2027 Rochester audition dates: Fridays, January 29th, February 5th, 12th, 19th, and 26th.",
+                "applicants who choose to audition by video recording should upload their audition video by February 1st"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "the-new-england-conservatory-of-music": {
+      "music": [
+        {
+          "text": "Applications and prescreen recordings are due Dec 1.",
+          "sources": [
+            {
+              "label": "Harvard–NEC Dual Degree",
+              "url": "https://music.fas.harvard.edu/harvard-university-and-new-england-conservatory-music-dual-degree-program",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Application and pre-screening materials are due by December 1."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Every undergraduate pianist sends a prescreen recording first.",
+          "sources": [
+            {
+              "label": "NEC Piano",
+              "url": "https://necmusic.edu/auditions/piano/",
+              "accessed": "2026-10-19",
+              "manual": true,
+              "evidence": [
+                "All undergraduates applicants must submit the following prescreening repertoire:"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Recordings must be single takes with no editing.",
+          "sources": [
+            {
+              "label": "NEC Violin",
+              "url": "https://necmusic.edu/auditions/violin/",
+              "accessed": "2026-10-19",
+              "manual": true,
+              "evidence": [
+                "Each piece must be performed in a single, unedited take"
+              ]
+            },
+            {
+              "label": "NEC Oboe",
+              "url": "https://necmusic.edu/auditions/oboe/",
+              "accessed": "2026-10-19",
+              "manual": true,
+              "evidence": [
+                "All of your orchestral excerpts should be recorded in one take without edits."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "indiana-university-bloomington": {
+      "music": [
+        {
+          "text": "Music applicants send a separate Jacobs School of Music application, with prescreens due Dec 1, 2026.",
+          "sources": [
+            {
+              "label": "Indiana Jacobs Auditions",
+              "url": "https://music.indiana.edu/admissions/auditions/index.html",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Most are due on December 1, 2026, and must be uploaded and submitted to your Jacobs School of Music supplemental application."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Violin, piano, flute and guitar applicants send a prescreen. Undergraduate cello and trumpet applicants don't.",
+          "sources": [
+            {
+              "label": "Indiana Jacobs Strings",
+              "url": "https://music.indiana.edu/admissions/auditions/strings.html",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "All violin applicants must submit prescreen recordings via the JSOM supplemental application by December 1.",
+                "Cello prescreen is required for D.M. cello applicants only."
+              ]
+            },
+            {
+              "label": "Indiana Jacobs Piano",
+              "url": "https://music.indiana.edu/admissions/auditions/piano.html",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "All undergraduate applicants must submit prescreen recordings via the JSOM supplemental application by December 1."
+              ]
+            },
+            {
+              "label": "Indiana Jacobs Woodwinds",
+              "url": "https://music.indiana.edu/admissions/auditions/woodwinds.html",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "All flute applicants must submit prescreening recordings via the JSOM supplemental application by December 1."
+              ]
+            },
+            {
+              "label": "Indiana Jacobs Guitar",
+              "url": "https://music.indiana.edu/admissions/auditions/guitar.html",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "All guitar applicants must submit video prescreen recordings via the JSOM supplemental application by December 1."
+              ]
+            },
+            {
+              "label": "Indiana Jacobs Brass",
+              "url": "https://music.indiana.edu/admissions/auditions/brass.html",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "There is no prescreening for trumpet applicants."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Admitted music students are considered for merit scholarships automatically, and decisions arrive by April 1.",
+          "sources": [
+            {
+              "label": "Indiana Jacobs Auditions",
+              "url": "https://music.indiana.edu/admissions/auditions/index.html",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "all students admitted to the Jacobs School of Music are automatically considered for artistic merit scholarships",
+                "All admission and scholarship decisions are sent via email by April 1"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Students in any major can take private lessons or join an ensemble.",
+          "sources": [
+            {
+              "label": "Indiana Jacobs: music for non-majors",
+              "url": "https://music.indiana.edu/degrees-programs/non-majors/index.html",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "You can also take a performance class or private lessons, or join an ensemble."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "harvard-university": {
+      "music": [
+        {
+          "text": "Harvard doesn't require an audition, even for students who plan to study music.",
+          "sources": [
+            {
+              "label": "Harvard–NEC Dual Degree",
+              "url": "https://music.fas.harvard.edu/harvard-university-and-new-england-conservatory-music-dual-degree-program",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Harvard does not require an audition, including for students interested in pursuing music at Harvard."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "A five-year dual degree with NEC: you apply to both schools and must be admitted by each.",
+          "sources": [
+            {
+              "label": "Harvard–NEC Dual Degree",
+              "url": "https://music.fas.harvard.edu/harvard-university-and-new-england-conservatory-music-dual-degree-program",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "is a 5-year program leading to a Bachelor of Arts (AB) or Bachelor of Science (SB) from Harvard University and a Master of Music (MM) from New England Conservatory of Music",
+                "must be accepted independently at each institution before they can be considered for the dual-degree program"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Aid is based on need only. There are no music or other merit awards.",
+          "sources": [
+            {
+              "label": "Harvard: how aid works",
+              "url": "https://college.harvard.edu/financial-aid/how-aid-works",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "There are no merit-based awards"
+              ]
+            }
+          ]
+        }
+      ],
+      "sports": [
+        {
+          "text": "Ivy League schools give athletes aid based on financial need only, never on athletic ability.",
+          "sources": [
+            {
+              "label": "Joint Ivy Statement",
+              "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "any financial aid for student-athletes will be awarded and renewed on the sole basis of economic need with no differentiation in amount or in kind (e.g., packaging) based on athletic ability or participation"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Coaches can get admissions feedback on a recruit from July 1 after junior year, and likely letters can come from October 1 of senior year.",
+          "sources": [
+            {
+              "label": "Joint Ivy Statement",
+              "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Ivy League Admissions Offices will provide feedback to coaches on an individual student's application no earlier than July 1 following the junior year in high school.",
+                "From October 1 through March 15 of senior year, an admissions office may issue probabilistic communications, in writing, to recruited student-athlete applicants who have submitted all required application materials."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "yale-university": {
+      "music": [
+        {
+          "text": "Music recordings are optional, and Yale reviews them only for applicants who already look strong.",
+          "sources": [
+            {
+              "label": "Yale Supplementary Materials",
+              "url": "https://admissions.yale.edu/supplementary",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "for applicants whose required application materials demonstrate they are strong candidates for admission",
+                "Most successful Yale applicants submit only the required application materials."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Supplements are due Nov 8 for early action and Jan 9 for regular decision.",
+          "sources": [
+            {
+              "label": "Yale Supplementary Materials",
+              "url": "https://admissions.yale.edu/supplementary",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Early Action November 8 Regular Decision January 9"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Yale's B.A./M.M. program holds its own auditions through the School of Music.",
+          "sources": [
+            {
+              "label": "Yale Supplementary Materials",
+              "url": "https://admissions.yale.edu/supplementary",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "The auditions held by the Yale School of Music for admission to the B.A./M.M. program are not related to the submission of supplementary music material as part of a Yale College application."
+              ]
+            }
+          ]
+        }
+      ],
+      "sports": [
+        {
+          "text": "Ivy League schools give athletes aid based on financial need only, never on athletic ability.",
+          "sources": [
+            {
+              "label": "Joint Ivy Statement",
+              "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "any financial aid for student-athletes will be awarded and renewed on the sole basis of economic need with no differentiation in amount or in kind (e.g., packaging) based on athletic ability or participation"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Coaches can get admissions feedback on a recruit from July 1 after junior year, and likely letters can come from October 1 of senior year.",
+          "sources": [
+            {
+              "label": "Joint Ivy Statement",
+              "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Ivy League Admissions Offices will provide feedback to coaches on an individual student's application no earlier than July 1 following the junior year in high school.",
+                "From October 1 through March 15 of senior year, an admissions office may issue probabilistic communications, in writing, to recruited student-athlete applicants who have submitted all required application materials."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "oberlin-college": {
+      "music": [
+        {
+          "text": "To be considered for the BM+BA Double Degree, apply to both Oberlin Conservatory and the College of Arts and Sciences; applying to the Conservatory alone is not enough.",
+          "sources": [
+            {
+              "label": "Conservatory undergraduate applicants",
+              "url": "https://www.oberlin.edu/admissions-and-aid/conservatory/undergraduate-applicants",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "be sure to select both Oberlin Conservatory of Music and Oberlin College of Arts and Sciences. You must submit an application to each school to be considered for the Double Degree Program."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "All Conservatory applicants must submit screening materials, due November 4 for Early Decision and December 4 for Regular Decision; a recorded audition is offered except in Music Theater.",
+          "sources": [
+            {
+              "label": "Conservatory undergraduate applicants",
+              "url": "https://www.oberlin.edu/admissions-and-aid/conservatory/undergraduate-applicants",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Applicants in all areas are required to submit screening materials for both the Regular Decision and Early Decision rounds.",
+                "Screening Materials November 4 December 4",
+                "We offer a recorded audition option (except in Music Theater)"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Oberlin says nearly all admitted Conservatory and Double Degree students received merit scholarships in 2025-2026, and all applicants are reviewed for merit aid.",
+          "sources": [
+            {
+              "label": "Conservatory undergraduate applicants",
+              "url": "https://www.oberlin.edu/admissions-and-aid/conservatory/undergraduate-applicants",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "In 2025-2026, Oberlin awarded nearly 100% of our admitted conservatory and double-degree students merit scholarships.",
+                "All applicants will be reviewed for merit-based financial aid."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "johns-hopkins-university": {
+      "music": [
+        {
+          "text": "For the Peabody/Hopkins Double Degree, you submit separate applications to both schools and must answer 'Yes' to the Double Degree question on each.",
+          "sources": [
+            {
+              "label": "Peabody Double Degree",
+              "url": "https://apply.jhu.edu/academics/special-programs/peabody-double-degree-in-music-or-fine-arts/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Submit separate applications to the university and the Peabody Institute.",
+                "On both the university and Peabody applications, you must answer 'Yes' when asked 'Do you intend to apply to the Peabody/Homewood Double Degree Program'."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Peabody Early Decision auditions are on November 30, 2026, and Regular Decision auditions run February 14-22, 2027; Peabody has no Early Decision II.",
+          "sources": [
+            {
+              "label": "Peabody Double Degree",
+              "url": "https://apply.jhu.edu/academics/special-programs/peabody-double-degree-in-music-or-fine-arts/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Early Decision auditions take place on November 30, 2026.",
+                "Peabody does not offer an Early Decision II plan.",
+                "Regular Decision auditions take place February 14-22, 2027."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Double Degree students get financial aid through Hopkins' Homewood campus and are not eligible for Peabody merit scholarships; the program typically takes at least five years.",
+          "sources": [
+            {
+              "label": "Peabody Double Degree",
+              "url": "https://apply.jhu.edu/academics/special-programs/peabody-double-degree-in-music-or-fine-arts/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Double Degree students receive all financial aid through the Homewood Campus and are not eligible for merit-based scholarships through Peabody.",
+                "Typically, the Double Degree program takes a minimum of five years to complete."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "brown-university": {
+      "music": [
+        {
+          "text": "Brown accepts an optional music supplement through SlideRoom, due November 4 for Early Decision and QuestBridge Match and January 7 for Regular Decision.",
+          "sources": [
+            {
+              "label": "Supplementary Materials",
+              "url": "https://admission.brown.edu/first-year/supplementary-materials",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "If you are accomplished in music or visual art, you may include additional supplements with your application in the Common Application through SlideRoom.",
+                "you must create your SlideRoom account and submit your material on or before November 4 11:59 PM EST (Early Decision and QuestBridge Match applicants) or January 7 11:59 PM EST (Regular Decision applicants)."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Music recordings should total no more than 15 minutes, usually on your primary instrument only; the $5 SlideRoom fee is waived with a Common App fee waiver.",
+          "sources": [
+            {
+              "label": "Music Submission Details",
+              "url": "https://admission.brown.edu/first-year/supplementary-materials/music",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "The total length of recordings should not exceed 15 minutes.",
+                "In most circumstances, students should submit materials for only their primary instrument or method of music-making.",
+                "A $5 non-refundable processing fee is required at the time of submission. If you have a Common Application fee waiver, the SlideRoom fee will automatically be waived."
+              ]
+            }
+          ]
+        }
+      ],
+      "sports": [
+        {
+          "text": "Ivy League schools give athletes aid based on financial need only, never on athletic ability.",
+          "sources": [
+            {
+              "label": "Joint Ivy Statement",
+              "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "any financial aid for student-athletes will be awarded and renewed on the sole basis of economic need with no differentiation in amount or in kind (e.g., packaging) based on athletic ability or participation"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Coaches can get admissions feedback on a recruit from July 1 after junior year, and likely letters can come from October 1 of senior year.",
+          "sources": [
+            {
+              "label": "Joint Ivy Statement",
+              "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Ivy League Admissions Offices will provide feedback to coaches on an individual student's application no earlier than July 1 following the junior year in high school.",
+                "From October 1 through March 15 of senior year, an admissions office may issue probabilistic communications, in writing, to recruited student-athlete applicants who have submitted all required application materials."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "university-of-michigan": {
+      "music": [
+        {
+          "text": "SMTD applicants submit a Common Application plus a separate SMTD Artistic Profile; the undergraduate deadline is December 1.",
+          "sources": [
+            {
+              "label": "SMTD Artistic Profile",
+              "url": "https://admissions.smtd.umich.edu/apply/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Be sure to also submit your required academic application: Undergraduate applicants must submit a Common Application",
+                "The application deadline for all undergraduate degrees and most graduate degrees is December 1."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Applying to more than one SMTD program means submitting a separate Artistic Profile for each one.",
+          "sources": [
+            {
+              "label": "SMTD Artistic Profile",
+              "url": "https://admissions.smtd.umich.edu/apply/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "If you are applying to multiple programs within SMTD (i.e. Musical Theatre and Acting), you must submit a separate Artistic Profile for each program."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "bowdoin-college": {
+      "music": [
+        {
+          "text": "Bowdoin's optional Arts Supplement is reviewed by music faculty, who send comments to admissions; music submissions mainly gauge fit for departmental ensembles.",
+          "sources": [
+            {
+              "label": "Arts Supplement",
+              "url": "https://www.bowdoin.edu/admissions/apply/arts-supplement/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Your submission will be reviewed by the appropriate faculty in the Music, Visual Arts, and/or Theater and Dance departments, who will submit commentary to the Office of Admissions on your behalf.",
+                "Music supplements are primarily used to gauge an applicant's fit for departmental ensembles."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Send two to three performance samples totaling 10-15 minutes, plus a music résumé; Arts Supplement deadlines are Nov. 15 (ED1) and Jan. 13 (ED2 and RD).",
+          "sources": [
+            {
+              "label": "Arts Supplement",
+              "url": "https://www.bowdoin.edu/admissions/apply/arts-supplement/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "The department recommends submitting two to three performance samples of no more than 10-15 minutes (total)",
+                "In addition to performance samples, you must include a résumé or C.V. that details your musical experience.",
+                "Early Decision 1 Nov. 15 Early Decision 2 Jan. 13 Regular Decision Jan. 13"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "university-of-north-carolina-chapel-hill": {
+      "music": [
+        {
+          "text": "UNC admissions does not review art or music supplements, and its music major is open to any enrolling student regardless of prior experience.",
+          "sources": [
+            {
+              "label": "Admissions FAQ: art or music supplement",
+              "url": "https://admissions.unc.edu/faqs/can-i-submit-an-art-or-music-supplement-with-my-application/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "We don't admit students to our music or art majors based on their prior skills or experience - these majors are available to any enrolling student who has an interest.",
+                "Due to the volume of applications received, the admissions committee is unable to review art or music supplements."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Students interested in majoring in music can audition for the Kenan Music Scholars Program, a four-year renewable scholarship covering tuition, fees, room and board.",
+          "sources": [
+            {
+              "label": "Admissions FAQ: art or music supplement",
+              "url": "https://admissions.unc.edu/faqs/can-i-submit-an-art-or-music-supplement-with-my-application/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Kenan Music Scholars Program : The Department of Music offers a four-year renewable scholarship covering tuition, fees, room and board. Students interested in majoring in music can audition for these scholarships while applying to Carolina."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "stanford-university": {
+      "music": [
+        {
+          "text": "Stanford's Arts Portfolio in music is optional and reviewed at the discretion of admissions and arts faculty; submitting one does not require an arts major.",
+          "sources": [
+            {
+              "label": "The Arts Portfolio in Music",
+              "url": "https://music.stanford.edu/admissions/prospective-undergraduate-students/arts-portfolio-music",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "The Arts Portfolio is entirely optional and will be reviewed at the discretion of the Office of Undergraduate Admission and the arts faculty.",
+                "Students who submit an Arts Portfolio are not required to major in the arts at Stanford."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "The music department does not offer live auditions for the Arts Portfolio, and says it cannot evaluate traditional Indian music.",
+          "sources": [
+            {
+              "label": "The Arts Portfolio in Music",
+              "url": "https://music.stanford.edu/admissions/prospective-undergraduate-students/arts-portfolio-music",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "We regret that we are unable to offer live auditions.",
+                "We regret that we are unable to evaluate traditional Indian music."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "dartmouth-college": {
+      "music": [
+        {
+          "text": "Submit Dartmouth's arts portfolio through the Application Portal after applying: within one week of the Nov. 1 ED deadline, or two weeks of the Jan. 1 RD deadline.",
+          "sources": [
+            {
+              "label": "Admissions Glossary: Portfolio",
+              "url": "https://admissions.dartmouth.edu/glossary-term/portfolio",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Applicants for the Early Decision deadline on November 1 have one week after the Early Decision deadline to submit their portfolio, and applicants for the Regular Decision deadline on January 1 have two weeks from the Regular Decision deadline to submit their portfolio.",
+                "Applicants who wish to submit a portfolio will be able to do so through their Application Portal after they have submitted their completed application."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Faculty may examine music portfolios, but Dartmouth says there is no guarantee an expert will be able to evaluate them.",
+          "sources": [
+            {
+              "label": "Admissions Glossary: Portfolio",
+              "url": "https://admissions.dartmouth.edu/glossary-term/portfolio",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Portfolios may be examined by faculty members from a relevant department, but there is no guarantee that an expert will be able to evaluate these materials."
+              ]
+            }
+          ]
+        }
+      ],
+      "sports": [
+        {
+          "text": "Ivy League schools give athletes aid based on financial need only, never on athletic ability.",
+          "sources": [
+            {
+              "label": "Joint Ivy Statement",
+              "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "any financial aid for student-athletes will be awarded and renewed on the sole basis of economic need with no differentiation in amount or in kind (e.g., packaging) based on athletic ability or participation"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Coaches can get admissions feedback on a recruit from July 1 after junior year, and likely letters can come from October 1 of senior year.",
+          "sources": [
+            {
+              "label": "Joint Ivy Statement",
+              "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Ivy League Admissions Offices will provide feedback to coaches on an individual student's application no earlier than July 1 following the junior year in high school.",
+                "From October 1 through March 15 of senior year, an admissions office may issue probabilistic communications, in writing, to recruited student-athlete applicants who have submitted all required application materials."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "middlebury-college": {
+      "music": [
+        {
+          "text": "Middlebury accepts optional arts supplements through SlideRoom; music applicants should send no more than 10-15 minutes, with solo performances preferred.",
+          "sources": [
+            {
+              "label": "Application Instructions and Deadlines",
+              "url": "https://www.middlebury.edu/college/admissions/application-instructions-and-deadlines",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "If you would like to have your special talent in one or more of the arts considered as a part of the admissions process, submit optional supplemental material using SlideRoom.",
+                "Instrumental/Voice: Solo performances preferred. Submit no more than 10-15 minutes of samples that demonstrate your musicality, intonation, phrasing, and repertoire."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Private lessons are open to non-majors with no audition; they carry no credit and cost $550 per fall or spring series, with fee breaks for some students.",
+          "sources": [
+            {
+              "label": "Music: Private Lessons",
+              "url": "https://www.middlebury.edu/college/academics/music/private-lessons",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "There is no audition required to participate in private music lessons.",
+                "Lessons are considered extracurricular, do not confer course credit, and are billed directly to your Middlebury student account.",
+                "fall and spring semesters, $550 each",
+                "You will qualify for half-price lessons if you are a declared music minor"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "the-juilliard-school": {
+      "music": [
+        {
+          "text": "Juilliard's college applications open September 1, and the deadline for all music degrees (except the AD in Opera Studies) is Tuesday, December 1.",
+          "sources": [
+            {
+              "label": "Admissions",
+              "url": "https://www.juilliard.edu/admissions",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Applications for college-level degrees and programs at The Juilliard School open on September 1.",
+                "Tue, Dec 1 BFA and MFA in Acting (non-prescreened applicants) BFA in Dance All Music Degrees (except AD Opera Studies)"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Juilliard says more than 90 percent of its students receive scholarships or financial support.",
+          "sources": [
+            {
+              "label": "Admissions",
+              "url": "https://www.juilliard.edu/admissions",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "More than 90 percent of students receive scholarships or financial support."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "manhattan-school-of-music": {
+      "music": [
+        {
+          "text": "Prescreen videos are due December 1, and letters and transcripts by January 15.",
+          "sources": [
+            {
+              "label": "What You'll Need to Apply",
+              "url": "https://www.msmnyc.edu/admission/what-youll-need-to-apply-to-msm-college/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Prescreening videos are uploaded directly to the Digital Portfolio in your online application, due December 1.",
+                "All supplemental documents are due by January 15."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Audition week for Classical, Jazz, Orchestral, and Contemporary Performance applicants is February 27-March 6, held on campus.",
+          "sources": [
+            {
+              "label": "Admission FAQ",
+              "url": "https://www.msmnyc.edu/admission/admission-faq/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Audition week for Classical, Jazz, Orchestral, and Contemporary Performance applicants take place from February 27-March 6. Auditions are held on campus in one of our many halls."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "berklee-college-of-music": {
+      "music": [
+        {
+          "text": "For fall entry, Berklee's nonbinding Early Action deadline is November 1 and Regular Action is January 15, with the same scholarship consideration for both.",
+          "sources": [
+            {
+              "label": "Undergraduate Admissions Deadlines",
+              "url": "https://college.berklee.edu/admissions/undergraduate/deadlines",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Early Action is nonbinding, and applicants receive the same scholarship consideration as Regular Action.",
+                "Application and supporting documents due : November 1",
+                "Application and supporting documents due: December 1 for summer semester; January 15 for fall semester"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Bachelor of Music applicants need a live audition and interview, and are automatically considered for merit scholarships during them.",
+          "sources": [
+            {
+              "label": "Audition and Interview",
+              "url": "https://college.berklee.edu/admissions/undergraduate/auditionandinterview",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "requires a live audition and interview.",
+                "You are automatically considered for Berklee's merit-based scholarships during your audition and/or interview."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "university-of-southern-california": {
+      "music": [
+        {
+          "text": "USC Thornton applicants must finish both the USC application and the Thornton SlideRoom portfolio by December 1, 2026, for fall entry.",
+          "sources": [
+            {
+              "label": "Thornton Undergraduate Admissions",
+              "url": "https://music.usc.edu/admissions-undergraduate/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Apply by December 1 (USC application & SlideRoom portfolio)",
+                "Fall Deadline: December 1, 2026"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Thornton's Strings page says Early Decision and Early Action are not available for undergraduate Thornton majors, and string prescreens must be unedited video.",
+          "sources": [
+            {
+              "label": "Strings (Undergraduate) requirements",
+              "url": "https://music.usc.edu/admission/appreqs/strings-undergraduate/",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Early Decision (ED) and Early Action (EA) are not available for undergraduate Thornton majors.",
+                "All string applicants are required to submit unedited video recordings to the SlideRoom portal for prescreening purposes by the application deadline. Audio only recordings will not be accepted."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "northwestern-university": {
+      "music": [
+        {
+          "text": "The Bienen School Supplement, including any prescreening, is due October 15 for Early Decision and December 1 for Regular Decision.",
+          "sources": [
+            {
+              "label": "Undergraduate Application & Timeline",
+              "url": "https://music.northwestern.edu/admission/undergraduate/application-timeline",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "October 15 ALL ED and QuestBridge applicants: Bienen School Supplement submission deadline",
+                "December 1 ALL RD applicants: Bienen School Supplement submission deadline (this includes prescreening materials if applicable, BA materials, and BM composition portfolios)"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Regular Decision on-campus auditions are February 5-14, and admitted Bienen students must stay enrolled in the music major for at least one full year.",
+          "sources": [
+            {
+              "label": "Undergraduate Application & Timeline",
+              "url": "https://music.northwestern.edu/admission/undergraduate/application-timeline",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "February 5-14 On-campus auditions",
+                "Applicants that accept their offer of admission to the Bienen School of Music will be expected to maintain their music major enrollment",
+                "for a minimum of one full academic year."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Dual-degree and double-major applicants indicate this on their application and receive a single decision from Northwestern's undergraduate admission office.",
+          "sources": [
+            {
+              "label": "Undergraduate Application & Timeline",
+              "url": "https://music.northwestern.edu/admission/undergraduate/application-timeline",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Applicants interested in pursuing a double major or dual degree should indicate this on the Common Application",
+                "you will receive a single admission decision from Northwestern University's Office of Undergraduate Admission."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "columbia-university": {
+      "music": [
+        {
+          "text": "Columbia accepts optional music supplements through SlideRoom, due November 1 for Early Decision and January 1 for Regular Decision.",
+          "sources": [
+            {
+              "label": "Supplementary Materials",
+              "url": "https://undergrad.admissions.columbia.edu/apply/process/supplementary-materials",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Music and Visual Arts supplements can be submitted through Columbia's SlideRoom portal.",
+                "Early Decision applicants must submit their supplements by November 1 and Regular Decision applicants must submit their supplements by January 1."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Columbia has no live music auditions for admission; auditions for private lessons and selective ensembles are held for enrolled students each fall.",
+          "sources": [
+            {
+              "label": "Supplementary Materials",
+              "url": "https://undergrad.admissions.columbia.edu/apply/process/supplementary-materials",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Live music auditions are not part of Columbia's admissions process, but auditions for private lessons and certain selective ensembles, troupes and various productions are held for enrolled students at the start of each academic year."
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Columbia says it cannot guarantee that supplementary materials will be reviewed, since they are not required.",
+          "sources": [
+            {
+              "label": "Supplementary Materials",
+              "url": "https://undergrad.admissions.columbia.edu/apply/process/supplementary-materials",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "we can provide no guarantee that all materials will be reviewed or evaluated, as they are not required for the admission process."
+              ]
+            }
+          ]
+        }
+      ],
+      "sports": [
+        {
+          "text": "Ivy League schools give athletes aid based on financial need only, never on athletic ability.",
+          "sources": [
+            {
+              "label": "Joint Ivy Statement",
+              "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "any financial aid for student-athletes will be awarded and renewed on the sole basis of economic need with no differentiation in amount or in kind (e.g., packaging) based on athletic ability or participation"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Coaches can get admissions feedback on a recruit from July 1 after junior year, and likely letters can come from October 1 of senior year.",
+          "sources": [
+            {
+              "label": "Joint Ivy Statement",
+              "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Ivy League Admissions Offices will provide feedback to coaches on an individual student's application no earlier than July 1 following the junior year in high school.",
+                "From October 1 through March 15 of senior year, an admissions office may issue probabilistic communications, in writing, to recruited student-athlete applicants who have submitted all required application materials."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "cornell-university": {
+      "sports": [
+        {
+          "text": "Ivy League schools give athletes aid based on financial need only, never on athletic ability.",
+          "sources": [
+            {
+              "label": "Joint Ivy Statement",
+              "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "any financial aid for student-athletes will be awarded and renewed on the sole basis of economic need with no differentiation in amount or in kind (e.g., packaging) based on athletic ability or participation"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Coaches can get admissions feedback on a recruit from July 1 after junior year, and likely letters can come from October 1 of senior year.",
+          "sources": [
+            {
+              "label": "Joint Ivy Statement",
+              "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Ivy League Admissions Offices will provide feedback to coaches on an individual student's application no earlier than July 1 following the junior year in high school.",
+                "From October 1 through March 15 of senior year, an admissions office may issue probabilistic communications, in writing, to recruited student-athlete applicants who have submitted all required application materials."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "princeton-university": {
+      "sports": [
+        {
+          "text": "Ivy League schools give athletes aid based on financial need only, never on athletic ability.",
+          "sources": [
+            {
+              "label": "Joint Ivy Statement",
+              "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "any financial aid for student-athletes will be awarded and renewed on the sole basis of economic need with no differentiation in amount or in kind (e.g., packaging) based on athletic ability or participation"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Coaches can get admissions feedback on a recruit from July 1 after junior year, and likely letters can come from October 1 of senior year.",
+          "sources": [
+            {
+              "label": "Joint Ivy Statement",
+              "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Ivy League Admissions Offices will provide feedback to coaches on an individual student's application no earlier than July 1 following the junior year in high school.",
+                "From October 1 through March 15 of senior year, an admissions office may issue probabilistic communications, in writing, to recruited student-athlete applicants who have submitted all required application materials."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "university-of-pennsylvania": {
+      "sports": [
+        {
+          "text": "Ivy League schools give athletes aid based on financial need only, never on athletic ability.",
+          "sources": [
+            {
+              "label": "Joint Ivy Statement",
+              "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "any financial aid for student-athletes will be awarded and renewed on the sole basis of economic need with no differentiation in amount or in kind (e.g., packaging) based on athletic ability or participation"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Coaches can get admissions feedback on a recruit from July 1 after junior year, and likely letters can come from October 1 of senior year.",
+          "sources": [
+            {
+              "label": "Joint Ivy Statement",
+              "url": "https://admissions.cornell.edu/policies/joint-ivy-statement",
+              "accessed": "2026-10-19",
+              "evidence": [
+                "Ivy League Admissions Offices will provide feedback to coaches on an individual student's application no earlier than July 1 following the junior year in high school.",
+                "From October 1 through March 15 of senior year, an admissions office may issue probabilistic communications, in writing, to recruited student-athlete applicants who have submitted all required application materials."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

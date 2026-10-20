@@ -22,11 +22,14 @@ import ApplicationRequirements from "./ApplicationRequirements";
 import AdmissionOverview from "./AdmissionOverview";
 import CampusFitStats from "./CampusFitStats";
 import MajorsCard from "./MajorsCard";
+import CollegeTalentSection from "./CollegeTalentSection";
+import type { CollegeTalent } from "@/lib/collegeTalent";
 
 const SECTIONS = [
   { id: "overview", label: "Preparation" },
   { id: "admissions", label: "Admissions" },
   { id: "apply", label: "Applying" },
+  { id: "beyond", label: "Beyond Grades" },
   { id: "academics", label: "Academics" },
   { id: "cost", label: "Cost" },
   { id: "aid", label: "Financial Aid" },
@@ -48,7 +51,15 @@ const SECTION_BAR_TOP = NAV_HEIGHT + HEADER_COMPACT_HEIGHT;
 const SECTION_BAR_HEIGHT_FALLBACK = 56;
 const SCROLL_OFFSET = SECTION_BAR_TOP + SECTION_BAR_HEIGHT_FALLBACK;
 
-export default function CollegeProfileDashboard({ college, majors }: { college: College; majors: SchoolMajors }) {
+export default function CollegeProfileDashboard({
+  college,
+  majors,
+  talent,
+}: {
+  college: College;
+  majors: SchoolMajors;
+  talent: CollegeTalent | null;
+}) {
   const router = useRouter();
   // Whether the full banner has scrolled out of view, which is when the compact
   // school bar fades in. Driven by an IntersectionObserver, not a scroll
@@ -61,7 +72,8 @@ export default function CollegeProfileDashboard({ college, majors }: { college: 
   const [showBar, setShowBar] = useState(false);
   // Schools added from bulk public data have no curated preparation list; the section and its tab are left out rather than shown empty.
   const hasPrep = college.idealStudentArchetype.highSchoolCoursePrereqs.length > 0;
-  const sections = SECTIONS.filter((s) => s.id !== "overview" || hasPrep);
+  // Beyond Grades, likewise, only for schools with sourced music or sports facts.
+  const sections = SECTIONS.filter((s) => (s.id !== "overview" || hasPrep) && (s.id !== "beyond" || talent));
   const [activeId, setActiveId] = useState(sections[0].id);
   const { state: collegeListState } = useCollegeList();
   const listEntry = collegeListState.entries[college.id];
@@ -484,6 +496,14 @@ export default function CollegeProfileDashboard({ college, majors }: { college: 
               <ApplicationRequirements college={college} />
             </div>
           </section>
+
+          {/* Beyond Grades: what this school asks of musicians and athletes */}
+          {talent && (
+            <section id="beyond" style={sectionScroll}>
+              <h2 className="text-lg font-bold text-navy-900">Beyond Grades</h2>
+              <CollegeTalentSection talent={talent} />
+            </section>
+          )}
 
           {/* Academics */}
           <section id="academics" style={sectionScroll}>
