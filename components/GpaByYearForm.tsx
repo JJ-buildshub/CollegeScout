@@ -17,11 +17,13 @@ function YearRow({
   onChange: (entry: YearGpa) => void;
 }) {
   return (
-    <div className="grid grid-cols-1 gap-3 rounded-xl border border-slate-200 p-3 sm:grid-cols-[1fr_auto_auto]">
-      <div className="flex items-center gap-2 text-sm font-semibold text-navy-900">
+    // Same fixed columns in every row, so the In progress badge can't widen one
+    // row's label column and push its inputs out of line (or out of the card).
+    <div className="grid grid-cols-2 items-end gap-3 rounded-xl border border-slate-200 p-3 sm:grid-cols-[5.5rem_minmax(0,1fr)_minmax(0,1fr)]">
+      <div className="col-span-2 flex flex-wrap items-center gap-2 text-sm font-semibold text-navy-900 sm:col-span-1 sm:flex-col sm:items-start sm:gap-1 sm:self-center">
         {GRADE_LABELS[grade].split(" — ")[0]}
         {inProgress && (
-          <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-bold text-amber-700">In progress</span>
+          <span className="whitespace-nowrap rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-bold text-amber-700">In progress</span>
         )}
       </div>
       <label className="block">
@@ -35,7 +37,7 @@ function YearRow({
           value={entry.unweighted ?? ""}
           placeholder="e.g. 3.70"
           onChange={(e) => onChange({ ...entry, unweighted: e.target.value === "" ? null : parseFloat(e.target.value) })}
-          className="mt-1 w-28 rounded-lg border border-slate-200 px-2.5 py-2 text-sm outline-none focus:ring-2 focus:ring-gold-500"
+          className="mt-1 w-full max-w-[7rem] rounded-lg border border-slate-200 px-2.5 py-2 text-sm outline-none focus:ring-2 focus:ring-gold-500"
         />
       </label>
       <label className="block">
@@ -49,7 +51,7 @@ function YearRow({
           value={entry.weighted ?? ""}
           placeholder="Optional"
           onChange={(e) => onChange({ ...entry, weighted: e.target.value === "" ? null : parseFloat(e.target.value) })}
-          className="mt-1 w-28 rounded-lg border border-slate-200 px-2.5 py-2 text-sm outline-none focus:ring-2 focus:ring-gold-500"
+          className="mt-1 w-full max-w-[7rem] rounded-lg border border-slate-200 px-2.5 py-2 text-sm outline-none focus:ring-2 focus:ring-gold-500"
         />
       </label>
     </div>
