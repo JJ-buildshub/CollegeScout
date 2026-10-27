@@ -149,9 +149,14 @@ jobs:
             echo "\`data/applications.json\`, \`data/system-requirements.json\`,"
             echo "\`data/scholarships.json\`, \`data/state-aid.json\`, \`data/pathways.json\` and \`data/colleges.json\`."
           } > body.md
+          # Assigned to the repo owner so GitHub notifies them (email and the
+          # mobile app). An issue the bot opens with no assignee notifies no
+          # one, which is how the Oct 19 and Oct 26 issues went unnoticed.
           gh issue create \
             --title "Data decay: a college changed a page we quote ($(date -u +%Y-%m-%d))" \
             --body-file body.md \
+            --assignee "${{ github.repository_owner }}" \
             --label "data" || gh issue create \
             --title "Data decay: a college changed a page we quote ($(date -u +%Y-%m-%d))" \
-            --body-file body.md
+            --body-file body.md \
+            --assignee "${{ github.repository_owner }}"
