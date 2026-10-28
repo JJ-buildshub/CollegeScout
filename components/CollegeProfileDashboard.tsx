@@ -24,6 +24,8 @@ import CampusFitStats from "./CampusFitStats";
 import MajorsCard from "./MajorsCard";
 import CollegeTalentSection from "./CollegeTalentSection";
 import type { CollegeTalent } from "@/lib/collegeTalent";
+import CollegeMeritSection from "./CollegeMeritSection";
+import type { MeritScholarship } from "@/lib/collegeMerit";
 
 const SECTIONS = [
   { id: "overview", label: "Preparation" },
@@ -55,11 +57,14 @@ export default function CollegeProfileDashboard({
   college,
   majors,
   talent,
+  merit = [],
   checkNote,
 }: {
   college: College;
   majors: SchoolMajors;
   talent: CollegeTalent | null;
+  /** Merit scholarships only this college gives (see lib/collegeMerit.ts). */
+  merit?: MeritScholarship[];
   /** What the last weekly check confirmed for this school (see lib/dataChecks.ts), or null. */
   checkNote: string | null;
 }) {
@@ -588,6 +593,18 @@ export default function CollegeProfileDashboard({
             <div className="mt-3">
               <FinancialAid college={college} />
             </div>
+            {merit.length > 0 && (
+              <div className="mt-6">
+                <h3 className="text-base font-bold text-navy-900">Merit scholarships only {college.name} gives</h3>
+                <p className="mt-1 max-w-2xl text-xs text-slate-600">
+                  You apply for these separately, often before the regular admission deadline. Miss the date and
+                  you can still be admitted, but you won&apos;t be considered.
+                </p>
+                <div className="mt-3">
+                  <CollegeMeritSection scholarships={merit} />
+                </div>
+              </div>
+            )}
           </section>
 
           {/* Campus */}

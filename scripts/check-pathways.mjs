@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Checks that every line quoted in data/pathways.json and
- * data/college-talent.json still appears, word for word, on the official page
+ * data/college-talent.json and data/college-merit.json still appears, word for word, on the official page
  * it came from. A line that no longer matches means
  * a school changed a requirement, a date or a policy, and the pathway page
  * needs another look.
@@ -28,6 +28,16 @@ for (const [collegeId, college] of Object.entries(talent.colleges)) {
     facts.forEach((fact, i) => {
       for (const source of fact.sources) {
         entries[`${collegeId} ${kind} #${i + 1}: ${source.label}`] = source;
+      }
+    });
+  }
+}
+const merit = JSON.parse(readFileSync(join(root, "data", "college-merit.json"), "utf8"));
+for (const [collegeId, scholarships] of Object.entries(merit.colleges)) {
+  for (const scholarship of scholarships) {
+    scholarship.facts.forEach((fact, i) => {
+      for (const source of fact.sources) {
+        entries[`${collegeId} ${scholarship.name} #${i + 1}: ${source.label}`] = source;
       }
     });
   }
