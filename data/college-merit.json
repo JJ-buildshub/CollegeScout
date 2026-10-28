@@ -1,0 +1,182 @@
+{
+  "note": "Big merit scholarships that only go to students applying to one particular college, shown in the Financial Aid section of that college's profile. Each fact is the site's own wording of what its sources say; each source's evidence lines are that page's exact wording, and scripts/check-pathways.mjs confirms they are still there. Deadlines are for students entering in fall 2027. A college with no entry gets no card.",
+  "checked": "2026-10-28",
+  "colleges": {
+    "duke-university": [
+      {
+        "name": "Robertson Scholars Leadership Program",
+        "award": "Full ride",
+        "deadline": "Nov 15",
+        "facts": [
+          {
+            "text": "Eight semesters of full tuition, room and board and most fees, plus funding for up to three summers.",
+            "sources": [
+              {
+                "label": "Robertson FAQs",
+                "url": "https://robertsonscholars.org/application-faqs/",
+                "accessed": "2026-10-28",
+                "evidence": [
+                  "provides eight semesters of full tuition, room and board, and most mandatory fees",
+                  "Scholars also have access to generous funding for up to three summer experiences"
+                ]
+              }
+            ]
+          },
+          {
+            "text": "It's a separate application, due Nov 15, on top of your Duke application. Students of any citizenship can apply.",
+            "sources": [
+              {
+                "label": "Robertson: high school students",
+                "url": "https://robertsonscholars.org/high-school-students/",
+                "accessed": "2026-10-28",
+                "evidence": [
+                  "The application opens annually on the 15th of August and is due on the 15th of November.",
+                  "There is one application for all High School students regardless of nationality or citizenship."
+                ]
+              }
+            ]
+          },
+          {
+            "text": "You're only considered at the schools you apply to. Apply to both Duke and UNC to be considered at both.",
+            "sources": [
+              {
+                "label": "Robertson FAQs",
+                "url": "https://robertsonscholars.org/application-faqs/",
+                "accessed": "2026-10-28",
+                "evidence": [
+                  "a student who applies to both universities will be considered for the Robertson at both universities",
+                  "will only be considered for the Robertson at UNC-Chapel Hill"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "university-of-north-carolina-chapel-hill": [
+      {
+        "name": "Robertson Scholars Leadership Program",
+        "award": "Full ride",
+        "deadline": "Nov 15",
+        "facts": [
+          {
+            "text": "Eight semesters of full tuition, room and board and most fees, plus funding for up to three summers.",
+            "sources": [
+              {
+                "label": "Robertson FAQs",
+                "url": "https://robertsonscholars.org/application-faqs/",
+                "accessed": "2026-10-28",
+                "evidence": [
+                  "provides eight semesters of full tuition, room and board, and most mandatory fees",
+                  "Scholars also have access to generous funding for up to three summer experiences"
+                ]
+              }
+            ]
+          },
+          {
+            "text": "It's a separate application, due Nov 15, on top of your UNC application. Students of any citizenship can apply.",
+            "sources": [
+              {
+                "label": "Robertson: high school students",
+                "url": "https://robertsonscholars.org/high-school-students/",
+                "accessed": "2026-10-28",
+                "evidence": [
+                  "The application opens annually on the 15th of August and is due on the 15th of November.",
+                  "There is one application for all High School students regardless of nationality or citizenship."
+                ]
+              }
+            ]
+          },
+          {
+            "text": "If you apply only to UNC, you're only considered at UNC. Apply to Duke too to be considered at both.",
+            "sources": [
+              {
+                "label": "Robertson FAQs",
+                "url": "https://robertsonscholars.org/application-faqs/",
+                "accessed": "2026-10-28",
+                "evidence": [
+                  "a student who applies to both universities will be considered for the Robertson at both universities",
+                  "will only be considered for the Robertson at UNC-Chapel Hill"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "university-of-north-carolina-at-charlotte": [
+      {
+        "name": "Levine Scholars Program",
+        "award": "Full ride",
+        "deadline": "Nominated by Oct 15",
+        "facts": [
+          {
+            "text": "Four years of full tuition, housing and meals, books and mandatory fees, plus a civic engagement grant and four summer experiences.",
+            "sources": [
+              {
+                "label": "Levine Scholars: what it includes",
+                "url": "https://levinescholars.charlotte.edu/scholar-experience/",
+                "accessed": "2026-10-28",
+                "evidence": [
+                  "The four-year scholarship includes: Full Tuition Housing and Meals Books Mandatory Fees Civic Engagement Grant Four Summer Experiences"
+                ]
+              }
+            ]
+          },
+          {
+            "text": "It starts with a nomination by Oct 15. Then send the UNC Charlotte application by Nov 1 and the Levine application by Nov 15.",
+            "sources": [
+              {
+                "label": "Levine important dates",
+                "url": "https://levinescholars.charlotte.edu/apply/important-dates/",
+                "accessed": "2026-10-28",
+                "evidence": [
+                  "Deadline for school counselors to nominate students for the Levine Scholars Program.",
+                  "Deadline for nominees to submit a complete first-year admissions application to UNC Charlotte Undergraduate Admissions.",
+                  "Deadline for nominees to complete the Levine Scholars supplemental application through the online portal."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "north-carolina-state-university-at-raleigh": [
+      {
+        "name": "Park Scholarships",
+        "award": "Full ride",
+        "deadline": "Nov 1",
+        "facts": [
+          {
+            "text": "Four years of tuition and fees, room and board, and books and supplies.",
+            "sources": [
+              {
+                "label": "Park Scholarships FAQ",
+                "url": "https://park.ncsu.edu/faq/",
+                "accessed": "2026-10-28",
+                "evidence": [
+                  "The scholarship is a four-year award that covers tuition and fees, room and board, books and supplies"
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Apply to NC State and to Park by 11:59pm ET on Nov 1. You need a 3.80 unweighted GPA, and you must be a U.S. citizen or permanent resident or graduating from a U.S. high school.",
+            "sources": [
+              {
+                "label": "Park Scholarships: apply",
+                "url": "https://park.ncsu.edu/apply/",
+                "accessed": "2026-10-28",
+                "evidence": [
+                  "By 11:59 pm ET, November 1:",
+                  "Have a minimum unweighted GPA of 3.80 (non-rounded).",
+                  "Be a United States citizen, permanent resident of the U.S., or graduating from a high school located in the U.S."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

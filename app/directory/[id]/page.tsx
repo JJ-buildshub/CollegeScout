@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { colleges, getCollegeById } from "@/lib/colleges";
 import { getSchoolMajors } from "@/lib/majors";
 import { getCollegeTalent } from "@/lib/collegeTalent";
+import { getCollegeMerit } from "@/lib/collegeMerit";
 import { dataCheckNote } from "@/lib/dataChecks";
 import CollegeProfileDashboard from "@/components/CollegeProfileDashboard";
 
@@ -38,6 +39,7 @@ export default function CollegeDetailPage({ params }: { params: { id: string } }
       college={college}
       majors={getSchoolMajors(college.id)}
       talent={getCollegeTalent(college.id)}
+      merit={getCollegeMerit(college.id)}
       checkNote={dataCheckNote(college.id)}
     />
   );
