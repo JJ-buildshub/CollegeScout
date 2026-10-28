@@ -4,6 +4,7 @@
   "programs": {
     "questbridge-national-college-match": {
       "prize": "Full ride",
+      "awardTop": "full",
       "task": "Application",
       "tagline": "One free application, and a shot at a full four-year scholarship at one of 55 partner colleges. Aimed at students earning mostly A's whose families earn under about $65,000.",
       "closes": "2026-10-01",
@@ -157,6 +158,7 @@
     },
     "coca-cola-scholars-program": {
       "prize": "$20,000",
+      "awardTop": 20000,
       "task": "Application",
       "tagline": "Round one has no essays, no transcript and no recommendations. You enter your grades and what you do in school and your community. 150 students win.",
       "closes": "2026-09-30",
@@ -242,6 +244,7 @@
     },
     "the-gates-scholarship": {
       "prize": "Full cost of college",
+      "awardTop": "full",
       "task": "Application",
       "tagline": "Pays whatever your other financial aid doesn't cover. For Pell-eligible seniors with a 3.3 weighted GPA or higher.",
       "closes": "2026-09-15",
@@ -304,6 +307,7 @@
     },
     "jack-kent-cooke-college-scholarship": {
       "prize": "Up to $55,000 a year",
+      "awardTop": 55000,
       "task": "Application",
       "tagline": "Up to four years of funding for high-achieving seniors with financial need. Free to apply, and it runs through the Common App.",
       "closes": "2026-11-11",
@@ -406,6 +410,7 @@
     },
     "elks-most-valuable-student": {
       "prize": "Up to $30,000",
+      "awardTop": 30000,
       "task": "Application",
       "tagline": "500 seniors win every year, judged on grades, leadership and financial need. No SAT or ACT needed.",
       "closes": "2026-11-12",
@@ -507,6 +512,7 @@
     },
     "regeneron-science-talent-search": {
       "prize": "Up to $250,000",
+      "awardTop": 250000,
       "task": "Research paper",
       "tagline": "Did your own science or math research? Write it up. The top 300 get $2,000 each, and the 40 finalists get at least $25,000 and a week in Washington, DC.",
       "closes": "2026-11-05",
@@ -632,6 +638,7 @@
     },
     "hsf-scholar-program": {
       "prize": "$500 to $5,000",
+      "awardTop": 5000,
       "task": "Application",
       "tagline": "For students of Hispanic heritage with a 3.0 GPA or higher. 10,000 are picked each year for mentoring and career support, and some also get a scholarship.",
       "closes": "2026-02-15",
@@ -694,6 +701,7 @@
     },
     "horatio-alger-national-scholarship": {
       "prize": "$25,000",
+      "awardTop": 25000,
       "task": "Essays",
       "tagline": "For juniors who have pushed through hard times. You tell your story. 105 students win, and it's free to apply.",
       "closes": null,
@@ -802,6 +810,7 @@
     },
     "vfw-voice-of-democracy": {
       "prize": "Up to $35,000",
+      "awardTop": 35000,
       "task": "Audio essay",
       "tagline": "Record an audio essay and hand it in at your local VFW post. This year's theme: “What a Veteran Taught Me About America.”",
       "closes": "2026-10-31",
@@ -860,6 +869,7 @@
     },
     "american-legion-oratorical-contest": {
       "prize": "Up to $25,000",
+      "awardTop": 25000,
       "task": "Speech",
       "tagline": "Give an 8 to 10 minute speech about the U.S. Constitution. You start at a local American Legion contest and can work up to nationals.",
       "closes": null,
@@ -974,6 +984,7 @@
     },
     "regeneron-isef": {
       "prize": "Up to $100,000",
+      "awardTop": 100000,
       "task": "Science project",
       "tagline": "Take a research project to a local science fair. Win there and you can qualify for ISEF in Los Angeles in May.",
       "closes": null,
@@ -1079,6 +1090,7 @@
     },
     "breakthrough-junior-challenge": {
       "prize": "$250,000",
+      "awardTop": 250000,
       "task": "2-minute video",
       "tagline": "Make a video, two minutes or less, that explains a big idea in physics, life sciences or math. If you win, your teacher gets $50,000 and your school gets a science lab.",
       "closes": "2026-09-15",
@@ -1211,6 +1223,7 @@
     },
     "davidson-fellows-scholarship": {
       "prize": "Up to $100,000",
+      "awardTop": 100000,
       "task": "Major project",
       "tagline": "Built, written or discovered something serious? This is for students 18 or younger with a finished project at close to college-graduate level.",
       "closes": null,
@@ -1335,6 +1348,7 @@
     },
     "gloria-barron-prize-for-young-heroes": {
       "prize": "$10,000",
+      "awardTop": 10000,
       "task": "Service project",
       "tagline": "Started a project that helps people or the planet? 25 young leaders win each year. It has to be your idea, not a school assignment.",
       "closes": null,
@@ -1432,6 +1446,7 @@
     },
     "ayn-rand-institute-essay-contests": {
       "prize": "Up to $25,000",
+      "awardTop": 25000,
       "task": "Essay",
       "tagline": "Read one of Ayn Rand's novels and write an essay about it.",
       "closes": null,
@@ -1492,6 +1507,7 @@
     },
     "scholastic-art-and-writing-awards": {
       "prize": "Up to $12,500",
+      "awardTop": 12500,
       "task": "Art or writing",
       "tagline": "Send in art or writing you've made, in any of 20+ categories, with no set prompt. It costs $15 an entry, or nothing if you can't afford it.",
       "closes": null,
@@ -1623,6 +1639,7 @@
     },
     "united-states-senate-youth-program": {
       "prize": "$12,500",
+      "awardTop": 12500,
       "task": "State application",
       "tagline": "Hold an elected or appointed leadership role at school? 104 students win a scholarship and a paid-for week in Washington, D.C.",
       "closes": null,
@@ -1745,6 +1762,7 @@
     },
     "coolidge-scholarship": {
       "prize": "Full ride",
+      "awardTop": "full",
       "task": "Essays",
       "tagline": "Tuition, room and board at any accredited U.S. college, for juniors. The essays include questions about Calvin Coolidge's autobiography.",
       "closes": "2026-12-01",
@@ -2132,6 +2150,7 @@
     },
     "cameron-impact-scholarship": {
       "prize": "Full tuition",
+      "awardTop": "full",
       "task": "Application",
       "tagline": "Four years of full tuition, fees and books at any accredited U.S. college. You apply in 11th grade, and it closes early once 3,000 applications are in. Needs a 3.7 unweighted GPA.",
       "closes": "2027-05-01",
@@ -2221,6 +2240,7 @@
     },
     "junior-science-and-humanities-symposium": {
       "prize": "Up to $12,000",
+      "awardTop": 12000,
       "task": "Research presentation",
       "tagline": "Present your own STEM research at a regional symposium. Top finishers win tuition scholarships and a paid trip to nationals. It costs you nothing to register.",
       "closes": null,
@@ -2318,6 +2338,7 @@
     },
     "optimist-international-oratorical-contest": {
       "prize": "Up to $2,500",
+      "awardTop": 2500,
       "task": "Speech",
       "tagline": "Give a speech on this year's topic through a local Optimist Club. District winners get scholarships and can move on to regionals.",
       "closes": null,
@@ -2383,6 +2404,7 @@
     },
     "youngarts-national-arts-competition": {
       "prize": "Up to $10,000",
+      "awardTop": 10000,
       "task": "Portfolio or audition",
       "tagline": "For artists in grades 10 to 12, in ten disciplines from dance and film to jazz and photography. It costs $35 to apply, with a waiver if you need one.",
       "closes": "2026-10-06",
@@ -2463,6 +2485,7 @@
     },
     "bri-community-impact-contest": {
       "prize": "Up to $10,000",
+      "awardTop": 10000,
       "task": "Community project",
       "tagline": "Run a service, volunteer or business project that fixes something in your community, then send in a pitch video and a summary of what it did.",
       "closes": "2027-04-19",
@@ -2537,6 +2560,7 @@
     },
     "us-stockholm-junior-water-prize": {
       "prize": "$10,000",
+      "awardTop": 10000,
       "task": "Science project",
       "tagline": "Did a science project about water? Enter your state competition. The national winner also gets a trip to Stockholm, Sweden. You need to be 15 by August 1.",
       "closes": null,
@@ -2627,6 +2651,7 @@
     },
     "math-prize-for-girls": {
       "prize": "Up to $50,000",
+      "awardTop": 50000,
       "task": "Math contest",
       "tagline": "A math contest for girls in 11th grade or below. You apply with your AMC 10 or AMC 12 score, so you need to take that exam first. No fee.",
       "closes": null,
@@ -2726,6 +2751,7 @@
     },
     "poetry-out-loud": {
       "prize": "Up to $20,000",
+      "awardTop": 20000,
       "task": "Poetry recitation",
       "tagline": "Memorize and perform poems. You start at your own school and can go on to state and national finals. Your school has to be registered for it.",
       "closes": null,
@@ -2811,6 +2837,7 @@
     },
     "optimist-essay-contest": {
       "prize": "Up to $2,500",
+      "awardTop": 2500,
       "task": "Essay",
       "tagline": "Write an essay on this year's topic, “Finding My Voice in a World Full of Noise,” and enter through a local Optimist Club. Club winners go on to compete for a $2,500 scholarship.",
       "closes": null,
@@ -2875,6 +2902,7 @@
     },
     "optimist-ccdhh": {
       "prize": "$2,500",
+      "awardTop": 2500,
       "task": "Presentation",
       "only": "Students with a hearing loss of 40 decibels or more",
       "tagline": "A speaking or signing contest for students who are deaf or hard of hearing, entered through a local Optimist Club.",
@@ -2947,6 +2975,7 @@
     },
     "elks-legacy-awards": {
       "prize": "$6,000",
+      "awardTop": 6000,
       "task": "Application",
       "only": "Children and grandchildren of Elks members",
       "tagline": "Is your parent or grandparent an Elk? 400 seniors get $1,500 a year for four years. You'll need their lodge and membership numbers.",
@@ -3178,6 +3207,7 @@
     },
     "samsung-american-legion-scholarship": {
       "prize": "Up to $10,000",
+      "awardTop": 10000,
       "task": "Application",
       "only": "Descendants of wartime veterans who attend Boys State or Girls State",
       "tagline": "You can only apply if you go to Boys State or Girls State the summer after junior year, and the deadline is the first day of your program.",
@@ -3252,6 +3282,7 @@
     },
     "american-legion-legacy-scholarship": {
       "prize": "Up to $20,000",
+      "awardTop": 20000,
       "task": "Application",
       "only": "Children of service members who died or were disabled on duty since 9/11",
       "tagline": "For seniors whose parent died on active duty or has a service-related disability rating. Based on financial need, and you can reapply in later years.",
@@ -3331,6 +3362,7 @@
     },
     "ala-children-of-warriors-scholarship": {
       "prize": "$5,000",
+      "awardTop": 5000,
       "task": "Application with essays",
       "only": "Descendants of U.S. military veterans",
       "tagline": "Fifteen seniors each get $5,000. You need proof of a family member's military service, and you don't have to be an American Legion member.",
@@ -3419,6 +3451,7 @@
     },
     "ala-spirit-of-youth-scholarship": {
       "prize": "$1,000 to $5,000",
+      "awardTop": 5000,
       "task": "Application with essays",
       "only": "American Legion Auxiliary Junior members for 3 years",
       "tagline": "For seniors who have been Junior members of the American Legion Auxiliary for the past three years. You can't join senior year and apply.",
@@ -3562,6 +3595,7 @@
     },
     "dar-scholarships-high-school-seniors": {
       "prize": "Up to $5,000 a year",
+      "awardTop": 5000,
       "task": "Application",
       "tagline": "Three national scholarships for seniors from the Daughters of the American Revolution. You don't need to be sponsored by a chapter.",
       "closes": null,
@@ -3652,6 +3686,7 @@
     },
     "exchange-club-youth-scholarships": {
       "prize": "Up to $15,000",
+      "awardTop": 15000,
       "task": "School nomination",
       "tagline": "Local Exchange Clubs work with high schools to pick students, including an award for students who have overcome adversity. Local winners move up to district and national scholarships.",
       "closes": null,
@@ -3720,6 +3755,7 @@
     },
     "kofc-us-undergraduate-scholarships": {
       "prize": "Up to $1,500 a year",
+      "awardTop": 1500,
       "task": "Application",
       "only": "Knights of Columbus families going to a Catholic college",
       "tagline": "For seniors who are members, or children of members, of the Knights of Columbus and are heading to a Catholic college. Renewable for four years.",
@@ -3843,6 +3879,7 @@
     },
     "nesa-eagle-scout-scholarships": {
       "prize": "Up to $50,000",
+      "awardTop": 50000,
       "task": "Application",
       "only": "Eagle Scouts who are NESA members",
       "tagline": "If you've earned Eagle, one application puts you in for scholarships from $6,000 to $50,000. You have to join the National Eagle Scout Association first.",
@@ -3914,6 +3951,7 @@
     },
     "girl-scouts-gold-award-scholarship": {
       "prize": "$5,000",
+      "awardTop": 5000,
       "task": "Video or written answers",
       "only": "Girl Scouts who earned the Gold Award",
       "tagline": "One Gold Award Girl Scout in each council wins $5,000. You answer four questions about your Gold Award project, on video or in writing.",
@@ -4036,6 +4074,7 @@
     },
     "nhs-scholarship": {
       "prize": "Up to $25,000",
+      "awardTop": 25000,
       "task": "Application + essay",
       "only": "National Honor Society members",
       "tagline": "600 seniors in the National Honor Society win at least $3,200 each. Your chapter adviser has to verify your account before you can apply.",
@@ -4122,6 +4161,7 @@
     },
     "deca-scholarships": {
       "prize": "$1,000 to $2,500",
+      "awardTop": 2500,
       "task": "Application",
       "only": "DECA members",
       "tagline": "Open to DECA members in any grade, 9th to 12th. You'll need a transcript and three recommendation letters.",
@@ -4196,6 +4236,7 @@
     },
     "fbla-distinguished-business-leader-scholarship": {
       "prize": "$500",
+      "awardTop": 500,
       "task": "Application + cover letter",
       "only": "FBLA members",
       "tagline": "For graduating FBLA members who plan to keep going with FBLA in college. Your dues need to be paid by March 1.",
@@ -4260,6 +4301,7 @@
     },
     "bgca-youth-of-the-year": {
       "prize": "Up to $50,000",
+      "awardTop": 50000,
       "task": "Club nomination",
       "only": "Boys & Girls Club members",
       "tagline": "Boys & Girls Club members compete from their own Club up to state ($2,500), regional ($20,000) and national ($50,000).",
@@ -4325,6 +4367,7 @@
     },
     "csf-seymour-memorial-award": {
       "prize": "$2,000 to $5,000",
+      "awardTop": 5000,
       "task": "Adviser nomination",
       "only": "CSF Sealbearers nominated by their adviser",
       "area": "California",
@@ -4478,6 +4521,7 @@
     },
     "cta-scholarship-for-dependent-children": {
       "prize": "Up to $5,000",
+      "awardTop": 5000,
       "task": "Application",
       "only": "Children of California Teachers Association members",
       "area": "California",
@@ -4542,6 +4586,7 @@
     },
     "california-table-grape-scholarships": {
       "prize": "Up to $25,000",
+      "awardTop": 25000,
       "task": "Application",
       "only": "Table grape field worker families, and students from the Coachella and San Joaquin valleys",
       "area": "Coachella and San Joaquin valleys",
@@ -4689,6 +4734,7 @@
     },
     "san-diego-foundation-common-scholarship-application": {
       "prize": "$1,000 to $10,000",
+      "awardTop": 10000,
       "task": "Application",
       "area": "San Diego County",
       "tagline": "Live in San Diego County? One application puts you in for more than 150 scholarships. You need a 2.0 GPA and a year of living in the county.",
@@ -4858,6 +4904,7 @@
     },
     "edison-scholars": {
       "prize": "$50,000",
+      "awardTop": 50000,
       "task": "Application",
       "area": "Southern California Edison area",
       "tagline": "30 seniors in Southern California Edison's service area each get $50,000 to study a STEM field. You need a 3.0 GPA and financial need.",
@@ -4922,6 +4969,7 @@
     },
     "pge-better-together-stem-scholarships": {
       "prize": "$1,000 to $10,000",
+      "awardTop": 10000,
       "task": "Application",
       "area": "PG&E service area",
       "tagline": "For seniors who live in PG&E's service area and plan to study a STEM field at a four-year college in California.",
@@ -4989,6 +5037,7 @@
     },
     "cif-scholar-athlete-of-the-year": {
       "prize": "Up to $10,000",
+      "awardTop": 10000,
       "area": "California",
       "tagline": "For college-bound senior athletes in California with strong grades. Two state winners get $10,000 and 20 section winners get $1,500.",
       "closes": null,
@@ -5038,6 +5087,7 @@
     },
     "calkids": {
       "prize": "$500 to $1,500",
+      "awardTop": 1500,
       "task": "Claim it online",
       "only": "Low-income or English learner public school students",
       "area": "California",
@@ -5100,6 +5150,7 @@
     },
     "jfk-profile-in-courage-essay-contest": {
       "prize": "Up to $10,000",
+      "awardTop": 10000,
       "task": "Essay",
       "tagline": "Write 700 to 1,000 words about a U.S. elected official who took a political risk to do the right thing. You need a teacher from your school to sign on as your nominating teacher.",
       "closes": "2027-01-11",
@@ -5175,6 +5226,7 @@
     },
     "carson-scholars": {
       "prize": "$1,000",
+      "awardTop": 1000,
       "task": "School nomination + essay",
       "only": "Students with a 3.75 GPA nominated by their school",
       "tagline": "For students with top grades who also do community service. Each school can nominate one student, so ask a teacher or counselor about it this fall.",

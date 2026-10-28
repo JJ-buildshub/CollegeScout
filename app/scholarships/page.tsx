@@ -267,6 +267,7 @@ export default function ScholarshipsPage() {
   const today = useToday();
   const [grade, setGrade] = useState<ScholarshipGrade | null>(null);
   const [openOnly, setOpenOnly] = useState(false);
+  const [order, setOrder] = useState<"deadline" | "award">("deadline");
   const [query, setQuery] = useState("");
   // Scout links to a program as /scholarships?q=<name>.
   useEffect(() => {
@@ -284,6 +285,12 @@ export default function ScholarshipsPage() {
       if (days === null) return 10_000;
       return days < 0 ? 20_000 - days : days;
     };
+    // Biggest award first: full rides, then dollar amounts, then programs with no fixed amount.
+    // Closed programs still go last, and ties fall back to the deadline order.
+    const closed = (program: Scholarship) => (today && (daysLeft(program, today) ?? 0) < 0 ? 1 : 0);
+    const value = (program: Scholarship) =>
+      program.awardTop === "full" ? Infinity : program.awardTop ?? -1;
+    const byAward = (a: Scholarship, b: Scholarship) => closed(a) - closed(b) || value(b) - value(a);
     const words = query.toLowerCase().split(/\s+/).filter(Boolean);
     const matches = (program: Scholarship) => {
       const text = [program.name, program.runBy, program.task, program.tagline, program.prize].join(" ").toLowerCase();
@@ -297,8 +304,8 @@ export default function ScholarshipsPage() {
       .filter((program) => where === "all" || program.statewide || (where === "local") === Boolean(program.local))
       .filter((program) => areaMatch(program, place) !== "no")
       .filter((program) => !openOnly || !today || (daysLeft(program, today) ?? 0) >= 0)
-      .sort((a, b) => rank(a) - rank(b) || a.name.localeCompare(b.name));
-  }, [grade, openOnly, place, query, today, where]);
+      .sort((a, b) => (order === "award" && byAward(a, b)) || rank(a) - rank(b) || a.name.localeCompare(b.name));
+  }, [grade, openOnly, order, place, query, today, where]);
 
   const needle = query.trim().toLowerCase();
   const changedShown = changedPrograms.filter((program) =>
@@ -432,6 +439,30 @@ export default function ScholarshipsPage() {
           />
           Hide the ones that already closed this year
         </label>
+        <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Sort the list">
+          <span className="text-sm font-semibold text-slate-600">Sort by</span>
+          {(
+            [
+              ["deadline", "Soonest deadline"],
+              ["award", "Biggest award"],
+            ] as const
+          ).map(([value, label]) => (
+            <button
+              key={value}
+              type="button"
+              aria-pressed={order === value}
+              onClick={() => setOrder(value)}
+              className={clsx(
+                "rounded-full px-4 py-2 text-sm font-semibold transition-colors",
+                order === value
+                  ? "bg-gold-400 text-navy-950"
+                  : "bg-white text-slate-600 ring-1 ring-slate-200 hover:bg-slate-100 hover:text-navy-900"
+              )}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
       </div>
 
       <p className="text-sm font-semibold text-slate-600" aria-live="polite">

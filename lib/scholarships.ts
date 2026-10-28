@@ -34,6 +34,12 @@ export interface Scholarship {
    * Absent on a record that has only been researched, not yet summarized.
    */
   prize?: string;
+  /**
+   * For the "Biggest award" sort: the most one student can win in dollars, as `prize` states it
+   * (a yearly amount counts one year), or "full" when it pays full tuition or more. Absent when
+   * there is no fixed amount (local clubs, programs, recognition only).
+   */
+  awardTop?: number | "full";
   /** What the student makes or does: "Essay", "2-minute video". */
   task?: string;
   tagline?: string;
