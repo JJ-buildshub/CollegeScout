@@ -22,6 +22,8 @@ import {
 
 const ordinal = (grade: ScholarshipGrade) => `${grade}th`;
 
+type SortOrder = "soonest" | "latest" | "biggest" | "smallest";
+
 function formatDate(iso: string) {
   return new Date(`${iso}T00:00:00`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 }
@@ -267,7 +269,7 @@ export default function ScholarshipsPage() {
   const today = useToday();
   const [grade, setGrade] = useState<ScholarshipGrade | null>(null);
   const [openOnly, setOpenOnly] = useState(false);
-  const [order, setOrder] = useState<"deadline" | "award">("deadline");
+  const [order, setOrder] = useState<SortOrder>("soonest");
   const [query, setQuery] = useState("");
   // Scout links to a program as /scholarships?q=<name>.
   useEffect(() => {
@@ -279,18 +281,23 @@ export default function ScholarshipsPage() {
   const place = useMemo(() => lookupZip(zip), [zip]);
 
   const shown = useMemo(() => {
-    // Soonest deadline first, then programs with no single date, then ones already closed.
+    // Open programs by deadline (soonest or furthest out first), then programs with no single date,
+    // then ones already closed.
     const rank = (program: Scholarship) => {
       const days = today ? daysLeft(program, today) : null;
       if (days === null) return 10_000;
-      return days < 0 ? 20_000 - days : days;
+      if (days < 0) return 20_000 - days;
+      return order === "latest" ? 9_999 - days : days;
     };
-    // Biggest award first: full rides, then dollar amounts, then programs with no fixed amount.
-    // Closed programs still go last, and ties fall back to the deadline order.
+    // By award (biggest or smallest first, full rides counting as the biggest), with programs that
+    // have no fixed amount after them. Closed programs still go last, and ties fall back to the deadline order.
     const closed = (program: Scholarship) => (today && (daysLeft(program, today) ?? 0) < 0 ? 1 : 0);
-    const value = (program: Scholarship) =>
-      program.awardTop === "full" ? Infinity : program.awardTop ?? -1;
-    const byAward = (a: Scholarship, b: Scholarship) => closed(a) - closed(b) || value(b) - value(a);
+    const unstated = (program: Scholarship) => (program.awardTop === undefined ? 1 : 0);
+    const value = (program: Scholarship) => (program.awardTop === "full" ? Infinity : program.awardTop ?? 0);
+    const byAward = (a: Scholarship, b: Scholarship) =>
+      closed(a) - closed(b) ||
+      unstated(a) - unstated(b) ||
+      (order === "biggest" ? value(b) - value(a) : value(a) - value(b));
     const words = query.toLowerCase().split(/\s+/).filter(Boolean);
     const matches = (program: Scholarship) => {
       const text = [program.name, program.runBy, program.task, program.tagline, program.prize].join(" ").toLowerCase();
@@ -304,7 +311,12 @@ export default function ScholarshipsPage() {
       .filter((program) => where === "all" || program.statewide || (where === "local") === Boolean(program.local))
       .filter((program) => areaMatch(program, place) !== "no")
       .filter((program) => !openOnly || !today || (daysLeft(program, today) ?? 0) >= 0)
-      .sort((a, b) => (order === "award" && byAward(a, b)) || rank(a) - rank(b) || a.name.localeCompare(b.name));
+      .sort(
+        (a, b) =>
+          ((order === "biggest" || order === "smallest") && byAward(a, b)) ||
+          rank(a) - rank(b) ||
+          a.name.localeCompare(b.name)
+      );
   }, [grade, openOnly, order, place, query, today, where]);
 
   const needle = query.trim().toLowerCase();
@@ -439,41 +451,32 @@ export default function ScholarshipsPage() {
           />
           Hide the ones that already closed this year
         </label>
-        <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Sort the list">
-          <span className="text-sm font-semibold text-slate-600">Sort by</span>
-          {(
-            [
-              ["deadline", "Soonest deadline"],
-              ["award", "Biggest award"],
-            ] as const
-          ).map(([value, label]) => (
-            <button
-              key={value}
-              type="button"
-              aria-pressed={order === value}
-              onClick={() => setOrder(value)}
-              className={clsx(
-                "rounded-full px-4 py-2 text-sm font-semibold transition-colors",
-                order === value
-                  ? "bg-gold-400 text-navy-950"
-                  : "bg-white text-slate-600 ring-1 ring-slate-200 hover:bg-slate-100 hover:text-navy-900"
-              )}
-            >
-              {label}
-            </button>
-          ))}
-        </div>
       </div>
 
-      <p className="text-sm font-semibold text-slate-600" aria-live="polite">
-        {shown.length === 0
-          ? changedShown.length > 0 && needle
-            ? "That one changed its rules. See below."
-            : "Nothing matches yet."
-          : `${shown.length} ${shown.length === 1 ? "thing" : "things"} you can go for${
-              grade !== null ? ` in ${ordinal(grade)} grade` : ""
-            }. Tap one to see how.`}
-      </p>
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <p className="text-sm font-semibold text-slate-600" aria-live="polite">
+          {shown.length === 0
+            ? changedShown.length > 0 && needle
+              ? "That one changed its rules. See below."
+              : "Nothing matches yet."
+            : `${shown.length} ${shown.length === 1 ? "thing" : "things"} you can go for${
+                grade !== null ? ` in ${ordinal(grade)} grade` : ""
+              }. Tap one to see how.`}
+        </p>
+        <label className="flex items-center gap-2 text-sm font-medium text-slate-600">
+          Sort
+          <select
+            value={order}
+            onChange={(event) => setOrder(event.target.value as SortOrder)}
+            className="rounded-full border border-slate-200 bg-white py-1.5 pl-3 pr-8 text-sm text-navy-900 focus:border-navy-900 focus:outline-none focus:ring-2 focus:ring-gold-400"
+          >
+            <option value="soonest">Soonest deadline</option>
+            <option value="latest">Furthest-out deadline</option>
+            <option value="biggest">Biggest award</option>
+            <option value="smallest">Smallest award</option>
+          </select>
+        </label>
+      </div>
 
       {shown.length === 0 ? (
         <div
