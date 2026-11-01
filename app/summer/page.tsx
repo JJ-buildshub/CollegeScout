@@ -16,14 +16,15 @@ import {
   type SummerProgram,
 } from "@/data/summerPrograms";
 import {
-  byDeadline,
   formatSummerDate,
   isBayArea,
   matchesGrade,
   matchesPlace,
+  summerComparator,
   summerInterestLabel,
   summerInterests,
   type SummerPlace,
+  type SummerSort,
 } from "@/lib/summer";
 
 const CHECK_SITE = "Check official site";
@@ -174,6 +175,7 @@ export default function SummerPage() {
   const [interest, setInterest] = useState("all");
   const [grade, setGrade] = useState("all");
   const [place, setPlace] = useState("all");
+  const [sort, setSort] = useState<SummerSort>("deadline-soonest");
 
   const shown = useMemo(
     () =>
@@ -183,8 +185,8 @@ export default function SummerPage() {
         .filter((p) => interest === "all" || p.interests.includes(interest as SummerInterest))
         .filter((p) => grade === "all" || matchesGrade(p, Number(grade) as SummerGrade))
         .filter((p) => place === "all" || matchesPlace(p, place as SummerPlace))
-        .sort(byDeadline(today)),
-    [tab, cost, interest, grade, place, today]
+        .sort(summerComparator(sort, today)),
+    [tab, cost, interest, grade, place, sort, today]
   );
 
   const clearFilters = () => {
@@ -226,15 +228,29 @@ export default function SummerPage() {
         <FilterSelect label="Format" value={place} onChange={setPlace} options={[["bay-area", "Bay Area"], ["online", "Online"], ["travel", "Travel"]]} />
       </div>
 
-      <div className="flex flex-wrap items-center gap-3">
-        <p className="text-sm font-semibold text-slate-600" aria-live="polite">
-          {shown.length} {shown.length === 1 ? "program" : "programs"}, soonest deadline first
-        </p>
-        {filtered && (
-          <button type="button" onClick={clearFilters} className="text-sm font-semibold text-slate-500 underline underline-offset-2 hover:text-navy-900">
-            Clear filters
-          </button>
-        )}
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div className="flex flex-wrap items-center gap-3">
+          <p className="text-sm font-semibold text-slate-600" aria-live="polite">
+            {shown.length} {shown.length === 1 ? "program" : "programs"}
+          </p>
+          {filtered && (
+            <button type="button" onClick={clearFilters} className="text-sm font-semibold text-slate-500 underline underline-offset-2 hover:text-navy-900">
+              Clear filters
+            </button>
+          )}
+        </div>
+        <label className="flex items-center gap-2 text-sm font-medium text-slate-600">
+          Sort
+          <select
+            value={sort}
+            onChange={(event) => setSort(event.target.value as SummerSort)}
+            className="rounded-full border border-slate-200 bg-white py-1.5 pl-3 pr-8 text-sm text-navy-900 focus:border-navy-900 focus:outline-none focus:ring-2 focus:ring-gold-400"
+          >
+            <option value="deadline-soonest">Soonest deadline</option>
+            <option value="deadline-latest">Latest deadline</option>
+            <option value="start-soonest">Earliest start date</option>
+          </select>
+        </label>
       </div>
 
       {shown.length === 0 ? (

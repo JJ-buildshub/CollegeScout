@@ -56,6 +56,8 @@ export interface SummerProgram {
   format: SummerFormat[];
   /** Summer 2027 only. */
   dates: string | null;
+  /** ISO date the earliest 2027 session starts, for sorting; null if `dates` gives no start. */
+  startDate: string | null;
   /** ISO date of the summer 2027 deadline, or null if not posted. */
   deadline: string | null;
   /** Other rounds, or what the official page says when it gives no exact date. */
@@ -87,6 +89,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "NIH campuses" }],
     dates: "Between May 10 and Aug 31, 2027, set with your lab",
+    startDate: "2027-05-10",
     deadline: "2027-01-26",
     deadlineNote: "Reference letters due Feb 2, 2027",
     officialUrl: "https://www.training.nih.gov/research-training/pb/sip/",
@@ -111,6 +114,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "bay-area", place: "Stanford, CA" }],
     dates: "June 7 to July 29, 2027 (tentative)",
+    startDate: "2027-06-07",
     deadline: null,
     deadlineNote: "Due in late February 2027; exact date not posted",
     officialUrl: "https://simr.stanford.edu/",
@@ -135,6 +139,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "NASA centers" }],
     dates: null,
+    startDate: null,
     deadline: "2027-03-01",
     deadlineNote: null,
     officialUrl: "https://www.nasa.gov/learning-resources/internship-programs/",
@@ -159,6 +164,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "Navy labs across the U.S." }],
     dates: null,
+    startDate: null,
     deadline: "2026-11-30",
     deadlineNote: null,
     officialUrl: "https://www.onr.navy.mil/Education-Outreach/K-12-Programs/SEAP",
@@ -183,6 +189,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "Seattle, WA" }],
     dates: null,
+    startDate: null,
     deadline: null,
     deadlineNote: "2027 details to be posted in November",
     officialUrl: "https://www.fredhutch.org/en/education-training/high-school-students/summer-high-school-internship-program.html",
@@ -207,6 +214,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "bay-area", place: "San Francisco, CA" }],
     dates: "June 7 to July 30, 2027",
+    startDate: "2027-06-07",
     deadline: "2027-02-15",
     deadlineNote: "Applications open Jan 15, 2027",
     officialUrl: "https://sep.ucsf.edu/programs/high-school-students/intern-program/",
@@ -231,6 +239,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "bay-area", place: "San Francisco, CA" }],
     dates: "June 14 to Aug 6, 2027",
+    startDate: "2027-06-14",
     deadline: "2027-02-07",
     deadlineNote: null,
     officialUrl: "https://cseo.ucsf.edu/cure-internship",
@@ -255,6 +264,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "bay-area", place: "Kaiser sites in Northern California" }],
     dates: "June 14 to July 30, 2027",
+    startDate: "2027-06-14",
     deadline: "2027-01-08",
     deadlineNote: "Applications open Nov 16, 2026",
     officialUrl: "https://kplaunch.kaiserpermanente.org/high-school-program/",
@@ -279,6 +289,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "bay-area", place: "Berkeley, CA" }],
     dates: null,
+    startDate: null,
     deadline: null,
     deadlineNote: null,
     officialUrl: "https://k12education.lbl.gov/programs/high-school/experiences-in-research",
@@ -303,6 +314,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "bay-area", place: "Livermore, CA" }],
     dates: null,
+    startDate: null,
     deadline: null,
     deadlineNote: null,
     officialUrl: "https://st.llnl.gov/sci-ed/summer-workshops/biotech-summer-experience",
@@ -329,6 +341,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "online" }],
     dates: null,
+    startDate: null,
     deadline: null,
     deadlineNote: null,
     officialUrl: "https://summerinstitutes.spcs.stanford.edu/",
@@ -353,6 +366,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "bay-area", place: "Stanford, CA" }, { kind: "online" }],
     dates: null,
+    startDate: null,
     deadline: null,
     deadlineNote: null,
     officialUrl: "https://sumac.spcs.stanford.edu/",
@@ -377,6 +391,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "bay-area", place: "Berkeley, CA" }, { kind: "online" }],
     dates: null,
+    startDate: null,
     deadline: null,
     deadlineNote: null,
     officialUrl: "https://precollege.berkeley.edu/",
@@ -401,6 +416,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "UC Davis, Irvine, Los Angeles, Merced, San Diego or Santa Cruz" }],
     dates: null,
+    startDate: null,
     deadline: "2027-02-05",
     deadlineNote: "Applications open Jan 6, 2027",
     officialUrl: "https://cosmos-ucop.ucdavis.edu/app/main/page/dates-deadlines",
@@ -425,6 +441,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "Santa Cruz, CA" }],
     dates: "June 14 to Aug 7, 2027 (tentative)",
+    startDate: "2027-06-14",
     deadline: "2027-02-26",
     deadlineNote: "Tentative. Applications open Jan 15, 2027",
     officialUrl: "https://sip.ucsc.edu/applying-to-sip/",
@@ -452,6 +469,7 @@ export const summerPrograms: SummerProgram[] = [
       { kind: "bay-area", place: "Stanford, CA" },
     ],
     dates: null,
+    startDate: null,
     deadline: "2026-12-11",
     deadlineNote: null,
     officialUrl: "https://www.cee.org/programs/research-science-institute",
@@ -476,6 +494,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "Pittsburgh, PA" }],
     dates: "Online start June 21 to 22, on campus until Aug 7, 2027",
+    startDate: "2027-06-21",
     deadline: "2027-02-01",
     deadlineNote: "Decisions Apr 1, 2027",
     officialUrl: "https://www.cmu.edu/pre-college/academic-programs/sams.html",
@@ -500,6 +519,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "Pittsburgh, PA" }],
     dates: "June 26 to July 24, 2027",
+    startDate: "2027-06-26",
     deadline: "2027-02-01",
     deadlineNote: "Decisions Apr 1, 2027",
     officialUrl: "https://www.cmu.edu/pre-college/academic-programs/ai_scholars.html",
@@ -524,6 +544,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "Pittsburgh, PA" }],
     dates: "June 26 to July 24, 2027",
+    startDate: "2027-06-26",
     deadline: "2027-02-01",
     deadlineNote: "Decisions Apr 1, 2027",
     officialUrl: "https://www.cmu.edu/pre-college/academic-programs/computer-science-scholars.html",
@@ -548,6 +569,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "New Haven, CT" }],
     dates: "June 20 to July 2, July 4 to 16, or a third session from July 18, 2027",
+    startDate: "2027-06-20",
     deadline: "2027-01-06",
     deadlineNote: "Regular Decision. Early Action closed Oct 15, 2026",
     officialUrl: "https://globalscholars.yale.edu/application-deadlines",
@@ -572,6 +594,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "Cambridge, MA" }],
     dates: "June 21 to July 2, July 12 to 23, or July 26 to Aug 6, 2027",
+    startDate: "2027-06-21",
     deadline: "2027-02-10",
     deadlineNote: "Regular deadline. Early Jan 13, late Mar 31, 2027",
     officialUrl: "https://summer.harvard.edu/high-school-programs/pre-college-program/",
@@ -596,6 +619,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "Cambridge, MA" }],
     dates: null,
+    startDate: null,
     deadline: null,
     deadlineNote: "Applications run during the fall of junior year; exact date not posted on this page",
     officialUrl: "https://mites.mit.edu/discover-mites/mites-summer/",
@@ -620,6 +644,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "Providence, RI" }, { kind: "online" }],
     dates: "On campus June 26 to July 31, online June 21 to July 29, 2027",
+    startDate: "2027-06-21",
     deadline: null,
     deadlineNote: "Rolling review from Nov 4, 2026. Scholarship deadline Jan 29, 2027",
     officialUrl: "https://precollege.risd.edu/on-campus/application-information",
@@ -644,6 +669,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "Notre Dame, IN" }],
     dates: "June 19 to 30, or July 10 to 21, 2027",
+    startDate: "2027-06-19",
     deadline: "2027-01-20",
     deadlineNote: null,
     officialUrl: "https://precollege.nd.edu/leadership-seminars/application-and-admission/",
@@ -668,6 +694,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "Washington, DC" }],
     dates: null,
+    startDate: null,
     deadline: null,
     deadlineNote: "2027 offerings to be posted Nov 16, 2026",
     officialUrl: "https://summer.georgetown.edu/programs/SHS19/medical-academy/",
@@ -694,6 +721,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "bay-area", place: "Berkeley, CA" }],
     dates: "June 13 to 26, or June 27 to July 10, 2027",
+    startDate: "2027-06-13",
     deadline: "2026-11-29",
     deadlineNote: "Applications open Nov 2. Teacher recommendations due Dec 4, 2026",
     officialUrl: "https://haas.berkeley.edu/business-academy/high-school/high-school-entrepreneurship/apply-now-copy/",
@@ -718,6 +746,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "Ann Arbor, MI" }, { kind: "online" }],
     dates: "In person June 27 to July 24, online July 5 to Aug 6, 2027",
+    startDate: "2027-06-27",
     deadline: "2027-03-31",
     deadlineNote: "Final deadline; may close early. Priority Nov 11, 2026, early Jan 21, 2027",
     officialUrl: "https://www.launchx.com/admissions/how-to-apply",
@@ -742,6 +771,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "in-person", place: "Marlborough, MA" }, { kind: "online" }],
     dates: "July 12 to 30, 2027",
+    startDate: "2027-07-12",
     deadline: "2027-02-12",
     deadlineNote: "In-person deadline. Online Mar 12, 2027",
     officialUrl: "https://www.babson.edu/summer-at-babson/high-school-learners/summer-study/key-dates/",
@@ -766,6 +796,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "online" }],
     dates: "Final summit Apr 29 to 30, 2027",
+    startDate: null,
     deadline: "2027-01-14",
     deadlineNote: null,
     officialUrl: "https://diamondchallenge.org/competition/",
@@ -794,6 +825,7 @@ export const summerPrograms: SummerProgram[] = [
       { kind: "in-person", place: "Chicago, Dallas, New York, Seattle, St. Louis or Washington, DC" },
     ],
     dates: null,
+    startDate: null,
     deadline: null,
     deadlineNote: "Camp applications open February 2027",
     officialUrl: "https://www.kodewithklossy.com/programs",
@@ -818,6 +850,7 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "online" }],
     dates: null,
+    startDate: null,
     deadline: null,
     deadlineNote: null,
     officialUrl: "https://hackclub.com/",
@@ -842,12 +875,274 @@ export const summerPrograms: SummerProgram[] = [
     },
     format: [{ kind: "online" }],
     dates: null,
+    startDate: null,
     deadline: null,
     deadlineNote: null,
     officialUrl: "https://www.congressionalappchallenge.us/students/rules/",
     lastVerified: VERIFIED,
   },
 ];
+
+/**
+ * Lines quoted word for word from each program's official pages. scripts/check-summer-programs.mts looks
+ * for them every day, and a line that has disappeared means the page changed and the listing needs another
+ * look. A program with a blank deadline quotes what its page says instead (a closed 2026 cycle, say), so
+ * the same check reports when the 2027 dates go up. Every program in summerPrograms needs an entry here.
+ */
+export const summerProgramSources: Record<string, { url: string; evidence: string[] }[]> = {
+  "nih-sip": [
+    {
+      url: "https://www.training.nih.gov/research-training/pb/sip/",
+      evidence: [
+        "The application will close on Tuesday, January 26, 2027 at 12 pm (noon) ET.",
+        "must be completed between May 10 and August 31, 2027",
+        "18 years old by September 30, 2027.",
+      ],
+    },
+  ],
+  "stanford-simr": [
+    {
+      url: "https://simr.stanford.edu/",
+      evidence: ["June 7- July 29, 2027 (8 weeks)", "Applications will be due in late February 2027.", "16 years old or older"],
+    },
+    {
+      url: "https://simr.stanford.edu/frequently-asked-questions.html",
+      evidence: ["There is a $50 application fee to apply.", "there is NO COST for any student"],
+    },
+  ],
+  "nasa-ostem": [
+    {
+      url: "https://www.nasa.gov/learning-resources/internship-programs/",
+      evidence: ["Summer 2027 Application Deadline: March 1, 2027 (11:59 p.m. ET)", "Must be 18 or older by the published start date of session"],
+    },
+  ],
+  "navy-seap": [
+    {
+      url: "https://www.onr.navy.mil/Education-Outreach/K-12-Programs/SEAP",
+      evidence: ["The online application period is now open through November 30th for the Summer 2027 internship program.", "First-Year Interns : $4,000", "Returning Interns : $4,500"],
+    },
+    {
+      url: "https://www.navalsteminterns.us/seap/",
+      evidence: ["Must be 16 years old or older by the internship start date"],
+    },
+  ],
+  "fred-hutch-ship": [
+    {
+      url: "https://www.fredhutch.org/en/education-training/high-school-students/summer-high-school-internship-program.html",
+      evidence: ["Information on the 2027 program will be posted in November.", "Be 16 years or older by start of program"],
+    },
+  ],
+  "ucsf-hip": [
+    {
+      url: "https://sep.ucsf.edu/programs/high-school-students/intern-program/",
+      evidence: ["January 15: Applications open", "February 15: Applications due", "June 7: Program begins", "July 30 : Program ends", "Receive $4500 upon full completion of the program."],
+    },
+  ],
+  "ucsf-cure": [
+    {
+      url: "https://cseo.ucsf.edu/cure-internship",
+      evidence: ["Application Deadline: Sunday, February 7, 2027 at 11:59pm PST.", "Monday, June 14th 2027- Friday, August 6th 2027", "Must be a current 11th grader"],
+    },
+  ],
+  "kp-launch": [
+    {
+      url: "https://kplaunch.kaiserpermanente.org/high-school-program/",
+      evidence: ["Applications Open at 9am PST on 11/16/26 and close on 1/8/27 at 5pm PST", "June 14th – July 30th", "$25 per hour"],
+    },
+  ],
+  "lbnl-einr": [
+    {
+      url: "https://k12education.lbl.gov/programs/high-school/experiences-in-research",
+      evidence: ["Applications are closed for Summer 2026.", "paid internships"],
+    },
+  ],
+  "llnl-biotech": [
+    {
+      url: "https://st.llnl.gov/sci-ed/summer-workshops/biotech-summer-experience",
+      evidence: ["STUDENT APPLICATION DEADLINE : February 26, 2026", "There is NO cost to attend; the workshop is FREE."],
+    },
+  ],
+  "stanford-summer-institutes": [
+    {
+      url: "https://summerinstitutes.spcs.stanford.edu/",
+      evidence: ["Our application for the 2026 Stanford Pre-Collegiate Summer Institutes is now closed."],
+    },
+    {
+      url: "https://summerinstitutes.spcs.stanford.edu/tuition-and-financial-aid",
+      evidence: ["Tuition for Stanford Pre-Collegiate Summer Institutes is $3,200."],
+    },
+  ],
+  "stanford-sumac": [
+    {
+      url: "https://sumac.spcs.stanford.edu/",
+      evidence: ["Our application for the 2026 Stanford University Mathematics Camp is now closed."],
+    },
+    {
+      url: "https://sumac.spcs.stanford.edu/tuition-and-financial-aid-sumac",
+      evidence: ["Online: $3,750", "Residential $8,950"],
+    },
+  ],
+  "berkeley-pre-college": [
+    {
+      url: "https://precollege.berkeley.edu/commuter",
+      evidence: ["Application deadline: Monday, June 1, 2026 11:59pm (Pacific Time)", "Have completed 10th or 11th grade by the start of summer classes", "$635"],
+    },
+  ],
+  cosmos: [
+    {
+      url: "https://cosmos-ucop.ucdavis.edu/app/main/page/dates-deadlines",
+      evidence: ["Online Application Closes: February 5, 2027, at 5:00 PM", "PROGRAM COST: $5,793", "Opening Day 2027: TBA"],
+    },
+  ],
+  "ucsc-sip": [
+    {
+      url: "https://sip.ucsc.edu/applying-to-sip/",
+      evidence: ["Friday, February 26, 2027 at 12:00 noon PST", "Program costs for 2027 will become available by December, 2026.", "US $68 for SIP 2027"],
+    },
+  ],
+  rsi: [
+    {
+      url: "https://www.cee.org/programs/research-science-institute",
+      evidence: ["Applications for RSI 2027 are open through 11:59pm December 11, 2026.", "In 2027, CEE is expanding the RSI to Stanford for 50 young scholars."],
+    },
+    {
+      url: "https://www.cee.org/programs/research-science-institute-rsi/rsi-application-faqs",
+      evidence: ["Applicants must be 16 years of age by July 1 of the program year.", "there is a non-refundable application fee of $75"],
+    },
+  ],
+  "cmu-sams": [
+    {
+      url: "https://www.cmu.edu/pre-college/academic-programs/sams.html",
+      evidence: ["You must be 16 years of age by June 26, 2027.", "August 7, 2027", "February 1, 2027"],
+    },
+  ],
+  "cmu-ai-scholars": [
+    {
+      url: "https://www.cmu.edu/pre-college/academic-programs/ai_scholars.html",
+      evidence: ["June 26, 2027: Opening Day/Residential Move-In", "July 24, 2027", "February 1, 2027"],
+    },
+  ],
+  "cmu-cs-scholars": [
+    {
+      url: "https://www.cmu.edu/pre-college/academic-programs/computer-science-scholars.html",
+      evidence: ["June 26, 2027: Opening Day", "July 24, 2027", "February 1, 2027"],
+    },
+  ],
+  "yale-yygs": [
+    {
+      url: "https://globalscholars.yale.edu/application-deadlines",
+      evidence: ["11:59pm ET on January 6, 2027", "$100 USD"],
+    },
+    {
+      url: "https://globalscholars.yale.edu/tuition",
+      evidence: ["is $7,500 USD"],
+    },
+    {
+      url: "https://globalscholars.yale.edu/eligibility",
+      evidence: ["Be between the ages of 16-18 years old by July 18, 2027"],
+    },
+  ],
+  "harvard-pre-college": [
+    {
+      url: "https://summer.harvard.edu/high-school-programs/pre-college-program/",
+      evidence: ["Regular Application & Financial Aid Deadline: Wednesday, February 10, 2027", "$6,250 + $75 application fee", "June 21–July 2, 2027", "Are at least 16 years old by June 13, 2027"],
+    },
+  ],
+  "mites-summer": [
+    {
+      url: "https://mites.mit.edu/discover-mites/mites-summer/",
+      evidence: ["All program-related costs are covered", "Eligible students can apply online during the fall semester of their junior year"],
+    },
+  ],
+  "risd-pre-college": [
+    {
+      url: "https://precollege.risd.edu/on-campus/application-information",
+      evidence: ["Applications for summer 2027 open November 4, 2026.", "JAN 29, 2027"],
+    },
+    {
+      url: "https://precollege.risd.edu/on-campus/tuition-and-fees",
+      evidence: ["Residential program: $12,495", "Commuter program: $9,595", "2027 program costs will be announced in November"],
+    },
+    {
+      url: "https://precollege.risd.edu/",
+      evidence: ["June 26–July 31, 2027", "June 21–July 29, 2027"],
+    },
+  ],
+  "notre-dame-leadership": [
+    {
+      url: "https://precollege.nd.edu/leadership-seminars/application-and-admission/",
+      evidence: ["Applications and all supporting documents must be submitted by January 20, 2027", "Session I June 19 - June 30, 2027", "At least 16 years-old by or on August 1, 2027."],
+    },
+    {
+      url: "https://precollege.nd.edu/leadership-seminars/ls-fees-financial-aid/",
+      evidence: ["A non-refundable $75 application fee", "A non-refundable enrollment fee of $150"],
+    },
+  ],
+  "georgetown-medical-academy": [
+    {
+      url: "https://summer.georgetown.edu/programs/SHS19/medical-academy/",
+      evidence: ["Check back on November 16 for our offerings", "$4,120", "$3,490"],
+    },
+  ],
+  "berkeley-bbay": [
+    {
+      url: "https://haas.berkeley.edu/business-academy/high-school/high-school-entrepreneurship/apply-now-copy/",
+      evidence: ["Applications open: November 02 – November 29, 2026", "HSEN 1: June 13 – June 26, 2027"],
+    },
+    {
+      url: "https://haas.berkeley.edu/business-academy/high-school/high-school-entrepreneurship/dates-fees/",
+      evidence: ["In-state: $7,750", "Out-of-state: $8,250"],
+    },
+  ],
+  launchx: [
+    {
+      url: "https://www.launchx.com/admissions/how-to-apply",
+      evidence: ["Summer Final Deadline — March 31, 2027"],
+    },
+    {
+      url: "https://www.launchx.com/program/entrepreneurship",
+      evidence: ["The LaunchX Entrepreneurship Program costs $13,495.", "June 27 – July 24"],
+    },
+    {
+      url: "https://www.launchx.com/program/online-entrepreneurship",
+      evidence: ["begin at $6,495", "July 5 – August 6"],
+    },
+  ],
+  "babson-summer-study": [
+    {
+      url: "https://www.babson.edu/summer-at-babson/high-school-learners/summer-study/key-dates/",
+      evidence: ["2027 Babson Academy Summer Study - Key Dates & Deadlines", "Round One (Early Bird) Application Deadline", "July 12-30"],
+    },
+    {
+      url: "https://www.babson.edu/summer-study",
+      evidence: ["a student must be a rising high school junior or senior, and be at least 15 by the start date of the program"],
+    },
+  ],
+  "diamond-challenge": [
+    {
+      url: "https://diamondchallenge.org/competition/",
+      evidence: ["January 14 | Submission Deadline (5PM EST)", "April 29-30 | Limitless World Summit", "aged 14-18 at the submission deadline"],
+    },
+  ],
+  "kode-with-klossy": [
+    {
+      url: "https://www.kodewithklossy.com/programs",
+      evidence: ["Camp applications open for Summer 2027", "ages 13-18"],
+    },
+  ],
+  "hack-club": [
+    {
+      url: "https://hackclub.com/",
+      evidence: ["For all teens aged 13–18.", "Hack Club is free for every teenager, forever."],
+    },
+  ],
+  "congressional-app-challenge": [
+    {
+      url: "https://www.congressionalappchallenge.us/students/rules/",
+      evidence: ["2026 IMPORTANT DATES", "There is no citizen requirement for students."],
+    },
+  ],
+};
 
 /** The Build Your Own guide: general ideas, not listings, so it carries no dates or sources. */
 export const passionProjectIdeas: { id: string; title: string; summary: string; steps: string[] }[] = [

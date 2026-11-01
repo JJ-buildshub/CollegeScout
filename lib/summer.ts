@@ -42,11 +42,24 @@ export function formatSummerDate(iso: string): string {
   return new Date(`${iso}T00:00:00`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 }
 
-/** Soonest deadline first, then passed deadlines, with blank deadlines last. */
-export function byDeadline(today: Date | null) {
+export type SummerSort = "deadline-soonest" | "deadline-latest" | "start-soonest";
+
+/** Soonest deadline first (or latest, when `latest` is set), then passed deadlines, with blank deadlines last. */
+export function byDeadline(today: Date | null, latest = false) {
   const passed = (p: SummerProgram) => (today && p.deadline && new Date(`${p.deadline}T23:59:59`) < today ? 1 : 0);
   return (a: SummerProgram, b: SummerProgram) => {
     if (!a.deadline || !b.deadline) return (a.deadline ? 0 : 1) - (b.deadline ? 0 : 1) || a.name.localeCompare(b.name);
-    return passed(a) - passed(b) || a.deadline.localeCompare(b.deadline) || a.name.localeCompare(b.name);
+    const order = latest ? b.deadline.localeCompare(a.deadline) : a.deadline.localeCompare(b.deadline);
+    return passed(a) - passed(b) || order || a.name.localeCompare(b.name);
   };
+}
+
+/** Earliest program start first, with programs that have no posted start last. */
+function byStartDate(a: SummerProgram, b: SummerProgram) {
+  if (!a.startDate || !b.startDate) return (a.startDate ? 0 : 1) - (b.startDate ? 0 : 1) || a.name.localeCompare(b.name);
+  return a.startDate.localeCompare(b.startDate) || a.name.localeCompare(b.name);
+}
+
+export function summerComparator(sort: SummerSort, today: Date | null) {
+  return sort === "start-soonest" ? byStartDate : byDeadline(today, sort === "deadline-latest");
 }

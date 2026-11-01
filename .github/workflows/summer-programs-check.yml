@@ -1,0 +1,72 @@
+# Summer program deadlines fall within weeks of each other and blank ones get
+# filled in as programs post their 2027 dates, so the weekly data decay check is
+# too slow for them. This re-reads every official page once a day.
+name: Summer programs check
+
+on:
+  schedule:
+    # 15:41 UTC daily, morning Pacific. Off-the-hour deliberately: every
+    # scheduled job in the world fires at :00, and GitHub delays runs when its
+    # queue is busy.
+    - cron: "41 15 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    # Naming the shell turns on pipefail, so "| tee" keeps the checker's exit code.
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Re-check every summer program's official pages
+        id: summer
+        continue-on-error: true
+        run: node --experimental-strip-types scripts/check-summer-programs.mts 2>&1 | tee summer.txt
+
+      # A daily job must not open a new issue every day. One issue stays open
+      # while anything is wrong, and it only notifies again when the list changes.
+      - name: Open, update or close the summer programs issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OUTCOME: ${{ steps.summer.outcome }}
+        run: |
+          title="Summer programs: an official page changed"
+          issue=$(gh issue list --state open --search "\"$title\" in:title" --json number --jq '.[0].number // empty')
+
+          if [ "$OUTCOME" = "success" ]; then
+            if [ -n "$issue" ]; then
+              gh issue close "$issue" --comment "Every quoted line matches its official page again."
+            fi
+            exit 0
+          fi
+
+          {
+            echo "A program changed a page we quote, so its listing on /summer needs another look."
+            echo "The deadline, dates or price may have moved, or a blank deadline may now be posted."
+            echo
+            echo '```'
+            grep -E "NOT FOUND|PAGE GONE|NO SOURCES|NO SUCH PROGRAM|MOST PAGES REFUSED" summer.txt || echo "(the checker failed before reporting anything: see the run log)"
+            echo '```'
+            echo
+            echo "Read the official page, then in \`data/summerPrograms.ts\` update the listing, its"
+            echo "\`lastVerified\` date and the quoted line in \`summerProgramSources\`."
+          } > body.md
+
+          if [ -z "$issue" ]; then
+            gh issue create --title "$title" --body-file body.md --assignee "${{ github.repository_owner }}" --label "data" \
+              || gh issue create --title "$title" --body-file body.md --assignee "${{ github.repository_owner }}"
+          elif [ "$(gh issue view "$issue" --json body --jq .body)" != "$(cat body.md)" ]; then
+            gh issue edit "$issue" --body-file body.md
+            gh issue comment "$issue" --body "The list of changed pages is different today. The description above is up to date."
+          fi
