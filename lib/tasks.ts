@@ -6,6 +6,7 @@ import type { ApplicationRound, CollegeListEntry } from "./collegeList";
 import { ROUND_LABELS } from "./collegeList";
 import { createLocalStore } from "./store";
 import { getPathwayPage } from "./pathways";
+import { byDeadline, formatSummerDate, getSummerProgram } from "./summer";
 
 export interface PlanTask {
   id: string;
@@ -20,7 +21,7 @@ export interface PlanCategory {
   title: string;
   icon: string;
   tasks: PlanTask[];
-  /** Set for a Beyond Grades category: the pathway page its tasks come from. */
+  /** Set for a Beyond Grades or summer category: the page its tasks come from. */
   href?: string;
 }
 
@@ -305,6 +306,65 @@ export function buildPathwayCategories(slugs: string[]): PlanCategory[] {
   });
 }
 
+// --- Summer programs the student saved to My Plan. Only the ids are stored; each program's name and
+// deadline are read from data/summerPrograms.ts every time, so a deadline confirmed later reaches My Plan
+// without a migration. The deadline is part of the task id, so that a new date comes up as a new, unchecked task.
+interface SummerPlanState {
+  ids: string[];
+}
+
+const summerPlanStore = createLocalStore<SummerPlanState>("collegescout:summer-plan", { ids: [] }, 1, (raw) => {
+  const parsed = raw as Partial<SummerPlanState> | undefined;
+  return { ids: Array.isArray(parsed?.ids) ? parsed.ids.filter((s): s is string => typeof s === "string") : [] };
+});
+
+export function useSummerPlan() {
+  const [state] = summerPlanStore.useStore();
+  return state;
+}
+
+export function addSummerProgramToPlan(id: string) {
+  summerPlanStore.set((prev) => (prev.ids.includes(id) ? prev : { ids: [...prev.ids, id] }));
+}
+
+export function removeSummerProgramFromPlan(id: string) {
+  summerPlanStore.set((prev) => ({ ids: prev.ids.filter((s) => s !== id) }));
+}
+
+/** Wipes the saved summer programs, in this browser only. Part of "Reset my data." */
+export function resetSummerPlan() {
+  summerPlanStore.reset();
+}
+
+/** The program a My Plan summer task belongs to: its id is `summer:<programId>:<deadline or "check">`. */
+export function summerProgramIdFromTask(taskId: string): string {
+  return taskId.split(":")[1];
+}
+
+/**
+ * One category holding every saved program, soonest deadline first. A blank deadline becomes a prompt to
+ * check the official site, never a guessed date. A saved id no longer in the data file is skipped.
+ */
+export function buildSummerCategories(ids: string[]): PlanCategory[] {
+  const programs = ids.flatMap((id) => getSummerProgram(id) ?? []).sort(byDeadline(null));
+  if (programs.length === 0) return [];
+  return [
+    {
+      id: "summer",
+      title: "Summer Programs",
+      icon: "sparkles",
+      href: "/summer",
+      tasks: programs.map((program) => ({
+        id: `summer:${program.id}:${program.deadline ?? "check"}`,
+        label: program.deadline
+          ? `Apply to ${program.name} (${program.host}) by ${formatSummerDate(program.deadline)}`
+          : `Check the summer 2027 deadline for ${program.name} (${program.host})`,
+        link: { label: "Official page", url: program.officialUrl },
+      })),
+    },
+  ];
+}
+
 // --- Task completion, the third shared record. The task list itself is always recomputed live
 // from the profile + college list + college data above; only which task ids are checked off is
 // persisted, the same pattern the old checklist used (see app/checklist/page.tsx history).
@@ -358,7 +418,7 @@ export function resetCustomTasks() {
 }
 
 export function taskProgressWasCorrupted(): boolean {
-  return taskProgressStore.wasCorrupted() || customTasksStore.wasCorrupted() || pathwayPlanStore.wasCorrupted();
+  return taskProgressStore.wasCorrupted() || customTasksStore.wasCorrupted() || pathwayPlanStore.wasCorrupted() || summerPlanStore.wasCorrupted();
 }
 
 /** Total not-yet-checked-off tasks across both My Plan sections — what the nav "My Plan · N tasks" counter shows. */

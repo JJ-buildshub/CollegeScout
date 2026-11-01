@@ -3,12 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Award, Compass, GraduationCap, LayoutList, Menu, ScanSearch, Sparkles, X } from "lucide-react";
+import { Award, Compass, GraduationCap, LayoutList, Menu, ScanSearch, Sparkles, Sun, X } from "lucide-react";
 import clsx from "clsx";
 import { getCollegeById } from "@/lib/colleges";
 import { useProfile } from "@/lib/profile";
 import { entriesWithStatusAtLeast, listEntries, useCollegeList } from "@/lib/collegeList";
-import { buildApplicationTasks, buildPathwayCategories, buildPlanCategories, countOpenTasks, useCustomTasks, usePathwayPlan, useTaskProgress, type ApplicationTaskGroup } from "@/lib/tasks";
+import { buildApplicationTasks, buildPathwayCategories, buildPlanCategories, buildSummerCategories, countOpenTasks, useCustomTasks, usePathwayPlan, useSummerPlan, useTaskProgress, type ApplicationTaskGroup } from "@/lib/tasks";
 
 /** "My Fit · N schools" / "My Plan · N tasks" — live because every hook here is one of the shared stores. */
 function useNavCounts() {
@@ -20,9 +20,10 @@ function useNavCounts() {
 
   const fitCount = listEntries(state).length;
 
-  // Pathway tasks don't depend on a grade, so they count even before one is set.
+  // Pathway and summer tasks don't depend on a grade, so they count even before one is set.
   const pathwayCategories = buildPathwayCategories(pathwaySlugs);
-  let planCount = countOpenTasks(pathwayCategories, [], done);
+  const { ids: summerIds } = useSummerPlan();
+  let planCount = countOpenTasks([...pathwayCategories, ...buildSummerCategories(summerIds)], [], done);
   if (profile.grade) {
     const interestIds = profile.undecided ? [] : profile.interests.map((i) => i.fieldId);
     const planCategories = buildPlanCategories(profile.grade, interestIds);
@@ -61,6 +62,7 @@ export default function NavBar() {
     },
     { href: "/scholarships", label: "Scholarships", icon: Award, counter: null as string | null, live: false },
     { href: "/beyond-grades", label: "Beyond Grades", icon: Sparkles, counter: null as string | null, live: false },
+    { href: "/summer", label: "Summer Opportunities", icon: Sun, counter: null as string | null, live: false },
   ];
 
   return (
@@ -79,7 +81,7 @@ export default function NavBar() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 lg:flex">
+        <nav className="hidden items-center gap-1 xl:flex">
           {NAV_LINKS.map(({ href, label, icon: Icon, counter, live }) => {
             const active = pathname === href || pathname?.startsWith(href + "/");
             return (
@@ -87,7 +89,7 @@ export default function NavBar() {
                 key={href}
                 href={href}
                 className={clsx(
-                  "flex items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium transition-colors xl:px-4",
+                  "flex items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium transition-colors",
                   active
                     ? "bg-navy-900 text-white"
                     : "text-slate-600 hover:bg-slate-100 hover:text-navy-900"
@@ -118,7 +120,7 @@ export default function NavBar() {
         <button
           type="button"
           aria-label="Toggle navigation menu"
-          className="flex h-9 w-9 items-center justify-center rounded-lg text-navy-900 hover:bg-slate-100 lg:hidden"
+          className="flex h-9 w-9 items-center justify-center rounded-lg text-navy-900 hover:bg-slate-100 xl:hidden"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -126,7 +128,7 @@ export default function NavBar() {
       </div>
 
       {open && (
-        <nav className="border-t border-slate-200 bg-white px-4 pb-3 pt-2 lg:hidden">
+        <nav className="border-t border-slate-200 bg-white px-4 pb-3 pt-2 xl:hidden">
           <div className="flex flex-col gap-1">
             {NAV_LINKS.map(({ href, label, icon: Icon, counter, live }) => {
               const active = pathname === href || pathname?.startsWith(href + "/");

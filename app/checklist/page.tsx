@@ -14,11 +14,15 @@ import {
   buildApplicationTasks,
   buildPathwayCategories,
   buildPlanCategories,
+  buildSummerCategories,
   removeCustomTask,
   removePathwayFromPlan,
+  removeSummerProgramFromPlan,
+  summerProgramIdFromTask,
   toggleTaskDone,
   useCustomTasks,
   usePathwayPlan,
+  useSummerPlan,
   useTaskProgress,
   type ApplicationTaskGroup,
   type PlanTask,
@@ -56,7 +60,7 @@ function TaskRow({ task, done, onToggle, onRemove }: { task: PlanTask; done: boo
           </a>
         )}
       </div>
-      {task.isCustom && onRemove && (
+      {onRemove && (
         <button onClick={onRemove} aria-label="Remove task" className="mt-0.5 shrink-0 text-slate-300 hover:text-rose-600">
           <Trash2 className="h-3.5 w-3.5" />
         </button>
@@ -97,6 +101,7 @@ export default function ChecklistPage() {
   const { done } = useTaskProgress();
   const customTasks = useCustomTasks();
   const pathwayPlan = usePathwayPlan();
+  const summerPlan = useSummerPlan();
 
   const interestFieldIds = profile.undecided ? [] : profile.interests.map((i) => i.fieldId);
 
@@ -109,6 +114,7 @@ export default function ChecklistPage() {
   );
 
   const pathwayCategories = useMemo(() => buildPathwayCategories(pathwayPlan.slugs), [pathwayPlan]);
+  const summerCategories = useMemo(() => buildSummerCategories(summerPlan.ids), [summerPlan]);
 
   const applicationGroups: ApplicationTaskGroup[] = useMemo(() => {
     return entriesWithStatusAtLeast(collegeListState, "Applying")
@@ -247,6 +253,33 @@ export default function ChecklistPage() {
           </div>
         </section>
       )}
+
+      {summerCategories.map((category) => (
+        <section key={category.id}>
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <h2 className="text-lg font-bold text-navy-900">Summer Opportunities</h2>
+            <span className="text-xs font-semibold text-slate-500">
+              {category.tasks.filter((t) => done[t.id]).length}/{category.tasks.length} complete
+            </span>
+          </div>
+          <div className="mt-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
+            <ul className="space-y-2.5">
+              {category.tasks.map((task) => (
+                <TaskRow
+                  key={task.id}
+                  task={task}
+                  done={!!done[task.id]}
+                  onToggle={() => toggleTaskDone(task.id)}
+                  onRemove={() => removeSummerProgramFromPlan(summerProgramIdFromTask(task.id))}
+                />
+              ))}
+            </ul>
+            <Link href={category.href ?? "/summer"} className="mt-3 inline-block text-xs font-semibold text-navy-900 underline underline-offset-2 hover:text-gold-600">
+              Find more summer programs
+            </Link>
+          </div>
+        </section>
+      ))}
 
       {/* Section 2: Your applications */}
       <section>
