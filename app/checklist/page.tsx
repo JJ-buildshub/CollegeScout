@@ -18,7 +18,6 @@ import {
   removeCustomTask,
   removePathwayFromPlan,
   removeSummerProgramFromPlan,
-  summerProgramIdFromTask,
   toggleTaskDone,
   useCustomTasks,
   usePathwayPlan,
@@ -27,6 +26,7 @@ import {
   type ApplicationTaskGroup,
   type PlanTask,
 } from "@/lib/tasks";
+import AddToCalendarButton from "@/components/AddToCalendarButton";
 import ChecklistIcon from "@/components/ChecklistIcon";
 import ProgressBar from "@/components/ProgressBar";
 import SchoolStatusBadge from "@/components/SchoolStatusBadge";
@@ -60,7 +60,7 @@ function TaskRow({ task, done, onToggle, onRemove }: { task: PlanTask; done: boo
           </a>
         )}
       </div>
-      {onRemove && (
+      {task.isCustom && onRemove && (
         <button onClick={onRemove} aria-label="Remove task" className="mt-0.5 shrink-0 text-slate-300 hover:text-rose-600">
           <Trash2 className="h-3.5 w-3.5" />
         </button>
@@ -254,32 +254,45 @@ export default function ChecklistPage() {
         </section>
       )}
 
-      {summerCategories.map((category) => (
-        <section key={category.id}>
+      {summerCategories.length > 0 && (
+        <section>
           <div className="flex flex-wrap items-center justify-between gap-3">
             <h2 className="text-lg font-bold text-navy-900">Summer Opportunities</h2>
-            <span className="text-xs font-semibold text-slate-500">
-              {category.tasks.filter((t) => done[t.id]).length}/{category.tasks.length} complete
-            </span>
+            <AddToCalendarButton ids={summerPlan.ids} />
           </div>
-          <div className="mt-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
-            <ul className="space-y-2.5">
-              {category.tasks.map((task) => (
-                <TaskRow
-                  key={task.id}
-                  task={task}
-                  done={!!done[task.id]}
-                  onToggle={() => toggleTaskDone(task.id)}
-                  onRemove={() => removeSummerProgramFromPlan(summerProgramIdFromTask(task.id))}
-                />
-              ))}
-            </ul>
-            <Link href={category.href ?? "/summer"} className="mt-3 inline-block text-xs font-semibold text-navy-900 underline underline-offset-2 hover:text-gold-600">
-              Find more summer programs
-            </Link>
+          <div className="mt-4 grid gap-5 lg:grid-cols-2">
+            {summerCategories.map((category) => {
+              const catDone = category.tasks.filter((t) => done[t.id]).length;
+              const pct = category.tasks.length > 0 ? (catDone / category.tasks.length) * 100 : 0;
+              return (
+                <div key={category.id} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
+                  <div className="flex items-start justify-between gap-2">
+                    <Link href={category.href ?? "/summer"} className="text-sm font-bold text-navy-900 hover:text-gold-600">
+                      {category.title}
+                    </Link>
+                    <span className="text-xs font-semibold text-slate-500">
+                      {catDone}/{category.tasks.length}
+                    </span>
+                  </div>
+                  <ProgressBar percent={pct} className="mt-3" />
+                  <ul className="mt-4 space-y-2.5">
+                    {category.tasks.map((task) => (
+                      <TaskRow key={task.id} task={task} done={!!done[task.id]} onToggle={() => toggleTaskDone(task.id)} />
+                    ))}
+                  </ul>
+                  <button
+                    type="button"
+                    onClick={() => removeSummerProgramFromPlan(category.id.replace(/^summer:/, ""))}
+                    className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-rose-600"
+                  >
+                    <Trash2 className="h-3 w-3" /> Remove this program
+                  </button>
+                </div>
+              );
+            })}
           </div>
         </section>
-      ))}
+      )}
 
       {/* Section 2: Your applications */}
       <section>

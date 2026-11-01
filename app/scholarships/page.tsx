@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
 import { Award, ExternalLink, MapPin, Search } from "lucide-react";
+import DueSoonLink from "@/components/DueSoonLink";
 import SectionHeader from "@/components/SectionHeader";
 import { areaMatch, lookupZip, type AreaMatch, type ZipLookup } from "@/lib/zipCounties";
 import {
@@ -336,6 +337,7 @@ export default function ScholarshipsPage() {
           <li>Nothing copied from a reel</li>
           <li>Verified, not viral</li>
         </ul>
+        <DueSoonLink />
       </SectionHeader>
 
       <div className="space-y-3">

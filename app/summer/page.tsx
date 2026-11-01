@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import clsx from "clsx";
 import { ExternalLink, Sun } from "lucide-react";
+import DueSoonLink from "@/components/DueSoonLink";
 import SectionHeader from "@/components/SectionHeader";
 import SaveSummerProgramButton from "@/components/SaveSummerProgramButton";
 import {
@@ -20,6 +21,7 @@ import {
   isBayArea,
   matchesGrade,
   matchesPlace,
+  SUMMER_YEAR,
   summerComparator,
   summerInterestLabel,
   summerInterests,
@@ -100,6 +102,24 @@ function ProgramCard({ program, today }: { program: SummerProgram; today: Date |
         <Row label="Location requirement" value={eligibility.location} />
         <Row label="Interests" value={program.interests.map(summerInterestLabel).join(", ")} />
       </dl>
+
+      <div className="mt-3 text-sm">
+        <p className="text-xs font-bold text-slate-500">
+          What to submit{program.toSubmit && program.toSubmit.year !== SUMMER_YEAR && ` (${program.toSubmit.year} list)`}
+        </p>
+        {program.toSubmit ? (
+          <ul className="mt-1 list-disc space-y-0.5 pl-4 leading-snug text-navy-900">
+            {program.toSubmit.items.map((item) => (
+              <li key={item.label}>
+                {item.label}
+                {item.due && <span className="text-slate-500"> (due {formatSummerDate(item.due)})</span>}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="mt-0.5 text-slate-500">{CHECK_SITE}</p>
+        )}
+      </div>
 
       <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100 pt-4">
         <SaveSummerProgramButton id={program.id} name={program.name} />
@@ -201,6 +221,7 @@ export default function SummerPage() {
     <div className="space-y-6">
       <SectionHeader icon={Sun} label="Summer 2027" title="Make Your Summer Count">
         <p>Internships, college programs and project ideas for high school students, with what each one costs and when to apply.</p>
+        <DueSoonLink />
       </SectionHeader>
 
       <div className="flex flex-wrap gap-2" role="tablist" aria-label="Kinds of summer opportunities">

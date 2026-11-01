@@ -6,7 +6,7 @@ import type { ApplicationRound, CollegeListEntry } from "./collegeList";
 import { ROUND_LABELS } from "./collegeList";
 import { createLocalStore } from "./store";
 import { getPathwayPage } from "./pathways";
-import { byDeadline, formatSummerDate, getSummerProgram } from "./summer";
+import { byDeadline, formatSummerDate, getSummerProgram, SUMMER_YEAR } from "./summer";
 
 export interface PlanTask {
   id: string;
@@ -336,33 +336,36 @@ export function resetSummerPlan() {
   summerPlanStore.reset();
 }
 
-/** The program a My Plan summer task belongs to: its id is `summer:<programId>:<deadline or "check">`. */
-export function summerProgramIdFromTask(taskId: string): string {
-  return taskId.split(":")[1];
-}
-
 /**
- * One category holding every saved program, soonest deadline first. A blank deadline becomes a prompt to
- * check the official site, never a guessed date. A saved id no longer in the data file is skipped.
+ * One category per saved program, soonest deadline first: each thing to submit, then the application
+ * itself. A blank deadline becomes a prompt to check the official site, never a guessed date, and a list
+ * from an earlier cycle says so. A saved id no longer in the data file is skipped.
  */
 export function buildSummerCategories(ids: string[]): PlanCategory[] {
   const programs = ids.flatMap((id) => getSummerProgram(id) ?? []).sort(byDeadline(null));
-  if (programs.length === 0) return [];
-  return [
-    {
-      id: "summer",
-      title: "Summer Programs",
+  return programs.map((program) => {
+    const link = { label: "Official page", url: program.officialUrl };
+    const listYear = program.toSubmit && program.toSubmit.year !== SUMMER_YEAR ? ` (${program.toSubmit.year} list)` : "";
+    const steps = (program.toSubmit?.items ?? []).map((item) => ({
+      id: `summer:${program.id}:step:${item.label}`,
+      label: `${item.label}${item.due ? `, due ${formatSummerDate(item.due)}` : ""}${listYear}`,
+      link,
+    }));
+    return {
+      id: `summer:${program.id}`,
+      title: `${program.name} (${program.host})`,
       icon: "sparkles",
       href: "/summer",
-      tasks: programs.map((program) => ({
-        id: `summer:${program.id}:${program.deadline ?? "check"}`,
-        label: program.deadline
-          ? `Apply to ${program.name} (${program.host}) by ${formatSummerDate(program.deadline)}`
-          : `Check the summer 2027 deadline for ${program.name} (${program.host})`,
-        link: { label: "Official page", url: program.officialUrl },
-      })),
-    },
-  ];
+      tasks: [
+        ...steps,
+        {
+          id: `summer:${program.id}:${program.deadline ?? "check"}`,
+          label: program.deadline ? `Apply by ${formatSummerDate(program.deadline)}` : "Check the summer 2027 deadline",
+          link,
+        },
+      ],
+    };
+  });
 }
 
 // --- Task completion, the third shared record. The task list itself is always recomputed live

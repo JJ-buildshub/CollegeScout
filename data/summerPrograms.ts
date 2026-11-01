@@ -31,6 +31,12 @@ export type SummerInterest =
 /** "bay-area" is one of the nine Bay Area counties; "in-person" is anywhere else. */
 export type SummerFormat = { kind: "in-person"; place: string } | { kind: "bay-area"; place: string } | { kind: "online" };
 
+export interface SummerSubmitItem {
+  label: string;
+  /** ISO date, when the official page gives this piece its own deadline. */
+  due?: string;
+}
+
 export interface SummerProgram {
   id: string;
   name: string;
@@ -62,6 +68,8 @@ export interface SummerProgram {
   deadline: string | null;
   /** Other rounds, or what the official page says when it gives no exact date. */
   deadlineNote: string | null;
+  /** What the official page says to send, and the cycle that list is for. null when no page we could read gives one. */
+  toSubmit: { year: number; items: SummerSubmitItem[] } | null;
   officialUrl: string;
   lastVerified: string;
 }
@@ -92,6 +100,15 @@ export const summerPrograms: SummerProgram[] = [
     startDate: "2027-05-10",
     deadline: "2027-01-26",
     deadlineNote: "Reference letters due Feb 2, 2027",
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application with your coursework and grades" },
+        { label: "CV or resume" },
+        { label: "Personal statement" },
+        { label: "Two references, who then send letters", due: "2027-02-02" },
+      ],
+    },
     officialUrl: "https://www.training.nih.gov/research-training/pb/sip/",
     lastVerified: VERIFIED,
   },
@@ -117,6 +134,7 @@ export const summerPrograms: SummerProgram[] = [
     startDate: "2027-06-07",
     deadline: null,
     deadlineNote: "Due in late February 2027; exact date not posted",
+    toSubmit: null,
     officialUrl: "https://simr.stanford.edu/",
     lastVerified: VERIFIED,
   },
@@ -142,6 +160,12 @@ export const summerPrograms: SummerProgram[] = [
     startDate: null,
     deadline: "2027-03-01",
     deadlineNote: null,
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application (letters of recommendation aren't part of it)" },
+      ],
+    },
     officialUrl: "https://www.nasa.gov/learning-resources/internship-programs/",
     lastVerified: VERIFIED,
   },
@@ -167,6 +191,14 @@ export const summerPrograms: SummerProgram[] = [
     startDate: null,
     deadline: "2026-11-30",
     deadlineNote: null,
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application" },
+        { label: "Personal statement" },
+        { label: "Recommendations" },
+      ],
+    },
     officialUrl: "https://www.onr.navy.mil/Education-Outreach/K-12-Programs/SEAP",
     lastVerified: VERIFIED,
   },
@@ -192,6 +224,16 @@ export const summerPrograms: SummerProgram[] = [
     startDate: null,
     deadline: null,
     deadlineNote: "2027 details to be posted in November",
+    toSubmit: {
+      year: 2026,
+      items: [
+        { label: "Online form with short essays" },
+        { label: "School transcript (PDF)" },
+        { label: "Resume (PDF)" },
+        { label: "Two recommendations" },
+        { label: "Zoom interview, if invited" },
+      ],
+    },
     officialUrl: "https://www.fredhutch.org/en/education-training/high-school-students/summer-high-school-internship-program.html",
     lastVerified: VERIFIED,
   },
@@ -217,6 +259,13 @@ export const summerPrograms: SummerProgram[] = [
     startDate: "2027-06-07",
     deadline: "2027-02-15",
     deadlineNote: "Applications open Jan 15, 2027",
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application form" },
+        { label: "Interview in March, if invited" },
+      ],
+    },
     officialUrl: "https://sep.ucsf.edu/programs/high-school-students/intern-program/",
     lastVerified: VERIFIED,
   },
@@ -242,6 +291,13 @@ export const summerPrograms: SummerProgram[] = [
     startDate: "2027-06-14",
     deadline: "2027-02-07",
     deadlineNote: null,
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application" },
+        { label: "Recommendation from a science teacher", due: "2027-02-07" },
+      ],
+    },
     officialUrl: "https://cseo.ucsf.edu/cure-internship",
     lastVerified: VERIFIED,
   },
@@ -267,6 +323,15 @@ export const summerPrograms: SummerProgram[] = [
     startDate: "2027-06-14",
     deadline: "2027-01-08",
     deadlineNote: "Applications open Nov 16, 2026",
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application" },
+        { label: "Personal statement (750 words or less)" },
+        { label: "Resume" },
+        { label: "Work permit by June 1, 2027, if selected and under 18" },
+      ],
+    },
     officialUrl: "https://kplaunch.kaiserpermanente.org/high-school-program/",
     lastVerified: VERIFIED,
   },
@@ -292,6 +357,14 @@ export const summerPrograms: SummerProgram[] = [
     startDate: null,
     deadline: null,
     deadlineNote: null,
+    toSubmit: {
+      year: 2026,
+      items: [
+        { label: "Online application with short answers" },
+        { label: "Recommendation from an educator, supervisor or mentor" },
+        { label: "Interview, if invited" },
+      ],
+    },
     officialUrl: "https://k12education.lbl.gov/programs/high-school/experiences-in-research",
     lastVerified: VERIFIED,
   },
@@ -317,6 +390,14 @@ export const summerPrograms: SummerProgram[] = [
     startDate: null,
     deadline: null,
     deadlineNote: null,
+    toSubmit: {
+      year: 2026,
+      items: [
+        { label: "Online application" },
+        { label: "High school transcript (unofficial is fine)" },
+        { label: "Letter of recommendation" },
+      ],
+    },
     officialUrl: "https://st.llnl.gov/sci-ed/summer-workshops/biotech-summer-experience",
     lastVerified: VERIFIED,
   },
@@ -344,6 +425,14 @@ export const summerPrograms: SummerProgram[] = [
     startDate: null,
     deadline: null,
     deadlineNote: null,
+    toSubmit: {
+      year: 2026,
+      items: [
+        { label: "Online application form" },
+        { label: "Unofficial transcripts" },
+        { label: "$65 application fee (waivers available)" },
+      ],
+    },
     officialUrl: "https://summerinstitutes.spcs.stanford.edu/",
     lastVerified: VERIFIED,
   },
@@ -369,6 +458,16 @@ export const summerPrograms: SummerProgram[] = [
     startDate: null,
     deadline: null,
     deadlineNote: null,
+    toSubmit: {
+      year: 2026,
+      items: [
+        { label: "Online application form" },
+        { label: "Unofficial transcripts" },
+        { label: "Recommendation from a math teacher" },
+        { label: "$65 application fee (waivers available)" },
+        { label: "Video essay (optional)" },
+      ],
+    },
     officialUrl: "https://sumac.spcs.stanford.edu/",
     lastVerified: VERIFIED,
   },
@@ -394,6 +493,13 @@ export const summerPrograms: SummerProgram[] = [
     startDate: null,
     deadline: null,
     deadlineNote: null,
+    toSubmit: {
+      year: 2026,
+      items: [
+        { label: "Online application with two short answers (100 words each)" },
+        { label: "High school transcript (PDF)" },
+      ],
+    },
     officialUrl: "https://precollege.berkeley.edu/",
     lastVerified: VERIFIED,
   },
@@ -409,7 +515,7 @@ export const summerPrograms: SummerProgram[] = [
     selectivity: "Selective",
     eligibility: {
       grades: [9, 10, 11, 12],
-      gradesLabel: "Completing grades 8 to 12 by the summer",
+      gradesLabel: "Completing grades 8 to 12 by the summer (a campus page says through grade 11, so confirm)",
       minAge: null,
       citizenship: null,
       location: "California high school students only",
@@ -419,6 +525,15 @@ export const summerPrograms: SummerProgram[] = [
     startDate: null,
     deadline: "2027-02-05",
     deadlineNote: "Applications open Jan 6, 2027",
+    toSubmit: {
+      year: 2026,
+      items: [
+        { label: "Online application with one personal statement" },
+        { label: "Unofficial transcripts" },
+        { label: "At least one teacher recommendation" },
+        { label: "Parent or guardian signature" },
+      ],
+    },
     officialUrl: "https://cosmos-ucop.ucdavis.edu/app/main/page/dates-deadlines",
     lastVerified: VERIFIED,
   },
@@ -444,6 +559,15 @@ export const summerPrograms: SummerProgram[] = [
     startDate: "2027-06-14",
     deadline: "2027-02-26",
     deadlineNote: "Tentative. Applications open Jan 15, 2027",
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application with essays" },
+        { label: "Unofficial transcript" },
+        { label: "Reference from a teacher or mentor", due: "2027-03-05" },
+        { label: "$68 application fee (waivers on request)" },
+      ],
+    },
     officialUrl: "https://sip.ucsc.edu/applying-to-sip/",
     lastVerified: VERIFIED,
   },
@@ -472,6 +596,15 @@ export const summerPrograms: SummerProgram[] = [
     startDate: null,
     deadline: "2026-12-11",
     deadlineNote: null,
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application with essays" },
+        { label: "Recommendations from two teachers" },
+        { label: "Official high school transcript" },
+        { label: "All PSAT, SAT, ACT and AP scores" },
+      ],
+    },
     officialUrl: "https://www.cee.org/programs/research-science-institute",
     lastVerified: VERIFIED,
   },
@@ -497,6 +630,15 @@ export const summerPrograms: SummerProgram[] = [
     startDate: "2027-06-21",
     deadline: "2027-02-01",
     deadlineNote: "Decisions Apr 1, 2027",
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application with two essays" },
+        { label: "Unofficial transcript" },
+        { label: "Standardized test scores" },
+        { label: "Two letters of recommendation (one from a current math teacher)" },
+      ],
+    },
     officialUrl: "https://www.cmu.edu/pre-college/academic-programs/sams.html",
     lastVerified: VERIFIED,
   },
@@ -522,6 +664,14 @@ export const summerPrograms: SummerProgram[] = [
     startDate: "2027-06-26",
     deadline: "2027-02-01",
     deadlineNote: "Decisions Apr 1, 2027",
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application with essays" },
+        { label: "Unofficial transcript" },
+        { label: "Two letters of recommendation" },
+      ],
+    },
     officialUrl: "https://www.cmu.edu/pre-college/academic-programs/ai_scholars.html",
     lastVerified: VERIFIED,
   },
@@ -547,6 +697,14 @@ export const summerPrograms: SummerProgram[] = [
     startDate: "2027-06-26",
     deadline: "2027-02-01",
     deadlineNote: "Decisions Apr 1, 2027",
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application with essays" },
+        { label: "Unofficial transcript" },
+        { label: "Two letters of recommendation" },
+      ],
+    },
     officialUrl: "https://www.cmu.edu/pre-college/academic-programs/computer-science-scholars.html",
     lastVerified: VERIFIED,
   },
@@ -572,6 +730,7 @@ export const summerPrograms: SummerProgram[] = [
     startDate: "2027-06-20",
     deadline: "2027-01-06",
     deadlineNote: "Regular Decision. Early Action closed Oct 15, 2026",
+    toSubmit: null,
     officialUrl: "https://globalscholars.yale.edu/application-deadlines",
     lastVerified: VERIFIED,
   },
@@ -597,6 +756,7 @@ export const summerPrograms: SummerProgram[] = [
     startDate: "2027-06-21",
     deadline: "2027-02-10",
     deadlineNote: "Regular deadline. Early Jan 13, late Mar 31, 2027",
+    toSubmit: null,
     officialUrl: "https://summer.harvard.edu/high-school-programs/pre-college-program/",
     lastVerified: VERIFIED,
   },
@@ -622,6 +782,13 @@ export const summerPrograms: SummerProgram[] = [
     startDate: null,
     deadline: null,
     deadlineNote: "Applications run during the fall of junior year; exact date not posted on this page",
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application with short answers" },
+        { label: "Teacher recommendations" },
+      ],
+    },
     officialUrl: "https://mites.mit.edu/discover-mites/mites-summer/",
     lastVerified: VERIFIED,
   },
@@ -647,6 +814,14 @@ export const summerPrograms: SummerProgram[] = [
     startDate: "2027-06-21",
     deadline: null,
     deadlineNote: "Rolling review from Nov 4, 2026. Scholarship deadline Jan 29, 2027",
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application signed by you and a parent or guardian" },
+        { label: "Short written responses (1 to 5 sentences each)" },
+        { label: "$60 application fee" },
+      ],
+    },
     officialUrl: "https://precollege.risd.edu/on-campus/application-information",
     lastVerified: VERIFIED,
   },
@@ -672,6 +847,15 @@ export const summerPrograms: SummerProgram[] = [
     startDate: "2027-06-19",
     deadline: "2027-01-20",
     deadlineNote: null,
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application" },
+        { label: "High school transcript and counselor report" },
+        { label: "Letter of recommendation from a teacher" },
+        { label: "SAT, ACT or PSAT scores (optional)", due: "2027-01-31" },
+      ],
+    },
     officialUrl: "https://precollege.nd.edu/leadership-seminars/application-and-admission/",
     lastVerified: VERIFIED,
   },
@@ -697,6 +881,7 @@ export const summerPrograms: SummerProgram[] = [
     startDate: null,
     deadline: null,
     deadlineNote: "2027 offerings to be posted Nov 16, 2026",
+    toSubmit: null,
     officialUrl: "https://summer.georgetown.edu/programs/SHS19/medical-academy/",
     lastVerified: VERIFIED,
   },
@@ -724,6 +909,16 @@ export const summerPrograms: SummerProgram[] = [
     startDate: "2027-06-13",
     deadline: "2026-11-29",
     deadlineNote: "Applications open Nov 2. Teacher recommendations due Dec 4, 2026",
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application and $100 fee" },
+        { label: "One essay (500 words or less)" },
+        { label: "Two-minute video essay" },
+        { label: "Transcript covering the past two years" },
+        { label: "Two teacher recommendations", due: "2026-12-04" },
+      ],
+    },
     officialUrl: "https://haas.berkeley.edu/business-academy/high-school/high-school-entrepreneurship/apply-now-copy/",
     lastVerified: VERIFIED,
   },
@@ -749,6 +944,15 @@ export const summerPrograms: SummerProgram[] = [
     startDate: "2027-06-27",
     deadline: "2027-03-31",
     deadlineNote: "Final deadline; may close early. Priority Nov 11, 2026, early Jan 21, 2027",
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application with four sections" },
+        { label: "Unofficial transcript" },
+        { label: "Interview, if invited" },
+        { label: "Short video (optional)" },
+      ],
+    },
     officialUrl: "https://www.launchx.com/admissions/how-to-apply",
     lastVerified: VERIFIED,
   },
@@ -774,6 +978,7 @@ export const summerPrograms: SummerProgram[] = [
     startDate: "2027-07-12",
     deadline: "2027-02-12",
     deadlineNote: "In-person deadline. Online Mar 12, 2027",
+    toSubmit: null,
     officialUrl: "https://www.babson.edu/summer-at-babson/high-school-learners/summer-study/key-dates/",
     lastVerified: VERIFIED,
   },
@@ -799,6 +1004,14 @@ export const summerPrograms: SummerProgram[] = [
     startDate: null,
     deadline: "2027-01-14",
     deadlineNote: null,
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Team of 2 to 4 with an adult advisor" },
+        { label: "Written concept narrative (3 to 5 pages)" },
+        { label: "Introductory video (60 seconds)" },
+      ],
+    },
     officialUrl: "https://diamondchallenge.org/competition/",
     lastVerified: VERIFIED,
   },
@@ -828,6 +1041,7 @@ export const summerPrograms: SummerProgram[] = [
     startDate: null,
     deadline: null,
     deadlineNote: "Camp applications open February 2027",
+    toSubmit: null,
     officialUrl: "https://www.kodewithklossy.com/programs",
     lastVerified: VERIFIED,
   },
@@ -853,6 +1067,7 @@ export const summerPrograms: SummerProgram[] = [
     startDate: null,
     deadline: null,
     deadlineNote: null,
+    toSubmit: null,
     officialUrl: "https://hackclub.com/",
     lastVerified: VERIFIED,
   },
@@ -878,6 +1093,7 @@ export const summerPrograms: SummerProgram[] = [
     startDate: null,
     deadline: null,
     deadlineNote: null,
+    toSubmit: null,
     officialUrl: "https://www.congressionalappchallenge.us/students/rules/",
     lastVerified: VERIFIED,
   },
@@ -891,6 +1107,10 @@ export const summerPrograms: SummerProgram[] = [
  */
 export const summerProgramSources: Record<string, { url: string; evidence: string[] }[]> = {
   "nih-sip": [
+    {
+      url: "https://www.training.nih.gov/research-training/pb/sip/",
+      evidence: ["Reference Letters are due Tuesday, February 2, 2027 at 12 pm (noon) ET.", "Personal Statement - a statement broadly describing", "CV/Resume - a list of your education"],
+    },
     {
       url: "https://www.training.nih.gov/research-training/pb/sip/",
       evidence: [
@@ -913,10 +1133,18 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
   "nasa-ostem": [
     {
       url: "https://www.nasa.gov/learning-resources/internship-programs/",
+      evidence: ["Letters of recommendation are not part of the NASA Office of STEM Engagement Internships application."],
+    },
+    {
+      url: "https://www.nasa.gov/learning-resources/internship-programs/",
       evidence: ["Summer 2027 Application Deadline: March 1, 2027 (11:59 p.m. ET)", "Must be 18 or older by the published start date of session"],
     },
   ],
   "navy-seap": [
+    {
+      url: "https://www.navalsteminterns.us/seap/",
+      evidence: ["Interns are selected based on academic achievement, personal statements, recommendations"],
+    },
     {
       url: "https://www.onr.navy.mil/Education-Outreach/K-12-Programs/SEAP",
       evidence: ["The online application period is now open through November 30th for the Summer 2027 internship program.", "First-Year Interns : $4,000", "Returning Interns : $4,500"],
@@ -929,10 +1157,18 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
   "fred-hutch-ship": [
     {
       url: "https://www.fredhutch.org/en/education-training/high-school-students/summer-high-school-internship-program.html",
+      evidence: ["Upload a PDF of your recent school transcript", "Upload a PDF of your resume", "We require two recommendations"],
+    },
+    {
+      url: "https://www.fredhutch.org/en/education-training/high-school-students/summer-high-school-internship-program.html",
       evidence: ["Information on the 2027 program will be posted in November.", "Be 16 years or older by start of program"],
     },
   ],
   "ucsf-hip": [
+    {
+      url: "https://sep.ucsf.edu/programs/high-school-students/intern-program/",
+      evidence: ["A completed electronic application form.", "March: Student interviews"],
+    },
     {
       url: "https://sep.ucsf.edu/programs/high-school-students/intern-program/",
       evidence: ["January 15: Applications open", "February 15: Applications due", "June 7: Program begins", "July 30 : Program ends", "Receive $4500 upon full completion of the program."],
@@ -941,16 +1177,28 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
   "ucsf-cure": [
     {
       url: "https://cseo.ucsf.edu/cure-internship",
+      evidence: ["One recommendation form is required from a current or former science teacher.", "Recommendation Form Deadline: Sunday, February 7, 2027"],
+    },
+    {
+      url: "https://cseo.ucsf.edu/cure-internship",
       evidence: ["Application Deadline: Sunday, February 7, 2027 at 11:59pm PST.", "Monday, June 14th 2027- Friday, August 6th 2027", "Must be a current 11th grader"],
     },
   ],
   "kp-launch": [
+    {
+      url: "https://kplaunch.kaiserpermanente.org/apply-now/",
+      evidence: ["A personal statement and resume will be required to complete your application.", "In 750 words or less"],
+    },
     {
       url: "https://kplaunch.kaiserpermanente.org/high-school-program/",
       evidence: ["Applications Open at 9am PST on 11/16/26 and close on 1/8/27 at 5pm PST", "June 14th – July 30th", "$25 per hour"],
     },
   ],
   "lbnl-einr": [
+    {
+      url: "https://k12education.lbl.gov/programs/high-school/experiences-in-research/application",
+      evidence: ["accompanied by a recommendation by an educator, supervisor or mentor", "Short Answers"],
+    },
     {
       url: "https://k12education.lbl.gov/programs/high-school/experiences-in-research",
       evidence: ["Applications are closed for Summer 2026.", "paid internships"],
@@ -959,10 +1207,18 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
   "llnl-biotech": [
     {
       url: "https://st.llnl.gov/sci-ed/summer-workshops/biotech-summer-experience",
+      evidence: ["Most recent high school transcript; unofficial copy will be accepted"],
+    },
+    {
+      url: "https://st.llnl.gov/sci-ed/summer-workshops/biotech-summer-experience",
       evidence: ["STUDENT APPLICATION DEADLINE : February 26, 2026", "There is NO cost to attend; the workshop is FREE."],
     },
   ],
   "stanford-summer-institutes": [
+    {
+      url: "https://summerinstitutes.spcs.stanford.edu/admissions",
+      evidence: ["We require unofficial transcripts", "$65 Application Fee"],
+    },
     {
       url: "https://summerinstitutes.spcs.stanford.edu/",
       evidence: ["Our application for the 2026 Stanford Pre-Collegiate Summer Institutes is now closed."],
@@ -973,6 +1229,10 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
     },
   ],
   "stanford-sumac": [
+    {
+      url: "https://sumac.spcs.stanford.edu/sumac-admissions",
+      evidence: ["We require one online recommendation form from a math teacher.", "$65 Application Fee"],
+    },
     {
       url: "https://sumac.spcs.stanford.edu/",
       evidence: ["Our application for the 2026 Stanford University Mathematics Camp is now closed."],
@@ -985,10 +1245,18 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
   "berkeley-pre-college": [
     {
       url: "https://precollege.berkeley.edu/commuter",
+      evidence: ["two short answers (100 words each)", "Upload a PDF copy of your most recent high school transcript"],
+    },
+    {
+      url: "https://precollege.berkeley.edu/commuter",
       evidence: ["Application deadline: Monday, June 1, 2026 11:59pm (Pacific Time)", "Have completed 10th or 11th grade by the start of summer classes", "$635"],
     },
   ],
   cosmos: [
+    {
+      url: "https://cosmos.ucsc.edu/how-to-apply/",
+      evidence: ["Request at least one teacher recommendation.", "Upload unofficial transcripts.", "through rising eleventh graders"],
+    },
     {
       url: "https://cosmos-ucop.ucdavis.edu/app/main/page/dates-deadlines",
       evidence: ["Online Application Closes: February 5, 2027, at 5:00 PM", "PROGRAM COST: $5,793", "Opening Day 2027: TBA"],
@@ -997,10 +1265,18 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
   "ucsc-sip": [
     {
       url: "https://sip.ucsc.edu/applying-to-sip/",
+      evidence: ["One reference from a teacher or mentor", "Friday, March 5, 2027"],
+    },
+    {
+      url: "https://sip.ucsc.edu/applying-to-sip/",
       evidence: ["Friday, February 26, 2027 at 12:00 noon PST", "Program costs for 2027 will become available by December, 2026.", "US $68 for SIP 2027"],
     },
   ],
   rsi: [
+    {
+      url: "https://www.cee.org/programs/apply-rsi",
+      evidence: ["Recommendations by two teachers", "official high school transcript", "These include the PSAT, SAT, ACT, and AP exams."],
+    },
     {
       url: "https://www.cee.org/programs/research-science-institute",
       evidence: ["Applications for RSI 2027 are open through 11:59pm December 11, 2026.", "In 2027, CEE is expanding the RSI to Stanford for 50 young scholars."],
@@ -1013,16 +1289,28 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
   "cmu-sams": [
     {
       url: "https://www.cmu.edu/pre-college/academic-programs/sams.html",
+      evidence: ["Two (2) letters of recommendation (one must be from a current math instructor*)", "Completion of two essay prompts indicated in the application", "Standardized test scores"],
+    },
+    {
+      url: "https://www.cmu.edu/pre-college/academic-programs/sams.html",
       evidence: ["You must be 16 years of age by June 26, 2027.", "August 7, 2027", "February 1, 2027"],
     },
   ],
   "cmu-ai-scholars": [
     {
       url: "https://www.cmu.edu/pre-college/academic-programs/ai_scholars.html",
+      evidence: ["Two (2) letters of recommendation", "Unofficial high school transcript"],
+    },
+    {
+      url: "https://www.cmu.edu/pre-college/academic-programs/ai_scholars.html",
       evidence: ["June 26, 2027: Opening Day/Residential Move-In", "July 24, 2027", "February 1, 2027"],
     },
   ],
   "cmu-cs-scholars": [
+    {
+      url: "https://www.cmu.edu/pre-college/academic-programs/computer-science-scholars.html",
+      evidence: ["Two (2) letters of recommendation", "Unofficial high school transcript"],
+    },
     {
       url: "https://www.cmu.edu/pre-college/academic-programs/computer-science-scholars.html",
       evidence: ["June 26, 2027: Opening Day", "July 24, 2027", "February 1, 2027"],
@@ -1050,11 +1338,19 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
   ],
   "mites-summer": [
     {
+      url: "https://mites.mit.edu/apply/",
+      evidence: ["Use the Short Answer section", "For recommenders, consider recent teachers"],
+    },
+    {
       url: "https://mites.mit.edu/discover-mites/mites-summer/",
       evidence: ["All program-related costs are covered", "Eligible students can apply online during the fall semester of their junior year"],
     },
   ],
   "risd-pre-college": [
+    {
+      url: "https://precollege.risd.edu/on-campus/application-information",
+      evidence: ["A completed application with electronic signatures from both you and a parent/guardian.", "sentence response to each of the following questions", "A $60 non-refundable application fee."],
+    },
     {
       url: "https://precollege.risd.edu/on-campus/application-information",
       evidence: ["Applications for summer 2027 open November 4, 2026.", "JAN 29, 2027"],
@@ -1069,6 +1365,10 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
     },
   ],
   "notre-dame-leadership": [
+    {
+      url: "https://precollege.nd.edu/leadership-seminars/application-and-admission/",
+      evidence: ["Interested students must submit an online application, a high school transcript, a counselor report, and a letter of recommendation from a high school teacher.", "Scores will be accepted up until January 31, 2027."],
+    },
     {
       url: "https://precollege.nd.edu/leadership-seminars/application-and-admission/",
       evidence: ["Applications and all supporting documents must be submitted by January 20, 2027", "Session I June 19 - June 30, 2027", "At least 16 years-old by or on August 1, 2027."],
@@ -1087,6 +1387,10 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
   "berkeley-bbay": [
     {
       url: "https://haas.berkeley.edu/business-academy/high-school/high-school-entrepreneurship/apply-now-copy/",
+      evidence: ["All teacher recommendations must be submitted by 8:59 PM PST on Friday, December 4th.", "The essay must be 500 words or less", "The video essay should not exceed two minutes.", "A non-refundable $100 application fee"],
+    },
+    {
+      url: "https://haas.berkeley.edu/business-academy/high-school/high-school-entrepreneurship/apply-now-copy/",
       evidence: ["Applications open: November 02 – November 29, 2026", "HSEN 1: June 13 – June 26, 2027"],
     },
     {
@@ -1095,6 +1399,10 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
     },
   ],
   launchx: [
+    {
+      url: "https://www.launchx.com/admissions/how-to-apply",
+      evidence: ["Complete the four sections and upload your transcript.", "Selected applicants are invited to an interview."],
+    },
     {
       url: "https://www.launchx.com/admissions/how-to-apply",
       evidence: ["Summer Final Deadline — March 31, 2027"],
@@ -1119,6 +1427,10 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
     },
   ],
   "diamond-challenge": [
+    {
+      url: "https://diamondchallenge.org/competition/",
+      evidence: ["The narrative is limited to 3-5 pages", "The video is strictly limited to 60 seconds.", "Teams must consist of 2-4 high school students"],
+    },
     {
       url: "https://diamondchallenge.org/competition/",
       evidence: ["January 14 | Submission Deadline (5PM EST)", "April 29-30 | Limitless World Summit", "aged 14-18 at the submission deadline"],

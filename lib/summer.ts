@@ -3,6 +3,9 @@ import { getInterestById } from "./interests";
 
 export type SummerPlace = "bay-area" | "online" | "travel";
 
+/** The summer these listings are for; a to-submit list from an earlier year is labeled with its year. */
+export const SUMMER_YEAR = 2027;
+
 /** Tags the site's interest taxonomy has no match for; every other tag reads its label from there. */
 const EXTRA_INTEREST_LABELS: Partial<Record<SummerInterest, string>> = {
   research: "Research",
