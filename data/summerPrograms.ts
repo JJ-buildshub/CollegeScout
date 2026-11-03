@@ -929,7 +929,7 @@ export const summerPrograms: SummerProgram[] = [
     category: "build",
     interests: ["entrepreneurship", "business"],
     cost: "Paid",
-    amount: { text: "$13,495 in person, from $6,495 online", year: 2027 },
+    amount: { text: "$13,495 in person, $7,495 online", year: 2027 },
     costNote: "Financial awards available; apply by Mar 4, 2027 to be considered",
     selectivity: "Selective",
     eligibility: {
@@ -954,7 +954,7 @@ export const summerPrograms: SummerProgram[] = [
       ],
     },
     officialUrl: "https://www.launchx.com/admissions/how-to-apply",
-    lastVerified: VERIFIED,
+    lastVerified: "2026-11-03",
   },
   {
     id: "babson-summer-study",
@@ -1413,7 +1413,7 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
     },
     {
       url: "https://www.launchx.com/program/online-entrepreneurship",
-      evidence: ["begin at $6,495", "July 5 – August 6"],
+      evidence: ["$7,495", "July 5 – August 6"],
     },
   ],
   "babson-summer-study": [
