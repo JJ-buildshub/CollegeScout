@@ -799,8 +799,8 @@ export const summerPrograms: SummerProgram[] = [
     category: "university",
     interests: ["visual-arts", "design-architecture"],
     cost: "Paid",
-    amount: { text: "$12,495 residential, $9,595 commuter", year: 2026 },
-    costNote: "$60 application fee. Scholarships available. 2027 costs to be announced in November",
+    amount: { text: "$12,865 residential, $9,860 commuter", year: 2027 },
+    costNote: "$60 application fee. Scholarships available",
     selectivity: "Selective",
     eligibility: {
       grades: [10, 11],
@@ -823,7 +823,7 @@ export const summerPrograms: SummerProgram[] = [
       ],
     },
     officialUrl: "https://precollege.risd.edu/on-campus/application-information",
-    lastVerified: VERIFIED,
+    lastVerified: "2026-11-02",
   },
   {
     id: "notre-dame-leadership",
@@ -1357,7 +1357,7 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
     },
     {
       url: "https://precollege.risd.edu/on-campus/tuition-and-fees",
-      evidence: ["Residential program: $12,495", "Commuter program: $9,595", "2027 program costs will be announced in November"],
+      evidence: ["Residential program: $12,865", "Commuter program: $9,860", "2027 program cost"],
     },
     {
       url: "https://precollege.risd.edu/",

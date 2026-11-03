@@ -657,16 +657,17 @@
   "columbia-college-chicago": {
    "label": "Columbia College Chicago admissions",
    "url": "https://www.colum.edu/admissions/additional-information/timeline/",
-   "accessed": "2026-09-22",
+   "accessed": "2026-11-02",
    "evidence": [
-    "Priority application deadline for all programs and all terms"
+    "The priority review deadline for all other programs is Tuesday, December 1, 2026.",
+    "Final deadlines may vary by program."
    ],
    "plans": [
     {
      "type": "RD",
      "binding": false,
-     "deadline": "November 1",
-     "note": "Called the 'Priority application deadline'; whether review continues after this date on a rolling basis is not explicitly confirmed on the page."
+     "deadline": "December 1, 2026",
+     "note": "Priority review date for most programs; applications are accepted after it, and final deadlines vary by program. It is the final fall deadline for Acting, Comedy Writing and Performance, Fashion Design, Musical Theatre, and Performance and Songwriting."
     }
    ],
    "manual": false,
@@ -2005,9 +2006,9 @@
   "montclair-state-university": {
    "label": "Montclair State University admissions",
    "url": "https://www.montclair.edu/admissions/apply-and-check-status/admissions-deadlines/",
-   "accessed": "2026-09-22",
+   "accessed": "2026-11-02",
    "evidence": [
-    "First-year Regular Admission Deadlines Application Type Deadline Apply Fall 2027 Early Action* (non-binding) December 1, 2026 Apply Now Fall 2027 School of Nursing February 1, 2027 Apply Now Fall 2027 Regular Admission March 1, 2027"
+    "Fall 2027 Early Action* (non-binding) December 1, 2026 Apply Now Fall 2027 School of Nursing February 1, 2027 Apply Now Fall 2027 Regular Admission March 1, 2027"
    ],
    "plans": [
     {
@@ -3967,11 +3968,11 @@
   },
   "university-of-notre-dame": {
    "label": "Notre Dame admissions",
-   "url": "https://admissions.nd.edu/apply/",
-   "accessed": "2026-09-20",
+   "url": "https://admissions.nd.edu/apply/decision-planning/",
+   "accessed": "2026-11-02",
    "evidence": [
-    "Restrictive Early Action November 1",
-    "Regular Decision January 4"
+    "Restrictive Early Action: November 1",
+    "Regular Decision: January 4"
    ],
    "plans": [
     {
@@ -4575,17 +4576,12 @@
   "western-washington-university": {
    "label": "Western Washington University admissions",
    "url": "https://admissions.wwu.edu/first-year/apply",
-   "accessed": "2026-09-22",
+   "accessed": "2026-11-02",
    "evidence": [
-    "Apply for Fall 2027 Apply by the November 1 Early Action deadline to receive a response from the Office of Admissions by December 31.",
+    "Apply for Fall 2027",
     "admission decisions are made on a rolling basis-most Regular Decision applicants will receive an admission decision by early April."
    ],
    "plans": [
-    {
-     "type": "EA",
-     "binding": false,
-     "deadline": "November 1"
-    },
     {
      "type": "Rolling",
      "binding": false,
@@ -4782,10 +4778,10 @@
   "azusa-pacific-university": {
    "label": "Azusa Pacific freshman admissions",
    "url": "https://www.apu.edu/undergraduate-admissions/freshman/",
-   "accessed": "2026-09-29",
+   "accessed": "2026-11-02",
    "evidence": [
-    "The following deadlines are firm and apply to first-year freshmen and transfer students.",
-    "March 1 priority application deadline (recommended deadline)"
+    "March 1: Priority application deadline",
+    "We do not accept materials sent after the final deadline."
    ],
    "plans": [
     {
@@ -5391,20 +5387,20 @@
   "plymouth-state-university": {
    "label": "Plymouth State University first-year students",
    "url": "https://www.plymouth.edu/admissions/undergraduate/first-year-students",
-   "accessed": "2026-09-29",
+   "accessed": "2026-11-02",
    "evidence": [
-    "Fall Semester: Applications for Fall will continue to be accepted while space remains.",
-    "Candidates applying after deadlines may receive consideration on a space-available basis. The University reserves the right to close admission prior to the above deadlines if enrollment has reached full capacity."
+    "Fall Semester: April 1",
+    "Candidates applying after deadlines may receive consideration on a space-available basis."
    ],
    "plans": [
     {
-     "type": "Rolling",
+     "type": "RD",
      "binding": false,
-     "deadline": null
+     "deadline": "April 1"
     }
    ],
    "manual": false,
-   "note": "The December 1 date on the same page governs spring entry, and the May 1 and January 3 dates are enrolment deposits."
+   "note": "Applications after April 1 may be considered if space remains. The December 1 date on the same page governs spring entry, and the May 1 date is an enrollment deposit."
   },
   "nevada-state-university": {
    "label": "Nevada State University application information",

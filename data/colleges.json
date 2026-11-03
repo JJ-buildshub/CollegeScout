@@ -21516,16 +21516,16 @@
     },
     "admitRateOverallSuperseded": true,
     "applicationPlansProvenance": {
-      "source": "Notre Dame admissions (https://admissions.nd.edu/apply/)",
+      "source": "Notre Dame admissions (https://admissions.nd.edu/apply/decision-planning/)",
       "year": "2026-27",
-      "accessed": "2026-09-20",
+      "accessed": "2026-11-02",
       "note": "Official live admissions page does not name the entering year; treated as the current 2026–27 application cycle based on access date September 20, 2026."
     },
     "testingPolicyNote": "Notre Dame will require SAT or ACT scores for applicants seeking to enroll in fall 2028.",
     "testingPolicyProvenance": {
-      "source": "Notre Dame admissions (https://admissions.nd.edu/apply/)",
+      "source": "Notre Dame admissions (https://admissions.nd.edu/apply/standardized-testing-policy/)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-11-02"
     },
     "admissionsProvenance": {
       "source": "College Scorecard (latest.admissions.admission_rate.overall)",
@@ -25277,7 +25277,7 @@
     "applicationPlansProvenance": {
       "source": "Azusa Pacific freshman admissions (https://www.apu.edu/undergraduate-admissions/freshman/)",
       "year": "2026-27",
-      "accessed": "2026-09-29"
+      "accessed": "2026-11-02"
     }
   },
   {
@@ -30790,8 +30790,8 @@
       {
         "type": "RD",
         "binding": false,
-        "deadline": "November 1",
-        "note": "Called the 'Priority application deadline'; whether review continues after this date on a rolling basis is not explicitly confirmed on the page."
+        "deadline": "December 1, 2026",
+        "note": "Priority review date for most programs; applications are accepted after it, and final deadlines vary by program. It is the final fall deadline for Acting, Comedy Writing and Performance, Fashion Design, Musical Theatre, and Performance and Songwriting."
       }
     ],
     "financials": {
@@ -30895,7 +30895,7 @@
     "applicationPlansProvenance": {
       "source": "Columbia College Chicago admissions (https://www.colum.edu/admissions/additional-information/timeline/)",
       "year": "2026-27",
-      "accessed": "2026-09-22",
+      "accessed": "2026-11-02",
       "note": "Page confirms this is the Fall 2027 entry cycle."
     },
     "testingPolicyNote": "A test requirement still applies to international students who cannot demonstrate English proficiency through coursework.",
@@ -39605,11 +39605,11 @@
       }
     },
     "admitRateOverallSuperseded": true,
-    "testingPolicyNote": "Test-optional above a weighted GPA of 2.80; between 2.50 and 2.80 a score of at least 17 (ACT) or 930 (SAT) is required; below 2.50, see the school's admission criteria.",
+    "testingPolicyNote": "Test-optional at a weighted GPA of 2.80 or above; below 2.80 a score of at least 17 (ACT) or 930 (SAT) is required.",
     "testingPolicyProvenance": {
       "source": "UNC Wilmington admissions (https://www.uncw.edu/admissions/undergraduate/first-year/requirements/testing)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-11-02"
     },
     "applicationPlansProvenance": {
       "source": "UNC Wilmington admissions (https://www.uncw.edu/admissions/undergraduate/first-year/deadlines)",
@@ -41093,9 +41093,9 @@
     },
     "applicationPlans": [
       {
-        "type": "Rolling",
+        "type": "RD",
         "binding": false,
-        "deadline": null
+        "deadline": "April 1"
       }
     ],
     "financials": {
@@ -41204,7 +41204,7 @@
     "applicationPlansProvenance": {
       "source": "Plymouth State University first-year students (https://www.plymouth.edu/admissions/undergraduate/first-year-students)",
       "year": "2026-27",
-      "accessed": "2026-09-29"
+      "accessed": "2026-11-02"
     }
   },
   {
@@ -41503,7 +41503,7 @@
     "applicationPlansProvenance": {
       "source": "Montclair State University admissions (https://www.montclair.edu/admissions/apply-and-check-status/admissions-deadlines/)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-11-02"
     },
     "testingPolicyProvenance": {
       "source": "Montclair State University admissions (https://www.montclair.edu/admissions/apply-and-check-status/admissions-requirements/satact-test-optional-policy/)",
@@ -46595,7 +46595,7 @@
     "testingPolicyProvenance": {
       "source": "University of Dayton admissions (https://udayton.edu/apply/undergraduate/resources/test-optional.php)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-11-02"
     },
     "applicationPlansProvenance": {
       "source": "University of Dayton admissions (https://udayton.edu/apply/undergraduate/admission-process.php)",
@@ -53816,11 +53816,6 @@
     },
     "applicationPlans": [
       {
-        "type": "EA",
-        "binding": false,
-        "deadline": "November 1"
-      },
-      {
         "type": "Rolling",
         "binding": false,
         "deadline": null,
@@ -53932,7 +53927,7 @@
     "applicationPlansProvenance": {
       "source": "Western Washington University admissions (https://admissions.wwu.edu/first-year/apply)",
       "year": "2026-27",
-      "accessed": "2026-09-22"
+      "accessed": "2026-11-02"
     },
     "testingPolicyProvenance": {
       "source": "Western Washington University admissions (https://admissions.wwu.edu/first-year/apply)",
@@ -54520,11 +54515,11 @@
       }
     },
     "admitRateOverallSuperseded": true,
-    "testingPolicyNote": "Fairmont State lists three routes to regular admission from the Fall 2026 cycle under the West Virginia HEPC standards, and the third is a 2.5 GPA with no test. The other two pair a lower GPA with an ACT 18 or SAT 960. Older text higher up the same page still implies recent graduates must submit scores; the dated HEPC block is newer and more specific and is taken as governing.",
+    "testingPolicyNote": "A high school GPA of 2.5 or higher needs no test. A GPA of at least 2.0 with an ACT of 18 or SAT of 960 is a second route.",
     "testingPolicyProvenance": {
       "source": "Fairmont State University admissions checklist (https://www.fairmontstate.edu/admissions/checklist.aspx)",
       "year": "2026-27",
-      "accessed": "2026-09-29"
+      "accessed": "2026-11-02"
     },
     "applicationPlansProvenance": {
       "source": "Fairmont State University 2026-27 catalog (https://catalog.fairmontstate.edu/content.php?catoid=32&navoid=5917)",
