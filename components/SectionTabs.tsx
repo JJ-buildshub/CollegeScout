@@ -16,7 +16,7 @@ export const EXPLORE_PAGES: TabPage[] = [
 
 export const PLAN_PAGES: TabPage[] = [
   { href: "/checklist", label: "My Plan" },
-  { href: "/due-soon", label: "Due Soon" },
+  { href: "/due-soon", label: "Deadlines" },
 ];
 
 const isUnder = (pathname: string | null, href: string) => pathname === href || !!pathname?.startsWith(href + "/");

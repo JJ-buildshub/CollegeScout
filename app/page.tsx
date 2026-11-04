@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -6,67 +7,41 @@ export const metadata: Metadata = {
 };
 
 import HomeHero from "@/components/HomeHero";
-import JourneySteps from "@/components/JourneySteps";
 import CareerOutcomesStory from "@/components/CareerOutcomesStory";
 import TryCollegeScout from "@/components/TryCollegeScout";
-import WhyCollegeScout from "@/components/WhyCollegeScout";
-import FindMyFit from "@/components/FindMyFit";
-import AccessMissionStatement from "@/components/AccessMissionStatement";
-import AccessMission from "@/components/AccessMission";
-import ScholarshipsBand from "@/components/ScholarshipsBand";
-import { scholarships } from "@/lib/scholarships";
+import HomeDueSoon from "@/components/HomeDueSoon";
 
 /**
- * The first five minutes of using CollegeScout, not a description of it:
+ * Four things, in the order a student uses them:
  *
- *   1 hero — who built this, and the promise            navy
- *   2 great guidance shouldn't depend on what you can afford  <- why it exists
- *   3 same interest, different odds, different price     slate <- proof
- *   4 what are you interested in                         white <- try it
- *   5 which of these schools make sense for you          slate <- personalise
- *   5b scholarships most students hear about too late    navy  <- the other half of paying for it
- *   6 what actually makes a college right for you              <- the system, once it means something
- *   7 explore / my fit / my plan / scholarships                <- the four parts
- *   8 where the numbers come from                        light
+ *   1 hero, with one action: pick what you're into     navy
+ *   2 the interest picker it points to                 white <- try it
+ *   3 same interest, different odds, different price   slate <- proof, on schools they just found
+ *   4 upcoming deadlines                               white <- the next thing to do
  *
- * The dimensions list sits AFTER the tool on purpose. Placed before it, a
- * student who has just seen two real schools compared gets an evaluation
- * framework instead of their own results — a pause in the story at exactly the
- * moment they want to act.
+ * Then one line on where the facts come from. Why the site exists, the four ways it compares
+ * colleges and the full sourcing story live on /about-data, for anyone who wants them; the
+ * homepage only has to get a student moving.
  */
 export default function HomePage() {
   return (
     <div>
       <HomeHero />
-
-      <div className="mt-10 sm:mt-16">
-        <AccessMissionStatement />
-      </div>
-      <div className="mt-10 sm:mt-12">
-        <CareerOutcomesStory />
-      </div>
-
-      {/* Try it */}
-      <div className="mt-10 sm:mt-16">
+      <div className="mt-6 sm:mt-8">
         <TryCollegeScout />
       </div>
-      <div className="mt-10 sm:mt-16">
-        <FindMyFit />
+      <div className="mt-10 sm:mt-14">
+        <CareerOutcomesStory />
       </div>
-      <div className="mt-10 sm:mt-16">
-        {/* Only the deadlines cross to the client; the records stay on the server. */}
-        <ScholarshipsBand total={scholarships.length} closes={scholarships.map((s) => s.closes ?? null)} />
+      <div className="mt-10 sm:mt-14">
+        <HomeDueSoon />
       </div>
-      <div className="mt-10 sm:mt-12">
-        <WhyCollegeScout />
-      </div>
-      <div className="mt-10 sm:mt-16">
-        <JourneySteps />
-      </div>
-
-      <div className="mt-10 sm:mt-16">
-        <AccessMission />
-      </div>
+      <p className="mt-10 text-center text-sm text-slate-500 sm:mt-14">
+        Every fact links to the page it came from.{" "}
+        <Link href="/about-data" className="font-semibold text-navy-900 underline underline-offset-2 hover:text-gold-600">
+          About CollegeScout
+        </Link>
+      </p>
     </div>
   );
 }

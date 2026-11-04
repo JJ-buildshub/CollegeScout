@@ -9,7 +9,7 @@ import clsx from "clsx";
 import { getCollegeById } from "@/lib/colleges";
 import { useProfile } from "@/lib/profile";
 import { entriesWithStatusAtLeast, listEntries, useCollegeList } from "@/lib/collegeList";
-import { buildApplicationTasks, buildPathwayCategories, buildPlanCategories, buildSummerCategories, countOpenTasks, useCustomTasks, usePathwayPlan, useSummerPlan, useTaskProgress, type ApplicationTaskGroup } from "@/lib/tasks";
+import { buildApplicationTasks, buildPathwayCategories, buildPlanCategories, buildScholarshipCategories, buildSummerCategories, countOpenTasks, useCustomTasks, usePathwayPlan, useScholarshipPlan, useSummerPlan, useTaskProgress, type ApplicationTaskGroup } from "@/lib/tasks";
 
 /** "My Fit · N schools" / "My Plan · N tasks" — live because every hook here is one of the shared stores. */
 function useNavCounts() {
@@ -21,10 +21,11 @@ function useNavCounts() {
 
   const fitCount = listEntries(state).length;
 
-  // Pathway and summer tasks don't depend on a grade, so they count even before one is set.
+  // Pathway, summer and scholarship tasks don't depend on a grade, so they count even before one is set.
   const pathwayCategories = buildPathwayCategories(pathwaySlugs);
   const { ids: summerIds } = useSummerPlan();
-  let planCount = countOpenTasks([...pathwayCategories, ...buildSummerCategories(summerIds)], [], done);
+  const { ids: scholarshipIds } = useScholarshipPlan();
+  let planCount = countOpenTasks([...pathwayCategories, ...buildSummerCategories(summerIds), ...buildScholarshipCategories(scholarshipIds)], [], done);
   if (profile.grade) {
     const interestIds = profile.undecided ? [] : profile.interests.map((i) => i.fieldId);
     const planCategories = buildPlanCategories(profile.grade, interestIds);

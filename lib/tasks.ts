@@ -7,6 +7,7 @@ import { ROUND_LABELS } from "./collegeList";
 import { createLocalStore } from "./store";
 import { getPathwayPage } from "./pathways";
 import { byDeadline, formatSummerDate, getSummerProgram, SUMMER_YEAR } from "./summer";
+import { confirmedItems, scholarships } from "./scholarships";
 
 export interface PlanTask {
   id: string;
@@ -368,6 +369,61 @@ export function buildSummerCategories(ids: string[]): PlanCategory[] {
   });
 }
 
+// --- Scholarships the student saved to My Plan. Same pattern as summer programs above: only the ids are
+// stored, the deadline is read from data/scholarships.json each time and is part of the task id.
+interface ScholarshipPlanState {
+  ids: string[];
+}
+
+const scholarshipPlanStore = createLocalStore<ScholarshipPlanState>("collegescout:scholarship-plan", { ids: [] }, 1, (raw) => {
+  const parsed = raw as Partial<ScholarshipPlanState> | undefined;
+  return { ids: Array.isArray(parsed?.ids) ? parsed.ids.filter((s): s is string => typeof s === "string") : [] };
+});
+
+export function useScholarshipPlan() {
+  const [state] = scholarshipPlanStore.useStore();
+  return state;
+}
+
+export function addScholarshipToPlan(id: string) {
+  scholarshipPlanStore.set((prev) => (prev.ids.includes(id) ? prev : { ids: [...prev.ids, id] }));
+}
+
+export function removeScholarshipFromPlan(id: string) {
+  scholarshipPlanStore.set((prev) => ({ ids: prev.ids.filter((s) => s !== id) }));
+}
+
+/** Wipes the saved scholarships, in this browser only. Part of "Reset my data." */
+export function resetScholarshipPlan() {
+  scholarshipPlanStore.reset();
+}
+
+/**
+ * One category per saved scholarship, soonest deadline first: each thing to send, then the deadline.
+ * A scholarship with no single date (a local club, a state round) gets a prompt to check its page instead.
+ */
+export function buildScholarshipCategories(ids: string[]): PlanCategory[] {
+  const saved = ids.flatMap((id) => scholarships.find((s) => s.id === id) ?? []);
+  saved.sort((a, b) => (a.closes ?? "9999").localeCompare(b.closes ?? "9999") || a.name.localeCompare(b.name));
+  return saved.map((s) => {
+    const link = { label: "Official page", url: s.homepage };
+    return {
+      id: `scholarship:${s.id}`,
+      title: `${s.name} (${s.runBy})`,
+      icon: "sparkles",
+      href: `/scholarships?q=${encodeURIComponent(s.name)}`,
+      tasks: [
+        ...confirmedItems(s.whatYouSubmit).map((item) => ({ id: `scholarship:${s.id}:step:${item}`, label: item, link })),
+        {
+          id: `scholarship:${s.id}:${s.closes ?? "check"}`,
+          label: s.closes ? `Apply by ${formatSummerDate(s.closes)}` : "Check the deadline on the official page",
+          link,
+        },
+      ],
+    };
+  });
+}
+
 // --- Task completion, the third shared record. The task list itself is always recomputed live
 // from the profile + college list + college data above; only which task ids are checked off is
 // persisted, the same pattern the old checklist used (see app/checklist/page.tsx history).
@@ -421,7 +477,7 @@ export function resetCustomTasks() {
 }
 
 export function taskProgressWasCorrupted(): boolean {
-  return taskProgressStore.wasCorrupted() || customTasksStore.wasCorrupted() || pathwayPlanStore.wasCorrupted() || summerPlanStore.wasCorrupted();
+  return taskProgressStore.wasCorrupted() || customTasksStore.wasCorrupted() || pathwayPlanStore.wasCorrupted() || summerPlanStore.wasCorrupted() || scholarshipPlanStore.wasCorrupted();
 }
 
 /** Total not-yet-checked-off tasks across both My Plan sections — what the nav "My Plan · N tasks" counter shows. */

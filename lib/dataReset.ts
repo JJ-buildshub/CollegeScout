@@ -12,9 +12,9 @@
  */
 import { profileWasCorrupted, resetProfile } from "./profile";
 import { collegeListWasCorrupted, resetCollegeList } from "./collegeList";
-import { resetCustomTasks, resetPathwayPlan, resetSummerPlan, resetTaskProgress, taskProgressWasCorrupted } from "./tasks";
+import { resetCustomTasks, resetPathwayPlan, resetScholarshipPlan, resetSummerPlan, resetTaskProgress, taskProgressWasCorrupted } from "./tasks";
 
-/** Wipes the student profile, college list, pathways added from Music & Sports, saved summer programs, and every generated/custom task's progress from this browser. Nothing else on the site is touched. */
+/** Wipes the student profile, college list, pathways added from Music & Sports, saved summer programs and scholarships, and every generated/custom task's progress from this browser. Nothing else on the site is touched. */
 export function resetAllCollegeScoutData() {
   resetProfile();
   resetCollegeList();
@@ -22,6 +22,7 @@ export function resetAllCollegeScoutData() {
   resetCustomTasks();
   resetPathwayPlan();
   resetSummerPlan();
+  resetScholarshipPlan();
 }
 
 /** True if any shared store found unparseable JSON on load this session (see lib/store.ts). */

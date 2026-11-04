@@ -1,3 +1,5 @@
+import { ArrowDown } from "lucide-react";
+
 /**
  * Two lines, sized as two voices rather than a title and a caption.
  *
@@ -10,8 +12,8 @@
  * - Padding is tighter than it was, so the block hugs two lines of text instead
  *   of leaving a pool of empty navy beneath them.
  *
- * No button and no facts strip: the page below makes its case before asking for
- * anything, and the counts and sourcing rules belong on /about-data.
+ * One action and no facts strip: the button takes a student straight to the interest
+ * picker, and the counts and sourcing rules belong on /about-data.
  */
 export default function HomeHero() {
   // Slightly more room above than below: a centred text block reads as sitting
@@ -27,6 +29,13 @@ export default function HomeHero() {
         <p className="mt-3 max-w-xl text-balance text-[15px] font-medium leading-snug hero-sub sm:mt-5 sm:text-[22px]">
           Built by a high school student, from the numbers colleges publish themselves.
         </p>
+        <a
+          href="#interests"
+          className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-gold-400 px-5 py-2.5 text-sm font-bold text-navy-950 hover:bg-gold-300 sm:mt-7 sm:text-base"
+        >
+          Pick what you&apos;re into
+          <ArrowDown className="h-4 w-4" aria-hidden="true" />
+        </a>
       </div>
     </section>
   );

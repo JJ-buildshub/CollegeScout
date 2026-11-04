@@ -5,6 +5,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import { ExternalLink, MapPin, Search } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
+import SaveToPlanButton from "@/components/SaveToPlanButton";
 import { areaMatch, lookupZip, type AreaMatch, type ZipLookup } from "@/lib/zipCounties";
 import {
   FEE_NOT_STATED,
@@ -47,7 +48,8 @@ type Timing = { tone: "open" | "closed" | "plain"; label: string };
 
 function timing(program: Scholarship, today: Date | null): Timing {
   const days = today ? daysLeft(program, today) : null;
-  const short = program.deadlineShort ?? (isConfirmed(program.deadline) ? program.deadline : "Date not posted yet");
+  const posted = program.deadlineShort && !NO_DATE.has(program.deadlineShort) ? program.deadlineShort : undefined;
+  const short = posted ?? (isConfirmed(program.deadline) ? program.deadline : "Check official site");
   if (days === null) return { tone: "plain", label: `Due: ${short}` };
   if (days < 0) return { tone: "closed", label: `Closed ${short}. Back next year` };
   if (days === 0) return { tone: "open", label: `Due today, ${short}` };
@@ -55,12 +57,11 @@ function timing(program: Scholarship, today: Date | null): Timing {
 }
 
 function NotConfirmed() {
-  return (
-    <span className="rounded-md bg-sand-100 px-2 py-0.5 text-xs font-semibold text-slate-500">
-      We couldn&apos;t confirm this yet
-    </span>
-  );
+  return <span className="rounded-md bg-sand-100 px-2 py-0.5 text-xs font-semibold text-slate-500">Check official site</span>;
 }
+
+/** Sponsor-page wording for "no date yet", shown with the same words as every other page. */
+const NO_DATE = new Set(["Not posted yet", "No deadline posted"]);
 
 function Chip({ children, tone = "plain" }: { children: React.ReactNode; tone?: Timing["tone"] | "gold" }) {
   return (
@@ -237,7 +238,8 @@ function ScholarshipCard({
             ))}{" "}
             &middot; we checked on {formatDate(scholarshipsChecked)}
           </p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap items-center gap-2">
+            <SaveToPlanButton kind="scholarship" id={program.id} name={program.name} />
             {program.findLocal && (
               <a
                 href={program.findLocal}
@@ -330,7 +332,7 @@ export default function ScholarshipsPage() {
         <p>
           Money you can win in high school, some of it starting in 9th grade.{" "}
           <Link href="/due-soon" className="font-semibold text-navy-900 underline underline-offset-2 hover:text-gold-600">
-            See what&apos;s due soon
+            See upcoming deadlines
           </Link>
         </p>
       </PageHeader>

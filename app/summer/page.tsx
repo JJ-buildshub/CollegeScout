@@ -5,7 +5,7 @@ import clsx from "clsx";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
-import SaveSummerProgramButton from "@/components/SaveSummerProgramButton";
+import SaveToPlanButton from "@/components/SaveToPlanButton";
 import {
   passionProjectIdeas,
   summerPrograms,
@@ -72,7 +72,7 @@ function Row({ label, value, note }: { label: string; value: string | null; note
 function ProgramCard({ program, today }: { program: SummerProgram; today: Date | null }) {
   const { eligibility, deadline } = program;
   const passed = today && deadline && new Date(`${deadline}T23:59:59`) < today;
-  const deadlineText = deadline ? `${passed ? "Passed " : ""}${formatSummerDate(deadline)}` : null;
+  const deadlineText = deadline ? `${passed ? "Closed " : ""}${formatSummerDate(deadline)}` : null;
   return (
     <article className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
       <div className="flex flex-wrap items-center gap-2">
@@ -122,7 +122,7 @@ function ProgramCard({ program, today }: { program: SummerProgram; today: Date |
       </div>
 
       <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100 pt-4">
-        <SaveSummerProgramButton id={program.id} name={program.name} />
+        <SaveToPlanButton kind="summer" id={program.id} name={program.name} />
         <a
           href={program.officialUrl}
           target="_blank"
@@ -223,7 +223,7 @@ export default function SummerPage() {
         <p>
           Make your summer count: internships, college programs and projects for summer 2027.{" "}
           <Link href="/due-soon" className="font-semibold text-navy-900 underline underline-offset-2 hover:text-gold-600">
-            See what&apos;s due soon
+            See upcoming deadlines
           </Link>
         </p>
       </PageHeader>

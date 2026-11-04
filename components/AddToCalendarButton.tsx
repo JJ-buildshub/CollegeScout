@@ -2,15 +2,15 @@
 
 import { useEffect, useState } from "react";
 import { CalendarPlus } from "lucide-react";
-import { buildCalendarFile, summerCalendarDeadlines } from "@/lib/calendar";
+import { buildCalendarFile, planCalendarDeadlines } from "@/lib/calendar";
 
-/** Downloads the saved programs' deadlines as a file any calendar app can import. Nothing is sent anywhere. */
-export default function AddToCalendarButton({ ids }: { ids: string[] }) {
+/** Downloads the saved deadlines as a file any calendar app can import. Nothing is sent anywhere. */
+export default function AddToCalendarButton({ summerIds, scholarshipIds }: { summerIds: string[]; scholarshipIds: string[] }) {
   // Which deadlines are still ahead depends on today, so this waits for the browser.
   const [today, setToday] = useState<Date | null>(null);
   useEffect(() => setToday(new Date()), []);
 
-  const deadlines = today ? summerCalendarDeadlines(ids, today) : [];
+  const deadlines = today ? planCalendarDeadlines(summerIds, scholarshipIds, today) : [];
   if (deadlines.length === 0) return null;
 
   const download = () => {

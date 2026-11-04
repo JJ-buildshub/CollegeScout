@@ -6,66 +6,12 @@ import clsx from "clsx";
 import { ExternalLink } from "lucide-react";
 import { PlanTabs } from "@/components/SectionTabs";
 import PageHeader from "@/components/PageHeader";
-import SaveSummerProgramButton from "@/components/SaveSummerProgramButton";
-import { summerPrograms } from "@/data/summerPrograms";
-import { scholarships } from "@/lib/scholarships";
-import { formatSummerDate, matchesGrade } from "@/lib/summer";
-
-interface DueItem {
-  key: string;
-  kind: "Scholarship" | "Internship or program";
-  name: string;
-  host: string;
-  date: string;
-  /** Regional limit worth seeing before opening it, e.g. a county. */
-  note?: string;
-  matchesGrade: (grade: number) => boolean;
-  scholarshipQuery?: string;
-  summerId?: string;
-  url?: string;
-}
-
-// Only programs with one posted date can be on a calendar; blank deadlines stay on their own pages.
-const ITEMS: DueItem[] = [
-  ...scholarships.flatMap((s): DueItem[] =>
-    s.closes
-      ? [
-          {
-            key: `scholarship:${s.id}`,
-            kind: "Scholarship",
-            name: s.name,
-            host: s.runBy,
-            date: s.closes,
-            note: s.area ?? s.only,
-            matchesGrade: (grade) => (s.grades as number[]).includes(grade),
-            scholarshipQuery: s.name,
-          },
-        ]
-      : []
-  ),
-  ...summerPrograms.flatMap((p): DueItem[] =>
-    p.deadline
-      ? [
-          {
-            key: `summer:${p.id}`,
-            kind: "Internship or program",
-            name: p.name,
-            host: p.host,
-            date: p.deadline,
-            matchesGrade: (grade) => matchesGrade(p, grade as 9 | 10 | 11 | 12),
-            summerId: p.id,
-            url: p.officialUrl,
-          },
-        ]
-      : []
-  ),
-];
+import SaveToPlanButton from "@/components/SaveToPlanButton";
+import { daysUntil, upcoming as upcomingItems, type DueItem } from "@/lib/dueSoon";
+import { formatSummerDate } from "@/lib/summer";
 
 const SOON_DAYS = 90;
 
-function daysUntil(date: string, today: Date) {
-  return Math.floor((new Date(`${date}T23:59:59`).getTime() - today.getTime()) / 86_400_000);
-}
 
 function monthLabel(date: string) {
   return new Date(`${date}T00:00:00`).toLocaleDateString("en-US", { month: "long", year: "numeric" });
@@ -89,13 +35,13 @@ function DueRow({ item, today }: { item: DueItem; today: Date }) {
         </p>
       </div>
       <div className="flex shrink-0 flex-wrap items-center gap-3">
-        {item.summerId && <SaveSummerProgramButton id={item.summerId} name={item.name} />}
-        {item.url ? (
-          <a href={item.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm font-semibold text-navy-900 underline underline-offset-2 hover:text-gold-600">
+        <SaveToPlanButton kind={item.save.kind} id={item.save.id} name={item.name} />
+        {item.external ? (
+          <a href={item.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm font-semibold text-navy-900 underline underline-offset-2 hover:text-gold-600">
             Official site <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
           </a>
         ) : (
-          <Link href={`/scholarships?q=${encodeURIComponent(item.scholarshipQuery ?? item.name)}`} className="text-sm font-semibold text-navy-900 underline underline-offset-2 hover:text-gold-600">
+          <Link href={item.href} className="text-sm font-semibold text-navy-900 underline underline-offset-2 hover:text-gold-600">
             See details
           </Link>
         )}
@@ -114,10 +60,9 @@ export default function DueSoonPage() {
 
   const upcoming = useMemo(() => {
     if (!today) return [];
-    return ITEMS.filter((item) => daysUntil(item.date, today) >= 0)
+    return upcomingItems(today)
       .filter((item) => grade === "all" || item.matchesGrade(Number(grade)))
-      .filter((item) => kind === "all" || item.kind === kind)
-      .sort((a, b) => a.date.localeCompare(b.date) || a.name.localeCompare(b.name));
+      .filter((item) => kind === "all" || item.kind === kind);
   }, [today, grade, kind]);
 
   const shown = showAll || !today ? upcoming : upcoming.filter((item) => daysUntil(item.date, today) <= SOON_DAYS);
@@ -126,8 +71,8 @@ export default function DueSoonPage() {
   return (
     <div className="max-w-4xl space-y-6">
       <PlanTabs />
-      <PageHeader eyebrow="Your work" title="Due Soon">
-        <p>Scholarship, internship and program deadlines in one list, soonest first.</p>
+      <PageHeader eyebrow="Your work" title="Scholarship, Internship & Program Deadlines">
+        <p>Every application with a posted date that hasn&apos;t passed yet, soonest first.</p>
       </PageHeader>
 
       <div className="grid grid-cols-2 gap-3 sm:max-w-md">

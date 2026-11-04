@@ -1,4 +1,5 @@
 import { getSummerProgram } from "./summer";
+import { scholarships } from "./scholarships";
 
 export interface CalendarDeadline {
   uid: string;
@@ -7,10 +8,14 @@ export interface CalendarDeadline {
   url: string;
 }
 
-/** Every dated deadline of the saved summer programs still ahead of `today`. A blank deadline adds nothing. */
-export function summerCalendarDeadlines(ids: string[], today: Date): CalendarDeadline[] {
+/** Every dated deadline of the saved programs and scholarships still ahead of `today`. A blank deadline adds nothing. */
+export function planCalendarDeadlines(summerIds: string[], scholarshipIds: string[], today: Date): CalendarDeadline[] {
   const ahead = (date: string) => new Date(`${date}T23:59:59`) >= today;
-  return ids.flatMap((id) => {
+  const fromScholarships = scholarshipIds.flatMap((id) => {
+    const s = scholarships.find((x) => x.id === id);
+    return s?.closes && ahead(s.closes) ? [{ uid: `scholarship-${id}-apply`, date: s.closes, title: `Apply: ${s.name}`, url: s.homepage }] : [];
+  });
+  const fromSummer = summerIds.flatMap((id) => {
     const program = getSummerProgram(id);
     if (!program) return [];
     const events: CalendarDeadline[] = [];
@@ -22,6 +27,7 @@ export function summerCalendarDeadlines(ids: string[], today: Date): CalendarDea
     });
     return events.filter((event) => ahead(event.date));
   });
+  return [...fromScholarships, ...fromSummer];
 }
 
 const escapeText = (text: string) => text.replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,");

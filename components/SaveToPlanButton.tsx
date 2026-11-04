@@ -2,16 +2,28 @@
 
 import Link from "next/link";
 import { Check, Plus } from "lucide-react";
-import { addSummerProgramToPlan, removeSummerProgramFromPlan, useSummerPlan } from "@/lib/tasks";
+import {
+  addScholarshipToPlan,
+  addSummerProgramToPlan,
+  removeScholarshipFromPlan,
+  removeSummerProgramFromPlan,
+  useScholarshipPlan,
+  useSummerPlan,
+} from "@/lib/tasks";
 
-export default function SaveSummerProgramButton({ id, name }: { id: string; name: string }) {
-  const { ids } = useSummerPlan();
+/** The one save button for anything with a deadline: an internship or program, or a scholarship. */
+export default function SaveToPlanButton({ kind, id, name }: { kind: "summer" | "scholarship"; id: string; name: string }) {
+  const summer = useSummerPlan();
+  const scholarship = useScholarshipPlan();
+  const saved = (kind === "summer" ? summer.ids : scholarship.ids).includes(id);
+  const add = kind === "summer" ? addSummerProgramToPlan : addScholarshipToPlan;
+  const remove = kind === "summer" ? removeSummerProgramFromPlan : removeScholarshipFromPlan;
 
-  if (!ids.includes(id)) {
+  if (!saved) {
     return (
       <button
         type="button"
-        onClick={() => addSummerProgramToPlan(id)}
+        onClick={() => add(id)}
         aria-label={`Save ${name} to My Plan`}
         className="inline-flex items-center gap-1.5 rounded-full bg-navy-900 px-4 py-2 text-sm font-semibold text-white hover:bg-navy-800"
       >
@@ -30,7 +42,7 @@ export default function SaveSummerProgramButton({ id, name }: { id: string; name
       </Link>
       <button
         type="button"
-        onClick={() => removeSummerProgramFromPlan(id)}
+        onClick={() => remove(id)}
         aria-label={`Remove ${name} from My Plan`}
         className="text-sm font-semibold text-slate-500 underline underline-offset-2 hover:text-rose-700"
       >

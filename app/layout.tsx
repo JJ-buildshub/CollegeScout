@@ -67,7 +67,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             College data comes from the U.S. Department of Education&apos;s College Scorecard (2024) and
             public university sources. Some figures are approximate and not yet independently confirmed.{" "}
             <Link href="/about-data" className="font-semibold text-navy-900 underline underline-offset-2 hover:text-navy-700">
-              About our data
+              About CollegeScout
             </Link>
           </p>
           <p className="mt-2 flex items-center justify-center gap-3">

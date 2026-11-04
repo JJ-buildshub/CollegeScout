@@ -1,25 +1,32 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About the data",
+  title: "About CollegeScout",
   description:
     "Where CollegeScout figures come from, how each one is verified, and what has not been confirmed yet.",
   alternates: { canonical: "/about-data" },
-  openGraph: { title: "About the data | CollegeScout", description: "Where CollegeScout figures come from, how each one is verified, and what has not been confirmed yet.", url: "/about-data" },
+  openGraph: { title: "About CollegeScout | CollegeScout", description: "Where CollegeScout figures come from, how each one is verified, and what has not been confirmed yet.", url: "/about-data" },
 };
 
 import Link from "next/link";
 import { CONTACT_EMAIL } from "@/lib/site";
 import PageHeader from "@/components/PageHeader";
+import AccessMissionStatement from "@/components/AccessMissionStatement";
+import WhyCollegeScout from "@/components/WhyCollegeScout";
+import AccessMission from "@/components/AccessMission";
 
 export default function AboutDataPage() {
   return (
     <div className="mx-auto max-w-2xl space-y-6 py-8">
-      <PageHeader eyebrow="About" title="About our data">
-        <p>
-          Where the numbers on CollegeScout come from, and what we don&apos;t yet know.
-        </p>
+      <PageHeader eyebrow="About" title="About CollegeScout">
+        <p>Why it exists, how it compares colleges, and where every number comes from.</p>
       </PageHeader>
+
+      <AccessMissionStatement />
+      <WhyCollegeScout />
+      <AccessMission />
+
+      <h2 className="pt-4 text-lg font-bold text-navy-900">Our data, source by source</h2>
 
       <div className="space-y-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
         <div>

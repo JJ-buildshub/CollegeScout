@@ -14,13 +14,16 @@ import {
   buildApplicationTasks,
   buildPathwayCategories,
   buildPlanCategories,
+  buildScholarshipCategories,
   buildSummerCategories,
   removeCustomTask,
   removePathwayFromPlan,
+  removeScholarshipFromPlan,
   removeSummerProgramFromPlan,
   toggleTaskDone,
   useCustomTasks,
   usePathwayPlan,
+  useScholarshipPlan,
   useSummerPlan,
   useTaskProgress,
   type ApplicationTaskGroup,
@@ -104,6 +107,7 @@ export default function ChecklistPage() {
   const customTasks = useCustomTasks();
   const pathwayPlan = usePathwayPlan();
   const summerPlan = useSummerPlan();
+  const scholarshipPlan = useScholarshipPlan();
 
   const interestFieldIds = profile.undecided ? [] : profile.interests.map((i) => i.fieldId);
 
@@ -117,6 +121,7 @@ export default function ChecklistPage() {
 
   const pathwayCategories = useMemo(() => buildPathwayCategories(pathwayPlan.slugs), [pathwayPlan]);
   const summerCategories = useMemo(() => buildSummerCategories(summerPlan.ids), [summerPlan]);
+  const scholarshipCategories = useMemo(() => buildScholarshipCategories(scholarshipPlan.ids), [scholarshipPlan]);
 
   const applicationGroups: ApplicationTaskGroup[] = useMemo(() => {
     return entriesWithStatusAtLeast(collegeListState, "Applying")
@@ -256,19 +261,21 @@ export default function ChecklistPage() {
         </section>
       )}
 
-      {summerCategories.length > 0 && (
+      {(summerCategories.length > 0 || scholarshipCategories.length > 0) && (
         <section>
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <h2 className="text-lg font-bold text-navy-900">Internships &amp; Programs</h2>
-            <AddToCalendarButton ids={summerPlan.ids} />
+            <h2 className="text-lg font-bold text-navy-900">Saved Deadlines</h2>
+            <AddToCalendarButton summerIds={summerPlan.ids} scholarshipIds={scholarshipPlan.ids} />
           </div>
           <div className="mt-4 grid gap-5 lg:grid-cols-2">
-            {summerCategories.map((category) => {
+            {[...scholarshipCategories, ...summerCategories].map((category) => {
               const catDone = category.tasks.filter((t) => done[t.id]).length;
               const pct = category.tasks.length > 0 ? (catDone / category.tasks.length) * 100 : 0;
+              const isScholarship = category.id.startsWith("scholarship:");
               return (
                 <div key={category.id} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-card">
-                  <div className="flex items-start justify-between gap-2">
+                  <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500">{isScholarship ? "Scholarship" : "Internship or program"}</p>
+                  <div className="mt-1 flex items-start justify-between gap-2">
                     <Link href={category.href ?? "/summer"} className="text-sm font-bold text-navy-900 hover:text-gold-600">
                       {category.title}
                     </Link>
@@ -284,10 +291,14 @@ export default function ChecklistPage() {
                   </ul>
                   <button
                     type="button"
-                    onClick={() => removeSummerProgramFromPlan(category.id.replace(/^summer:/, ""))}
+                    onClick={() =>
+                      isScholarship
+                        ? removeScholarshipFromPlan(category.id.replace(/^scholarship:/, ""))
+                        : removeSummerProgramFromPlan(category.id.replace(/^summer:/, ""))
+                    }
                     className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-rose-600"
                   >
-                    <Trash2 className="h-3 w-3" /> Remove this program
+                    <Trash2 className="h-3 w-3" /> Remove from My Plan
                   </button>
                 </div>
               );

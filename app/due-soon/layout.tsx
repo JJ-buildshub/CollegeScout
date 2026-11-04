@@ -4,10 +4,10 @@ import type { Metadata } from "next";
 const description = "Upcoming scholarship, internship and program deadlines for high school students, in one list, soonest first.";
 
 export const metadata: Metadata = {
-  title: "Due Soon",
+  title: "Scholarship, Internship & Program Deadlines",
   description,
   alternates: { canonical: "/due-soon" },
-  openGraph: { title: "Due Soon | CollegeScout", description, url: "/due-soon" },
+  openGraph: { title: "Scholarship, Internship & Program Deadlines | CollegeScout", description, url: "/due-soon" },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
