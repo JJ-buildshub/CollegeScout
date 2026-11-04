@@ -10,7 +10,7 @@ export const SUMMER_YEAR = 2027;
 const EXTRA_INTEREST_LABELS: Partial<Record<SummerInterest, string>> = {
   research: "Research",
   math: "Math",
-  "many-subjects": "Many subjects",
+  "many-subjects": "Choose your own courses",
 };
 
 export function summerInterestLabel(id: SummerInterest): string {
