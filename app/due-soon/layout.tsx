@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 // This route's page is a client component, which cannot export metadata.
-const description = "Upcoming scholarship and summer program deadlines for high school students, in one list, soonest first.";
+const description = "Upcoming scholarship, internship and program deadlines for high school students, in one list, soonest first.";
 
 export const metadata: Metadata = {
   title: "Due Soon",

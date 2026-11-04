@@ -53,6 +53,7 @@ export default function PathwayExplorer({
 
   return (
     <div>
+      {chips.length > 2 && (
       <div className="flex flex-wrap gap-2" role="group" aria-label="Filter pathways">
         {chips.map((chip) => (
           <button
@@ -69,8 +70,9 @@ export default function PathwayExplorer({
           </button>
         ))}
       </div>
+      )}
 
-      <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className={clsx("grid gap-4 sm:grid-cols-2 lg:grid-cols-3", chips.length > 2 && "mt-5")}>
         {shown.map((card) => {
           const live = liveSlugs.includes(card.slug);
           const categoryLabel = labelFor(card.category);

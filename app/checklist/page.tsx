@@ -30,6 +30,8 @@ import AddToCalendarButton from "@/components/AddToCalendarButton";
 import ChecklistIcon from "@/components/ChecklistIcon";
 import ProgressBar from "@/components/ProgressBar";
 import SchoolStatusBadge from "@/components/SchoolStatusBadge";
+import PageHeader from "@/components/PageHeader";
+import { PlanTabs } from "@/components/SectionTabs";
 
 function TaskRow({ task, done, onToggle, onRemove }: { task: PlanTask; done: boolean; onToggle: () => void; onRemove?: () => void }) {
   return (
@@ -133,16 +135,16 @@ export default function ChecklistPage() {
 
   return (
     <div className="space-y-8">
-      <div>
-        <h1 className="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-3xl">My Plan</h1>
-        <p className="mt-1 text-sm text-slate-500">
+      <PlanTabs />
+      <PageHeader eyebrow="Your work" title="My Plan">
+        <p>
           Your high-school plan is based on your grade and interests from{" "}
           <Link href="/matcher" className="font-semibold text-navy-900 underline underline-offset-2">
             My Fit
           </Link>
           . Your applications section fills in once a school&apos;s status is Applying or later.
         </p>
-      </div>
+      </PageHeader>
 
       {/* Section 1: Your high-school plan */}
       <section>
@@ -213,7 +215,7 @@ export default function ChecklistPage() {
 
       {pathwayCategories.length > 0 && (
         <section>
-          <h2 className="text-lg font-bold text-navy-900">Beyond Grades</h2>
+          <h2 className="text-lg font-bold text-navy-900">Music &amp; Sports Tracks</h2>
           <div className="mt-4 grid gap-5 lg:grid-cols-2">
             {pathwayCategories.map((category) => {
               const catDone = category.tasks.filter((t) => done[t.id]).length;
@@ -257,7 +259,7 @@ export default function ChecklistPage() {
       {summerCategories.length > 0 && (
         <section>
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <h2 className="text-lg font-bold text-navy-900">Summer Opportunities</h2>
+            <h2 className="text-lg font-bold text-navy-900">Internships &amp; Programs</h2>
             <AddToCalendarButton ids={summerPlan.ids} />
           </div>
           <div className="mt-4 grid gap-5 lg:grid-cols-2">

@@ -10,18 +10,16 @@ export const metadata: Metadata = {
 
 import Link from "next/link";
 import { CONTACT_EMAIL } from "@/lib/site";
+import PageHeader from "@/components/PageHeader";
 
 export default function AboutDataPage() {
   return (
     <div className="mx-auto max-w-2xl space-y-6 py-8">
-      <div>
-        <h1 className="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-3xl">
-          About our data
-        </h1>
-        <p className="mt-2 text-sm text-slate-500">
+      <PageHeader eyebrow="About" title="About our data">
+        <p>
           Where the numbers on CollegeScout come from, and what we don&apos;t yet know.
         </p>
-      </div>
+      </PageHeader>
 
       <div className="space-y-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
         <div>

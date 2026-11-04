@@ -21,7 +21,7 @@ export interface PlanCategory {
   title: string;
   icon: string;
   tasks: PlanTask[];
-  /** Set for a Beyond Grades or summer category: the page its tasks come from. */
+  /** Set for a Music & Sports or summer category: the page its tasks come from. */
   href?: string;
 }
 
@@ -255,7 +255,7 @@ export function removeCustomTask(rawId: string, collegeId?: string) {
   });
 }
 
-// --- Beyond Grades pathways the student added to My Plan. Only the slugs are stored; each pathway's tasks
+// --- Music & Sports pathways the student added to My Plan. Only the slugs are stored; each pathway's tasks
 // are read from data/pathways.json every time, so editing a pathway's checklist updates My Plan
 // without a migration, and a task's id (`pathway:<slug>:<needId>`) keeps its checked-off state.
 interface PathwayPlanState {

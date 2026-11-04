@@ -3,8 +3,9 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
-import { CalendarClock, ExternalLink } from "lucide-react";
-import SectionHeader from "@/components/SectionHeader";
+import { ExternalLink } from "lucide-react";
+import { PlanTabs } from "@/components/SectionTabs";
+import PageHeader from "@/components/PageHeader";
 import SaveSummerProgramButton from "@/components/SaveSummerProgramButton";
 import { summerPrograms } from "@/data/summerPrograms";
 import { scholarships } from "@/lib/scholarships";
@@ -12,7 +13,7 @@ import { formatSummerDate, matchesGrade } from "@/lib/summer";
 
 interface DueItem {
   key: string;
-  kind: "Scholarship" | "Summer program";
+  kind: "Scholarship" | "Internship or program";
   name: string;
   host: string;
   date: string;
@@ -47,7 +48,7 @@ const ITEMS: DueItem[] = [
       ? [
           {
             key: `summer:${p.id}`,
-            kind: "Summer program",
+            kind: "Internship or program",
             name: p.name,
             host: p.host,
             date: p.deadline,
@@ -124,15 +125,16 @@ export default function DueSoonPage() {
 
   return (
     <div className="max-w-4xl space-y-6">
-      <SectionHeader icon={CalendarClock} label="Scholarships and summer programs" title="Due Soon">
-        <p>Upcoming deadlines from Scholarships and Summer Opportunities in one list, soonest first.</p>
-      </SectionHeader>
+      <PlanTabs />
+      <PageHeader eyebrow="Your work" title="Due Soon">
+        <p>Scholarship, internship and program deadlines in one list, soonest first.</p>
+      </PageHeader>
 
       <div className="grid grid-cols-2 gap-3 sm:max-w-md">
         {(
           [
             ["Your grade now", grade, setGrade, [["9", "9th"], ["10", "10th"], ["11", "11th"], ["12", "12th"]]],
-            ["Type", kind, setKind, [["Scholarship", "Scholarships"], ["Summer program", "Summer programs"]]],
+            ["Type", kind, setKind, [["Scholarship", "Scholarships"], ["Internship or program", "Internships & programs"]]],
           ] as const
         ).map(([label, value, onChange, options]) => (
           <label key={label} className="block text-sm font-semibold text-slate-600">

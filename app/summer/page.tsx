@@ -2,9 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 import clsx from "clsx";
-import { ExternalLink, Sun } from "lucide-react";
-import DueSoonLink from "@/components/DueSoonLink";
-import SectionHeader from "@/components/SectionHeader";
+import { ExternalLink } from "lucide-react";
+import Link from "next/link";
+import PageHeader from "@/components/PageHeader";
 import SaveSummerProgramButton from "@/components/SaveSummerProgramButton";
 import {
   passionProjectIdeas,
@@ -219,10 +219,14 @@ export default function SummerPage() {
 
   return (
     <div className="space-y-6">
-      <SectionHeader icon={Sun} label="Summer 2027" title="Make Your Summer Count">
-        <p>Internships, college programs and project ideas for high school students, with what each one costs and when to apply.</p>
-        <DueSoonLink />
-      </SectionHeader>
+      <PageHeader title="Internships & Programs">
+        <p>
+          Make your summer count: internships, college programs and projects for summer 2027.{" "}
+          <Link href="/due-soon" className="font-semibold text-navy-900 underline underline-offset-2 hover:text-gold-600">
+            See what&apos;s due soon
+          </Link>
+        </p>
+      </PageHeader>
 
       <div className="flex flex-wrap gap-2" role="tablist" aria-label="Kinds of summer opportunities">
         {TABS.map(({ id, label }) => (

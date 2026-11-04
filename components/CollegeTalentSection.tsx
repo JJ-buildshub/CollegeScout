@@ -70,7 +70,7 @@ function TalentCard({ icon: Icon, title, children }: { icon: typeof Music; title
   );
 }
 
-/** The Beyond Grades block on a college profile: what this college asks of musicians and athletes, each line linked to its source. */
+/** The Music & Sports Tracks block on a college profile: what this college asks of musicians and athletes, each line linked to its source. */
 export default function CollegeTalentSection({ talent }: { talent: CollegeTalent }) {
   const { music, sports, athletics } = talent;
   const hasMusic = music.length > 0;

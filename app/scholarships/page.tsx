@@ -3,9 +3,8 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
-import { Award, ExternalLink, MapPin, Search } from "lucide-react";
-import DueSoonLink from "@/components/DueSoonLink";
-import SectionHeader from "@/components/SectionHeader";
+import { ExternalLink, MapPin, Search } from "lucide-react";
+import PageHeader from "@/components/PageHeader";
 import { areaMatch, lookupZip, type AreaMatch, type ZipLookup } from "@/lib/zipCounties";
 import {
   FEE_NOT_STATED,
@@ -327,18 +326,14 @@ export default function ScholarshipsPage() {
 
   return (
     <div className="max-w-4xl space-y-6">
-      <SectionHeader icon={Award} label="Money for college" title="Scholarships">
+      <PageHeader title="Scholarships">
         <p>
-          Scholarships and awards you can earn in high school. Some of these start in 9th grade. Most people find out
-          senior year, when the biggest deadlines are already gone. Pick your grade and see what you can start on today.
+          Money you can win in high school, some of it starting in 9th grade.{" "}
+          <Link href="/due-soon" className="font-semibold text-navy-900 underline underline-offset-2 hover:text-gold-600">
+            See what&apos;s due soon
+          </Link>
         </p>
-        <ul className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-xs font-semibold text-gold-600">
-          <li>No sign-up</li>
-          <li>Nothing copied from a reel</li>
-          <li>Verified, not viral</li>
-        </ul>
-        <DueSoonLink />
-      </SectionHeader>
+      </PageHeader>
 
       <div className="space-y-3">
         <p className="text-sm font-extrabold text-navy-900">What grade are you in?</p>

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Check, ChevronRight, ExternalLink, Lightbulb } from "lucide-react";
 import AddPathwayToPlanButton from "@/components/AddPathwayToPlanButton";
 import { getPathwayCard, getPathwayCategory, getPathwayPage, livePathwaySlugs, monthYear } from "@/lib/pathways";
+import { trackFor } from "@/components/TrackPage";
 
 // Only slugs with a page in data/pathways.json exist; a coming-soon card's slug is a 404, not an empty page.
 export const dynamicParams = false;
@@ -16,11 +17,12 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const page = getPathwayPage(params.slug);
   if (!page) return {};
   const path = `/beyond-grades/${params.slug}`;
+  const trackTitle = trackFor(getPathwayCard(params.slug)?.category)?.title ?? "Explore";
   return {
-    title: `${page.title} | Beyond Grades`,
+    title: `${page.title} | ${trackTitle}`,
     description: page.intro,
     alternates: { canonical: path },
-    openGraph: { title: `${page.title} | Beyond Grades | CollegeScout`, description: page.intro, url: path },
+    openGraph: { title: `${page.title} | ${trackTitle} | CollegeScout`, description: page.intro, url: path },
   };
 }
 
@@ -33,20 +35,15 @@ export default function PathwayPage({ params }: { params: { slug: string } }) {
   if (!page) notFound();
   const card = getPathwayCard(params.slug);
   const category = card ? getPathwayCategory(card.category) : undefined;
+  const track = trackFor(card?.category);
 
   return (
     <article className="space-y-10">
       <header>
         <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1 text-xs font-semibold text-slate-500">
-          <Link href="/beyond-grades" className="hover:text-navy-900">
-            Beyond Grades
+          <Link href={track?.href ?? "/beyond-grades"} className="hover:text-navy-900">
+            {track?.title ?? category?.label ?? "Explore"}
           </Link>
-          {category && (
-            <>
-              <ChevronRight className="h-3 w-3" />
-              <span>{category.label}</span>
-            </>
-          )}
           <ChevronRight className="h-3 w-3" />
           <span className="text-navy-900">{page.title}</span>
         </nav>

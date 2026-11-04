@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Award, Compass, GraduationCap, LayoutList, Menu, ScanSearch, Sparkles, Sun, X } from "lucide-react";
+import { Award, Briefcase, Compass, GraduationCap, LayoutList, Menu, ScanSearch, X } from "lucide-react";
+import { isExplorePath, isPlanPath } from "@/components/SectionTabs";
 import clsx from "clsx";
 import { getCollegeById } from "@/lib/colleges";
 import { useProfile } from "@/lib/profile";
@@ -44,25 +45,13 @@ export default function NavBar() {
   const [open, setOpen] = useState(false);
   const { fitCount, planCount } = useNavCounts();
 
+  const counter = (n: number, unit: string) => (n > 0 ? `${n} ${unit}${n === 1 ? "" : "s"}` : null);
   const NAV_LINKS = [
-    { href: "/directory", label: "Explore Colleges", icon: ScanSearch, counter: null as string | null, live: false },
-    {
-      href: "/matcher",
-      label: "My Fit",
-      icon: GraduationCap,
-      counter: `${fitCount} school${fitCount === 1 ? "" : "s"}`,
-      live: fitCount > 0,
-    },
-    {
-      href: "/checklist",
-      label: "My Plan",
-      icon: LayoutList,
-      counter: `${planCount} task${planCount === 1 ? "" : "s"}`,
-      live: planCount > 0,
-    },
-    { href: "/scholarships", label: "Scholarships", icon: Award, counter: null as string | null, live: false },
-    { href: "/beyond-grades", label: "Beyond Grades", icon: Sparkles, counter: null as string | null, live: false },
-    { href: "/summer", label: "Summer Opportunities", icon: Sun, counter: null as string | null, live: false },
+    { href: "/directory", label: "Explore", icon: ScanSearch, counter: null as string | null, active: isExplorePath },
+    { href: "/scholarships", label: "Scholarships", icon: Award, counter: null as string | null, active: (p: string | null) => p === "/scholarships" },
+    { href: "/summer", label: "Internships & Programs", icon: Briefcase, counter: null as string | null, active: (p: string | null) => p === "/summer" },
+    { href: "/matcher", label: "My Fit", icon: GraduationCap, counter: counter(fitCount, "school"), active: (p: string | null) => p === "/matcher" },
+    { href: "/checklist", label: "My Plan", icon: LayoutList, counter: counter(planCount, "task"), active: isPlanPath },
   ];
 
   return (
@@ -81,15 +70,15 @@ export default function NavBar() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 xl:flex">
-          {NAV_LINKS.map(({ href, label, icon: Icon, counter, live }) => {
-            const active = pathname === href || pathname?.startsWith(href + "/");
+        <nav className="hidden items-center gap-1 lg:flex">
+          {NAV_LINKS.map(({ href, label, icon: Icon, counter, active: isActive }) => {
+            const active = isActive(pathname);
             return (
               <Link
                 key={href}
                 href={href}
                 className={clsx(
-                  "flex items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium transition-colors",
+                  "flex items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium transition-colors xl:px-4",
                   active
                     ? "bg-navy-900 text-white"
                     : "text-slate-600 hover:bg-slate-100 hover:text-navy-900"
@@ -97,21 +86,16 @@ export default function NavBar() {
               >
                 <Icon className="h-4 w-4" />
                 {label}
-                {counter &&
-                  (live ? (
-                    <span
-                      className={clsx(
-                        "rounded-full px-2 py-0.5 text-xs font-bold",
-                        active ? "bg-gold-400 text-navy-950" : "bg-navy-900 text-gold-400"
-                      )}
-                    >
-                      {counter}
-                    </span>
-                  ) : (
-                    <span className={clsx("text-xs font-semibold", active ? "text-gold-400" : "text-slate-400")}>
-                      &middot; {counter}
-                    </span>
-                  ))}
+                {counter && (
+                  <span
+                    className={clsx(
+                      "rounded-full px-2 py-0.5 text-xs font-bold",
+                      active ? "bg-gold-400 text-navy-950" : "bg-navy-900 text-gold-400"
+                    )}
+                  >
+                    {counter}
+                  </span>
+                )}
               </Link>
             );
           })}
@@ -120,7 +104,7 @@ export default function NavBar() {
         <button
           type="button"
           aria-label="Toggle navigation menu"
-          className="flex h-9 w-9 items-center justify-center rounded-lg text-navy-900 hover:bg-slate-100 xl:hidden"
+          className="flex h-9 w-9 items-center justify-center rounded-lg text-navy-900 hover:bg-slate-100 lg:hidden"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -128,10 +112,10 @@ export default function NavBar() {
       </div>
 
       {open && (
-        <nav className="border-t border-slate-200 bg-white px-4 pb-3 pt-2 xl:hidden">
+        <nav className="border-t border-slate-200 bg-white px-4 pb-3 pt-2 lg:hidden">
           <div className="flex flex-col gap-1">
-            {NAV_LINKS.map(({ href, label, icon: Icon, counter, live }) => {
-              const active = pathname === href || pathname?.startsWith(href + "/");
+            {NAV_LINKS.map(({ href, label, icon: Icon, counter, active: isActive }) => {
+              const active = isActive(pathname);
               return (
                 <Link
                   key={href}

@@ -3,7 +3,7 @@ import rawAthletics from "@/data/athletics.json";
 import type { PathwaySource } from "./pathways";
 
 /**
- * What one college asks of musicians and athletes, shown in the Beyond Grades
+ * What one college asks of musicians and athletes, shown in the Music & Sports
  * section of its profile. Two sources:
  * - data/college-talent.json: facts quoted from the college's own pages
  *   (checked by scripts/check-pathways.mjs);

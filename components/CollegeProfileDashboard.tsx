@@ -31,7 +31,7 @@ const SECTIONS = [
   { id: "overview", label: "Preparation" },
   { id: "admissions", label: "Admissions" },
   { id: "apply", label: "Applying" },
-  { id: "beyond", label: "Beyond Grades" },
+  { id: "beyond", label: "Music & Sports Tracks" },
   { id: "academics", label: "Academics" },
   { id: "cost", label: "Cost" },
   { id: "aid", label: "Financial Aid" },
@@ -80,7 +80,7 @@ export default function CollegeProfileDashboard({
   const [showBar, setShowBar] = useState(false);
   // Schools added from bulk public data have no curated preparation list; the section and its tab are left out rather than shown empty.
   const hasPrep = college.idealStudentArchetype.highSchoolCoursePrereqs.length > 0;
-  // Beyond Grades, likewise, only for schools with sourced music or sports facts.
+  // Music & Sports Tracks, likewise, only for schools with sourced music or sports facts.
   const sections = SECTIONS.filter((s) => (s.id !== "overview" || hasPrep) && (s.id !== "beyond" || talent));
   const [activeId, setActiveId] = useState(sections[0].id);
   const { state: collegeListState } = useCollegeList();
@@ -504,10 +504,10 @@ export default function CollegeProfileDashboard({
             </div>
           </section>
 
-          {/* Beyond Grades: what this school asks of musicians and athletes */}
+          {/* Music & Sports Tracks: what this school asks of musicians and athletes */}
           {talent && (
             <section id="beyond" style={sectionScroll}>
-              <h2 className="text-lg font-bold text-navy-900">Beyond Grades</h2>
+              <h2 className="text-lg font-bold text-navy-900">Music &amp; Sports Tracks</h2>
               <CollegeTalentSection talent={talent} />
             </section>
           )}

@@ -16,6 +16,7 @@ import GpaByYearForm from "@/components/GpaByYearForm";
 import UcCappedGpaField from "@/components/UcCappedGpaField";
 import AcademicCalibrator from "@/components/AcademicCalibrator";
 import SchoolStatusBadge from "@/components/SchoolStatusBadge";
+import PageHeader from "@/components/PageHeader";
 
 const GRADES: Grade[] = [9, 10, 11, 12];
 
@@ -152,13 +153,12 @@ function MatcherContent() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-3xl">My Fit</h1>
-        <p className="mt-1 text-sm text-slate-500">
+      <PageHeader eyebrow="Your work" title="My Fit">
+        <p>
           Your profile drives every fit estimate below, and updates the moment you change it — on this
           page or from a school&apos;s own profile.
         </p>
-      </div>
+      </PageHeader>
 
       {/* Step 1 & 2: who / state — unchanged from before */}
       <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-card">

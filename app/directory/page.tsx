@@ -9,6 +9,8 @@ import type { CollegeSystem, TestingPolicy } from "@/lib/types";
 import { getInterestById, INTEREST_TAXONOMY, matchesAllInterests, normalizeInterestIds } from "@/lib/interests";
 import CollegeCard from "@/components/CollegeCard";
 import { POLICY_LABEL } from "@/components/TestingPolicyBadge";
+import PageHeader from "@/components/PageHeader";
+import { ExploreTabs } from "@/components/SectionTabs";
 
 const SYSTEM_OPTIONS: CollegeSystem[] = ["UC", "CSU", "Private", "Public"];
 
@@ -175,14 +177,10 @@ function DirectoryContent() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-3xl">
-          Explore Colleges
-        </h1>
-        <p className="mt-1 text-sm text-slate-500">
-          Search and filter {colleges.length} schools by state, system, testing policy, and admit rate.
-        </p>
-      </div>
+      <ExploreTabs />
+      <PageHeader eyebrow="Explore" title="All Colleges">
+        <p>Search and filter {colleges.length} schools by state, system, testing policy, and admit rate.</p>
+      </PageHeader>
 
       {selectedInterests.length > 0 && (
         <div className="flex flex-wrap items-center gap-2">
