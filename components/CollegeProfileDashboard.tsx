@@ -26,12 +26,15 @@ import CollegeTalentSection from "./CollegeTalentSection";
 import type { CollegeTalent } from "@/lib/collegeTalent";
 import CollegeMeritSection from "./CollegeMeritSection";
 import type { MeritScholarship } from "@/lib/collegeMerit";
+import CollegeProgramsSection from "./CollegeProgramsSection";
+import type { SummerProgram } from "@/data/summerPrograms";
 
 const SECTIONS = [
   { id: "overview", label: "Preparation" },
   { id: "admissions", label: "Admissions" },
   { id: "apply", label: "Applying" },
   { id: "beyond", label: "Music & Sports Tracks" },
+  { id: "programs", label: "Internships & Programs" },
   { id: "academics", label: "Academics" },
   { id: "cost", label: "Cost" },
   { id: "aid", label: "Financial Aid" },
@@ -58,6 +61,7 @@ export default function CollegeProfileDashboard({
   majors,
   talent,
   merit = [],
+  programs = [],
   checkNote,
 }: {
   college: College;
@@ -65,6 +69,8 @@ export default function CollegeProfileDashboard({
   talent: CollegeTalent | null;
   /** Merit scholarships only this college gives (see lib/collegeMerit.ts). */
   merit?: MeritScholarship[];
+  /** Internships and programs this college runs or holds (see lib/summer.ts). */
+  programs?: SummerProgram[];
   /** What the last weekly check confirmed for this school (see lib/dataChecks.ts), or null. */
   checkNote: string | null;
 }) {
@@ -81,7 +87,10 @@ export default function CollegeProfileDashboard({
   // Schools added from bulk public data have no curated preparation list; the section and its tab are left out rather than shown empty.
   const hasPrep = college.idealStudentArchetype.highSchoolCoursePrereqs.length > 0;
   // Music & Sports Tracks, likewise, only for schools with sourced music or sports facts.
-  const sections = SECTIONS.filter((s) => (s.id !== "overview" || hasPrep) && (s.id !== "beyond" || talent));
+  // Internships & Programs, likewise, only for colleges that run one on the checked list.
+  const sections = SECTIONS.filter(
+    (s) => (s.id !== "overview" || hasPrep) && (s.id !== "beyond" || talent) && (s.id !== "programs" || programs.length > 0)
+  );
   const [activeId, setActiveId] = useState(sections[0].id);
   const { state: collegeListState } = useCollegeList();
   const listEntry = collegeListState.entries[college.id];
@@ -509,6 +518,16 @@ export default function CollegeProfileDashboard({
             <section id="beyond" style={sectionScroll}>
               <h2 className="text-lg font-bold text-navy-900">Music &amp; Sports Tracks</h2>
               <CollegeTalentSection talent={talent} />
+            </section>
+          )}
+
+          {/* Internships & Programs: what this college runs for high school students */}
+          {programs.length > 0 && (
+            <section id="programs" style={sectionScroll}>
+              <h2 className="text-lg font-bold text-navy-900">Internships &amp; Programs</h2>
+              <div className="mt-3">
+                <CollegeProgramsSection programs={programs} />
+              </div>
             </section>
           )}
 

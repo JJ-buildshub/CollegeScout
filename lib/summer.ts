@@ -66,3 +66,35 @@ function byStartDate(a: SummerProgram, b: SummerProgram) {
 export function summerComparator(sort: SummerSort, today: Date | null) {
   return sort === "start-soonest" ? byStartDate : byDeadline(today, sort === "deadline-latest");
 }
+
+/**
+ * Programs a college runs or holds on its campus, for that college's profile. Keyed by college id
+ * (data/colleges.json). Hosts that aren't a college on the site (labs, agencies, UCSF) are left out.
+ */
+const COLLEGE_PROGRAM_IDS: Record<string, string[]> = {
+  "stanford-university": ["stanford-simr", "stanford-summer-institutes", "stanford-sumac", "rsi"],
+  "massachusetts-institute-of-technology": ["mites-summer", "rsi"],
+  "uc-berkeley": ["berkeley-pre-college", "berkeley-bbay"],
+  "uc-santa-cruz": ["ucsc-sip", "cosmos"],
+  "uc-davis": ["cosmos"],
+  "uc-irvine": ["cosmos"],
+  ucla: ["cosmos"],
+  "uc-merced": ["cosmos"],
+  "uc-san-diego": ["cosmos"],
+  "carnegie-mellon-university": ["cmu-sams", "cmu-ai-scholars", "cmu-cs-scholars"],
+  "yale-university": ["yale-yygs"],
+  "harvard-university": ["harvard-pre-college"],
+  "rhode-island-school-of-design": ["risd-pre-college"],
+  "university-of-notre-dame": ["notre-dame-leadership"],
+  "georgetown-university": ["georgetown-medical-academy"],
+  "babson-college": ["babson-summer-study"],
+  "university-of-delaware": ["diamond-challenge"],
+};
+
+export function getCollegePrograms(collegeId: string): SummerProgram[] {
+  return (COLLEGE_PROGRAM_IDS[collegeId] ?? []).map((id) => {
+    const program = getSummerProgram(id);
+    if (!program) throw new Error(`COLLEGE_PROGRAM_IDS: no program "${id}"`);
+    return program;
+  });
+}

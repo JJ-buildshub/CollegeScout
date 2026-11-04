@@ -5,6 +5,7 @@ import { getSchoolMajors } from "@/lib/majors";
 import { getCollegeTalent } from "@/lib/collegeTalent";
 import { getCollegeMerit } from "@/lib/collegeMerit";
 import { dataCheckNote } from "@/lib/dataChecks";
+import { getCollegePrograms } from "@/lib/summer";
 import CollegeProfileDashboard from "@/components/CollegeProfileDashboard";
 
 export function generateStaticParams() {
@@ -40,6 +41,7 @@ export default function CollegeDetailPage({ params }: { params: { id: string } }
       majors={getSchoolMajors(college.id)}
       talent={getCollegeTalent(college.id)}
       merit={getCollegeMerit(college.id)}
+      programs={getCollegePrograms(college.id)}
       checkNote={dataCheckNote(college.id)}
     />
   );
