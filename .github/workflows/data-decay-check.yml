@@ -85,16 +85,27 @@ jobs:
           cat websites.txt
           test ! -s websites.txt
 
-      - name: Open an issue if any page stopped matching
-        if: >-
-          steps.policies.outcome == 'failure' || steps.deadlines.outcome == 'failure' ||
-          steps.applications.outcome == 'failure' || steps.systems.outcome == 'failure' ||
-          steps.scholarships.outcome == 'failure' || steps.stateaid.outcome == 'failure' ||
-          steps.pathways.outcome == 'failure' ||
-          steps.websites.outcome == 'failure'
+      # One issue stays open while anything is wrong; it is updated each week and closed once every
+      # page matches again. A new dated issue every Monday is how three of them piled up unread.
+      - name: Open, update or close the data decay issue
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FAILED: >-
+            ${{ steps.policies.outcome == 'failure' || steps.deadlines.outcome == 'failure' ||
+            steps.applications.outcome == 'failure' || steps.systems.outcome == 'failure' ||
+            steps.scholarships.outcome == 'failure' || steps.stateaid.outcome == 'failure' ||
+            steps.pathways.outcome == 'failure' || steps.websites.outcome == 'failure' }}
         run: |
+          title="Data decay: a college changed a page we quote"
+          issue=$(gh issue list --state open --search "\"$title\" in:title" --json number --jq '.[0].number // empty')
+
+          if [ "$FAILED" != "true" ]; then
+            if [ -n "$issue" ]; then
+              gh issue close "$issue" --comment "Every quoted line matches its page again."
+            fi
+            exit 0
+          fi
+
           {
             echo "A college changed a page we quote. Each line below is a stored"
             echo "quote that no longer appears on the school's own page."
@@ -152,11 +163,10 @@ jobs:
           # Assigned to the repo owner so GitHub notifies them (email and the
           # mobile app). An issue the bot opens with no assignee notifies no
           # one, which is how the Oct 19 and Oct 26 issues went unnoticed.
-          gh issue create \
-            --title "Data decay: a college changed a page we quote ($(date -u +%Y-%m-%d))" \
-            --body-file body.md \
-            --assignee "${{ github.repository_owner }}" \
-            --label "data" || gh issue create \
-            --title "Data decay: a college changed a page we quote ($(date -u +%Y-%m-%d))" \
-            --body-file body.md \
-            --assignee "${{ github.repository_owner }}"
+          if [ -z "$issue" ]; then
+            gh issue create --title "$title" --body-file body.md --assignee "${{ github.repository_owner }}" --label "data" \
+              || gh issue create --title "$title" --body-file body.md --assignee "${{ github.repository_owner }}"
+          elif [ "$(gh issue view "$issue" --json body --jq .body)" != "$(cat body.md)" ]; then
+            gh issue edit "$issue" --body-file body.md
+            gh issue comment "$issue" --body "This week's list is different. The description above is up to date ($(date -u +%Y-%m-%d))."
+          fi

@@ -14,7 +14,7 @@ import ScoutCartoon, { type ScoutMood } from "./ScoutCartoon";
  * says so and points to the browse-it-yourself buttons, which always show.
  */
 
-type Card = { kind: "college" | "scholarship"; id: string; name: string; href: string };
+type Card = { kind: "college" | "scholarship" | "program"; id: string; name: string; href: string };
 type Turn = { role: "user" | "assistant"; content: string };
 
 const HELLO = "Hey, I'm Scout! Tap me and ask me anything about colleges or scholarships.";
@@ -311,7 +311,7 @@ export default function ScoutChat() {
                   href={card.href}
                   className="rounded-xl bg-white px-3 py-2 text-sm font-bold text-navy-900 ring-1 ring-slate-200 hover:bg-sand-100"
                 >
-                  {card.kind === "college" ? "College: " : "Scholarship: "}
+                  {card.kind === "college" ? "College: " : card.kind === "program" ? "Program: " : "Scholarship: "}
                   {card.name}
                 </Link>
               ))}

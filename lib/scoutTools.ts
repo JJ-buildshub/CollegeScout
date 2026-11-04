@@ -3,6 +3,8 @@ import { colleges, getCollegeById, displayedAdmitRate, formatPercent } from "./c
 import { INTEREST_TAXONOMY, matchesInterest } from "./interests";
 import { scholarships, daysLeft, isConfirmed, type Scholarship, type ScholarshipGrade } from "./scholarships";
 import { areaMatch, lookupZip } from "./zipCounties";
+import { summerPrograms, type SummerGrade, type SummerProgram } from "../data/summerPrograms";
+import { formatSummerDate, isBayArea, matchesGrade, summerInterestLabel, summerInterests } from "./summer";
 
 /**
  * Scout's tools: read-only lookups over the site's own data files. Scout gets
@@ -13,7 +15,7 @@ import { areaMatch, lookupZip } from "./zipCounties";
 
 /** Something Scout looked up, offered to the student as a link under the reply. */
 export interface ScoutCard {
-  kind: "college" | "scholarship";
+  kind: "college" | "scholarship" | "program";
   id: string;
   name: string;
   href: string;
@@ -90,6 +92,39 @@ export const SCOUT_TOOLS: Anthropic.Beta.BetaTool[] = [
           description: "Include programs whose deadline has passed this year. Default false.",
         },
       },
+      additionalProperties: false,
+    },
+  },
+  {
+    name: "search_programs",
+    description:
+      "Find internships, college summer programs and student entrepreneurship programs from CollegeScout's checked list. Use for any question about summer plans, internships, research programs, pre-college programs or starting a project. Returns at most 8 short summaries; call get_program for details on one.",
+    input_schema: {
+      type: "object",
+      properties: {
+        grade: { type: "integer", enum: [9, 10, 11, 12], description: "The grade the student is in now." },
+        kind: {
+          type: "string",
+          enum: ["work", "university", "build"],
+          description: "work: internships at labs, hospitals, companies and agencies. university: programs run by colleges. build: entrepreneurship programs and competitions.",
+        },
+        interest: { type: "string", enum: summerInterests, description: "A field from the site's list." },
+        cost: { type: "string", enum: ["Free", "Stipend", "Paid"], description: "Stipend means the program pays the student." },
+        bay_area: { type: "boolean", description: "Only programs with a San Francisco Bay Area location." },
+        online: { type: "boolean", description: "Only programs with an online option." },
+        words: { type: "string", description: "Words to match against the name or host, e.g. 'NASA', 'Stanford', 'medicine'." },
+      },
+      additionalProperties: false,
+    },
+  },
+  {
+    name: "get_program",
+    description:
+      "Details for one internship or program by its id (from search_programs): who can apply, cost, dates, deadline, what to submit and the official page.",
+    input_schema: {
+      type: "object",
+      properties: { id: { type: "string" } },
+      required: ["id"],
       additionalProperties: false,
     },
   },
@@ -256,6 +291,83 @@ function getScholarship(input: Record<string, unknown>, cards: ScoutCard[]) {
   };
 }
 
+function programCard(program: SummerProgram): ScoutCard {
+  return { kind: "program", id: program.id, name: program.name, href: "/summer" };
+}
+
+const NOT_POSTED = "not posted yet: check the official page";
+
+function costText(program: SummerProgram) {
+  if (!program.cost) return "not stated on the official page";
+  return program.amount ? `${program.cost}, ${program.amount.text} (${program.amount.year})` : program.cost;
+}
+
+function searchPrograms(input: Record<string, unknown>, cards: ScoutCard[]) {
+  const grade = num(input.grade);
+  const kind = str(input.kind);
+  const interest = str(input.interest);
+  const cost = str(input.cost);
+  const words = str(input.words).toLowerCase().split(/\s+/).filter(Boolean);
+
+  const matches = summerPrograms.filter((program) => {
+    if (grade !== null && [9, 10, 11, 12].includes(grade) && !matchesGrade(program, grade as SummerGrade)) return false;
+    if (kind && program.category !== kind) return false;
+    if (interest && !program.interests.some((tag) => tag === interest)) return false;
+    if (cost && program.cost !== cost) return false;
+    if (input.bay_area === true && !isBayArea(program)) return false;
+    if (input.online === true && !program.format.some((f) => f.kind === "online")) return false;
+    const text = `${program.name} ${program.host}`.toLowerCase();
+    return words.every((word) => text.includes(word));
+  });
+
+  const shown = matches.slice(0, 8);
+  for (const program of shown) cards.push(programCard(program));
+  return {
+    total_matches: matches.length,
+    programs: shown.map((program) => ({
+      id: program.id,
+      name: program.name,
+      host: program.host,
+      cost: costText(program),
+      deadline: program.deadline ? formatSummerDate(program.deadline) : NOT_POSTED,
+      where: program.format.map((f) => (f.kind === "online" ? "Online" : f.place)),
+      grades: program.eligibility.gradesLabel ?? "not stated",
+    })),
+    note:
+      matches.length > shown.length
+        ? `Only the first ${shown.length} of ${matches.length} are listed. Suggest the Internships & Programs page for the full list.`
+        : undefined,
+  };
+}
+
+function getProgram(input: Record<string, unknown>, cards: ScoutCard[]) {
+  const program = summerPrograms.find((candidate) => candidate.id === str(input.id));
+  if (!program) return { error: "No program with that id. Use search_programs first." };
+  cards.push(programCard(program));
+  const e = program.eligibility;
+  return {
+    name: program.name,
+    host: program.host,
+    interests: program.interests.map(summerInterestLabel),
+    cost: costText(program),
+    cost_note: program.costNote ?? undefined,
+    selectivity: program.selectivity,
+    grades: e.gradesLabel ?? "not stated",
+    minimum_age: e.minAge ?? "not stated",
+    citizenship: e.citizenship ?? "not stated",
+    location_requirement: e.location ?? "not stated",
+    where: program.format.map((f) => (f.kind === "online" ? "Online" : f.place)),
+    dates: program.dates ?? NOT_POSTED,
+    deadline: program.deadline ? formatSummerDate(program.deadline) : NOT_POSTED,
+    deadline_note: program.deadlineNote ?? undefined,
+    what_to_submit: program.toSubmit
+      ? { list_year: program.toSubmit.year, items: program.toSubmit.items.map((item) => (item.due ? `${item.label} (due ${formatSummerDate(item.due)})` : item.label)) }
+      : NOT_POSTED,
+    official_page: program.officialUrl,
+    checked_on: program.lastVerified,
+  };
+}
+
 /** Runs one tool call. Inputs are model output, so every field is checked before use. */
 export function runScoutTool(name: string, input: unknown, cards: ScoutCard[]): string {
   const args = input && typeof input === "object" ? (input as Record<string, unknown>) : {};
@@ -272,6 +384,12 @@ export function runScoutTool(name: string, input: unknown, cards: ScoutCard[]): 
       break;
     case "get_scholarship":
       result = getScholarship(args, cards);
+      break;
+    case "search_programs":
+      result = searchPrograms(args, cards);
+      break;
+    case "get_program":
+      result = getProgram(args, cards);
       break;
     default:
       result = { error: `Unknown tool ${name}` };
