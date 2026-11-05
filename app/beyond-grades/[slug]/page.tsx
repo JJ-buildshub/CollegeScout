@@ -5,6 +5,7 @@ import { Check, ChevronRight, ExternalLink, Lightbulb } from "lucide-react";
 import AddPathwayToPlanButton from "@/components/AddPathwayToPlanButton";
 import { getPathwayCard, getPathwayCategory, getPathwayPage, livePathwaySlugs, monthYear } from "@/lib/pathways";
 import { trackFor } from "@/components/TrackPage";
+import PageHeader from "@/components/PageHeader";
 
 // Only slugs with a page in data/pathways.json exist; a coming-soon card's slug is a 404, not an empty page.
 export const dynamicParams = false;
@@ -27,7 +28,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 }
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
-  return <h2 className="font-display text-2xl font-extrabold tracking-tight text-navy-900 sm:text-[26px]">{children}</h2>;
+  return <h2 className="text-lg font-bold text-navy-900">{children}</h2>;
 }
 
 export default function PathwayPage({ params }: { params: { slug: string } }) {
@@ -47,7 +48,12 @@ export default function PathwayPage({ params }: { params: { slug: string } }) {
           <ChevronRight className="h-3 w-3" />
           <span className="text-navy-900">{page.title}</span>
         </nav>
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4">
+          <PageHeader title={page.title}>
+            <p>{page.intro}</p>
+          </PageHeader>
+        </div>
+        <div className="mt-3 flex flex-wrap gap-2">
           {page.badges.map((badge, i) => (
             <span
               key={badge}
@@ -57,8 +63,6 @@ export default function PathwayPage({ params }: { params: { slug: string } }) {
             </span>
           ))}
         </div>
-        <h1 className="font-display mt-2 text-3xl font-extrabold tracking-tight text-navy-900 sm:text-[44px]">{page.title}</h1>
-        <p className="mt-3 max-w-3xl text-base leading-relaxed text-slate-600 sm:text-lg">{page.intro}</p>
       </header>
 
       <section className="grid grid-cols-2 gap-3 lg:grid-cols-4">
