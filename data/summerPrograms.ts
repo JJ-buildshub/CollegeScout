@@ -167,7 +167,7 @@ export const summerPrograms: SummerProgram[] = [
       ],
     },
     officialUrl: "https://www.nasa.gov/learning-resources/internship-programs/",
-    lastVerified: VERIFIED,
+    lastVerified: "2026-11-05",
   },
   {
     id: "navy-seap",
@@ -402,6 +402,40 @@ export const summerPrograms: SummerProgram[] = [
     lastVerified: VERIFIED,
   },
 
+  {
+    id: "asdrp",
+    name: "Aspiring Scholars Directed Research Program (ASDRP)",
+    host: "ASDRP, a nonprofit research lab in Fremont",
+    category: "work",
+    interests: ["research", "biology", "engineering", "cs-ai"],
+    cost: "Paid",
+    amount: { text: "$1,070 per term", year: 2027 },
+    costNote: "Free for students who meet its financial need criteria; the aid form is due by the same deadline as the application",
+    selectivity: "Selective (3% to 31% admitted in summer 2026, highest in the first round)",
+    eligibility: {
+      grades: [9, 10, 11, 12],
+      gradesLabel: "High school classes of 2027 to 2030 (the FAQ says students entering grades 9 to 12 after the summer, so confirm)",
+      minAge: null,
+      citizenship: null,
+      location: null,
+    },
+    format: [{ kind: "bay-area", place: "Fremont, CA" }, { kind: "online" }],
+    dates: null,
+    startDate: null,
+    deadline: "2027-04-15",
+    deadlineNote: "Earlier priority deadlines Feb 1 and Mar 1, 2027. Late applications are not considered",
+    toSubmit: {
+      year: 2027,
+      items: [
+        { label: "Online application with short essays (150 to 500 words each)" },
+        { label: "Unofficial transcript" },
+        { label: "Resume and up to 3 files from past research (optional)" },
+        { label: "Financial aid form, if applying for aid" },
+      ],
+    },
+    officialUrl: "https://www.asdrp.org/apply",
+    lastVerified: "2026-11-05",
+  },
   // --- University Programs
   {
     id: "stanford-summer-institutes",
@@ -521,8 +555,8 @@ export const summerPrograms: SummerProgram[] = [
       location: "California high school students only",
     },
     format: [{ kind: "in-person", place: "UC Davis, Irvine, Los Angeles, Merced, San Diego or Santa Cruz" }],
-    dates: null,
-    startDate: null,
+    dates: "July 5 to July 31, 2027",
+    startDate: "2027-07-05",
     deadline: "2027-02-05",
     deadlineNote: "Applications open Jan 6, 2027",
     toSubmit: {
@@ -535,7 +569,7 @@ export const summerPrograms: SummerProgram[] = [
       ],
     },
     officialUrl: "https://cosmos-ucop.ucdavis.edu/app/main/page/dates-deadlines",
-    lastVerified: VERIFIED,
+    lastVerified: "2026-11-05",
   },
   {
     id: "ucsc-sip",
@@ -823,7 +857,7 @@ export const summerPrograms: SummerProgram[] = [
       ],
     },
     officialUrl: "https://precollege.risd.edu/on-campus/application-information",
-    lastVerified: "2026-11-02",
+    lastVerified: "2026-11-05",
   },
   {
     id: "notre-dame-leadership",
@@ -1137,7 +1171,7 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
     },
     {
       url: "https://www.nasa.gov/learning-resources/internship-programs/",
-      evidence: ["Summer 2027 Application Deadline: March 1, 2027 (11:59 p.m. ET)", "Must be 18 or older by the published start date of session"],
+      evidence: ["Summer 2027 Application Deadline: March 1, 2027", "Must be 18 or older by the published start date of session"],
     },
   ],
   "navy-seap": [
@@ -1204,6 +1238,35 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
       evidence: ["Applications are closed for Summer 2026.", "paid internships"],
     },
   ],
+  asdrp: [
+    {
+      url: "https://www.asdrp.org/apply",
+      evidence: [
+        "Applications Due: April 15",
+        "Priority Deadline #1: February 1",
+        "Priority Deadline #2: March 1",
+        "Program Cost $1,070 per semester",
+        "Summer 2026: 31% [Early 1]; 12% [Early 2]; 3% [Regular]",
+        "Individuals who are from outside of the Bay Area may work remotely",
+      ],
+    },
+    {
+      url: "https://www.asdrp.org/faq",
+      evidence: [
+        "Students who are entering 9th, 10th, 11th, or 12th grade after the summer are eligible to join ASDRP",
+        "Students with financial difficulty join ASDRP for free with no fees",
+      ],
+    },
+    {
+      url: "https://form.jotform.com/262934885747173",
+      evidence: [
+        "ASDRP 2027 Summer Application",
+        "Your high school graduation year can only be between 2027-2030",
+        "Please upload a copy of your transcript (unofficial version is fine)",
+        "Please respond to each short answer question in 150-500 words",
+      ],
+    },
+  ],
   "llnl-biotech": [
     {
       url: "https://st.llnl.gov/sci-ed/summer-workshops/biotech-summer-experience",
@@ -1259,7 +1322,7 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
     },
     {
       url: "https://cosmos-ucop.ucdavis.edu/app/main/page/dates-deadlines",
-      evidence: ["Online Application Closes: February 5, 2027, at 5:00 PM", "PROGRAM COST: $5,793", "Opening Day 2027: TBA"],
+      evidence: ["Online Application Closes: February 5, 2027, at 5:00 PM", "PROGRAM COST: $5,793", "Opening Day 2027: July 5th, 2027", "Closing Day 2027: July 31st, 2027"],
     },
   ],
   "ucsc-sip": [
@@ -1353,7 +1416,7 @@ export const summerProgramSources: Record<string, { url: string; evidence: strin
     },
     {
       url: "https://precollege.risd.edu/on-campus/application-information",
-      evidence: ["Applications for summer 2027 open November 4, 2026.", "JAN 29, 2027"],
+      evidence: ["Now accepting applications for summer 2027!", "NOV 4, 2026", "JAN 29, 2027"],
     },
     {
       url: "https://precollege.risd.edu/on-campus/tuition-and-fees",
